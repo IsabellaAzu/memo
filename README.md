@@ -17,7 +17,10 @@
 
 ##準備作業
 
+1. _Command Line Toolsインストール_  
 1. __Command Line Toolsインストール__  
+1. ___Command Line Toolsインストール___  
+1. ____Command Line Toolsインストール____  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
 > 参考  
 https://developer.apple.com/  
