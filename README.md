@@ -27,5 +27,8 @@ $ cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認
 $ pbcopy < ~/.ssh/id_rsa.pubでクリップボードにコピーしてGithubのSSHKeysの設定ページに貼り付ける。  
 $ ssh -T git@github.comで接続テスト  
 3. Homebrewインストール  
+http://brew.sh/index_ja.html  
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew doctor
 4. rbenvインストール  
 
