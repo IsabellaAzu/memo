@@ -1,9 +1,8 @@
 
-まっさらからの環境構築のメモ（201412）  
-=====================================
+#まっさらからの環境構築のメモ（201412）  
 [Githubのマークダウン記法](http://codechord.com/2012/01/readme-markdown/ "") 
 
-【ハード】
+##【】
 ----------
 *	MacBook (13-inch, Late 2009)
 *	プロセッサ 2.26 GHz Intel Core 2 Duo
@@ -13,7 +12,7 @@
 【OS】
 ----------
 *	MacOSX 10.10.1（14B25）
-
+- あああああ
 【準備作業】
 ----------
 1. Command Line Toolsインストール  
@@ -31,4 +30,6 @@ http://brew.sh/index_ja.html
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
 4. rbenvインストール  
+5. nodeインストール
+http://nodejs.org
 
