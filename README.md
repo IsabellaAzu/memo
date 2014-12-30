@@ -134,7 +134,14 @@ http://dev.mysql.com/downloads/workbench/
 Sequel Pro  
 http://www.sequelpro.com  
 
-### 6. nodeインストール  
+### 6. 必要なgemのインストール
+
+```
+$ gem install bundler
+$ gem install rails
+```
+
+### 7. nodeインストール  
 
 > 参考  
 http://nodejs.org
