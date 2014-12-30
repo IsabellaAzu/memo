@@ -31,12 +31,12 @@ $ ssh-keygen
 ```
 ※「The key fingerprint is:」が出てくるまで[Enter]  
 
->公開鍵の確認  
+> 公開鍵の確認  
 ```
 $ cat ~/.ssh/id_rsa.pub
 ```
 
->クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
+> クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
 ```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
