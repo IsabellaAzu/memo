@@ -145,11 +145,21 @@ $ gem install rails
 > 参考  
 http://nodejs.org
 
-  
+### 8. その他インストール
+
+imagemagick（要確認）  
+```
+$ brew install imagemagick  
+$ brew unlink imagemagick && brew link imagemagick
+$ cd /usr/local/Cellar/imagemagick/6.8.0-10/lib
+$ ln -s libMagickWand-Q16.7.dylib libMagickWand.dylib 
+$ ln -s libMagickCore-Q16.7.dylib libMagickCore.dylib
+$ ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
+```
   
 - - -
 ## 全体的に参考  
 http://tsuchikazu.net/mac_rail_setup/  
 https://gist.github.com/keifukuda/4535242  
-  
+
   
