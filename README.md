@@ -17,18 +17,14 @@
 
 ##準備作業
 
-<dl>
-<dt>1. <strong>Command Line Toolsインストール</strong></dt>
-<dd>
+### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
+
 > 参考  
 https://developer.apple.com/  
-</dd>
-</dl>
 
-   
+### 2. 公開鍵と秘密鍵作成  
 
-2. <strong>公開鍵と秘密鍵作成</strong>  
 > 参考  
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
@@ -38,20 +34,23 @@ SSH 公開鍵の作成
 $ ssh-keygen
 ```
 ※「The key fingerprint is:」が出てくるまで[Enter]  
+
 公開鍵の確認  
 ```
 $ cat ~/.ssh/id_rsa.pub
 ```
+
 クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
 ```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
+
 接続テスト  
 ```
 $ ssh -T git@github.com
 ```
 
-3. <strong>Homebrewインストール</strong>  
+### 3. Homebrewインストール  
 
 > 参考  
 http://brew.sh/index_ja.html  
@@ -63,9 +62,9 @@ $ brew -v
 $ brew update
 ```
 
-※むやみにbrew upgradeするのは危険  
+※むやみにbrew upgradeするのは危険!?  
 
-4. <strong>rbenvインストール</strong>  
+### 4. rbenvインストール  
 
 ```
 $ brew install rbenv ruby-build
@@ -92,7 +91,7 @@ $ ruby -v
 $ brew install rbenv-gem-rehash
 ```
 
-5. <strong>MySQLをインストール</strong>  
+### 5. MySQLをインストール  
 
 > 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/  
@@ -135,7 +134,7 @@ http://dev.mysql.com/downloads/workbench/
 Sequel Pro  
 http://www.sequelpro.com  
 
-6. <strong>nodeインストール</strong>  
+### 6. nodeインストール  
 
 > 参考  
 http://nodejs.org
