@@ -122,6 +122,11 @@ $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 # 手動起動、停止
 $ mysql.server start
 $ mysql.server stop
+
+# ログイン
+$ mysql -u root
+# 文字コードの設定を確認
+$ show variables like 'character_set%';
 ```
 
 > 参考  
