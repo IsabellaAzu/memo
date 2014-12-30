@@ -96,6 +96,11 @@ http://howtohp.com/2011/08/20/homebrew-mysql/
 
 ```
 $ brew install mysql
+$ brew info mysql #インストール後のメッセージ確認
+$ brew link mysql #Warning: Already linked:が出たら下記を実行
+$ brew unlink mysql && brew link mysql
+$ mysql.server start # 手動起動  
+$ mysql.server stop # 手動停止
 ```
 
 > 参考  
@@ -109,6 +114,8 @@ MySQLの違うバージョンをインストール
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 
 > 補足  
+MariaDBの場合  
+http://qiita.com/kozmats/items/ac32f1ac1d676a09e3b2  
 ER図作成　Workbench  
 http://dev.mysql.com/downloads/workbench/  
 Sequel Pro  
