@@ -101,13 +101,14 @@ $ brew install mysql
 ```
 ```
 
-> 参考：ダウングレードしたい時  
+> 参考
+ダウングレードしたい時  
 http://sue445.hatenablog.com/entry/2013/02/25/163538  
-> 参考：Mac起動時にMySQLを起動、起動に失敗した時など  
+Mac起動時にMySQLを起動、起動に失敗した時など  
 http://qiita.com/maru_cc/items/2d8f558c83631354f54d  
-> 参考：schema_migrationsが壊れたら  
+schema_migrationsが壊れたら  
 http://wayohoo.com/mysql/how-to-deal-with-when-schema_migrations-broke-of-rails.html  
-> 参考：MySQLの違うバージョンをインストール  
+MySQLの違うバージョンをインストール  
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 
 ### 6. nodeインストール
