@@ -100,6 +100,7 @@ $ brew info mysql #インストール後のメッセージ確認
 $ brew link mysql #Warning: Already linked:が出たら下記を実行
 $ brew unlink mysql && brew link mysql
 
+# 初期設定
 $ unset TMPDIR
 $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 
