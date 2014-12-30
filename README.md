@@ -21,10 +21,8 @@
 <dt>1. <strong>Command Line Toolsインストール</strong></dt>
 <dd>
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
-
 > 参考  
 https://developer.apple.com/  
-
 </dd>
 </dl>
 
