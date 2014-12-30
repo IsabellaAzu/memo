@@ -1,6 +1,8 @@
 
-環境構築のメモ（201412）
-=======================
+まっさらからの環境構築のメモ（201412）
+  Githubのマークダウン記法は
+  http://codechord.com/2012/01/readme-markdown/
+=====================================
 
 【ハード】
 ----------
@@ -13,9 +15,12 @@
 ----------
 *	`MacOSX 10.10.1（14B25）`
 
-【インストール】
+【準備作業】
 ----------
-*	`Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1`
-　https://developer.apple.com/
+*	`公開鍵と秘密鍵作成`
+  
+*	`Command Line Tools`
+  Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1
+  https://developer.apple.com/
 *	`あああ`
 
