@@ -57,10 +57,15 @@ http://brew.sh/index_ja.html
 ```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
+$ brew -v
+$ brew update
 ```
 
 ### 4. rbenvインストール  
 
+```
+$ brew install rbenv ruby-build
+```
 
 ### 5. nodeインストール
 
