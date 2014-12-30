@@ -88,17 +88,20 @@ $ ruby -v
 brew install rbenv-gem-rehash
 ```
 
-MySQLをインストール  
+### 5. MySQLをインストール  
+参考  
+http://howtohp.com/2011/08/20/homebrew-mysql/
+```
+brew install mysql
+```
+
 ```
 ```
 
-```
-```
 
 
 
-
-### 5. nodeインストール
+### 6. nodeインストール
 
 > 参考  
 http://nodejs.org
