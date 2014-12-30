@@ -83,6 +83,11 @@ $ rbenv global 2.1.5
 $ ruby -v
 ```
 
+毎回rbenv rehashしなくて済ませる  
+```
+brew install rbenv-gem-rehash
+```
+
 MySQLをインストール  
 ```
 ```
