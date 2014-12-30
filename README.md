@@ -103,7 +103,8 @@ $ brew install mysql
 
 > 参考：ダウングレードしたい時  
 http://sue445.hatenablog.com/entry/2013/02/25/163538
-
+> 参考：Mac起動時にMySQLを起動、起動に失敗した時など
+http://qiita.com/maru_cc/items/2d8f558c83631354f54d
 
 ### 6. nodeインストール
 
