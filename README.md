@@ -11,7 +11,7 @@ http://codechord.com/2012/01/readme-markdown/
 *	`メモリ 4GB 1067 MHz DDR3`
 *	`グラフィクス NVIDIA GeForce 9400M 256 MB`
 
-【ソフト】
+【OS】
 ----------
 *	`MacOSX 10.10.1（14B25）`
 
