@@ -74,6 +74,25 @@ $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
+rubyをインストール  
+```
+$ rbenv install -l #インストール可能なバージョン一覧を表示
+$ rbenv install 2.1.5 #バージョンを指定してインストール
+$ rbenv rehash
+$ rbenv global 2.1.5
+$ ruby -v
+```
+
+MySQLをインストール  
+```
+```
+
+```
+```
+
+
+
+
 ### 5. nodeインストール
 
 > 参考  
