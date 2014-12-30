@@ -22,6 +22,6 @@ https://developer.apple.com/
 2. 公開鍵と秘密鍵作成  
 http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ターミナルで、$ ssh-keygen[Enter]、「The key fingerprint is:」が出てくるまで[Enter]  
-3. cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認  
-*	あああ
+cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認
+3. あああ
 
