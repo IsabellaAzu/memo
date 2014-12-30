@@ -67,6 +67,13 @@ $ brew update
 $ brew install rbenv ruby-build
 ```
 
+rbenvのパスを追加  
+```
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+$ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
+$ source ~/.bash_profile
+```
+
 ### 5. nodeインストール
 
 > 参考  
