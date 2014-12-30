@@ -109,10 +109,10 @@ MySQLの違うバージョンをインストール
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 
 > 補足  
-ER図作成　Workbench
-http://dev.mysql.com/downloads/workbench/
-Sequel Pro
-http://www.sequelpro.com
+ER図作成　Workbench  
+http://dev.mysql.com/downloads/workbench/  
+Sequel Pro  
+http://www.sequelpro.com  
 
 ### 6. nodeインストール
 
