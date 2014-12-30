@@ -3,6 +3,8 @@
 [Githubのマークダウン記法](http://codechord.com/2012/01/readme-markdown/ "") 
 
 
+
+
 ##Spec
 
 ###ハード
@@ -15,13 +17,17 @@
 *	MacOSX 10.10.1（14B25）
 
 
+
+
 ##準備作業
+
 
 ### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
 
 > 参考  
 https://developer.apple.com/  
+
 
 ### 2. 公開鍵と秘密鍵作成  
 
@@ -50,6 +56,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ ssh -T git@github.com
 ```
 
+
 ### 3. Homebrewインストール  
 
 > 参考  
@@ -62,6 +69,7 @@ $ brew -v
 $ brew update
 ```
 ※むやみにbrew upgradeするのは危険!?  
+
 
 ### 4. rbenvインストール  
 
@@ -89,6 +97,7 @@ $ ruby -v
 ```
 $ brew install rbenv-gem-rehash
 ```
+
 
 ### 5. MySQLをインストール  
 
@@ -133,6 +142,7 @@ http://dev.mysql.com/downloads/workbench/
 Sequel Pro  
 http://www.sequelpro.com  
 
+
 ### 6. 必要なgemのインストール
 
 ```
@@ -140,10 +150,12 @@ $ gem install bundler
 $ gem install rails
 ```
 
+
 ### 7. nodeインストール  
 
 > 参考  
 http://nodejs.org
+
 
 ### 8. その他インストール
 
