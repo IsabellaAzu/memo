@@ -147,7 +147,7 @@ http://nodejs.org
 
 ### 8. その他インストール
 
-imagemagick（要確認）  
+##### imagemagick（要確認）  
 ```
 $ brew install imagemagick  
 $ brew unlink imagemagick && brew link imagemagick
