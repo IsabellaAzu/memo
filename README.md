@@ -101,7 +101,7 @@ $ brew install mysql
 ```
 ```
 
-> 参考
+> 参考  
 ダウングレードしたい時  
 http://sue445.hatenablog.com/entry/2013/02/25/163538  
 Mac起動時にMySQLを起動、起動に失敗した時など  
