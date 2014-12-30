@@ -29,23 +29,23 @@ https://developer.apple.com/
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
 
-SSH 公開鍵の作成  
+#### SSH 公開鍵の作成  
 ```
 $ ssh-keygen
 ```
 ※「The key fingerprint is:」が出てくるまで[Enter]  
 
-公開鍵の確認  
+#### 公開鍵の確認  
 ```
 $ cat ~/.ssh/id_rsa.pub
 ```
 
-クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
+#### クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
 ```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-接続テスト  
+#### 接続テスト  
 ```
 $ ssh -T git@github.com
 ```
@@ -61,7 +61,6 @@ $ brew doctor
 $ brew -v
 $ brew update
 ```
-
 ※むやみにbrew upgradeするのは危険!?  
 
 ### 4. rbenvインストール  
@@ -70,14 +69,14 @@ $ brew update
 $ brew install rbenv ruby-build
 ```
 
-rbenvのパスを追加  
+#### rbenvのパスを追加  
 ```
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-rubyをインストール  
+#### rubyをインストール  
 ```
 $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install 2.1.5 #バージョンを指定してインストール
@@ -86,7 +85,7 @@ $ rbenv global 2.1.5
 $ ruby -v
 ```
 
-毎回rbenv rehashしなくて済ませる  
+#### 毎回rbenv rehashしなくて済ませる  
 ```
 $ brew install rbenv-gem-rehash
 ```
@@ -145,8 +144,7 @@ $ gem install rails
 
 > 参考  
 http://nodejs.org
-  
-  
+
   
   
 - - -
