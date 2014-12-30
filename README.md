@@ -18,7 +18,7 @@
 ----------
 1. Command Line Tools  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
-https://developer.apple.com/からダウンロード  
+https://developer.apple.com/  
 2. 公開鍵と秘密鍵作成  
 * http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 * http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
@@ -26,5 +26,5 @@ https://developer.apple.com/からダウンロード
 cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認  
 $ pbcopy < ~/.ssh/id_rsa.pubでクリップボードにコピーしてGithubのSSHKeysの設定ページに貼り付ける。  
 $ ssh -T git@github.comで接続テスト  
-3. あああ
+3. あああ  
 
