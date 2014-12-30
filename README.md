@@ -100,7 +100,8 @@ $ brew install mysql
 ```
 ```
 
-
+> 参考：ダウングレードしたい時  
+http://sue445.hatenablog.com/entry/2013/02/25/163538
 
 
 ### 6. nodeインストール
