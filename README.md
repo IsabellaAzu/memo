@@ -92,7 +92,8 @@ $ brew install rbenv-gem-rehash
 ### 5. MySQLをインストール  
 
 > 参考  
-http://howtohp.com/2011/08/20/homebrew-mysql/
+http://howtohp.com/2011/08/20/homebrew-mysql/  
+http://tsuchikazu.net/mac_rail_setup/  
 
 ```
 $ brew install mysql
@@ -135,4 +136,10 @@ http://www.sequelpro.com
 
 > 参考  
 http://nodejs.org
+
+
+- - -
+> 全体的に参考
+http://tsuchikazu.net/mac_rail_setup/
+https://gist.github.com/keifukuda/4535242
 
