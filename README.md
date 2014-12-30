@@ -16,7 +16,7 @@
 
 【準備作業】
 ----------
-1. Command Line Tools  
+1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
 https://developer.apple.com/  
 2. 公開鍵と秘密鍵作成  
@@ -26,5 +26,6 @@ https://developer.apple.com/
 $ cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認  
 $ pbcopy < ~/.ssh/id_rsa.pubでクリップボードにコピーしてGithubのSSHKeysの設定ページに貼り付ける。  
 $ ssh -T git@github.comで接続テスト  
-3. あああ  
+3. Homebrewインストール  
+4. rbenvインストール  
 
