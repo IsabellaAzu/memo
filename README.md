@@ -69,14 +69,14 @@ $ brew update
 $ brew install rbenv ruby-build
 ```
 
-#### rbenvのパスを追加  
+##### rbenvのパスを追加  
 ```
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-#### rubyをインストール  
+##### rubyをインストール  
 ```
 $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install 2.1.5 #バージョンを指定してインストール
@@ -85,7 +85,7 @@ $ rbenv global 2.1.5
 $ ruby -v
 ```
 
-#### 毎回rbenv rehashしなくて済ませる  
+##### 毎回rbenv rehashしなくて済ませる  
 ```
 $ brew install rbenv-gem-rehash
 ```
