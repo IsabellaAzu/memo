@@ -17,15 +17,12 @@
 
 ##準備作業
 
-1. _Command Line Toolsインストール_  
-1. __Command Line Toolsインストール__  
-1. ___Command Line Toolsインストール___  
-1. ____Command Line Toolsインストール____  
+1. **Command Line Toolsインストール**  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
 > 参考  
 https://developer.apple.com/  
 
-### 2. 公開鍵と秘密鍵作成  
+2. **公開鍵と秘密鍵作成**  
 > 参考  
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
@@ -51,7 +48,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ ssh -T git@github.com
 ```
 
-### 3. Homebrewインストール  
+3. **Homebrewインストール**  
 
 > 参考  
 http://brew.sh/index_ja.html  
@@ -65,7 +62,7 @@ $ brew update
 
 ※むやみにbrew upgradeするのは危険  
 
-### 4. rbenvインストール  
+4. **rbenvインストール**  
 
 ```
 $ brew install rbenv ruby-build
@@ -92,7 +89,7 @@ $ ruby -v
 $ brew install rbenv-gem-rehash
 ```
 
-### 5. MySQLをインストール  
+5. **MySQLをインストール**  
 
 > 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/  
@@ -135,7 +132,7 @@ http://dev.mysql.com/downloads/workbench/
 Sequel Pro  
 http://www.sequelpro.com  
 
-### 6. nodeインストール
+6. **nodeインストール**  
 
 > 参考  
 http://nodejs.org
