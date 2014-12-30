@@ -98,9 +98,6 @@ http://howtohp.com/2011/08/20/homebrew-mysql/
 $ brew install mysql
 ```
 
-```
-```
-
 > 参考  
 ダウングレードしたい時  
 http://sue445.hatenablog.com/entry/2013/02/25/163538  
@@ -110,6 +107,12 @@ schema_migrationsが壊れたら
 http://wayohoo.com/mysql/how-to-deal-with-when-schema_migrations-broke-of-rails.html  
 MySQLの違うバージョンをインストール  
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
+
+> 補足  
+ER図作成　Workbench
+http://dev.mysql.com/downloads/workbench/
+Sequel Pro
+http://www.sequelpro.com
 
 ### 6. nodeインストール
 
