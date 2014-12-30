@@ -1,7 +1,7 @@
 
 まっさらからの環境構築のメモ（201412）  
 =====================================
-[Githubのマークダウン記法][http://codechord.com/2012/01/readme-markdown/]
+[Githubのマークダウン記法](http://codechord.com/2012/01/readme-markdown/ "") 
 
 【ハード】
 ----------
