@@ -18,13 +18,15 @@
 ##準備作業
 
 <dl>
-  <dt>リンゴ</dt>
-  <dd> とても<strong>赤い</strong>フルーツ </dd>
+  <dt>1. <strong>Command Line Toolsインストール</strong></dt>
+  <dd>
+    Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1
+    > 参考  
+    https://developer.apple.com/  
+  </dd>
 </dl>
-1. <strong>Command Line Toolsインストール</strong>  
-Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
-> 参考  
-https://developer.apple.com/  
+
+   
 
 2. <strong>公開鍵と秘密鍵作成</strong>  
 > 参考  
