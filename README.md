@@ -103,8 +103,13 @@ $ brew unlink mysql && brew link mysql
 $ unset TMPDIR
 $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 
-$ mysql.server start # 手動起動  
-$ mysql.server stop # 手動停止
+# 起動
+# Mac起動時に自動起動
+$ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+# 手動起動、停止
+$ mysql.server start
+$ mysql.server stop
 ```
 
 > 参考  
