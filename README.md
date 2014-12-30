@@ -139,7 +139,7 @@ http://nodejs.org
 
 
 - - -
-> 全体的に参考
-http://tsuchikazu.net/mac_rail_setup/
-https://gist.github.com/keifukuda/4535242
+## > 全体的に参考  
+http://tsuchikazu.net/mac_rail_setup/  
+https://gist.github.com/keifukuda/4535242  
 
