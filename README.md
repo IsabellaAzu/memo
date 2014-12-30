@@ -85,14 +85,16 @@ $ ruby -v
 
 毎回rbenv rehashしなくて済ませる  
 ```
-brew install rbenv-gem-rehash
+$ brew install rbenv-gem-rehash
 ```
 
 ### 5. MySQLをインストール  
-参考  
+
+> 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/
+
 ```
-brew install mysql
+$ brew install mysql
 ```
 
 ```
