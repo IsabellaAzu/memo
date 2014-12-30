@@ -29,23 +29,23 @@ https://developer.apple.com/
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
 
-#### SSH 公開鍵の作成  
+##### SSH 公開鍵の作成  
 ```
 $ ssh-keygen
 ```
 ※「The key fingerprint is:」が出てくるまで[Enter]  
 
-#### 公開鍵の確認  
+##### 公開鍵の確認  
 ```
 $ cat ~/.ssh/id_rsa.pub
 ```
 
-#### クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
+##### クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
 ```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-#### 接続テスト  
+##### 接続テスト  
 ```
 $ ssh -T git@github.com
 ```
