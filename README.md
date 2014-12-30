@@ -25,17 +25,34 @@ https://developer.apple.com/
 参考  
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
+
 ```
-$ ssh-keygen[Enter]、「The key fingerprint is:」が出てくるまで[Enter]  
-$ cat ~/.ssh/id_rsa.pub[Enter]で公開鍵の確認  
-$ pbcopy < ~/.ssh/id_rsa.pubでクリップボードにコピーしてGithubのSSHKeysの設定ページに貼り付ける。  
-$ ssh -T git@github.comで接続テスト  
+$ ssh-keygen
+```
+※「The key fingerprint is:」が出てくるまで[Enter]  
+
+>公開鍵の確認  
+```
+$ cat ~/.ssh/id_rsa.pub
+```
+
+>クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
+```
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
+
+> 接続テスト  
+```
+$ ssh -T git@github.com
 ```
 
 ### 3. Homebrewインストール  
+参考  
 http://brew.sh/index_ja.html  
+```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
+```
 ### 4. rbenvインストール  
 ### 5. nodeインストール
 http://nodejs.org
