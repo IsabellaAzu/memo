@@ -27,7 +27,6 @@ https://developer.apple.com/
 ・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
 
-
 SSH 公開鍵の作成  
 ```
 $ ssh-keygen
@@ -60,6 +59,8 @@ $ brew doctor
 $ brew -v
 $ brew update
 ```
+
+※むやみにbrew upgradeするのは危険  
 
 ### 4. rbenvインストール  
 
