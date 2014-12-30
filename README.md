@@ -18,8 +18,8 @@
 ----------
 *	公開鍵と秘密鍵作成
   
-*	Command Line Tools
-  Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1
-  https://developer.apple.com/
+*	Command Line Tools  
+  Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1   
+  https://developer.apple.com/  
 *	あああ
 
