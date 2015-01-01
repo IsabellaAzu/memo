@@ -26,6 +26,7 @@ Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1
 
 > 参考  
 https://developer.apple.com/  
+http://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa  
 
 
 ### 2. 公開鍵と秘密鍵作成  
