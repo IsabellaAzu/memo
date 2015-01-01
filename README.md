@@ -24,6 +24,7 @@
 
 ### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
+※この時gitも一緒にインストールされる
 
 > 参考  
 https://developer.apple.com/  
