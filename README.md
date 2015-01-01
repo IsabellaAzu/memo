@@ -84,7 +84,7 @@ $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-##### rubyをインストール  
+##### rubyをインストール v2.1.5  
 ```
 $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install 2.1.5 #バージョンを指定してインストール
