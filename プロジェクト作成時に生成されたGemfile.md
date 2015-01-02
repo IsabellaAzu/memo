@@ -1,7 +1,5 @@
 
-## Gemfile
-
-### 1. プロジェクト作成時に生成された状態
+## プロジェクト作成時に生成されたGemfile
 
 ```
 source 'https://rubygems.org'
