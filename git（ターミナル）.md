@@ -41,7 +41,7 @@ $ git push -u origin master
 
 ### 1. git pushがrejectされたときの対応方法
 
-i[](http://i.gyazo.com/e7576c2403a18becb2665ecb6bca21c8.png)
+![](http://i.gyazo.com/e7576c2403a18becb2665ecb6bca21c8.png)
 
 > 参考  
 https://www.softel.co.jp/blogs/tech/archives/3569
