@@ -1,10 +1,11 @@
 
 ## ターミナルでgitを使う方法
-> 参考
-http://massiro.hateblo.jp/entry/2014/04/24/190637
+> 参考  
+http://massiro.hateblo.jp/entry/2014/04/24/190637  
+
 
 ### 1. 初期化
-コミットしたいフォルダにcdで移動して、
+コミットしたいフォルダにcdで移動して、  
 ```
 $ git init
 ```
@@ -33,6 +34,18 @@ $ git commit -m "コミットコメント"
 ```
 $ git push -u origin master
 ```
+
+- - -
+
+## あるある
+
+### 1. git pushがrejectされたときの対応方法
+
+i[](http://i.gyazo.com/e7576c2403a18becb2665ecb6bca21c8.png)
+
+> 参考  
+https://www.softel.co.jp/blogs/tech/archives/3569
+上記の画像の様なerrorメッセージが出たら差分がありますね
 
 
 
