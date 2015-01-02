@@ -1,10 +1,8 @@
 
-# Ruby on Railsでなんか作っていきます。
-
-> 参考
-http://dotinstall.com/lessons/basic_rails_v2/24901
 
 ##プロジェクト作成と準備
+> 参考
+http://dotinstall.com/lessons/basic_rails_v2/24901
 
 ### 1. プロジェクト作成
 ```
