@@ -43,9 +43,9 @@ $ git push -u origin master
 
 ![](http://i.gyazo.com/e7576c2403a18becb2665ecb6bca21c8.png)
 
-> 参考  
+> 参考：上記の画像の様なerrorメッセージが出たら差分があるので下記をcheck！  
 https://www.softel.co.jp/blogs/tech/archives/3569  
-上記の画像の様なerrorメッセージが出たら差分がありますね  
+
 
 
 
