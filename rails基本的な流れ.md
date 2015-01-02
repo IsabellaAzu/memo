@@ -11,6 +11,7 @@ $ rails new プロジェクト名 -d mysql # MySQLで
 $ cd プロジェクト名
 $ rails s # rails serverの省略形
 $ mysql.server start
+$ rake db:create:all
 ```
 
 ### 2. 便利なgemをGemfileに追記（Pry等）
@@ -63,7 +64,6 @@ $ rails g model Project title # rails generate model Project title:stringの省�
 ### 2. データベース作成(development/test/productionのすべてを作成)  
 database.ymlの情報を元にテーブルを作成  
 ```
-$ rake db:create:all
 $ rake db:migrate
 
 $ rails db # 今使っているDBを確認
