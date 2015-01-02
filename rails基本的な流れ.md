@@ -153,7 +153,7 @@ end
 例）  
 <ul>
   <% @projects.each do |project| %>
-  <li><%= project.title %><li>
+  <li><%= project.title %></li>
   <% end %>
 </ul>
 ```
