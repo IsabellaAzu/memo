@@ -8,7 +8,7 @@
 ###ハード
 *	MacBook (13-inch, Late 2009)
 *	プロセッサ 2.26 GHz Intel Core 2 Duo
-*	メモリ 4GB 1067 MHz DDR3
+*	メモリ 4GB 1067 MHz DDR3（8GBまでいけるかも）
 *	グラフィクス NVIDIA GeForce 9400M 256 MB
 
 ###OS
