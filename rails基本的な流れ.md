@@ -261,7 +261,7 @@ end
 編集できるようにします
 
 > index  
-<a href="#a2_1">2_1. </a>  
+<a href="#a2_1">2_1. projectを追加できるようにする</a>  
 <a href="#a2_2">2_2. </a>  
 <a href="#a2_3">2_3. </a>  
 <a href="#a2_4">2_4. </a>  
@@ -287,10 +287,68 @@ edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編�
 
 <a id="a2_1"></a>
 ### 2_1. projectを追加できるようにする
+
+
+##### 新規プロジェクト作成のリンクをindexに追加
 ```html
 # /views/projects/index.html.erb
-<%= link_to "新規作成", new_project_path %>
+<%= link_to "新規プロジェクト作成", new_project_path %>
 ```
+
+
+##### 新規作成ページのアクション設定
+```ruby
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+end
+
+　↓
+
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+  def new
+    @project = Project.new # newする
+  end
+
+end
+```
+
+##### 新規作成ページの用意
+```html
+# /views/projects/new.html.erb
+<%= form_for @project do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 - - -
