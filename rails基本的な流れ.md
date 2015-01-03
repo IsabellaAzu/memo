@@ -330,6 +330,7 @@ end
 ```
 
 ##### 新規作成ページの用意
+newした@projectにtitleのデータを入力してsubmitする
 ```html
 # /views/projects/new.html.erb
 <%= form_for @project do |f| %>
@@ -370,20 +371,20 @@ class ProjectsController < ApplicationController
     @project = Project.new # newする
   end
 
-	def create
-		@project = Project.new(project_params) # project_paramsはformから渡されたもの
-		@project.save
-		redirect_to projects_path # projects_pathにリダイレクト
-	end
+  def create
+    @project = Project.new(project_params) # project_paramsはformから渡されたもの
+    @project.save
+    redirect_to projects_path # projects_pathにリダイレクト
+  end
 
+  private
 
-	private
+    # セキュリティ
+    def project_params
+      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
+      params[:project].permit(:title)
+    end
 
-		# セキュリティ
-		def project_params
-			# フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
-			params[:project].permit(:title)
-		end
 
 end
 ```
