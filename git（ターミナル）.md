@@ -46,6 +46,7 @@ $ git push -u origin master
 > 参考：上記の画像の様なerrorメッセージが出たら差分があるので下記をcheck！  
 https://www.softel.co.jp/blogs/tech/archives/3569  
 
-
-
+### 2. 
+> 参考：.gitigone指定、指定前にコミットしてしまった場合  
+http://www.omakase.org/misc/gitignore.html
 
