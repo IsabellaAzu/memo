@@ -186,7 +186,7 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
 （絶賛編集中！）   
 
 
-
+・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
 <a id="ax1"></a>
 ### その他
