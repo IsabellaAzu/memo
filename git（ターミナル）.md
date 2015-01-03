@@ -64,7 +64,7 @@ $ git push # -u origin masterは初回のみ
 > 参考：上記の画像の様なerrorメッセージが出たら差分があるので下記をcheck！  
 https://www.softel.co.jp/blogs/tech/archives/3569  
 
-### 指定前にコミットしてしまった場合 
+### ignore指定前にコミットしてしまった場合 
 > 参考  
 http://www.omakase.org/misc/gitignore.html
 
