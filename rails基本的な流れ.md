@@ -219,7 +219,11 @@ class ProjectsController < ApplicationController
 end
 ```
 
-
+##### 詳細ページ作成
+```html
+# /views/projects/show.html.erb
+<%= @project.title %>
+```
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
