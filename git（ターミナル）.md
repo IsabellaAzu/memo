@@ -26,7 +26,7 @@ $ git remote add origin https://github.com/username/repositori.git
 
 - - -
 
-### 基本的な流れ
+### 基本的な作業
 
 ##### clone
 ```
