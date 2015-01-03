@@ -339,8 +339,54 @@ end
 <% end %>
 ```
 
+##### 新規作成のアクションを用意
+
+```ruby
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+end
+
+　↓
+
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+  def new
+    @project = Project.new # newする
+  end
+
+	def create
+		@project = Project.new(project_params) # project_paramsはformから渡されたもの
+		@project.save
+		redirect_to projects_path # projects_pathにリダイレクト
+	end
 
 
+	private
+
+		# セキュリティ
+		def project_params
+			# フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+			params[:project].permit(:title)
+		end
+
+end
+```
 
 
 
