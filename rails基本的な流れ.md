@@ -272,10 +272,24 @@ end
 <a href="#ax2_1">その他 </a>  
 <a href="#ax2_2">その他 </a>  
 
+> rake routesの結果  
+```
+      Prefix Verb   URI Pattern                  Controller#Action
+    projects GET    /projects(.:format)          projects#index    # project一覧取得
+             POST   /projects(.:format)          projects#create   # project新規作成
+ new_project GET    /projects/new(.:format)      projects#new      # project新規作成
+edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編集
+     project GET    /projects/:id(.:format)      projects#show     # project閲覧
+             PATCH  /projects/:id(.:format)      projects#update   # project更新
+             PUT    /projects/:id(.:format)      projects#update   # project更新
+             DELETE /projects/:id(.:format)      projects#destroy  # project削除
+```
 
 <a id="a2_1"></a>
-### 2_1. 
-```
+### 2_1. projectを追加できるようにする
+```html
+# /views/projects/index.html.erb
+<%= link_to "新規作成", new_project_path %>
 ```
 
 
