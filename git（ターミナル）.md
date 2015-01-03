@@ -70,6 +70,15 @@ http://www.omakase.org/misc/gitignore.html
 
 ### rebase
 > 参考  
-http://liginc.co.jp/web/tool/79390
+http://liginc.co.jp/web/tool/79390  
+
+
+
+
+### 他にも
+> 参考　
+http://keisuke69.hatenablog.jp/entry/2013/12/16/130110  
+
+
 
 
