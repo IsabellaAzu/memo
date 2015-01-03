@@ -240,6 +240,7 @@ http://railsgirls.jp/heroku/
 http://sqale.jp/  
 heroku  
 https://www.heroku.com/  
+http://blog.mah-lab.com/2013/05/16/heroku-commons-16/  
 
 #### 練習するとしたら  
 Rails newして、scaffoldしたものをリリースする練習  
