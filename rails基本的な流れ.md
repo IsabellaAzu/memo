@@ -47,9 +47,9 @@ $ bundle install
 <a href="#a5">5. controllerにactionを作成</a>  
 <a href="#a6">6. viewを作成</a>  
 <a href="#a7">7. 再びrouting設定</a>  
-<a href="#a8">8. 画像、css、javascriptの参照場所</a>  
 <a href="#a9">9. 詳細ページ作成</a>  
 <a href="#ax1">その他 共通テンプレの編集</a>  
+<a href="#ax2">その他  画像、css、javascriptの参照場所</a>  
 
 
 <a id="a1"></a>
@@ -180,17 +180,13 @@ root 'projects#index'
 
 
 <a id="a8"></a>
-### 8. 画像、css、javascriptの参照場所  
-/app/assets/以下の  
-* images
-* javascripts
-* stylesheets
-
-
-<a id="a9"></a>
-### 9. 詳細ページ作成  
+### 8. 詳細ページ作成  
 > 参考
 http://dotinstall.com/lessons/basic_rails_v2/24911
+
+（絶賛編集中！）   
+
+
 
 
 <a id="ax1"></a>
@@ -208,7 +204,13 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
 ※link_toの「projects_path」はrake routesした時に出力される「Prefix」に「_path」を連結したもの
 
 
-（絶賛編集中！）   
+<a id="ax2"></a>
+##### 画像、css、javascriptの参照場所  
+/app/assets/以下の  
+* images
+* javascripts
+* stylesheets
+
 
 - - -
 
