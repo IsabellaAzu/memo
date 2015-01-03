@@ -183,7 +183,16 @@ root 'projects#index'
 > 参考
 http://dotinstall.com/lessons/basic_rails_v2/24911
 
-（絶賛編集中！）   
+##### indexに詳細ページへのリンクを追加
+```html
+# /views/projects/index.html.erb
+<ul>
+  <% @projects.each do |project| %>
+  <li><%= link_to project.title, project_path(project.id) %></li>
+  <% end %>
+</ul>
+```
+
 
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
