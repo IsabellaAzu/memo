@@ -196,7 +196,7 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
 <%= yield %>に表示されている
 
 ##### ヘルパー
-```
+```ruby
 <%= image_tag "hoge.png" %>
 <%= link_to "HOME", projects_path %>
 ```
