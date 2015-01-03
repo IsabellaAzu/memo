@@ -19,7 +19,7 @@ $ git config user.name "指定したい名前"
 $ git config user.email "指定したいメールアドレス"
 ```
 
-##### リモートリポジトリの指定
+##### リモートリポジトリの指定（どこにコミットするか）
 ```
 $ git remote add origin https://github.com/username/repositori.git
 ```
