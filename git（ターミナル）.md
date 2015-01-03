@@ -1,7 +1,7 @@
 
 ## ターミナルでgitを使う方法
 > 参考  
-http://massiro.hateblo.jp/entry/2014/04/24/190637  
+http://sourceforge.jp/magazine/09/03/16/0831212/3  
 
 
 ### 初期設定
