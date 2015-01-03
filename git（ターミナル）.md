@@ -4,33 +4,41 @@
 http://massiro.hateblo.jp/entry/2014/04/24/190637  
 
 
-### 1. 初期化
-コミットしたいフォルダにcdで移動して、  
+### 初期設定
+
+##### 1. 初期化
 ```
+# git共通設定
+$ git config --global user.name "指定したい名前"
+$ git config --global user.email "指定したいメールアドレス"
+
+# フォルダ毎の設定：コミットしたいフォルダで  
 $ git init
-```
+$ git config user.name "指定したい名前"
+$ git config user.email "指定したいメールアドレス"
 
-
-### 2. リモートリポジトリの指定
-```
+# リモートリポジトリの指定
 $ git remote add origin https://github.com/username/repositori.git
 ```
 
+- - -
 
-### 3. ファイルをコミットするリストに追加
+### 基本的な流れ
+
+##### 1. ファイルをコミットするリストに追加
 ```
 $ git add .
 $ git status # コミットしたいファイルが追加されてるか確認
 ```
 
 
-### 4. コミット
+### 2. コミット
 ```
 $ git commit -m "コミットコメント"
 ```
 
 
-### 5. リモートリポジトリにプッシュ
+### 3. リモートリポジトリにプッシュ
 ```
 $ git push -u origin master
 ```
