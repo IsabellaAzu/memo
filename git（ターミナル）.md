@@ -6,7 +6,7 @@ http://massiro.hateblo.jp/entry/2014/04/24/190637
 
 ### 初期設定
 
-##### git共通設定
+##### コミットするユーザーの設定
 ```
 $ git config --global user.name "指定したい名前"
 $ git config --global user.email "指定したいメールアドレス"
@@ -28,20 +28,29 @@ $ git remote add origin https://github.com/username/repositori.git
 
 ### 基本的な流れ
 
-##### 1. ファイルをコミットするリストに追加
+##### clone
+```
+$ git clone https://github.com/username/repositori.git
+```
+
+##### checkout
+```
+```
+
+##### ファイルをコミットするリストに追加
 ```
 $ git add .
 $ git status # コミットしたいファイルが追加されてるか確認
 ```
 
 
-### 2. コミット
+##### コミット
 ```
 $ git commit -m "コミットコメント"
 ```
 
 
-### 3. リモートリポジトリにプッシュ
+##### リモートリポジトリにプッシュ
 ```
 $ git push -u origin master
 ```
