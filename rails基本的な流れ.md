@@ -128,12 +128,12 @@ projects controllerのindex Actionに記述しなさい、という意味
 projects Controllerにindex Actionを作成(Rubyの関数を書いていく)  
   
 /app/controllers/projects_controller.rb  
-```
+```ruby
 class ProjectsController < ApplicationController
 end
 ```
 　↓
-```
+```ruby
 class ProjectsController < ApplicationController
 
   def index
@@ -149,8 +149,7 @@ end
 ### 6. viewを作成
 /app/views/の中に、Controller名のフォルダの中に、アクション名のファイルを「.html.erb」形式で作成する  
 → /app/views/projects/index.html.erb  
-```
-例）  
+```ruby
 <ul>
   <% @projects.each do |project| %>
   <li><%= project.title %></li>
@@ -159,7 +158,7 @@ end
 ```
 
 > 参考：Ruby制御構造
-```
+```ruby
   オブジェクト.each do |変数|  
     変数  
     実行する処理など  
