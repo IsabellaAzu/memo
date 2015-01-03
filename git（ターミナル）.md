@@ -6,18 +6,21 @@ http://massiro.hateblo.jp/entry/2014/04/24/190637
 
 ### 初期設定
 
-##### 1. 初期化
+##### git共通設定
 ```
-# git共通設定
 $ git config --global user.name "指定したい名前"
 $ git config --global user.email "指定したいメールアドレス"
+```
 
-# フォルダ毎の設定：コミットしたいフォルダで  
+##### フォルダ毎の設定：コミットしたいフォルダで  
+```
 $ git init
 $ git config user.name "指定したい名前"
 $ git config user.email "指定したいメールアドレス"
+```
 
-# リモートリポジトリの指定
+##### リモートリポジトリの指定
+```
 $ git remote add origin https://github.com/username/repositori.git
 ```
 
