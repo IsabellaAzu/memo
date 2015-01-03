@@ -248,5 +248,6 @@ Rails newして、scaffoldしたものをリリースする練習
 <span style="color:pink;">超ハマるらしい！？</span>  
 assets:precompile  
 CSSやJSはこれやらないと動かない  
-
+> 参考
+https://rails-assets.org/
 
