@@ -149,7 +149,7 @@ end
 ### 6. viewを作成
 /app/views/の中に、Controller名のフォルダの中に、アクション名のファイルを「.html.erb」形式で作成する  
 → /app/views/projects/index.html.erb  
-```ruby
+```html
 <ul>
   <% @projects.each do |project| %>
   <li><%= project.title %></li>
@@ -158,7 +158,7 @@ end
 ```
 
 > 参考：Ruby制御構造
-```ruby
+```
   オブジェクト.each do |変数|  
     変数  
     実行する処理など  
@@ -196,7 +196,7 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
 <%= yield %>に表示されている
 
 ##### ヘルパー
-```ruby
+```
 <%= image_tag "hoge.png" %>
 <%= link_to "HOME", projects_path %>
 ```
