@@ -33,11 +33,7 @@ $ git remote add origin https://github.com/username/repositori.git
 $ git clone https://github.com/username/repositori.git
 ```
 
-##### checkout
-```
-```
-
-##### ファイルをコミットするリストに追加
+##### 編集したファイルをコミットリストに追加
 ```
 $ git add .
 $ git status # コミットしたいファイルが追加されてるか確認
