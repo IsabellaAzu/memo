@@ -49,6 +49,7 @@ $ git commit -m "コミットコメント"
 ##### リモートリポジトリにプッシュ
 ```
 $ git push -u origin master
+$ git push # -u origin masterは初回のみ
 ```
 
 - - -
