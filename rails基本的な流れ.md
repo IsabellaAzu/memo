@@ -47,7 +47,7 @@ $ bundle install
 <a href="#a5">5. controllerにactionを作成</a>  
 <a href="#a6">6. viewを作成</a>  
 <a href="#a7">7. 再びrouting設定</a>  
-<a href="#a9">9. 詳細ページ作成</a>  
+<a href="#a8">8. 詳細ページ作成</a>  
 <a href="#ax1">その他 共通テンプレの編集</a>  
 <a href="#ax2">その他  画像、css、javascriptの参照場所</a>  
 
