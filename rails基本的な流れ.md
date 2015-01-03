@@ -36,32 +36,33 @@ $ bundle install
 
 - - -
 
-##基本的な流れ
+##基本的な流れ(1)
 例「Project」という名のプロジェクトを作成していきます。  
+データベースのデータを表示します  
 
 > index  
-<a href="#a1">1. model作成</a>  
-<a href="#a2">2. データベース作成</a>  
-<a href="#a3">3. controller作成</a>  
-<a href="#a4">4. routing設定</a>  
-<a href="#a5">5. controllerにactionを作成</a>  
-<a href="#a6">6. viewを作成</a>  
-<a href="#a7">7. 再びrouting設定</a>  
-<a href="#a8">8. 詳細ページ作成</a>  
-<a href="#ax1">その他 共通テンプレの編集</a>  
-<a href="#ax2">その他  画像、css、javascriptの参照場所</a>  
+<a href="#a1_1">1_1. model作成</a>  
+<a href="#a1_2">1_2. データベース作成</a>  
+<a href="#a1_3">1_3. controller作成</a>  
+<a href="#a1_4">1_4. routing設定</a>  
+<a href="#a1_5">1_5. controllerにactionを作成</a>  
+<a href="#a1_6">1_6. viewを作成</a>  
+<a href="#a1_7">1_7. 再びrouting設定</a>  
+<a href="#a1_8">1_8. 詳細ページ作成</a>  
+<a href="#ax1_1">その他 共通テンプレの編集</a>  
+<a href="#ax1_2">その他  画像、css、javascriptの参照場所</a>  
 
 
-<a id="a1"></a>
-### 1. model作成
+<a id="a1_1"></a>
+### 1_1. model作成
 ```
 # model名は最初大文字の単数形
 $ rails g model Project title # rails generate model Project title:stringの省略形
 ```
 
 
-<a id="a2"></a>
-### 2. データベース作成(development/test/productionのすべてを作成)  
+<a id="a1_2"></a>
+### 1_2. データベース作成(development/test/productionのすべてを作成)  
 database.ymlの情報を元にテーブルを作成  
 ```
 $ rake db:migrate
@@ -86,8 +87,8 @@ Project.all # Projectを全部見ることができる
 http://ruby-rails.hatenadiary.com/entry/20141024/1414081224  
 
 
-<a id="a3"></a>
-### 3. controller作成  
+<a id="a1_3"></a>
+### 1_3. controller作成  
 ```
 # controller名は最初大文字の複数形
 $ rails g controller Projects
@@ -95,8 +96,8 @@ $ rails g controller Projects
 controllerのファイルとviewのファイルが生成される
 
 
-<a id="a4"></a>
-### 4. routing設定  
+<a id="a1_4"></a>
+### 1_4. routing設定  
 /config/routes.rb
 ```
 resources :projects # projectに関するURIの様なものを自動生成
@@ -123,8 +124,8 @@ GETの方式で/projectsで一覧を出すためのロジックは、
 projects controllerのindex Actionに記述しなさい、という意味  
 
 
-<a id="a5"></a>
-### 5. controllerにactionを作成  
+<a id="a1_5"></a>
+### 1_5. controllerにactionを作成  
 projects Controllerにindex Actionを作成(Rubyの関数を書いていく)  
   
 ```ruby
@@ -145,8 +146,8 @@ end
 ```
 
 
-<a id="a6"></a>
-### 6. viewを作成
+<a id="a1_6"></a>
+### 1_6. viewを作成
 /app/views/の中に、Controller名のフォルダの中に、アクション名のファイルを「.html.erb」形式で作成する  
 → /app/views/projects/index.html.erb  
 ```html
@@ -169,8 +170,8 @@ end
 ```
 
 
-<a id="a7"></a>
-### 7. 再びrouting設定  
+<a id="a1_7"></a>
+### 1_7. 再びrouting設定  
 一覧をrootページにしたい  
 /config/routes.rbに「root コントローラー名#アクション名」
 ```
@@ -178,8 +179,8 @@ root 'projects#index'
 ```
 
 
-<a id="a8"></a>
-### 8. 詳細ページ作成  
+<a id="a1_8"></a>
+### 1_8. 詳細ページ作成  
 > 参考
 http://dotinstall.com/lessons/basic_rails_v2/24911
 
@@ -227,7 +228,7 @@ end
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
-<a id="ax1"></a>
+<a id="ax1_1"></a>
 ### その他
 
 ##### 共通テンプレの編集  
@@ -242,12 +243,40 @@ end
 ※link_toの「projects_path」はrake routesした時に出力される「Prefix」に「_path」を連結したもの
 
 
-<a id="ax2"></a>
+<a id="ax1_2"></a>
 ##### 画像、css、javascriptの参照場所  
 /app/assets/以下の  
 * images
 * javascripts
 * stylesheets
+
+
+
+
+
+
+- - -
+
+##基本的な流れ(2)
+編集できるようにします
+
+> index  
+<a href="#a2_1">2_1. </a>  
+<a href="#a2_2">2_2. </a>  
+<a href="#a2_3">2_3. </a>  
+<a href="#a2_4">2_4. </a>  
+<a href="#a2_5">2_5. </a>  
+<a href="#a2_6">2_6. </a>  
+<a href="#a2_7">2_7. </a>  
+<a href="#a2_8">2_8. </a>  
+<a href="#ax2_1">その他 </a>  
+<a href="#ax2_2">その他 </a>  
+
+
+<a id="a2_1"></a>
+### 2_1. 
+```
+```
 
 
 - - -
