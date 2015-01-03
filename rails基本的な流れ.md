@@ -353,6 +353,10 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
+  def new
+    @project = Project.new
+  end
+
 end
 
 　↓
@@ -368,7 +372,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = Project.new # newする
+    @project = Project.new
   end
 
   def create
