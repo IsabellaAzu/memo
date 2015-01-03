@@ -235,11 +235,11 @@ Heroku に Rails アプリをアップ
 http://railsgirls.jp/heroku/  
 
 #### Rails使えるサーバーどこ？  
-> 参考
+> 参考  
 アプリケーション専用サーバ  
 http://sqale.jp/  
 heroku  
-https://www.heroku.com/
+https://www.heroku.com/  
 
 #### 練習するとしたら  
 Rails newして、scaffoldしたものをリリースする練習  
@@ -248,6 +248,6 @@ Rails newして、scaffoldしたものをリリースする練習
 <span style="color:pink;">超ハマるらしい！？</span>  
 assets:precompile  
 CSSやJSはこれやらないと動かない  
-> 参考
-https://rails-assets.org/
-
+> 参考  
+http://qiita.com/funnythingz/items/7bf4271ff8731347eaa8  
+https://rails-assets.org/  
