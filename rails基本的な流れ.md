@@ -127,18 +127,18 @@ projects controllerのindex Actionに記述しなさい、という意味
 ### 5. controllerにactionを作成  
 projects Controllerにindex Actionを作成(Rubyの関数を書いていく)  
   
-/app/controllers/projects_controller.rb  
 ```ruby
+# /app/controllers/projects_controller.rb  
 class ProjectsController < ApplicationController
 end
-```
+
 　↓
-```ruby
+
 class ProjectsController < ApplicationController
 
   def index
     # @マークを付けた変数はviewの中でそのまま使える
-    @projects = Project.all # Projectの全フィールドを持ってくる
+    @projects = Project.all # Projectの全情報を持ってくる
   end
 
 end
@@ -191,6 +191,32 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
   <li><%= link_to project.title, project_path(project.id) %></li>
   <% end %>
 </ul>
+```
+
+##### 詳細ページのアクションを追加
+```ruby
+# /app/controllers/projects_controller.rb  
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+end
+
+　↓
+
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id]) # Projectの中から１件だけ情報を持ってくる
+  end
+
+end
 ```
 
 
