@@ -673,6 +673,7 @@ $ rake routes
 ##### taskのcontrollerを作成（create）
 projectsのcontrollerからコピペして必要な部分を変更
 ```Ruby
+# /app/controllers/tasks_controller.rb
 class TasksController < ApplicationController
 end
 
@@ -767,6 +768,22 @@ $(function(){
   # 特定の命令を、特定のアクションに結びつけたい
   post 'projects/:project_id/tasks/:id/toggle' => 'tasks#toggle' #tasksコントローラのtoggleアクション
 ```
+
+##### controllerに定義
+```Ruby
+# /app/controllers/tasks_controller.rbに追記
+  def toggle
+    render nothing: true # このアクションは画面が切り替わる訳ではないので、テンプレート不要の設定をする
+    @task = Task.find(params[:id])
+    @task.done = !@task.done
+    @task.save
+  end
+```
+
+
+
+
+
 
 
 
