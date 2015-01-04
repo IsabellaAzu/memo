@@ -643,7 +643,7 @@ end
 Rails.application.routes.draw do
 
   resources :projects do
-    resources :tasks
+    resources :tasks, only: [:create, :destroy]
   end
 
   root 'projects#index'
@@ -653,7 +653,7 @@ Rails.application.routes.draw do
 end
 ```
 
-
+routing反映  
 ```
 $ rake routes
 ```
