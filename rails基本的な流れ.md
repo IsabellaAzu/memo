@@ -446,7 +446,8 @@ end
 
 ```
 
-##### バリデーションエラーを表示（View）
+##### バリデーションエラーのメッセージを表示（View）
+
 バリデーションにエラーがある場合、@project.errorsの中に入る
 
 ```html
@@ -464,8 +465,30 @@ end
 #<ActiveModel::Errors:0x007fe7e948c0f0 @base=#<Project id: nil, title: "", created_at: nil, updated_at: nil>, @messages={:title=>["can't be blank"]}>
 ```
 
+@messages={:title=>["can't be blank"]}の中身を表示（デフォルトのエラーメッセージ）  
+```html
+# /views/projects/new.html.erb
+<%= form_for @project do |f| %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <% if @project.errors.any? %>
+    <p><%= @project.errors.messages[:title][0] %></p>
+  <% end %>
+  <p><%= f.submit %></p>
+<% end %>
+```
 
-
+デフォルトのエラーメッセージを変更する（Modelに定義）  
+（追加で入力文字数のチェックも）
+```Ruby
+class Project < ActiveRecord::Base
+  validates :title, presence: true
+end
+　↓
+class Project < ActiveRecord::Base
+  validates :title, presence: {message: "入力必須項目です"},
+  length: {minimum: 3, message: "短過ぎ"}
+end
+```
 
 
 
