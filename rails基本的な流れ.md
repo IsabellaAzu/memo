@@ -762,6 +762,11 @@ $(function(){
 ```
 
 ##### routingの設定
+```Ruby
+# /config/routes.rbに追記
+  # 特定の命令を、特定のアクションに結びつけたい
+  post 'projects/:project_id/tasks/:id/toggle' => 'tasks#toggle' #tasksコントローラのtoggleアクション
+```
 
 
 
