@@ -258,7 +258,9 @@ end
 - - -
 
 ##基本的な流れ(2)
-編集できるようにします
+> CRUDできるようにします
+http://ja.wikipedia.org/wiki/CRUD
+※Readは基本的な流れ(1)に詳細ページ機能
 
 > index  
 <a href="#a2_1">2_1. projectを新規作成</a>  
@@ -292,7 +294,7 @@ edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編�
 ##### 新規プロジェクト作成のリンクをindexに追加
 ```html
 # /views/projects/index.html.erb
-<%= link_to "新規プロジェクト作成", new_project_path %>
+<p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 ```
 
 
@@ -500,8 +502,8 @@ end
 <ul>
   <% @projects.each do |project| %>
   <li>
+    [<%= link_to "編集", edit_project_path %>]
     <%= link_to project.title, project_path(project.id) %>
-    <%= link_to "編集", edit_project_path %>
   </li>
   <% end %>
 </ul>
@@ -532,10 +534,22 @@ end
 
 
 <a id="a2_4"></a>
-### 2_4. 
+### 2_4. 削除
 
-##### indexに編集ページへのリンクを追加（View）
 
+##### indexに削除機能のリンクを追加（View）
+```html
+# /views/projects/index.html.erb
+<ul>
+  <% @projects.each do |project| %>
+  <li>
+    [<%= link_to "編集", edit_project_path %>]
+    [<%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %>]
+    <%= link_to project.title, project_path(project.id) %>
+  </li>
+  <% end %>
+</ul>
+```
 
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
