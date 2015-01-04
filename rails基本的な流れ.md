@@ -274,7 +274,6 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_7">2_7. タスクにチェックボックを付ける</a>  
 <a href="#a2_8">2_8. タスクの数を表示</a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
-<a href="#ax2_2">その他 </a>  
 
 ・・・・・・・・・・
 
@@ -796,11 +795,10 @@ $(function(){
   scope :unfinished, -> {where(done: false) }
 ```
 
-
-
-
-
-（絶賛、編集中）
+```html
+# /app/views/projects/show.html.erb  
+<%= project.tasks.unfinished.count %>
+```
 
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
@@ -990,6 +988,7 @@ end
 * 「:」が前に付いたり、そうでなかったり
 * 大文字だったり小文字だったり、複数形だったり単数形だったり
 * 「,」で区切る、と思いきやそうでなかったり（hasmany :tasks）
+* projectとtaskがリレーショナルになって、引数、やドットシンタックスや:titleなど慣れないと値の与え方がよくわかっていない。
 
 - - -
 
