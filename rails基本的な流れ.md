@@ -262,7 +262,7 @@ end
 
 > index  
 <a href="#a2_1">2_1. projectを新規作成で追加できるようにする</a>  
-<a href="#a2_2">2_2. </a>  
+<a href="#a2_2">2_2. Validation機能の追加</a>  
 <a href="#a2_3">2_3. </a>  
 <a href="#a2_4">2_4. </a>  
 <a href="#a2_5">2_5. </a>  
@@ -334,9 +334,8 @@ newした@projectにtitleのデータを入力してsubmitする
 ```html
 # /views/projects/new.html.erb
 <%= form_for @project do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.submit %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <p><%= f.submit %></p>
 <% end %>
 ```
 
@@ -393,6 +392,107 @@ class ProjectsController < ApplicationController
 end
 ```
 
+
+<a id="a2_2"></a>
+### 2_2. Validation機能の追加（modelに定義）
+
+##### :titleは入力必須とする
+```Ruby
+# /app/models/project.rb
+class Project < ActiveRecord::Base
+end
+　↓
+class Project < ActiveRecord::Base
+  validates :title, presence: true
+end
+```
+
+##### 入力必須が何もない時の処理（Controllerに定義）
+validatesは保存する時に発動する
+```Ruby
+# /controllers/projects_controller.rb
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+  def new
+    @project = Project.new
+  end
+
+  def create
+    @project = Project.new(project_params) # project_paramsはformから渡されたもの
+    @project.save
+    redirect_to projects_path # projects_pathにリダイレクト
+  end
+
+  private
+
+    # セキュリティ
+    def project_params
+      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
+      params[:project].permit(:title)
+    end
+
+
+end
+
+　↓
+
+class ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+  end
+
+  def show
+    @project = Project.find(params[:id])
+  end
+
+  def new
+    @project = Project.new
+  end
+
+  def create
+    @project = Project.new(project_params) # project_paramsはformから渡されたもの
+    if @project.save
+      redirect_to projects_path # projects_pathにリダイレクト
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+    # セキュリティ
+    def project_params
+      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
+      params[:project].permit(:title)
+    end
+
+
+end
+
+```
+
+##### バリデーションエラーを表示（View）
+バリデーションにエラーがある場合、@project.errorsの中に入る
+
+```html
+# /views/projects/new.html.erb
+<%= form_for @project do |f| %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <% if @project.errors.any? %>
+    <p>�<%= @project.errors.inspect %></p>
+  <% end %>
+  <p><%= f.submit %></p>
+<% end %>
+```
 
 
 
