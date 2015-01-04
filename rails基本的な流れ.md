@@ -269,8 +269,8 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_2">2_2. Validation機能の追加</a>  
 <a href="#a2_3">2_3. 編集機能</a>  
 <a href="#a2_4">2_4. 削除機能</a>  
-<a href="#a2_5">2_5. projectにタスクを作成</a>  
-<a href="#a2_6">2_6. </a>  
+<a href="#a2_5">2_5. projectに、タスクの新規作成機能</a>  
+<a href="#a2_6">2_6. タスクの削除機能</a>  
 <a href="#a2_7">2_7. </a>  
 <a href="#a2_8">2_8. </a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
@@ -568,7 +568,7 @@ end
 
 
 <a id="a2_5"></a>
-### 2_5. projectにタスクを作成
+### 2_5. projectに、タスクの新規作成機能
 
 ##### model作成
 ```
@@ -656,7 +656,7 @@ $ rake routes
 
 ##### project詳細ページにtask一覧を作成
 ```Html
-# show.html.erb
+# /app/views/projects/show.html.erb
 <ul>
 <% @projects.tasks.each do |task| %><% end %>
 <li><%= task.title %></li>
@@ -696,6 +696,50 @@ class TasksController < ApplicationController
 
 end
 ```
+
+<a id="a2_6"></a>
+### 2_6. タスクの削除機能
+
+##### project詳細ページに削除リンクを作成
+index.html.erbから削除リンクを流用
+```
+[<%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %>]
+```
+
+```Html
+# /app/views/projects/show.html.erb
+<ul>
+  <% @project.tasks.each do |task| %>
+  <li>
+  [<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>]
+  <%= task.title %>
+  </li>
+  <% end %>
+  <li>
+    <%# 決まり文句（@project、@project.tasks.buildの受け皿） %>
+    <%= form_for [@project, @project.tasks.build] do |f| %> 
+    <%= f.text_field :title %>
+    <%= f.submit %>
+    <% end %>
+  </li>
+</ul>
+```
+
+##### taskのcontrollerを作成（destroy）
+destroyアクションの追加
+```Ruby
+# /app/controllers/tasks_controller.rb
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to project_path(params[:project_id])
+  end
+```
+
+
+
+
+
 
 
 
