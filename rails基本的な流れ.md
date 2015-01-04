@@ -606,7 +606,7 @@ controller作成
 $ rails g controller Tasks
 ```
 
-TaskとProjectの_Model_の関連付け  
+TaskのModelとProjectのModelの関連付け  
 ```Ruby
 # /app/models/task.rb
 class Task < ActiveRecord::Base
@@ -658,6 +658,21 @@ routing反映
 $ rake routes
 ```
 
+project詳細ページにtask一覧を作成
+```Html
+# show.html.erb
+<ul>
+<% @projects.tasks.each do |task| %><% end %>
+<li><%= task.title %></li>
+<li>
+	<%= form_for [@project, project.tasks.build] do |f| %>
+	<%= f.text_field :title %>
+	<%= f.submit %>
+	<% end %>
+</li>
+<% end %>
+</ul>
+```
 
 
 
