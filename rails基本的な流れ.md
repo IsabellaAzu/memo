@@ -454,10 +454,13 @@ end
 <%= form_for @project do |f| %>
   <p><%= f.label :title %>　<%= f.text_field :title %></p>
   <% if @project.errors.any? %>
-    <p>�<%= @project.errors.inspect %></p>
+    <p><%= @project.errors.inspect %></p>
   <% end %>
   <p><%= f.submit %></p>
 <% end %>
+
+# <%= @project.errors.inspect %>で下記が表示される
+#<ActiveModel::Errors:0x007fe7e948c0f0 @base=#<Project id: nil, title: "", created_at: nil, updated_at: nil>, @messages={:title=>["can't be blank"]}>
 ```
 
 
