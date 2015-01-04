@@ -1014,6 +1014,9 @@ Rails4でheroku Pushまでの詳細手順 [Haml/bootstrap 3.0/postgresql or MySQ
 http://morizyun.github.io/blog/heroku-rails4-postgresql-introduction/
 Heroku に Rails アプリをアップ  
 http://railsgirls.jp/heroku/  
+herokuでデプロイ.md
+https://github.com/IsabellaAzu/memo/blob/master/heroku%E3%81%A7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4.md
+
 
 #### Rails使えるサーバーどこ？  
 > 参考  
