@@ -600,13 +600,13 @@ end
 $ rake db:migrate
 ```
 
-controller作成  
+##### controller作成  
 ```
 # controller名は最初大文字の複数形
 $ rails g controller Tasks
 ```
 
-TaskのModelとProjectのModelの関連付け  
+##### TaskのModelとProjectのModelの関連付け  
 ```Ruby
 # /app/models/task.rb
 class Task < ActiveRecord::Base
@@ -625,7 +625,7 @@ class Project < ActiveRecord::Base
 end
 ```
 
-routingの設定
+##### routingの設定
 ```Ruby
 # /config/routes.rb
 Rails.application.routes.draw do
@@ -653,12 +653,12 @@ Rails.application.routes.draw do
 end
 ```
 
-routing反映  
+##### routing反映  
 ```
 $ rake routes
 ```
 
-project詳細ページにtask一覧を作成
+##### project詳細ページにtask一覧を作成
 ```Html
 # show.html.erb
 <ul>
@@ -674,11 +674,37 @@ project詳細ページにtask一覧を作成
 </ul>
 ```
 
+##### taskのcontrollerを作成（create）
+projectsのcontrollerからコピペして必要な部分を変更
+```Ruby
+class TasksController < ApplicationController
+end
+
+　↓
+
+class TasksController < ApplicationController
+  
+    def create
+      @project = Project.find(params[:project_id])
+      @task = @project.tasks.create(task_params) # createは、newとsave
+      redirect_to project_path(@project.id)
+    end
+
+    private
+
+      # セキュリティ
+      def task_params
+        # フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+        params[:task].permit(:title)
+      end
+
+end
+```
+
+
 
 
 （絶賛、編集中）
-
-
 
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
