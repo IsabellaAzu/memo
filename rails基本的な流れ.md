@@ -613,19 +613,47 @@ class Task < ActiveRecord::Base
   belongs_to :project # TaskのModelにproject:referencesと記載したため追記されている
 end
 
-　↓　Taskのモデルには自動でbelongs_to :projectが入るが、ProjectのModelには自動で入らない
-
+　↓　Taskのモデルには自動でbelongs_to :projectが入るが、　 
+　↓　ProjectのModelには自動で入らないので
+　
 # /app/models/project.rb
+class Project < ActiveRecord::Base
+  hasmany :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
+  validates :title,
+  presence: {message: "入力必須項目です"},
+  length: {minimum: 3, message: "短過ぎ"}
+end
+```
 
-  
+routingの設定
+```Ruby
+# /config/routes.rb
+Rails.application.routes.draw do
+
+  resources :projects
+
+  root 'projects#index'
+
+  〜
+
+end
+
+　↓
+
+Rails.application.routes.draw do
+
+  resources :projects do
+    resources :tasks
+  end
+
+  root 'projects#index'
+
+  〜
+
+end
 ```
 
 
-
-
-
-
-routingの設定
 ```
 $ rake routes
 ```
