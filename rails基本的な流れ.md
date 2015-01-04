@@ -261,7 +261,7 @@ end
 編集できるようにします
 
 > index  
-<a href="#a2_1">2_1. projectを新規作成で追加できるようにする</a>  
+<a href="#a2_1">2_1. projectを新規作成</a>  
 <a href="#a2_2">2_2. Validation機能の追加</a>  
 <a href="#a2_3">2_3. 編集機能</a>  
 <a href="#a2_4">2_4. </a>  
@@ -286,7 +286,7 @@ edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編�
 ```
 
 <a id="a2_1"></a>
-### 2_1. projectを新規作成で追加できるようにする
+### 2_1. projectを新規作成（new）
 
 
 ##### 新規プロジェクト作成のリンクをindexに追加
@@ -492,7 +492,7 @@ end
 
 
 <a id="a2_3"></a>
-### 2_3. 編集機能
+### 2_3. 編集機能（edit）
 
 ##### indexに編集ページへのリンクを追加（View）
 ```html
