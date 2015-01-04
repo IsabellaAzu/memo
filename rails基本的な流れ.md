@@ -263,7 +263,7 @@ end
 > index  
 <a href="#a2_1">2_1. projectを新規作成で追加できるようにする</a>  
 <a href="#a2_2">2_2. Validation機能の追加</a>  
-<a href="#a2_3">2_3. </a>  
+<a href="#a2_3">2_3. 編集機能</a>  
 <a href="#a2_4">2_4. </a>  
 <a href="#a2_5">2_5. </a>  
 <a href="#a2_6">2_6. </a>  
@@ -490,6 +490,42 @@ class Project < ActiveRecord::Base
 end
 ```
 
+
+<a id="a2_3"></a>
+### 2_3. 編集機能
+
+##### indexに編集ページへのリンクを追加（View）
+```html
+# /views/projects/index.html.erb
+<ul>
+  <% @projects.each do |project| %>
+  <li>
+    <%= link_to project.title, project_path(project.id) %>
+    <%= link_to "編集", edit_project_path %>
+  </li>
+  <% end %>
+</ul>
+```
+
+##### 編集のアクションを用意
+```Ruby
+# /controllers/projects_controller.rb（controllerに定義）
+def edit
+  @project = Project.find(params[:id])
+end
+```
+
+
+
+
+
+
+
+
+
+
+
+（絶賛、編集中）
 
 
 
