@@ -409,7 +409,8 @@ class Project < ActiveRecord::Base
 end
 　↓
 class Project < ActiveRecord::Base
-  validates :title, presence: true
+  validates :title,
+  presence: true
 end
 ```
 
@@ -491,7 +492,8 @@ class Project < ActiveRecord::Base
 end
 　↓
 class Project < ActiveRecord::Base
-  validates :title, presence: {message: "入力必須項目です"},
+  validates :title,
+  presence: {message: "入力必須項目です"},
   length: {minimum: 3, message: "短過ぎ"}
 end
 ```
@@ -572,8 +574,9 @@ end
 
 ##### model作成
 ```
-# model名は最初大文字の単数形
-$ rails g model Task title done:boolean project:references # done:booleanは終わったかどうか、project:referencesはprojectと紐付ける
+# model名は最初大文字の単数形  
+# done:booleanは終わったかどうか、project:referencesはprojectと紐付ける  
+$ rails g model Task title done:boolean project:references  
 ```
 
 taskを登録した時にtaskのdoneはデフォルトでfalseとする  
@@ -592,11 +595,40 @@ class CreateTasks < ActiveRecord::Migration
 end
 ```
 
-```
 /db/migrate/201501xxxxxxxx_create_tasks.rbを元に
+```
 $ rake db:migrate
 ```
 
+controller作成  
+```
+# controller名は最初大文字の複数形
+$ rails g controller Tasks
+```
+
+TaskとProjectの_Model_の関連付け  
+```Ruby
+# /app/models/task.rb
+class Task < ActiveRecord::Base
+  belongs_to :project # TaskのModelにproject:referencesと記載したため追記されている
+end
+
+　↓　Taskのモデルには自動でbelongs_to :projectが入るが、ProjectのModelには自動で入らない
+
+# /app/models/project.rb
+
+  
+```
+
+
+
+
+
+
+routingの設定
+```
+$ rake routes
+```
 
 
 
@@ -785,6 +817,14 @@ class ProjectsController < ApplicationController
 
 end
 ```
+
+- - -
+
+## なんでやねんポイント
+
+* 「:」が前に付いたり、そうでなかったり
+* 大文字だったり小文字だったり、複数形だったり単数形だったり
+* 「,」で区切る、と思いきやそうでなかったり（hasmany :tasks）
 
 - - -
 
