@@ -271,7 +271,7 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_4">2_4. 削除機能</a>  
 <a href="#a2_5">2_5. projectに、タスクの新規作成機能</a>  
 <a href="#a2_6">2_6. タスクの削除機能</a>  
-<a href="#a2_7">2_7. </a>  
+<a href="#a2_7">2_7. タスクにチェックボックを付ける</a>  
 <a href="#a2_8">2_8. </a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
 <a href="#ax2_2">その他 </a>  
@@ -737,10 +737,21 @@ destroyアクションの追加
 ```
 
 
+<a id="a2_7"></a>
+### 2_7. タスクにチェックボックを付ける
 
+##### チェックボックを追加
+```html
+# /app/views/projects/show.html.erb  
+<%#
+・'', '',：id,valueの設定。今回必要ないので空欄
+・task.done：checkの状態
+・{'data-id' => task.id, 'data-project_id' => task.project_id }：htmlに追加したい属性
+%>
+<%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
+```
 
-
-
+##### routingの設定
 
 
 
