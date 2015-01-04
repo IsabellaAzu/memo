@@ -690,7 +690,7 @@ class TasksController < ApplicationController
 
       # セキュリティ
       def task_params
-        # フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+        # フィルタリング：taskで渡ってきた中のもののうち、titleだけ引っ張ってきてね
         params[:task].permit(:title)
       end
 
