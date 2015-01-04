@@ -576,6 +576,7 @@ end
 $ rails g model Task title done:boolean project:references # done:booleanは終わったかどうか、project:referencesはprojectと紐付ける
 ```
 
+taskを登録した時にtaskのdoneはデフォルトでfalseとする  
 ```Ruby
 # /db/migrate/201501xxxxxxxx_create_tasks.rb
 class CreateTasks < ActiveRecord::Migration
@@ -591,6 +592,10 @@ class CreateTasks < ActiveRecord::Migration
 end
 ```
 
+```
+/db/migrate/201501xxxxxxxx_create_tasks.rbを元に
+$ rake db:migrate
+```
 
 
 
@@ -721,7 +726,7 @@ class ProjectsController < ApplicationController
 
   # 共通処理before
   before_action :set_project, only:[:show, :edit, :update, :destroy]
-  
+
   # 一覧表示
   def index
     @projects = Project.all
