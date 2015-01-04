@@ -410,20 +410,10 @@ end
 ##### 入力必須が何もない時の処理（Controllerに定義）
 validatesは保存する時に発動する
 ```Ruby
-# /controllers/projects_controller.rb
+# /controllers/projects_controller.rb（既存のcreateに追記）
 class ProjectsController < ApplicationController
 
-  def index
-    @projects = Project.all
-  end
-
-  def show
-    @project = Project.find(params[:id])
-  end
-
-  def new
-    @project = Project.new
-  end
+  〜
 
   def create
     @project = Project.new(project_params) # project_paramsはformから渡されたもの
@@ -431,14 +421,7 @@ class ProjectsController < ApplicationController
     redirect_to projects_path # projects_pathにリダイレクト
   end
 
-  private
-
-    # セキュリティ
-    def project_params
-      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
-      params[:project].permit(:title)
-    end
-
+  〜
 
 end
 
@@ -446,17 +429,7 @@ end
 
 class ProjectsController < ApplicationController
 
-  def index
-    @projects = Project.all
-  end
-
-  def show
-    @project = Project.find(params[:id])
-  end
-
-  def new
-    @project = Project.new
-  end
+  〜
 
   def create
     @project = Project.new(project_params) # project_paramsはformから渡されたもの
@@ -467,14 +440,7 @@ class ProjectsController < ApplicationController
     end
   end
 
-  private
-
-    # セキュリティ
-    def project_params
-      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
-      params[:project].permit(:title)
-    end
-
+  〜
 
 end
 
