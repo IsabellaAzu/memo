@@ -749,6 +749,16 @@ destroyアクションの追加
 ・{'data-id' => task.id, 'data-project_id' => task.project_id }：htmlに追加したい属性
 %>
 <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
+
+<%# checkboxをクリックした時の処理（jQuery使用） %>
+<script type="text/javascript">
+$(function(){
+  // toggleアクション
+  $("input[type=checkbox]").click(function(){
+    $.post('/projects/'+ $(this).data('project_id') +'/tasks/'+ $(this).data('id') +'/toggle');
+  });
+});
+</script>
 ```
 
 ##### routingの設定
