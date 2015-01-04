@@ -260,9 +260,9 @@ end
 ##基本的な流れ(2)  
 > CRUDできるようにします  
 http://ja.wikipedia.org/wiki/CRUD  
+
 ※Readは基本的な流れ(1)に詳細ページ機能  
-　  
-　  
+
 > index  
 <a href="#a2_1">2_1. projectを新規作成</a>  
 <a href="#a2_2">2_2. Validation機能の追加</a>  
@@ -274,8 +274,9 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_8">2_8. </a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
 <a href="#ax2_2">その他 </a>  
-　  
-　  
+
+・・・・・・・・・・
+
 > rake routesの結果  
 ```
       Prefix Verb   URI Pattern                  Controller#Action
