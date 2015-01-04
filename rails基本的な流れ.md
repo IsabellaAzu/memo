@@ -570,7 +570,29 @@ end
 <a id="a2_5"></a>
 ### 2_5. projectにタスクを作成
 
-##### aaa
+##### model作成
+```
+# model名は最初大文字の単数形
+$ rails g model Task title done:boolean project:references # done:booleanは終わったかどうか、project:referencesはprojectと紐付ける
+```
+
+```Ruby
+# /db/migrate/201501xxxxxxxx_create_tasks.rb
+class CreateTasks < ActiveRecord::Migration
+  def change
+    create_table :tasks do |t|
+      t.string :title
+      t.boolean :done, default: false # , default: falseを追記
+      t.references :project, index: true
+      t.timestamps null: false
+    end
+    add_foreign_key :tasks, :projects
+  end
+end
+```
+
+
+
 
 
 
