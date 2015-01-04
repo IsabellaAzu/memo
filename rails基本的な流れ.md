@@ -601,9 +601,8 @@ _呼び出し名.html.erbに共通部分を記述し、
 ##### before_action（共通化）  
 DRYの原則に則って同じ部品の共通化する方法で、  
 controllerの中のアクションの重複内容をまとめて処理  
-どのアクションよりも先に実行される
+どのアクションよりも先に実行される（after_actionもあるよ）
 ```Ruby
-# /controllers/projects_controller.rb（controllerに定義）
 # 記述方法
 before_action :関数名
 # 他から参照されないのであればprivateの中に定義
@@ -621,8 +620,13 @@ private
   def set_project
     @project = Project.find(params[:id])
   end
+```  
 
+```Ruby
+# /controllers/projects_controller.rb（controllerに定義）
 ```
+
+
 
 
 
