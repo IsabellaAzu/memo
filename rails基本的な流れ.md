@@ -269,7 +269,7 @@ end
 <a href="#a2_6">2_6. </a>  
 <a href="#a2_7">2_7. </a>  
 <a href="#a2_8">2_8. </a>  
-<a href="#ax2_1">その他 </a>  
+<a href="#ax2_1">その他 パーシャル（共通化）</a>  
 <a href="#ax2_2">その他 </a>  
 
 > rake routesの結果  
@@ -531,7 +531,39 @@ end
 ```
 
 
+<a id="a2_4"></a>
+### 2_4. 
 
+##### indexに編集ページへのリンクを追加（View）
+
+
+
+・・・・・・・・・・・・・・・・・・・・・・・・・・  
+
+<a id="ax2_1"></a>
+### その他
+
+##### パーシャル（共通化）  
+DRYの原則に則って同じ部品の共通化する方法(_と呼び出し名.html.erb)  
+共通部分を<%= render 'form' %>と記載（includeみたいなもの）
+
+```html
+# /app/views/projects/edit.html.erb
+# /app/views/projects/new.html.erb
+<%= render 'form' %>
+```
+
+パーシャルに共通部品を記述
+```html
+# /app/views/projects/_form.html.erb
+<%= form_for @project do |f| %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <% if @project.errors.any? %>
+    <p><%= @project.errors.messages[:title][0] %></p>
+  <% end %>
+  <p><%= f.submit %></p>
+<% end %>
+```
 
 
 
