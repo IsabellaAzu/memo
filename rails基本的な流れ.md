@@ -272,7 +272,7 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_5">2_5. projectに、タスクの新規作成機能</a>  
 <a href="#a2_6">2_6. タスクの削除機能</a>  
 <a href="#a2_7">2_7. タスクにチェックボックを付ける</a>  
-<a href="#a2_8">2_8. </a>  
+<a href="#a2_8">2_8. タスクの数を表示</a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
 <a href="#ax2_2">その他 </a>  
 
@@ -780,8 +780,21 @@ $(function(){
   end
 ```
 
+<a id="a2_8"></a>
+### 2_8. タスクの数を表示
 
+##### タスクの全数
+```html
+# /app/views/projects/show.html.erb  
+<%= project.tasks.count %>
+```
 
+##### タスクの残数（Modelに記述：検索条件を付けることができるため）
+```Ruby
+# /app/models/task.rb
+  # scopeでunfinishedというscopeを定義、doneがfalseのものを検索条件として
+  scope :unfinished, -> {where(done: false) }
+```
 
 
 
