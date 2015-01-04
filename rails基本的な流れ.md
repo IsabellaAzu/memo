@@ -562,6 +562,7 @@ def newなどと同様に追記する
 def destroy
   @project = Project.find(params[:id])
   @project.destroy
+  redirect_to projects_path
 end
 ```
 
@@ -575,8 +576,9 @@ end
 ### その他
 
 ##### パーシャル（共通化）  
-DRYの原則に則って同じ部品の共通化する方法(_と呼び出し名.html.erb)  
-共通部分を<%= render 'form' %>と記載（includeみたいなもの）
+DRYの原則に則って同じ部品の共通化する方法で、  
+_呼び出し名.html.erbに共通部分を記述し、  
+共通部分を<%= render 'form' %>で上記を呼び出す（includeみたいなもの）
 
 ```html
 # /app/views/projects/edit.html.erb
@@ -596,8 +598,31 @@ DRYの原則に則って同じ部品の共通化する方法(_と呼び出し名
 <% end %>
 ```
 
+##### before_action（共通化）  
+DRYの原則に則って同じ部品の共通化する方法で、  
+controllerの中のアクションの重複内容をまとめて処理  
+どのアクションよりも先に実行される
+```Ruby
+# /controllers/projects_controller.rb（controllerに定義）
+# 記述方法
+before_action :関数名
+# 他から参照されないのであればprivateの中に定義
+private
+  def 関数名
+    共通化したい処理
+  end
 
+# 全てのアクションに対して
+before_action :set_project
+# 個別のアクションに対して
+before_action :set_project, only: [:show, :edit, :update, :destroy]
 
+private
+  def set_project
+    @project = Project.find(params[:id])
+  end
+
+```
 
 
 
