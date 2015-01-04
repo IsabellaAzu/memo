@@ -624,6 +624,129 @@ private
 
 ```Ruby
 # /controllers/projects_controller.rb（controllerに定義）
+
+class ProjectsController < ApplicationController
+
+	# 一覧表示
+	def index
+		@projects = Project.all
+	end
+
+	# 詳細表示
+	def show
+		@project = Project.find(params[:id])
+	end
+
+	# 新規作成
+	def new
+		@project = Project.new
+	end
+
+	# create
+	def create
+		@project = Project.new(project_params) # project_paramsはformから渡されたもの
+        if @project.save
+          redirect_to projects_path # projects_pathにリダイレクト
+        else
+          render 'new'
+        end
+	end
+
+	# 編集
+    def edit
+      @project = Project.find(params[:id])
+    end
+
+	# 更新
+    def update
+      @project = Project.find(params[:id])
+      if @project.update(project_params)
+        redirect_to projects_path
+      else
+        render 'edit'
+      end
+    end
+
+    # 削除
+    def destroy
+      @project = Project.find(params[:id])
+      @project.destroy
+      redirect_to projects_path
+    end
+
+	private
+
+		# セキュリティ
+		def project_params
+			# フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+			params[:project].permit(:title)
+		end
+
+end
+
+　↓
+
+class ProjectsController < ApplicationController
+
+	# 共通処理before
+　before_action :set_project, only:[:show, :edit, :update, :destroy]
+
+	# 一覧表示
+	def index
+		@projects = Project.all
+	end
+
+	# 詳細表示
+	def show
+	end
+
+	# 新規作成
+	def new
+		@project = Project.new
+	end
+
+	# create
+	def create
+		@project = Project.new(project_params) # project_paramsはformから渡されたもの
+        if @project.save
+          redirect_to projects_path # projects_pathにリダイレクト
+        else
+          render 'new'
+        end
+	end
+
+	# 編集
+    def edit
+    end
+
+	# 更新
+    def update
+      if @project.update(project_params)
+        redirect_to projects_path
+      else
+        render 'edit'
+      end
+    end
+
+    # 削除
+    def destroy
+      @project.destroy
+      redirect_to projects_path
+    end
+
+	private
+
+		# セキュリティ
+		def project_params
+			# フィルタリング：projectで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+			params[:project].permit(:title)
+		end
+
+    def set_project
+      @project = Project.find(params[:id])
+    end
+
+end
 ```
 
 
