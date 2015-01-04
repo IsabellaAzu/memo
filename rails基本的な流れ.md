@@ -260,8 +260,9 @@ end
 ##基本的な流れ(2)  
 > CRUDできるようにします  
 http://ja.wikipedia.org/wiki/CRUD  
+※Readは基本的な流れ(1)の詳細ページ機能  
 
-※Readは基本的な流れ(1)に詳細ページ機能  
+・・・・・・・・・・
 
 > index  
 <a href="#a2_1">2_1. projectを新規作成</a>  
