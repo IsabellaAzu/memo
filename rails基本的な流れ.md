@@ -508,6 +508,7 @@ end
 ```
 
 ##### 編集のアクションを用意
+def newなどと同様に追記する
 ```Ruby
 # /controllers/projects_controller.rb（controllerに定義）
 def edit
@@ -515,7 +516,19 @@ def edit
 end
 ```
 
-
+##### 編集ページの用意
+/views/projects/new.html.erbのコピペでOK
+（form_forの機能で<%= f.submit %>のラベルが自動で変わる）
+```html
+# /app/views/projects/edit.html.erb
+<%= form_for @project do |f| %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <% if @project.errors.any? %>
+    <p><%= @project.errors.messages[:title][0] %></p>
+  <% end %>
+  <p><%= f.submit %></p>
+<% end %>
+```
 
 
 
