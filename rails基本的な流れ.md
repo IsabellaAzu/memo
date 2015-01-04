@@ -416,9 +416,9 @@ class ProjectsController < ApplicationController
   〜
 
   def create
-    @project = Project.new(project_params) # project_paramsはformから渡されたもの
+    @project = Project.new(project_params)
     @project.save
-    redirect_to projects_path # projects_pathにリダイレクト
+    redirect_to projects_path
   end
 
   〜
@@ -432,9 +432,9 @@ class ProjectsController < ApplicationController
   〜
 
   def create
-    @project = Project.new(project_params) # project_paramsはformから渡されたもの
+    @project = Project.new(project_params)
     if @project.save
-      redirect_to projects_path # projects_pathにリダイレクト
+      redirect_to projects_path
     else
       render 'new'
     end
