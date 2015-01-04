@@ -555,6 +555,19 @@ end
 </ul>
 ```
 
+##### 削除のアクションを用意
+def newなどと同様に追記する
+```Ruby
+# /controllers/projects_controller.rb（controllerに定義）
+def destroy
+  @project = Project.find(params[:id])
+  @project.destroy
+end
+```
+
+
+
+
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
