@@ -257,11 +257,10 @@ end
 
 - - -
 
-##基本的な流れ(2)
-> CRUDできるようにします
-http://ja.wikipedia.org/wiki/CRUD
-※Readは基本的な流れ(1)に詳細ページ機能
-
+##基本的な流れ(2)  
+> CRUDできるようにします  
+http://ja.wikipedia.org/wiki/CRUD  
+※Readは基本的な流れ(1)に詳細ページ機能  
 > index  
 <a href="#a2_1">2_1. projectを新規作成</a>  
 <a href="#a2_2">2_2. Validation機能の追加</a>  
