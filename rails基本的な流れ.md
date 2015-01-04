@@ -492,9 +492,7 @@ class Project < ActiveRecord::Base
 end
 　↓
 class Project < ActiveRecord::Base
-  validates :title,
-  presence: {message: "入力必須項目です"},
-  length: {minimum: 3, message: "短過ぎ"}
+  validates :title, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
 
@@ -619,9 +617,7 @@ end
 # /app/models/project.rb
 class Project < ActiveRecord::Base
   hasmany :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
-  validates :title,
-  presence: {message: "入力必須項目です"},
-  length: {minimum: 3, message: "短過ぎ"}
+  validates :title, presence: {message: "入力必須項目です"}, length: {minimum: 3, message: "短過ぎ"}
 end
 ```
 
