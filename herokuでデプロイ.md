@@ -125,9 +125,9 @@ $ heroku logs --tail
 　heroku createしてGit remote heroku addedが表示されない場合は  
 　・https://dashboard.heroku.com/appsでアプリを消す  
 　・/.git/configの下記を削除  
-　```
-　[remote "heroku"]
-	url = https://git.heroku.com/xxx-xxx-nnnn.git
-	fetch = +refs/heads/*:refs/remotes/heroku/*
-　```
+　```  
+　[remote "heroku"]  
+	url = https://git.heroku.com/xxx-xxx-nnnn.git  
+	fetch = +refs/heads/*:refs/remotes/heroku/*  
+　```  
 　をやってから、heroku create
