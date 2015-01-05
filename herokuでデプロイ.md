@@ -6,6 +6,7 @@ https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
 > 参考  
 http://railsgirls.jp/heroku/
 
+- - - 
 
 ### アプリの状態（Local）
 Herokuはgitにpushされたものが動くと思う。  
@@ -111,4 +112,22 @@ $ heroku open
 ```
 
 ##### 10. まさかのエラー！？
+ログを見てみましょう
+```
+$ heroku logs --tail
+```
 
+- - - 
+
+### Herokuあるある
+
+* アプリは５個までしか作れない
+　heroku createしてGit remote heroku addedが表示されない場合は  
+　・https://dashboard.heroku.com/appsでアプリを消す  
+　・/.git/configの下記を削除  
+　```
+　[remote "heroku"]
+	url = https://git.heroku.com/xxx-xxx-nnnn.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
+　```
+　をやってから、heroku create
