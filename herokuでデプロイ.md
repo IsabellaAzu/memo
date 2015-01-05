@@ -126,7 +126,8 @@ $ heroku logs --tail
 
 ##### アプリは５個までしか作れない
 heroku createしてGit remote heroku addedが表示されない場合は  
-・https://dashboard.heroku.com/appsでアプリを消す  
+・https://dashboard.heroku.com/apps  
+　でアプリを消す  
 ・/.git/configの下記を削除  
 ```  
 [remote "heroku"]  
