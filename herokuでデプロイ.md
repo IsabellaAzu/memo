@@ -51,7 +51,7 @@ cloneしたアプリに下記を保存
 $ heroku login
 ```
 
-##### 5. Herokuにアプリadd
+##### 5. Herokuにアプリをadd
 cloneしたディレクトリで  
 ```
 $ heroku create
@@ -68,7 +68,7 @@ Git remote heroku added
 	fetch = +refs/heads/*:refs/remotes/heroku/*
 ```
 
-##### 6. Herokuにアプリpush
+##### 6. Herokuにアプリをpush
 ```
 git push heroku master
 ```
