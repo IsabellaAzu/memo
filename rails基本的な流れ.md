@@ -1027,6 +1027,7 @@ https://www.heroku.com/
 http://blog.mah-lab.com/2013/05/16/heroku-commons-16/  
 
 #### 練習するとしたら  
+Heroku!
 Rails newして、scaffoldしたものをリリースする練習  
 
 #### assets周り  
@@ -1036,3 +1037,12 @@ CSSやJSはこれやらないと動かない
 > 参考  
 http://qiita.com/funnythingz/items/7bf4271ff8731347eaa8  
 https://rails-assets.org/  
+
+#### VPSとか辛そう
+> 参考  
+VPSだと
+http://vps.sakura.ad.jp/specification/#target_spec
+http://qiita.com/tadatti/items/d0f1d08d1cc4c8275376
+http://moji.yayugu.net/articles/server_setting.html
+でもsqaleなら月額940円
+http://blog.inouetakuya.info/entry/20121125/1353839740
