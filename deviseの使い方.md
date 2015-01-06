@@ -11,7 +11,6 @@ index
 
 - - - 
 
-
 ### 1. インストール
 
 ```
@@ -53,7 +52,12 @@ rails g controller home index
 
 
 
-
+ユーザー認証を導入するために、各コントローラーに
+```
+# 共通コントローラ
+# /app/controllers/application_controller.rb
+before_filter :authenticate_user!
+```
 
 サーバー再起動  
 Ctrl+C #サーバー停止  
