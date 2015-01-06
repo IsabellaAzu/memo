@@ -12,19 +12,23 @@ index
 - - - 
 
 
-### 1. 
-Gemfileに
-```
-gem devise 3.4.1
-```
+### 1. インストール
 
 ```
+# Gemfile
+gem devise
+# ターミナル
 $ bundle install
+$ rails g devise:install
 ```
 
+### 2. devise設定
+
+##### Model作成（ログインユーザー管理のModel）
+
 ```
-$ rails g devise:install
-$ rails generate devise モデル名
+$ rails g devise User
+$ rake db:migrate
 ```
 
 
