@@ -186,14 +186,14 @@ https://gist.github.com/keifukuda/4535242
 
 ##### iTerm2  
 http://iterm2.com/  
-|ショートカット|内容|
+| ショートカット | 内容 |
 |:-----------|:------------|
-|⌘+n|新しいウィンドウ|
-|⌘+t|新しいタブ|
-|⌘+d|縦分割|
-| be         |          be |
-| left       |       right |
-| aligned    |     aligned |
+| ⌘+n |新しいウィンドウ |
+| ⌘+t |新しいタブ |
+| ⌘+d |縦分割 |
+| be          |          be |
+| left        |       right |
+| aligned     |     aligned |
 
 
 	
