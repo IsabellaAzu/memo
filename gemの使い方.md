@@ -1,12 +1,18 @@
 
 
 > index  
-<a href="#a1">1. rack-mini-profiler</a>  
-<a href="#a2">2. xxx</a>  
+<a href="#a1">1. Gemのバージョンを調べる</a>  
+<a href="#a2">2. rack-mini-profiler</a>  
+<a href="#a3">3. xxx</a>  
 
 
 <a id="a1"></a>  
-### 1. rack-mini-profiler
+### Gemのバージョンを調べる
+https://rubygems.org/gems/devise
+
+
+<a id="a2"></a>  
+### 2. rack-mini-profiler
 http://qiita.com/kadoppe/items/6ce36a21d829585dd319
 
 ##### 計測結果がWebページに表示されないようにする
@@ -28,7 +34,7 @@ if defined?(Rack::MiniProfiler)
 end  
 ```
 
-<a id="a2"></a>  
-### 2. xxx  
+<a id="a3"></a>  
+### 3. xxx  
 
 
