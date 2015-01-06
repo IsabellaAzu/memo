@@ -138,3 +138,10 @@ heroku createしてGit remote heroku addedが表示されない場合は
 ```  
 $ heroku create
 ```  
+
+##### アプリは毎回デプロイされる
+
+* MySQLに登録したデータ（テキスト、画像など）は消える
+
+
+
