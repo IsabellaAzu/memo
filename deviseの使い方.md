@@ -15,7 +15,7 @@ index
 
 ```
 # Gemfile
-gem devise
+gem 'devise'
 
 # ターミナル
 $ bundle install
