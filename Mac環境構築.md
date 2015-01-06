@@ -175,8 +175,35 @@ $ ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
 ```
   
 - - -
-## 全体的に参考  
+
+## ここまでの参考  
 http://tsuchikazu.net/mac_rail_setup/  
 https://gist.github.com/keifukuda/4535242  
-
   
+- - -
+
+## 便利ツール  
+
+##### iTerm2  
+http://iterm2.com/  
+|ショートカット|内容|
+|:-----------|:------------|
+|⌘+n|新しいウィンドウ|
+|⌘+t|新しいタブ|
+|⌘+d|縦分割|
+| be         |          be |
+| left       |       right |
+| aligned    |     aligned |
+
+
+	
+	
+	
+	
+⌘+shift+d	横分割
+⌘+w(or Ctrl+d)	ウィンドウの削除。括弧内は、iTerm2自体のショートカットではないかも
+⌘+[(or ] or 矢印キー)	分割されているウィンドウのフォーカスを移動
+Ctrl+tab	タブ間の移動
+⌘+数字	数字の割り当てられたタブに移動
+⌘+enter	フルスクリーン
+
