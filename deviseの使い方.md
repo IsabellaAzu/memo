@@ -46,10 +46,6 @@ rails g controller home index
 ```
 
 
-
-
-
-
 ユーザー認証を導入するために、各コントローラーに
 ```
 # 共通コントローラ
@@ -65,7 +61,11 @@ $ rails s
 ```
 
 
-
-
+ログイン失敗などのアラートを表示  
+```html
+app/views/layouts/application.html.erb  
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+```
 
 
