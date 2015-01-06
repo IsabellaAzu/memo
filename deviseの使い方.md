@@ -50,8 +50,6 @@ rails g controller home index
 
 
 
-
-
 ユーザー認証を導入するために、各コントローラーに
 ```
 # 共通コントローラ
