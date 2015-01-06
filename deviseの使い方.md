@@ -1,6 +1,8 @@
 
 ## deviseの使い方
 
+（編集中）
+
 ### 基本的な流れ
 > 参考  
 http://qiita.com/yutori_enginner/items/a0500f2f21b33b29beb6  
@@ -40,6 +42,7 @@ https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
 メール送信の場合は、/config/environments/development.rbを編集  
 
+（編集中）
 
 ```
 rails g controller home index
