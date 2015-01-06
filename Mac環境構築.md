@@ -15,8 +15,6 @@
 *	MacOSX 10.10.1（14B25）
 
 
-
-
 ##準備作業
 
 
@@ -97,7 +95,6 @@ $ ruby -v
 ```
 $ brew install rbenv-gem-rehash
 ```
-
 
 ### 5. MySQLをインストール  
 
@@ -202,4 +199,19 @@ http://iterm2.com/
 | ⌘+enter        | フルスクリーン                 |
 
 ##### 分割状態の保存 
+
+メニューの「Window」→「Save Window Arrangement」→名前をつける
+
 ![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)
+
+##### デフォルトの配置
+
+・メニューの「iTerm」→「Preferences...」→「Generalタブ」  
+　→ Startupの項目「Open default window arrangement」にチェック
+
+・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」  
+　→ 「Set Default」ボタンを押してデフォルトに設定
+
+
+
+
