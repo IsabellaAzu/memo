@@ -17,6 +17,7 @@ index
 ```
 # Gemfile
 gem devise
+
 # ターミナル
 $ bundle install
 $ rails g devise:install
@@ -30,6 +31,12 @@ $ rails g devise:install
 $ rails g devise User
 $ rake db:migrate
 ```
+
+/app/models/user.rb  
+![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
+
+
+
 
 
 
