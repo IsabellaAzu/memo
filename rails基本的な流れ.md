@@ -1037,6 +1037,7 @@ CSSやJSはこれやらないと動かない
 > 参考  
 http://qiita.com/funnythingz/items/7bf4271ff8731347eaa8  
 https://rails-assets.org/  
+http://qiita.com/snowsunny/items/aaeacf7aecb0121948d4  
 
 #### VPSとか辛そう
 > 参考  
