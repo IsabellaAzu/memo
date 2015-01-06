@@ -35,6 +35,16 @@ $ rake db:migrate
 /app/models/user.rb  
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
 
+> 参考  
+https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
+
+
+メール送信の場合は、/config/environments/development.rbを編集  
+
+
+```
+rails g controller home index
+```
 
 
 
@@ -45,10 +55,12 @@ $ rake db:migrate
 
 
 
-
-
-
-
+サーバー再起動  
+Ctrl+C #サーバー停止  
+```
+# サーバー起動
+$ rails s
+```
 
 
 
