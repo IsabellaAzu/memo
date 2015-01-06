@@ -218,5 +218,10 @@ http://iterm2.com/
 　→ 「Working Directory」の「Directory」に設定
 
 
+### 2. tmux
+
+http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
+
+
 
 
