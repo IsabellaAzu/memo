@@ -212,6 +212,11 @@ http://iterm2.com/
 ・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」  
 　→ 「Set Default」ボタンを押してデフォルトに設定
 
+##### デフォルトで開くディレクトリ
+
+・メニューの「iTerm」→「Preferences...」→「Profileタブ」  
+　→ 「Working Directory」の「Directory」に設定
+
 
 
 
