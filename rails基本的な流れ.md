@@ -49,9 +49,9 @@ $ bundle install
 <a href="#a1_6">1_6. viewを作成</a>  
 <a href="#a1_7">1_7. 再びrouting設定</a>  
 <a href="#a1_8">1_8. 詳細ページ作成</a>  
-<a href="#ax1_1">その他 共通テンプレの編集</a>  
-<a href="#ax1_2">その他  画像、css、javascriptの参照場所</a>  
-
+<a href="#ax1_1">その他 Rails Guides</a>  
+<a href="#ax1_2">その他 共通テンプレの編集</a>  
+<a href="#ax1_3">その他 画像、css、javascriptの参照場所</a>  
 
 <a id="a1_1"></a>
 ### 1_1. model作成
@@ -228,9 +228,13 @@ end
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
-<a id="ax1_1"></a>
 ### その他
 
+<a id="ax1_1"></a>
+##### Rails Guides  
+http://guides.rubyonrails.org/getting_started.html  
+
+<a id="ax1_2"></a>
 ##### 共通テンプレの編集  
 記述したものは/app/views/layouts/application.html.erbの  
 <%= yield %>に表示されている
@@ -243,7 +247,7 @@ end
 ※link_toの「projects_path」はrake routesした時に出力される「Prefix」に「_path」を連結したもの
 
 
-<a id="ax1_2"></a>
+<a id="ax1_3"></a>
 ##### 画像、css、javascriptの参照場所  
 /app/assets/以下の  
 * images
