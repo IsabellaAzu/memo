@@ -1033,6 +1033,8 @@ http://blog.mah-lab.com/2013/05/16/heroku-commons-16/
 #### 練習するとしたら  
 Heroku!
 Rails newして、scaffoldしたものをリリースする練習  
+Pow
+http://doruby.kbmj.com/oneafter999_on_rails/20141022/Rails_Rack_Pow_
 
 #### assets周り  
 <span style="color:pink;">超ハマるらしい！？</span>  
