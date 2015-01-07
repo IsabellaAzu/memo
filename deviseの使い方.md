@@ -111,3 +111,16 @@ app/views/layouts/application.html.erb
 ```
 
 
+
+- - -
+
+## deviseあるある  
+
+##### 1. 削除系は自分で作り込まないと
+* Userの情報だけ消す？
+* Userの入力内容、どうする？
+など
+
+
+
+
