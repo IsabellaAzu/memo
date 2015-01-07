@@ -58,9 +58,10 @@ before_filter :authenticate_user!
 ```
 
 サーバー再起動  
-Ctrl+C #サーバー停止  
 ```
-# サーバー起動
+#サーバー停止  
+Ctrl+C  
+# サーバー起動  
 $ rails s
 ```
 
