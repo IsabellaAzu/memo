@@ -1045,9 +1045,9 @@ http://qiita.com/snowsunny/items/aaeacf7aecb0121948d4
 
 #### VPSとか辛そう
 > 参考  
-VPSだと
-http://vps.sakura.ad.jp/specification/#target_spec
-http://qiita.com/tadatti/items/d0f1d08d1cc4c8275376
-http://moji.yayugu.net/articles/server_setting.html
-でもsqaleなら月額940円
-http://blog.inouetakuya.info/entry/20121125/1353839740
+VPSだと  
+http://vps.sakura.ad.jp/specification/#target_spec  
+http://qiita.com/tadatti/items/d0f1d08d1cc4c8275376  
+http://moji.yayugu.net/articles/server_setting.html  
+でもsqaleなら月額940円  
+http://blog.inouetakuya.info/entry/20121125/1353839740  
