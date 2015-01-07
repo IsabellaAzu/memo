@@ -122,7 +122,8 @@ edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編�
 2行目の「    projects GET    /projects(.:format)          projects#index」の意味は  
 GETの方式で/projectsで一覧を出すためのロジックは、  
 projects controllerのindex Actionに記述しなさい、という意味  
-
+> 参考：Railsのルーティングを極める  
+http://techracho.bpsinc.jp/hachi8833/2014_02_17/15665
 
 <a id="a1_5"></a>
 ### 1_5. controllerにactionを作成  
