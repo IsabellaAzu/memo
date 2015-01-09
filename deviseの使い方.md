@@ -58,7 +58,8 @@ Some setup you must do manually if you haven't yet:
      On config/application.rb forcing your application to not access the DB
      or load models when precompiling your assets.
 
-  5. You can copy Devise views (for customization) to your app by running:
+  5. 「Viewをカスタマイズしたいときのため必要」
+     You can copy Devise views (for customization) to your app by running:
 
        rails g devise:views
 
