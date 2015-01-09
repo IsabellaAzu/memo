@@ -64,7 +64,7 @@ Some setup you must do manually if you haven't yet:
 ##### Model作成（ログインユーザー管理のModel）
 
 ```
-$ rails g devise User
+$ rails g devise User # model名は最初大文字の単数形
 $ rake db:migrate
 ```
 
