@@ -84,6 +84,41 @@ app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_creat
 $ rake db:migrate
 ```
 
+
+##### View作成
+
+全ての画面の上部に、
+・ログインしていない場合は、「サインイン」と「ログイン」のリンク
+・ログインしている場合は、「プロフィール変更」と「ログアウト」のリンク
+を表示させるようにします。
+
+# app/views/layouts/application.html.erb
+
+```
+<header>
+  <nav>
+    <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
+    <% if user_signed_in? %> 
+      <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
+      <!-- *_path はUserモデルを作成したときに、
+        deviseにより自動で作成されてますので、rake routesで確認できます -->
+      Logged in as <strong><%= current_user.email %></strong>.
+      <%= link_to 'プロフィール変更', edit_user_registration_path %> |
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "サインイン", new_user_registration_path %> |
+      <%= link_to "ログイン", new_user_session_path %>
+    <% end %>
+  </nav>
+</header>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+```
+
+
+
+
 /app/models/user.rb  
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
 
