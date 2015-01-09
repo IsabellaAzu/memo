@@ -44,7 +44,8 @@ Some setup you must do manually if you haven't yet:
        コントローラを作成
        # rails g controller Home index showで、Homeコントローラにindexとshowのアクションを定義
 
-  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+  3. 「ログイン関連のメッセージを表示する場合」
+     Ensure you have flash messages in app/views/layouts/application.html.erb.
      For example:
 
        <p class="notice"><%= notice %></p>
