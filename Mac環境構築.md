@@ -88,6 +88,7 @@ $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install 2.1.5 #バージョンを指定してインストール
 $ rbenv rehash
 $ rbenv global 2.1.5
+$ rbenv local 2.1.5 # 今居るディレクトリだけ
 $ ruby -v
 ```
 
