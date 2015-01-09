@@ -73,7 +73,12 @@ http://www.omakase.org/misc/gitignore.html
 http://liginc.co.jp/web/tool/79390  
 
 ### git clone エラー（https:の設定になっているのを下記に変更）
-git@github.com:ユーザ名/リポジトリ名
+```
+[remote "origin"]
+	url = https://github.com/ユーザ名/リポジトリ名
+	　↓
+	url = git@github.com:ユーザ名/リポジトリ名
+```
 > 参考
 http://qiita.com/HirofumiYashima/items/49f7aa6899a322dd26b4
 
