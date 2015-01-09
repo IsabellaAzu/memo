@@ -73,6 +73,7 @@ Some setup you must do manually if you haven't yet:
 ```
 $ rails g devise User # model名は最初大文字の単数形
 ```
+下記2ファイルで、モジュールの設定を有効/無効にできる  
 app/models/user.rb、db/migrate/yyyymmddhhmmss_devise_create_users.rbの確認  
 
 
