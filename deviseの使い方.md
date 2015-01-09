@@ -41,6 +41,7 @@ Some setup you must do manually if you haven't yet:
 
        root to: "home#index"
        # root "home#index"じゃダメなのかな？「to:」ってなんだ？
+       # rails g controller Home index showでHomeコントローラにindexとshowのアクションを定義
 
   3. Ensure you have flash messages in app/views/layouts/application.html.erb.
      For example:
