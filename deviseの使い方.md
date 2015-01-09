@@ -1,9 +1,8 @@
 
 ## deviseの使い方
 
-（編集中）
 
-### 基本的な流れ
+### 1. 基本的な流れ
 > 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000 
 
@@ -11,7 +10,7 @@ index
 
 - - - 
 
-### 1. インストール
+### 2. インストール
 
 ```
 # Gemfile
@@ -144,18 +143,6 @@ Ctrl+C
 $ rails s
 ```
 
-
-
-
-（編集中）
-
-メール送信の場合は、/config/environments/development.rbを編集  
-
-> 参考：devise_mailer.rb  
-https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
-
-
-<a id="atode"></a>
 ユーザー認証を導入するために、各コントローラーに
 ```
 # 共通コントローラ
@@ -163,18 +150,22 @@ https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 before_filter :authenticate_user!
 ```
 
+- - -
+
+### 3. カスタマイズ
+
+
 （編集中）
+<a id="atode"></a>
+メール送信の場合は、/config/environments/development.rbを編集  
+> 参考：devise_mailer.rb  
+https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
 
 
 
 
-ログイン失敗などのアラートを表示  
-```html
-app/views/layouts/application.html.erb  
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-```
+
 
 
 
