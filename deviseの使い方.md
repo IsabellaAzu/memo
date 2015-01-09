@@ -143,9 +143,8 @@ Ctrl+C
 $ rails s
 ```
 
-ユーザー認証を導入するために、各コントローラーに
+ユーザー認証を導入するために、共通コントローラーに
 ```
-# 共通コントローラ
 # /app/controllers/application_controller.rb
 before_filter :authenticate_user!
 ```
