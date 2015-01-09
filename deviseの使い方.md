@@ -68,8 +68,9 @@ Some setup you must do manually if you haven't yet:
 1.config/environments/development.rbに追記
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-2.config/routes.rbに追記
+2.config/routes.rbに追記してコントローラ作成
 root "home#index"
+rails g controller Home index show
 
 3.app/views/layouts/application.html.erbに追記
 <p class="notice"><%= notice %></p>
