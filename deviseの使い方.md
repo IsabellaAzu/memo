@@ -77,7 +77,7 @@ $ rails g devise User
 下記2ファイルで、モジュールの設定を有効/無効にできる  
 app/models/user.rb、db/migrate/yyyymmddhhmmss_devise_create_users.rbの確認  
 app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。  
-（後で設定しましょう）
+（<a href="#atode">後で設定</a>しましょう）
 　↓
 ```
 # databaseに反映
@@ -99,7 +99,7 @@ https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 rails g controller home index
 ```
 
-
+<a id="atode"></a>
 ユーザー認証を導入するために、各コントローラーに
 ```
 # 共通コントローラ
