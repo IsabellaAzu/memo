@@ -71,15 +71,16 @@ Some setup you must do manually if you haven't yet:
 ##### Model作成（ログインユーザー管理のModel）
 
 ```
-$ rails g devise User # model名は最初大文字の単数形
+# model作成：model名は最初大文字の単数形
+$ rails g devise User
 ```
 下記2ファイルで、モジュールの設定を有効/無効にできる  
 app/models/user.rb、db/migrate/yyyymmddhhmmss_devise_create_users.rbの確認  
-
-
-
-
+app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。  
+（後で設定しましょう）
+　↓
 ```
+# databaseに反映
 $ rake db:migrate
 ```
 
