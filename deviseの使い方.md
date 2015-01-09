@@ -41,8 +41,8 @@ Some setup you must do manually if you haven't yet:
 
        root to: "home#index"
        # root "home#index"じゃダメなのかな？「to:」ってなんだ？
-       コントローラを作成
-       # rails g controller Home index showで、Homeコントローラにindexとshowの2つのアクションを定義（アクセス制限で使用するため）
+       コントローラを作成：Homeコントローラにindexとshowの2つのアクションを定義（アクセス制限で使用するため）
+       rails g controller Home index show
 
   3. 「ログイン関連のメッセージを表示する場合」
      Ensure you have flash messages in app/views/layouts/application.html.erb.
