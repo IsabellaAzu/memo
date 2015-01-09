@@ -81,10 +81,14 @@ rails g controller Home index show
 # model作成：model名は最初大文字の単数形
 $ rails g devise User
 ```
+
 下記2ファイルで、モジュールの設定を有効/無効にできる  
+
 app/models/user.rbを確認  
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
+
 db/migrate/yyyymmddhhmmss_devise_create_users.rb  
+![](xxx.jpg)  
 
 ※app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。  
 （<a href="#atode">後で設定</a>しましょう）
