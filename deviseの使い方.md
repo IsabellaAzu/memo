@@ -153,6 +153,13 @@ before_filter :authenticate_user!
 
 ### 3. カスタマイズ
 
+> 参考
+・deviseの10個のモジュール説明（下の方）
+　http://ruby-rails.hatenadiary.com/entry/20140801/1406907000
+・Railsの一番人気のログイン認証gemのDeviseのカスタマイズ方法
+　http://ruby-rails.hatenadiary.com/entry/20140804/1407168000
+・Rails – Deviseのコントローラをカスタマイズする方法
+　http://www.tamurasouko.com/?p=929
 
 （編集中）
 <a id="atode"></a>
