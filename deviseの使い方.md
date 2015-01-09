@@ -75,8 +75,11 @@ Some setup you must do manually if you haven't yet:
 $ rails g devise User
 ```
 下記2ファイルで、モジュールの設定を有効/無効にできる  
-app/models/user.rb、db/migrate/yyyymmddhhmmss_devise_create_users.rbの確認  
-app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。  
+app/models/user.rbを確認  
+![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
+db/migrate/yyyymmddhhmmss_devise_create_users.rb  
+
+※app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。  
 （<a href="#atode">後で設定</a>しましょう）
 　↓
 ```
@@ -87,14 +90,13 @@ $ rake db:migrate
 
 ##### View作成
 
-全ての画面の上部に、
-・ログインしていない場合は、「サインイン」と「ログイン」のリンク
-・ログインしている場合は、「プロフィール変更」と「ログアウト」のリンク
-を表示させるようにします。
-
-# app/views/layouts/application.html.erb
+全ての画面の上部に、  
+・ログインしていない場合は、「サインイン」と「ログイン」のリンク  
+・ログインしている場合は、「プロフィール変更」と「ログアウト」のリンク  
+を表示させるようにします。  
 
 ```html
+# app/views/layouts/application.html.erb
 <header>
   <nav>
     <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
@@ -111,7 +113,6 @@ $ rake db:migrate
     <% end %>
   </nav>
 </header>
-
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
@@ -119,14 +120,19 @@ $ rake db:migrate
 
 
 
-/app/models/user.rb  
-![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
 
-> 参考  
-https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
+
+
+
+
+（編集中）
 
 メール送信の場合は、/config/environments/development.rbを編集  
+
+> 参考：devise_mailer.rb  
+https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
+
 
 （編集中）
 
