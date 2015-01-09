@@ -94,7 +94,7 @@ $ rake db:migrate
 
 # app/views/layouts/application.html.erb
 
-```
+```html
 <header>
   <nav>
     <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
