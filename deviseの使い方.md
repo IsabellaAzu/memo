@@ -21,13 +21,12 @@ gem 'devise'
 $ bundle install
 $ rails g devise:install
 
-　↓
+　↓以下が出力される
 ===============================================================================
 
 Some setup you must do manually if you haven't yet:
 
-  1.「deviseのメール送信時のホスト名の指定」
-     Ensure you have defined default url options in your environments files. Here
+  1. Ensure you have defined default url options in your environments files. Here
      is an example of default_url_options appropriate for a development environment
      in config/environments/development.rb:
      
@@ -35,17 +34,12 @@ Some setup you must do manually if you haven't yet:
 
      In production, :host should be set to the actual host of your application.
 
-  2. 「root_urlを指定」
-     Ensure you have defined root_url to *something* in your config/routes.rb.
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
      For example:
 
        root to: "home#index"
-       # root "home#index"じゃダメなのかな？「to:」ってなんだ？
-       コントローラを作成：Homeコントローラにindexとshowの2つのアクションを定義（アクセス制限で使用するため）
-       rails g controller Home index show
 
-  3. 「ログイン関連のメッセージを表示する場合」
-     Ensure you have flash messages in app/views/layouts/application.html.erb.
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
      For example:
 
        <p class="notice"><%= notice %></p>
@@ -58,21 +52,22 @@ Some setup you must do manually if you haven't yet:
      On config/application.rb forcing your application to not access the DB
      or load models when precompiling your assets.
 
-  5. 「Viewをカスタマイズしたいときに必要」
-     You can copy Devise views (for customization) to your app by running:
+  5. You can copy Devise views (for customization) to your app by running:
 
        rails g devise:views
 
 ===============================================================================
 
-1.config/environments/development.rbに追記
+【やること】
+
+1.deviseのメール送信時のホスト名の指定：config/environments/development.rbに追記
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-2.config/routes.rbに追記してコントローラ作成
+2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
 root "home#index"
 rails g controller Home index show
 
-3.app/views/layouts/application.html.erbに追記
+3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
