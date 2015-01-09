@@ -37,6 +37,7 @@ $ git clone https://github.com/username/repositori.git
 ```
 $ git add . # 全部
 $ git add ファイル名 # 指定ファイル
+$ git reset HEAD ファイル名 # 指定ファイルのaddを取り消し
 $ git status # コミットしたいファイルが追加されてるか確認
 ```
 
