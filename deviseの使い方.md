@@ -58,7 +58,7 @@ Some setup you must do manually if you haven't yet:
 
   5. You can copy Devise views (for customization) to your app by running:
 
-       -__rails g devise:views__
+       rails g devise:views
 
 ===============================================================================
 ```
