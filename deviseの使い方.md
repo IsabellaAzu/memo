@@ -127,12 +127,22 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
+##### サーバー再起動  
+```Ruby
+# 確認
+$ rake routes
+```
+![](aaa.jpg)  
+※deviseコントローラは生成されない
 
-
-
-
-
-
+##### サーバー再起動  
+サインインなどに進めないなぁ、と思ったら
+```
+#サーバー停止  
+Ctrl+C  
+# サーバー起動  
+$ rails s
+```
 
 
 
@@ -145,12 +155,6 @@ $ rake db:migrate
 https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
 
-（編集中）
-
-```
-rails g controller home index
-```
-
 <a id="atode"></a>
 ユーザー認証を導入するために、各コントローラーに
 ```
@@ -159,13 +163,10 @@ rails g controller home index
 before_filter :authenticate_user!
 ```
 
-サーバー再起動  
-```
-#サーバー停止  
-Ctrl+C  
-# サーバー起動  
-$ rails s
-```
+（編集中）
+
+
+
 
 
 ログイン失敗などのアラートを表示  
