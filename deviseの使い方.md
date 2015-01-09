@@ -131,7 +131,7 @@ $ rake db:migrate
 # 確認
 $ rake routes
 ```
-![](aaa.jpg)  
+![](http://i.gyazo.com/ed07b0abf060017ce42a2489cc55c67a.png)  
 ※deviseコントローラは生成されない
 
 ##### サーバー再起動  
