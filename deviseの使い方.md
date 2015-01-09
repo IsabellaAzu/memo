@@ -64,6 +64,17 @@ Some setup you must do manually if you haven't yet:
        rails g devise:views
 
 ===============================================================================
+
+1.config/environments/development.rbに追記
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+2.config/routes.rbに追記
+root "home#index"
+
+3.app/views/layouts/application.html.erbに追記
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
 ```
 
 ### 2. devise設定
