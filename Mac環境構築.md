@@ -142,7 +142,9 @@ http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 うるう秒バグ(2015,GIGAZINE)  
 http://gigazine.net/news/20150108-leap-time-internet/  
 うるう秒バグ対策：2012-07-01 MySQLなどのCPU使用率が高騰  
-http://wevew.net/dev/2012/07/2012-07-01-mysqldjavacpu.html  
+http://wevew.net/dev/2012/07/2012-07-01-mysqldjavacpu.html
+Jenkinsなどの対応
+http://spring-mt.tumblr.com/post/26316963476  
 ```  
 * サーバを再起動する  
 * date `date +'%m%d%H%M%C%y.%S'` # 日付を再設定する  
