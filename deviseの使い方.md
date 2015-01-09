@@ -35,10 +35,12 @@ Some setup you must do manually if you haven't yet:
 
      In production, :host should be set to the actual host of your application.
 
-  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+  2. 「root_urlを指定」
+     Ensure you have defined root_url to *something* in your config/routes.rb.
      For example:
 
        root to: "home#index"
+       # root "home#index"じゃダメなのかな？「to:」ってなんだ？
 
   3. Ensure you have flash messages in app/views/layouts/application.html.erb.
      For example:
