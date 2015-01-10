@@ -228,7 +228,9 @@ app/views/devise/confirmations/new.html.erb
 アカウントのアンロック画面  
 app/views/devise/unlocks/new.html.erb  
 
-##### 
+##### 日本語化
+* viewに直接記載された英語を変更
+* controller、modelに記載された英語を、ja.ymlとdevise.ja.ymlで変更  
 
 ##### 
 
