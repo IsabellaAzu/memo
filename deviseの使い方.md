@@ -207,10 +207,26 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
 
 ##### Viewをカスタマイズ
+
 インストールした時にやらなかった項目です  
 ```
 $ rails g devise:views
 ```
+
+> ログイン画面  
+app/views/devise/sessions/new.html.erb  
+ユーザ登録画面  
+app/views/devise/registrations/new.html.erb  
+ユーザ情報変更画面  
+app/views/devise/registrations/edit.html.erb  
+パスワードを変更するためのメールを送信する画面  
+app/views/devise/passwords/new.html.erb  
+パスワードを変更する画面  
+app/views/devise/passwords/edit.html.erb  
+メールによるConfirmをする画面  
+app/views/devise/confirmations/new.html.erb  
+アカウントのアンロック画面  
+app/views/devise/unlocks/new.html.erb  
 
 ##### 
 
