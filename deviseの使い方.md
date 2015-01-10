@@ -126,7 +126,7 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
-
+##### サーバー再起動  
 ```Ruby
 # 確認
 $ rake routes
@@ -154,12 +154,19 @@ before_filter :authenticate_user!
 ### 3. カスタマイズ
 
 > 参考
-・deviseの10個のモジュール説明（下の方）  
-　http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 ・Railsの一番人気のログイン認証gemのDeviseのカスタマイズ方法  
 　http://ruby-rails.hatenadiary.com/entry/20140804/1407168000  
 ・Rails – Deviseのコントローラをカスタマイズする方法  
 　http://www.tamurasouko.com/?p=929  
+
+
+##### deviseにある10個のモジュール  
+
+> 参考
+http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
+
+* a
+
 
 
 （編集中）
