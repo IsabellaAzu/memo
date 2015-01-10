@@ -149,6 +149,14 @@ $ rails s
 before_filter :authenticate_user!
 ```
 
+他に便利なHelperメソッドは
+```
+# ユーザがサインインしているかどうか
+user_signed_in?
+# サインインしているユーザ情報を取得する
+current_user
+```
+
 - - -
 
 ### 3. カスタマイズ
