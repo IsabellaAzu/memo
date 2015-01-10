@@ -166,8 +166,8 @@ before_filter :authenticate_user!
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
-> モジュール  
-1. Database Authenticatable  
+モジュール  
+> 1. Database Authenticatable  
 パスワードを暗号化してDBに保存する  
 2. Omniauthable  
 TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
