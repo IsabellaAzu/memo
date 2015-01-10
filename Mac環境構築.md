@@ -136,6 +136,8 @@ schema_migrationsが壊れたら
 http://wayohoo.com/mysql/how-to-deal-with-when-schema_migrations-broke-of-rails.html  
 MySQLの違うバージョンをインストール  
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
+SQLプログラミング作法
+http://www.geocities.jp/mickindex/database/db_manner.html#LocalLink-capital
 
 2015年に起こりうる問題  
 >  
