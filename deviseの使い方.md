@@ -247,7 +247,25 @@ https://gist.github.com/yanagi0324/f63499851fa638690e09
 
 Railsのlocale設定を変更
 ```Ruby
+# config/application.rb
+  class Application < Rails::Application
+    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ja
+  end
+end
 ```
+
+サーバー再起動して反映  
+```
+#サーバー停止  
+Ctrl+C  
+# サーバー起動  
+$ rails s
+```
+
+
+
+
 
 ##### 
 
