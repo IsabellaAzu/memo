@@ -162,10 +162,11 @@ before_filter :authenticate_user!
 
 ##### deviseにあるモジュール  
 
-> 参考
+> 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
+> モジュール  
 1. Database Authenticatable  
 パスワードを暗号化してDBに保存する  
 2. Omniauthable  
@@ -187,6 +188,7 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 10. Lockable  
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
 
+##### aaa
 
 （編集中）
 <a id="atode"></a>
