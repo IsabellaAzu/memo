@@ -160,12 +160,21 @@ before_filter :authenticate_user!
 　http://www.tamurasouko.com/?p=929  
 
 
-##### deviseにある10個のモジュール  
+##### deviseにあるモジュール  
 
 > 参考
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 
-* a
+1. Database Authenticatable
+2. Omniauthable
+3. Confirmable
+4. Recoverable
+5. Registerable
+6. Rememberable
+7. Trackable
+8. Timeoutable
+9. Validatable
+10. Lockable
 
 
 
