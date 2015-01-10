@@ -15,7 +15,7 @@ index
 - - - 
 
 
-<a id="#a1"></a>
+<a id="a1"></a>
 ### 1. インストール
 
 ```
@@ -79,7 +79,7 @@ rails g controller Home index show
 ```
 
 
-<a id="#a2"></a>
+<a id="a2"></a>
 ### 2. devise設定
 
 ##### Model作成（ログインユーザー管理のModel）
@@ -168,7 +168,7 @@ current_user
 - - -
 
 
-<a id="#a3"></a>
+<a id="a3"></a>
 ### 3. カスタマイズ
 
 > 参考
