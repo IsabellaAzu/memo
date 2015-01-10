@@ -229,8 +229,21 @@ app/views/devise/confirmations/new.html.erb
 app/views/devise/unlocks/new.html.erb  
 
 ##### 日本語化
+
+やらないといけないこと  
 * viewに直接記載された英語を変更
 * controller、modelに記載された英語を、ja.ymlとdevise.ja.ymlで変更  
+
+ファイルの配置  
+* ja.yml：config/locales/ja.yml
+> 参考  
+https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml  
+
+* devise.ja.yml：config/locales/devise.ja.yml  
+> 参考  
+https://gist.github.com/yanagi0324/f63499851fa638690e09
+
+> https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt
 
 ##### 
 
