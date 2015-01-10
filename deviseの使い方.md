@@ -245,6 +245,10 @@ https://gist.github.com/yanagi0324/f63499851fa638690e09
 
 > https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt
 
+Railsのlocale設定を変更
+```Ruby
+```
+
 ##### 
 
 
