@@ -165,12 +165,16 @@ before_filter :authenticate_user!
 > 参考
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 
-1. Database Authenticatableデータベース認証  
-暗号化して署名し、利用者の正当性を検証するためにデータベースにパスワードを保存し、認証がPOSTリクエストまたはHTTP基本認証を通じて両方行うことができる。 
+1. Database Authenticatable
+パスワードを暗号化してDBに保存する
 2. Omniauthable
+TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する
 3. Confirmable
+ユーザに仮登録メールを送信してメール内のリンクからアカウントを本登録させる
 4. Recoverable
+パスワードを忘れた時に、ユーザのパスワードをリセットし、リセット指示を送る。
 5. Registerable
+自分のアカウントを削除することができる
 6. Rememberable
 7. Trackable
 8. Timeoutable
