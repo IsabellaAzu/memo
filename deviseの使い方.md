@@ -2,15 +2,21 @@
 ## deviseの使い方
 
 
-### 1. 基本的な流れ
+### 基本的な流れ
 > 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000 
 
-index
+index  
+> <a href="#a1">1. インストール</a>  
+<a href="#a2">2. devise設定</a>  
+<a href="#a3">3. カスタマイズ</a>  
+
 
 - - - 
 
-### 2. インストール
+
+<a id="#a1"></a>
+### 1. インストール
 
 ```
 # Gemfile
@@ -72,6 +78,8 @@ rails g controller Home index show
 
 ```
 
+
+<a id="#a2"></a>
 ### 2. devise設定
 
 ##### Model作成（ログインユーザー管理のModel）
@@ -159,6 +167,8 @@ current_user
 
 - - -
 
+
+<a id="#a3"></a>
 ### 3. カスタマイズ
 
 > 参考
