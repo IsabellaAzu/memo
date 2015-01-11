@@ -281,6 +281,7 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_7">2_7. タスクにチェックボックを付ける</a>  
 <a href="#a2_8">2_8. タスクの数を表示</a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
+<a href="#ax2_2">その他 日本語化、多言語化</a>  
 
 ・・・・・・・・・・
 
@@ -810,9 +811,9 @@ $(function(){
 
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
 
-<a id="ax2_1"></a>
 ### その他
 
+<a id="ax2_1"></a>
 ##### パーシャル（共通化）  
 DRYの原則に則って同じ部品の共通化する方法で、  
 _呼び出し名.html.erbに共通部分を記述し、  
@@ -988,8 +989,10 @@ class ProjectsController < ApplicationController
 end
 ```
 
-<a id="ax2_1_ja"></a>
-##### 日本語化(1)
+<a id="ax2_2"></a>
+##### 日本語化、多言語化
+
+###### 日本語化(1)  
 
 やらないといけないこと  
 * viewに直接記載された英語を変更
@@ -1015,7 +1018,7 @@ Railsのlocale設定を変更
 end
 ```
 
-##### 日本語化(2)
+###### 日本語化(2)
 
 > 参考  
 http://morizyun.github.io/blog/i18n-english-rails-ruby-many-languages/  
@@ -1031,7 +1034,7 @@ ja:
         password_confirmation: パスワード（再入力）
         remember_me: 次回からパスワード入力を省く
 ```
-##### 多言語化
+###### 多言語化
 
 > 参考  
 http://blog.notsobad.jp/post/87487830571/rails4-i18n
