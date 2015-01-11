@@ -1,8 +1,8 @@
 
 
 ##プロジェクト作成と準備
-> 参考
-http://dotinstall.com/lessons/basic_rails_v2/24901
+> 参考  
+http://dotinstall.com/lessons/basic_rails_v2/24901  
 https://softcover.s3.amazonaws.com/636/ruby_on_rails_tutorial_3rd_edition/ebooks/ruby_on_rails_tutorial-preview.pdf?AWSAccessKeyId=AKIAJMNNDDBSYVXVHGAA&Signature=sRb3Ww9IfO4uW/kBjrBbtCGlQ80%3D&Expires=1420699413  
 
 
