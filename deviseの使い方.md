@@ -254,11 +254,6 @@ https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
 
 
-
-
-
-
-
 - - -
 
 ## deviseあるある  
