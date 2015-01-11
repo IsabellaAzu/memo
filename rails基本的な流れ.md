@@ -1037,8 +1037,23 @@ ja:
 ###### 多言語化
 
 > 参考  
+URLの設計
 http://blog.notsobad.jp/post/87487830571/rails4-i18n
-
+直接指定
+http://www.serendip.ws/archives/4428
+```Ruby
+# view  
+<%= f.submit t('xxx.update') %>  
+# /config/locales/attributes.ja.yml  
+  xxx:  
+    update: 更新する  
+  ※ディレクトリ毎に定義するのもアリ（例）  
+  xxx:  
+    dir1  
+      update: 更新する  
+    dir2  
+      update: 一新する  
+```
 
 - - -
 
