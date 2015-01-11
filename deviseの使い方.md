@@ -264,8 +264,6 @@ app/views/devise/confirmations/new.html.erb
 アカウントのアンロック画面  
 app/views/devise/unlocks/new.html.erb  
 
-
-
 サーバー再起動して反映  
 ```
 #サーバー停止  
@@ -273,6 +271,9 @@ Ctrl+C
 # サーバー起動  
 $ rails s
 ```
+
+##### パスワードの入力文字数の設定を変える
+
 
 
 
