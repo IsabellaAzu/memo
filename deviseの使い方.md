@@ -255,6 +255,10 @@ end
 ```
 
 ##### 日本語化(2)
+
+> 参考  
+http://morizyun.github.io/blog/i18n-english-rails-ruby-many-languages/  
+
 /config/locales/attributes.ja.ymlを使用  
 ```yml
 ja:
