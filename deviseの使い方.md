@@ -139,8 +139,9 @@ $ rake db:migrate
 # 確認
 $ rake routes
 ```
-　
+
 ```Ruby
+# 結果  
                   Prefix Verb   URI Pattern                                      Controller#Action
         new_user_session GET    /users/sign_in(.:format)                         devise/sessions#new
             user_session POST   /users/sign_in(.:format)                         devise/sessions#create
@@ -172,8 +173,10 @@ cancel_user_registration GET    /users/cancel(.:format)                         
                     root GET    /                                                home#index
                          POST   /projects/:project_id/tasks/:id/toggle(.:format) tasks#toggle
 ```
-![](http://i.gyazo.com/ed07b0abf060017ce42a2489cc55c67a.png)  
+
+<!--![](http://i.gyazo.com/ed07b0abf060017ce42a2489cc55c67a.png)  -->
 ※deviseコントローラは生成されない
+
 
 ##### サーバー再起動  
 サインインなどに進めないなぁ、と思ったら
