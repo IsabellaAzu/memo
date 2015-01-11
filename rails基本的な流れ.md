@@ -1037,14 +1037,16 @@ ja:
 ###### 多言語化
 
 > 参考  
-URLの設計
-http://blog.notsobad.jp/post/87487830571/rails4-i18n
-直接指定
-http://www.serendip.ws/archives/4428
+URLの設計  
+http://blog.notsobad.jp/post/87487830571/rails4-i18n  
+直接指定  
+http://www.serendip.ws/archives/4428  
+
 ```Ruby
 # view  
 <%= f.submit t('xxx.update') %>  
 ```
+
 ```yml
 # /config/locales/attributes.ja.yml  
   xxx:  
