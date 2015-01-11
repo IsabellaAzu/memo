@@ -228,7 +228,7 @@ app/views/devise/confirmations/new.html.erb
 アカウントのアンロック画面  
 app/views/devise/unlocks/new.html.erb  
 
-##### 日本語化
+##### 日本語化(1)
 
 やらないといけないこと  
 * viewに直接記載された英語を変更
@@ -254,6 +254,21 @@ Railsのlocale設定を変更
   end
 end
 ```
+
+##### 日本語化(2)
+/config/locales/attributes.ja.ymlを使用  
+```yml
+ja:
+  activerecord:
+    attributes:
+      user:
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード（再入力）
+        remember_me: 次回からパスワード入力を省く
+```
+
+
 
 サーバー再起動して反映  
 ```
