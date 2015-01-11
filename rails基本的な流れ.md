@@ -988,6 +988,55 @@ class ProjectsController < ApplicationController
 end
 ```
 
+<a id="ax2_1_ja"></a>
+##### 日本語化(1)
+
+やらないといけないこと  
+* viewに直接記載された英語を変更
+* controller、modelに記載された英語を、ja.ymlとdevise.ja.ymlで変更  
+
+ファイルの配置  
+* ja.yml：config/locales/ja.yml
+> 参考 https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt  
+https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml  
+
+* devise.ja.yml：config/locales/devise.ja.yml  
+> 参考  
+https://gist.github.com/yanagi0324/f63499851fa638690e09
+
+
+Railsのlocale設定を変更
+```Ruby
+# config/application.rb
+  class Application < Rails::Application
+    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ja
+  end
+end
+```
+
+##### 日本語化(2)
+
+> 参考  
+http://morizyun.github.io/blog/i18n-english-rails-ruby-many-languages/  
+
+/config/locales/attributes.ja.ymlを使用  
+```yml
+ja:
+  activerecord:
+    attributes:
+      user:
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード（再入力）
+        remember_me: 次回からパスワード入力を省く
+```
+##### 多言語化
+
+> 参考  
+http://blog.notsobad.jp/post/87487830571/rails4-i18n
+
+
 - - -
 
 ## なんでやねんポイント
