@@ -1044,6 +1044,8 @@ http://www.serendip.ws/archives/4428
 ```Ruby
 # view  
 <%= f.submit t('xxx.update') %>  
+```
+```yml
 # /config/locales/attributes.ja.yml  
   xxx:  
     update: 更新する  
