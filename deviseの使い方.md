@@ -273,9 +273,11 @@ $ rails s
 ```
 
 ##### パスワードの入力文字数の設定を変える
-
-
-
+```Ruby
+# /config/initializers/devise.rb
+# 8文字以上128文字以下
+config.password_length = 8..128
+```
 
 
 
