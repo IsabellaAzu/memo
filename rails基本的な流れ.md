@@ -1047,12 +1047,14 @@ http://www.serendip.ws/archives/4428
 # /config/locales/attributes.ja.yml  
   xxx:  
     update: 更新する  
-  ※ディレクトリ毎に定義するのもアリ（例）  
+  ※URI Patternで定義するのもアリ（例）  
   xxx:  
     dir1  
       update: 更新する  
     dir2  
       update: 一新する  
+      dir3:
+        update: 新しくする  
 ```
 
 - - -
