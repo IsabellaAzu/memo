@@ -282,6 +282,7 @@ http://ja.wikipedia.org/wiki/CRUD
 <a href="#a2_8">2_8. タスクの数を表示</a>  
 <a href="#ax2_1">その他 パーシャル（共通化）</a>  
 <a href="#ax2_2">その他 日本語化、多言語化</a>  
+<a href="#ax2_3">その他 パスワードの入力文字数の設定を変える</a>  
 
 ・・・・・・・・・・
 
@@ -1060,6 +1061,10 @@ http://www.serendip.ws/archives/4428
       dir3:
         update: 新しくする  
 ```
+
+<a id="ax2_3"></a>
+##### パスワードの入力文字数の設定を変える
+
 
 - - -
 
