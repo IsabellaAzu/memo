@@ -1108,3 +1108,5 @@ http://qiita.com/tadatti/items/d0f1d08d1cc4c8275376
 http://moji.yayugu.net/articles/server_setting.html  
 でもsqaleなら月額940円  
 http://blog.inouetakuya.info/entry/20121125/1353839740  
+cloudinary(AmazonS3へのつなぎで無料で試す)  
+http://cloudinary.com/pricing  
