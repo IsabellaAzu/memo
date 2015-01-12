@@ -4,7 +4,8 @@
 
 ### 基本的な流れ
 > 参考  
-http://ruby-rails.hatenadiary.com/entry/20140801/1406907000 
+http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
+http://devise.plataformatec.com.br/  
 
 index  
 > <a href="#a1">1. インストール</a>  
