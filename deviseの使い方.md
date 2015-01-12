@@ -250,6 +250,12 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 インストールした時にやらなかった項目です  
 ```
 $ rails g devise:views
+
+# 個別にビューを作成する場合
+# /config/initializers/devise.rb  
+config.scoped_views = true
+# ビューの生成
+$ rails g devise:views users
 ```
 
 > ログイン画面  
@@ -292,7 +298,22 @@ http://easyramble.com/cutomize-controllers-on-rails-devise.html
 > 参考  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Confirmable
 
-1. 下記コメントアウトを取る
+1. メーラー用の設定  
+```Ruby
+# /config/environments/development.rb
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :authentication => :plain,
+  :user_name => 'メールアドレス',
+  :password => 'パスワード'
+}
+```
+
+2. 下記コメントアウトを取る  
+
 ```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
 
@@ -305,14 +326,14 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Confirmable
 # add_index :users, :confirmation_token,   unique: true
 ```
 
-2. modelを作成
+3. modelを作成  
 :confirmableを追加
 ```Ruby
 # /app/models/user.rb
   devise ・・・, :confirmable
 ```
 
-3. 
+4. aaa  
 ```Ruby
 $ rails g migration add_confirmable_to_devise
 ```
