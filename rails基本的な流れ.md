@@ -1144,3 +1144,11 @@ http://qiita.com/hkusu/items/3b0fb7f94a254e2ed6fd
 #### Strong Parameters
 > 参考  
 http://o.inchiki.jp/obbr/181  
+http://www.techscore.com/blog/2013/01/29/rails4-%E3%81%AE-strong-parameters-%E3%81%A7%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%99%E3%82%8B/  
+
+
+
+
+
+
+
