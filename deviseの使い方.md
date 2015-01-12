@@ -321,11 +321,15 @@ https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
 
 ## deviseあるある  
 
-##### 1. 削除系は自分で作り込まないと
+##### 1. 日本語化、他言語化
+
+https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md#ax2_2
+
+
+##### 2. 削除系は自分で作り込まないと
 * Userの情報だけ消す？
 * Userの入力内容、どうする？
 など
-
 
 
 
