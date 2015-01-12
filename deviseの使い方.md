@@ -279,6 +279,12 @@ $ rails s
 config.password_length = 8..128
 ```
 
+##### コントローラ作成
+
+> 参考  
+http://easyramble.com/cutomize-controllers-on-rails-devise.html  
+
+
 ##### Confirmable
 
 1. 下記コメントアウトを取る
