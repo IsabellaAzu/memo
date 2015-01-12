@@ -1141,3 +1141,6 @@ http://cloudinary.com/pricing
 > Rails 4 ＆ Active Admin で、マスタCRUD系の管理画面を秒速で作る方法  
 http://qiita.com/hkusu/items/3b0fb7f94a254e2ed6fd  
 
+#### Strong Parameters
+> 参考  
+http://o.inchiki.jp/obbr/181  
