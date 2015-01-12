@@ -337,6 +337,7 @@ config.action_mailer.smtp_settings = {
 ```Ruby
 $ rails g migration add_confirmable_to_devise
 ```
+（編集中）
 
 
 
