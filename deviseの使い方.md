@@ -279,9 +279,33 @@ $ rails s
 config.password_length = 8..128
 ```
 
+##### Confirmable
 
+1. 下記コメントアウトを取る
+```Ruby
+# /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
 
-##### 
+## Confirmable
+# t.string   :confirmation_token
+# t.datetime :confirmed_at
+# t.datetime :confirmation_sent_at
+# t.string   :unconfirmed_email # Only if using reconfirmable
+〜
+# add_index :users, :confirmation_token,   unique: true
+```
+
+2. modelを作成
+:confirmableを追加
+```Ruby
+# /app/models/user.rb
+  devise ・・・, :confirmable
+```
+
+3. 
+```Ruby
+$ 
+```
+
 
 
 （編集中）
