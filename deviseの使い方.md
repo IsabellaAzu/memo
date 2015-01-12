@@ -288,6 +288,8 @@ http://easyramble.com/cutomize-controllers-on-rails-devise.html
 
 
 ##### Confirmable 確認メールを送る方法
+> 参考  
+http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Confirmable
 
 1. 下記コメントアウトを取る
 ```Ruby
