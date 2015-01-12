@@ -242,6 +242,8 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 10. Lockable  
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
 
+
+<a id="atode"></a>
 ##### Viewをカスタマイズ
 
 インストールした時にやらなかった項目です  
@@ -315,7 +317,6 @@ $ rails g migration add_confirmable_to_devise
 
 
 （編集中）
-<a id="atode"></a>
 メール送信の場合は、/config/environments/development.rbを編集  
 > 参考：devise_mailer.rb  
 https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
