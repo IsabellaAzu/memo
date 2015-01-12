@@ -303,7 +303,7 @@ config.password_length = 8..128
 
 3. 
 ```Ruby
-$ 
+$ rails g migration add_confirmable_to_devise
 ```
 
 
