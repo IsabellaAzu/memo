@@ -285,7 +285,7 @@ config.password_length = 8..128
 http://easyramble.com/cutomize-controllers-on-rails-devise.html  
 
 
-##### Confirmable
+##### Confirmable 確認メールを送る方法
 
 1. 下記コメントアウトを取る
 ```Ruby
