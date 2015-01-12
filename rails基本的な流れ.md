@@ -1152,6 +1152,12 @@ http://easyramble.com/strong-parameters-on-rails-devise.html
 
 > 参考  
 http://easyramble.com/devise-on-rails.html#crayon-54b3e98a9a403968501399
-
+```Ruby
+private
+  def correct_user
+    @user = User.find(params[:id])
+    redirect_to(root_path) unless current_user?(@user)
+  end
+```
 
 
