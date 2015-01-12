@@ -1061,6 +1061,10 @@ http://www.serendip.ws/archives/4428
         update: 新しくする  
 ```
 
+###### 404/500系のページ設定
+
+> 参考  
+http://morizyun.github.io/blog/custom-error-404-500-page/
 
 - - -
 
