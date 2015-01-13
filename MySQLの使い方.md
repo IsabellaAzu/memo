@@ -17,7 +17,7 @@ $ SHOW DATABASES;
 
 # 間違ったコマンドから抜ける方法
 ------------------------こうなっちゃったら
-> mysql> SHOW DATABASES
+mysql> SHOW DATABASES
     ->
     ->
 ------------------------
