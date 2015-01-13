@@ -23,8 +23,13 @@ mysql> SHOW DATABASES
 ------------------------
 $ ctrl+c
 
-#
+# データベース作成
 mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
+同名のデータベースが存在するとエラーに。エラーを発生させないために、キーワードIF NOT EXISTSを指定
+
+
+
+
 ```
 
 - - -
