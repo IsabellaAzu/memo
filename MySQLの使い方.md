@@ -34,7 +34,7 @@ MariaDBの場合
 http://qiita.com/kozmats/items/ac32f1ac1d676a09e3b2  
 ER図作成　Workbench  
 http://dev.mysql.com/downloads/workbench/  
-Sequel Pro  
+GUIで閲覧、編集：Sequel Pro  
 http://www.sequelpro.com  
 
 
