@@ -335,6 +335,15 @@ config.action_mailer.smtp_settings = {
 
 4. aaa  
 ```Ruby
+$ rails g devise User
+```
+```
+>      invoke  active_record  
+      create    db/migrate/20150113173023_add_devise_to_users.rb  
+      insert    app/models/user.rb  
+       route  devise_for :users  
+```
+
 $ rails g migration add_confirmable_to_devise
 ```
 （編集中）
