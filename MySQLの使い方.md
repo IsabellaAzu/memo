@@ -13,7 +13,7 @@
 $ mysql -u root
 
 # データベース一覧を表示（root権限のみ）
-$ SHOW DATABASES;
+mysql> SHOW DATABASES;
 
 # 間違ったコマンドから抜ける方法（セミコロンを忘れがち）
 ------------------------こうなっちゃったら
@@ -23,6 +23,8 @@ mysql> SHOW DATABASES
 ------------------------
 $ ctrl+c
 
+#
+mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
 ```
 
 - - -
