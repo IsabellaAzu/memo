@@ -7,10 +7,19 @@
 
 
 
-
+基本的な操作
 ```
 # ログイン
 $ mysql -u root
+
+# データベース一覧を表示（root権限のみ）
+$ SHOW DATABASES;
+
+# 間違ったコマンドから抜ける方法
+> mysql> SHOW DATABASES
+    ->
+$ ctrl+c
+
 ```
 
 - - -
