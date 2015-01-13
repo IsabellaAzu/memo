@@ -26,8 +26,8 @@ $ ctrl+c
 # データベース作成（同名のデータベースが存在するとエラーに。エラーを発生させないために、キーワードIF NOT EXISTSを指定）
 mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
 
-
-
+# データベース削除
+DROP DATABASE データベース名;
 
 
 ```
