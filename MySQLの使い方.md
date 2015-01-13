@@ -28,9 +28,21 @@ mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
 
 # データベース削除
 DROP DATABASE データベース名;
-
-
 ```
+
+
+
+railsで使う時
+```Ruby
+# mysql起動
+$ mysql.server start
+# マイグレーションファイル作成
+$ rake db:create:all
+# DB作成
+$ rake db:migrate
+```
+
+
 
 - - -
 
