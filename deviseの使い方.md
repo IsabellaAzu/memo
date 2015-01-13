@@ -10,7 +10,7 @@ http://devise.plataformatec.com.br/
 index  
 > <a href="#a1">1. インストール</a>  
 <a href="#a2">2. devise設定</a>  
-<a href="#a3">3. カスタマイズ</a>  
+<a href="#a3">2. カスタマイズ</a>  
 
 
 - - - 
