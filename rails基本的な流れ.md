@@ -1081,6 +1081,11 @@ http://morizyun.github.io/blog/custom-error-404-500-page/
 
 ### 運用  
 
+Railsのマイグレーションファイルを既存のスキーマ、データベースを元に作成  
+http://blog.digital-squad.net/article/398190260.html  
+
+  
+
 サーバーにアップして動くのはPHPまで。  
 Nginx、unicorn、capistrano、ログの知識が必要  
 サービス動いた状態でデプロイ（メンテ入れる？）  
