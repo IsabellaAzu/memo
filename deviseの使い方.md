@@ -295,10 +295,12 @@ http://easyramble.com/cutomize-controllers-on-rails-devise.html
 
 
 ##### Confirmable 確認メールを送る方法
-> 参考  
-http://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Confirmable
 
-1. メーラー用の設定  
+> 参考  
+http://gaku3601.hatenablog.com/entry/2014/08/23/165749
+http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
+
+###### 1. メーラー用の設定  
 ```Ruby
 # /config/environments/development.rb
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
@@ -310,9 +312,12 @@ config.action_mailer.smtp_settings = {
   :user_name => 'メールアドレス',
   :password => 'パスワード'
 }
+〜
+# メール送信時の例外処理、下記の様にコメントアウトする
+# config.action_mailer.raise_delivery_errors = false
 ```
 
-2. 下記コメントアウトを取る  
+###### 2. 下記コメントアウトを取る  
 
 ```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
@@ -326,37 +331,17 @@ config.action_mailer.smtp_settings = {
 # add_index :users, :confirmation_token,   unique: true
 ```
 
-3. modelを作成  
-:confirmableを追加
+###### 3. :confirmableを追加
 ```Ruby
 # /app/models/user.rb
   devise ・・・, :confirmable
 ```
 
-4. aaa  
+###### 4. mailのfromの設定
 ```Ruby
-$ rails g devise User
+# /config/initializers/devise.rb
+  config.mailer_sender = 'a@a.jp'
 ```
->  
-```
-invoke  active_record  
-create    db/migrate/20150113173023_add_devise_to_users.rb  
-insert    app/models/user.rb  
- route  devise_for :users  
-```
-
-$ rails g migration add_confirmable_to_devise
-```
-（編集中）
-
-
-
-（編集中）
-メール送信の場合は、/config/environments/development.rbを編集  
-> 参考：devise_mailer.rb  
-https://github.com/plataformatec/devise/blob/v1.0/app/models/devise_mailer.rb
-
-
 
 
 - - -
