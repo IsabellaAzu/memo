@@ -4,17 +4,8 @@
 （超絶編集中）
 
 
-
-
-
 基本的な操作
 ```
-# ログイン
-$ mysql -u root
-
-# データベース一覧を表示（root権限のみ）
-mysql> SHOW DATABASES;
-
 # 間違ったコマンドから抜ける方法（セミコロンを忘れがち）
 ------------------------こうなっちゃったら
 mysql> SHOW DATABASES
@@ -28,7 +19,20 @@ mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
 
 # データベース削除
 DROP DATABASE データベース名;
+
+# ログイン
+$ mysql -u root
+
+# データベース一覧を表示（root権限のみ）
+mysql> SHOW DATABASES;
+
+# データベースdb_nameのテーブル一覧を表示
+mysql> SHOW TABLES FROM db_name;
 ```
+
+
+
+SHOW TABLES FROM db_name;
 
 
 
