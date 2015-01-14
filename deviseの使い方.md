@@ -83,14 +83,14 @@ rails g controller Home index show
 <a id="a2"></a>
 ### 2. devise設定
 
-##### Model作成（ログインユーザー管理のModel）
+##### 2_1. Model作成（ログインユーザー管理のModel）
 
 ```
 # model作成：model名は最初大文字の単数形
 $ rails g devise User
 ```
 
-下記2ファイルで、モジュールの設定を有効/無効にできる  
+下記2つのファイルで、モジュールの設定を有効/無効にできる  
 
 app/models/user.rbを確認  
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
@@ -107,7 +107,7 @@ $ rake db:migrate
 ```
 
 
-##### View作成
+##### 2_2. View作成
 
 全ての画面の上部に、  
 ・ログインしていない場合は、「サインイン」と「ログイン」のリンク  
@@ -135,7 +135,7 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
-##### サーバー再起動  
+##### 2_3. サーバー再起動  
 ```Ruby
 # 確認
 $ rake routes
@@ -179,7 +179,7 @@ cancel_user_registration GET    /users/cancel(.:format)                         
 ※deviseコントローラは生成されない
 
 
-##### サーバー再起動  
+##### 2_4. サーバー再起動  
 サインインなどに進めないなぁ、と思ったら
 ```
 #サーバー停止  
