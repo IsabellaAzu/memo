@@ -4,48 +4,6 @@
 （超絶編集中）
 
 
-基本的な操作
-```
-# 間違ったコマンドから抜ける方法（セミコロンを忘れがち）
-------------------------こうなっちゃったら
-mysql> SHOW DATABASES
-    ->
-    ->
-------------------------
-$ ctrl+c
-
-# データベース作成（同名のデータベースが存在するとエラーに。エラーを発生させないために、キーワードIF NOT EXISTSを指定）
-mysql> CREATE DATABASE [IF NOT EXISTS] データベース名;
-
-# データベース削除
-DROP DATABASE データベース名;
-
-# ログイン
-$ mysql -u root
-
-# データベース一覧を表示（root権限のみ）
-mysql> SHOW DATABASES;
-
-# データベースdb_nameのテーブル一覧を表示
-mysql> SHOW TABLES FROM db_name;
-```
-
-
-
-SHOW TABLES FROM db_name;
-
-
-
-railsで使う時
-```Ruby
-# mysql起動
-$ mysql.server start
-# マイグレーションファイル作成
-$ rake db:create:all
-# DB作成
-$ rake db:migrate
-```
-
 
 
 - - -
