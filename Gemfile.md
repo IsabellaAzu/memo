@@ -43,7 +43,7 @@ end
 
 
 
-## プロジェクト作成時に生成されたGemfile
+## railsでプロジェクト作成時に生成されたGemfile
 
 ```
 source 'https://rubygems.org'
