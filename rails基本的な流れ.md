@@ -1166,25 +1166,25 @@ private
 
 
 #### Rails で "とりあえず動くコード" を書けるようになった人が次に遭遇する問題とそれを解決してくれる本まとめ
-> 参考
-http://blog.inouetakuya.info/entry/2014/06/08/194015
-問題 1. テストが書けない
-- 読むべき本: Everyday Rails - RSpec による Rails テスト入門
-問題 2. Rails っぽく書けない
-- 読むべき本 (1) パーフェクト Ruby on Rails
-- 読むべき本 (2) Rails AntiPatterns
-問題 3. Ruby っぽく書けない
-- 読むべき本: パーフェクト Ruby
-問題 4. ライブラリのコードを読んでも意味が分からない
-- 読むべき本: メタプログラミング Ruby
-問題 5. Rails が内部で何をやっているのか分からない
-- 読むべき本: Crafting Rails 4 Applications
-問題 6. 手続き型なコードから抜け出せない。オブジェクト指向で書けない
-- 読むべき本: リファクタリング Ruby エディション
-問題 7. クラス設計力が足りない
-- 読むべき本: デザインパターンとともに学ぶオブジェクト指向のこころ
+> 参考  
+http://blog.inouetakuya.info/entry/2014/06/08/194015  
+問題 1. テストが書けない  
+- 読むべき本: Everyday Rails - RSpec による Rails テスト入門  
+問題 2. Rails っぽく書けない   
+- 読むべき本 (1) パーフェクト Ruby on Rails  
+- 読むべき本 (2) Rails AntiPatterns  
+問題 3. Ruby っぽく書けない  
+- 読むべき本: パーフェクト Ruby  
+問題 4. ライブラリのコードを読んでも意味が分からない  
+- 読むべき本: メタプログラミング Ruby  
+問題 5. Rails が内部で何をやっているのか分からない  
+- 読むべき本: Crafting Rails 4 Applications  
+問題 6. 手続き型なコードから抜け出せない。オブジェクト指向で書けない  
+- 読むべき本: リファクタリング Ruby エディション  
+問題 7. クラス設計力が足りない  
+- 読むべき本: デザインパターンとともに学ぶオブジェクト指向のこころ  
 
-→ https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md
+→ [memo/rails基本的な流れの次.md](https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md)  
 
 ```
 
