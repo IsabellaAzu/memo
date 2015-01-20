@@ -3,7 +3,7 @@
 
 （超絶編集中）
 
-> MySQLのsnippet
+> MySQLのsnippet  
 https://github.com/IsabellaAzu/snippet/tree/master/mysql
 
 ```
