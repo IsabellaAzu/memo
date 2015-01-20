@@ -59,9 +59,14 @@ $ bundle install
 ### 1_1. model作成
 ```
 # model名は最初大文字の単数形
+# 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」
 $ rails g model Project title # rails generate model Project title:stringの省略形
 ```
+> 参考  
+```
+# 型
 
+```
 
 <a id="a1_2"></a>
 ### 1_2. データベース作成(development/test/productionのすべてを作成)  
