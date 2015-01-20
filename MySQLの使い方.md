@@ -3,6 +3,8 @@
 
 （超絶編集中）
 
+> MySQLのsnippet
+https://github.com/IsabellaAzu/snippet/tree/master/mysql
 
 ```
 # 手動起動、停止
