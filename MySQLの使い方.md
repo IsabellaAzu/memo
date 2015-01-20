@@ -3,6 +3,17 @@
 
 （超絶編集中）
 
+
+```
+# 手動起動、停止
+$ mysql.server start
+$ mysql.server stop
+
+# ログイン
+$ mysql -u root
+```
+
+
 <table>
 <tr><th>あああ</th><td>いいい</td></tr>
 </table>
