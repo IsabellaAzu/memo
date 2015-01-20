@@ -140,6 +140,22 @@ timestamp
 <td>TrueClass/FalseClass</td>
 </tr>
 </table>
++-----------------+---------------+------+-----+---------+----------------+
+| Field           | Type          | Null | Key | Default | Extra          |
++-----------------+---------------+------+-----+---------+----------------+
+| id              | int(11)       | NO   | PRI | NULL    | auto_increment |
+| field_integer   | int(11)       | YES  |     | NULL    |                |
+| field_decimal   | decimal(10,0) | YES  |     | NULL    |                |
+| field_float     | float         | YES  |     | NULL    |                |
+| field_string    | varchar(255)  | YES  |     | NULL    |                |
+| field_text      | text          | YES  |     | NULL    |                |
+| field_binary    | blob          | YES  |     | NULL    |                |
+| field_date      | date          | YES  |     | NULL    |                |
+| field_datetime  | datetime      | YES  |     | NULL    |                |
+| field_timestamp | datetime      | YES  |     | NULL    |                |
+| field_time      | time          | YES  |     | NULL    |                |
+| field_boolean   | tinyint(1)    | YES  |     | NULL    |                |
++-----------------+---------------+------+-----+---------+----------------+
 [Railsでカラムのデータ型を変更する場合の手順](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja)
 
 <a id="a1_2"></a>
