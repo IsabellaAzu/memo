@@ -15,12 +15,6 @@ $ mysql.server stop
 $ mysql -u root
 ```
 
-
-<table>
-<tr><th>あああ</th><td>いいい</td></tr>
-</table>
-
-
 - - -
 
 > 参考  
