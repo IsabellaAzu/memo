@@ -78,8 +78,8 @@ text
 time
 timestamp
 ```
-<table border="1">
-<tbody><tr style="background-color:#CCCCCC">
+<table>
+<tr>
 <td>マイグレーション</td>
 <td>MySQL</td>
 <td>Ruby</td>
@@ -139,7 +139,7 @@ timestamp
 <td>tinyint(1)</td>
 <td>TrueClass/FalseClass</td>
 </tr>
-</tbody></table>
+</table>
 [Railsでカラムのデータ型を変更する場合の手順](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja)
 
 <a id="a1_2"></a>
