@@ -198,7 +198,7 @@ controllerのファイルとviewのファイルが生成される
 ### 1_4. routing設定  
 /config/routes.rb
 ```
-resources :projects # projectに関するURIの様なものを自動生成
+resources :projects # projectに関するURIの様なものを生成
 ```
 ターミナルで上記を反映  
 ```
