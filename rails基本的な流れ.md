@@ -1284,3 +1284,6 @@ http://blog.inouetakuya.info/entry/2014/06/08/194015
 ```
 
 
+rails公式チュートリアル
+http://railstutorial.jp/
+
