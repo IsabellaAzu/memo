@@ -1088,6 +1088,19 @@ end
 
 <a id="ax2_2"></a>
 ##### 日本語化、多言語化
+> 参考
+http://rails3try.blogspot.jp/2012/01/rails3-i18n.html
+
+
+Railsのlocale設定を変更
+```Ruby
+# config/application.rb
+  class Application < Rails::Application
+    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ja
+  end
+end
+```
 
 ###### 日本語化(1)  
 
@@ -1104,16 +1117,6 @@ https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml
 > 参考  
 https://gist.github.com/yanagi0324/f63499851fa638690e09
 
-
-Railsのlocale設定を変更
-```Ruby
-# config/application.rb
-  class Application < Rails::Application
-    # config.i18n.default_locale = :de
-    config.i18n.default_locale = :ja
-  end
-end
-```
 
 ###### 日本語化(2)
 
