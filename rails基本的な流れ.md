@@ -342,6 +342,7 @@ http://guides.rubyonrails.org/getting_started.html
 ```
 <%= image_tag "hoge.png" %>
 <%= link_to "HOME", projects_path %>
+<%= f.label :password, t("xxx.newpassword") %>
 ```
 ※link_toの「projects_path」はrake routesした時に出力される「Prefix」に「_path」を連結したもの
 
