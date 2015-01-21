@@ -34,7 +34,7 @@ https://github.com/funnythingz/pins/blob/master/Gemfile
 
 インストール  
 ```
-$ bundle install
+$ bundle install --path vendor/bundle
 ```
 
 - - -
