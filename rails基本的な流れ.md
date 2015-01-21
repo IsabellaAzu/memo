@@ -1,5 +1,6 @@
 
 
+<a id="anc_page_top"></a>
 ##プロジェクト作成と準備
 > 参考  
 http://dotinstall.com/lessons/basic_rails_v2/24901  
