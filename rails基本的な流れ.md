@@ -1180,8 +1180,9 @@ http://morizyun.github.io/blog/custom-error-404-500-page/
 
 Railsのマイグレーションファイルを既存のスキーマ、データベースを元に作成  
 http://blog.digital-squad.net/article/398190260.html  
-
   
+見やすいログの設定方法  
+http://qiita.com/marqs/items/70588084a87fd0cb164e
 
 サーバーにアップして動くのはPHPまで。  
 Nginx、unicorn、capistrano、ログの知識が必要  
