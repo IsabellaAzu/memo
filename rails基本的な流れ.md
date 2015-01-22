@@ -63,7 +63,7 @@ $ bundle install --path vendor/bundle
 # 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」
 $ rails g model Project title # rails generate model Project title:stringの省略形
 ```
-> 参考  
+> 参考 [Railsでカラムのデータ型を変更する場合の手順](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja)  
 ```
 # データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
 binary
@@ -155,7 +155,6 @@ timestamp
 | field_timestamp | datetime      | YES  |     | NULL    |                |  
 | field_time      | time          | YES  |     | NULL    |                |  
 | field_boolean   | tinyint(1)    | YES  |     | NULL    |                |  
-[Railsでカラムのデータ型を変更する場合の手順](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja)
 
 <a id="a1_2"></a>
 ### 1_2. データベース作成(development/test/productionのすべてを作成)  
