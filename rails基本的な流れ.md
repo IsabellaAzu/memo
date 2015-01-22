@@ -196,8 +196,8 @@ controllerのファイルとviewのファイルが生成される
 
 <a id="a1_4"></a>
 ### 1_4. routing設定  
-/config/routes.rb
 ```
+# /config/routes.rb
 resources :projects # projectに関するURIの様なものを生成
 ```
 ターミナルで上記を反映  
