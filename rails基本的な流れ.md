@@ -142,7 +142,7 @@ timestamp
 </tr>
 </table>
 | Field           | Type          | Null | Key | Default | Extra          |  
-|:----------------+:--------------+:-----+:----+:--------+:---------------|  
+|:----------------|:--------------|:-----|:----|:--------|:---------------|  
 | id              | int(11)       | NO   | PRI | NULL    | auto_increment |  
 | field_integer   | int(11)       | YES  |     | NULL    |                |  
 | field_decimal   | decimal(10,0) | YES  |     | NULL    |                |  
