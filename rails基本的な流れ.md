@@ -1286,6 +1286,8 @@ http://blog.inouetakuya.info/entry/2014/06/08/194015
 
 ```
 
+暗号化方式一覧（トークンとは別）  
+https://md5.znaet.org/md5/ac75e7eca69abf564a76d52fd6e35c1c  
 
 rails公式チュートリアル
 http://railstutorial.jp/
