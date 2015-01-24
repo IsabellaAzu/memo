@@ -572,19 +572,7 @@ end
 #<ActiveModel::Errors:0x007fe7e948c0f0 @base=#<Project id: nil, title: "", created_at: nil, updated_at: nil>, @messages={:title=>["can't be blank"]}>
 ```
 
-@messages={:title=>["can't be blank"]}の中身を表示（デフォルトのエラーメッセージ）  
-```html
-# /views/projects/new.html.erb
-<%= form_for @project do |f| %>
-  <p><%= f.label :title %>　<%= f.text_field :title %></p>
-  <% if @project.errors.any? %>
-    <p><%= @project.errors.messages[:title][0] %></p>
-  <% end %>
-  <p><%= f.submit %></p>
-<% end %>
-```
-
-デフォルトのエラーメッセージを変更する（Modelに定義）  
+上記デフォルトのエラーメッセージを変更する（Modelに定義）  
 （追加で入力文字数のチェックも）
 ```Ruby
 class Project < ActiveRecord::Base
@@ -596,6 +584,17 @@ class Project < ActiveRecord::Base
 end
 ```
 
+@messages={:title=>["can't be blank"]}の中身を表示（デフォルトのエラーメッセージ）  
+```html
+# /views/projects/new.html.erb
+<%= form_for @project do |f| %>
+  <p><%= f.label :title %>　<%= f.text_field :title %></p>
+  <% if @project.errors.any? %>
+    <p><%= @project.errors.messages[:title][0] %></p>
+  <% end %>
+  <p><%= f.submit %></p>
+<% end %>
+```
 
 <a id="a2_3"></a>
 ### 2_3. 編集機能（edit）
