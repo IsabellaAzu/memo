@@ -674,6 +674,8 @@ end
 # model名は最初大文字の単数形  
 # done:booleanは終わったかどうか、project:referencesはprojectと紐付ける  
 $ rails g model Task title done:boolean project:references  
+# projectと紐付けを忘れた場合は
+$ rails g migration AddProjectToCondition project:refernces
 ```
 
 taskを登録した時にtaskのdoneはデフォルトでfalseとする  
