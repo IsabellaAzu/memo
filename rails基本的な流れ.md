@@ -1086,7 +1086,7 @@ end
 ##### 日本語化、多言語化
 > 参考
 http://rails3try.blogspot.jp/2012/01/rails3-i18n.html
-
+http://memo.yomukaku.net/entries/LXvSUpT
 
 Railsのlocale設定を変更
 ```Ruby
