@@ -21,6 +21,8 @@ $ rake db:migrate
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
+- - -
+
 #### １つのsubmitで複数テーブルのフィールドをnew/create
 [参考] http://ruby-rails.hatenadiary.com/entry/20141208/1418018874  
 > 関連キーワード inverse_of
