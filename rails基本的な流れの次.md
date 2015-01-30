@@ -31,12 +31,21 @@ http://qiita.com/ryoff/items/e3ba4b8c8be117c79b73
 has_many :yyyys # 最初小文字複数形
 accepts_nested_attributes_for :yyyys # 最初小文字複数形
 ```
+
 2. 子モデル yyyy に追記
 ```Ruby
 belongs_to :xxxx
 ```
 
-
+3. viewで、入れ子で使用可能
+```Ruby
+<%= form_for @xxxx do |f| %>
+  <%= f.fields_for :yyyys do |yyyys_form| %>
+    <%= yyyys_form.label :title, "見出し" %>
+    <%= yyyys_form.text_field :title %><br />
+  <% end %>
+<% end %>
+```
 
 
 
