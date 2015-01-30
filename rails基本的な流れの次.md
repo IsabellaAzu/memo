@@ -47,12 +47,19 @@ belongs_to :xxxx
 <% end %>
 ```
 
-###### 4. コントローラの、例えばnewに追記するなら
+###### 4. コントローラの、例えばnewに追記するなら、そしてStrongParameterにも。
 ```Ruby
 def new
   @xxxx = Xxxx.new
   @xxxx.yyyys.build
 end
+〜
+Private
+  def xxxx_params
+    def xxxx_params
+      params[:xxxx].permit(:title,:yyyys_attributes => [:title])
+    end
+  end
 ```
 
 #### 1対1
