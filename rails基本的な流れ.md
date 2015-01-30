@@ -491,7 +491,7 @@ class ProjectsController < ApplicationController
 
     # セキュリティ
     def project_params
-      # フィルタリング：projectで渡ってきた中で、titleだけ引っ張ってきてね
+      # フィルタリング：projectで渡ってきた中で、title属性だけ許可します
       params[:project].permit(:title)
     end
 
