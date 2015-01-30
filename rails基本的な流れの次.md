@@ -26,8 +26,24 @@ http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 > 関連キーワード inverse_of
 http://qiita.com/ryoff/items/e3ba4b8c8be117c79b73  
 
-#### 1対多
+1. 親model XXXX に追記
+```Ruby
+has_many :YYYYs # 複数形
+```
 
+2. 子モデル YYYY に追記
+```Ruby
+belongs_to :XXXX
+```
+
+
+
+
+
+
+#### 1対1
+
+#### 1対多
 
 #### 多対多
 
