@@ -25,6 +25,7 @@ http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
 - - -
 
+<a id="anc_1submit_for_many_tables"></a>
 #### １つのsubmitで複数テーブルのフィールドをnew/create
 [参考] http://ruby-rails.hatenadiary.com/entry/20141208/1418018874  
 > 関連キーワード inverse_of  
@@ -41,7 +42,7 @@ accepts_nested_attributes_for :yyyys # 最初小文字複数形
 belongs_to :xxxx
 ```
 
-###### 3. newのビューなどで、入れ子で使用可能
+###### 3. 親モデルのnewのビューなどで、入れ子で使用可能
 ```Html
 <%= form_for @xxxx do |f| %>
   <%= f.fields_for :yyyys do |yyyys_form| %>
