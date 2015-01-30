@@ -18,6 +18,8 @@ $ rails g migration AddProjectToTask project:references
 $ rake db:migrate
 ```
 
+- - -
+
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
@@ -40,7 +42,7 @@ belongs_to :xxxx
 ```
 
 ###### 3. newのビューなどで、入れ子で使用可能
-```Ruby
+```Html
 <%= form_for @xxxx do |f| %>
   <%= f.fields_for :yyyys do |yyyys_form| %>
     <%= yyyys_form.label :title, "見出し" %>
