@@ -27,7 +27,7 @@ http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
 #### １つのsubmitで複数テーブルのフィールドをnew/create
 [参考] http://ruby-rails.hatenadiary.com/entry/20141208/1418018874  
-> 関連キーワード inverse_of
+> 関連キーワード inverse_of  
 http://qiita.com/ryoff/items/e3ba4b8c8be117c79b73  
 
 ###### 1. 親model xxxx に追記
