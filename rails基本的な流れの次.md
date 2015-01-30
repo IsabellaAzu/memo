@@ -26,18 +26,18 @@ http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 > 関連キーワード inverse_of
 http://qiita.com/ryoff/items/e3ba4b8c8be117c79b73  
 
-1. 親model xxxx に追記
+###### 1. 親model xxxx に追記
 ```Ruby
 has_many :yyyys # 最初小文字複数形
 accepts_nested_attributes_for :yyyys # 最初小文字複数形
 ```
 
-2. 子モデル yyyy に追記
+###### 2. 子モデル yyyy に追記
 ```Ruby
 belongs_to :xxxx
 ```
 
-3. viewで、入れ子で使用可能
+###### 3. newのビューなどで、入れ子で使用可能
 ```Ruby
 <%= form_for @xxxx do |f| %>
   <%= f.fields_for :yyyys do |yyyys_form| %>
@@ -47,8 +47,13 @@ belongs_to :xxxx
 <% end %>
 ```
 
-
-
+###### 4. コントローラの、例えばnewに追記するなら
+```Ruby
+def new
+  @xxxx = Xxxx.new
+  @xxxx.yyyys.build
+end
+```
 
 #### 1対1
 
