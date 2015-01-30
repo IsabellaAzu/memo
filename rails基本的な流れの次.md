@@ -43,3 +43,10 @@ http://blog.scimpr.com/2014/01/20/rails4%E3%81%A7%E3%83%95%E3%82%A9%E3%83%BC%E3%
 
 #### Railsで１フォームに複数のサブミット(Submit)ボタンを配置するTips
 http://ruby-rails.hatenadiary.com/entry/20141225/1419515057  
+
+#### 新しいマイグレーションを追加してテーブルを変更
+http://www.rubylife.jp/rails/model/index7.html#section2
+
+
+
+
