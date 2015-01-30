@@ -29,6 +29,7 @@ http://ruby-rails.hatenadiary.com/entry/20141204/1417688260
 http://b.pyar.bz/blog/2014/10/16/many-to-many-table/  
 http://blog.kz-dev.com/archives/453  
 http://qiita.com/samurairunner/items/cbd91bb9e3f8b0433b99  
+http://ruby-rails.hatenadiary.com/entry/20141208/1418018874
 
 #### 1対多
 
