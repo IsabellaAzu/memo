@@ -52,7 +52,7 @@ belongs_to :xxxx
 <% end %>
 ```
 
-###### 4. コントローラの、例えばnewに追記するなら、そしてStrongParameterにも。
+###### 4. 親コントローラの、例えばnewに追記するなら、そしてStrongParameterにも。
 ```Ruby
 def new
   @xxxx = Xxxx.new
