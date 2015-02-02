@@ -67,6 +67,7 @@ Private
   end
 ```
 
+
 #### 1対1
 
 #### 1対多
@@ -83,7 +84,5 @@ http://ruby-rails.hatenadiary.com/entry/20141225/1419515057
 
 #### 新しいマイグレーションを追加してテーブルを変更
 http://www.rubylife.jp/rails/model/index7.html#section2
-
-
 
 
