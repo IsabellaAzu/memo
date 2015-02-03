@@ -202,13 +202,21 @@ https://imageoptim.com/
 ##### Sequel Pro：DBのGUI
 http://www.sequelpro.com/
 
+##### imageAlpha：透過画像軽量化
+http://pngmini.com/
+
 ##### 
+
 ##### 
+
 ##### 
+
 ##### 
+
 ##### 
+
 ##### 
-##### 
+
 ##### 
 
 ##### tmux
