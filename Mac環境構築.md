@@ -166,7 +166,7 @@ https://gist.github.com/keifukuda/4535242
 
 ## 便利ツール  
 
-##### iTerm2  
+##### iTerm2：CUI  
 http://iterm2.com/  
 
 ###### ショートカット
@@ -201,10 +201,10 @@ http://iterm2.com/
 ##### tmux
 http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
 
-##### imageOptim（画像軽量化）
+##### imageOptim：画像軽量化
 https://imageoptim.com/
 
-##### Sequel Pro（DBのGUI）
+##### Sequel Pro：DBのGUI
 http://www.sequelpro.com/
 
 ##### 
