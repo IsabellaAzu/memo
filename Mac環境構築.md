@@ -183,23 +183,18 @@ http://iterm2.com/
 | ⌘+enter        | フルスクリーン                 |
 
 ###### 分割状態の保存 
-メニューの「Window」→「Save Window Arrangement」→名前をつける
-![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)
+メニューの「Window」→「Save Window Arrangement」→名前をつける  
+![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)  
 
-###### デフォルトの配置
-・メニューの「iTerm」→「Preferences...」→「Generalタブ」  
-　→ Startupの項目「Open default window arrangement」にチェック
-・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」  
-　→ 「Set Default」ボタンを押してデフォルトに設定
+###### デフォルトの配置  
+・メニューの「iTerm」→「Preferences...」→「Generalタブ」   
+　→ Startupの項目「Open default window arrangement」にチェック  
+・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」    
+　→ 「Set Default」ボタンを押してデフォルトに設定  
 
 ##### デフォルトで開くディレクトリ
-
 ・メニューの「iTerm」→「Preferences...」→「Profileタブ」  
-　→ 「Working Directory」の「Directory」に設定
-
-
-##### tmux
-http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
+　→ 「Working Directory」の「Directory」に設定  
 
 ##### imageOptim：画像軽量化
 https://imageoptim.com/
@@ -215,4 +210,7 @@ http://www.sequelpro.com/
 ##### 
 ##### 
 ##### 
+
+##### tmux
+http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
 
