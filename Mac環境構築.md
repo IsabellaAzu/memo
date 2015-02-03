@@ -166,11 +166,10 @@ https://gist.github.com/keifukuda/4535242
 
 ## 便利ツール  
 
-### 1. iTerm2  
-
+##### iTerm2  
 http://iterm2.com/  
 
-##### ショートカット
+###### ショートカット
 | ショートカット | 内容                           |
 |:---------------|:-------------------------------|
 | ⌘+n            | 新しいウィンドウ               |
@@ -183,17 +182,13 @@ http://iterm2.com/
 | ⌘+数字         | 数字の割り当てられたタブに移動 |
 | ⌘+enter        | フルスクリーン                 |
 
-##### 分割状態の保存 
-
+###### 分割状態の保存 
 メニューの「Window」→「Save Window Arrangement」→名前をつける
-
 ![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)
 
-##### デフォルトの配置
-
+###### デフォルトの配置
 ・メニューの「iTerm」→「Preferences...」→「Generalタブ」  
 　→ Startupの項目「Open default window arrangement」にチェック
-
 ・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」  
 　→ 「Set Default」ボタンを押してデフォルトに設定
 
@@ -203,10 +198,21 @@ http://iterm2.com/
 　→ 「Working Directory」の「Directory」に設定
 
 
-### 2. tmux
-
+##### tmux
 http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
 
-### 3. imageOptim（画像軽量化）
+##### imageOptim（画像軽量化）
 https://imageoptim.com/
+
+##### Sequel Pro（DBのGUI）
+http://www.sequelpro.com/
+
+##### 
+##### 
+##### 
+##### 
+##### 
+##### 
+##### 
+##### 
 
