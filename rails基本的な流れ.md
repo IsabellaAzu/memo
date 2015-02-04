@@ -1197,10 +1197,6 @@ Rails::Rack::Logger.class_eval do
 end 
 ```
 
-
-
-
-
 サーバーにアップして動くのはPHPまで。  
 Nginx、unicorn、capistrano、ログの知識が必要  
 サービス動いた状態でデプロイ（メンテ入れる？）  
