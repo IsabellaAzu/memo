@@ -196,28 +196,35 @@ http://iterm2.com/
 ・メニューの「iTerm」→「Preferences...」→「Profileタブ」  
 　→ 「Working Directory」の「Directory」に設定  
 
-##### imageOptim：画像軽量化
-https://imageoptim.com/
-
 ##### Sequel Pro：DBのGUI
 http://www.sequelpro.com/
+
+##### MySQL Workbench
+http://www-jp.mysql.com/products/workbench/
 
 ##### imageAlpha：透過画像軽量化
 http://pngmini.com/
 
-##### 
+##### imageOptim：画像軽量化
+https://imageoptim.com/
 
 ##### 
 
-##### 
 
 ##### 
 
-##### 
 
 ##### 
 
+
 ##### 
+
+
+##### 
+
+
+##### 
+
 
 ##### tmux
 http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
