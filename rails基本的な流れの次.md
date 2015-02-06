@@ -64,6 +64,8 @@ Private
 
 #### 多対多
 
+#### 関連付け
+http://ruby.studio-kingdom.com/rails/guides/association_basics  
 
 #### フォーム要素を動的に追加したり削除したり
 http://qiita.com/regonn/items/cdbda32900a15721d59b  
@@ -80,5 +82,4 @@ http://www.rubylife.jp/rails/model/index7.html#section2
 ### モデルの設計
 ### モデルのテスト
 ## アプリを作ってみよう
-
 
