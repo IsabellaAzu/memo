@@ -10,10 +10,12 @@ $ rake db:migrate
 
 - - -
 
+
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
 - - -
+
 
 <a id="anc_1submit_for_many_tables"></a>
 #### １つのsubmitで複数テーブルのフィールドをnew/create
@@ -57,11 +59,9 @@ Private
   end
 ```
 
-
+### リレーション
 #### 1対1
-
 #### 1対多
-
 #### 多対多
 
 #### 関連付け
