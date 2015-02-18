@@ -21,5 +21,5 @@ https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md
 
 ##よく見かけるblog
 
-酒と泪とRubyとRailsと
+酒と泪とRubyとRailsと  
 http://morizyun.github.io/
