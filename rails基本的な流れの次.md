@@ -73,6 +73,7 @@ Private
 #### 同一のリレーショナルなID(ProjectのID)で、複数のレコードを登録  
 (1)textareaで改行を観て、配列に変換してDBに登録？  
 (2)textareaで改行を観て、hiddenに埋め込む？→コントローラでn.timeってできない？？  
+(3)textareaで改行を観て、hiddenに埋め込む？→コントローラで1.upto(20) { @project.conditions.build }とか回数制限
 → (1)かな
 
 
