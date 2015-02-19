@@ -13,15 +13,16 @@ $ rake db:migrate
 $ rails destroy migration AddProjectToTask project:references
 ```
 
+
+
 - - -
-
-
 
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
-- - -
 
+
+- - -
 
 <a id="anc_1submit_for_many_tables"></a>
 #### １つのsubmitで複数テーブルのフィールドをnew/create
@@ -64,6 +65,18 @@ Private
     end
   end
 ```
+
+
+
+- - -
+
+#### 同一のリレーショナルなID(ProjectのID)で、複数のレコードを登録  
+(1)textareaで改行を観て、配列に変換してDBに登録？  
+(2)textareaで改行を観て、hiddenに埋め込む？→コントローラでn.timeってできない？？  
+→ (1)かな
+
+
+
 
 ### リレーション
 #### 1対1
