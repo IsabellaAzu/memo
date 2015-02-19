@@ -65,7 +65,7 @@ Private
     end
   end
 ```
-buildはnewのリレーション版
+※buildはnewのリレーション版
 
 
 - - -
