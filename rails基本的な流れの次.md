@@ -75,7 +75,11 @@ buildはnewのリレーション版
 (2)textareaで改行を観て、hiddenに埋め込む？→コントローラでn.timeってできない？？  
 (3)textareaで改行を観て、hiddenに埋め込む？→コントローラで1.upto(20) { @project.conditions.build }とか回数制限
 → (1)かな
+> 参考  
+http://319ring.net/blog/archives/2591  
 
+
+- - - 
 #### 複数レコード項目を一括保存（Conditionの一覧表示から一気に変更）  
 http://npb.somewhatgood.com/blog/archives/901  
 
