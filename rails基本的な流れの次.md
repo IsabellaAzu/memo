@@ -4,7 +4,7 @@
 #### projectと紐付けを忘れた場合（Modelの関連付けも手動になる）
 ```
 # TaskはProjectに所属する
-$ rails g migration AddProjectToTask project:references
+$ rails g migration AddProjectToCondition project:references
 $ rake db:migrate
 ```
 
