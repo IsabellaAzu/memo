@@ -78,6 +78,14 @@ Private
 > 参考  
 http://319ring.net/blog/archives/2591  
 
+```
+str = "aaaa
+bbbbb
+ccccccc
+ddddd"
+lines = str.rstrip.split(/\r?\n/).map {|line| line.chomp }
+```
+
 
 - - - 
 #### 複数レコード項目を一括保存（Conditionの一覧表示から一気に変更）  
