@@ -78,7 +78,8 @@ Private
 > 参考  
 http://319ring.net/blog/archives/2591  
 
-rails データベースに保存 コントローラ 文字列 変換  
+フォームで入力した改行区切りの文字列を、１行ずつ分割してループでまわしてDBにいれる、　っとかよくあるけど
+http://notitle-goy.seesaa.net/article/387310941.html  
 ```
 str = "aaaa
 bbbbb
@@ -86,6 +87,8 @@ ccccccc
 ddddd"
 lines = str.rstrip.split(/\r?\n/).map {|line| line.chomp }
 ```
+http://d.hatena.ne.jp/ichiro_tanaka/20090417/1239979791  
+
 
 
 - - - 
