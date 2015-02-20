@@ -78,6 +78,7 @@ Private
 > 参考  
 http://319ring.net/blog/archives/2591  
 
+rails データベースに保存 コントローラ 文字列 変換  
 ```
 str = "aaaa
 bbbbb
