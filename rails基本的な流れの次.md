@@ -80,8 +80,18 @@ http://319ring.net/blog/archives/2591
 
 フォームで入力した改行区切りの文字列を、１行ずつ分割してループでまわしてDBにいれる、　っとかよくあるけど
 http://notitle-goy.seesaa.net/article/387310941.html  
+
+
+
 idの配列からレコードを更新するセオリー  
 http://notitle-goy.seesaa.net/article/389074810.html  
+配列に入った値をwhere条件につかって、対象レコード（複数）を更新する場合、下記のようにする。  
+```Ruby
+ary.array_slice( 1000 ) do | dum |
+  Product.update_all( [ "flag=?",10 ], [ "id in ( ? )", dum ] )
+end
+```
+
 ```
 str = "aaaa
 bbbbb
