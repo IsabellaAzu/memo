@@ -138,6 +138,14 @@ http://www.rubylife.jp/rails/model/index7.html#section2
 
 
 
+
+- - -
+
+#### DBに画像を保存
+http://www.ckazu.info/blog/2013/12/04/image_upload_to_ar_db/  
+
+
+
 - - -
 
 ### モデルの設計
