@@ -80,6 +80,8 @@ http://319ring.net/blog/archives/2591
 
 フォームで入力した改行区切りの文字列を、１行ずつ分割してループでまわしてDBにいれる、　っとかよくあるけど
 http://notitle-goy.seesaa.net/article/387310941.html  
+idの配列からレコードを更新するセオリー  
+http://notitle-goy.seesaa.net/article/389074810.html  
 ```
 str = "aaaa
 bbbbb
