@@ -20,6 +20,9 @@ $ rails destroy migration AddProjectToTask project:references
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
+トランザクション(transaction)  
+http://railsdoc.com/references/transaction  
+こっちかな  
 
 
 - - -
