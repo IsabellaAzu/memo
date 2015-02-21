@@ -110,6 +110,18 @@ http://npb.somewhatgood.com/blog/archives/901
 
 
 
+- - -
+#### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
+###### 2.10 自己結合
+> 参考：http://ruby.studio-kingdom.com/rails/guides/association_basics  
+```Ruby
+class Employee < ActiveRecord::Base
+  has_many :subordinates, class_name: "Employee",
+                          foreign_key: "manager_id"
+  belongs_to :manager, class_name: "Employee"
+end
+```
+
 
 - - -
 
