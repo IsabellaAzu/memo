@@ -127,6 +127,23 @@ end
 
 
 - - -
+#### decorator  
+https://github.com/funnythingz/reviewer/blob/master/app/decorators/review_decorator.rb  
+```Ruby
+def choice_type
+  case object.choice_type
+  when 1 then “◯”
+  when 2 then “△”
+  when 3 then “☓”
+  when 4 then “-”
+end
+@answer = Answer.find_by(id: params[:id])
+@answer.create.choice_type
+```
+
+
+
+- - -
 
 ### リレーション
 #### 1対1
