@@ -39,6 +39,9 @@ end
 ### 3. オススメGem  
 ・「Draperで驚くほどRailsコードがわかりやすくなったよ！」  
 　http://morizyun.github.io/blog/draper-ruby-gem-code-clear/  
+```Gemfile
+gem 'draper'
+```
 ・  
   
 
