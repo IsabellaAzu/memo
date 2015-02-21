@@ -4,11 +4,11 @@
 > index  
 <a href="#a1">1. Gemのバージョンを調べる</a>  
 <a href="#a2">2. rack-mini-profiler</a>  
-<a href="#a3">3. xxx</a>  
+<a href="#a3">3. オススメGem</a>  
 
 
 <a id="a1"></a>  
-### Gemのバージョンを調べる
+### 1.Gemのバージョンを調べる
 https://rubygems.org/gems/devise
 
 
@@ -36,8 +36,11 @@ end
 ```
 
 <a id="a3"></a>  
-### 3. xxx  
-
+### 3. オススメGem  
+・「Draperで驚くほどRailsコードがわかりやすくなったよ！」  
+　http://morizyun.github.io/blog/draper-ruby-gem-code-clear/  
+・  
+  
 
 
 
