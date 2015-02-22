@@ -68,7 +68,7 @@ Private
     end
   end
 ```
-※buildはnewのリレーション版
+※buildはnewのリレーション版（　.saveしないと保存されない）
 
 
 - - -
