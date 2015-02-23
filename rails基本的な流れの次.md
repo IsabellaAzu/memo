@@ -110,7 +110,7 @@ http://d.hatena.ne.jp/ichiro_tanaka/20090417/1239979791
 #### 複数レコード項目を一括保存（Conditionの一覧表示から一気に変更）  
 http://npb.somewhatgood.com/blog/archives/901  
 
-
+http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 
 
 - - -
