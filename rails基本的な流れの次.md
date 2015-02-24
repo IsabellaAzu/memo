@@ -14,6 +14,13 @@ $ rails destroy migration AddProjectToTask project:references
 ```
 
 
+- - -
+
+#### 変数の中身を表示
+```Ruby
+render :text => hoge
+```
+
 
 - - -
 
