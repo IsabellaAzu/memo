@@ -87,9 +87,12 @@ http://notitle-goy.seesaa.net/article/387310941.html
 いや、これだな  
 「Rails4でフォーム要素を動的に追加したり削除したり〜nested_form」  
 http://blog.scimpr.com/2014/01/20/rails4%E3%81%A7%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E8%A6%81%E7%B4%A0%E3%82%92%E5%8B%95%E7%9A%84%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F%E3%82%8A%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%82%8A/  
-
-
-
+→プルリクを見ると、溜まってるなど状況を見る　→　古い、怪しいと見る  
+  
+  
+http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
+http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
+  
 idの配列からレコードを更新するセオリー  
 http://notitle-goy.seesaa.net/article/389074810.html  
 配列に入った値をwhere条件につかって、対象レコード（複数）を更新する場合、下記のようにする。  
