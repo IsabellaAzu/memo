@@ -37,14 +37,17 @@ end
 
 <a id="a3"></a>  
 ### 3. オススメGem  
-・「Draperで驚くほどRailsコードがわかりやすくなったよ！」  
+https://rubygems.org/  
+
+##### 「Draperで驚くほどRailsコードがわかりやすくなったよ！」  
 　http://morizyun.github.io/blog/draper-ruby-gem-code-clear/  
 ```Gemfile
 gem 'draper'
 ```
-・  
-  
 
+##### json 1.8.2
+http://www.hsbt.org/diary/20150109.html  
+https://www.versioneye.com/ruby/json/1.8.2  
 
 
 
