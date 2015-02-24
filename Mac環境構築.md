@@ -159,8 +159,7 @@ $ ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
 
 ##### Gem
 https://rubygems.org/  
-
-###### json 1.8.2
+> ###### json 1.8.2
 http://www.hsbt.org/diary/20150109.html  
 https://www.versioneye.com/ruby/json/1.8.2  
 
