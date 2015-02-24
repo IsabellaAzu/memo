@@ -32,6 +32,13 @@ http://railsdoc.com/references/transaction
 こっちかな  
 
 
+オブジェクトの保存、関連付けなど  
+http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
+http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
+
+
+
+
 - - -
 
 <a id="anc_1submit_for_many_tables"></a>
