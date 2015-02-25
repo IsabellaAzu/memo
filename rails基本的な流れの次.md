@@ -110,22 +110,7 @@ http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 　  
 　  
 
-- - -
-#### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
-
-> 「2.10 自己結合」  
-http://ruby.studio-kingdom.com/rails/guides/association_basics  
-
-```Ruby
-class Employee < ActiveRecord::Base
-  has_many :subordinates, class_name: "Employee",
-                          foreign_key: "manager_id"
-  belongs_to :manager, class_name: "Employee"
-end
-```
-
-　  
-　  
+URLにランダムな文字列を
 - - -
 #### decorator  
 > 「Railsで、モデルの内容をビューに出すときにちょっと加工するみたいな時、そのコードはどこに書けばいいんだ問題。」永続化すべきデータかどうか：1〜4は永続化すべきで、○△などはただの置き換えた記号  
@@ -145,6 +130,23 @@ end
 ```
 
 
+
+- - -
+#### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
+
+> 「2.10 自己結合」  
+http://ruby.studio-kingdom.com/rails/guides/association_basics  
+
+```Ruby
+class Employee < ActiveRecord::Base
+  has_many :subordinates, class_name: "Employee",
+                          foreign_key: "manager_id"
+  belongs_to :manager, class_name: "Employee"
+end
+```
+
+　  
+　  
 
 - - -
 
