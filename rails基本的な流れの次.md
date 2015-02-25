@@ -13,6 +13,17 @@ $ rake db:migrate
 $ rails destroy migration AddProjectToTask project:references
 ```
 
+
+- - -
+
+#### Routing
+```Ruby
+  resources :projects, only:[:new,:create,:edit,:show,:update,:destroy] do
+    resources :conditions, only:[:new,:create,:edit,:update,:destroy]
+  end
+```
+
+　  
 　  
 - - -
 
