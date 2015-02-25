@@ -14,6 +14,7 @@ $ rails destroy migration AddProjectToTask project:references
 ```
 
 
+
 - - -
 
 #### Routing
@@ -22,7 +23,6 @@ $ rails destroy migration AddProjectToTask project:references
     resources :conditions, only:[:new,:create,:edit,:update,:destroy]
   end
 ```
-
 　  
 　  
 - - -
