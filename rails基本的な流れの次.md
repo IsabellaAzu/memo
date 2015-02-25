@@ -27,10 +27,12 @@ render :text => hoge
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
-トランザクション(transaction)  
-http://railsdoc.com/references/transaction  
-こっちかな  
-
+親：Project、子：Condition  
+```Ruby
+×：@project = Project.new(project_params)
+○：@project = Project.new(title: project_params[:title], memo: project_params[:memo])
+→ save時に×だと子の分も保存してしまう
+```
 
 オブジェクトの保存、関連付けなど  
 http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
