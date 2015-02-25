@@ -36,9 +36,9 @@ render :text => hoge
 - - -
 
 <a id="anc_1submit_for_many_tables"></a>
+#### １つのsubmitで複数テーブルのフィールドをnew/create
 http://ruby-rails.hatenadiary.com/entry/20141208/1418018874  
 
-#### １つのsubmitで複数テーブルのフィールドをnew/create
 > 関連キーワード inverse_of  
 http://qiita.com/ryoff/items/e3ba4b8c8be117c79b73  
 
