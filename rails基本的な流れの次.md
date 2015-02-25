@@ -24,7 +24,7 @@ render :text => hoge
 　  
 - - -
 
-#### 複数の子レコードを作成・更新
+#### 複数の子レコードをCRUD
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
 ##### 親：Project、子：Condition
@@ -101,50 +101,8 @@ Private
 ```
 ※buildはnewのリレーション版（.saveしないと保存されない）
 
-
 　  
-- - -
-
-#### 同一のリレーショナルなID(ProjectのID)で、複数のレコードを登録  
-(1)textareaで改行を観て、配列に変換してDBに登録？  
-(2)textareaで改行を観て、hiddenに埋め込む？→コントローラでn.timeってできない？？  
-(3)textareaで改行を観て、hiddenに埋め込む？→コントローラで1.upto(20) { @project.conditions.build }とか回数制限
-→ (1)かな
-> 参考  
-http://319ring.net/blog/archives/2591  
-
-フォームで入力した改行区切りの文字列を、１行ずつ分割してループでまわしてDBにいれる、　っとかよくあるけど
-http://notitle-goy.seesaa.net/article/387310941.html  
-
-いや、これだな  
-「Rails4でフォーム要素を動的に追加したり削除したり〜nested_form」  
-http://blog.scimpr.com/2014/01/20/rails4%E3%81%A7%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E8%A6%81%E7%B4%A0%E3%82%92%E5%8B%95%E7%9A%84%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F%E3%82%8A%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%82%8A/  
-→プルリクを見ると、溜まってるなど状況を見る　→　古い、怪しいと見る  
-  
-  
-http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
-http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
-  
-idの配列からレコードを更新するセオリー  
-http://notitle-goy.seesaa.net/article/389074810.html  
-配列に入った値をwhere条件につかって、対象レコード（複数）を更新する場合、下記のようにする。  
-```Ruby
-ary.array_slice( 1000 ) do | dum |
-  Product.update_all( [ "flag=?",10 ], [ "id in ( ? )", dum ] )
-end
-```
-
-```
-str = "aaaa
-bbbbb
-ccccccc
-ddddd"
-lines = str.rstrip.split(/\r?\n/).map {|line| line.chomp }
-```
-http://d.hatena.ne.jp/ichiro_tanaka/20090417/1239979791  
-
-
-
+　  
 - - - 
 #### 複数レコード項目を一括保存（Conditionの一覧表示から一気に変更）  
 http://npb.somewhatgood.com/blog/archives/901  
