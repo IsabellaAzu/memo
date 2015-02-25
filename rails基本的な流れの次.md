@@ -191,3 +191,7 @@ http://www.ckazu.info/blog/2013/12/04/image_upload_to_ar_db/
 ### モデルのテスト
 ## アプリを作ってみよう
 
+id % 2 == 0  
+は、  
+id.even?  
+と書く
