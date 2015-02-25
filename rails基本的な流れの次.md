@@ -57,7 +57,7 @@ end
 ###### 関連キーワード
 > バルクインサート  
 http://npb.somewhatgood.com/blog/archives/901  
-トランザクション
+トランザクション  
 http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 
 　  
