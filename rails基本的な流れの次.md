@@ -113,7 +113,7 @@ Private
 - - -
 #### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
 
-> 「2.10 自己結合」
+> 「2.10 自己結合」  
 http://ruby.studio-kingdom.com/rails/guides/association_basics  
 
 ```Ruby
