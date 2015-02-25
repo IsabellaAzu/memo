@@ -125,6 +125,7 @@ end
 
 - - -
 #### decorator  
+「Railsで、モデルの内容をビューに出すときにちょっと加工するみたいな時、そのコードはどこに書けばいいんだ問題。」  
 https://github.com/funnythingz/reviewer/blob/master/app/decorators/review_decorator.rb  
 ```Ruby
 def choice_type
