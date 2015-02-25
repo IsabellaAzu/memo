@@ -13,7 +13,7 @@ $ rake db:migrate
 $ rails destroy migration AddProjectToTask project:references
 ```
 
-
+　  
 - - -
 
 #### 変数の中身を表示
@@ -21,7 +21,7 @@ $ rails destroy migration AddProjectToTask project:references
 render :text => hoge
 ```
 
-
+　  
 - - -
 
 #### 複数の子レコードを作成・更新
@@ -54,8 +54,7 @@ end
 > http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
   
-　  
-　  
+
 　  
 - - -
 
