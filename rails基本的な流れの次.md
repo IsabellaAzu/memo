@@ -53,7 +53,7 @@ end
 ###### has_manyした子のオブジェクトの保存、関連付けなど、「4. 使えるようになるメソッド」 
 > http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
-　  
+  
 　  
 　  
 　  
