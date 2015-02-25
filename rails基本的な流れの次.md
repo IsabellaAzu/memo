@@ -55,13 +55,11 @@ end
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
   
 ###### 関連キーワード
-```
-バルクインサート  
+> バルクインサート  
 http://npb.somewhatgood.com/blog/archives/901  
 トランザクション
 http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
-```
-
+　  
 　  
 - - -
 
@@ -108,6 +106,7 @@ Private
 ```
 ※buildはnewのリレーション版（.saveしないと保存されない）
 
+　  
 　  
 - - -
 #### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
