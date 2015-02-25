@@ -54,6 +54,13 @@ end
 > http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
   
+###### 関連キーワード
+```
+バルクインサート  
+http://npb.somewhatgood.com/blog/archives/901  
+トランザクション
+http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
+```
 
 　  
 - - -
@@ -102,14 +109,6 @@ Private
 ※buildはnewのリレーション版（.saveしないと保存されない）
 
 　  
-　  
-- - - 
-#### 複数レコード項目を一括保存（Conditionの一覧表示から一気に変更）  
-http://npb.somewhatgood.com/blog/archives/901  
-
-http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
-
-
 - - -
 #### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
 ###### 2.10 自己結合
