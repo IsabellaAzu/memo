@@ -129,9 +129,9 @@ end
 @answer = Answer.find_by(id: params[:id])
 @answer.create.choice_type
 ```
-
-
-
+　  
+　  
+　  
 - - -
 #### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
 
