@@ -24,47 +24,6 @@ render :text => hoge
 　  
 - - -
 
-#### 複数の子レコードをCRUD
-http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
-
-##### 親：Project、子：Condition
-###### xxxx_paramsで渡って来た値の親レコードの処理
-```Ruby
-×：@project = Project.new(project_params)
-○：@project = Project.new(title: project_params[:title], memo: project_params[:memo])
-→ save時に、×だと子の分も保存してしまう。○で親の分のみ取得してnewする
-```
-
-###### xxxx_paramsで渡って来た値の子レコードの処理は、  
-```Ruby
-#パラメータで渡ってきた、textareaの値を、改行コードを統一してから、配列に変換し、nilもしくわ空の配列を削除
-params_condition_title = project_params[:conditions_attributes]["0"][:title].gsub(/\r\n/, "\n").split("\n")
-titles = params_condition_title.reject(&:blank?)
-```
-
-###### 配列の数だけ処理
-```Ruby
-# nilや空を取り除いたtitles配列の中身の分だけtitleで処理(.sizeしなくて楽)
-for title in titles
-  @project.conditions.new(title: title)
-end
-```
-
-###### has_manyした子のオブジェクトの保存、関連付けなど、「4. 使えるようになるメソッド」 
-> http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
-> http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
-  
-###### 関連キーワード
-> バルクインサート  
-http://npb.somewhatgood.com/blog/archives/901  
-トランザクション  
-http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
-
-　  
-　  
-
-- - -
-
 <a id="anc_1submit_for_many_tables"></a>
 #### １つのsubmitで複数テーブルのフィールドをnew/create
 [参考] http://ruby-rails.hatenadiary.com/entry/20141208/1418018874  
@@ -110,6 +69,47 @@ Private
 
 　  
 　  
+- - -
+
+#### 複数の子レコードをCRUD
+http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
+
+##### 親：Project、子：Condition
+###### xxxx_paramsで渡って来た値の親レコードの処理
+```Ruby
+×：@project = Project.new(project_params)
+○：@project = Project.new(title: project_params[:title], memo: project_params[:memo])
+→ save時に、×だと子の分も保存してしまう。○で親の分のみ取得してnewする
+```
+
+###### xxxx_paramsで渡って来た値の子レコードの処理は、  
+```Ruby
+#パラメータで渡ってきた、textareaの値を、改行コードを統一してから、配列に変換し、nilもしくわ空の配列を削除
+params_condition_title = project_params[:conditions_attributes]["0"][:title].gsub(/\r\n/, "\n").split("\n")
+titles = params_condition_title.reject(&:blank?)
+```
+
+###### 配列の数だけ処理
+```Ruby
+# nilや空を取り除いたtitles配列の中身の分だけtitleで処理(.sizeしなくて楽)
+for title in titles
+  @project.conditions.new(title: title)
+end
+```
+
+###### has_manyした子のオブジェクトの保存、関連付けなど、「4. 使えるようになるメソッド」 
+> http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
+> http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
+  
+###### 関連キーワード
+> バルクインサート  
+http://npb.somewhatgood.com/blog/archives/901  
+トランザクション  
+http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
+
+　  
+　  
+
 - - -
 #### 「時にモデルは自分自身に関連付けを持たせるべきである、という事に気づく事があります。」
 
