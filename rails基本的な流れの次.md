@@ -34,6 +34,7 @@ http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 ○：@project = Project.new(title: project_params[:title], memo: project_params[:memo])
 → save時に、×だと子の分も保存してしまう。○で親の分のみ取得してnewする
 ```
+
 ###### xxxx_paramsで渡って来た値の子レコードの処理は、  
 ```Ruby
 #パラメータで渡ってきた、textareaの値を、改行コードを統一してから、配列に変換し、nilもしくわ空の配列を削除
@@ -41,8 +42,15 @@ params_condition_title = project_params[:conditions_attributes]["0"][:title].gsu
 titles = params_condition_title.reject(&:blank?)
 ```
 
+###### 配列の数だけ処理
+```Ruby
+# nilや空を取り除いたtitles配列の中身の分だけtitleで処理(.sizeしなくて楽)
+for title in titles
+  @project.conditions.new(title: title)
+end
+```
 
-オブジェクトの保存、関連付けなど  
+###### オブジェクトの保存、関連付けなど  
 http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
 
@@ -176,10 +184,6 @@ end
 
 - - -
 
-### リレーション
-#### 1対1
-#### 1対多
-#### 多対多
 
 
 
