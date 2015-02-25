@@ -27,12 +27,20 @@ render :text => hoge
 #### 複数の子レコードを作成・更新
 http://qiita.com/hmuronaka/items/818c421dc632e3efb7a6
 
-親：Project、子：Condition  
+##### 親：Project、子：Condition
+###### xxxx_paramsで渡って来た値の親レコードの処理
 ```Ruby
 ×：@project = Project.new(project_params)
 ○：@project = Project.new(title: project_params[:title], memo: project_params[:memo])
-→ save時に×だと子の分も保存してしまう
+→ save時に、×だと子の分も保存してしまう。○で親の分のみ取得してnewする
 ```
+###### xxxx_paramsで渡って来た値の子レコードの処理は、  
+```Ruby
+#パラメータで渡ってきた、textareaの値を、改行コードを統一してから、配列に変換し、nilもしくわ空の配列を削除
+params_condition_title = project_params[:conditions_attributes]["0"][:title].gsub(/\r\n/, "\n").split("\n")
+titles = params_condition_title.reject(&:blank?)
+```
+
 
 オブジェクトの保存、関連付けなど  
 http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
