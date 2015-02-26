@@ -43,6 +43,7 @@ $ rails destroy migration AddProjectToTask project:references
 $ rails g migration AddHoge_idToProjects
 $ rails g migration AddHoge_idToConditions
 $ rake db:migrate
+$ rake routes
 ```
 
 　  
