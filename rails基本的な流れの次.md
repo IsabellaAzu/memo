@@ -68,6 +68,9 @@ class RenameHogeIdColumnToConditions < ActiveRecord::Migration
   	rename_column :conditions, :hoge_id, :cipher_id
   end
 end
+
+$ rake db:migrate
+$ rake routes
 ```
 
 ###### 4.
