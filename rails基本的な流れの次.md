@@ -125,7 +125,7 @@ http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 - - -
 #### URLにランダムな文字列を
 > http://qiita.com/ainame/items/eb9dcf7862630c44d5e9  
-
+https://github.com/tkawa/resources_id_replace
 
 
 
