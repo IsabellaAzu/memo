@@ -24,13 +24,24 @@ $ rails destroy migration AddProjectToTask project:references
   end
 ```
 
-- - -
-#### URLにランダムな文字列を
-> http://qiita.com/ainame/items/eb9dcf7862630c44d5e9  
-https://github.com/tkawa/resources_id_replace
-http://d.hatena.ne.jp/tkawa/20130211/p1
+#### Routingでid以外でページを表示させる方法
 
+###### 1.hoge_idのカラムの値でページを表示させる  
+```Ruby
+#/config/routes.rb
+  resources :projects, only:[:new,:create,:edit,:show,:update,:destroy] do
+    resources :conditions, only:[:new,:create,:edit,:update,:destroy]
+  end
+　　↓
+  resources :projects, param: :hoge_id, only:[:new,:create,:edit,:show,:update,:destroy] do
+    resources :conditions, param: :hoge_id, only:[:new,:create,:edit,:update,:destroy]
+  end
+```
 
+###### 2.テーブルにhoge_idのカラム追加
+```Ruby
+aaa
+```
 
 　  
 　  
