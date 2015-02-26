@@ -50,6 +50,8 @@ $ rake db:migrate
 $ rake routes
 ```
 
+###### 3.
+
 　  
 　  
 - - -
