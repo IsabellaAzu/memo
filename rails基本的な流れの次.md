@@ -13,10 +13,9 @@ $ rake db:migrate
 $ rails destroy migration AddProjectToTask project:references
 ```
 
-
-
+　  
+　  
 - - -
-
 #### Routing
 ```Ruby
   resources :projects, only:[:new,:create,:edit,:show,:update,:destroy] do
@@ -40,7 +39,9 @@ $ rails destroy migration AddProjectToTask project:references
 
 ###### 2.テーブルにhoge_idのカラム追加
 ```Ruby
-aaa
+# Addカラム名To追加したいテーブル名
+rails g migration AddHoge_idToProjects
+rails g migration AddHoge_idToConditions
 ```
 
 　  
