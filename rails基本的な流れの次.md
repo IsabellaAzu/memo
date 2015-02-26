@@ -38,10 +38,14 @@ $ rails destroy migration AddProjectToTask project:references
 ```
 
 ###### 2.テーブルにhoge_idのカラム追加
+
+> rails generate migrationコマンドまとめ  
+http://qiita.com/zaru/items/cde2c46b6126867a1a64  
+
 ```Ruby
 # Addカラム名To追加したいテーブル名
-$ rails g migration AddHoge_idToProjects
-$ rails g migration AddHoge_idToConditions
+$ rails g migration AddColumnToProject hoge_id:string
+$ rails g migration AddColumnToCondition hoge_id:string
 $ rake db:migrate
 $ rake routes
 ```
