@@ -50,7 +50,27 @@ $ rake db:migrate
 $ rake routes
 ```
 
-###### 3.
+###### 3.カラム名を変更
+　(1) rename_変えたいカラム名_column_to_テーブル名  
+```Ruby
+$ rails g migration rename_hoge_id_column_to_projects
+```
+　(2) 該当のマイグレーションファイルに追記  
+```Ruby
+class RenameHogeIdColumnToConditions < ActiveRecord::Migration
+  def change
+  end
+end
+　↓
+class RenameHogeIdColumnToConditions < ActiveRecord::Migration
+  def change
+  	# rename_column :テーブル名, :古いカラム名, :新しいカラム名
+  	rename_column :conditions, :hoge_id, :cipher_id
+  end
+end
+```
+
+###### 4.
 
 　  
 　  
