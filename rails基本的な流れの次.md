@@ -72,6 +72,8 @@ end
 $ rake db:migrate
 $ rake routes
 ```
+※ secret_token  
+http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
 
 ###### 4.
 
