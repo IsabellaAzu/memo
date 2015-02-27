@@ -88,6 +88,9 @@ class ChangeDatatypeHogeIdOfProjects < ActiveRecord::Migration
     change_column :projects, :hoge_id, :binary, null: true
   end
 end
+
+$ rake db:migrate
+$ rake routes
 ```
 
 
