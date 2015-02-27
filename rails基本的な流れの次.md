@@ -23,9 +23,13 @@ $ rails destroy migration AddProjectToTask project:references
   end
 ```
 
-#### Routingでid以外でページを表示させる方法
+　  
+　  
+- - -
+#### hoge_idのカラムの値でページを表示させるには
 
-###### 1.hoge_idのカラムの値でページを表示させる  
+###### 1.Routingの設定
+resourcesに「param: :hoge_id」を追加  
 ```Ruby
 #/config/routes.rb
   resources :projects, only:[:new,:create,:edit,:show,:update,:destroy] do
@@ -50,7 +54,29 @@ $ rake db:migrate
 $ rake routes
 ```
 
-###### 3.カラムの情報を変更
+###### 3.show、edit、update、deleteで置き換えたhoge_idでページを表示させるには
+```Ruby
+# params[:id]のレコードのsecret_idの値で検索する
+def show
+  @project = Project.find_by_secret_id(params[:id])
+end
+```
+
+　  
+　  
+- - -
+#### hoge_idのカラムの値で、大文字小文字を区別する
+※MySQLのstring型は大文字小文字を区別しない  
+
+###### 1.型変換
+　(1) change_datatype_カラム名_of_テーブル名
+```Ruby
+$ rails g migration change_datatype_hoge_id_of_projects
+```
+
+###### 2.インデックスを貼る
+
+###### 3.カラム名を変更
 　(1) rename_変えたいカラム名_column_to_テーブル名  
 ```Ruby
 $ rails g migration rename_hoge_id_column_to_projects
@@ -69,24 +95,22 @@ class RenameHogeIdColumnToConditions < ActiveRecord::Migration
   end
 end
 
-
 $ rake db:migrate
 $ rake routes
 ```
-※ secret_token  
-http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
 
-###### 4.show、edit、update、deleteで置き換えたparamsでページを表示させるには
-```Ruby
-# params[:id]のレコードのsecret_idの値で検索する
-def show
-  @project = Project.find_by_secret_id(params[:id])
-end
-```
+
 　  
 　  
 - - -
+#### [0..9][a..z]A..Z]の文字列を使って文字列を生成
+※ secret_token  
+http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
 
+
+　  
+　  
+- - -
 #### 変数の中身を表示
 ```Ruby
 render :text => hoge
