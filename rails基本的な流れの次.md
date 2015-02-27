@@ -69,18 +69,41 @@ end
 ※MySQLのstring型は大文字小文字を区別しない  
 
 ###### 1.型変換
+
 　(1) change_datatype_カラム名_of_テーブル名
 ```Ruby
 $ rails g migration change_datatype_hoge_id_of_projects
 ```
 
+　(2) 該当のマイグレーションファイルに追記  
+```Ruby
+class ChangeDatatypeHogeIdOfProjects < ActiveRecord::Migration
+  def change
+  end
+end
+　↓
+class ChangeDatatypeHogeIdOfProjects < ActiveRecord::Migration
+  def change
+    #change_column :テーブル名, :カラム名, :新しい型, オプション（null: true）
+    change_column :projects, :hoge_id, :binary, null: true
+  end
+end
+```
+
+
+
 ###### 2.インデックスを貼る
 
+
+
+
 ###### 3.カラム名を変更
+
 　(1) rename_変えたいカラム名_column_to_テーブル名  
 ```Ruby
 $ rails g migration rename_hoge_id_column_to_projects
 ```
+
 　(2) 該当のマイグレーションファイルに追記  
 ```Ruby
 class RenameHogeIdColumnToConditions < ActiveRecord::Migration
