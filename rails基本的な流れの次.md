@@ -27,6 +27,8 @@ $ rails destroy migration AddProjectToTask project:references
 　  
 - - -
 #### hoge_idのカラムの値でページを表示させるには
+> rails generate migrationコマンドまとめ  
+http://qiita.com/zaru/items/cde2c46b6126867a1a64  
 
 ###### 1.Routingの設定
 resourcesに「param: :hoge_id」を追加  
@@ -41,15 +43,16 @@ resourcesに「param: :hoge_id」を追加
   end
 ```
 
-###### 2.テーブルにhoge_idのカラム追加
-
-> rails generate migrationコマンドまとめ  
-http://qiita.com/zaru/items/cde2c46b6126867a1a64  
+###### 2.テーブルにhoge_idのカラム追加、削除
 
 ```Ruby
-# Addカラム名To追加したいテーブル名
+# Addカラム名To追加したいテーブル名 カラム名:型名
 $ rails g migration AddColumnToProject hoge_id:string
 $ rails g migration AddColumnToCondition hoge_id:string
+
+# Removeカラム名from削除したいテーブル名 カラム名:型名
+$ rails g migration RemoveColumnfromCondition hoge_id:string
+
 $ rake db:migrate
 $ rake routes
 ```
