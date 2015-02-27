@@ -61,11 +61,16 @@ def show
   @project = Project.find_by_secret_id(params[:id])
 end
 ```
+
 　  
 　  
 - - -
 #### Rails でDBの重複エラーが発生した場合の対処
-　  
+http://qa.atmarkit.co.jp/q/2085  
+http://tmtms.hatenablog.com/entry/20120602/rails_unique  
+http://ruby-rails.hatenadiary.com/entry/20140724/1406145303#model-validation-definettions-uniqueness  
+
+
 　  
 - - -
 #### hoge_idのカラムの値で、大文字小文字を区別する
@@ -135,7 +140,10 @@ $ rake routes
 #### [0..9][a..z]A..Z]の文字列を使って文字列を生成
 ※ secret_token  
 http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
-
+```
+# 27の3分の4倍の文字列量で生成される
+SecureRandom.urlsafe_base64(27, true)
+```
 
 　  
 　  
