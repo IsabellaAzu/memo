@@ -233,6 +233,13 @@ end
 ###### has_manyした子のオブジェクトの保存、関連付けなど、「4. 使えるようになるメソッド」 
 > http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
+
+###### has_menyで関連付けたレコードは自動的に削除
+```Ruby
+# has_many :子供のtable名, :dependent => true, :foreign_key => "外部キー名"
+has_many :conditions, :dependent => true, :foreign_key => "project_id"
+```
+
   
 ###### 関連キーワード
 > バルクインサート  
