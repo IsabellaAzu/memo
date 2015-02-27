@@ -235,6 +235,7 @@ end
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
 
 ###### has_menyで関連付けたレコードは自動的に削除
+http://stackoverflow.com/questions/2797339/rails-dependent-destroy-vs-dependent-delete-all  
 ```Ruby
 # has_many :子供のtable名, :dependent => true, :foreign_key => "外部キー名"
 has_many :conditions, :dependent => true, :foreign_key => "project_id"
