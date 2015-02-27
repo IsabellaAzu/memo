@@ -78,7 +78,9 @@ http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
 ###### 4.show、edit、update、deleteで置き換えたparamsでページを表示させるには
 ```Ruby
 # params[:id]のレコードのsecret_idの値で検索する
-@project = Project.find_by_secret_id(params[:id])
+def show
+  @project = Project.find_by_secret_id(params[:id])
+end
 ```
 　  
 　  
