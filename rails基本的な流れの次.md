@@ -62,6 +62,7 @@ class RenameHogeIdColumnToConditions < ActiveRecord::Migration
   end
 end
 　↓
+- - - 
 class RenameHogeIdColumnToConditions < ActiveRecord::Migration
   def change
   	# rename_column :テーブル名, :古いカラム名, :新しいカラム名
