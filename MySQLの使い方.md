@@ -29,19 +29,19 @@ http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 SQLプログラミング作法
 http://www.geocities.jp/mickindex/database/db_manner.html#LocalLink-capital
 
-2015年に起こりうる問題  
->  
-うるう秒バグ(2015,GIGAZINE)  
-http://gigazine.net/news/20150108-leap-time-internet/  
-うるう秒バグ対策：2012-07-01 MySQLなどのCPU使用率が高騰  
-http://wevew.net/dev/2012/07/2012-07-01-mysqldjavacpu.html
-Jenkinsなどの対応
-http://spring-mt.tumblr.com/post/26316963476  
-```  
-* サーバを再起動する  
-* date `date +'%m%d%H%M%C%y.%S'` # 日付を再設定する  
-```  
+　  
+　  
+### MySQLの文字列型が大文字と小文字を区別してくれない  
+文字列型のカラムにBINARY属性を指定する（Railsだと面倒？）  
+http://d.hatena.ne.jp/spitfire_tree/20120627/1340789986  
+> 
+検索時にBINARY属性を指定だと、  
+・インデックスの利用方法などが変化する  
+・大体の場合においてパフォーマンスが低下する  
 
+　  
+　  
+- - -
 関連情報  
 >  
 MariaDBの場合  
