@@ -61,7 +61,10 @@ def show
   @project = Project.find_by_secret_id(params[:id])
 end
 ```
-
+　  
+　  
+- - -
+#### Rails でDBの重複エラーが発生した場合の対処
 　  
 　  
 - - -
