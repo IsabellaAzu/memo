@@ -50,7 +50,7 @@ $ rake db:migrate
 $ rake routes
 ```
 
-###### 3.カラム名を変更
+###### 3.カラムの情報を変更
 　(1) rename_変えたいカラム名_column_to_テーブル名  
 ```Ruby
 $ rails g migration rename_hoge_id_column_to_projects
