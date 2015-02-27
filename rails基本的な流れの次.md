@@ -140,7 +140,7 @@ $ rake routes
 #### [0..9][a..z]A..Z]の文字列を使って文字列を生成
 ※ secret_token  
 http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
-```
+```Ruby
 # 27の3分の4倍の文字列量で生成される
 SecureRandom.urlsafe_base64(27, true)
 ```
