@@ -253,6 +253,13 @@ http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 
 　  
 　  
+
+- - -
+#### Mysql2::Error: Cannot delete or update a parent row: a foreign key constraint fails
+has_manyで子レコードを持つ親レコードをdestroyしようとすると出るerror
+　  
+　  
+
 - - -
 #### decorator  
 > 「Railsで、モデルの内容をビューに出すときにちょっと加工するみたいな時、そのコードはどこに書けばいいんだ問題。」永続化すべきデータかどうか：1〜4は永続化すべきで、○△などはただの置き換えた記号  
