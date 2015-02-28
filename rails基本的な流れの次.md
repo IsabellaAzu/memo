@@ -256,7 +256,17 @@ http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 
 - - -
 #### Mysql2::Error: Cannot delete or update a parent row: a foreign key constraint fails
-has_manyで子レコードを持つ親レコードをdestroyしようとすると出るerror
+has_manyで子レコードを持つ親レコードをdestroyしようとすると出るerror  
+→ 「has_many」メソッドのテーブル指定の後に、「, dependent: :destroy」を追加するだけ！
+```Ruby
+# 子modelの設定ファイルで
+class Project < ActiveRecord::Base
+  ・・・
+  has_many :conditions, dependent: :destroy
+  accepts_nested_attributes_for :conditions
+  ・・・
+end
+```
 　  
 　  
 
