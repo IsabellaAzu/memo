@@ -61,17 +61,21 @@ Creating polar-inlet-4930... done, stack is cedar-14
 http://polar-inlet-4930.herokuapp.com/ | https://git.heroku.com/polar-inlet-4930.git  
 Git remote heroku added  
 
-ここで/.git/configに下記が追記されます  
+
+
+##### 6. Herokuにアプリをpush
+
+```
+git push heroku master
+```
+
+これで/.git/configに「4930.git」などの情報が下記の様に追記されます  
 ```
 [remote "heroku"]
 	url = https://git.heroku.com/xxx-xxx-nnnn.git
 	fetch = +refs/heads/*:refs/remotes/heroku/*
 ```
 
-##### 6. Herokuにアプリをpush
-```
-git push heroku master
-```
 > 以下の様なメッセージが表示されます  
 Fetching repository, done.
 Counting objects: 10, done.
