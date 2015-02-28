@@ -268,7 +268,8 @@ class Project < ActiveRecord::Base
   ・・・
 end
 ```
-　  
+※accepts_nested_attributes_forに、「, allow_destroy: true」を指定しなくても大丈夫  
+
 　  
 
 - - -
