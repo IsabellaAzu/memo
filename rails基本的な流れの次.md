@@ -312,11 +312,8 @@ end
 #### 関連付け
 http://ruby.studio-kingdom.com/rails/guides/association_basics  
 
-
-
-
-
-
+　  
+　  
 - - -
 
 #### Railsで１フォームに複数のサブミット(Submit)ボタンを配置するTips
