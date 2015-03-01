@@ -66,7 +66,7 @@ Git remote heroku added
 ##### 6. Herokuにアプリをpush
 
 ```
-git push heroku master
+$ git push heroku master
 ```
 
 これで/.git/configに「4930.git」などの情報が下記の様に追記されます  
