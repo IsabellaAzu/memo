@@ -149,6 +149,8 @@ http://easyramble.com/rails-development-flow.html#crayon-54efff4009fbb406803080
 # 27の3分の4倍の文字列量で生成される
 SecureRandom.urlsafe_base64(27, true)
 ```
+> 一意性
+http://hbnist76.blog.fc2.com/blog-entry-128.html  
 
 　  
 　  
