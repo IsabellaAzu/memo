@@ -6,7 +6,7 @@
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
-・<a href="#">aa</a>  
+・<a href="#">Rails事例</a>  
 
 
 　  
@@ -379,5 +379,11 @@ p day.sec #=> 45
 ```
 
 
+
+
+- - -
+### Rails事例
+> サイバーエージェントでRailsを使っているコミュニティサービスのお話 2014年11月27日(木)  
+http://ameblo.jp/principia-ca/entry-11868598377.html  
 
 
