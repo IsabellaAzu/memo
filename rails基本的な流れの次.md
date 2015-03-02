@@ -349,3 +349,23 @@ id % 2 == 0
 は、  
 id.even?  
 と書く
+
+
+
+- - -
+### 日付と時刻
+> http://www.namaraii.com/rubytips/?%E6%97%A5%E4%BB%98%E3%81%A8%E6%99%82%E5%88%BB  
+```Ruby
+day = Time.now
+p day #=> "Mon March 2 22:31:46 JST 2015"
+p day.year #=> 2001
+p day.month #=> 5
+p day.day #=> 20
+p day.hour #=> 23
+p day.min #=> 48
+p day.sec #=> 45
+```
+
+
+
+
