@@ -321,7 +321,8 @@ http://ruby-rails.hatenadiary.com/entry/20141225/1419515057
 
 
 - - -
-#### ボタンリンクからテキストリンクにする時の注意
+#### railsのhtmlヘルパー周り
+> http://qiita.com/sfkirthna/items/b17cf7a217e9b8d3172a  
   
 
 　  
