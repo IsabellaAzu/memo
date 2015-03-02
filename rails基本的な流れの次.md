@@ -308,14 +308,12 @@ end
 　  
 　  
 - - -
-
 #### 関連付け
 http://ruby.studio-kingdom.com/rails/guides/association_basics  
 
 　  
 　  
 - - -
-
 #### Railsで１フォームに複数のサブミット(Submit)ボタンを配置するTips
 http://ruby-rails.hatenadiary.com/entry/20141225/1419515057  
 
@@ -323,7 +321,12 @@ http://ruby-rails.hatenadiary.com/entry/20141225/1419515057
 
 
 - - -
+#### ボタンリンクからテキストリンクにする時の注意
+  
 
+　  
+　  
+- - -
 #### 新しいマイグレーションを追加してテーブルを変更
 http://www.rubylife.jp/rails/model/index7.html#section2
 
@@ -331,14 +334,12 @@ http://www.rubylife.jp/rails/model/index7.html#section2
 
 
 - - -
-
 #### DBに画像を保存
 http://www.ckazu.info/blog/2013/12/04/image_upload_to_ar_db/  
 
 
 
 - - -
-
 ### モデルの設計
 ### モデルのテスト
 ## アプリを作ってみよう
