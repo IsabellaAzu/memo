@@ -1,6 +1,17 @@
 
 # rails基本的な流れの後、よくやりそうなこと
 
+## index
+・<a href="#">projectと紐付けを忘れた場合（Modelの関連付けも手動になる）</a>  
+・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+
+
+
+
+
 #### projectと紐付けを忘れた場合（Modelの関連付けも手動になる）
 ```
 # ConditionはProjectに所属する
