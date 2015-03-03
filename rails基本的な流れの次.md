@@ -387,3 +387,5 @@ p day.sec #=> 45
 http://ameblo.jp/principia-ca/entry-11868598377.html  
 
 
+Railsのポリモーフィックアソシエーション???
+http://o.inchiki.jp/obbr/149
