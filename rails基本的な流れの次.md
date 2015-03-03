@@ -293,6 +293,11 @@ end
 ※accepts_nested_attributes_forに、「, allow_destroy: true」を指定しなくても大丈夫  
 
 　  
+　  
+- - -
+#### 親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）
+> http://qiita.com/hmuronaka/items/256e59214a66a296cfa5
+
 
 - - -
 #### decorator  
