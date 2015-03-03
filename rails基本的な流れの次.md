@@ -5,7 +5,7 @@
 > ・<a href="#">projectと紐付けを忘れた場合（Modelの関連付けも手動になる）</a>  
 ・<a href="#">Routing</a>  
 ・<a href="#">hoge_idのカラムの値でページを表示させるには</a>  
-・<a href="#">aa</a>  
+・<a href="#">hoge_idのカラムの値で、大文字小文字を区別する</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
