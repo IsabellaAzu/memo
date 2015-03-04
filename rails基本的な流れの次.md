@@ -6,7 +6,7 @@
 ・<a href="#">Routing</a>  
 ・<a href="#">hoge_idのカラムの値でページを表示させるには</a>  
 ・<a href="#">hoge_idのカラムの値で、大文字小文字を区別する</a>  
-・<a href="#">aa</a>  
+・<a href="#">[0..9][a..z][A..Z]の文字列を使って文字列を生成</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
