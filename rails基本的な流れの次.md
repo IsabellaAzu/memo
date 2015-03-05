@@ -9,7 +9,7 @@
 ・<a href="#">[0..9][a..z][A..Z]の文字列を使って文字列を生成</a>  
 ・<a href="#">Rails でDBの重複エラーが発生した場合の対処</a>  
 ・<a href="#">変数の中身を表示</a>  
-・<a href="#">aa</a>  
+・<a href="#">１つのsubmitで複数テーブルのフィールドをnew/create</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
