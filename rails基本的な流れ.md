@@ -128,6 +128,11 @@ $ rails g model Project title # rails generate model Project title:stringの省�
 <td>tinyint(1)</td>
 <td>TrueClass/FalseClass</td>
 </tr>
+<tr>
+<td>references（外部キー）</td>
+<td></td>
+<td></td>
+</tr>
 </table>
 
 | Field           | Type          | Null | Key | Default | Extra          |  
