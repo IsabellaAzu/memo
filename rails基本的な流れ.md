@@ -67,7 +67,6 @@ $ rails g model Project title # rails generate model Project title:stringの省�
 ```
 
 # データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
-```
 <table>
 <tr>
 <td>binary</td>
@@ -122,9 +121,8 @@ $ rails g model Project title # rails generate model Project title:stringの省�
 <td>外部キー</td>
 </tr>
 <table>
-```
 
-```
+
 <table>
 <tr>
 <td>マイグレーション</td>
@@ -187,6 +185,7 @@ $ rails g model Project title # rails generate model Project title:stringの省�
 <td>TrueClass/FalseClass</td>
 </tr>
 </table>
+
 | Field           | Type          | Null | Key | Default | Extra          |  
 |:----------------|:--------------|:-----|:----|:--------|:---------------|  
 | id              | int(11)       | NO   | PRI | NULL    | auto_increment |  
