@@ -10,7 +10,7 @@
 ・<a href="#">Rails でDBの重複エラーが発生した場合の対処</a>  
 ・<a href="#">変数の中身を表示</a>  
 ・<a href="#">１つのsubmitで複数テーブルのフィールドをnew/create</a>  
-・<a href="#">aa</a>  
+・<a href="#">複数の子レコードをCRUD</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
