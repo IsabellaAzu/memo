@@ -259,7 +259,7 @@ end
 > http://ruby-rails.hatenadiary.com/entry/20141203/1417601540#model-relation-one-n-methods  
 > http://ruby-rails.hatenadiary.com/entry/20141204/1417688260  
 
-###### has_menyで関連付けたレコードは自動的に削除
+###### has_manyで関連付けたレコードは自動的に削除
 > http://stackoverflow.com/questions/2797339/rails-dependent-destroy-vs-dependent-delete-all  
 ```Ruby
 # has_many :子供のtable名, :dependent => true, :foreign_key => "外部キー名"
@@ -298,7 +298,24 @@ end
 #### 親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）
 > http://qiita.com/hmuronaka/items/256e59214a66a296cfa5
 
+　  
+　  
+- - -
+#### ActiveRecordの関連
+関連を設定することで、モデルオブジェクトを接続し、構造を作るメソッド６種
+```Ruby
+belongs_to
+has_one
+has_many
+has_many :through
+has_one :through
+has_and_belongs_to_many
+```
 
+> http://www.stonedot.com/lecture6.html  
+
+　  
+　  
 - - -
 #### decorator  
 > 「Railsで、モデルの内容をビューに出すときにちょっと加工するみたいな時、そのコードはどこに書けばいいんだ問題。」永続化すべきデータかどうか：1〜4は永続化すべきで、○△などはただの置き換えた記号  
