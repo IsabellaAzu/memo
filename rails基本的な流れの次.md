@@ -313,6 +313,8 @@ has_and_belongs_to_many
 ```
 
 > http://www.stonedot.com/lecture6.html  
+http://guides.rubyonrails.org/association_basics.html
+
 
 　  
 　  
