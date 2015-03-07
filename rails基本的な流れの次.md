@@ -322,6 +322,7 @@ has_and_belongs_to_many
 http://d.hatena.ne.jp/shunsuk/20090323/1237806859  
 belongs_toでthrough的なことを実現する  
 http://d.hatena.ne.jp/ria10/20130817/1376767409  
+
 　  
 　  
 - - -
