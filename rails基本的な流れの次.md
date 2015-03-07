@@ -317,6 +317,14 @@ has_and_belongs_to_many
 　  
 　  
 - - -
+#### 多対多
+> 多対多のモデルを簡単に扱えるhas_many :through  
+http://d.hatena.ne.jp/shunsuk/20090323/1237806859  
+belongs_toでthrough的なことを実現する  
+http://d.hatena.ne.jp/ria10/20130817/1376767409  
+　  
+　  
+- - -
 #### decorator  
 > 「Railsで、モデルの内容をビューに出すときにちょっと加工するみたいな時、そのコードはどこに書けばいいんだ問題。」永続化すべきデータかどうか：1〜4は永続化すべきで、○△などはただの置き換えた記号  
 http://shgam.hatenadiary.jp/entry/2014/09/17/194633  
