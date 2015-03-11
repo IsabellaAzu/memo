@@ -17,7 +17,6 @@
 ・<a href="#">aa</a>  
 ・<a href="#">Rails事例</a>  
 
-
 　  
 　  
 
