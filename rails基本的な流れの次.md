@@ -14,7 +14,13 @@
 ・<a href="#">Mysql2::Error: Cannot delete or update a parent row: a foreign key constraint fails</a>  
 ・<a href="#">親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）</a>  
 ・<a href="#">ActiveRecordの関連</a>  
+・<a href="#">多対多</a>  
 ・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+・<a href="#">aa</a>  
+
+
 ・<a href="#">Rails事例</a>  
 
 　  
