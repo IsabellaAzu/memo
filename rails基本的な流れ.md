@@ -182,7 +182,13 @@ http://ruby-rails.hatenadiary.com/entry/20141024/1414081224
 # controller名は最初大文字の複数形
 $ rails g controller Projects
 ```
-controllerのファイルとviewのファイルが生成される
+controllerのファイルとviewのファイルが生成される  
+　  
+> 無駄な helper や assets を生成しない方法  
+http://willnet.in/31  
+```Ruby
+rails generate controller users --no-helper --no-assets
+```
 
 
 <a id="a1_4"></a>
