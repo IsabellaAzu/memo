@@ -15,7 +15,7 @@
 ・<a href="#">親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）</a>  
 ・<a href="#">ActiveRecordの関連</a>  
 ・<a href="#">多対多</a>  
-・<a href="#">aa</a>  
+・<a href="#">decorator</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
