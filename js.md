@@ -13,3 +13,11 @@ http://qiita.com/cognitom/items/fb1295f3f93911e9e92d
 ## Ampersand.js
 ## mercury
 ## Auralia
+
+
+
+## 参考情報
+Backboneでデータバインディングを使ってMVVMをするフロントエンドアーキテクチャ  
+http://qiita.com/mizchi/items/04552f0067bcfcc04d96
+
+
