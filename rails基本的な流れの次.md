@@ -17,7 +17,7 @@
 ・<a href="#">多対多</a>  
 ・<a href="#">decorator</a>  
 ・<a href="#">aa</a>  
-・<a href="#">aa</a>  
+・<a href="#">関連付け</a>  
 ・<a href="#">aa</a>  
 
 
