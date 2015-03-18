@@ -1266,6 +1266,10 @@ http://www.techscore.com/blog/2013/01/29/rails4-%E3%81%AE-strong-parameters-%E3%
 http://easyramble.com/strong-parameters-on-rails-devise.html  
 
 
+####コントローラーの仕事は何か？
+http://qiita.com/mat_aki/items/3c743533c9f37a9106ee  
+　  
+
 #### ユーザーが自分自身以外のページへのアクセスや情報編集を制限するには、別途メソッドを実装して before_action で呼ぶなどの必要があります。
 
 > 参考  
