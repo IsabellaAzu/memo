@@ -1281,6 +1281,9 @@ private
     redirect_to(root_path) unless current_user?(@user)
   end
 
+#### ドメイン駆動設計
+http://a-suenami.hatenablog.com/entry/2014/12/07/200427  
+
 
 #### Rails で "とりあえず動くコード" を書けるようになった人が次に遭遇する問題とそれを解決してくれる本まとめ
 > 参考  
