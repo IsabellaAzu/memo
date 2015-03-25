@@ -24,7 +24,6 @@
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
 ・<a href="#">aa</a>  
-・<a href="#">aa</a>  
 ・<a href="#">関連付け</a>  
 ・<a href="#">日付と時刻</a>  
 ・<a href="#">Rails事例</a>  
