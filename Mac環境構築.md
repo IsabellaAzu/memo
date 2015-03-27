@@ -91,6 +91,12 @@ $ rbenv global 2.1.5
 $ rbenv local 2.1.5 # 今居るディレクトリだけ
 $ ruby -v
 ```
+※インストール可能リストに無い、新しいversionのRubyをインストールするには
+・rbenv install -l
+・brew update
+・brew upgrade ruby-build
+・rbenv install -l
+
 
 ##### 毎回rbenv rehashしなくて済ませる  
 ```
