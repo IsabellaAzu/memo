@@ -96,7 +96,7 @@ $ ruby -v
 ・brew update
 ・brew upgrade ruby-build
 ・rbenv install -l
-
+・uby-buildrbenv install 2.2.1
 
 ##### 毎回rbenv rehashしなくて済ませる  
 ```
@@ -142,6 +142,8 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 $ gem install bundler
 $ gem install rails
 ```
+※riとかrdocのインストールに時間がかかる対策
+>http://boscono.hatenablog.com/entry/2014/08/10/155524
 
 
 ### 7. nodeインストール  
