@@ -162,7 +162,10 @@ $ exit
 ```
 > 参考：rake dbコマンド一覧  
 http://www.re-labo.com/hiroro-blog/2009/03/rake-db.html  
-
+Railsのdb/schema.rbの役割  
+http://qiita.com/k0kubun/items/491a9d9f2745335566e3  
+　  
+　  
 ##### pry（irbが置き換わっている）
 modelをインタラクティブにrubyを使って編集することができる
 ```
