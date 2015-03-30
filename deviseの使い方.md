@@ -187,7 +187,7 @@ Ctrl+C
 $ rails s
 ```
 
-ユーザー認証を導入するために、共通コントローラーに
+ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
 ```
 # /app/controllers/application_controller.rb
 before_filter :authenticate_user!
