@@ -77,6 +77,8 @@ rails g controller Home index show
 <p class="alert"><%= alert %></p>
 
 ```
+　  
+　  
 
 
 <a id="a2"></a>
