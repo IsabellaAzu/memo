@@ -91,7 +91,9 @@ $ rbenv global 2.1.5
 $ rbenv local 2.1.5 # 今居るディレクトリだけ
 $ ruby -v
 ```
-※rbenv install -lでインストール可能リストに最新版のrubyが無い場合
+
+##### rubyのバージョンアップ
+rbenv install -lでインストール可能リストに最新版のrubyが無い場合
 ```
 $ brew update
 $ brew upgrade ruby-build
