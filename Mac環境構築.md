@@ -102,7 +102,8 @@ $ rbenv install -l
 　  
 rails本体のインストール  
 ```
-gem install rails
+$ gem install rails
+$ bundle install --path vendor/bundle
 ```
 　  
 ##### 毎回rbenv rehashしなくて済ませる  
