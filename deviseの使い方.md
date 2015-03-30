@@ -229,20 +229,6 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
 
 
-ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
-```
-# /app/controllers/application_controller.rb
-before_filter :authenticate_user!
-```
-
-他に便利なHelperメソッドは
-```
-# ユーザがサインインしているかどうか
-user_signed_in?
-# サインインしているユーザ情報を取得する
-current_user
-```
-
 
 <a id="atode"></a>
 ##### 個別にViewをカスタマイズ
@@ -342,9 +328,26 @@ config.action_mailer.smtp_settings = {
 # /config/initializers/devise.rb
   config.mailer_sender = 'a@a.jp'
 ```
+　  
+ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
+```
+# /app/controllers/application_controller.rb
+before_filter :authenticate_user!
+```
+
+他に便利なHelperメソッドは
+```
+# ユーザがサインインしているかどうか
+user_signed_in?
+# サインインしているユーザ情報を取得する
+current_user
+```
+　  
+　  
 
 
 - - -
+　  
 
 ## deviseあるある  
 
