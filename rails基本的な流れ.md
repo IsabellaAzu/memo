@@ -36,9 +36,8 @@ https://github.com/funnythingz/pins/blob/master/Gemfile
 ```
 $ bundle install --path vendor/bundle
 ```
-
-- - -
-
+　  
+　  
 ##基本的な流れ(1)
 例「Project」という名のプロジェクトを作成していきます。  
 データベースのデータを表示します  
