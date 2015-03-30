@@ -206,7 +206,7 @@ $ rails s
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
-モジュール  
+<a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
 > 1. Database Authenticatable  
 パスワードを暗号化してDBに保存する  
 2. Omniauthable  
