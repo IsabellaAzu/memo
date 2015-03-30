@@ -93,6 +93,7 @@ $ rails g devise User
 
 下記2つのファイルで、モジュールの設定を有効/無効にできる  
 
+<a id="linkto_page_app_models_user"></a>
 app/models/user.rbを確認  
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
 
