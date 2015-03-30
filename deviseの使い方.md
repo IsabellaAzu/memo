@@ -134,7 +134,7 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
-##### 2_3. サーバー再起動  
+##### 2_3. URIの確認  
 ```Ruby
 # 確認
 $ rake routes
