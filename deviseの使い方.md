@@ -200,6 +200,77 @@ $ rails s
 ・Rails – Deviseのコントローラをカスタマイズする方法  
 　http://www.tamurasouko.com/?p=929  
 
+##### 3.1 パスワードの入力文字数の設定を変える
+```Ruby
+# /config/initializers/devise.rb
+# 8文字以上128文字以下
+config.password_length = 8..128
+```
+　  
+
+##### 3.2 deviseのコントローラを独自のコントローラに変更
+```Ruby
+# /config/routes.rb
+
+  devise_for :users
+
+　　↓
+
+  devise_for :users, :controllers => {
+    :sessions => 'users/sessions',
+    :passwords => 'users/passwords',
+    :registrations => 'users/registrations'
+  }
+```
+とすると、  
+
+```
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_guser_session GET    /users/sign_in(.:format)        devise/sessions#new
+            guser_session POST   /users/sign_in(.:format)        devise/sessions#create
+    destroy_guser_session DELETE /users/sign_out(.:format)       devise/sessions#destroy
+           guser_password POST   /users/password(.:format)       devise/passwords#create
+       new_guser_password GET    /users/password/new(.:format)   devise/passwords#new
+      edit_guser_password GET    /users/password/edit(.:format)  devise/passwords#edit
+                          PATCH  /users/password(.:format)       devise/passwords#update
+                          PUT    /users/password(.:format)       devise/passwords#update
+cancel_guser_registration GET    /users/cancel(.:format)         devise/registrations#cancel
+       guser_registration POST   /users(.:format)                devise/registrations#create
+   new_guser_registration GET    /users/sign_up(.:format)        devise/registrations#new
+  edit_guser_registration GET    /users/edit(.:format)           devise/registrations#edit
+                          PATCH  /users(.:format)                devise/registrations#update
+                          PUT    /users(.:format)                devise/registrations#update
+                          DELETE /users(.:format)                devise/registrations#destroy
+               home_index GET    /home/index(.:format)           home#index
+                home_show GET    /home/show(.:format)            home#show
+                     root GET    /                               home#index
+
+　↓　devise/が
+
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_guser_session GET    /users/sign_in(.:format)        users/sessions#new
+            guser_session POST   /users/sign_in(.:format)        users/sessions#create
+    destroy_guser_session DELETE /users/sign_out(.:format)       users/sessions#destroy
+           guser_password POST   /users/password(.:format)       users/passwords#create
+       new_guser_password GET    /users/password/new(.:format)   users/passwords#new
+      edit_guser_password GET    /users/password/edit(.:format)  users/passwords#edit
+                          PATCH  /users/password(.:format)       users/passwords#update
+                          PUT    /users/password(.:format)       users/passwords#update
+cancel_guser_registration GET    /users/cancel(.:format)         users/registrations#cancel
+       guser_registration POST   /users(.:format)                users/registrations#create
+   new_guser_registration GET    /users/sign_up(.:format)        users/registrations#new
+  edit_guser_registration GET    /users/edit(.:format)           users/registrations#edit
+                          PATCH  /users(.:format)                users/registrations#update
+                          PUT    /users(.:format)                users/registrations#update
+                          DELETE /users(.:format)                users/registrations#destroy
+               home_index GET    /home/index(.:format)           home#index
+                home_show GET    /home/show(.:format)            home#show
+                     root GET    /                               home#index
+
+```
+
+
+　  
 
 ##### deviseにあるモジュール  
 
@@ -260,20 +331,7 @@ app/views/devise/confirmations/new.html.erb
 アカウントのアンロック画面  
 app/views/devise/unlocks/new.html.erb  
 
-サーバー再起動して反映  
-```
-#サーバー停止  
-Ctrl+C  
-# サーバー起動  
-$ rails s
-```
 
-##### パスワードの入力文字数の設定を変える
-```Ruby
-# /config/initializers/devise.rb
-# 8文字以上128文字以下
-config.password_length = 8..128
-```
 
 ##### コントローラ作成
 
