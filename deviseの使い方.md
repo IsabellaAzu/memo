@@ -215,6 +215,22 @@ $ rails g devise:views
 # deviseのviewをusersに割り当てる
 $ rails g devise:views users
 ```
+> 参考：画面一覧  
+ログイン画面  
+app/views/users/sessions/new.html.erb  
+ユーザ登録画面  
+app/views/users/registrations/new.html.erb  
+ユーザ情報変更画面  
+app/views/users/registrations/edit.html.erb  
+パスワードを変更するためのメールを送信する画面  
+app/views/users/passwords/new.html.erb  
+パスワードを変更する画面  
+app/views/users/passwords/edit.html.erb  
+メールによるConfirmをする画面  
+app/views/users/confirmations/new.html.erb  
+アカウントのアンロック画面  
+app/views/users/unlocks/new.html.erb  
+
 　  
 ##### 3.2 パスワードの入力文字数の設定を変える
 ```Ruby
@@ -255,20 +271,6 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 
 
 
-> ログイン画面  
-app/views/devise/sessions/new.html.erb  
-ユーザ登録画面  
-app/views/devise/registrations/new.html.erb  
-ユーザ情報変更画面  
-app/views/devise/registrations/edit.html.erb  
-パスワードを変更するためのメールを送信する画面  
-app/views/devise/passwords/new.html.erb  
-パスワードを変更する画面  
-app/views/devise/passwords/edit.html.erb  
-メールによるConfirmをする画面  
-app/views/devise/confirmations/new.html.erb  
-アカウントのアンロック画面  
-app/views/devise/unlocks/new.html.erb  
 
 
 　  
