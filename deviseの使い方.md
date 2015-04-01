@@ -307,12 +307,13 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 
 インストールした時にやらなかった項目です  
 ```
-$ rails g devise:views
-
 # 個別にビューを作成する場合
 # /config/initializers/devise.rb  
 config.scoped_views = true
 # ビューの生成
+$ rails g devise:views
+　↓
+# deviseのviewをusersに割り当てる
 $ rails g devise:views users
 ```
 
