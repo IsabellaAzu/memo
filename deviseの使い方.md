@@ -240,34 +240,36 @@ config.password_length = 8..128
 ```
 
 　  
-
-##### deviseにあるモジュール  
+##### 機能追加  
 
 > 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
 <a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
-> 1. Database Authenticatable  
+> 
+デフォルトで使える機能  
+1. Database Authenticatable  
 パスワードを暗号化してDBに保存する  
-2. Omniauthable  
-TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
-3. Confirmable  
-ユーザに仮登録メールを送信してメール内のリンクからアカウントを本登録させる  
-4. Recoverable  
+2. Recoverable  
 パスワードを忘れた時に、ユーザのパスワードをリセットし、リセット指示を送る  
-5. Registerable  
+3. Registerable  
 自分のアカウントを削除することができる  
-6. Rememberable  
+4. Rememberable  
 クッキーからユーザーを覚えるためのトークンをクリアする管理をする  
-7. Trackable  
+5. Trackable  
 サインイン時、IPアドレスをDBに保存する  
-8. Timeoutable  
-指定した期間で活動していないセッションが期限切れになる  
-9. Validatable  
+6. Validatable  
 メールアドレスとパスワードの入力内容を検証する  
-10. Lockable  
+
+7. Timeoutable  
+指定した期間で活動していないセッションが期限切れになる  
+8. Confirmable  
+ユーザに仮登録メールを送信してメール内のリンクからアカウントを本登録させる  
+9. Lockable  
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
+10. Omniauthable  
+TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
 
 
 
