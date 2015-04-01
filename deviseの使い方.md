@@ -199,17 +199,9 @@ $ rails s
 　http://ruby-rails.hatenadiary.com/entry/20140804/1407168000  
 ・Rails – Deviseのコントローラをカスタマイズする方法  
 　http://www.tamurasouko.com/?p=929  
-
-##### 3.1 パスワードの入力文字数の設定を変える
-```Ruby
-# /config/initializers/devise.rb
-# 8文字以上128文字以下
-config.password_length = 8..128
-```
 　  
-
 <a id="atode"></a>
-##### 3.2 個別にViewをカスタマイズ
+##### 3.1 個別にViewをカスタマイズ
 
 インストールした時にやらなかった項目です  
 ```
@@ -223,7 +215,13 @@ $ rails g devise:views
 $ rails g devise:views users
 ```
 　  
-
+##### 3.2 パスワードの入力文字数の設定を変える
+```Ruby
+# /config/initializers/devise.rb
+# 8文字以上128文字以下
+config.password_length = 8..128
+```
+　  
 ##### 3.x deviseのコントローラを独自のコントローラに変更
 ```Ruby
 # /config/routes.rb
