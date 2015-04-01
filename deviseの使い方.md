@@ -200,6 +200,7 @@ $ rails s
 ・Rails – Deviseのコントローラをカスタマイズする方法  
 　http://www.tamurasouko.com/?p=929  
 　  
+
 <a id="atode"></a>
 ##### 3.1 個別にViewをカスタマイズ
 
