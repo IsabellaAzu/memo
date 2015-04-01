@@ -261,7 +261,7 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
 サインイン時、IPアドレスをDBに保存する  
 6. Validatable  
 メールアドレスとパスワードの入力内容を検証する  
-
+追加できる機能
 7. Timeoutable  
 指定した期間で活動していないセッションが期限切れになる  
 8. Confirmable  
@@ -276,7 +276,7 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 
 
 　  
-##### 3.x deviseのコントローラを独自のコントローラに変更
+##### 3.x deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
 ```Ruby
 # /config/routes.rb
 
@@ -292,7 +292,7 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 ```
 とすると、  
 
-```
+```Ruby
                    Prefix Verb   URI Pattern                     Controller#Action
         new_guser_session GET    /users/sign_in(.:format)        devise/sessions#new
             guser_session POST   /users/sign_in(.:format)        devise/sessions#create
@@ -337,6 +337,11 @@ cancel_guser_registration GET    /users/cancel(.:format)         users/registrat
 
 ```
 
+##### 3.x URI Patternの変更($ rake routesの左側)
+```Ruby
+config/routes.rb
+devise_for :users, :path => 'accounts'
+```
 
 ##### コントローラ作成
 
