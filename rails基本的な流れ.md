@@ -357,7 +357,16 @@ http://guides.rubyonrails.org/getting_started.html
 * stylesheets
 
 
-
+<a id="ax1_4"></a>
+##### Railsのジェネレータで不要なファイルを作らせない  
+```
+# config/application.rb
+config.generators do |g|
+  g.helper false
+  g.stylesheets false
+  g.javascripts false
+end
+```
 
 
 
