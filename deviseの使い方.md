@@ -208,7 +208,23 @@ config.password_length = 8..128
 ```
 　  
 
-##### 3.2 deviseのコントローラを独自のコントローラに変更
+<a id="atode"></a>
+##### 3.2 個別にViewをカスタマイズ
+
+インストールした時にやらなかった項目です  
+```
+# 個別にビューを作成する場合
+# /config/initializers/devise.rb  
+config.scoped_views = true
+# ビューの生成
+$ rails g devise:views
+　↓
+# deviseのviewをusersに割り当てる
+$ rails g devise:views users
+```
+　  
+
+##### 3.x deviseのコントローラを独自のコントローラに変更
 ```Ruby
 # /config/routes.rb
 
@@ -301,21 +317,6 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
 
 
-
-<a id="atode"></a>
-##### 個別にViewをカスタマイズ
-
-インストールした時にやらなかった項目です  
-```
-# 個別にビューを作成する場合
-# /config/initializers/devise.rb  
-config.scoped_views = true
-# ビューの生成
-$ rails g devise:views
-　↓
-# deviseのviewをusersに割り当てる
-$ rails g devise:views users
-```
 
 > ログイン画面  
 app/views/devise/sessions/new.html.erb  
