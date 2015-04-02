@@ -251,7 +251,7 @@ config.password_length = 8..128
 8は<%= @minimum_password_length %>で取得可能  
 
 　  
-##### 3.3 機能追加  
+##### 3.4 機能追加  
 
 > 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
@@ -283,19 +283,12 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
 TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
 
 
-##### 3.3.1 Confirmableを追加
-```Ruby
-#app/models/user.rb
-
-```
-
-##### Confirmable 確認メールを送る方法
-
+##### 3.4.1 Confirmable（確認メールからアカウント作成）機能を追加
 > 参考  
 http://gaku3601.hatenablog.com/entry/2014/08/23/165749
 http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
 
-###### 3.3.1 メーラー用の設定  
+###### 3.4.1 メーラー用の設定  
 ```Ruby
 # /config/environments/development.rb
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
@@ -312,7 +305,7 @@ config.action_mailer.smtp_settings = {
 # config.action_mailer.raise_delivery_errors = false
 ```
 
-###### 3.3.2 下記コメントアウトを取る  
+###### 3.4.2 下記コメントアウトを取る  
 
 ```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
@@ -326,13 +319,13 @@ config.action_mailer.smtp_settings = {
 # add_index :users, :confirmation_token,   unique: true
 ```
 
-###### 3.3.3 :confirmableを追加
+###### 3.4.3 :confirmableを追加
 ```Ruby
 # /app/models/user.rb
   devise ・・・, :confirmable
 ```
 
-###### 3.3.4 mailのfromの設定
+###### 3.4.4 mailのfromの設定
 ```Ruby
 # /config/initializers/devise.rb
   config.mailer_sender = 'a@a.jp'
