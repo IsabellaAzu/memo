@@ -136,7 +136,7 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
-※「user」の部分はモデル名に依存するので、変更したら全て変更する  
+※「user」の部分はモデル名に依存しているので、変更したら全て変更する  
 例）user_signed_in　→　hoge_signed_in  
 　  
 
