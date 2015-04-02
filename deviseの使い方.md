@@ -245,7 +245,7 @@ config.password_length = 8..128
 8は<%= @minimum_password_length %>で取得可能  
 
 　  
-##### 機能追加  
+##### 3.3 機能追加  
 
 > 参考  
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
