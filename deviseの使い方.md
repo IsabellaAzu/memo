@@ -235,8 +235,14 @@ app/views/users/confirmations/new.html.erb
 アカウントのアンロック画面  
 app/views/users/unlocks/new.html.erb  
 
+
+##### 3.2 ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
+```
+# /app/controllers/application_controller.rb
+before_filter :authenticate_user!
+```
 　  
-##### 3.2 パスワードの入力文字数の設定を変える
+##### 3.3 パスワードの入力文字数の設定を変える
 ```Ruby
 # /config/initializers/devise.rb
 # 8文字以上128文字以下
@@ -279,9 +285,58 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 
 ##### 3.3.1 Confirmableを追加
 ```Ruby
-app/models/user.rb
+#app/models/user.rb
+
 ```
 
+##### Confirmable 確認メールを送る方法
+
+> 参考  
+http://gaku3601.hatenablog.com/entry/2014/08/23/165749
+http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
+
+###### 3.3.1 メーラー用の設定  
+```Ruby
+# /config/environments/development.rb
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :authentication => :plain,
+  :user_name => 'メールアドレス',
+  :password => 'パスワード'
+}
+〜
+# メール送信時の例外処理、下記の様にコメントアウトする
+# config.action_mailer.raise_delivery_errors = false
+```
+
+###### 3.3.2 下記コメントアウトを取る  
+
+```Ruby
+# /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
+
+## Confirmable
+# t.string   :confirmation_token
+# t.datetime :confirmed_at
+# t.datetime :confirmation_sent_at
+# t.string   :unconfirmed_email # Only if using reconfirmable
+〜
+# add_index :users, :confirmation_token,   unique: true
+```
+
+###### 3.3.3 :confirmableを追加
+```Ruby
+# /app/models/user.rb
+  devise ・・・, :confirmable
+```
+
+###### 3.3.4 mailのfromの設定
+```Ruby
+# /config/initializers/devise.rb
+  config.mailer_sender = 'a@a.jp'
+```
 
 　  
 ##### 3.x deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
@@ -351,78 +406,7 @@ config/routes.rb
 devise_for :users, :path => 'accounts'
 ```
 
-##### コントローラ作成
-
-> 参考  
-http://easyramble.com/cutomize-controllers-on-rails-devise.html  
-
-
-##### Confirmable 確認メールを送る方法
-
-> 参考  
-http://gaku3601.hatenablog.com/entry/2014/08/23/165749
-http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
-
-###### 1. メーラー用の設定  
-```Ruby
-# /config/environments/development.rb
-config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  :address => 'smtp.gmail.com',
-  :port => 587,
-  :authentication => :plain,
-  :user_name => 'メールアドレス',
-  :password => 'パスワード'
-}
-〜
-# メール送信時の例外処理、下記の様にコメントアウトする
-# config.action_mailer.raise_delivery_errors = false
-```
-
-###### 2. 下記コメントアウトを取る  
-
-```Ruby
-# /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
-
-## Confirmable
-# t.string   :confirmation_token
-# t.datetime :confirmed_at
-# t.datetime :confirmation_sent_at
-# t.string   :unconfirmed_email # Only if using reconfirmable
-〜
-# add_index :users, :confirmation_token,   unique: true
-```
-
-###### 3. :confirmableを追加
-```Ruby
-# /app/models/user.rb
-  devise ・・・, :confirmable
-```
-
-###### 4. mailのfromの設定
-```Ruby
-# /config/initializers/devise.rb
-  config.mailer_sender = 'a@a.jp'
-```
 　  
-ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
-```
-# /app/controllers/application_controller.rb
-before_filter :authenticate_user!
-```
-
-他に便利なHelperメソッドは
-```
-# ユーザがサインインしているかどうか
-user_signed_in?
-# サインインしているユーザ情報を取得する
-current_user
-```
-　  
-　  
-
-
 - - -
 　  
 
