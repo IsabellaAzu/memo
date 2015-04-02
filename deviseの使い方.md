@@ -277,7 +277,10 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
 TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
 
 
-
+##### 3.3.1 Confirmableを追加
+```Ruby
+app/models/user.rb
+```
 
 
 　  
