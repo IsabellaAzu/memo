@@ -136,6 +136,10 @@ $ rake db:migrate
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 ```
+※「user」モデル名に依存するので、変更したら全て変更する  
+例）user_signed_in　→　hoge_signed_in  
+　  
+
 ##### 2_3. URIの確認  
 ```Ruby
 # 確認
