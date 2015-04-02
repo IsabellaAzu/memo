@@ -288,7 +288,7 @@ TwitterやFacebookのアカウントなどでユーザ登録したい場合は�
 http://gaku3601.hatenablog.com/entry/2014/08/23/165749
 http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
 
-###### 3.4.1 メーラー用の設定  
+###### 3.4.1.1 メーラー用の設定  
 ```Ruby
 # /config/environments/development.rb
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
@@ -305,7 +305,7 @@ config.action_mailer.smtp_settings = {
 # config.action_mailer.raise_delivery_errors = false
 ```
 
-###### 3.4.2 下記コメントアウトを取る  
+###### 3.4.1.2 下記コメントアウトを取る  
 
 ```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
@@ -330,13 +330,13 @@ http://memo.yomukaku.net/entries/iDhORCE
 
 
 
-###### 3.4.3 :confirmableを追加
+###### 3.4.1.3 :confirmableを追加
 ```Ruby
 # /app/models/user.rb
   devise ・・・, :confirmable
 ```
 
-###### 3.4.4 mailのfrom（送信元）の設定
+###### 3.4.1.4 mailのfrom（送信元）の設定
 ```Ruby
 # /config/initializers/devise.rb
   config.mailer_sender = 'a@a.jp'
