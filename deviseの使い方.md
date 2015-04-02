@@ -242,6 +242,7 @@ app/views/users/unlocks/new.html.erb
 # 8文字以上128文字以下
 config.password_length = 8..128
 ```
+8は<%= @minimum_password_length %>で取得可能  
 
 　  
 ##### 機能追加  
