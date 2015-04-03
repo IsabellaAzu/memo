@@ -294,11 +294,11 @@ http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
-  :address => 'smtp.gmail.com',
+  :address => 'smtp.mail.rails.jp',
   :port => 465,
   :authentication => :plain,
-  :user_name => 'メールアドレス',
-  :password => 'パスワード'
+  :user_name => 'rails@rails.jp',
+  :password => 'rails'
 }
 〜
 # メール送信時の例外処理、下記の様にコメントアウトする
