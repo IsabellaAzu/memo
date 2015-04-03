@@ -84,7 +84,7 @@ rails g controller Home index show
 <a id="a2"></a>
 ### 2. devise設定
 
-##### 2_1. Model作成（ログインユーザー管理のModel）
+##### 2.1 Model作成（ログインユーザー管理のModel）
 
 ```
 # model作成：model名は最初大文字の単数形
@@ -108,7 +108,7 @@ $ rake db:migrate
 ```
 
 
-##### 2_2. View作成
+##### 2.2 View作成
 
 全ての画面の上部に、  
 ・ログインしていない場合は、「サインイン」と「ログイン」のリンク  
@@ -140,7 +140,7 @@ $ rake db:migrate
 例）user_signed_in　→　hoge_signed_in  
 　  
 
-##### 2_3. URIの確認  
+##### 2.3 URIの確認  
 ```Ruby
 # 確認
 $ rake routes
@@ -184,7 +184,7 @@ cancel_user_registration GET    /users/cancel(.:format)                         
 ※deviseコントローラは生成されない
 
 
-##### 2_4. サーバー再起動  
+##### 2.4 サーバー再起動  
 サインインなどに進めないなぁ、と思ったら
 ```
 #サーバー停止  
