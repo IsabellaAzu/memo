@@ -328,8 +328,6 @@ rake db:resetとrake db:migrate:resetの違い
 ・rake db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
 http://memo.yomukaku.net/entries/iDhORCE
 
-
-
 ###### 3.4.1.3 :confirmableを追加
 ```Ruby
 # /app/models/user.rb
@@ -342,7 +340,7 @@ http://memo.yomukaku.net/entries/iDhORCE
   config.mailer_sender = 'a@a.jp'
 ```
 
-###### 3.5 確認メール文面の変更
+##### 3.5 確認メール文面の変更
 /app/views/users/mailer以下を編集  
 ・アカウントの本人確認
 　confirmation_instructions.html.erb
@@ -350,6 +348,9 @@ http://memo.yomukaku.net/entries/iDhORCE
 　reset_password_instructions.html.erb
 ・ロック解除
 　unlock_instructions.html.erb
+
+　  
+##### 3.6 
 
 　  
 ##### 3.x deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
