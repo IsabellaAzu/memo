@@ -342,6 +342,15 @@ http://memo.yomukaku.net/entries/iDhORCE
   config.mailer_sender = 'a@a.jp'
 ```
 
+###### 3.5 確認メール文面の変更
+/app/views/users/mailer以下を編集  
+・アカウントの本人確認
+　confirmation_instructions.html.erb
+・パスワード忘れ
+　reset_password_instructions.html.erb
+・ロック解除
+　unlock_instructions.html.erb
+
 　  
 ##### 3.x deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
 ```Ruby
