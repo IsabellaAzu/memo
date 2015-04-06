@@ -1325,10 +1325,8 @@ http://blog.inouetakuya.info/entry/2014/06/08/194015
 → [memo/rails基本的な流れの次.md](https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md)  
 
 
-
 Ruby on Rails によるシステム開発をモデリングで効率的に行う  
 http://www.hakkaku.net/series/ruby-on-rails-%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA%E3%82%92%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%A7%E5%8A%B9%E7%8E%87%E7%9A%84%E3%81%AB  
-
 
 
 暗号化方式一覧（トークンとは別）  
@@ -1336,4 +1334,16 @@ https://md5.znaet.org/md5/ac75e7eca69abf564a76d52fd6e35c1c
 
 rails公式チュートリアル  
 http://railstutorial.jp/  
+
+
+#### Rubyの複数行コメントアウト
+```Ruby
+<%
+=begin
+%>
+<%
+=end
+%>
+```
+
 
