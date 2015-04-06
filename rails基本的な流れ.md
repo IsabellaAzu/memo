@@ -1341,6 +1341,9 @@ http://railstutorial.jp/
 <%
 =begin
 %>
+
+コメントアウト対象
+
 <%
 =end
 %>
