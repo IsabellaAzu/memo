@@ -350,10 +350,7 @@ http://memo.yomukaku.net/entries/iDhORCE
 　unlock_instructions.html.erb
 
 　  
-##### 3.6 
-
-　  
-##### 3.x deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
+##### 3.6 deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
 ```Ruby
 # /config/routes.rb
 
@@ -414,7 +411,7 @@ cancel_guser_registration GET    /users/cancel(.:format)         users/registrat
 
 ```
 
-##### 3.x URI Patternの変更($ rake routesの左側)
+##### 3.7 URI Patternの変更($ rake routesの左側)
 ```Ruby
 config/routes.rb
 devise_for :users, :path => 'accounts'
