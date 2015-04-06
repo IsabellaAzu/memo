@@ -1121,12 +1121,9 @@ end
 
 ファイルの配置  
 * ja.yml：config/locales/ja.yml
-> 参考 https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt  
-https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml  
-
-* devise.ja.yml：config/locales/devise.ja.yml  
 > 参考  
-https://gist.github.com/yanagi0324/f63499851fa638690e09
+https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt  
+https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml  
 
 
 ###### 日本語化(2)
