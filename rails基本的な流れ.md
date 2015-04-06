@@ -1099,6 +1099,9 @@ end
 
 <a id="ax2_2"></a>
 ##### 日本語化、多言語化
+> 他言語対応したときにURIをどうするか  
+http://blog.notsobad.jp/post/87487830571/rails4-i18n  
+　  
 > 参考
 http://rails3try.blogspot.jp/2012/01/rails3-i18n.html
 http://memo.yomukaku.net/entries/LXvSUpT
