@@ -1124,6 +1124,7 @@ http://memo.yomukaku.net/entries/LXvSUpT
 やらないといけないこと  
 * viewに直接記載された英語を変更
 * controller、modelに記載された英語を、ja.ymlとdevise.ja.ymlで変更  
+* 参考：https://gist.github.com/kawamoto/4729292  
 
 ファイルの配置  
 * ja.yml：config/locales/ja.yml
