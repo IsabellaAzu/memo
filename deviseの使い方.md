@@ -257,7 +257,7 @@ config.password_length = 8..128
 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
-<a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
+上記の<a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
 > 
 デフォルトで使える機能  
 1. Database Authenticatable  
