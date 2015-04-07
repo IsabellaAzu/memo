@@ -428,9 +428,21 @@ https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84
 - - -
 　  
 
+## deviseで遭った困った事
+
+#### Deviseのサインアウト処理でNo route matches [GET] "/users/sign_out"となる問題の解決
+http://kaorumori.hatenadiary.com/entry/20110907/1315466591  
+```Ruby
+# config/initializers/devise.rb
+config.sign_out_via = :delete
+　↓
+config.sign_out_via = :get
+```
+
+
 ## deviseあるある  
 
-##### 2. 削除系は自分で作り込まないと
+##### ・削除系は自分で作り込まないと
 * Userの情報だけ消す？
 * Userの入力内容、どうする？
 など
