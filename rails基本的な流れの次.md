@@ -394,6 +394,15 @@ http://ruby-rails.hatenadiary.com/entry/20141225/1419515057
   
 
 　  
+
+- - -
+#### Rails4でページごとにページのタイトル(titleタグ)の内容を変更する
+> http://ruby-rails.hatenadiary.com/entry/20141219/1418990626  
+  
+
+　  
+
+
 　  
 - - -
 #### 新しいマイグレーションを追加してテーブルを変更
