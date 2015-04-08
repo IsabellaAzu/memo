@@ -14,7 +14,7 @@ http://morizyun.github.io/blog/coding-style-ruby-rails-ginza-rb/
 https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md  
 
 ## ログ周り
-### asset
+### assetのログを非表示に
 http://rainbowdevil.jp/?p=1074
 
 
