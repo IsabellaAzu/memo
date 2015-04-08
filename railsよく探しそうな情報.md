@@ -1,20 +1,21 @@
 
-#railsよく探しそうな情報
+# railsよく探しそうな情報
 
 
-##画像周り
+## 画像周り
 
 Railsの画像をアップロードするgemのCarrierWave  
 http://ruby-rails.hatenadiary.com/entry/20141015/1413300088  
 
 
-##規約
+## 規約
 Rubyを使っているプロジェクトのコーディング規約を見てみよう  
 http://morizyun.github.io/blog/coding-style-ruby-rails-ginza-rb/  
 https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md  
 
-
-
+## ログ周り
+### asset
+http://rainbowdevil.jp/?p=1074
 
 
 
