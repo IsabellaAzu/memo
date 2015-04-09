@@ -14,9 +14,30 @@ http://morizyun.github.io/blog/coding-style-ruby-rails-ginza-rb/
 https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md  
 
 ## ログ周り
+
 ### assetのログを非表示に
 http://rainbowdevil.jp/?p=1074
+```Ruby
+# /config/initializers/quiet_logs.rbにファイル新規作成
+Rails.application.assets.logger = Logger.new('/dev/null') 
+Rails::Rack::Logger.class_eval do
+  def call_with_quiet_assets(env)
+    previous_level = Rails.logger.level
+    Rails.logger.level = Logger::ERROR if env['PATH_INFO'].index("/assets/") == 0
+    call_without_quiet_assets(env).tap do
+      Rails.logger.level = previous_level
+    end
+  end
+  alias_method_chain :call, :quiet_assets
+end
+```
 
+### renderedのログを非表示に
+```Ruby
+# /config/application.rbに追加
+# logにrederedを表示させない
+config.action_view.logger = nil
+```
 
 
 
