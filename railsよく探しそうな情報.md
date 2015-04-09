@@ -40,6 +40,9 @@ config.action_view.logger = nil
 ```
 
 
+## RailsのHTMLテンプレートエンジン Slim入門
+http://ruby-rails.hatenadiary.com/entry/20140929/1411997071  
+
 
 ##よく見かけるblog
 
