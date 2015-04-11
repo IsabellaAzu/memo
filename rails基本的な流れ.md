@@ -17,6 +17,7 @@ $ mysql.server start
 $ rake db:create:all
 ```
 
+
 ### 2. 便利なgemをGemfileに追記（Pry等）
 例えば  
 Gemfileのgroup :development, :test doに下記４つを追記  
