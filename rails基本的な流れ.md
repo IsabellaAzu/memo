@@ -32,7 +32,6 @@ group :development, :test do
   gem 'pry-byebug'         # スタックをたどれる
 end
 ```
-　  
 ```
 $ bundle install --path vendor/bundle
 ```
