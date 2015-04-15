@@ -21,7 +21,10 @@ $ rake db:create
 ### 2. 便利なgemをGemfileに追記（Pry等）
 例えば  
 Gemfileのgroup :development, :test doに下記４つを追記  
+https://github.com/funnythingz/pins/blob/master/Gemfile  
+
 ```
+# /Gemfile
 group :development, :test do
   gem 'pry-rails'          # rails cでirbの代わりにpryを使う
   gem 'pry-doc'            # methodを表示
@@ -29,11 +32,7 @@ group :development, :test do
   gem 'pry-byebug'         # スタックをたどれる
 end
 ```
-
-> 参考  
-https://github.com/funnythingz/pins/blob/master/Gemfile  
-
-インストール  
+　  
 ```
 $ bundle install --path vendor/bundle
 ```
