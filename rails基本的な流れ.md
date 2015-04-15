@@ -14,7 +14,7 @@ $ rails new プロジェクト名 -d mysql # MySQLで
 $ cd プロジェクト名
 $ rails s # rails serverの省略形
 $ mysql.server start
-$ rake db:create:all
+$ rake db:create
 ```
 
 
