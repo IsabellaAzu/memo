@@ -901,7 +901,7 @@ $(function(){
 ##### タスクの全数
 ```html
 # /app/views/projects/show.html.erb  
-<%= project.tasks.count %>
+<%= @project.tasks.count %>
 ```
 
 ##### タスクの残数（Modelに記述：検索条件を付けることができるため）
