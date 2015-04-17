@@ -773,7 +773,7 @@ $ rake routes
 ```Html
 # /app/views/projects/show.html.erb
 <ul>
-<% @projects.tasks.each do |task| %>
+<% @project.tasks.each do |task| %>
 <li><%= task.title %></li>
 <li>
 	<%= form_for [@project, project.tasks.build] do |f| %>
