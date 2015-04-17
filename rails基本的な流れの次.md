@@ -4,35 +4,43 @@
 
 
 ## index
-> ・<a href="#">projectと紐付けを忘れた場合（Modelの関連付けも手動になる）</a>  
-・<a href="#">Routing</a>  
-・<a href="#">hoge_idのカラムの値でページを表示させるには</a>  
-・<a href="#">hoge_idのカラムの値で、大文字小文字を区別する</a>  
-・<a href="#">[0..9][a..z][A..Z]の文字列を使って文字列を生成</a>  
-・<a href="#">Rails でDBの重複エラーが発生した場合の対処</a>  
-・<a href="#">変数の中身を表示</a>  
-・<a href="#">１つのsubmitで複数テーブルのフィールドをnew/create</a>  
-・<a href="#">複数の子レコードをCRUD</a>  
-・<a href="#">Mysql2::Error: Cannot delete or update a parent row: a foreign key constraint fails</a>  
-・<a href="#">親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）</a>  
-・<a href="#">ActiveRecordの関連</a>  
-・<a href="#">多対多</a>  
-・<a href="#">decorator</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">aa</a>  
-・<a href="#">関連付け</a>  
-・<a href="#">日付と時刻</a>  
-・<a href="#">Rails事例</a>  
+> <a href="#anc_1">サブミットボタンをaタグにする方法</a>  
+・<a href="#anc_2">projectと紐付けを忘れた場合（Modelの関連付けも手動になる）</a>  
+・<a href="#anc_3">Routing</a>  
+・<a href="#anc_4">hoge_idのカラムの値でページを表示させるには</a>  
+・<a href="#anc_5">hoge_idのカラムの値で、大文字小文字を区別する</a>  
+・<a href="#anc_6">[0..9][a..z][A..Z]の文字列を使って文字列を生成</a>  
+・<a href="#anc_7">Rails でDBの重複エラーが発生した場合の対処</a>  
+・<a href="#anc_8">変数の中身を表示</a>  
+・<a href="#anc_9">１つのsubmitで複数テーブルのフィールドをnew/create</a>  
+・<a href="#anc_10">複数の子レコードをCRUD</a>  
+・<a href="#anc_11">Mysql2::Error: Cannot delete or update a parent row: a foreign key constraint fails</a>  
+・<a href="#anc_12">親をcreateした後のshowやedit画面で、子が複数表示されてしまう。。。（調査中）</a>  
+・<a href="#anc_13">ActiveRecordの関連</a>  
+・<a href="#anc_14">多対多</a>  
+・<a href="#anc_15">decorator</a>  
+・<a href="#anc_16">aa</a>  
+・<a href="#anc_17">aa</a>  
+・<a href="#anc_18">aa</a>  
+・<a href="#anc_19">aa</a>  
+・<a href="#anc_20">aa</a>  
+・<a href="#anc_21">aa</a>  
+・<a href="#anc_22">aa</a>  
+・<a href="#anc_23">aa</a>  
+・<a href="#anc_24">関連付け</a>  
+・<a href="#anc_25">日付と時刻</a>  
+・<a href="#anc_26">Rails事例</a>  
 
 　  
 　  
+<a id="anc_1"></a>
+#### サブミットボタンをaタグにする方法(※jQuery読み込んでる必要ある)
+```erb
+<%= link_to 'submit', "#", :onclick => "$('#【formタグのID】').submit()" %>
+```
 
+　  
+　  
 #### projectと紐付けを忘れた場合（Modelの関連付けも手動になる）
 ```
 # ConditionはProjectに所属する
