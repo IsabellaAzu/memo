@@ -4,7 +4,7 @@
 
 
 ## index
-> <a href="#anc_1">サブミットボタンをaタグにする方法</a>  
+> ・<a href="#anc_1">サブミットボタンをaタグにする方法</a>  
 ・<a href="#anc_2">projectと紐付けを忘れた場合（Modelの関連付けも手動になる）</a>  
 ・<a href="#anc_3">Routing</a>  
 ・<a href="#anc_4">hoge_idのカラムの値でページを表示させるには</a>  
