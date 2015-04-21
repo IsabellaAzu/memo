@@ -299,7 +299,10 @@ http://qiita.com/ysk_1031/items/d669157225e67d3a40bf
 - - -
 #### パラメーターを渡す
 ```Ruby
+# view
 <%= link_to '+追加', xxx_path(project_id: @project.id) %>
+# controller
+params[:project_id]
 ```
 　  
 　  
