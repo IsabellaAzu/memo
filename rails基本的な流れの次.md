@@ -41,6 +41,12 @@
 
 　  
 　  
+#### ラジオボタンの項目数が多すぎてもsimple_formでそこそこすっきり書く方法
+http://qiita.com/mah_lab/items/11cf47b030e0f632ac03  
+
+　  
+　  
+
 #### projectと紐付けを忘れた場合（Modelの関連付けも手動になる）
 ```
 # ConditionはProjectに所属する
