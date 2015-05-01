@@ -475,6 +475,7 @@ SeqelProでエクスポート
 rake db:schema:load
 ```
 
+#### (4)1のdumpを取り込む
 
 
 
