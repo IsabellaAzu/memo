@@ -19,16 +19,9 @@
 ・<a href="#anc_13">ActiveRecordの関連</a>  
 ・<a href="#anc_14">多対多</a>  
 ・<a href="#anc_15">decorator</a>  
-・<a href="#anc_16">aa</a>  
-・<a href="#anc_17">aa</a>  
-・<a href="#anc_18">aa</a>  
-・<a href="#anc_19">aa</a>  
-・<a href="#anc_20">aa</a>  
-・<a href="#anc_21">aa</a>  
-・<a href="#anc_22">aa</a>  
-・<a href="#anc_23">aa</a>  
 ・<a href="#anc_24">関連付け</a>  
 ・<a href="#anc_25">日付と時刻</a>  
+・<a href="#anc_23">既存のDBからプロジェクトを作成</a>  
 ・<a href="#anc_26">Rails事例</a>  
 
 　  
