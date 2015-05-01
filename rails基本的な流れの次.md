@@ -470,6 +470,10 @@ SeqelProでエクスポート
 
 #### (2)プロジェクトのdb/にschema.rbを作成（SeqelProでエクスポートできないのかな？）
 
+#### (3)DBにschema.rbを反映
+```Ruby
+rake db:schema:load
+```
 
 
 
