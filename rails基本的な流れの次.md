@@ -468,6 +468,7 @@ p day.sec #=> 45
 #### (1)既存DBからテーブルのdumpを取得
 SeqelProでエクスポート
 
+#### (2)プロジェクトのdb/にschema.rbを作成（SeqelProでエクスポートできないのかな？）
 
 
 
