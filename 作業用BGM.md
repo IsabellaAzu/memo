@@ -50,6 +50,8 @@
 
 #### 2015
 　https://www.youtube.com/watch?v=rGhOKNyPNgs
+##### 　WODFrance
+　https://www.youtube.com/watch?v=QbriK_loY-k
 
 ##### 　Best moments tribute
 　https://www.youtube.com/watch?v=O5bn3h5BSvM
