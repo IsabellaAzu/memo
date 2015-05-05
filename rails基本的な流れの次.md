@@ -483,8 +483,10 @@ rake db:schema:load
 
 - - -
 ### ファットコントローラ、ファットモデル関係
+#### 肥大化したActiveRecordモデルをリファクタリングする7つの方法
 http://techracho.bpsinc.jp/hachi8833/2013_11_19/14738  
-
+#### Rails でドメインロジックの実装方法まとめ
+http://a-suenami.hatenablog.com/entry/2014/12/07/200427  
 
 
 
