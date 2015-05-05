@@ -490,6 +490,7 @@ http://a-suenami.hatenablog.com/entry/2014/12/07/200427
 #### RailsのModelとControllerにどういうメソッドを書くのか
 http://woshidan.hatenadiary.jp/entry/2015/03/25/223006
 
+http://qiita.com/yuku_t/items/961194a5443b618a4cac
 - - -
 ### Rails事例
 > サイバーエージェントでRailsを使っているコミュニティサービスのお話 2014年11月27日(木)  
