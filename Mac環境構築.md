@@ -203,9 +203,10 @@ http://iterm2.com/
 メニューの「Window」→「Save Window Arrangement」→名前をつける  
 ![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)  
 
-###### デフォルトの配置  
+###### windowデフォルトの配置  
 ・メニューの「iTerm」→「Preferences...」→「Generalタブ」   
 　→ Startupの項目「Open default window arrangement」にチェック  
+　　cmd+shift+sで名前を付けて位置保存  
 ・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」    
 　→ 「Set Default」ボタンを押してデフォルトに設定  
 
