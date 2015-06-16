@@ -472,6 +472,7 @@ SeqelProでエクスポート
 
 #### (3)DBにschema.rbを反映
 ```Ruby
+#データ消えるので注意
 rake db:schema:load
 ```
 
