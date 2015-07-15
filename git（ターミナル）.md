@@ -51,9 +51,9 @@ $ git commit -m "コミットコメント"
 ##### リモートリポジトリにプッシュ
 ```
 $ git push -u origin master
-$ git push #「 -u origin master」リポジトリにファイルが無い場合の最初のpush
 ```
-
+※「 -u origin master」はリポジトリにファイルが無い場合の最初のpush  
+　  
 - - -
 
 ## あるある
