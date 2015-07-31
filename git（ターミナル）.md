@@ -28,10 +28,20 @@ $ git remote add origin https://github.com/username/repositori.git
 
 ### 基本的な作業
 
-##### clone
+##### git clone ☆
 ```
 $ git clone https://github.com/username/repositori.git
 ```
+
+##### git status
+```
+$ git status
+$ git status -s
+$ git status -b
+```
+-sオプション：説明文を表示しない  
+-bオプション：説明文は表示しないけど、ブランチ名は表示する  
+
 
 ##### 編集したファイルをコミットリストに追加
 ```
