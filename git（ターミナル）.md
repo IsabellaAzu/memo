@@ -28,12 +28,12 @@ $ git remote add origin https://github.com/username/repositori.git
 
 ### 基本的な作業
 
-##### git clone ☆
+##### リポジトリをローカルに git clone ☆
 ```
 $ git clone https://github.com/username/repositori.git
 ```
 
-##### git status
+##### 状態を確認 git status
 ```
 $ git status
 $ git status -s
@@ -48,7 +48,6 @@ $ git status -b
 $ git add . # 全部
 $ git add ファイル名 # 指定ファイル
 $ git reset HEAD ファイル名 # 指定ファイルのaddを取り消し
-$ git status # コミットしたいファイルが追加されてるか確認
 ```
 
 
