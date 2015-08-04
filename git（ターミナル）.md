@@ -47,6 +47,7 @@ $ git status -b
 ```
 $ git add . # 全部
 $ git add ファイル名 # 指定ファイル
+$ git add -u # 削除コミット
 $ git reset HEAD ファイル名 # 指定ファイルのaddを取り消し
 ```
 
