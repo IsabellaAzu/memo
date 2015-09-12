@@ -227,10 +227,10 @@ http://pngmini.com/
 https://imageoptim.com/
 
 ##### Atomインストールpackage
-Atom：https://atom.io/  
+- Atom：https://atom.io/  
+- プロジェクト管理、開いた状態など：project-manager（recent-files）
 - 矩形選択：Sublime-Style-Column-Selection
-
-
+- Rails プロジェクト内のファイル移動：rails-transporter
 
 
 
