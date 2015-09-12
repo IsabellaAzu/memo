@@ -231,6 +231,7 @@ https://imageoptim.com/
 - プロジェクト管理、開いた状態など：project-manager（recent-files）
 - 矩形選択：Sublime-Style-Column-Selection
 - Railsプロジェクト内のファイル移動：rails-transporter
+- 全角スペースを□で表示：show-ideographic-space
 
 
 ##### 
