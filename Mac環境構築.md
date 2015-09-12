@@ -226,7 +226,12 @@ http://pngmini.com/
 ##### imageOptim：画像軽量化
 https://imageoptim.com/
 
-##### 
+##### Atomインストールpackage
+Atom：https://atom.io/  
+- 矩形選択：Sublime-Style-Column-Selection
+
+
+
 
 
 ##### 
