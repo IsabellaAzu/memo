@@ -212,7 +212,7 @@ http://iterm2.com/
 
 ##### デフォルトで開くディレクトリ
 ・メニューの「iTerm」→「Preferences...」→「Profileタブ」  
-　→ 「Working Directory」の「Directory」に設定  
+　→ Reuse previous 〜に設定  
 
 ##### Sequel Pro：DBのGUI
 http://www.sequelpro.com/
@@ -230,8 +230,7 @@ https://imageoptim.com/
 - Atom：https://atom.io/  
 - プロジェクト管理、開いた状態など：project-manager（recent-files）
 - 矩形選択：Sublime-Style-Column-Selection
-- Rails プロジェクト内のファイル移動：rails-transporter
-
+- Railsプロジェクト内のファイル移動：rails-transporter
 
 
 ##### 
