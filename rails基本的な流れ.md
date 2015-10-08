@@ -13,6 +13,7 @@ $ rails new プロジェクト名 # SQLightで
 $ rails new プロジェクト名 -d mysql # MySQLで
 $ cd プロジェクト名
 $ rails s # rails serverの省略形
+$ rails s -p 8888 #localhost:8888のポート番号で起動
 $ mysql.server start
 $ rake db:create
 ```
