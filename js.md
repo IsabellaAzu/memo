@@ -1,6 +1,7 @@
 
 ## 配列のシャッフルの、出力結果の違い
-http://bost.ocks.org/mike/shuffle/compare.html
+http://bost.ocks.org/mike/shuffle/compare.html  
+https://www.softel.co.jp/blogs/tech/archives/2328  
 
 
 ## JSフレームワーク2015
