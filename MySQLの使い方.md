@@ -39,7 +39,8 @@ http://d.hatena.ne.jp/spitfire_tree/20120627/1340789986
 ・インデックスの利用方法などが変化する  
 ・大体の場合においてパフォーマンスが低下する  
 
-
+　  
+　  
 ### 便利ツール
 #### Sequel Pro
 http://www.sequelpro.com/  
