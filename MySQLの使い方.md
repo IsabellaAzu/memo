@@ -42,7 +42,7 @@ http://d.hatena.ne.jp/spitfire_tree/20120627/1340789986
 
 ### 便利ツール
 #### Sequel Pro
-　www.sequelpro.com/  
+http://www.sequelpro.com/  
 
 
 　  
