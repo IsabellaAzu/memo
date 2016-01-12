@@ -11,10 +11,10 @@ https://softcover.s3.amazonaws.com/636/ruby_on_rails_tutorial_3rd_edition/ebooks
 ```
 $ rails new プロジェクト名 # SQLightで
 $ rails new プロジェクト名 -d mysql # MySQLで
+$ mysql.server start
 $ cd プロジェクト名
 $ rails s # rails serverの省略形
 $ rails s -p 8888 #localhost:8888のポート番号で起動
-$ mysql.server start
 $ rake db:create
 ```
 
