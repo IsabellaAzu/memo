@@ -6,6 +6,6 @@ Ruby on Rails チュートリアル 実例を使ってRailsを学ぼう Michael 
 http://railstutorial.jp/  
 
 
-
-
+fatなcontroller、model問題の対策
+http://qiita.com/aDaichiOta/items/3fa5bc302565bcd495a8
 
