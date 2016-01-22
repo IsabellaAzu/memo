@@ -1,5 +1,5 @@
 
-# Rubyのgem
+# Rubyのgemを探そう
 https://rubygems.org/  
 　  
 
