@@ -9,8 +9,18 @@ https://rubygems.org/
 'ruby' '2.2.1p85'  
 'rails', '4.2.1'  
 'ransack', '1.7.0'
+
+###スニペット
+
+
+
 - - -
+## kaminari
 
+### 環境
+'ruby' '2.2.1p85'  
+'rails', '4.2.1'  
+'kaminari', '0.16.3'
 
-
+###スニペット
 
