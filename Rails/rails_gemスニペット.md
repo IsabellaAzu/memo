@@ -3,6 +3,7 @@
 https://rubygems.org/  
 　  
 
+- - -
 ## Ransack
 ### 環境
 'ruby' '2.2.1p85'  
