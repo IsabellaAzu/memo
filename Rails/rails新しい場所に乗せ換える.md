@@ -48,15 +48,14 @@ bundle install --path vendor/bundle
 <a id="anc_4"></a>
 ### 4. プロジェクト作成から初期起動まで
 ```
-$ rails s -p 8888 #localhost:8888のポート番号で起動
 $ rake db:create
+$ rake db:migrate # 不要なmigrationファイルが無い様に。
+$ rails s -p 1234 #localhost:1234のポート番号で起動
 ```
 　  
 　  
 <a id="anc_5"></a>
-### 5. aaa
-```erb
-aaa
-```
+### 5. 動作確認
+しましょうw
 
 
