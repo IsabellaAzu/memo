@@ -34,7 +34,8 @@ $ git push -u origin --all
 ```
 bundle install --path vendor/bundle
 ```
-
+　  
+　  
 <a id="anc_3"></a>
 ### 3. 各種設定変更
 各ファイル内のリポジトリ名の部分を置き換える  
