@@ -25,10 +25,8 @@ $ git add -A
 $ git commit -m '最初のコミット'
 $ git push -u origin --all
 ```
-
-
-
-
+　  
+　  
 <a id="anc_2"></a>
 ### 2. プロジェクト作成から初期起動まで
 ```
