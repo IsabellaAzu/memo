@@ -13,7 +13,14 @@
 ### 1. 新規リポジトリ作成
 参考：http://note103.hateblo.jp/entry/2013/12/03/214351  
 ```erb
-aaa
+# ローカルの管理したい所に移動
+cd ディレクトリ
+
+# Gitリポジトリを新たに作成する
+git init
+
+# 何かファイル（無難に.gitignoreとか）をadd
+git remote add origin https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
 
 
