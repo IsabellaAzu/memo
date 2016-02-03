@@ -10,7 +10,17 @@
 　  
 　  
 <a id="anc_1"></a>
-### プロジェクト作成から初期起動まで
+### 1. 新規リポジトリ作成
+参考：http://note103.hateblo.jp/entry/2013/12/03/214351  
+```erb
+aaa
+```
+
+
+
+
+<a id="anc_2"></a>
+### 2. プロジェクト作成から初期起動まで
 ```
 $ rails new プロジェクト名 -d mysql # MySQLで（SQLightなら-dのオプション無しで）
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
@@ -24,8 +34,8 @@ $ rake db:create
 
 　  
 　  
-<a id="anc_2"></a>
-### 2. aaa
+<a id="anc_3"></a>
+### 3. aaa
 ```erb
 aaa
 ```
