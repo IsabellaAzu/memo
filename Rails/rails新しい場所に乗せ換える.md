@@ -14,13 +14,17 @@
 参考：http://note103.hateblo.jp/entry/2013/12/03/214351  
 ```erb
 # ローカルの管理したい所に移動
-cd ディレクトリ
+$ cd ディレクトリ/リポジトリ名
 
 # Gitリポジトリを新たに作成する
-git init
+$ git init
 
 # 何かファイル（無難に.gitignoreとか）をadd
-git remote add origin https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
+$ git remote add origin https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
+$ git add -A
+$ git commit -m '最初のコミット'
+$ git push -u origin --all
+
 ```
 
 
