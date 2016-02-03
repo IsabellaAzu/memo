@@ -35,11 +35,11 @@ bundle install --path vendor/bundle
 
 <a id="anc_3"></a>
 ### 3. 各種設定変更
-#リポジトリ名/config/application.rb  
-#リポジトリ名/config/database.yml  
-#リポジトリ名/config/initializers/devise.rb  
-#リポジトリ名/config/initializers/session_store.rb  
 各ファイル内のリポジトリ名の部分を置き換える  
+リポジトリ名/config/application.rb  
+リポジトリ名/config/database.yml  
+リポジトリ名/config/initializers/devise.rb  
+リポジトリ名/config/initializers/session_store.rb  
 　  
 　  
 <a id="anc_4"></a>
