@@ -4,8 +4,10 @@
 　  
 　  
 ## index
-> ・<a href="#anc_1">新規リポジトリ作成</a>  
- ・<a href="#anc_2">プロジェクト作成から初期起動まで</a>  
+> ・<a href="#anc_1">1. 新規リポジトリ作成</a>  
+ ・<a href="#anc_2">2. 必要なGEMなどをインストール</a>  
+ ・<a href="#anc_2">3. 各種設定変更</a>  
+ ・<a href="#anc_2">4. プロジェクト作成から初期起動まで</a>  
 
 　  
 　  
@@ -45,12 +47,6 @@ bundle install --path vendor/bundle
 <a id="anc_4"></a>
 ### 4. プロジェクト作成から初期起動まで
 ```
-$ rails new プロジェクト名 -d mysql # MySQLで（SQLightなら-dのオプション無しで）
-$ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
-（/Gemfile：gem 'mysql2'　→　gem 'mysql2', '~> 0.3.20'）
-（$ bundle update）
-$ cd プロジェクト名
-$ rails s # rails serverの省略形
 $ rails s -p 8888 #localhost:8888のポート番号で起動
 $ rake db:create
 ```
