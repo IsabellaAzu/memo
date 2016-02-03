@@ -4,8 +4,8 @@
 　  
 　  
 ## index
-> ・<a href="#anc_1">プロジェクト作成から初期起動まで</a>  
- ・<a href="#anc_2">aaaa</a>  
+> ・<a href="#anc_1">新規リポジトリ作成</a>  
+ ・<a href="#anc_2">プロジェクト作成から初期起動まで</a>  
 
 　  
 　  
@@ -24,7 +24,6 @@ $ git remote add origin https://ユーザー名@bitbucket.org/ユーザー名/�
 $ git add -A
 $ git commit -m '最初のコミット'
 $ git push -u origin --all
-
 ```
 
 
