@@ -28,7 +28,22 @@ $ git push -u origin --all
 　  
 　  
 <a id="anc_2"></a>
-### 2. プロジェクト作成から初期起動まで
+### 2. 必要なGEMなどをインストール
+```
+bundle install --path vendor/bundle
+```
+
+<a id="anc_3"></a>
+### 3. 各種設定変更
+#リポジトリ名/config/application.rb  
+#リポジトリ名/config/database.yml  
+#リポジトリ名/config/initializers/devise.rb  
+#リポジトリ名/config/initializers/session_store.rb  
+各ファイル内のリポジトリ名の部分を置き換える  
+　  
+　  
+<a id="anc_4"></a>
+### 4. プロジェクト作成から初期起動まで
 ```
 $ rails new プロジェクト名 -d mysql # MySQLで（SQLightなら-dのオプション無しで）
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
@@ -39,11 +54,10 @@ $ rails s # rails serverの省略形
 $ rails s -p 8888 #localhost:8888のポート番号で起動
 $ rake db:create
 ```
-
 　  
 　  
-<a id="anc_3"></a>
-### 3. aaa
+<a id="anc_5"></a>
+### 5. aaa
 ```erb
 aaa
 ```
