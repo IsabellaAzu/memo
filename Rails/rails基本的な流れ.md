@@ -448,6 +448,7 @@ end
 
 ##### 新規作成ページの用意
 newした@projectにtitleのデータを入力してsubmitする
+※「:title」はDBのprojectテーブルのカラム名
 ```html
 # /views/projects/new.html.erb
 <%= form_for @project do |f| %>
