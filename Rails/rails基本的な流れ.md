@@ -458,7 +458,7 @@ newした@projectにtitleのデータを入力してsubmitする
 ```
 
 ##### 新規作成のアクションを用意
-
+def createを追加
 ```ruby
 class ProjectsController < ApplicationController
 
