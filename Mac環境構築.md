@@ -16,8 +16,8 @@
 
 
 ##準備作業
-
-
+　  
+　  
 ### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
 ※この時gitも一緒にインストールされる
@@ -25,8 +25,8 @@ Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1
 > 参考  
 https://developer.apple.com/  
 http://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa  
-
-
+　  
+　  
 ### 2. 公開鍵と秘密鍵作成  
 
 > 参考  
@@ -53,8 +53,8 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 $ ssh -T git@github.com
 ```
-
-
+　  
+　  
 ### 3. Homebrewインストール  
 
 > 参考  
@@ -67,8 +67,8 @@ $ brew -v
 $ brew update
 ```
 ※むやみにbrew upgradeするのは危険!?  
-
-
+　  
+　  
 ### 4. rbenvインストール  
 
 ```
@@ -99,7 +99,7 @@ $ brew update
 $ brew upgrade ruby-build
 $ rbenv install -l
 ```
-　  
+
 ##### 毎回rbenv rehashしなくて済ませる  
 ```
 $ brew install rbenv-gem-rehash
