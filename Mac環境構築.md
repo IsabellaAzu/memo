@@ -27,6 +27,7 @@ https://developer.apple.com/
 http://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa  
 　  
 　  
+- - - 
 ### 2. 公開鍵と秘密鍵作成  
 
 > 参考  
@@ -55,6 +56,7 @@ $ ssh -T git@github.com
 ```
 　  
 　  
+- - - 
 ### 3. Homebrewインストール  
 
 > 参考  
@@ -69,6 +71,7 @@ $ brew update
 ※むやみにbrew upgradeするのは危険!?  
 　  
 　  
+- - - 
 ### 4. rbenvインストール  
 
 ```
@@ -106,6 +109,7 @@ $ brew install rbenv-gem-rehash
 ```
 　  
 　  
+- - - 
 ### 5. 重要なgemのインストール（グローバルに入れるのを限定する）
 
 ```
@@ -122,12 +126,14 @@ $ bundle install --path vendor/bundle
 ```
 　  
 　  
+- - - 
 ### 6. nodeインストール  
 
 > 参考  
 http://nodejs.org
-
 　  
+　  
+- - - 
 ### 7. MySQLをインストール  
 
 > 参考  
@@ -161,6 +167,7 @@ $ show variables like 'character_set%';
 https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md  
 　  
 　  
+- - - 
 ### 8. その他インストール
 
 ##### imagemagick（要確認）  
