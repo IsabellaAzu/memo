@@ -100,18 +100,35 @@ $ brew upgrade ruby-build
 $ rbenv install -l
 ```
 　  
-rails本体のインストール  
-```
-$ gem install rails
-$ bundle install --path vendor/bundle
-```
-　  
 ##### 毎回rbenv rehashしなくて済ませる  
 ```
 $ brew install rbenv-gem-rehash
 ```
+　  
+　  
+### 5. 重要なgemのインストール（グローバルに入れるのを限定する）
 
-### 5. MySQLをインストール  
+```
+$ gem install bundler --no-ri --no-rdoc
+　※riとかrdocのインストールに時間がかかる対策  
+　>http://boscono.hatenablog.com/entry/2014/08/10/155524  
+　  
+#各プロジェクトフォルダで  
+$ bundle init  
+すると、〜/project/GemfileでGemfileを作成してくれる  
+　  
+#ディレクトリのgemfileを元に各種gemをインストール  
+$ bundle install --path vendor/bundle  
+```
+　  
+　  
+### 6. nodeインストール  
+
+> 参考  
+http://nodejs.org
+
+　  
+### 7. MySQLをインストール  
 
 > 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/  
@@ -142,24 +159,8 @@ $ show variables like 'character_set%';
 ```
 > MySQLの使い方.md  
 https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md  
-
-
-### 6. 必要なgemのインストール
-
-```
-$ gem install bundler
-$ gem install rails
-```
-※riとかrdocのインストールに時間がかかる対策
->http://boscono.hatenablog.com/entry/2014/08/10/155524
-
-
-### 7. nodeインストール  
-
-> 参考  
-http://nodejs.org
-
-
+　  
+　  
 ### 8. その他インストール
 
 ##### imagemagick（要確認）  
