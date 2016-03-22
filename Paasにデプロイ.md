@@ -12,6 +12,7 @@ $ rhc setup
 登録メアド＋パスワード
 　↓
 Generate a token now? (yes|no) yes # yesを入力で終了  
+# SSH keyが登録されていないとこの後色々聞かれる
 ```
 
 
