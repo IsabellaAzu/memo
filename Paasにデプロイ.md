@@ -5,7 +5,8 @@
 
 ### (1) OpenShift Setup  
 ```
-$ gem install rhc
+$ gem install rhc  
+$ rhc setup  
 ```
 
 
