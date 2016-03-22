@@ -3,7 +3,10 @@
 
 ## Railsをデプロイ
 
-
+### (1) OpenShift Setup  
+```
+gem install rhc
+```
 
 
 - - - 
