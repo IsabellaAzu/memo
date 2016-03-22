@@ -13,6 +13,7 @@ $ rhc setup
 　↓
 Generate a token now? (yes|no) yes # yesを入力で終了  
 # SSH keyが登録されていないとこの後色々聞かれる
+$ git clone sshキーの登録したやつ
 ```
 
 
