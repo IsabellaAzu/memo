@@ -4,9 +4,14 @@
 ## Railsをデプロイ
 
 ### (1) OpenShift Setup  
+　https://developers.openshift.com/getting-started/osx.html#rhc-setup  
 ```
 $ gem install rhc  
 $ rhc setup  
+　↓
+登録メアド＋パスワード
+　↓
+Generate a token now? (yes|no) yes # yesを入力で終了  
 ```
 
 
