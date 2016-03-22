@@ -1,5 +1,17 @@
 
-## herokuでRailsアプリをデプロイ
+# OpenShift
+
+## Railsをデプロイ
+
+
+
+
+- - - 
+
+
+# Heroku
+
+## Railsをデプロイ
 
 https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction  
 基本的にここに書いてある通りに進める
