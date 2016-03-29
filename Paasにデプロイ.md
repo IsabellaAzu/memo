@@ -21,8 +21,8 @@ $ git clone sshキーの登録したやつ
 ・アプリ用意  
 ・ローカルのRubyのバージョンをrbenvで設定  
 ・bitbucketのremoteリポジトリの登録（git pushとgit push originで複数にpushする）  
-　リポジトリの確認  
 ```
+　# リポジトリの確認
 　$ git remote -v
 ```
 ・gemfileの編集  
