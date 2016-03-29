@@ -24,6 +24,8 @@ $ git clone sshキーの登録したやつ
 ```
 　# リポジトリの確認
 　$ git remote -v
+　# リモートリポジトリの設定
+　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
 ・gemfileの編集  
 　・turbolink回りのjs、ソース削除  
