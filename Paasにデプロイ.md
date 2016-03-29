@@ -21,6 +21,10 @@ $ git clone sshキーの登録したやつ
 ・アプリ用意  
 ・ローカルのRubyのバージョンをrbenvで設定  
 ・bitbucketのremoteリポジトリの登録（git pushとgit push originで複数にpushする）  
+　リポジトリの確認  
+```
+　git remote -v
+```
 ・gemfileの編集  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
