@@ -24,7 +24,7 @@ $ git clone sshキーの登録したやつ
 ・gemfileの編集  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
-・gitignoreの見直し
+・gitignoreの見直し  
 ・入れるgemの設定（deviseとか）  
 ・dbの設定など  
 　  
