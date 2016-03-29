@@ -33,6 +33,7 @@ $ git clone sshキーの登録したやつ
 ・gitignoreの見直し  
 ・入れるgemの設定（deviseとか）  
 ・dbの設定など  
+・localでrails sが、rubyのバージョンに依存し使えなかった。  
 　 
 　 
 - - - 
