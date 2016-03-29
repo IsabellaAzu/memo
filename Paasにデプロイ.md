@@ -17,10 +17,18 @@ Generate a token now? (yes|no) yes # yesを入力で終了
 $ git clone sshキーの登録したやつ
 ```
 
-
-
-
-
+### (2) rhc使わなくても良いのかな？
+・アプリ用意  
+・ローカルのRubyのバージョンをrbenvで設定  
+・bitbucketのremoteリポジトリの登録（git pushとgit push originで複数にpushする）  
+・gemfileの編集  
+　・turbolink回りのjs、ソース削除  
+　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
+・gitignoreの見直し
+・入れるgemの設定（deviseとか）  
+・dbの設定など  
+　  
+- - - 
 ### 参考
 http://stackoverflow.com/questions/12657168/can-i-use-my-existing-git-repo-with-openshift  
 　  
