@@ -27,14 +27,21 @@ $ git clone sshキーの登録したやつ
 　# リモートリポジトリの設定
 　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
-・gemfileの編集  
+・Gemfileの編集  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
 ・gitignoreの見直し  
 ・入れるgemの設定（deviseとか）  
 ・dbの設定など  
-　  
+　 
+　 
 - - - 
+
+### 独自ドメイン（openShift＋お名前）
+http://workpiles.com/2014/11/openshift-domain-setting/  
+　 
+- - - 
+
 ### 参考
 http://stackoverflow.com/questions/12657168/can-i-use-my-existing-git-repo-with-openshift  
 　  
