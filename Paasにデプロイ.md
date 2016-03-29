@@ -23,7 +23,7 @@ $ git clone sshキーの登録したやつ
 ・bitbucketのremoteリポジトリの登録（git pushとgit push originで複数にpushする）  
 　リポジトリの確認  
 ```
-　git remote -v
+　$ git remote -v
 ```
 ・gemfileの編集  
 　・turbolink回りのjs、ソース削除  
