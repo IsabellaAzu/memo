@@ -35,6 +35,7 @@ $ git clone sshキーの登録したやつ
 ・Gemfileの見直し  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
+　　# /Gemfile（#gem 'turbolinks'）  
 　　# /app/views/layouts/application.html.erb(属性２箇所)  
 　　# /app/assets/javascripts/application.js（//= require turbolinksの部分）  
 ・dbの設定など  
