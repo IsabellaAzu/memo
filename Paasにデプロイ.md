@@ -42,7 +42,7 @@ $ git clone sshキーの登録したやつ
 　 
 - - - 
 
-### 独自ドメイン（openShift＋お名前）
+### 独自ドメイン（openShift＋お名前：有料）
 http://workpiles.com/2014/11/openshift-domain-setting/  
 　 
 - - - 
