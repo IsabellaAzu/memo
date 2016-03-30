@@ -15,8 +15,8 @@
 *	MacOSX 10.10.1（14B25）
 
 
-##準備作業
 　  
+##準備作業
 　  
 ### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
