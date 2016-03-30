@@ -27,11 +27,10 @@ $ git clone sshキーの登録したやつ
 　# リモートリポジトリの設定
 　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
-・Gemfileの編集  
+・Gemfileの見直し  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
 ・.gitignoreの見直し  
-・Gemfileの見直し（deviseとか）  
 ・dbの設定など  
 ・localでrails sが、rubyのバージョンに依存し使えなかった。  
 ```
