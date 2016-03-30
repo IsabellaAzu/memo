@@ -31,10 +31,10 @@ $ git clone sshキーの登録したやつ
 　# リモートリポジトリの設定
 　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
+・.gitignoreの見直し  
 ・Gemfileの見直し  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
-・.gitignoreの見直し  
 ・dbの設定など  
 ・rails基本的な流れ  
 　https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md  
