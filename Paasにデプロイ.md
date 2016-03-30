@@ -20,6 +20,10 @@ $ git clone sshキーの登録したやつ
 ### (2) rhc使わなくても良いのかな？
 ・アプリ用意  
 ・ローカルのRubyのバージョンをrbenvで設定  
+```
+　$ rbenv local 2.0.0-p643
+　# localでrails sが、rubyのバージョンに依存し使えなかった。  
+```
 ・bitbucketのremoteリポジトリの登録（git pushとgit push originで複数にpushする）  
 ```
 　# リポジトリの確認
@@ -32,10 +36,6 @@ $ git clone sshキーの登録したやつ
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
 ・.gitignoreの見直し  
 ・dbの設定など  
-・localでrails sが、rubyのバージョンに依存し使えなかった。  
-```
-　$ rbenv local 2.0.0-p643
-```
 ・rails基本的な流れ  
 　https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md  
 　 
