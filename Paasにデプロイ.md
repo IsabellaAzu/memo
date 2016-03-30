@@ -43,6 +43,20 @@ $ git clone sshキーの登録したやつ
 　　# /Gemfile（#gem 'turbolinks'）  
 　　# /app/views/layouts/application.html.erb(属性２箇所)  
 　　# /app/assets/javascripts/application.js（//= require turbolinksの部分）  
+・コミット
+```
+　# openShiftへ
+　$ git push origin
+　# bitbucketへ
+　$ git push bk
+```
+
+
+　 
+- - - 
+
+### 本作業
+・必要なgemの追加（deviseなど）
 ・dbの設定など  
 ・rails基本的な流れ  
 　https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md  
