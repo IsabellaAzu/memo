@@ -34,6 +34,9 @@ $ git clone sshキーの登録したやつ
 ・Gemfileの見直し（deviseとか）  
 ・dbの設定など  
 ・localでrails sが、rubyのバージョンに依存し使えなかった。  
+```
+　$ rbenv local 2.0.0-p643
+```
 ・rails基本的な流れ  
 　https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md  
 　 
