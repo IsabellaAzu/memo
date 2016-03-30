@@ -30,8 +30,8 @@ $ git clone sshキーの登録したやつ
 ・Gemfileの編集  
 　・turbolink回りのjs、ソース削除  
 　　http://qiita.com/kazz187/items/12737363d62b9c91993c  
-・gitignoreの見直し  
-・入れるgemの設定（deviseとか）  
+・.gitignoreの見直し  
+・Gemfileの見直し（deviseとか）  
 ・dbの設定など  
 ・localでrails sが、rubyのバージョンに依存し使えなかった。  
 ・rails基本的な流れ  
