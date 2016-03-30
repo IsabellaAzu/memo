@@ -112,7 +112,7 @@ $ brew install rbenv-gem-rehash
 　  
 - - - 
 ### 5. 重要なgemのインストール（グローバルに入れるのを限定する）
-
+rbenv環境下のRuby環境に追加インストールするGemはbundlerのみ  
 ```
 $ gem install bundler --no-ri --no-rdoc
 　※riとかrdocのインストールに時間がかかる対策  
