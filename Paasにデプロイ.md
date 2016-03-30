@@ -31,6 +31,11 @@ $ git clone sshキーの登録したやつ
 　# リモートリポジトリの設定
 　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
 ```
+・ドキュメントをインストールしない設定
+```
+　#ルートに.gemrcファイルを作成
+　gem: --no-ri --no-rdoc
+```
 ・.gitignoreの見直し  
 ・Gemfileの見直し  
 　・turbolink回りのjs、ソース削除  
