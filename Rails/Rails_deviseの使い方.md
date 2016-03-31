@@ -70,7 +70,14 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
 2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
 root "home#index"
-$ bundle exec rails g controller Home index show
+$ bundle exec rails g controller Home index show --no-helper --no-assets
+※/config/application.rbに
+  config.generators do |g|
+    g.helper false
+    g.stylesheets false
+    g.javascripts false
+  end
+を設定しておくと便利
 
 3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
 <p class="notice"><%= notice %></p>
