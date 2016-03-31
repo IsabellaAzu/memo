@@ -23,8 +23,8 @@ index
 gem 'devise'
 
 # ターミナル
-$ bundle install
-$ rails g devise:install
+$ bundle install --path pre/vendor/bundle
+$ bundle exec rails g devise:install
 
 　↓以下が出力される
 ===============================================================================
