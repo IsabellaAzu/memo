@@ -70,7 +70,7 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
 2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
 root "home#index"
-rails g controller Home index show
+$ bundle exec rails g controller Home index show
 
 3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
 <p class="notice"><%= notice %></p>
@@ -88,7 +88,7 @@ rails g controller Home index show
 
 ```
 # model作成：model名は最初大文字の単数形
-$ rails g devise User
+$ bundle exec rails g devise User
 ```
 
 下記2つのファイルで、モジュールの設定を有効/無効にできる  
@@ -104,7 +104,7 @@ db/migrate/yyyymmddhhmmss_devise_create_users.rb
 　↓
 ```
 # databaseに反映
-$ rake db:migrate
+$ bundle exec rake db:migrate
 ```
 
 
@@ -143,7 +143,7 @@ $ rake db:migrate
 ##### 2.3 URIの確認  
 ```Ruby
 # 確認
-$ rake routes
+$ bundle exec rake routes
 ```
 
 ```Ruby
@@ -190,7 +190,7 @@ cancel_user_registration GET    /users/cancel(.:format)                         
 #サーバー停止  
 Ctrl+C  
 # サーバー起動  
-$ rails s
+$ bundle exec rails s -p 3001
 ```
 　  
 　  
@@ -214,10 +214,10 @@ $ rails s
 # /config/initializers/devise.rb  
 config.scoped_views = true
 # ビューの生成
-$ rails g devise:views
+$ bundle exec rails g devise:views
 　↓
 # deviseのviewをusersに割り当てる
-$ rails g devise:views users
+$ bundle exec rails g devise:views users
 ```
 > 参考：画面一覧  
 ログイン画面  
@@ -320,7 +320,7 @@ config.action_mailer.smtp_settings = {
 ```
 の後、  
 ```Ruby
-$ rake db:migrate:reset
+$ bundle exec rake db:migrate:reset
 ```
 > 参考  
 rake db:resetとrake db:migrate:resetの違い  
