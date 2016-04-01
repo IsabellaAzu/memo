@@ -19,9 +19,8 @@ Generate a token now? (yes|no) yes # yesを入力で終了
 $ git clone sshキーの登録したやつ
 ```
 
-### (2) rhc使わなくても良いのかな？
-・アプリ用意  
-・ローカルのRubyのバージョンをrbenvで設定  
+### (2) アプリ用意
+ローカルのRubyのバージョンをrbenvで設定  
 ```
 　$ rbenv local 2.0.0-p643
 　# localでrails sが、rubyのバージョンに依存し使えなかった。  
@@ -55,6 +54,19 @@ $ git clone sshキーの登録したやつ
 
 
 　 
+## MySQL回り
+```
+#アプリのルートでDB情報を取得
+$ rhc port-forward -a アプリ名
+$ rhc ssh アプリ名 # Connecting to xxxxxxxxxxxxxxx@アプリ名-ドメイン名.rhcloud.com
+$ ping アプリ名-ドメイン名.rhcloud.com
+$ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_USERNAME'
+$ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_PASSWORD'
+$ rhc ssh アプリ名 'echo $OPENSHIFT_APP_NAME'
+$ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_URL'
+$ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_SOCKET'
+```
+
 - - - 
 
 ### 本作業
