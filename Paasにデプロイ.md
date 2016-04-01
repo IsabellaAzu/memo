@@ -8,6 +8,7 @@
 ```
 $ gem install rhc  
 $ rhc setup  
+　Enter the server hostname: |openshift.redhat.com| 空欄のままEnter  
 　↓
 登録メアド＋パスワード
 　↓
