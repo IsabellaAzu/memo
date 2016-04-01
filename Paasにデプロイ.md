@@ -68,6 +68,15 @@ $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_URL'
 $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_SOCKET'
 ```
 
+下記でopenshiftのサーバー内に入れる
+```
+$ rhc port-forward -a アプリ名
+$ rhc ssh アプリ名
+```
+
+
+
+
 - - - 
 
 ### 本作業
