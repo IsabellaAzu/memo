@@ -5,6 +5,7 @@
 
 ### (1) OpenShift Setup（rhcコマンドが使える様になる）  
 　https://developers.openshift.com/getting-started/osx.html#rhc-setup  
+　http://qiita.com/tukiyo3/items/904cd2f0a64228645a09  
 ```
 $ gem install rhc  
 $ rhc setup  
