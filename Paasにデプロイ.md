@@ -58,8 +58,8 @@ $ git clone sshキーの登録したやつ
 ```
 #アプリのルートでDB情報を取得
 http://stackoverflow.com/questions/19749599/openshift-how-to-remote-access-mysql  
-$ rhc port-forward -a アプリ名
 $ rhc ssh アプリ名 # Connecting to xxxxxxxxxxxxxxx@アプリ名-ドメイン名.rhcloud.com
+$ rhc port-forward -a アプリ名
 $ ping アプリ名-ドメイン名.rhcloud.com
 $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_USERNAME'
 $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_PASSWORD'
