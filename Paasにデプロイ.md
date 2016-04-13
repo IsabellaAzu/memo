@@ -87,6 +87,7 @@ $ rhc ssh アプリ名
 ### 無料でhttps://使える！？（要調査）
 Openshift with 「let's encrypt (letsencrypt)」  
 http://stackoverflow.com/questions/35105267/how-to-set-up-openshift-with-lets-encrypt-letsencrypt  
+無料で証明書を発行してHTTPSの導入をサポートする「Let’s Encrypt」がベータ版から正式版に  
 http://gigazine.net/news/20160413-lets-encrypt/  
 　  
 - - - 
