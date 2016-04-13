@@ -83,7 +83,14 @@ $ rhc ssh アプリ名
 ・http://peccu.hatenablog.com/entry/2015/08/16/023354  
 　  
 - - - 
-
+　  
+### 無料でhttps://使える！？（要調査）
+Openshift with 「let's encrypt (letsencrypt)」  
+http://stackoverflow.com/questions/35105267/how-to-set-up-openshift-with-lets-encrypt-letsencrypt  
+http://gigazine.net/news/20160413-lets-encrypt/  
+　  
+- - - 
+　  
 ### 本作業
 ・必要なgemの追加（deviseなど）
 ・dbの設定など  
