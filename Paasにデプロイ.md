@@ -72,6 +72,11 @@ $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_SOCKET'
 ```
 $ rhc port-forward -a アプリ名
 $ rhc ssh アプリ名
+
+#MySQL中を見る
+$ mysql 【ID】 【Password】
+#データベース一覧を見る
+show databases
 ```
 
 
