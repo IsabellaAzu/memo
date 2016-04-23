@@ -55,3 +55,27 @@ https://rubygems.org/
 # view
 ```
 
+
+- - -
+## Rubyスニペット
+```
+#インストール可能なバージョン一覧
+$ rbenv install -l
+
+# インストール
+$ rbenv install バージョン名
+
+#インストール済の一覧
+$ rbenv versions
+
+#切り替え
+$ rbenv global バージョン名
+$ rbenv local バージョン名
+
+#確認
+$ ruby --version
+
+# うまくいかない場合
+$ rbenv rehash
+```
+
