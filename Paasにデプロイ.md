@@ -48,8 +48,10 @@ $ git clone sshキーの登録したやつ
 ```
 　# openShiftへ
 　$ git push rhc
+
 　# bitbucketへ
 　$ git push
+
 　# サーバーのログ取得
 　$ rhc tail -a アプリ名
 ```
