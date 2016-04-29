@@ -66,6 +66,7 @@ $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_PASSWORD'
 $ rhc ssh アプリ名 'echo $OPENSHIFT_APP_NAME'
 $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_URL'
 $ rhc ssh アプリ名 'echo $OPENSHIFT_MYSQL_DB_SOCKET'
+$ rhc ssh アプリ名 'echo $OPENSHIFT_LOG_DIR'
 ```
 
 下記でopenshiftのサーバー内に入れる
