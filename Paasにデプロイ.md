@@ -47,9 +47,11 @@ $ git clone sshキーの登録したやつ
 ・コミット
 ```
 　# openShiftへ
-　$ git push origin
+　$ git push rhc
 　# bitbucketへ
-　$ git push bk
+　$ git push
+　# サーバーのログ取得
+　$ rhc tail -a アプリ名
 ```
 
 
