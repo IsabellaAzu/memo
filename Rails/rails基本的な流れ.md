@@ -843,7 +843,7 @@ index.html.erbから削除リンクを流用
   </li>
   <% end %>
   <li>
-    <%# 決まり文句（@project、@project.tasks.buildの受け皿） %>
+    <%# 決まり文句（@project、@project.tasks.buildの受け皿）。.buildはnewと一緒。 %>
     <%= form_for [@project, @project.tasks.build] do |f| %> 
     <%= f.text_field :title %>
     <%= f.submit %>
