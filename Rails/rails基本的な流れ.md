@@ -1255,6 +1255,8 @@ http://sqale.jp/
 heroku  
 https://www.heroku.com/  
 http://blog.mah-lab.com/2013/05/16/heroku-commons-16/  
+openshift  
+https://www.openshift.com/web-hosting/index.html?sc_cid=701600000011p9xAAA&gclid=CJqDlsfs-cwCFQ8AvAodru0OZg
 
 #### 練習するとしたら  
 Heroku!
