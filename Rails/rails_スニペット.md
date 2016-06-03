@@ -7,7 +7,7 @@ https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7
 
 ## Mode
 ```
-$ rails g model Project title
+$ bundle exec rails g model Project title
 ```
 ```
 # 入力必須
@@ -19,7 +19,7 @@ end
 ## Controller
 
 ```
-rails g controller Projects --no-helper --no-assets
+bundle exec rails g controller Projects --no-helper --no-assets
 ```
 ```
 # /config/routes.rb
