@@ -1226,64 +1226,15 @@ Rails::Rack::Logger.class_eval do
 end 
 ```
 
-サーバーにアップして動くのはPHPまで。  
-Nginx、unicorn、capistrano、ログの知識が必要  
-サービス動いた状態でデプロイ（メンテ入れる？）  
-※Capistranoはjenkinsとは違う  
-
-> 参考  
-【Capistrano3】  
-入門 Capistrano 3  
-http://labs.gree.jp/blog/2013/12/10084/  
-Capistrano 3系でRails4.1のデプロイ[rbenv][rvm][ruby2.1]  
-http://morizyun.github.io/blog/capistrano3-rails-deploy-multi-rbenv/  
-Capistrano3でrailsをdeployしてみる  
-http://qiita.com/ea54595/items/12ab7b3a8213b35cca10  
-【heroku】  
-Rails4でheroku Pushまでの詳細手順 [Haml/bootstrap 3.0/postgresql or MySQL]  
-http://morizyun.github.io/blog/heroku-rails4-postgresql-introduction/
-Heroku に Rails アプリをアップ  
-http://railsgirls.jp/heroku/  
-herokuでデプロイ.md
-https://github.com/IsabellaAzu/memo/blob/master/heroku%E3%81%A7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4.md
-
 
 #### Rails使えるサーバーどこ？  
 > 参考  
 アプリケーション専用サーバ  
 http://sqale.jp/  
-heroku  
-https://www.heroku.com/  
-http://blog.mah-lab.com/2013/05/16/heroku-commons-16/  
+heroku(個人的には好きじゃない)  
 openshift  
 https://www.openshift.com/web-hosting/index.html?sc_cid=701600000011p9xAAA&gclid=CJqDlsfs-cwCFQ8AvAodru0OZg
 
-#### 練習するとしたら  
-Heroku!
-Rails newして、scaffoldしたものをリリースする練習  
-Pow
-http://doruby.kbmj.com/oneafter999_on_rails/20141022/Rails_Rack_Pow_
-
-#### assets周り  
-<span style="color:pink;">超ハマるらしい！？</span>  
-assets:precompile  
-CSSやJSはこれやらないと動かない  
-> 参考  
-http://qiita.com/funnythingz/items/7bf4271ff8731347eaa8  
-https://rails-assets.org/  
-http://qiita.com/snowsunny/items/aaeacf7aecb0121948d4  
-http://qiita.com/PallCreaker/items/0ae82d57d784164d687b  
-
-#### VPSとか辛そう
-> 参考  
-VPSだと  
-http://vps.sakura.ad.jp/specification/#target_spec  
-http://qiita.com/tadatti/items/d0f1d08d1cc4c8275376  
-http://moji.yayugu.net/articles/server_setting.html  
-でもsqaleなら月額940円  
-http://blog.inouetakuya.info/entry/20121125/1353839740  
-cloudinary(AmazonS3へのつなぎで無料で試す)  
-http://cloudinary.com/pricing  
 
 #### 管理画面
 > Rails 4 ＆ Active Admin で、マスタCRUD系の管理画面を秒速で作る方法  
@@ -1344,22 +1295,6 @@ http://www.hakkaku.net/series/ruby-on-rails-%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B7
 暗号化方式一覧（トークンとは別）  
 https://md5.znaet.org/md5/ac75e7eca69abf564a76d52fd6e35c1c  
 
-rails公式チュートリアル  
-http://railstutorial.jp/  
-
-
-#### Rubyの複数行コメントアウト
-```Ruby
-<%
-=begin
-%>
-
-コメントアウト対象
-
-<%
-=end
-%>
-```
 　  
 ⇒<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md" target="_blank">rails基本的な流れの次</a>  
 
