@@ -179,9 +179,9 @@ $ exit
 http://www.re-labo.com/hiroro-blog/2009/03/rake-db.html  
 Railsのdb/schema.rbの役割  
 http://qiita.com/k0kubun/items/491a9d9f2745335566e3  
-　  
-　  
+
 ##### pry（irbが置き換わっている）
+http://ruby-rails.hatenadiary.com/entry/20141024/1414081224  
 modelをインタラクティブにrubyを使って編集することができる
 ```
 $ rails c # rails consoleの省略形
@@ -190,8 +190,6 @@ a.save # 保存
 Project.create(title: "proj2") # createは、newとsaveを一緒にやってくれる
 Project.all # Projectを全部見ることができる
 ```
-> 参考：pryコマンド  
-http://ruby-rails.hatenadiary.com/entry/20141024/1414081224  
 
 
 <a id="a1_3"></a>
