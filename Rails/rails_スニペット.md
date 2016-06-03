@@ -26,6 +26,7 @@ bundle exec rails g controller Projects --no-helper --no-assets
 resources :projects
 ```
 ```
+# /app/controllers/projects.rb
   def index
     @projects = Project.all
   end
@@ -70,7 +71,7 @@ resources :projects
 
 ## View
 ```
-# index.html.erb
+# /app/views/projects/index.html.erb
 <ul>
   <% @projects.each do |project| %>
   <li><%= project.title %></li>
