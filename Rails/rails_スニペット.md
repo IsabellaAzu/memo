@@ -10,6 +10,7 @@ https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7
 $ bundle exec rails g model Project title
 ```
 ```
+# /app/models/project.rb
 # 入力必須
 class Project < ActiveRecord::Base
   validates :title, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
