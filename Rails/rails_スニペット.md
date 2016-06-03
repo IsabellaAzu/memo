@@ -90,16 +90,6 @@ resources :projects
 
 ```
 # new.html.erb
-  <%= form_for @project do |f| %>
-    <p><%= f.label :label %>　<%= f.text_field :label %></p>
-    <% if @project.errors.any? %>
-      <p><%= @project.errors.messages[:label][0] %></p>
-    <% end %>
-    <p><%= f.submit %></p>
-  <% end %>
-```
-
-```
 # edit.html.erb
   <%= form_for @project do |f| %>
     <p><%= f.label :label %>　<%= f.text_field :label %></p>
@@ -109,6 +99,4 @@ resources :projects
     <p><%= f.submit %></p>
   <% end %>
 ```
-
-
 
