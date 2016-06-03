@@ -7,13 +7,13 @@ https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7
 
 ## Mode
 ```
-$ bundle exec rails g model Project title
+$ bundle exec rails g model Project label
 ```
 ```
 # /app/models/project.rb
 # 入力必須
 class Project < ActiveRecord::Base
-  validates :title, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
+  validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
 
@@ -63,8 +63,8 @@ resources :projects
 
     # セキュリティ
     def project_params
-      # フィルタリング：projectで渡ってきた中で、title属性だけ許可します
-      params[:project].permit(:title)
+      # フィルタリング：projectで渡ってきた中で、label属性だけ許可します
+      params[:project].permit(:label)
     end
 
 ```
@@ -75,8 +75,8 @@ resources :projects
 # /app/views/projects/index.html.erb
 <ul>
   <% @projects.each do |project| %>
-  <li><%= project.title %></li>
-  <li><%= link_to project.title, project_path(project.id) %></li>
+  <li><%= project.label %></li>
+  <li><%= link_to project.label, project_path(project.id) %></li>
   <li><%= link_to "編集", edit_project_path %></li>
   <li><%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %></li>
   <% end %>
@@ -86,15 +86,15 @@ resources :projects
 
 ```
 # show.html.erb
-  <%= @project.title %>
+  <%= @project.label %>
 ```
 
 ```
 # new.html.erb
   <%= form_for @project do |f| %>
-    <p><%= f.label :title %>　<%= f.text_field :title %></p>
+    <p><%= f.label :label %>　<%= f.text_field :label %></p>
     <% if @project.errors.any? %>
-      <p><%= @project.errors.messages[:title][0] %></p>
+      <p><%= @project.errors.messages[:label][0] %></p>
     <% end %>
     <p><%= f.submit %></p>
   <% end %>
@@ -103,9 +103,9 @@ resources :projects
 ```
 # edit.html.erb
   <%= form_for @project do |f| %>
-    <p><%= f.label :title %>　<%= f.text_field :title %></p>
+    <p><%= f.label :label %>　<%= f.text_field :label %></p>
     <% if @project.errors.any? %>
-      <p><%= @project.errors.messages[:title][0] %></p>
+      <p><%= @project.errors.messages[:label][0] %></p>
     <% end %>
     <p><%= f.submit %></p>
   <% end %>
