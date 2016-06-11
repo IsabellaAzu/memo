@@ -501,7 +501,8 @@ http://woshidan.hatenadiary.jp/entry/2015/03/25/223006
 http://d.hatena.ne.jp/koda_hd28v/20110414/1302752281
 #### 中規模Web開発のためのMVC分割とレイヤアーキテクチャ
 http://qiita.com/yuku_t/items/961194a5443b618a4cac
-　  
+#### destroyをjs無しで
+http://railscasts.com/episodes/77-destroy-without-javascript　  
 　  
 
 - - -
