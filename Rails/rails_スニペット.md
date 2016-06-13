@@ -53,7 +53,6 @@ resources :projects
     @project = Project.find(params[:id])
   end
 
-  # 更新
   def update
     @project = Project.find(params[:id])
     if @project.update(project_params)
