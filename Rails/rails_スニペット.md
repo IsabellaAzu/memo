@@ -86,7 +86,7 @@ resources :projects
 <ul>
   <% @projects.each do |project| %>
   <li><%= link_to project.label, project_path(project.id) %></li>
-  <li><%= link_to "編集", edit_project_path %></li>
+  <li><%= link_to "編集", edit_project_path(project.id) %></li>
   <li><%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %></li>
   <% end %>
 </ul>
