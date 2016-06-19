@@ -82,13 +82,39 @@ resources :projects
 ## View
 ```
 # /app/views/projects/index.html.erb
-<ul>
+
+<% textDeleteConfirm = '削除しますよろしいですか？' %>
+
+<% if @memos.size.zero? %>
+  <p>ありません</p>
+<% else %>
   <% @projects.each do |project| %>
-  <li><%= link_to project.label, project_path(project.id) %></li>
-  <li><%= link_to "編集", edit_project_path(project.id) %></li>
-  <li><%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %></li>
+    <p><%= link_to project.label, project_path(project.id) %> <%= link_to "編集", edit_project_path(project.id) %></p>
+    <div>　x<%= link_to "削除", memo_path(memo.id), method: :delete %></div>
+    <div>　x<%= link_to "削除（ブラウザデフォのpopup）", memo_path(memo.id), method: :delete, data: { confirm: textDeleteConfirm } %></li>
+    <div>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（jsのpopup）</a>
+      <div id="popup1" class="none">
+        <p><%=textDeleteConfirm%></p>
+        <%= link_to "削除する", memo_path(memo.id), method: :delete %>
+      </div>
+    </div>
+    <style type="text/css">
+    .none{display:none;}
+    </style>
+    <script type="text/javascript">
+    $(function(){
+      var js_popup = $('.js_popup');
+      js_popup.bind('click',function(){
+        var popupId = $(this).data('popupid');
+        console.log(popupId);
+        $('#'+popupId).toggleClass('none');
+        return false;
+      });
+    });
+    </script>
   <% end %>
-</ul>
+<% end %>
+
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 ```
 
