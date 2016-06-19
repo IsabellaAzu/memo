@@ -207,7 +207,7 @@ view作成
       ありません
   <% else %>
     <% @project.tasks.each do |task| %>
-      <p><%= task.title %></p>
+      <p><%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %></p>
       <div>
           <%= form_for [@project, @project.tasks.build] do |f| %>
           <%= f.text_field :title %>
@@ -217,6 +217,7 @@ view作成
     <% end %>
   <% end %>
 </div>
+※削除のｊｓの読み込みをお忘れなく
 ```
 
 
