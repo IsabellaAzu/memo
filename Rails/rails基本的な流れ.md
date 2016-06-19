@@ -785,7 +785,7 @@ $ rake routes
 <% @project.tasks.each do |task| %>
 <li><%= task.title %></li>
 <li>
-	<%= form_for [@project, project.tasks.build] do |f| %>
+	<%= form_for [@project, @project.tasks.build] do |f| %>
 	<%= f.text_field :title %>
 	<%= f.submit %>
 	<% end %>
