@@ -203,7 +203,6 @@ view作成
 ```
 # /app/views/projects/show.html.erb
 <div class="mt10">
-</div>
   <% if @project.tasks.size.zero? %>
       ありません
   <% else %>
@@ -216,6 +215,7 @@ view作成
           <% end %>
       </div>
     <% end %>
+  <% end %>
 </div>
 ```
 
