@@ -137,11 +137,90 @@ resources :projects
 
 - - - 
 
-## 追加
+## ProjectsにTasksの子モデル追加
+
+model作成（projectにtaskを紐付け）
+```
+$ bundle exec rails g model Task title done:boolean project:references
+```
+
+マイグレーションファイルに編集
+```
+# /db/migrate/201501xxxxxxxx_create_tasks.rb
+t.boolean :done
+　↓
+t.boolean :done, default: false
+# ※add_foreign_key :tasks, :projectsができない、errorになる。外部キーは後で追加。
+
+$ rake db:migrate
+
+# /app/models/project.rb
+class Project < ActiveRecord::Base
+  has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
+  ・・・
+end
+```
 
 
+controller作成
 ```
+$ rails g controller Tasks
+
+# /app/controllers/tasks.rb
+  def create
+    @project = Project.find(params[:project_id])
+    @task = @project.tasks.create(task_params) # createは、newとsave
+    redirect_to project_path(@project.id)
+  end
+
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to project_path(params[:project_id])
+  end
+
+  private
+
+    # セキュリティ
+    def task_params
+      # フィルタリング：taskで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+      params[:task].permit(:title)
+    end
 ```
+
+routingの設定
+```
+resources :projects
+　↓
+resources :projects do
+  resources :tasks, only: [:create, :destroy]
+end
+
+$ rake routes
+```
+
+view作成
+```
+# /app/views/projects/show.html.erb
+<div class="mt10">
+</div>
+  <% if @project.tasks.size.zero? %>
+      ありません
+  <% else %>
+    <% @project.tasks.each do |task| %>
+      <p><%= task.title %></p>
+      <div>
+          <%= form_for [@project, @project.tasks.build] do |f| %>
+          <%= f.text_field :title %>
+          <%= f.submit %>
+          <% end %>
+      </div>
+    <% end %>
+</div>
+```
+
+
+
 
 
 
