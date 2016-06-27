@@ -22,10 +22,12 @@ end
 ```
 bundle exec rails g controller Projects --no-helper --no-assets
 ```
+
 ```
 # /config/routes.rb
 resources :projects
 ```
+
 ```
 # /app/controllers/projects.rb
   def index
@@ -195,6 +197,7 @@ resources :projects
 resources :projects do
   resources :tasks, only: [:create, :destroy]
 end
+post '/projects/:project_id/tasks/:id/toggle' => 'matters#toggle' #tasksコントローラのtoggleアクション
 
 $ rake routes
 ```
@@ -207,7 +210,9 @@ view作成
       ありません
   <% else %>
     <% @project.tasks.each do |task| %>
-      <p><%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %></p>
+      <div><%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
+      <p><%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %></p>
+      </div>
       <div>
           <%= form_for [@project, @project.tasks.build] do |f| %>
           <%= f.text_field :title %>
@@ -218,6 +223,14 @@ view作成
   <% end %>
 </div>
 ※削除のｊｓの読み込みをお忘れなく
+<script type="text/javascript">
+$(function(){
+  // toggleアクション
+  $("input[type=checkbox]").click(function(){
+    $.post('/projects/'+ $(this).data('project_id') +'/tasks/'+ $(this).data('id') +'/toggle');
+  });
+});
+</script>
 ```
 
 
