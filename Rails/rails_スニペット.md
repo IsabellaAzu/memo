@@ -217,8 +217,9 @@ view作成
       ありません
   <% else %>
     <% @project.tasks.each do |task| %>
-      <div><%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
-      <p><%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %></p>
+      <div>
+        <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
+        <%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
       </div>
       <div>
           <%= form_for [@project, @project.tasks.build] do |f| %>
