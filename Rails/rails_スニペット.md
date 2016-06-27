@@ -70,6 +70,13 @@ resources :projects
     redirect_to projects_path
   end
 
+  def toggle
+    render nothing: true # このアクションは画面が切り替わる訳ではないので、テンプレート不要の設定をする
+    @task = Task.find(params[:id])
+    @task.done = !@task.done
+    @task.save
+  end
+
   private
 
     # セキュリティ
