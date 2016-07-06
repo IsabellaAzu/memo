@@ -26,7 +26,7 @@ __# command__
 bundle exec rails g controller Projects --no-helper --no-assets
 ```
 __# /config/routes.rb__
-```
+```Ruby
 resources :projects
 ```
 __# /app/controllers/projects.rb__
@@ -91,7 +91,7 @@ __# /app/controllers/projects.rb__
 
 ## View
 __# /app/views/projects/index.html.erb__
-```
+```Ruby
 <% textDeleteConfirm = '削除しますよろしいですか？' %>
 <% if @memos.size.zero? %>
   <p>ありません</p>
