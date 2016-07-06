@@ -183,30 +183,6 @@ __# /app/views/projects/index.html.erb__
 ```
 __# show.html.erb__
 ```Ruby
-  <%= @project.label %>
-```
-__# new.html.erb、edit.html.erb__
-```Ruby
-  <%= form_for @project do |f| %>
-    <p><%= f.label :label %>　<%= f.text_field :label %></p>
-    <% if @project.errors.any? %>
-      <p><%= @project.errors.messages[:label][0] %></p>
-    <% end %>
-    <p><%= f.submit %></p>
-  <% end %>
-```
-
-- - - 
-
-
-
-
-
-
-
-## view
-__# /app/views/projects/show.html.erb__
-```Ruby
 <div class="mt10">
   <% if @project.tasks.size.zero? %>
       ありません
@@ -236,6 +212,16 @@ $(function(){
 });
 </script>
 ```
+__# new.html.erb、edit.html.erb__
+```Ruby
+  <%= form_for @project do |f| %>
+    <p><%= f.label :label %>　<%= f.text_field :label %></p>
+    <% if @project.errors.any? %>
+      <p><%= @project.errors.messages[:label][0] %></p>
+    <% end %>
+    <p><%= f.submit %></p>
+  <% end %>
+```
 
-
+- - - 
 
