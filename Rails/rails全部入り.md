@@ -58,7 +58,7 @@ __# /config/routes.rb__
 resources :projects do
   resources :tasks, only: [:create, :destroy]
 end
-post '/projects/:project_id/tasks/:id/toggle' => 'matters#toggle' #tasksコントローラのtoggleアクション
+post '/projects/:project_id/tasks/:id/toggle' => 'tasks#toggle' #tasksコントローラのtoggleアクション
 ```
 
 
