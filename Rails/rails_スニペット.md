@@ -125,12 +125,11 @@ __# /app/views/projects/index.html.erb__
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 ```
 __# show.html.erb__
-```
+```Ruby
   <%= @project.label %>
 ```
-__# new.html.erb__  
-__# edit.html.erb__
-```
+__# new.html.erb、edit.html.erb__
+```Ruby
   <%= form_for @project do |f| %>
     <p><%= f.label :label %>　<%= f.text_field :label %></p>
     <% if @project.errors.any? %>
@@ -150,7 +149,7 @@ __# command__
 $ bundle exec rails g model Task title done:boolean project:references
 ```
 __# /db/migrate/201501xxxxxxxx_create_tasks.rb(マイグレーションファイル編集)__
-```
+```Ruby
 t.boolean :done
 　↓
 t.boolean :done, default: false
@@ -161,7 +160,7 @@ __# command__
 $ rake db:migrate
 ```
 __# /app/models/project.rb__
-```
+```Ruby
 class Project < ActiveRecord::Base
   has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
   ・・・
@@ -175,7 +174,7 @@ __# command__
 $ rails g controller Tasks
 ```
 __# /app/controllers/tasks.rb__
-```
+```Ruby
   def create
     @project = Project.find(params[:project_id])
     @task = @project.tasks.create(task_params) # createは、newとsave
@@ -197,9 +196,7 @@ __# /app/controllers/tasks.rb__
     end
 ```
 __# /config/routes.rb(routingの設定)__
-```
-resources :projects
-　↓
+```Ruby
 resources :projects do
   resources :tasks, only: [:create, :destroy]
 end
@@ -212,7 +209,7 @@ $ bundle exec rake routes
 
 ## view
 __# /app/views/projects/show.html.erb__
-```
+```Ruby
 <div class="mt10">
   <% if @project.tasks.size.zero? %>
       ありません
