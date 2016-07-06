@@ -7,6 +7,7 @@ Project管理というアプリがあったとしてよく使うCRUDのスニペ
 
 
 ## Model
+###command
 ```
 $ bundle exec rails g model Project label
 ```
