@@ -195,6 +195,8 @@ $(function(){
 });
 </script>
 ```
+
+
 __# show.html.erb__
 ```Ruby
 <div class="mt10">
@@ -216,6 +218,8 @@ __# show.html.erb__
       <% end %>
   </div>
 </div>
+<br><br>
+<%= link_to "top", projects_path %>
 
 <!--railsで用意されているjQueryなどのjs  -->
 <%= render "/layouts/js" %>
@@ -228,6 +232,8 @@ $(function(){
 });
 </script>
 ```
+
+
 __# new.html.erb、edit.html.erb__
 ```Ruby
   <%= form_for @project do |f| %>
