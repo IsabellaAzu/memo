@@ -2,7 +2,7 @@
 # rails_スニペット
 Project管理というアプリがあったとしてよく使うCRUDのスニペットをまとめる
 
-rails基本的な流れの後、よくやりそうなこと[詳細](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md)
+詳細は「[rails基本的な流れの後、よくやりそうなこと]」(https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md)
   
 
 
