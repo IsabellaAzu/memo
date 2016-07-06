@@ -167,6 +167,8 @@ __# /app/views/projects/index.html.erb__
   <% end %>
 <% end %>
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
+
+<!--railsで用意されているjQueryなどのjs  -->
 <%= render "/layouts/js" %>
 <style type="text/css">
 .none{display:none;}
