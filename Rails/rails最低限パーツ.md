@@ -164,23 +164,24 @@ __# /app/views/projects/index.html.erb__
         <%= link_to "削除する", project_path(project.id), method: :delete %>
       </div>
     </div>
-    <style type="text/css">
-    .none{display:none;}
-    </style>
-    <script type="text/javascript">
-    $(function(){
-      var js_popup = $('.js_popup');
-      js_popup.bind('click',function(){
-        var popupId = $(this).data('popupid');
-        console.log(popupId);
-        $('#'+popupId).toggleClass('none');
-        return false;
-      });
-    });
-    </script>
   <% end %>
 <% end %>
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
+<%= render "/layouts/js" %>
+<style type="text/css">
+.none{display:none;}
+</style>
+<script type="text/javascript">
+$(function(){
+  var js_popup = $('.js_popup');
+  js_popup.bind('click',function(){
+    var popupId = $(this).data('popupid');
+    console.log(popupId);
+    $('#'+popupId).toggleClass('none');
+    return false;
+  });
+});
+</script>
 ```
 __# show.html.erb__
 ```Ruby
