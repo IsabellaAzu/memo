@@ -165,7 +165,7 @@ __# /app/views/projects/index.html.erb__
   <p>projectがまだありません</p>
 <% else %>
   <% @projects.each do |project| %>
-    <p><%= link_to project.label, project_path(project.id) %> <%= link_to "編集", edit_project_path(project.id) %></p>
+    <p><%= link_to project.label, project_path(project.id) %>(<%= project.tasks.count %>件) <%= link_to "編集", edit_project_path(project.id) %></p>
     <div>　x<%= link_to "削除", project_path(project.id), method: :delete %></div>
     <div>　x<%= link_to "削除（ブラウザデフォのpopup）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %></li>
     <div>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（jsのpopup）</a>
