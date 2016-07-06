@@ -216,6 +216,7 @@ __# /app/views/projects/show.html.erb__
   <% if @project.tasks.size.zero? %>
       ありません
   <% else %>
+    <%= @project.label %>（<%= @project.tasks.count %>件）
     <% @project.tasks.each do |task| %>
       <div>
         <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
