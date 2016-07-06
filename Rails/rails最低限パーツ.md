@@ -124,6 +124,10 @@ __# /app/controllers/projects.rb__
 
 __# /app/controllers/tasks.rb__
 ```Ruby
+
+  def edit
+  end
+
   def create
     @project = Project.find(params[:project_id])
     @task = @project.tasks.create(task_params) # createは、newとsave
@@ -134,6 +138,13 @@ __# /app/controllers/tasks.rb__
     @task = Task.find(params[:id])
     @task.destroy
     redirect_to project_path(params[:project_id])
+  end
+
+  def toggle
+    render nothing: true # テンプレート不要の設定：このアクションは画面が切り替わる訳ではないため
+    @task = Task.find(params[:id])
+    @task.done = !@task.done
+    @task.save
   end
 
   private
