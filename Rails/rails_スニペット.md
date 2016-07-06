@@ -18,19 +18,18 @@ class Project < ActiveRecord::Base
 end
 ```
 
-## Controller
 
+## Controller
+__# command__
 ```
 bundle exec rails g controller Projects --no-helper --no-assets
 ```
-
+__# /config/routes.rb__
 ```
-# /config/routes.rb
 resources :projects
 ```
-
+__# /app/controllers/projects.rb__
 ```
-# /app/controllers/projects.rb
   def index
     @projects = Project.all
   end
@@ -90,11 +89,9 @@ resources :projects
 
 
 ## View
+__# /app/views/projects/index.html.erb__
 ```
-# /app/views/projects/index.html.erb
-
 <% textDeleteConfirm = '削除しますよろしいですか？' %>
-
 <% if @memos.size.zero? %>
   <p>ありません</p>
 <% else %>
@@ -124,18 +121,15 @@ resources :projects
     </script>
   <% end %>
 <% end %>
-
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 ```
-
+__# show.html.erb__
 ```
-# show.html.erb
   <%= @project.label %>
 ```
-
+__# new.html.erb__  
+__# edit.html.erb__
 ```
-# new.html.erb
-# edit.html.erb
   <%= form_for @project do |f| %>
     <p><%= f.label :label %>　<%= f.text_field :label %></p>
     <% if @project.errors.any? %>
