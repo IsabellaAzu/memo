@@ -5,7 +5,7 @@ Project管理というアプリがあったとしてよく使うCRUDのスニペ
 rails基本的な流れの後、よくやりそうなこと  
 https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md
 
-## Mode
+## Model
 ```
 $ bundle exec rails g model Project label
 ```
