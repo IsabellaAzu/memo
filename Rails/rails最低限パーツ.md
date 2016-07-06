@@ -185,10 +185,10 @@ __# /app/views/projects/index.html.erb__
 __# show.html.erb__
 ```Ruby
 <div class="mt10">
+  <%= @project.label %>（<%= @project.tasks.count %>件）
   <% if @project.tasks.size.zero? %>
       ありません
   <% else %>
-    <%= @project.label %>（<%= @project.tasks.count %>件）
     <% @project.tasks.each do |task| %>
       <div>
         <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
