@@ -12,7 +12,7 @@ __# command__
 $ bundle exec rails g model Project label
 ```
 __# /app/models/project.rb__
-```
+```Ruby
 class Project < ActiveRecord::Base
   validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}# 入力必須
 end
@@ -29,7 +29,7 @@ __# /config/routes.rb__
 resources :projects
 ```
 __# /app/controllers/projects.rb__
-```
+```Ruby
   def index
     @projects = Project.all
   end
