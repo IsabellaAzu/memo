@@ -38,20 +38,30 @@ end
 
 __# command：テーブル作成__
 ```
-$ rake db:migrate
+$ bundle exec rake db:migrate
 ```
 　
 - - -
 　
 ## Controller
+
+
 __# command__
 ```
-bundle exec rails g controller Projects --no-helper --no-assets
+$ bundle exec rails g controller Projects --no-helper --no-assets
+$ bundle exec rails g controller Tasks --no-helper --no-assets
 ```
+
+
 __# /config/routes.rb__
 ```Ruby
-resources :projects
+resources :projects do
+  resources :tasks, only: [:create, :destroy]
+end
+post '/projects/:project_id/tasks/:id/toggle' => 'matters#toggle' #tasksコントローラのtoggleアクション
 ```
+
+
 __# /app/controllers/projects.rb__
 ```Ruby
   def index
@@ -112,6 +122,30 @@ __# /app/controllers/projects.rb__
 ```
 
 
+__# /app/controllers/tasks.rb__
+```Ruby
+  def create
+    @project = Project.find(params[:project_id])
+    @task = @project.tasks.create(task_params) # createは、newとsave
+    redirect_to project_path(@project.id)
+  end
+
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to project_path(params[:project_id])
+  end
+
+  private
+
+    # セキュリティ
+    def task_params
+      # フィルタリング：taskで渡ってきた中のもののうち、titleだけ引っ張ってきてね
+      params[:task].permit(:title)
+    end
+```
+
+
 ## View
 __# /app/views/projects/index.html.erb__
 ```Ruby
@@ -169,48 +203,6 @@ __# new.html.erb、edit.html.erb__
 
 
 
-
-
-
-
-## Controller
-__# command__
-```
-$ rails g controller Tasks
-```
-__# /app/controllers/tasks.rb__
-```Ruby
-  def create
-    @project = Project.find(params[:project_id])
-    @task = @project.tasks.create(task_params) # createは、newとsave
-    redirect_to project_path(@project.id)
-  end
-
-  def destroy
-    @task = Task.find(params[:id])
-    @task.destroy
-    redirect_to project_path(params[:project_id])
-  end
-
-  private
-
-    # セキュリティ
-    def task_params
-      # フィルタリング：taskで渡ってきた中のもののうち、titleだけ引っ張ってきてね
-      params[:task].permit(:title)
-    end
-```
-__# /config/routes.rb(routingの設定)__
-```Ruby
-resources :projects do
-  resources :tasks, only: [:create, :destroy]
-end
-post '/projects/:project_id/tasks/:id/toggle' => 'matters#toggle' #tasksコントローラのtoggleアクション
-```
-__# command__
-```
-$ bundle exec rake routes
-```
 
 ## view
 __# /app/views/projects/show.html.erb__
