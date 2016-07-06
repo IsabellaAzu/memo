@@ -143,22 +143,24 @@ __# edit.html.erb__
 
 ## ProjectsにTasksの子モデル追加
 
-model作成（projectにtaskを紐付け）
+## Model（projectにtaskを紐付け）
+__# command__
 ```
 $ bundle exec rails g model Task title done:boolean project:references
 ```
-
-マイグレーションファイルに編集
+__# /db/migrate/201501xxxxxxxx_create_tasks.rb(マイグレーションファイル編集)__
 ```
-# /db/migrate/201501xxxxxxxx_create_tasks.rb
 t.boolean :done
 　↓
 t.boolean :done, default: false
 # ※add_foreign_key :tasks, :projectsができない、errorになる。外部キーは後で追加。
-
+```
+__# command__
+```
 $ rake db:migrate
-
-# /app/models/project.rb
+```
+__# /app/models/project.rb__
+```
 class Project < ActiveRecord::Base
   has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
   ・・・
@@ -166,11 +168,13 @@ end
 ```
 
 
-controller作成
+## Controller
+__# command__
 ```
 $ rails g controller Tasks
-
-# /app/controllers/tasks.rb
+```
+__# /app/controllers/tasks.rb__
+```
   def create
     @project = Project.find(params[:project_id])
     @task = @project.tasks.create(task_params) # createは、newとsave
@@ -191,8 +195,7 @@ $ rails g controller Tasks
       params[:task].permit(:title)
     end
 ```
-
-routingの設定
+__# /config/routes.rb(routingの設定)__
 ```
 resources :projects
 　↓
@@ -200,13 +203,15 @@ resources :projects do
   resources :tasks, only: [:create, :destroy]
 end
 post '/projects/:project_id/tasks/:id/toggle' => 'matters#toggle' #tasksコントローラのtoggleアクション
-
-$ rake routes
+```
+__# command__
+```
+$ bundle exec rake routes
 ```
 
-view作成
+## view
+__# /app/views/projects/show.html.erb__
 ```
-# /app/views/projects/show.html.erb
 <div class="mt10">
   <% if @project.tasks.size.zero? %>
       ありません
@@ -235,12 +240,6 @@ $(function(){
 });
 </script>
 ```
-
-
-
-
-
-
 
 
 
