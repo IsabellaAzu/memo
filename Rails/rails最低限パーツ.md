@@ -15,7 +15,7 @@ __# command：マイグレーションファイルの作成__
 # 親モデル
 $ bundle exec rails g model Project label
 # 子モデル（projectにtaskを紐付け）
-$ bundle exec rails g model Task title done:boolean project:references
+$ bundle exec rails g model Task label done:boolean project:references
 ```
 
 
@@ -140,8 +140,7 @@ __# /app/controllers/tasks.rb__
 
     # セキュリティ
     def task_params
-      # フィルタリング：taskで渡ってきた中のもののうち、titleだけ引っ張ってきてね
-      params[:task].permit(:title)
+      params[:task].permit(:label)
     end
 ```
 　
@@ -195,13 +194,13 @@ __# show.html.erb__
     <% @project.tasks.each do |task| %>
       <div>
         <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
-        <%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
+        <%= task.label %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
       </div>
     <% end %>
   <% end %>
   <div>
       <%= form_for [@project, @project.tasks.build] do |f| %>
-      <%= f.text_field :title %>
+      <%= f.text_field :label %>
       <%= f.submit %>
       <% end %>
   </div>
