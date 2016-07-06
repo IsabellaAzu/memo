@@ -152,7 +152,7 @@ __# /app/views/projects/index.html.erb__
 ```Ruby
 <% textDeleteConfirm = '削除しますよろしいですか？' %>
 <% if @projects.size.zero? %>
-  <p>ありません</p>
+  <p>projectがまだありません</p>
 <% else %>
   <% @projects.each do |project| %>
     <p><%= link_to project.label, project_path(project.id) %> <%= link_to "編集", edit_project_path(project.id) %></p>
@@ -190,7 +190,7 @@ __# show.html.erb__
 <div class="mt10">
   <%= @project.label %>（<%= @project.tasks.count %>件）
   <% if @project.tasks.size.zero? %>
-      ありません
+      taskがまだありません
   <% else %>
     <% @project.tasks.each do |task| %>
       <div>
