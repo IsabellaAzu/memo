@@ -7,19 +7,41 @@ Project管理というアプリがあったとしてよく使うCRUDのスニペ
 
 
 ## Model
-__# command__
+
+
+__# command：マイグレーションファイルの作成__
 ```
+# 親モデル
 $ bundle exec rails g model Project label
+# 子モデル（projectにtaskを紐付け）
+$ bundle exec rails g model Task title done:boolean project:references
 ```
+
+
+__# /db/migrate/201501xxxxxxxx_create_tasks.rb(マイグレーションファイル追加編集)__
+```Ruby
+t.boolean :done, default: false
+# ※add_foreign_key :tasks, :projectsができない、errorになる。外部キーは後で追加。
+```
+
+
 __# /app/models/project.rb__
 ```Ruby
 # 入力必須
 class Project < ActiveRecord::Base
+  has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
   validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
 
 
+__# command：テーブル作成__
+```
+$ rake db:migrate
+```
+　
+- - -
+　
 ## Controller
 __# command__
 ```
@@ -141,31 +163,13 @@ __# new.html.erb、edit.html.erb__
 
 - - - 
 
-## ProjectsにTasksの子モデル追加
 
-## Model（projectにtaskを紐付け）
-__# command__
-```
-$ bundle exec rails g model Task title done:boolean project:references
-```
-__# /db/migrate/201501xxxxxxxx_create_tasks.rb(マイグレーションファイル編集)__
-```Ruby
-t.boolean :done
-　↓
-t.boolean :done, default: false
-# ※add_foreign_key :tasks, :projectsができない、errorになる。外部キーは後で追加。
-```
-__# command__
-```
-$ rake db:migrate
-```
-__# /app/models/project.rb__
-```Ruby
-class Project < ActiveRecord::Base
-  has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
-  ・・・
-end
-```
+
+
+
+
+
+
 
 
 ## Controller
