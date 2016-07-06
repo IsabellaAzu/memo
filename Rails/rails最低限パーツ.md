@@ -206,7 +206,9 @@ __# show.html.erb__
       <% end %>
   </div>
 </div>
-※削除のｊｓの読み込みをお忘れなく
+
+<!--railsで用意されているjQueryなどのjs  -->
+<%= render "/layouts/js" %>
 <script type="text/javascript">
 $(function(){
   // toggleアクション
