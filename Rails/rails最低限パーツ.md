@@ -197,14 +197,14 @@ __# show.html.erb__
         <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
         <%= task.title %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
       </div>
-      <div>
-          <%= form_for [@project, @project.tasks.build] do |f| %>
-          <%= f.text_field :title %>
-          <%= f.submit %>
-          <% end %>
-      </div>
     <% end %>
   <% end %>
+  <div>
+      <%= form_for [@project, @project.tasks.build] do |f| %>
+      <%= f.text_field :title %>
+      <%= f.submit %>
+      <% end %>
+  </div>
 </div>
 ※削除のｊｓの読み込みをお忘れなく
 <script type="text/javascript">
