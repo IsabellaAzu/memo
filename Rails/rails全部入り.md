@@ -144,7 +144,8 @@ __# /app/controllers/tasks.rb__
       params[:task].permit(:title)
     end
 ```
-
+　
+- - - 
 
 ## View
 __# /app/views/projects/index.html.erb__
@@ -222,6 +223,4 @@ __# new.html.erb、edit.html.erb__
     <p><%= f.submit %></p>
   <% end %>
 ```
-
-- - - 
 
