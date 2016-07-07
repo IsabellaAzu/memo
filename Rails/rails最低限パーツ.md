@@ -197,7 +197,7 @@ $(function(){
 ```
 
 
-__# show.html.erb__
+__# /app/views/projects/show.html.erb__
 ```Ruby
 <div class="mt10">
   <%= @project.label %>（<%= @project.tasks.count %>件）
@@ -234,7 +234,7 @@ $(function(){
 ```
 
 
-__# new.html.erb、edit.html.erb__
+__# /app/views/projects/new.html.erb、edit.html.erb__
 ```Ruby
   <%= form_for @project do |f| %>
     <p><%= f.label :label %>　<%= f.text_field :label %></p>
