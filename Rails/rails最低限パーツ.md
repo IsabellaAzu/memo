@@ -208,6 +208,7 @@ __# /app/views/projects/show.html.erb__
       <div>
         <%= check_box_tag '', '', task.done, {'data-id' => task.id, 'data-project_id' => task.project_id } %>
         <%= task.label %>　<%= link_to "削除", project_task_path(task.project.id, task.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
+        <%= link_to "編集", edit_project_task_path(task.project.id, task.id) %>
       </div>
     <% end %>
   <% end %>
