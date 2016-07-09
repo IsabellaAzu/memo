@@ -30,7 +30,7 @@ __# /app/models/project.rb__
 ```Ruby
 # 入力必須
 class Project < ActiveRecord::Base
-  has_many :tasks # projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
+  has_many :tasks, dependent: :destroy# projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
   validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
