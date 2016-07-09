@@ -92,7 +92,7 @@ __# /app/controllers/projects.rb__
   def update
     @project = Project.find(params[:id])
     if @project.update(project_params)
-      redirect_to projects_path
+      redirect_to project_path
     else
       render 'edit'
     end
@@ -165,7 +165,7 @@ __# /app/views/projects/index.html.erb__
   <p>projectがまだありません</p>
 <% else %>
   <% @projects.each do |project| %>
-    <p><%= link_to project.label, project_path(project.id) %>(<%= project.tasks.count %>件) <%= link_to "編集", edit_project_path(project.id) %></p>
+    <p><%= link_to project.label, project_path(project.id) %>(<%= project.tasks.count %>件)</p>
     <div>　x<%= link_to "削除", project_path(project.id), method: :delete %></div>
     <div>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %></li>
     <div>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
@@ -200,7 +200,7 @@ $(function(){
 __# /app/views/projects/show.html.erb__
 ```Ruby
 <div class="mt10">
-  <%= @project.label %>（<%= @project.tasks.count %>件）
+  <%= @project.label %> <%= link_to "編集", edit_project_path(@project.id) %>（<%= @project.tasks.count %>件）
   <% if @project.tasks.size.zero? %>
       taskがまだありません
   <% else %>
