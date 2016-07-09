@@ -31,6 +31,7 @@ __# /app/models/project.rb__
 # 入力必須
 class Project < ActiveRecord::Base
   has_many :tasks, dependent: :destroy# projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
+  accepts_nested_attributes_for :tasks# 親formで子要素の編集ができるように
   validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
@@ -116,7 +117,7 @@ __# /app/controllers/projects.rb__
     # セキュリティ
     def project_params
       # フィルタリング：projectで渡ってきた中で、label属性だけ許可します
-      params[:project].permit(:label)
+      params[:project].permit(:label, tasks_attributes: [:id, :label])
     end
 
 ```
@@ -124,9 +125,6 @@ __# /app/controllers/projects.rb__
 
 __# /app/controllers/tasks.rb__
 ```Ruby
-
-  def edit
-  end
 
   def create
     @project = Project.find(params[:project_id])
@@ -235,7 +233,7 @@ $(function(){
 ```
 
 
-__# /app/views/projects/new.html.erb、edit.html.erb__
+__# /app/views/projects/new.html.erb__
 ```Ruby
   <%= form_for @project do |f| %>
     <p><%= f.label :label %>　<%= f.text_field :label %></p>
@@ -245,4 +243,25 @@ __# /app/views/projects/new.html.erb、edit.html.erb__
     <p><%= f.submit %></p>
   <% end %>
 ```
+
+
+__# /app/views/projects/edit.html.erb__
+```Ruby
+  <%= form_for @project do |f| %>
+    <p><%= f.label :label %>　<%= f.text_field :label %></p>
+    <% if @project.errors.any? %>
+      <p><%= @project.errors.messages[:label][0] %></p>
+    <% end %>
+    <%= f.fields_for :tasks do |t| %>
+      <div>
+        <%= t.label :label %>　<%= t.text_field :label %>
+        <%= t.label %>　<%= link_to "削除", project_task_path(t.project.id, t.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
+      </div>
+    <% end %>
+    <p><%= f.submit %></p>
+  <% end %>
+```
+
+
+
 
