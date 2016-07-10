@@ -14,7 +14,7 @@ __# command：マイグレーションファイルの作成__
 ```
 # 親モデル
 $ bundle exec rails g model Project label
-# 子モデル（projectにtaskを紐付け）
+# 子モデル（projectにtaskを紐付け）【子モデル】
 $ bundle exec rails g model Task label done:boolean project:references
 ```
 
@@ -30,8 +30,8 @@ __# /app/models/project.rb__
 ```Ruby
 # 入力必須
 class Project < ActiveRecord::Base
-  has_many :tasks, dependent: :destroy# projectにtaskが複数あるので、「１対多」の関係で結びついている、という意味
-  accepts_nested_attributes_for :tasks# 親formで子要素の編集ができるように
+  has_many :tasks, dependent: :destroy# projectにtaskが複数ある「１対多」の関係という意味【子モデル】
+  accepts_nested_attributes_for :tasks# 親formで子要素の編集ができるように【子モデル】
   validates :label, presence: {message: "入力必須項目です"},length: {minimum: 3, message: "短過ぎ"}
 end
 ```
@@ -117,6 +117,7 @@ __# /app/controllers/projects.rb__
     # セキュリティ
     def project_params
       # フィルタリング：projectで渡ってきた中で、label属性だけ許可します
+      # xxxs_attributes:【子モデル】
       params[:project].permit(:label, tasks_attributes: [:id, :label])
     end
 
@@ -252,7 +253,7 @@ __# /app/views/projects/edit.html.erb__
     <% if @project.errors.any? %>
       <p><%= @project.errors.messages[:label][0] %></p>
     <% end %>
-    <%= f.fields_for :tasks do |t| %>
+    <%= f.fields_for :tasks do |t| %><%#= 【子モデル】 %>
       <div>
         <%= t.label :label %>　<%= t.text_field :label %>
         <%= t.label %>　<%= link_to "削除", project_task_path(t.project.id, t.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
@@ -261,7 +262,4 @@ __# /app/views/projects/edit.html.erb__
     <p><%= f.submit %></p>
   <% end %>
 ```
-
-
-
 
