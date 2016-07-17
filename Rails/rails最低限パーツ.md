@@ -165,9 +165,8 @@ __# /app/views/projects/index.html.erb__
 <% else %>
   <% @projects.each do |project| %>
     <p><%= link_to project.label, project_path(project.id) %>(<%= project.tasks.count %>件)</p>
-    <div>　x<%= link_to "削除", project_path(project.id), method: :delete %></div>
-    <div>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %></li>
-    <div>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
+    <div>
+      x<%= link_to "削除", project_path(project.id), method: :delete %>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
       <div id="popup1" class="none">
         <p><%=textDeleteConfirm%></p>
         <%= link_to "削除する", project_path(project.id), method: :delete %>
