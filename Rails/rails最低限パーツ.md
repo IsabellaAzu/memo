@@ -254,7 +254,6 @@ __# /app/views/projects/edit.html.erb__
     <%= f.fields_for :tasks do |t| %><%#= 【子モデル】 %>
       <div>
         <%= t.label :label %>　<%= t.text_field :label %>
-        <%= t.label %>　<%= link_to "削除", project_task_path(t.project.id, t.id), method: :delete, data: { confirm:   "本当によろしいですか？" } %>
       </div>
     <% end %>
     <p><%= f.submit %></p>
