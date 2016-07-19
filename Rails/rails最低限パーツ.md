@@ -195,6 +195,18 @@ $(function(){
 ```
 
 
+__# /app/views/projects/new.html.erb__
+```Ruby
+  <%= form_for @project do |f| %>
+    <p><%= f.label :label %>　<%= f.text_field :label %></p>
+    <% if @project.errors.any? %>
+      <p><%= @project.errors.messages[:label][0] %></p>
+    <% end %>
+    <p><%= f.submit %></p>
+  <% end %>
+```
+
+
 __# /app/views/projects/show.html.erb__
 ```Ruby
 <div class="mt10">
@@ -229,18 +241,6 @@ $(function(){
   });
 });
 </script>
-```
-
-
-__# /app/views/projects/new.html.erb__
-```Ruby
-  <%= form_for @project do |f| %>
-    <p><%= f.label :label %>　<%= f.text_field :label %></p>
-    <% if @project.errors.any? %>
-      <p><%= @project.errors.messages[:label][0] %></p>
-    <% end %>
-    <p><%= f.submit %></p>
-  <% end %>
 ```
 
 
