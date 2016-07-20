@@ -211,8 +211,8 @@ __# /app/views/projects/show.html.erb__
 <br><br>
 <%= link_to "編集", edit_project_path(@project.id) %>
 <div>
-  x<%= link_to "削除", project_path(project.id), method: :delete %>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
-  <div id="popup1" class="none">
+  x<%= link_to "削除", project_path(project.id), method: :delete %>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %>　x<a href="javascript:void(0);" data-popupid="popup<%= @project.id %>" class="js_popup">削除（div）</a>
+  <div id="popup<%= @project.id %>" class="none">
     <p><%=textDeleteConfirm%></p>
     <%= link_to "削除する", project_path(project.id), method: :delete %>
   </div>
