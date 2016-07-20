@@ -191,7 +191,7 @@ __# /app/views/projects/show.html.erb__
 <div class="mt10">
   <%= @project.label %>（<%= @project.tasks.count %>件）
   <% if @project.tasks.size.zero? %>
-      taskがまだありません
+    <p>taskがまだありません</p>
   <% else %>
     <% @project.tasks.each do |task| %>
       <div>
