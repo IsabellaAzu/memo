@@ -159,39 +159,17 @@ __# /app/controllers/tasks.rb__
 ## View
 __# /app/views/projects/index.html.erb__
 ```Ruby
-<% textDeleteConfirm = '削除しますよろしいですか？' %>
 <% if @projects.size.zero? %>
   <p>projectがまだありません</p>
 <% else %>
   <% @projects.each do |project| %>
     <p><%= link_to project.label, project_path(project.id) %></p>
-    <div>
-      x<%= link_to "削除", project_path(project.id), method: :delete %>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
-      <div id="popup1" class="none">
-        <p><%=textDeleteConfirm%></p>
-        <%= link_to "削除する", project_path(project.id), method: :delete %>
-      </div>
-    </div>
   <% end %>
 <% end %>
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 
 <!--railsで用意されているjQueryなどのjs  -->
 <%= render "/layouts/js" %>
-<style type="text/css">
-.none{display:none;}
-</style>
-<script type="text/javascript">
-$(function(){
-  var js_popup = $('.js_popup');
-  js_popup.bind('click',function(){
-    var popupId = $(this).data('popupid');
-    console.log(popupId);
-    $('#'+popupId).toggleClass('none');
-    return false;
-  });
-});
-</script>
 ```
 
 
@@ -209,8 +187,9 @@ __# /app/views/projects/new.html.erb__
 
 __# /app/views/projects/show.html.erb__
 ```Ruby
+<% textDeleteConfirm = '削除しますよろしいですか？' %>
 <div class="mt10">
-  <%= @project.label %> <%= link_to "編集", edit_project_path(@project.id) %>（<%= @project.tasks.count %>件）
+  <%= @project.label %>（<%= @project.tasks.count %>件）
   <% if @project.tasks.size.zero? %>
       taskがまだありません
   <% else %>
@@ -228,13 +207,36 @@ __# /app/views/projects/show.html.erb__
       <% end %>
   </div>
 </div>
+
+<br><br>
+<%= link_to "編集", edit_project_path(@project.id) %>
+<div>
+  x<%= link_to "削除", project_path(project.id), method: :delete %>　x<%= link_to "削除（alert）", project_path(project.id), method: :delete, data: { confirm: textDeleteConfirm } %>　x<a href="popup1" data-popupid="popup1" class="js_popup">削除（div）</a>
+  <div id="popup1" class="none">
+    <p><%=textDeleteConfirm%></p>
+    <%= link_to "削除する", project_path(project.id), method: :delete %>
+  </div>
+</div>
+
 <br><br>
 <%= link_to "top", projects_path %>
 
 <!--railsで用意されているjQueryなどのjs  -->
 <%= render "/layouts/js" %>
+
+<style type="text/css">
+.none{display:none;}
+</style>
 <script type="text/javascript">
 $(function(){
+  //popup
+  var js_popup = $('.js_popup');
+  js_popup.bind('click',function(){
+    var popupId = $(this).data('popupid');
+    console.log(popupId);
+    $('#'+popupId).toggleClass('none');
+    return false;
+  });
   // toggleアクション
   $("input[type=checkbox]").click(function(){
     $.post('/projects/'+ $(this).data('project_id') +'/tasks/'+ $(this).data('id') +'/toggle');
