@@ -118,7 +118,7 @@ __# /app/controllers/projects.rb__
     def project_params
       # フィルタリング：projectで渡ってきた中で、label属性だけ許可します
       # xxxs_attributes:【子モデル】
-      params[:project].permit(:label, tasks_attributes: [:id, :label])
+      params[:project].permit(:id, :label, tasks_attributes: [:id, :label])
     end
 
 ```
