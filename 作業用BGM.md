@@ -61,6 +61,10 @@
 ##### 　Larry Strife Dance Battle
 　https://www.youtube.com/watch?v=M7Jwg7-nY5E
 
+#### 2016
+##### 　FRONTROW
+https://www.youtube.com/watch?v=-V01oN9SMYs
+
 
 　  
 - - - 
