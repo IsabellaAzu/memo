@@ -63,6 +63,67 @@ http://qiita.com/jnchito/items/cae89ee43c30f5d6fa2c
 http://blog.willnet.in/entry/2015/06/12/063731
 
 
+
+ 
+   
+### Rails4: fields_forとstrong_parametersで複数レコードの更新に対応する方法  
+「fields_forで作った要素をstrong_parametersで許可したいんだがなー…。配列じゃなくて…。」  
+http://319ring.net/blog/archives/2591   
+
+view  
+```
+- model_class = Hoge
+= form_tag update_enable_list_hoges_path, method: :put do
+  table
+    thead
+      tr
+        th = model_class.human_attribute_name(:id)
+        th = model_class.human_attribute_name(:name)
+        th 有効フラグ
+    tbody
+      - @hoges.each do |hoge|
+        = fields_for('hoges[]', hoge, index: nil) do |fh|
+          tr
+            td = hoge.id
+            td = hoge.name
+            td
+              = fh.check_box :enable
+              = fh.hidden_field :id
+  .form-actions
+    = submit_tag '更新'
+```
+
+controller  
+```
+class HogesController < ApplicationController
+  # 省略
+ 
+  private
+  def hoge_params
+    # 通常のcreate, updateで呼ばれるほう
+  end
+ 
+  def hoges_params
+    params.require(:hoges).map do |param|
+      ActionController::Parameters.new(param.to_hash).permit(:id, :enable)
+    end
+  end
+end
+```
+
+テーブル情報の変更関連をまとめる  
+忘れそう・・・。
+
+- - -
+
+### FactoryGirlってなんぞ？？（テスト関連？？）
+http://blog.inouetakuya.info/entry/2013/12/28/205008  
+http://techracho.bpsinc.jp/morimorihoge/2013_08_23/12744  
+http://o.inchiki.jp/obbr/159  
+http://miyohide.hatenablog.com/entry/20120510/1336660092  
+
+
+
 ##よく見かけるblog
 
 酒と泪とRubyとRailsと  
