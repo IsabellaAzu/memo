@@ -46,6 +46,13 @@ config.action_view.logger = nil
 http://ruby-rails.hatenadiary.com/entry/20140929/1411997071  
 
 
+## Ruby on Rails チュートリアル 実例を使ってRailsを学ぼう Michael Hartl (マイケル・ハートル)  
+http://railstutorial.jp/  
+
+
+## fatなcontroller、model問題の対策
+http://qiita.com/aDaichiOta/items/3fa5bc302565bcd495a8
+
 ##よく見かけるblog
 
 酒と泪とRubyとRailsと  
