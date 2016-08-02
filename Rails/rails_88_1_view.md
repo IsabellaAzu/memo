@@ -60,4 +60,12 @@ params.require(:article).permit({:tag_ids=>[]}
 　  
 　  
 - - - 
-
+## ■xxx関連
+　  
+　  
+- - - 
+## ■xxx関連
+　  
+　  
+- - - 
+## ■xxx関連
