@@ -2,6 +2,10 @@
 # railsよく探しそうな情報
 
 
+[form関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_1_form.md)
+
+
+
 viewでModelのカラム名一覧を取得
 ```
 @decide_user_answer.column_names
