@@ -12,7 +12,7 @@ polymorphic指定の追加
 ```
 $ bundle exec rails g migration AddImageableToProducts imageable:references{polymorphic}
 ```
-
+[DRYING UP RAILS CONTROLLERS: POLYMORPHIC AND SUPER CONTROLLERS](http://pathfindersoftware.com/2008/07/drying-up-rails-controllers-polymorphic-and-super-controllers/)
 
 
 
