@@ -37,9 +37,9 @@ $ bundle exec rails g migration AddImageableToProducts imageable:references{poly
 # 【例】
 # user.rb（親）
 class User < ActiveRecord::Base
-  has_many :study_participants
   has_many :subscriptions, through: :study_participants, source: :study, source_type: 'Subscription'
   has_many :adoptions, through: :study_participants, source: :study, source_type: 'Adoption'
+  has_many :study_participants
 end
 # subscription.rb（子１）
 class Subscription < ActiveRecord::Base
