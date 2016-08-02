@@ -31,9 +31,28 @@ $ bundle exec rails g migration AddImageableToProducts imageable:references{poly
 ### 親子孫のpolymorphic
 　　　　　 親  
 子１　　　　　　　　子２  
-　　　as: :xxxable  
 　　　　　 孫  
-
+```
+# 【例】
+# user.rb（親）
+class User < ActiveRecord::Base
+  has_many :study_participants
+  has_many :subscriptions, through: :study_participants, source: :study, source_type: 'Subscription'
+  has_many :adoptions, through: :study_participants, source: :study, source_type: 'Adoption'
+end
+# subscription.rb（子１）
+class Subscription < ActiveRecord::Base
+  has_many :study_participants, as: :study
+end
+# adoption.rb（子２）
+class Adoption < ActiveRecord::Base
+  has_many :study_participants, as: :study
+end
+# study_participant.rb（孫）
+class StudyParticipant < ActiveRecord::Base
+  belongs_to :study, polymorphic: true
+end
+```
 
 
 
