@@ -32,7 +32,7 @@ $ bundle exec rails g migration AddImageableToProducts imageable:references{poly
 　　　　　 親  
 子１　　　　　　　　子２  
 　　　as: :xxxable  
-　　　　　孫  
+　　　　　 孫  
 
 
 
