@@ -29,11 +29,11 @@ $ bundle exec rails g migration AddImageableToProducts imageable:references{poly
 　  
 
 ### 親子孫のpolymorphic
-[参考](http://qiita.com/mah_lab/items/14f906b6236d834bef96)  
+[参考：親子孫のmodelの設定](http://qiita.com/mah_lab/items/14f906b6236d834bef96)  
 　　　　　 親  
 子１　　　　　　　　子２  
 　　　　　 孫  
-```
+```ruby
 # 【例】
 # user.rb（親）
 class User < ActiveRecord::Base
