@@ -10,7 +10,7 @@ viewでModelのカラム名一覧を取得
 
 polymorphic指定の追加
 ```
-$ rails generate migration AddImageableToProducts imageable:references{polymorphic}
+$ bundle exec rails g migration AddImageableToProducts imageable:references{polymorphic}
 ```
 
 
