@@ -1,8 +1,21 @@
 
 # model関連
+
+
+```ruby
+# validate：子オブジェクト(ここではorder)がsaveされるとき検証をおこなう。
+class Order < ActiveRecord::Base
+  belongs_to :customer, validate: true
+end
+class Customer < ActiveRecord::Base
+  has_many :orders
+end
+```
+
+
 ```ruby
 # 親オブジェクトで子オブジェクトを編集できるように
-accepts_nested_attributes_for :decide_choices, allow_destroy: true
+accepts_nested_attributes_for :orders, allow_destroy: true
 ```
 
 
@@ -14,13 +27,14 @@ class Order < ActiveRecord::Base
 end
 ```
 
+
 ```ruby
 # delete：
 ```
 
 
 ```ruby
-# 親のupdate_atを
+# touch：子オブジェクトがsaveされたりdestroyされたりしたとき、親オブジェクトの updated_at や updated_on にカレントタイムが設定される。
 class DecideUserAnswer < ActiveRecord::Base
   belongs_to :answerable, polymorphic: true, touch: true
 end
