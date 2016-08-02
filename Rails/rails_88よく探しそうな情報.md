@@ -2,16 +2,17 @@
 # railsよく探しそうな情報
 
 
-## 画像周り
+viewでModelのカラム名一覧を取得
+```
+@decide_user_answer.column_names
+```
 
-Railsの画像をアップロードするgemのCarrierWave  
-http://ruby-rails.hatenadiary.com/entry/20141015/1413300088  
 
+polymorphic指定の追加
+```
+$ rails generate migration AddImageableToProducts imageable:references{polymorphic}
+```
 
-## 規約
-Rubyを使っているプロジェクトのコーディング規約を見てみよう  
-http://morizyun.github.io/blog/coding-style-ruby-rails-ginza-rb/  
-https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md  
 
 
 
@@ -41,30 +42,22 @@ end
 config.action_view.logger = nil
 ```
 
-
-## RailsのHTMLテンプレートエンジン Slim入門
-http://ruby-rails.hatenadiary.com/entry/20140929/1411997071  
-
-
-## Ruby on Rails チュートリアル 実例を使ってRailsを学ぼう Michael Hartl (マイケル・ハートル)  
+### Ruby on Rails チュートリアル 実例を使ってRailsを学ぼう Michael Hartl (マイケル・ハートル)  
 http://railstutorial.jp/  
 
 
-## fatなcontroller、model問題の対策
+### fatなcontroller、model問題の対策
 http://qiita.com/aDaichiOta/items/3fa5bc302565bcd495a8
 
 
-## Time.now と Time.current の違い
+### Time.now と Time.current の違い
 
-### RubyとRailsにおけるTime, Date, DateTime, TimeWithZoneの違い
+#### RubyとRailsにおけるTime, Date, DateTime, TimeWithZoneの違い
 http://qiita.com/jnchito/items/cae89ee43c30f5d6fa2c
 
-### rails5でのtime型
+#### rails5でのtime型
 http://blog.willnet.in/entry/2015/06/12/063731
 
-
-
- 
    
 ### Rails4: fields_forとstrong_parametersで複数レコードの更新に対応する方法  
 「fields_forで作った要素をstrong_parametersで許可したいんだがなー…。配列じゃなくて…。」  
@@ -110,9 +103,6 @@ class HogesController < ApplicationController
   end
 end
 ```
-
-テーブル情報の変更関連をまとめる  
-忘れそう・・・。
 
 - - -
 
