@@ -19,6 +19,9 @@
 polymorphic指定の追加
 polymorphic指定の基本的な流れ  
 http://ruby-rails.hatenadiary.com/entry/20141207/1417926599  
+
+
+polymorphicのカラム追加（子、孫などにxxxable_idとxxxable_typeの追加）
 ```
 $ bundle exec rails g migration AddImageableToProducts imageable:references{polymorphic}
 ```
