@@ -2,8 +2,8 @@
 # view関連
 
 
-
-## form関連
+- - - 
+## ■form関連
 [基本：【Rails】formヘルパーを徹底的に理解する](http://qiita.com/shunsuke227ono/items/7accec12eef6d89b0aa9)
 
 ### form_for、form_tag基本
@@ -56,4 +56,6 @@ params.require(:article).permit({:tag_ids=>[]}
   <%= b.label {b.radio_button + b.text} %>
 <% end %>
 ```
+
+- - - 
 
