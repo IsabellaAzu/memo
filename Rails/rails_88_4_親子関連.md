@@ -29,9 +29,9 @@ $ bundle exec rails g migration AddImageableToProducts imageable:references{poly
 　  
 
 ### 親子孫のpolymorphic
-　　　　　親  
-子１　　　　　　　子２  
-　　as: :xxxable  
+　　　　　 親  
+子１　　　　　　　　子２  
+　　　as: :xxxable  
 　　　　　孫  
 
 
