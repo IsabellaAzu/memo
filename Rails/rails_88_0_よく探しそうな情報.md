@@ -2,7 +2,10 @@
 # railsよく探しそうな情報
 
 > 
-[form関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_1_form.md)
+[・view関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_1_view.md)
+[・controller関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_2_controller.md)
+[・model関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_3_model.md)
+[・親子関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_4_親子関連.md)
 
 
 
