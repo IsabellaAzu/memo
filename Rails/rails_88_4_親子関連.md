@@ -59,6 +59,7 @@ end
 http://interfirm.hatenablog.com/entry/2014/07/30/200431  
 ⇒http://stackoverflow.com/questions/3969025/accepts-nested-attributes-for-with-belongs-to-polymorphic  
 　  
+http://qiita.com/kasei-san/items/c6ded7c45ff5ce680e9b  
 http://qiita.com/mm36/items/f266977e12df9d1dc548  
 　  
 http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/  　  
