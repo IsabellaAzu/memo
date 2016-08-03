@@ -15,7 +15,8 @@
 [参考1：DRYING UP RAILS CONTROLLERS: POLYMORPHIC AND SUPER CONTROLLERS](http://rails.densan-labs.net/form/bulk_registration_form.html)  
 [参考2：](http://j-caw.co.jp/blog/?p=1590)  
 [参考3：](http://j-caw.co.jp/blog/?p=1415)  
-[参考4：](http://ja.stackoverflow.com/questions/22697/rails%E3%81%AEscaffold-controller%E3%81%A7%E8%A4%87%E6%95%B0%E8%A1%8C%E3%82%92%E4%B8%80%E6%B0%97%E3%81%ABcreate%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)  
+[参考4：](http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4)  
+[参考5：](http://ja.stackoverflow.com/questions/22697/rails%E3%81%AEscaffold-controller%E3%81%A7%E8%A4%87%E6%95%B0%E8%A1%8C%E3%82%92%E4%B8%80%E6%B0%97%E3%81%ABcreate%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)  
 
 
 ## ログ周り
