@@ -12,8 +12,9 @@
 
 
 ### 一括登録方法
-[参考：DRYING UP RAILS CONTROLLERS: POLYMORPHIC AND SUPER CONTROLLERS](http://rails.densan-labs.net/form/bulk_registration_form.html)  
-[参考：](http://j-caw.co.jp/blog/?p=1590)  
+[参考1：DRYING UP RAILS CONTROLLERS: POLYMORPHIC AND SUPER CONTROLLERS](http://rails.densan-labs.net/form/bulk_registration_form.html)  
+[参考2：](http://j-caw.co.jp/blog/?p=1590)  
+[参考3：](http://j-caw.co.jp/blog/?p=1415)  
 
 
 ## ログ周り
