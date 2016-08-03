@@ -59,6 +59,9 @@ end
 http://interfirm.hatenablog.com/entry/2014/07/30/200431  
 ⇒http://stackoverflow.com/questions/3969025/accepts-nested-attributes-for-with-belongs-to-polymorphic  
 　  
+http://beck23.hatenablog.com/entry/2014/09/09/145327  
+source_typeなどの説明  
+　  
 http://qiita.com/kasei-san/items/c6ded7c45ff5ce680e9b  
 http://qiita.com/mm36/items/f266977e12df9d1dc548  
 　  
