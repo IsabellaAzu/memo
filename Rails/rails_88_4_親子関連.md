@@ -56,7 +56,8 @@ end
 ```
 
 
-
+http://interfirm.hatenablog.com/entry/2014/07/30/200431  
+　  
 　  
 http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/  　  
 http://rails-bestpractices.com/posts/2010/08/18/use-sti-and-polymorphic-model-for-multiple-uploads/  
