@@ -67,7 +67,7 @@ params.require(:article).permit({:tag_ids=>[]}
 ## ■xxx関連
 ### viewでModelのカラム名一覧を取得
 ```
-@decide_user_answer.column_names
+@obj.column_names
 ```
 　  
 　  
