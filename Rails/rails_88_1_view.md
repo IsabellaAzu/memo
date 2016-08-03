@@ -33,11 +33,15 @@
 
 #### input
 ```
-<%= f.text_field :title, class: "hogehoge" %>
+<%= f.text_field :title, class: 'hoge' %>
+```
+#### hidden
+```
+<%= f.hidden_field :title, class: 'hoge', value: => 'hoge' %>
 ```
 #### textarea
 ```
-<%= f.text_area :content, class: "hogehoge", size: "100x50" %>
+<%= f.text_area :content, class: 'hoge', size: '100x50' %>
 ```
 #### select
 ```
