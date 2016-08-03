@@ -58,7 +58,7 @@ end
 
 
 　  
-　  
+http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/  　  
 http://rails-bestpractices.com/posts/2010/08/18/use-sti-and-polymorphic-model-for-multiple-uploads/  
 http://qiita.com/kasei-san/items/c6ded7c45ff5ce680e9b  
 http://qiita.com/mah_lab/items/14f906b6236d834bef96  
