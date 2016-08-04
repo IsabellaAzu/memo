@@ -10,6 +10,7 @@
 - - - 
 ## ■親子孫関連
 ###
+http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations
 　  
 　  
 - - - 
