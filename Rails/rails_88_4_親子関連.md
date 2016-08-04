@@ -63,8 +63,7 @@ http://beck23.hatenablog.com/entry/2014/09/09/145327
 source_typeなどの説明  
 　  
 http://qiita.com/kasei-san/items/c6ded7c45ff5ce680e9b  
-http://qiita.com/mm36/items/f266977e12df9d1dc548  
-　  
+
 http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/  　  
 http://rails-bestpractices.com/posts/2010/08/18/use-sti-and-polymorphic-model-for-multiple-uploads/  
 http://qiita.com/kasei-san/items/c6ded7c45ff5ce680e9b  
