@@ -29,5 +29,9 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 
 - - - 
 ## ■polymorphic関連
-###
 多態性：・・・。
+### 「異なる親モデルで、子モデルを集約する」「異なる親モデルを持てる」
+http://d.hatena.ne.jp/hichiriki/20100620#12770149270  
+
+### リレーションのオプションでできること、まとめてみた。
+http://beck23.hatenablog.com/entry/2014/09/09/145327
