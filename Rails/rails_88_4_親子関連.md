@@ -37,3 +37,20 @@ http://d.hatena.ne.jp/hichiriki/20100620#12770149270
 
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
+
+### 既存に追加する場合
+（親）　　　　theme  
+（子）　user　　　　　choice  
+（孫）　 　　 answer  
+　  
+Model  
+```ruby
+# 子Model
+# 「, :as => :xxx」の追加、xxxは任意
+  has_many :answer, dependent: :destroy, :as => :xxx
+# 孫Model
+  belongs_to :xxx, :polymorphic => true
+```
+
+
+
