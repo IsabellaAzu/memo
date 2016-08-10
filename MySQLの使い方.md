@@ -1,8 +1,6 @@
 
 ## MySQLの使い方
 
-（超絶編集中）
-
 > MySQLのsnippet  
 https://github.com/IsabellaAzu/snippet/tree/master/mysql
 
@@ -41,6 +39,10 @@ http://d.hatena.ne.jp/spitfire_tree/20120627/1340789986
 
 　  
 　  
+### データベースの正規化
+http://www.oss-db.jp/measures/dojo_info_04.shtml  
+　  
+
 - - -
 関連情報  
 >  
