@@ -6,3 +6,10 @@
 http://o.inchiki.jp/obbr/127  
 ・after_initialize、after_find  
 ・findメソッドはRails4からは廃止　→　whereメソッドに切り替え  
+
+### パフォーマンス
+http://qiita.com/r7kamura/items/7a31b79f855d7af581ec  
+
+
+
+
