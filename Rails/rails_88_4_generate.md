@@ -18,7 +18,7 @@ bundle exec rails g migration AddUserRefToTweets user:references
 
 ### カラムの削除（外部制約も外す）
 ```
-rails generate migration Removeカラム名Fromテーブル名 カラム名:references
+bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:references
 ```
 
 
