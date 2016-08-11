@@ -39,9 +39,9 @@ http://d.hatena.ne.jp/hichiriki/20100620#12770149270
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 
 ### 既存に追加する場合
-（親）　　　　theme  
-（子）　user　　　　　choice  
-（孫）　 　　　answer  
+（親）　　　　project  
+（子）　user　　　　　　theme  
+（孫）　　　　　task
 　  
 Model  
 ```ruby
