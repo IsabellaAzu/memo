@@ -4,12 +4,16 @@
 参考：[railsコマンド](http://railsdoc.com/rails)
 　  
 - - - 
-### テーブル作成時
+## テーブル作成時
 ```
 
 ```
+　  
+- - - 
+## テーブルがすでにある時
+[基本的なカラムの追加、削除、変更](http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3)
 
-### カラム追加
+### 外部キーのカラム追加
 bundle exec rails g migration Addカラム名RefToテーブル名 user:references（外部キーの追加：_idは記載しない）  
 参考：[外部キー周りの注意](http://b.pyar.bz/blog/2014/10/22/foreigner/)
 ```
