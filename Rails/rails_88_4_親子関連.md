@@ -32,17 +32,16 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 　  
 - - - 
 ## ■polymorphic関連
-多態性：・・・。
+多態性：・・・。下記の様な時に使用する
 ### 「異なる親モデルで、子モデルを集約する」「異なる親モデルを持てる」「親が切り替わる」
 http://d.hatena.ne.jp/hichiriki/20100620#12770149270  
-
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 
 ### 既存に追加する場合
 （親）　　　　theme  
 （子）　user　　　　　choice  
-（孫）　 　　 answer  
+（孫）　 　　　answer  
 　  
 Model  
 ```ruby
