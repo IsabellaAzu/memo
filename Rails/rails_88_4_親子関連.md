@@ -13,7 +13,7 @@
 http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations
 
 ### 一括new、create
-http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4　 
+http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4  
 http://rails.densan-labs.net/form/bulk_registration_form.html  
 　  
 
