@@ -52,5 +52,8 @@ Model
   belongs_to :xxx, :polymorphic => true
 ```
 
-
+[migration で polymorphic のカラムを後から追加する](http://qiita.com/yutackall/items/210aa0cb8859aa45af07)
+```
+bundle exec rails g migration AddXxxToテーブル名 xxx:references{polymorphic}
+```
 
