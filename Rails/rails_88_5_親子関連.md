@@ -35,6 +35,8 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 多態性：・・・。下記の様な時に使用する
 ### 「異なる親モデルで、子モデルを集約する」「異なる親モデルを持てる」「親が切り替わる」
 http://d.hatena.ne.jp/hichiriki/20100620#12770149270  
+### ポリモーフィック関連
+http://qiita.com/suguru/items/d6d3ebe7b867c5009231  
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 
