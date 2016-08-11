@@ -47,7 +47,7 @@ Model
 ```ruby
 # 子Model
 # 「, :as => :xxx」の追加、xxxは任意
-  has_many :answer, dependent: :destroy, :as => :xxx
+  has_many :task, dependent: :destroy, :as => :xxx
 # 孫Model
   belongs_to :xxx, :polymorphic => true
 ```
