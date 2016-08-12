@@ -61,10 +61,16 @@ params.require(:article).permit({:tag_ids=>[]}
   <%= b.label {b.radio_button + b.text} %>
 <% end %>
 ```
+#### 新規作成formの作り方~newとbuildの違い~
+http://qiita.com/shizuma/items/5cef6768c5a5d899e54d  
+親の中で子を新規作成など  
+```
+
+```
 　  
 　  
 - - - 
-## ■Model関連
+## ■xxx関連
 ### viewでModelのカラム名一覧を取得
 ```
 @obj.column_names
@@ -72,14 +78,7 @@ params.require(:article).permit({:tag_ids=>[]}
 　  
 　  
 - - - 
-## ■イテレータ関連
-### 基本
-```ruby
-<% 3.times do |i| %>
-  <li><%= i %>: リスト</li>
-<% end %>
-```
-
+## ■xxx関連
 　  
 　  
 - - - 
