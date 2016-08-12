@@ -59,6 +59,10 @@ http://qiita.com/suguru/items/d6d3ebe7b867c5009231
 http://railscasts.com/episodes/154-polymorphic-association  
 　  
 
+### ポリモーフィック使用上の注意
+http://qiita.com/joker1007/items/9da1e279424554df7bb8
+　  
+
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 　  
