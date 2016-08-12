@@ -24,6 +24,10 @@ http://qiita.com/ftyabu/items/cae912b211e985d74d58
 http://qiita.com/seimiyajun/items/ffefdfc74b9fce76a538
 
 　  
+### 子から親を作成
+http://d.hatena.ne.jp/donghai821/20110804/1312475967  
+
+　  
 ### Railsで階層化された複数モデルに対応するフォームの作り方
 http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 
