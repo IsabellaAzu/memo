@@ -64,7 +64,7 @@ params.require(:article).permit({:tag_ids=>[]}
 　  
 　  
 - - - 
-## ■xxx関連
+## ■Model関連
 ### viewでModelのカラム名一覧を取得
 ```
 @obj.column_names
@@ -72,7 +72,14 @@ params.require(:article).permit({:tag_ids=>[]}
 　  
 　  
 - - - 
-## ■xxx関連
+## ■イテレータ関連
+### 基本
+```ruby
+  <% 3.times do |i| %>
+    <li><%= i %>: リスト</li>
+  <% end %>
+```
+
 　  
 　  
 - - - 
