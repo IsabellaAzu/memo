@@ -41,11 +41,11 @@ http://qiita.com/suguru/items/d6d3ebe7b867c5009231
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 
 ### 既存に追加する場合
+>#### モデル構成
 （親）　　　　project  
 （子）　user　　　　　　theme  
 （孫）　　　　　task
-　  
-Model  
+#### Model  
 ```ruby
 # 子Model
 # 「, :as => :xxx」の追加、xxxは任意
@@ -53,7 +53,7 @@ Model
 # 孫Model
   belongs_to :xxx, :polymorphic => true
 ```
-
+#### DBの設定
 [migration で polymorphic のカラムを後から追加する](http://qiita.com/yutackall/items/210aa0cb8859aa45af07)
 ```
 bundle exec rails g migration AddXxxToテーブル名 xxx:references{polymorphic}
