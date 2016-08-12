@@ -57,5 +57,14 @@ http://beck23.hatenablog.com/entry/2014/09/09/145327
 [migration で polymorphic のカラムを後から追加する](http://qiita.com/yutackall/items/210aa0cb8859aa45af07)
 ```
 bundle exec rails g migration AddXxxToテーブル名 xxx:references{polymorphic}
+　↓
+# db/migrate/マイグレーションファイル
+class AddXxxToTask < ActiveRecord::Migration
+  def change
+    add_reference :tasks, :xxx, polymorphic: true, index: true
+  end
+end
+　↓
+# xxx_id、xxx_typeの２つのカラムが追加される
 ```
 
