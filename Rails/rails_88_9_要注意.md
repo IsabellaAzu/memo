@@ -12,6 +12,7 @@ http://qiita.com/haruharuharuby/items/fbca14582a22f413f1b9
 - １つのモデルで複数のモデルを操作してしまう  
 - 冗長なコードが複数のモデルまたはコントローラに出てくる  
 - 表示のためだけに、モデルにメソッドを追加する  
+
 　  
 ### パフォーマンス
 http://qiita.com/r7kamura/items/7a31b79f855d7af581ec  
