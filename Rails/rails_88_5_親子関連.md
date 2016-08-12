@@ -50,6 +50,12 @@ http://h3poteto.hatenablog.com/entry/2014/06/15/231742
 　  
 　  
 - - - 
+## 参照元テーブルに外部キーが複数ある場合
+http://qiita.com/takeoverjp/items/bb56d6a8eae191cd3732  
+http://blog.bitmeister.jp/?p=2739  
+　  
+　  
+- - - 
 ## ■polymorphic関連
 多態性：・・・。下記の様な時に使用する
 　  
