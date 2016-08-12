@@ -56,8 +56,9 @@ http://d.hatena.ne.jp/hichiriki/20100620#12770149270
 
 ### ポリモーフィック関連
 http://qiita.com/suguru/items/d6d3ebe7b867c5009231  
+http://railscasts.com/episodes/154-polymorphic-association  
 　  
-
+　  
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 　  
