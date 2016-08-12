@@ -44,6 +44,12 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 　  
 　  
 - - - 
+## n対m関連
+### 多対多
+http://h3poteto.hatenablog.com/entry/2014/06/15/231742
+　  
+　  
+- - - 
 ## ■polymorphic関連
 多態性：・・・。下記の様な時に使用する
 　  
