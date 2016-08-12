@@ -48,7 +48,8 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 ### １対多
 http://ruby-rails.hatenadiary.com/entry/20141203/1417601540  
 ### 多対多
-http://h3poteto.hatenablog.com/entry/2014/06/15/231742
+http://h3poteto.hatenablog.com/entry/2014/06/15/231742  
+http://pc-dr.jp/study/tyuukan.html  
 　  
 　  
 - - - 
