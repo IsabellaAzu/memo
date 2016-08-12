@@ -75,9 +75,9 @@ params.require(:article).permit({:tag_ids=>[]}
 ## ■イテレータ関連
 ### 基本
 ```ruby
-  <% 3.times do |i| %>
-    <li><%= i %>: リスト</li>
-  <% end %>
+<% 3.times do |i| %>
+  <li><%= i %>: リスト</li>
+<% end %>
 ```
 
 　  
