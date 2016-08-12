@@ -27,7 +27,17 @@ http://qiita.com/seimiyajun/items/ffefdfc74b9fce76a538
 　  
 ### 子から親を作成
 http://d.hatena.ne.jp/donghai821/20110804/1312475967  
-
+```ruby
+# 子のモデル
+class Child
+  belongs_to :parent
+  accepts_nested_attributes_for :parent
+end
+```
+```ruby
+<%= f.fields_for 'parent_attributes', @child.parent do |parent_f| %>
+<% end %>
+```
 　  
 ### Railsで階層化された複数モデルに対応するフォームの作り方
 http://jetglass.hatenablog.jp/entry/2015/04/15/165236
