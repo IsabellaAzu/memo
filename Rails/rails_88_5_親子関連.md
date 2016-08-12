@@ -45,6 +45,8 @@ http://jetglass.hatenablog.jp/entry/2015/04/15/165236
 　  
 - - - 
 ## n対m関連
+### １対多
+http://ruby-rails.hatenadiary.com/entry/20141203/1417601540  
 ### 多対多
 http://h3poteto.hatenablog.com/entry/2014/06/15/231742
 　  
@@ -57,7 +59,7 @@ http://blog.bitmeister.jp/?p=2739
 　  
 - - - 
 ## ■polymorphic関連
-多態性：・・・。下記の様な時に使用する
+多態性：・・・。下記の様な時に使用する。基本的に同じ構造のテーブルに対して。
 　  
 
 ### 「異なる親モデルで、子モデルを集約する」「異なる親モデルを持てる」「親が切り替わる」
