@@ -41,8 +41,6 @@ end
 　  
 ### Railsで階層化された複数モデルに対応するフォームの作り方
 http://jetglass.hatenablog.jp/entry/2015/04/15/165236
-
-
 　  
 　  
 - - - 
