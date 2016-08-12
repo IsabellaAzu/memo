@@ -56,19 +56,19 @@ http://d.hatena.ne.jp/hichiriki/20100620#12770149270
 http://qiita.com/suguru/items/d6d3ebe7b867c5009231  
 http://railscasts.com/episodes/154-polymorphic-association  
 　  
-
+　  
 ### ポリモーフィック使用上の注意
 http://qiita.com/joker1007/items/9da1e279424554df7bb8
 　  
-
+　  
 ### リレーションのオプションでできること、まとめてみた。
 http://beck23.hatenablog.com/entry/2014/09/09/145327
 　  
-
+　  
 ### ポリモーフィックの子から親を生成する
 http://interfirm.hatenablog.com/entry/2014/07/30/200431  
 　  
-
+　  
 ### 既存に追加する場合
 >#### (1)モデル構成
 （親）　　　　project  
