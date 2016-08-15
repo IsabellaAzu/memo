@@ -4,9 +4,11 @@
 　  
 　  
 - - - 
-## ■xxx関連
-### 
-　  
+## ■debug関連
+### controllerに記載してxxxの値を、logで確認できる
+```ruby
+  logger.debug(decide_user_params["xxx"])
+```
 　  
 - - - 
 ## ■xxx関連
