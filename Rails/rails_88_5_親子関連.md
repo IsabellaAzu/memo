@@ -15,6 +15,19 @@ http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations
 ### 一括new、create
 http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4  
 http://rails.densan-labs.net/form/bulk_registration_form.html  
+> 一括作成手順(仮)
+#### model
+```ruby
+accepts_nested_attributes_for
+```
+#### controller
+  @xxx_count.times do
+    @yyy = @xxx.yyy.build(xxx_params)
+  end
+#### view
+
+
+
 　  
 
 ### 複数のレコードを作成する
