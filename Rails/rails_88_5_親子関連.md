@@ -15,6 +15,8 @@ http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations
 ### 一括new、create
 http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4  
 http://rails.densan-labs.net/form/bulk_registration_form.html  
+http://blog.livedoor.jp/sasata299/archives/51931176.html  
+「これ!」の部分！  
 > 一括作成手順(仮)
 #### model
 ```ruby
