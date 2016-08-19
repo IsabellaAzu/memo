@@ -71,7 +71,7 @@ yyy:has_many:zzz
     @xxxs = @親.xxxs
     @xxxs.each_with_index do |xx,index|
       zz = zz_params[index.to_s]
-      @zzz = @yyy.zzzs.new(label: zz[:label], 親_id: zz[:親_id], xxx_id: dua[:xxx_id])
+      @zzz = @yyy.zzzs.new(label: zz[:label], 親_id: zz[:親_id], xxx_id: zz[:xxx_id])
       @zzz.save
     end
     if @yyy.save
