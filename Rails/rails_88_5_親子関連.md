@@ -50,6 +50,20 @@ yyy:has_many:zzz
 ```
 #### (4)controller
 ```ruby
+  # yyyを作成するページの、親のaction
+  @yyy = @親.yyys
+  # 親のパラメーターの制限
+  private
+    def 親_params
+      params[:親].permit(::label,
+        xxxs_attributes: [:label],
+        yyys_attributes: [:label]
+      )
+    end
+  # -------------------------------------------
+
+
+
   @xxx_count.times do
     @yyy = @xxx.yyy.build(xxx_params)
   end
