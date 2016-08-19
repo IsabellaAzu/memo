@@ -55,12 +55,30 @@ yyy:has_many:zzz
   # 親のパラメーターの制限
   private
     def 親_params
-      params[:親].permit(::label,
+      params[:親].permit(:label, :url,
         xxxs_attributes: [:label],
         yyys_attributes: [:label]
       )
     end
   # -------------------------------------------
+  # yyyのcreate
+  def create
+    @親 = 親class.find_by(:url => params[:親_url])
+    # 親に基づくyyyを作成
+    @yyy = @親.yyys.new(label: yyy_params[:label])
+    # xxxの数分だけ、上記作成のyyyの枠を作成
+    zzz_params = yyy_params[:zzzs_attributes]
+    @xxxs = @親.xxxs
+    @xxxs.each_with_index do |xx,index|
+      zz = zz_params[index.to_s]
+      @zzz = @yyy.zzzs.new(label: zz[:label], 親_id: zz[:親_id], xxx_id: dua[:xxx_id])
+      @zzz.save
+    end
+    if @yyy.save
+    else
+    end
+  end
+
 
 
 
