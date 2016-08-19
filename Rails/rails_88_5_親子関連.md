@@ -17,16 +17,43 @@ http://qiita.com/hiroki_y/items/377a5b8bc2e1b7e1a3f4
 http://rails.densan-labs.net/form/bulk_registration_form.html  
 http://blog.livedoor.jp/sasata299/archives/51931176.html  
 「これ!」の部分！  
-> 一括作成手順(仮)
-#### model
+
+> 親のページで、子と孫を一括作成手順(親子の部分は割愛)
+>#### (1)モデル構成
+（親）　　　　親  
+（子）　xxx　　　　　yyy  
+（孫）　　　　zzz
+xxx:has_many:zzz  
+yyy:has_many:zzz  
+※throughは使わないパターン、zzzはxxxとyyyと親の外部キーを持つ
+#### (2)子「yyy」のmodel
+子から孫も作成できるようにaccepts_nested_attributes_forを設定  
 ```ruby
-accepts_nested_attributes_for
+  has_many :zzzs, dependent: :destroy
+  accepts_nested_attributes_for :zzzs, allow_destroy: true
 ```
-#### controller
+#### (3)親のview
+```ruby
+  <% if !@xxx.zero? %>
+    <%= form_for [@親, @親.yyys.build] do |f| %><%# 親から子yyyの作成 %>
+      <%= f.text_field :label %>
+      <% @親.xxxs.each do |xx| %>
+          <%= f.fields_for :zzzs, xx do |zz| %>
+            <p><%= zz.hidden_field :label, :value => 0 %></p>
+            <p><%= zz.hidden_field :親_id, :value => @親.id %></p>
+            <p><%= zz.hidden_field :xxx_id, :value => xx.id %></p>
+          <% end %>
+      <% end %>
+      <%= f.submit '回答する' %>
+    <% end %>
+  <% end %>
+```
+#### (4)controller
+```ruby
   @xxx_count.times do
     @yyy = @xxx.yyy.build(xxx_params)
   end
-#### view
+```
 
 
 
