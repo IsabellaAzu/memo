@@ -44,10 +44,11 @@ end
 　  
 　  
 - - - 
-## ■xxx関連
-###
-```
-```
+## ■Modelのクエリ
+http://qiita.com/merrill/items/8ec158953cb4c2715c7b  
+find、take、first / second / third... / last、find_by、all / find_each / find_in_batcheswhere、order、  
+select、limit / offset、find_or_create_by、find_or_initialize_by、find_by_sql、select_all、group、pluck、ids、exists?、
+count、average、minimum、maximum、sum、readonly、to_sql、explain
 
 　  
 - - - 
