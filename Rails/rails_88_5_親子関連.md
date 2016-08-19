@@ -78,13 +78,6 @@ yyy:has_many:zzz
     else
     end
   end
-
-
-
-
-  @xxx_count.times do
-    @yyy = @xxx.yyy.build(xxx_params)
-  end
 ```
 
 
