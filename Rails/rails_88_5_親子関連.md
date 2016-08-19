@@ -37,7 +37,7 @@ yyy:has_many:zzz
   <% if !@xxx.zero? %>
     <%= form_for [@親, @親.yyys.build] do |f| %><%# 親から子yyyの作成 %>
       <%= f.text_field :label %>
-      <% @親.xxxs.each do |xx| %>
+      <% @親.xxxs.each do |xx| %><%# xxxの数だけzzzを作成：controllerにも仕込みが必要 %>
           <%= f.fields_for :zzzs, xx do |zz| %>
             <p><%= zz.hidden_field :label, :value => 0 %></p>
             <p><%= zz.hidden_field :親_id, :value => @親.id %></p>
