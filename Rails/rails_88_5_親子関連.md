@@ -22,7 +22,7 @@ http://blog.livedoor.jp/sasata299/archives/51931176.html
 >#### (1)モデル構成
 （親）　　　　親  
 （子）　xxx　　　　　yyy  
-（孫）　　　　zzz
+（孫）　　　　zzz  
 xxx:has_many:zzz  
 yyy:has_many:zzz  
 ※throughは使わないパターン、zzzはxxxとyyyと親の外部キーを持つ
