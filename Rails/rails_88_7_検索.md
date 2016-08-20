@@ -19,3 +19,9 @@
 ## 複数テーブルのjoins/includesとwhere検索
 http://easyramble.com/rails-multi-tables-joins-includes-where.html
 　  
+
+## 検索条件フォームのようにテーブルと完全に同一でないフォームもform_forを使って実装できる
+ActiveModelを使えば対応するテーブルがなくてもform_forが使える  
+http://qiita.com/ishidamakot/items/dc16b6e22e6ec275079f  
+ActiveModelを使ってDBと関係ないFormを作成する【Rails】  
+http://tanihiro.hatenablog.com/entry/2014/01/09/193720
