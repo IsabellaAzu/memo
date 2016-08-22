@@ -71,8 +71,7 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 - - - 
 ## ■Model情報の取得
-
-```
+```ruby
 # Modelのカラム名一覧を取得
   <%= debug(モデル名.column_names) %>
 # Modelのカラムの型を取得する
@@ -81,7 +80,13 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 　  
 - - - 
-## ■xxx関連
+## ■hash内のvalueの最大値のhashを返す
+```ruby
+<% h = {a: 29, b: 23, c: 39, d: 3, e: 39} %>
+<%= debug(h.max_by {|_, v| v }) %>
+<%= debug(h.max_by(&:last)[1]) %>
+```
+
 　  
 　  
 - - - 
