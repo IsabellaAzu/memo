@@ -70,10 +70,13 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 　  
 - - - 
-## ■xxx関連
-### viewでModelのカラム名一覧を取得
+## ■Model情報の取得
+
 ```
-@obj.column_names
+# Modelのカラム名一覧を取得
+  <%= debug(モデル名.column_names) %>
+# Modelのカラムの型を取得する
+  <%= debug(モデル名.columns_hash['カラム名'].type) %>
 ```
 　  
 　  
