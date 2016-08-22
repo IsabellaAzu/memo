@@ -83,8 +83,8 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 ## ■hash内のvalueの最大値のhashを返す
 ```ruby
 <% h = {a: 29, b: 23, c: 39, d: 3, e: 39} %>
-<%= debug(h.max_by {|_, v| v }) %>
-<%= debug(h.max_by(&:last)[1]) %>
+<%= debug(h.max_by {|_, v| v }) %># => :c 39
+<%= debug(h.max_by(&:last)[1]) %># => 39
 ```
 
 　  
