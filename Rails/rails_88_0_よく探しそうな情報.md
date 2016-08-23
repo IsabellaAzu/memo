@@ -106,7 +106,11 @@ class HogesController < ApplicationController
   end
 end
 ```
-
+　  
+- - -
+### 便利メソッド
+http://qiita.com/jnchito/items/dedb3b889ab226933ccf
+　  
 - - -
 
 ### FactoryGirlってなんぞ？？（テスト関連？？）
