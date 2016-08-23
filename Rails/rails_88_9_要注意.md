@@ -23,3 +23,11 @@ http://qiita.com/r7kamura/items/7a31b79f855d7af581ec
 # errorログ
 Index name 'index_テーブル名_on_ポリモーフィック_id_and_ポリモーフィック_type' on table 'テーブル名' is too long; the limit is 62 characters
 ```
+　  
+### AUTOCOMMITしたデータはしっかり削除するように
+http://qiita.com/haracane/items/44b913c300e6c2c943bb
+
+### インデックス
+http://qiita.com/kkyouhei/items/e3502ef632c48d94541d
+
+
