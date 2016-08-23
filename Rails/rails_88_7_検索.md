@@ -25,3 +25,7 @@ ActiveModelを使えば対応するテーブルがなくてもform_forが使え�
 http://qiita.com/ishidamakot/items/dc16b6e22e6ec275079f  
 ActiveModelを使ってDBと関係ないFormを作成する【Rails】  
 http://tanihiro.hatenablog.com/entry/2014/01/09/193720
+　  
+## パフォーマンス
+### カーディナリティ
+http://qiita.com/soyanchu/items/034be19a2e3cb87b2efb
