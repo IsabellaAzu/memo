@@ -68,6 +68,11 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 
 ```
 　  
+- - - 
+　  
+## 日付のフォーマット
+http://ruby-rails.hatenadiary.com/entry/20141226/1419600679
+　  
 　  
 - - - 
 ## ■Model情報の取得
