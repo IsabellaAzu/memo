@@ -106,13 +106,24 @@ class HogesController < ApplicationController
   end
 end
 ```
-　  
+
 - - -
-### 便利メソッド
+　  
+## 便利メソッド
 http://qiita.com/jnchito/items/dedb3b889ab226933ccf
 　  
 - - -
-
+　  
+## 登録確認ページを経由して登録する方法
+http://qiita.com/inodev/items/b5600de8580f473cfa94
+　  
+- - -
+　  
+## flash：redirect_toする際、別コントローラーのアクションにエラーメッセージを受け渡す
+http://qiita.com/hennry/items/6648379aa2740ea978e5
+　  
+- - -
+　  
 ### FactoryGirlってなんぞ？？（テスト関連？？）
 http://blog.inouetakuya.info/entry/2013/12/28/205008  
 http://techracho.bpsinc.jp/morimorihoge/2013_08_23/12744  
