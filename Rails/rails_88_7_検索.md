@@ -27,7 +27,10 @@ http://qiita.com/ishidamakot/items/dc16b6e22e6ec275079f
 ActiveModelを使ってDBと関係ないFormを作成する【Rails】  
 http://tanihiro.hatenablog.com/entry/2014/01/09/193720
 　  
+- - - 
+　  
 ## パフォーマンス
+　  
 ### fat controllerの回避
 http://blog.goo.ne.jp/nakajima_notec/e/bd8c41e86ff5d26cd57c52a6518410ae  
 ではなく  
