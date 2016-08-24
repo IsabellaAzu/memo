@@ -29,3 +29,10 @@ http://tanihiro.hatenablog.com/entry/2014/01/09/193720
 ## パフォーマンス
 ### カーディナリティ
 http://qiita.com/soyanchu/items/034be19a2e3cb87b2efb
+　  
+### fat controllerの回避
+http://blog.goo.ne.jp/nakajima_notec/e/bd8c41e86ff5d26cd57c52a6518410ae  
+ではなく  
+http://ruby-rails.hatenadiary.com/entry/20140814/1407994568  
+scopeを使う  
+
