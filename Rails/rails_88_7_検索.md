@@ -35,6 +35,7 @@ http://tanihiro.hatenablog.com/entry/2014/01/09/193720
 http://blog.goo.ne.jp/nakajima_notec/e/bd8c41e86ff5d26cd57c52a6518410ae  
 ではなく  
 http://ruby-rails.hatenadiary.com/entry/20140814/1407994568  
+http://qiita.com/okamos/items/724a4a162dfa9e27754a  
 scopeを使う  
 　  
 ### カーディナリティ
