@@ -62,6 +62,7 @@ params.require(:article).permit({:tag_ids=>[]}
 <% end %>
 ```
 #### submit
+特に違うコントローラや違うアクション内からsubmitボタンで削除したい場合  
 ```ruby
 <%= form_for @user,:url => {:controller => :xxxs, :action => :destroy}, method: :delete do |f| %>
  <%= f.submit '削除する' %>
