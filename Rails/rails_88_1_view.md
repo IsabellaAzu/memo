@@ -50,6 +50,13 @@
 ```ruby
 <%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
+```ruby
+# view
+<%= select_tag 'note[point]', options_for_select(["1", "2", "3", "4", "5"]) %>
+↓
+# controller
+@note.point = params[:note][:point]
+```
 
 #### checkbox 
 ```ruby
