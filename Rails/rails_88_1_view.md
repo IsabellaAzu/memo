@@ -35,18 +35,22 @@
 ```ruby
 <%= f.text_field :title, class: 'hoge' %>
 ```
+
 #### hidden
 ```ruby
 <%= f.hidden_field :title, class: 'hoge', value: => 'hoge' %>
 ```
+
 #### textarea
 ```ruby
 <%= f.text_area :content, class: 'hoge', size: '100x50' %>
 ```
+
 #### select
 ```ruby
 <%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
+
 #### checkbox 
 ```ruby
 <%= f.collection_check_boxes(:article, :tag_ids, Tag.all, :id, :tag_name) do |b| %> 
@@ -55,12 +59,14 @@
 # StrongParameters
 params.require(:article).permit({:tag_ids=>[]}
 ```
+
 #### radio 
 ```ruby
 <%= f.collection_radio_buttons(:article, :type_ids, Type.all, :id, :type_name) do |b| %>
   <%= b.label {b.radio_button + b.text} %>
 <% end %>
 ```
+
 #### submit
 特に違うコントローラや違うアクション内からsubmitボタンで削除したい場合  
 ```ruby
@@ -68,6 +74,7 @@ params.require(:article).permit({:tag_ids=>[]}
  <%= f.submit '削除する' %>
 <% end %>
 ```
+
 #### 新規作成formの作り方~newとbuildの違い~
 http://qiita.com/shizuma/items/5cef6768c5a5d899e54d  
 親の中で子を新規作成など  
