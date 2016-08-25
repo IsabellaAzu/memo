@@ -73,6 +73,7 @@ params.require(:article).permit({:tag_ids=>[]})
 <%= form_for @user,:url => {:controller => :xxxs, :action => :destroy}, method: :delete do |f| %>
  <%= f.submit '削除する' %>
 <% end %>
+# StrongParameters
 params.require(:xxx).permit(:_destroy)
 ```
 
