@@ -57,7 +57,7 @@
   <%= b.label {b.check_box + b.text} %>
 <% end %>
 # StrongParameters
-params.require(:article).permit({:tag_ids=>[]}
+params.require(:article).permit({:tag_ids=>[]})
 ```
 
 #### radio 
@@ -73,6 +73,7 @@ params.require(:article).permit({:tag_ids=>[]}
 <%= form_for @user,:url => {:controller => :xxxs, :action => :destroy}, method: :delete do |f| %>
  <%= f.submit '削除する' %>
 <% end %>
+params.require(:xxx).permit(:_destroy)
 ```
 
 #### 新規作成formの作り方~newとbuildの違い~
