@@ -32,23 +32,23 @@
 ### パーツ基本
 
 #### input
-```
+```ruby
 <%= f.text_field :title, class: 'hoge' %>
 ```
 #### hidden
-```
+```ruby
 <%= f.hidden_field :title, class: 'hoge', value: => 'hoge' %>
 ```
 #### textarea
-```
+```ruby
 <%= f.text_area :content, class: 'hoge', size: '100x50' %>
 ```
 #### select
-```
+```ruby
 <%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
 #### checkbox 
-```
+```ruby
 <%= f.collection_check_boxes(:article, :tag_ids, Tag.all, :id, :tag_name) do |b| %> 
   <%= b.label {b.check_box + b.text} %>
 <% end %>
@@ -56,9 +56,15 @@
 params.require(:article).permit({:tag_ids=>[]}
 ```
 #### radio 
-```
+```ruby
 <%= f.collection_radio_buttons(:article, :type_ids, Type.all, :id, :type_name) do |b| %>
   <%= b.label {b.radio_button + b.text} %>
+<% end %>
+```
+#### submit
+```ruby
+<%= form_for @user,:url => {:controller => :xxxs, :action => :destroy}, method: :delete do |f| %>
+ <%= f.submit '削除する' %>
 <% end %>
 ```
 #### 新規作成formの作り方~newとbuildの違い~
