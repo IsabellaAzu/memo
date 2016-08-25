@@ -47,6 +47,8 @@ i = 1
   i += 1
 }
 ```
-
+　  
+　  
+- - - 
 ## ■includeとjoinのちがい
 http://qiita.com/south37/items/b2c81932756d2cd84d7d  
