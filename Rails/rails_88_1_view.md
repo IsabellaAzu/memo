@@ -57,6 +57,8 @@
 # controller
 @note.point = params[:note][:point]
 ```
+##### Railsでoptgroup付きプルダウンメニューを配列・ハッシュから作成
+http://easyramble.com/rails_grouped_options_for_select.html  
 ##### Ajaxで絞り込んだり
 http://blog.scimpr.com/2016/01/04/rails4-2%E3%81%A7select%E3%82%92%E7%B5%9E%E8%BE%BC%E3%81%A7%E3%81%8D%E3%82%8Bselect2%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E3%80%9Cselect2/  
 
