@@ -55,10 +55,16 @@ Categoryモデルから取得する場合
 controllerに定義する場合  
 ```ruby
 # controller
-@aaa = [1,2,3,4]
-↓
+@aaa = [1,2,3]
 # view
 <%= f.select(:xxx, options_for_select(@aaa) %>
+
+や
+
+# controller
+@answer_labels = [["表示したい文字列",value],["表示したい文字列",value],["表示したい文字列",value]]
+# view
+<%= dua.select(:label, options_for_select(@answer_labels)) %>
 ```
 
 ##### Railsでoptgroup付きプルダウンメニューを配列・ハッシュから作成
