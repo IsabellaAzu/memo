@@ -54,12 +54,12 @@ Categoryモデルから取得する場合
 ```
 controllerに定義する場合  
 ```ruby
+# (1)
 # controller
 @aaa = [1,2,3]
 # view
 <%= f.select(:xxx, options_for_select(@aaa) %>
-
-
+# (2)
 # controller
 @aaa = [["○",1],["×",2],["△",3]]
 # view
