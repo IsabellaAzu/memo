@@ -59,6 +59,8 @@ controllerに定義する場合
 @aaa = [1,2,3]
 # view
 <%= f.select(:xxx, options_for_select(@aaa) %>
+```
+```ruby
 # (2)
 # controller
 @aaa = [["○",1],["×",2],["△",3]]
