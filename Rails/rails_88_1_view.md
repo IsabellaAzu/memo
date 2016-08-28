@@ -47,16 +47,20 @@
 ```
 
 #### select
-```ruby
-<%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
-```
+Categoryモデルから取得する場合  
 ```ruby
 # view
-<%= select_tag 'note[point]', options_for_select(["1", "2", "3", "4", "5"]) %>
-↓
-# controller
-@note.point = params[:note][:point]
+<%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
+controllerに定義する場合  
+```ruby
+# controller
+@aaa = [1,2,3,4]
+↓
+# view
+<%= f.select(:xxx, options_for_select(@aaa) %>
+```
+
 ##### Railsでoptgroup付きプルダウンメニューを配列・ハッシュから作成
 http://easyramble.com/rails_grouped_options_for_select.html  
 ##### Ajaxで絞り込んだり
