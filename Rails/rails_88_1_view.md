@@ -47,12 +47,12 @@
 ```
 
 #### select
-Categoryモデルから取得する場合  
+option内をCategoryモデルから取得する場合  
 ```ruby
 # view
 <%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
-controllerに定義する場合  
+option内をcontrollerに定義する場合  
 ```ruby
 # (1)
 # controller
