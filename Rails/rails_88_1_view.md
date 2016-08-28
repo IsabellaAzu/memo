@@ -59,12 +59,11 @@ controllerに定義する場合
 # view
 <%= f.select(:xxx, options_for_select(@aaa) %>
 
-や
 
 # controller
-@answer_labels = [["表示したい文字列",value],["表示したい文字列",value],["表示したい文字列",value]]
+@aaa = [["○",1],["×",2],["△",3]]
 # view
-<%= dua.select(:label, options_for_select(@answer_labels)) %>
+<%= f.select(:label, @aaa,selected: f.object.label) %>
 ```
 
 ##### Railsでoptgroup付きプルダウンメニューを配列・ハッシュから作成
