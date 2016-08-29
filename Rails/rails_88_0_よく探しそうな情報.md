@@ -131,6 +131,9 @@ http://o.inchiki.jp/obbr/159
 http://miyohide.hatenablog.com/entry/20120510/1336660092  
 
 
+### ユーザーエージェント
+http://qiita.com/nightyknite/items/b2590a69f2e0135756dc  
+　  
 
 ##よく見かけるblog
 
