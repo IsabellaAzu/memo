@@ -75,11 +75,20 @@ http://blog.scimpr.com/2016/01/04/rails4-2%E3%81%A7select%E3%82%92%E7%B5%9E%E8%B
 
 #### checkbox 
 ```ruby
+# 単数1
+<%= check_box_tag :sample %>
+<%= label_tag :sample, 'チェックボックス' %>
+# 複数1
 <%= f.collection_check_boxes(:article, :tag_ids, Tag.all, :id, :tag_name) do |b| %> 
   <%= b.label {b.check_box + b.text} %>
 <% end %>
 # StrongParameters
 params.require(:article).permit({:tag_ids=>[]})
+# 複数2 Categoryモデルから
+<% Category.all.each do |category| %>
+  <%= check_box_tag "product[category_ids][]", category.id, @product.categories.include?(category), id: "product_category_ids_#{category.id}" %>
+  <%= label_tag "product[category_ids][#{category.id}]", category.name %>
+<% end %>
 ```
 
 #### radio 
