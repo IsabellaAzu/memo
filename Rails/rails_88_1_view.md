@@ -115,14 +115,57 @@ params.require(:xxx).permit(:_destroy)
 #### 新規作成formの作り方~newとbuildの違い~
 http://qiita.com/shizuma/items/5cef6768c5a5d899e54d  
 親の中で子を新規作成など  
-```
+```ruby
 
 ```
 　  
 - - - 
 　  
 ## 日付のフォーマット
+```ruby
+_now = Time.current 
+@now = _now.strftime("%Y年%m月%d日 %H時%M分")
+```
 http://ruby-rails.hatenadiary.com/entry/20141226/1419600679
+
+## 日付関連でよく使う
+```ruby
+# 現在日時の取得
+now = Time.current 
+# 昨日
+now.yesterday
+# 翌日
+now.tomorrow
+# 2日前、2日後
+now.ago(2.days)
+now.since(2.days)
+# 前月
+now.prev_month
+# 翌月
+now.next_month
+# 2ヶ月前、2ヶ月後
+now.ago(2.month)
+now.since(2.month)
+# 前年
+now.prev_year
+# 翌年
+now.next_year
+# 2年前、2年後
+now.ago(2.years)
+now.since(2.years)
+# 月初
+now.beginning_of_month
+# 月末
+now.end_of_month
+# 今週の最初
+now.beginning_of_week
+# 今週の末
+now.end_of_week
+# 先週の月曜日
+now.prev_week(:monday)
+# 翌週の月曜日
+now.next_week(:monday)
+```
 　  
 　  
 - - - 
