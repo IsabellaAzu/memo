@@ -122,11 +122,11 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 - - - 
 　  
 ## 日付のフォーマット
+http://docs.ruby-lang.org/ja/2.0.0/class/Time.html#I_STRFTIME
 ```ruby
 _now = Time.current 
 @now = _now.strftime("%Y年%m月%d日 %H時%M分")
 ```
-http://ruby-rails.hatenadiary.com/entry/20141226/1419600679
 
 ## 日付関連でよく使う
 ```ruby
