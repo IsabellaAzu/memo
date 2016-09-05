@@ -1,7 +1,17 @@
 
 # スニペット
-
-## flashメッセージ
+　  
+## error処理
+　  
+### Railsのジェネレータで不要なerror用divを作らせない
+```ruby
+# config/application.rb
+config.action_view.field_error_proc = Proc.new do |html_tag, instance| 
+  html_tag
+end
+```
+　  
+### flashメッセージ
 ```ruby
 # controller
 redirect_to action:'index', notice: 'ログイン成功!!'
