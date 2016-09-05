@@ -29,6 +29,9 @@ redirect_to action:'index', flash: {xxx: 'ログインに成功しました!!'}
 <% end %>
 ```
 
+### Formに入力した値を維持したままリロードする方法
+http://qiita.com/seiya1121/items/cf6b44fae757f6300ada
+
 
 
 
