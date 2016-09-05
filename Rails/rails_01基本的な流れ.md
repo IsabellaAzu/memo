@@ -366,12 +366,19 @@ http://guides.rubyonrails.org/getting_started.html
 
 <a id="ax1_4"></a>
 ##### Railsのジェネレータで不要なファイルを作らせない  
-```
+```ruby
 # config/application.rb
 config.generators do |g|
   g.helper false
   g.stylesheets false
   g.javascripts false
+end
+```
+##### Railsのジェネレータで不要なerror用divを作らせない  
+```ruby
+# config/application.rb
+config.action_view.field_error_proc = Proc.new do |html_tag, instance| 
+  html_tag
 end
 ```
 
