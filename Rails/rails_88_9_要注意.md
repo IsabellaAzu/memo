@@ -26,8 +26,9 @@ Index name 'index_テーブル名_on_ポリモーフィック_id_and_ポリモ�
 　  
 ### AUTOCOMMITしたデータはしっかり削除するように
 http://qiita.com/haracane/items/44b913c300e6c2c943bb
-
+　  
 ### インデックス
 http://qiita.com/kkyouhei/items/e3502ef632c48d94541d
-
-
+　  
+### Railsのキャッシュ
+http://postd.cc/the-complete-guide-to-rails-caching/
