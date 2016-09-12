@@ -6,9 +6,9 @@
 [・controller関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_2_controller.md)  
 [・model関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_3_model.md)  
 [・親子関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_4_親子関連.md)  
-　  
-　  
 
+　  
+　  
 ## railsのソースを参考にしたい！
 http://post.simplie.jp/posts/19  
 　  
