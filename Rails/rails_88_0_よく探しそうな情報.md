@@ -9,8 +9,12 @@
 
 　  
 　  
-## railsのソースを参考にしたい！
+### railsのソースを参考にしたい！
 http://post.simplie.jp/posts/19  
+　  
+　  
+### 新規サービス立ち上げ時にやること
+http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
 　  
 　  
 ### 一括登録方法
