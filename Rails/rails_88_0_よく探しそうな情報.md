@@ -23,7 +23,6 @@ http://post.simplie.jp/posts/19
 　  
 　  
 ## ログ周り
-　  
 ### assetのログを非表示に
 http://rainbowdevil.jp/?p=1074
 ```Ruby
