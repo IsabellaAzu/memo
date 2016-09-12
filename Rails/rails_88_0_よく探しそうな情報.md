@@ -8,6 +8,7 @@
 [・親子関連](https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_4_親子関連.md)  
 　  
 　  
+
 ## railsのソースを参考にしたい！
 http://post.simplie.jp/posts/19  
 　  
