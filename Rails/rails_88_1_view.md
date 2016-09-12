@@ -217,27 +217,9 @@ now.prev_week(:monday)
 # 翌週の月曜日
 now.next_week(:monday)
 ```
-　  
-　  
-- - - 
-## ■Model情報の取得
-```ruby
-# Modelのカラム名一覧を取得
-  <%= debug(モデル名.column_names) %>
-# Modelのカラムの型を取得する
-  <%= debug(モデル名.columns_hash['カラム名'].type) %>
-```
-　  
-　  
-- - - 
-## ■hash内のvalueの最大値のhashを返す
-```ruby
-<% h = {a: 29, b: 23, c: 39, d: 3, e: 39} %>
-<%= debug(h.max_by {|_, v| v }) %># => :c 39
-<%= debug(h.max_by(&:last)[1]) %># => 39
-```
 
-　  
 　  
 - - - 
 ## ■xxx関連
+　  
+　  
