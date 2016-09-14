@@ -12,9 +12,17 @@ http://qiita.com/haruharuharuby/items/fbca14582a22f413f1b9
 - １つのモデルで複数のモデルを操作してしまう  
 - 冗長なコードが複数のモデルまたはコントローラに出てくる  
 - 表示のためだけに、モデルにメソッドを追加する  
-
 　  
-### パフォーマンス
+　  
+- - - 
+## セキュリティ関連
+パスワードはDBでハッシュ化していても簡単に見えてしまう
+### http://qiita.com/kakkunpakkun/items/622a10c825f5fec77ad5
+　  
+　  
+- - - 
+## パフォーマンス関連
+### ActiveRecordでPolymorphicにPreloadする
 http://qiita.com/r7kamura/items/7a31b79f855d7af581ec  
 　  
 ### rakendb:migrateする時、テーブル名、ポリモーフィックなどが長いとerrorになる  （最大62文字まで）
