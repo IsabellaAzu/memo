@@ -1,7 +1,9 @@
 
 # model関連
 　  
-### validate：子オブジェクト(ここではorder)がsaveされるとき検証をおこなう。
+## validate関連
+　  
+### 子オブジェクト(ここではorder)がsaveされるとき検証をおこなう。
 ```ruby
 class Order < ActiveRecord::Base
   belongs_to :customer, validate: true
@@ -11,6 +13,20 @@ class Customer < ActiveRecord::Base
 end
 ```
 　  
+### いろんなvalidate
+```ruby
+class User < ActiveRecord::Base
+  validates :username,
+    presence: true,                     # 必須にしたい！
+    uniqueness: true,                   # URLに使うしユニーク！
+    length: { maximum: 16 },            # あんまり長いのも……
+    format: { with: /\A[a-z0-9]+\z/i }  # やっぱり半角英数字のみだよね！
+end
+```
+　  
+　  
+- - - 
+## 親子関連
 　  
 ### 親オブジェクトで子オブジェクトを編集できるように
 ```ruby
