@@ -56,11 +56,11 @@ count、average、minimum、maximum、sum、readonly、to_sql、explain
 ### カラム追加削除
 ```ruby
 # 書式
-rails g migration Addカラム名Toテーブル名 カラム名:型名
-rails g migration Removeカラム名Fromテーブル名 カラム名:型名
+bundle exec rails g migration Addカラム名Toテーブル名 カラム名:型名
+bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
 # サンプル
-rails g migration AddTagToPosts tag:string
-rails g migration RemoveTagFromPosts tag:string
+bundle exec rails g migration AddTagToPosts tag:string
+bundle exec rails g migration RemoveTagFromPosts tag:string
 # 実行
 rake db:migrate
 ```
