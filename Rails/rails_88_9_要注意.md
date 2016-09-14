@@ -25,6 +25,11 @@ http://qiita.com/haruharuharuby/items/fbca14582a22f413f1b9
 ### ActiveRecordでPolymorphicにPreloadする
 http://qiita.com/r7kamura/items/7a31b79f855d7af581ec  
 　  
+　  
+### 高速化
+http://blog.degita.net/entry/2013/02/20/42  
+　  
+　  
 ### rakendb:migrateする時、テーブル名、ポリモーフィックなどが長いとerrorになる  （最大62文字まで）
 テーブル名、カラム名は短く設計しましょう！  
 ```
@@ -32,9 +37,6 @@ http://qiita.com/r7kamura/items/7a31b79f855d7af581ec
 Index name 'index_テーブル名_on_ポリモーフィック_id_and_ポリモーフィック_type' on table 'テーブル名' is too long; the limit is 62 characters
 ```
 
-### 高速化
-http://blog.degita.net/entry/2013/02/20/42  
-　  
 　  
 ### AUTOCOMMITしたデータはしっかり削除するように
 http://qiita.com/haracane/items/44b913c300e6c2c943bb
