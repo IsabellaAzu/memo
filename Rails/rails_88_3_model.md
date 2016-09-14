@@ -53,8 +53,6 @@ class DecideUserAnswer < ActiveRecord::Base
   belongs_to :answerable, polymorphic: true, touch: true
 end
 ```
-
-
 　  
 　  
 - - - 
@@ -64,22 +62,6 @@ http://ruby-rails.hatenadiary.com/entry/20140724/1406142120
 find、take、first / second / third... / last、find_by、all / find_each / find_in_batcheswhere、order、  
 select、limit / offset、find_or_create_by、find_or_initialize_by、find_by_sql、select_all、group、pluck、ids、exists?、
 count、average、minimum、maximum、sum、readonly、to_sql、explain
-　  
-　  
-- - - 
-## ■Migratoin関連
-　  
-### カラム追加削除
-```ruby
-# 書式
-bundle exec rails g migration Addカラム名Toテーブル名 カラム名:型名
-bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
-# サンプル
-bundle exec rails g migration AddTagToPosts tag:string
-bundle exec rails g migration RemoveTagFromPosts tag:string
-# 実行
-rake db:migrate
-```
 　  
 　  
 - - - 
