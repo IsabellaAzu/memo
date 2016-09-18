@@ -128,6 +128,8 @@ $ bundle install --path vendor/bundle
 　  
 - - - 
 ### 6. Node.jsインストール  
+>http://qiita.com/sinmetal/items/154e81823f386279b33c#2-2  
+http://qiita.com/satoyan419/items/693a84e26a8ad2f0e29e  
 インストール済みか確認する
 ```sh
 $ node -v
@@ -158,16 +160,47 @@ $ source ~/.bash_profile
 #### インストール可能なNode.js一覧確認
 ```sh
 $ nodebrew ls-remote
+
 # 安定版のインストールと適用
 $ nodebrew install-binary stable
 $ nodebrew use stable
+
 # ※Node.jsのインストールで、Node.jsのパッケージ管理ツールのnpmもインストールされるのでバージョンが最新か確認
 $ npm update -g npm
 ```
+
 　  
 　  
 - - - 
-### 7. MySQLをインストール  
+### 7. gulpインストール
+http://qiita.com/kazukichi/items/884a1379eea5918689ed  
+```sh
+$ sudo npm install gulp -g
+```
+#### gulpを使用するプロジェクトフォルダでpackage.jsonの作成
+```sh
+$ npm init
+# ---出力サンプル---
+{
+  "name": "gulp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+}
+```
+
+#### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
+http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
+
+　  
+　  
+- - - 
+### 8. MySQLをインストール  
 
 > 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/  
@@ -202,7 +235,7 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 　  
 　  
 - - - 
-### 8. その他インストール
+### 9. その他インストール
 
 ##### imagemagick（要確認）  
 ```sh
