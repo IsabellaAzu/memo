@@ -134,8 +134,10 @@ http://qiita.com/satoyan419/items/693a84e26a8ad2f0e29e
 ```sh
 $ node -v
 ```
+
 #### nodebrewでNode.jsをバージョン管理
 nodebrewでNode.jsのインストールやバージョン管理をする。公式サイトからNode.jsをインストールしない。  
+
 #### すでに公式サイトからインストールしてしまった場合
 ```sh
 $ curl -o uninstall-node.sh https://gist.githubusercontent.com/nicerobot/2697848/raw/uninstall-node.sh
