@@ -175,9 +175,13 @@ $ npm update -g npm
 　  
 - - - 
 ### 7. gulpインストール
+> Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる
 http://qiita.com/kazukichi/items/884a1379eea5918689ed  
+http://qiita.com/puttyo_bubu/items/225081f767d785277022  
+http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
+
 ```sh
-$ sudo npm install gulp -g
+$ sudo npm install -g gulp-cli
 ```
 #### gulpを使用するプロジェクトフォルダでpackage.jsonの作成
 ```sh
@@ -194,6 +198,7 @@ $ npm init
   "author": "",
   "license": "ISC",
 }
+
 ```
 
 #### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
