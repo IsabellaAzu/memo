@@ -129,10 +129,24 @@ $ bundle install --path vendor/bundle
 　  
 - - - 
 ### 6. nodeインストール  
-
-> 参考  
-http://nodejs.org
-
+インストール済みか確認する
+```
+$ node -v
+```
+#### nodebrewでNode.jsをバージョン管理
+nodebrewでNode.jsのインストールやバージョン管理をする。公式サイトからNode.jsをインストールしない。  
+#### すでに公式サイトからインストールしてしまった場合
+```
+$ curl -o uninstall-node.sh https://gist.githubusercontent.com/nicerobot/2697848/raw/uninstall-node.sh
+$ chmod u+x uninstall-node.sh 
+$ ./uninstall-node.sh 
+$ rm uninstall-node.sh
+$ sudo rm -rf /usr/local/include/node
+$ sudo rm -rf /usr/local/lib/dtrace
+$ rm -rf ~/.node-gyp
+$ rm -rf ~/.npm
+$ rm -rf ~/.sourcemint
+```
 　  
 　  
 - - - 
