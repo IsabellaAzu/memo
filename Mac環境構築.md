@@ -127,7 +127,7 @@ $ bundle install --path vendor/bundle
 　  
 　  
 - - - 
-### 6. nodeインストール  
+### 6. Node.jsインストール  
 インストール済みか確認する
 ```
 $ node -v
@@ -155,7 +155,16 @@ $ curl -L git.io/nodebrew | perl - setup
 ```
 $ source ~/.bash_profile
 ```
-
+#### インストール可能なNode.js一覧確認
+```
+$ nodebrew ls-remote
+# 安定版のインストールと適用
+$ nodebrew install-binary stable
+$ nodebrew use stable
+# ※Node.jsのインストールで、Node.jsのパッケージ管理ツールのnpmもインストールされるのでバージョンが最新か確認
+$ npm update -g npm
+```
+　  
 　  
 - - - 
 ### 7. MySQLをインストール  
