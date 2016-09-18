@@ -69,8 +69,7 @@ $ brew doctor
 $ brew -v
 $ brew update
 ```
-※むやみにbrew upgradeするのは危険!?  
-　  
+
 　  
 - - - 
 ### 4. rbenvインストール  
@@ -147,7 +146,16 @@ $ rm -rf ~/.node-gyp
 $ rm -rf ~/.npm
 $ rm -rf ~/.sourcemint
 ```
-　  
+#### nodebrewのインストール
+```
+$ curl -L git.io/nodebrew | perl - setup
+（「export PATH=$HOME/.nodebrew/current/bin:$PATH」を/.bash_profileに書き込めと言われる。）
+```
+#### 上記を追記して適用して、nodebrewのインストール完了
+```
+$ source ~/.bash_profile
+```
+
 　  
 - - - 
 ### 7. MySQLをインストール  
