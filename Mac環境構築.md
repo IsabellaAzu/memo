@@ -156,7 +156,7 @@ $ curl -L git.io/nodebrew | perl - setup
 $ source ~/.bash_profile
 ```
 #### インストール可能なNode.js一覧確認
-```
+```sh
 $ nodebrew ls-remote
 # 安定版のインストールと適用
 $ nodebrew install-binary stable
