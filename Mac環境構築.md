@@ -36,23 +36,23 @@ http://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa
 ・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
 
 ##### SSH 公開鍵の作成  
-```
+```sh
 $ ssh-keygen
 ```
 ※「The key fingerprint is:」が出てくるまで[Enter]  
 
 ##### 公開鍵の確認  
-```
+```sh
 $ cat ~/.ssh/id_rsa.pub
 ```
 
 ##### クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
-```
+```sh
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 ##### 接続テスト  
-```
+```sh
 $ ssh -T git@github.com
 ```
 　  
@@ -63,7 +63,7 @@ $ ssh -T git@github.com
 > 参考  
 http://brew.sh/index_ja.html  
 
-```
+```sh
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
 $ brew -v
@@ -74,19 +74,19 @@ $ brew update
 - - - 
 ### 4. rbenvインストール  
 
-```
+```sh
 $ brew install rbenv ruby-build
 ```
 
 ##### rbenvのパスを追加  
-```
+```sh
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
 ##### rubyをインストール v2.1.5  
-```
+```sh
 $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install 2.1.5 #バージョンを指定してインストール
 $ rbenv rehash
@@ -97,14 +97,14 @@ $ ruby -v
 
 ##### rubyのバージョンアップ
 rbenv install -lでインストール可能リストに最新版のrubyが無い場合
-```
+```sh
 $ brew update
 $ brew upgrade ruby-build
 $ rbenv install -l
 ```
 
 ##### 毎回rbenv rehashしなくて済ませる  
-```
+```sh
 $ brew install rbenv-gem-rehash
 ```
 　  
@@ -112,16 +112,16 @@ $ brew install rbenv-gem-rehash
 - - - 
 ### 5. 重要なgemのインストール（グローバルに入れるのを限定する）
 rbenv環境下のRuby環境に追加インストールするGemはbundlerのみ  
-```
+```sh
 $ gem install bundler --no-ri --no-rdoc
 　※riとかrdocのインストールに時間がかかる対策  
-　>http://boscono.hatenablog.com/entry/2014/08/10/155524  
+　http://boscono.hatenablog.com/entry/2014/08/10/155524  
 　  
-#各プロジェクトフォルダで  
+# 各プロジェクトフォルダで  
 $ bundle init  
 すると、〜/project/GemfileでGemfileを作成してくれる  
 　  
-#ディレクトリのgemfileを元に各種gemをインストール  
+# ディレクトリのgemfileを元に各種gemをインストール  
 $ bundle install --path vendor/bundle  
 ```
 　  
@@ -129,13 +129,13 @@ $ bundle install --path vendor/bundle
 - - - 
 ### 6. Node.jsインストール  
 インストール済みか確認する
-```
+```sh
 $ node -v
 ```
 #### nodebrewでNode.jsをバージョン管理
 nodebrewでNode.jsのインストールやバージョン管理をする。公式サイトからNode.jsをインストールしない。  
 #### すでに公式サイトからインストールしてしまった場合
-```
+```sh
 $ curl -o uninstall-node.sh https://gist.githubusercontent.com/nicerobot/2697848/raw/uninstall-node.sh
 $ chmod u+x uninstall-node.sh 
 $ ./uninstall-node.sh 
@@ -147,12 +147,12 @@ $ rm -rf ~/.npm
 $ rm -rf ~/.sourcemint
 ```
 #### nodebrewのインストール
-```
+```sh
 $ curl -L git.io/nodebrew | perl - setup
 （「export PATH=$HOME/.nodebrew/current/bin:$PATH」を/.bash_profileに書き込めと言われる。）
 ```
 #### 上記を追記して適用して、nodebrewのインストール完了
-```
+```sh
 $ source ~/.bash_profile
 ```
 #### インストール可能なNode.js一覧確認
@@ -173,7 +173,7 @@ $ npm update -g npm
 http://howtohp.com/2011/08/20/homebrew-mysql/  
 http://tsuchikazu.net/mac_rail_setup/  
 
-```
+```sh
 $ brew install mysql
 $ brew info mysql #インストール後のメッセージ確認
 $ brew link mysql #Warning: Already linked:が出たら下記を実行
@@ -205,7 +205,7 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 ### 8. その他インストール
 
 ##### imagemagick（要確認）  
-```
+```sh
 $ brew install imagemagick  
 $ brew unlink imagemagick && brew link imagemagick
 $ cd /usr/local/Cellar/imagemagick/6.8.0-10/lib
