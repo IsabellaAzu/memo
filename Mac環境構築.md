@@ -228,6 +228,9 @@ $ npm init
 
 ```
 
+#### gulpで動かすもの
+http://blog.webcreativepark.net/2014/05/12-183033.html  
+
 #### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
 http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
 
