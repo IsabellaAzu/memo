@@ -179,10 +179,36 @@ $ npm update -g npm
 http://qiita.com/kazukichi/items/884a1379eea5918689ed  
 http://qiita.com/puttyo_bubu/items/225081f767d785277022  
 http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
+https://teratail.com/questions/13378  
 
 ```sh
-$ sudo npm install -g gulp-cli
+$ npm install -g gulp
 ```
+
+#### こういうerrorが出たら
+https://github.com/npm/npm/issues/13055  
+https://github.com/npm/npm/issues/3701  
+```sh
+$ gulp -v
+# => gulp: command not found
+```
+
+#### 下記を確認
+```sh
+# npmのアップデート
+$ npm update
+```
+```sh
+# pathの確認（~/.bash_profile）
+$ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH'
+$ source ~/.bash_profile
+```
+```sh
+# gulpバージョンの確認
+$ gulp -v
+# => [18:16:03] CLI version 3.9.1
+```
+
 #### gulpを使用するプロジェクトフォルダでpackage.jsonの作成
 ```sh
 $ npm init
