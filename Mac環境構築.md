@@ -175,7 +175,7 @@ $ npm update -g npm
 　  
 - - - 
 ### 7. gulpインストール
-> Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる
+Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる  
 http://qiita.com/kazukichi/items/884a1379eea5918689ed  
 http://qiita.com/puttyo_bubu/items/225081f767d785277022  
 http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
@@ -194,6 +194,7 @@ $ gulp -v
 ```
 
 #### 下記を確認
+https://teratail.com/questions/13378  
 ```sh
 # npmのアップデート
 $ npm update
