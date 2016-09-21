@@ -11,6 +11,9 @@ config.action_view.field_error_proc = Proc.new do |html_tag, instance|
 end
 ```
 　  
+### 入力内容の正規表現チェック
+https://gist.github.com/nashirox/38323d5b51063ede1d41  
+　  
 ### flashメッセージ
 ```ruby
 # controller
