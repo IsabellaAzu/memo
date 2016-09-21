@@ -48,3 +48,9 @@ http://qiita.com/kkyouhei/items/e3502ef632c48d94541d
 　  
 ### Railsのキャッシュ
 http://postd.cc/the-complete-guide-to-rails-caching/
+　  
+　  
+- - - 
+## 運用関連
+### ファットコントローラ問題
+http://qiita.com/seri_k/items/0b8056bb2b897f26854e
