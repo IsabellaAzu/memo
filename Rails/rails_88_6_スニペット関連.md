@@ -13,6 +13,7 @@ end
 　  
 ### 入力内容の正規表現チェック
 https://gist.github.com/nashirox/38323d5b51063ede1d41  
+http://qiita.com/kenju/items/d281049303f7d1d97998  
 　  
 ### flashメッセージ
 ```ruby
