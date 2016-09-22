@@ -12,8 +12,8 @@ end
 ```
 　  
 ### 入力内容の正規表現チェック
-http://www.megasoft.co.jp/mifes/seiki/meta.html#replace  
 http://qiita.com/akatsuki174/items/81549c3d2d824b986cc8  
+http://www.megasoft.co.jp/mifes/seiki/meta.html#replace  
 https://gist.github.com/nashirox/38323d5b51063ede1d41  
 http://qiita.com/shizuma/items/4279104026964f1efca6  
 http://qiita.com/kenju/items/d281049303f7d1d97998  
