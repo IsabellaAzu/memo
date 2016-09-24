@@ -1,17 +1,5 @@
 
 # 要注意
-
-
-### モデルの初期化処理を書きたい場合の注意
-http://o.inchiki.jp/obbr/127  
-・after_initialize、after_find  
-・findメソッドはRails4からは廃止　→　whereメソッドに切り替え  
-　  
-### よくある頭を悩ます３つの問題
-http://qiita.com/haruharuharuby/items/fbca14582a22f413f1b9
-- １つのモデルで複数のモデルを操作してしまう  
-- 冗長なコードが複数のモデルまたはコントローラに出てくる  
-- 表示のためだけに、モデルにメソッドを追加する  
 　  
 
 - - - 
@@ -36,6 +24,22 @@ http://blog.degita.net/entry/2013/02/20/42
 # errorログ
 Index name 'index_テーブル名_on_ポリモーフィック_id_and_ポリモーフィック_type' on table 'テーブル名' is too long; the limit is 62 characters
 ```
+
+
+
+
+### モデルの初期化処理を書きたい場合の注意
+http://o.inchiki.jp/obbr/127  
+・after_initialize、after_find  
+・findメソッドはRails4からは廃止　→　whereメソッドに切り替え  
+　  
+### よくある頭を悩ます３つの問題
+http://qiita.com/haruharuharuby/items/fbca14582a22f413f1b9
+- １つのモデルで複数のモデルを操作してしまう  
+- 冗長なコードが複数のモデルまたはコントローラに出てくる  
+- 表示のためだけに、モデルにメソッドを追加する  
+
+
 
 　  
 ### AUTOCOMMITしたデータはしっかり削除するように
