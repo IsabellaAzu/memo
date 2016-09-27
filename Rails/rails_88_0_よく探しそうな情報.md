@@ -27,6 +27,7 @@ http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
 [参考6：fields_for、accepts_nested_attributes_forを使う](http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations)
 　  
 　  
+- - - 
 ## ログ周り
 ### assetのログを非表示に
 http://rainbowdevil.jp/?p=1074
