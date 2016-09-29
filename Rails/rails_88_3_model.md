@@ -42,12 +42,8 @@ class Order < ActiveRecord::Base
 end
 ```
 
-```ruby
-# delete：
-```
 
-
-### touch：子オブジェクトがsaveされたりdestroyされたりしたとき、親オブジェクトの updated_at や updated_onにカレントタイムが設定させる。
+### touch：子オブジェクトがsaveされたりdestroyされたりしたとき、親オブジェクトのupdated_atやupdated_onにカレントタイムを設定させる。
 ```ruby
 class DecideUserAnswer < ActiveRecord::Base
   belongs_to :answerable, polymorphic: true, touch: true
