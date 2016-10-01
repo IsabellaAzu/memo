@@ -23,7 +23,16 @@ https://gist.github.com/nashirox/38323d5b51063ede1d41
 http://qiita.com/shizuma/items/4279104026964f1efca6  
 http://qiita.com/kenju/items/d281049303f7d1d97998  
 　  
-　  
+#### サンプル
+```
+# 空白文字([\t\r\n\f])と全角スペース
+/^[\s　]+$/ =~ str
+# 入力無し
+/\A\z/ =~ str1
+# 半角の大文字小文字の英数字
+/^[a-zA-Z0-9]+$/ =~ str
+```
+
 - - - 
 ### flashメッセージ
 ```ruby
