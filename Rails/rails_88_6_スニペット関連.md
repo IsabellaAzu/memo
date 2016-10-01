@@ -32,6 +32,7 @@ http://qiita.com/kenju/items/d281049303f7d1d97998
 # 半角の大文字小文字の英数字
 /^[a-zA-Z0-9]+$/ =~ str
 ```
+　  
 
 - - - 
 ### flashメッセージ
