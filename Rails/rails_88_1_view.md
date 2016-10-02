@@ -128,7 +128,7 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 ```
 　  
 - - - 
-　  
+<a id="anc_0２"></a>
 ## 日付関連
 　  
 ### フォーマット
