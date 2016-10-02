@@ -7,8 +7,8 @@
 
 　  
 　  
-- - - 
 <a id="anc_01"></a>
+- - - 
 ## ■form関連
 [基本：【Rails】formヘルパーを徹底的に理解する](http://qiita.com/shunsuke227ono/items/7accec12eef6d89b0aa9)
 
@@ -124,8 +124,8 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 
 ```
 　  
-- - - 
 <a id="anc_02"></a>
+- - - 
 ## 日付関連
 　  
 ### フォーマット
