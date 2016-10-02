@@ -1,9 +1,17 @@
 
 # view関連
+>index
+・<a href="anc_01">form関連</a><br>
+・<a href="anc_02">日付関連</a><br>
+・<a href="anc_03"></a><br>
+・<a href="anc_04"></a><br>
+・<a href="anc_05"></a><br>
+・<a href="anc_06"></a><br>
 
 　  
 　  
 - - - 
+<a id="anc_01"></a>
 ## ■form関連
 [基本：【Rails】formヘルパーを徹底的に理解する](http://qiita.com/shunsuke227ono/items/7accec12eef6d89b0aa9)
 
@@ -121,7 +129,9 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 - - - 
 　  
-## 日付のフォーマット
+## 日付関連
+　  
+### フォーマット
 http://docs.ruby-lang.org/ja/2.0.0/class/Time.html#I_STRFTIME
 ```ruby
 _now = Time.current 
@@ -179,7 +189,7 @@ _: 空白埋めにする
 数値: 表示桁数を指定する
 ```
 
-## 日付関連でよく使う
+## よく使う
 ```ruby
 # 現在日時の取得
 now = Time.current 
