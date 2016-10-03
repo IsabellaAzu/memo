@@ -8,7 +8,7 @@ controllerはRailsアプリ自体の成長に伴って一番汚れやすい部�
 ## ■debug関連
 ### controllerに記載してxxxの値を、logで確認できる
 ```ruby
-  logger.debug(decide_user_params["xxx"])
+logger.debug(decide_user_params["xxx"])
 ```
 　  
 - - - 
