@@ -51,5 +51,15 @@ i = 1
 　  
 　  
 - - - 
-## ■includeとjoinのちがい
-http://qiita.com/south37/items/b2c81932756d2cd84d7d  
+## ■update時にparamsの内容を書き換えて更新する
+http://stackoverflow.com/questions/18640557/update-params-in-ruby-on-rails-controller  
+```ruby
+def update
+  checked_params = xxx_params.clone
+  if true
+    checked_params[:yyy] = '上書きしたいもの'
+  end
+  @xxx.update_attributes(checked_params)
+end
+```
+
