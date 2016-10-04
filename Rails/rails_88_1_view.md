@@ -33,12 +33,12 @@
 ```
 ⇒ params[:article]
 　  
-### fields_for内でソートしたい
+### fields_for内で:yyysのテーブルのデータを:sort_orderでソートしたい
 ```ruby
 # 変更後
-<% f.fields_for :details do |detail| %>
+<% f.fields_for :yyys do |yyy| %>
 # 変更後
-<% f.fields_for :details, @accept.details.sort_by(&:item_order) do |detail| %>
+<% f.fields_for :yyys, @xxx.yyys.sort_by(&:sort_order) do |yyy| %>
 ```
 
 ### パーツ基本
