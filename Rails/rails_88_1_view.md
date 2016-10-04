@@ -32,7 +32,14 @@
 <% end %>
 ```
 ⇒ params[:article]
-
+　  
+### fields_for内でソートしたい
+```ruby
+# 変更後
+<% f.fields_for :details do |detail| %>
+# 変更後
+<% f.fields_for :details, @accept.details.sort_by(&:item_order) do |detail| %>
+```
 
 ### パーツ基本
 
