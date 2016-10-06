@@ -12,7 +12,7 @@
 　  
 ### railsのソースを参考にしたい！
 http://post.simplie.jp/posts/19  
-　  
+http://bojovs.com/2012/04/24/ruby-coding-style/  
 　  
 ### 新規サービス立ち上げ時にやること
 http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
