@@ -142,8 +142,13 @@ http://miyohide.hatenablog.com/entry/20120510/1336660092
 ### デバイスのOS、ユーザーエージェント
 https://htaccess.cman.jp/useragent/os/  
 http://qiita.com/nightyknite/items/b2590a69f2e0135756dc  
-　  
 
+
+## OS、制作環境アップデートで
+### localでMySQLが起動できない
+http://qiita.com/fujitora/items/d341c52706d1954cae28  
+http://qiita.com/carotene512/items/e00076fe3990b9178cc0  
+　  
 ##よく見かけるblog
 
 酒と泪とRubyとRailsと  
