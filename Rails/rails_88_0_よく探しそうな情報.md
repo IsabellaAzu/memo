@@ -13,6 +13,8 @@
 ### railsのソースを参考にしたい！
 http://post.simplie.jp/posts/19  
 http://bojovs.com/2012/04/24/ruby-coding-style/  
+酒と泪とRubyとRailsと  
+http://morizyun.github.io/  
 　  
 ### 新規サービス立ち上げ時にやること
 http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
@@ -156,7 +158,3 @@ https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-cap
 Rubyを一度消して再インストールすれば解決  
 http://kusu.hateblo.jp/entry/2015/05/12/181134  
 
-## よく見かけるblog
-
-酒と泪とRubyとRailsと  
-http://morizyun.github.io/
