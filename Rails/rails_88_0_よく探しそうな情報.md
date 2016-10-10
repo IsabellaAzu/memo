@@ -149,7 +149,11 @@ http://qiita.com/nightyknite/items/b2590a69f2e0135756dc
 http://qiita.com/fujitora/items/d341c52706d1954cae28  
 http://qiita.com/carotene512/items/e00076fe3990b9178cc0  
 　  
-##よく見かけるblog
+### MySQLの再インストール（homebrew）
+https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
+
+
+## よく見かけるblog
 
 酒と泪とRubyとRailsと  
 http://morizyun.github.io/
