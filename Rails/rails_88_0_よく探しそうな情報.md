@@ -151,7 +151,10 @@ http://qiita.com/carotene512/items/e00076fe3990b9178cc0
 　  
 ### MySQLの再インストール（homebrew）
 https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
-
+　  
+### rails sで「/bin/rails:6: warning: previous definition of APP_PATH was here」エラー
+Rubyを一度消して再インストールすれば解決  
+http://kusu.hateblo.jp/entry/2015/05/12/181134  
 
 ## よく見かけるblog
 
