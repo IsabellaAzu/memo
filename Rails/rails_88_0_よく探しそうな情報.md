@@ -147,14 +147,20 @@ http://qiita.com/nightyknite/items/b2590a69f2e0135756dc
 　  
 - - - 
 ## OS、制作環境アップデートで
-### localでMySQLが起動できない
+### (1)localでMySQLが起動できない
 http://qiita.com/fujitora/items/d341c52706d1954cae28  
 http://qiita.com/carotene512/items/e00076fe3990b9178cc0  
 　  
-### MySQLの再インストール（homebrew）
+### (2)MySQLの再インストール（homebrew）
 https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
 　  
-### rails sで「/bin/rails:6: warning: previous definition of APP_PATH was here」エラー
+### (3)rails sで「/bin/rails:6: warning: previous definition of APP_PATH was here」エラー
 Rubyを一度消して再インストールすれば解決  
 http://kusu.hateblo.jp/entry/2015/05/12/181134  
-
+　  
+### (4)プロジェクトいGemをインストールできたが、gem mysql2 でエラー
+```
+$ bundle install --path vendor/bundle
+```
+gem mysql2のバージョンを指定する
+http://qiita.com/miyukiw/items/a0e00028ec5ac5c6beb0  
