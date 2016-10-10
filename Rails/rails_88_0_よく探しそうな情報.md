@@ -164,3 +164,4 @@ $ bundle install --path vendor/bundle
 ```
 gem mysql2のバージョンを指定する
 http://qiita.com/miyukiw/items/a0e00028ec5ac5c6beb0  
+MySQL5.7からMySQL5.6にダウングレードする？（OSX　Yosemite 10.10.5）  
