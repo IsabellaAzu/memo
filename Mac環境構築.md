@@ -241,6 +241,7 @@ var browserSync =require('browser-sync');
 gulp.task('default', ['browser-sync']);
 gulp.task('browser-sync', function() {
     browserSync({
+        port:1111,
         server: {
              baseDir: "./app/"       //対象ディレクトリ
             ,index  : "index.html"      //インデックスファイル
