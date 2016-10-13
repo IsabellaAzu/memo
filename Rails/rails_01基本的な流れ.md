@@ -24,9 +24,9 @@ http://qiita.com/imaimiami/items/3d91551b8b20208f0024
 # インストール
 $ npm install -g browser-sync
 # rails起動
-$ bundle exec rails s
+$ bundle exec rails s -p 1111
 $ 同期
-browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/*.css.*","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"
+browser-sync start --proxy localhost:1111 --files **/*
 ```
 
 
