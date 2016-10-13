@@ -228,6 +228,9 @@ $ npm init
 
 ```
 
+#### サックっとbrowser-syncを設定
+http://qiita.com/itoz/items/2bd246606c69c33684e8  
+　  
 #### gulpで動かすもの
 http://blog.webcreativepark.net/2014/05/12-183033.html  
 
