@@ -263,7 +263,10 @@ gulp.task('default', ['browser-sync'], function () {
     gulp.watch("./public/res/js/*.js",   ['bs-reload']);
 });
 ```
-
+#### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
+http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
+　  
+　  
 #### gulpで動かすもの
 http://blog.webcreativepark.net/2014/05/12-183033.html  
 
