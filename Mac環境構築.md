@@ -228,11 +228,24 @@ $ npm init
 
 ```
 
-#### サックっとbrowser-syncを設定
+
+#### サックっとbrowser-syncなどを設定
 http://qiita.com/itoz/items/2bd246606c69c33684e8  
 projectディレクトリで  
 ```sh
-$ npm install browser-sync
+$ sudo npm install browser-sync
+$ sudo npm install gulp-autoprefixer
+$ sudo npm install gulp-csso
+$ sudo npm install gulp-if
+$ sudo npm install gulp-imagemin
+$ sudo npm install gulp-jshint
+$ sudo npm install gulp-load-plugins
+$ sudo npm install gulp-minify-html
+$ sudo npm install gulp-ruby-sass
+$ sudo npm install gulp-uglify
+$ sudo npm install gulp-useref
+$ sudo npm install jshint-stylish
+$ sudo npm install run-sequence
 ```
 各種設定ファイルgulpfile.jsに設定を  
 ```
