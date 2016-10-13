@@ -230,7 +230,39 @@ $ npm init
 
 #### サックっとbrowser-syncを設定
 http://qiita.com/itoz/items/2bd246606c69c33684e8  
-　  
+projectディレクトリで  
+```sh
+$ npm install browser-sync
+```
+各種設定ファイルgulpfile.jsに設定を  
+```
+var gulp = require('gulp');
+var browserSync =require('browser-sync');
+gulp.task('default', ['browser-sync']);
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+             baseDir: "./app/"       //対象ディレクトリ
+            ,index  : "index.html"      //インデックスファイル
+        }
+    });
+});
+
+/*
+ブラウザリロード */
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
+/*
+監視ディレクトリ */
+gulp.task('default', ['browser-sync'], function () {
+    gulp.watch("./app/view/*.erb",       ['bs-reload']);
+    gulp.watch("./public/res/css/*.css", ['bs-reload']);
+    gulp.watch("./public/res/js/*.js",   ['bs-reload']);
+});
+```
+
 #### gulpで動かすもの
 http://blog.webcreativepark.net/2014/05/12-183033.html  
 
