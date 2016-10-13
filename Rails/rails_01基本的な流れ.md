@@ -18,6 +18,16 @@ $ rails s # rails serverの省略形
 $ rails s -p 8888 #localhost:8888のポート番号で起動
 $ rake db:create
 ```
+#### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
+http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
+```sh
+# インストール
+$ npm install -g browser-sync
+# rails起動
+$ bundle exec rails s
+$ 同期
+browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/*.css.*","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"
+```
 
 
 ### 2. 便利なgemをGemfileに追記（Pry等）
