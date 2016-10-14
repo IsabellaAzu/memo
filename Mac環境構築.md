@@ -240,6 +240,9 @@ $ sudo npm install gulp-if
 $ sudo npm install gulp-imagemin
 $ sudo npm install gulp-jshint
 $ sudo npm install gulp-load-plugins
+
+# エラーが起きてもwatchさせているタスクを中断させない
+$ sudo npm install gulp-plumber
 $ sudo npm install gulp-minify-html
 $ sudo npm install gulp-ruby-sass
 $ sudo npm install gulp-uglify
