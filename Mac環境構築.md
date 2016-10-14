@@ -240,9 +240,7 @@ $ sudo npm install gulp-if
 $ sudo npm install gulp-imagemin
 $ sudo npm install gulp-jshint
 $ sudo npm install gulp-load-plugins
-
-# エラーが起きてもwatchさせているタスクを中断させない
-$ sudo npm install gulp-plumber
+$ sudo npm install gulp-plumber # エラーが起きてもwatchさせているタスクを中断させない
 $ sudo npm install gulp-minify-html
 $ sudo npm install gulp-ruby-sass
 $ sudo npm install gulp-uglify
@@ -252,31 +250,56 @@ $ sudo npm install run-sequence
 ```
 各種設定ファイルgulpfile.jsに設定を  
 ```
+
+'use strict';
+
+var SCSS_SRC = 'public/res/scss/**/*.scss';
+var CSS_DEST = 'public/res/css/';
+
 var gulp = require('gulp');
-var browserSync =require('browser-sync');
-gulp.task('default', ['browser-sync']);
-gulp.task('browser-sync', function() {
-    browserSync({
-        port:1111,
-        server: {
-             baseDir: "./app/"       //対象ディレクトリ
-            ,index  : "index.html"      //インデックスファイル
-        }
+
+/* scss自動コンパイル */
+var compass = require('gulp-compass');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+var plumber = require('gulp-plumber'); // コンパイルエラーが出てもwatchを止めない
+
+// compass
+gulp.task('compass', function(){
+    gulp.src(SCSS_SRC)
+      .pipe(plumber())
+      .pipe(compass({
+        config_file: 'public/res/config.rb',
+        comments: false,
+        css: CSS_DEST,
+        sass: 'public/res/scss/'
+    }));
+});
+
+// css-min
+gulp.task('cssmin', function () {
+  gulp.src(CSS_DEST+'/**/*.css')
+  .pipe(cssmin())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('public/res/css_min/'));
+});
+
+
+/**
+ * watch
+ * watchでcompassを自動で書きだす
+ */
+gulp.task('watch', function(){
+    gulp.watch(SCSS_SRC, function(event) {
+        gulp.run('compass');
+    });
+    gulp.watch(CSS_DEST+'/**/*.css', function(event) {
+        gulp.run('cssmin');
     });
 });
-
-/*
-ブラウザリロード */
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
-
-/*
-監視ディレクトリ */
-gulp.task('default', ['browser-sync'], function () {
-    gulp.watch("./app/view/*.erb",       ['bs-reload']);
-    gulp.watch("./public/res/css/*.css", ['bs-reload']);
-    gulp.watch("./public/res/js/*.js",   ['bs-reload']);
+  
+gulp.task('default', function(){
+    gulp.run('watch');
 });
 ```
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
