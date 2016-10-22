@@ -305,7 +305,10 @@ gulp.task('default', function(){
 ```
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
 http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
-　  
+```
+$ browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/*.css.*","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"
+```
+
 　  
 #### gulpで動かすもの
 http://blog.webcreativepark.net/2014/05/12-183033.html  
