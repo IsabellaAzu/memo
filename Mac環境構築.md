@@ -231,6 +231,8 @@ $ npm init
 
 #### サックっとbrowser-syncなどを設定
 http://qiita.com/itoz/items/2bd246606c69c33684e8  
+https://h2ham.net/gulp-basic　　
+https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/　　
 projectディレクトリで  
 ```sh
 $ sudo npm install browser-sync
