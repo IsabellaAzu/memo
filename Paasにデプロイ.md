@@ -31,6 +31,8 @@ $ git clone sshキーの登録したやつ
 　$ git remote -v
 　# リモートリポジトリの設定
 　$ git remote add push時の名前 https://ユーザー名@bitbucket.org/ユーザー名/リポジトリ名.git
+　# originの上書き
+  $ git remote set-url origin リポジトリURL
 ```
 ・ドキュメントをインストールしない設定
 ```
