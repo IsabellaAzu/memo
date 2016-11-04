@@ -208,6 +208,8 @@ Project.all # Projectを全部見ることができる
 # controller名は最初大文字の複数形
 $ rails g controller Projects
 $ rails g controller Projects --no-helper --no-assets # 無駄な helper や assets を生成しない方法  
+# 特定おフォルダ以下に作成する場合は、  
+$ rails g controller aaa::Projects --no-helper --no-assets  
 ```
 
 
