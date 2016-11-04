@@ -179,7 +179,7 @@ https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDc
 ### 1_2. データベース作成(development/test/productionのすべてを作成)  
 database.ymlの情報を元にテーブルを作成  
 ```
-$ rake db:migrate
+$ rake db:create db:migrate
 
 $ rails db # 今使っているDBを確認
 $ .schema # dbの中身を確認
