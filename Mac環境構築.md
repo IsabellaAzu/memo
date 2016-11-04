@@ -235,7 +235,11 @@ https://h2ham.net/gulp-basic
 https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/  
 projectディレクトリで  
 ```sh
-# 必要なものをインストール
+
+# localのproject単位もgulpをインストール
+$ sudo npm install gulp
+
+# 必要なgulp関連ツールをインストール
 $ sudo npm install browser-sync
 $ sudo npm install gulp-autoprefixer
 $ sudo npm install gulp-csso
