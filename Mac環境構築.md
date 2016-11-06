@@ -241,13 +241,17 @@ $ sudo npm install gulp
 
 # 必要なgulp関連ツールをインストール
 $ sudo npm install browser-sync
+$ sudo npm install gulp-changed
+$ sudo npm install gulp-compass
+$ sudo npm install gulp-cssmin
+$ sudo npm install gulp-rename
+$ sudo npm install gulp-plumber
 $ sudo npm install gulp-autoprefixer
 $ sudo npm install gulp-csso
 $ sudo npm install gulp-if
 $ sudo npm install gulp-imagemin
 $ sudo npm install gulp-jshint
 $ sudo npm install gulp-load-plugins
-$ sudo npm install gulp-plumber # エラーが起きてもwatchさせているタスクを中断させない
 $ sudo npm install gulp-ruby-sass
 $ sudo npm install gulp-uglify
 $ sudo npm install gulp-useref
