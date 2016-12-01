@@ -254,9 +254,9 @@ $ heroku open
 ```
 $ heroku logs --tail
 ```
-
+　  
 - - - 
-
+　  
 ### Herokuあるある
 
 ##### アプリは５個までしか作れない
@@ -278,7 +278,8 @@ $ heroku create
 
 * MySQLに登録したデータ（テキスト、画像など）は消える
 　  
-- - -
+- - - 
+　  
 ### 無料で使えそうなPaas  
 
 #### Heroku  
