@@ -279,12 +279,13 @@ $ heroku create
 * MySQLに登録したデータ（テキスト、画像など）は消える
 　  
 - - -
-### 無料で使えそうなPaas
-#### Heroku
-　１日６時間休む必要がある
-#### OpenShift(Next)：まだベータ版
-　Dockerで（使いづらい）、
-#### Azure
-　なんか良いかも！
-#### Pivotal
-　無料かと思ったら、60日間freeTrialだった
+### 無料で使えそうなPaas  
+
+#### Heroku  
+　１日６時間休む必要がある  
+#### OpenShift(Next)：まだベータ版  
+　Dockerで（使いづらい）  
+#### Azure  
+　なんか良いかも！  
+#### Pivotal  
+　無料かと思ったら、60日間freeTrialだった  
