@@ -286,11 +286,16 @@ $ heroku create
 
 #### Heroku  
 　１日６時間休む必要がある  
-#### OpenShift(Next)：まだpreview版  
-　Dockerで（使いづらい）  
 #### Azure  
 　なんか良いかも！  
 #### Pivotal  
 　無料かと思ったら、60日間freeTrialだった  
 #### Flynn、DEIS
  無料かと思ったら有料
+#### appfog
+　海外の従量課金制怖くて使いたくない
+#### OpenShift(Next)：まだpreview版  
+　Dockerで（使いづらい）  
+#### cloud9  
+　これかなぁ（調査中）  
+ 
