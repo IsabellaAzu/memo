@@ -292,5 +292,5 @@ $ heroku create
 　なんか良いかも！  
 #### Pivotal  
 　無料かと思ったら、60日間freeTrialだった  
-#### Flynn
+#### Flynn、DEIS
  無料かと思ったら有料
