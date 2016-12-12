@@ -2,14 +2,14 @@
 
 
 ## index
-<a href="#anc1">1.インストール</a>  
-<a href="#anc2">2.仮想マシンの起動</a>  
-<a href="#anc3">3.仮想マシンに接続して</a>  
-<a href="#anc4">4.</a>  
-<a href="#anc5">5.</a>  
-<a href="#anc6">6.</a>  
-<a href="#anc7">7.</a>  
-<a href="#anc8">8.</a>  
+<a href="#anc1">1.インストール</a><br>  
+<a href="#anc2">2.仮想マシンの起動</a><br>  
+<a href="#anc3">3.仮想マシンに接続して</a><br>  
+<a href="#anc4">4.</a><br>  
+<a href="#anc5">5.</a><br>  
+<a href="#anc6">6.</a><br>  
+<a href="#anc7">7.</a><br>  
+<a href="#anc8">8.</a><br>  
 
 
 　  
