@@ -32,7 +32,7 @@ https://www.virtualbox.org/wiki/Downloads
 - - - 
 ### 2.仮想マシンの起動
 #### (1)Box(テンプレート)の取得
-http://www.vagrantbox.es/  
+有志制作者のBox：http://www.vagrantbox.es/  
 ```
 $ vagrant init centos64 https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box
 # ダウンロードに4-5分かかる
