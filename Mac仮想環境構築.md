@@ -22,7 +22,7 @@ https://www.vagrantup.com/downloads.html
 ```
 # インストールしたいディレクトリで
 $ vagrant --varsion
-→Vagrant 1.9.1
+# →Vagrant 1.9.1
 ```
 #### VirtualBox(5.1.10)
 https://www.virtualbox.org/wiki/Downloads  
@@ -36,10 +36,18 @@ https://www.virtualbox.org/wiki/Downloads
 ```
 $ vagrant init centos64 https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box
 # ダウンロードに4-5分かかる
+$ vagrant box list
+# →centos64 (virtualbox, 0)
 ```
 
 
 #### (2)Boxを元に仮想マシンの初期化
+Boxの展開先のディレクトリを作成  
+```
+$ mkdir test1
+$ cd test1
+$ vagran init centos64 （上で取得したBox名）
+```
 #### (3)仮想マシンの起動
 
 　  
