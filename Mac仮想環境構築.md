@@ -120,6 +120,10 @@ $ exit
 # 設定を変えたので仮想マシンを再起動
 $ vagrant reload
 # ブラウザで192.168.33.10にアクセス
+　　↓
+# 社内でｐｒｉｖａｔｅ networkが使えない場合
+  config.vm.network "forwarded_port", guest: 80, host: 9999
+$ vagrant reload
 - - - 
 
 
