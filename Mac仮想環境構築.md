@@ -16,7 +16,7 @@
 - - - 
 ### 1.インストール
 
-#### vagrant
+#### (1)vagrant
 仮想マシンを簡単に起動するツール。rubyで記述されている。  
 https://www.vagrantup.com/downloads.html  
 ```
@@ -24,7 +24,7 @@ https://www.vagrantup.com/downloads.html
 $ vagrant --varsion
 # →Vagrant 1.9.1
 ```
-#### VirtualBox(5.1.10)
+#### (2)VirtualBox(5.1.10)
 https://www.virtualbox.org/wiki/Downloads  
 
 
