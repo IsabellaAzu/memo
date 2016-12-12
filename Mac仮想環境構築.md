@@ -49,7 +49,7 @@ $ mkdir test1
 $ cd test1
 # 仮想マシンの初期化
 $ vagrant init centos64 （上で取得したBox名）
-# 起動
+# 起動（virtualbpxを使って起動される）
 $ vagrant up
 ```
 
