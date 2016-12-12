@@ -68,6 +68,8 @@ $ vagrant halt
 $ vagrant up
 # 再起動（設定を変えた時など）
 $ vagrant reload
+# 環境の削除
+$ vagrant destroy（この後「y」を入力、エンター）
 ```
 
 　  
