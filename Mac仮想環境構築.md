@@ -125,8 +125,14 @@ $ vagrant reload
   config.vm.network "forwarded_port", guest: 80, host: 9999
 $ vagrant reload
 - - - 
+```
 
-
+```
+# シンボリックリンク : localの作業ディレクトリと、vagrantの作業ディレクトリを紐づける
+$ vagrant ssh
+$ sudo rm -rf /var/www/html
+$ sudo ln -fs /vagrant /var/www/html
+```
 
 
 ### 4.
