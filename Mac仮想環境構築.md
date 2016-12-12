@@ -4,7 +4,7 @@
 ## index
 <a href="#anc1">1.インストール</a>  
 <a href="#anc2">2.仮想マシンの起動</a>  
-<a href="#anc3">3.</a>  
+<a href="#anc3">3.仮想マシンに接続して</a>  
 <a href="#anc4">4.</a>  
 <a href="#anc5">5.</a>  
 <a href="#anc6">6.</a>  
@@ -68,25 +68,42 @@ $ vagrant halt
 $ vagrant up
 # 再起動（設定を変えた時など）
 $ vagrant reload
-# 環境の削除
+# 環境の削除（Boxの「centos64」は消えない）
 $ vagrant destroy（この後「y」を入力、エンター）
 ```
 
 　  
 - - - 
-### (3)
-　  
+### 3.仮想マシンに接続して、ブラウザからwebページを見る
+
+#### (1)sshで接続（仮想マシンの中に、vagrant userで入る）  
+```
+$ vagrant ssh
+# どこに居る？
+$ pwd
+# /home/vagrant
+```
+#### (2)webサーバーのインストールと起動
+```
+# インストール
+$ sudo yum -y install httpd
+# 起動
+$ sudo service httpd start
+```
+
+
 - - - 
-### (4)
+### 4.
+
+
+- - - 
+### 5.
 
 　  
 - - - 
-### (5)
+### 6.
 
 　  
 - - - 
-### (6)
-
+### 7.
 　  
-- - - 
-### (7)
