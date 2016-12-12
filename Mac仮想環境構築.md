@@ -51,6 +51,7 @@ $ cd test1
 $ vagrant init centos64 （上で取得したBox名）
 # 起動（virtualbpxを使って起動される）
 $ vagrant up
+# oracle VM VirtualBox マネージャーに「test1_xxx・・・の項目が追加される
 ```
 
 #### (3)仮想マシンの起動
