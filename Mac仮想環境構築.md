@@ -55,6 +55,20 @@ $ vagrant up
 ```
 
 #### (3)仮想マシンの起動
+```
+# 状態をみる
+$ vagrant status
+# スリープ
+$ vagrant suspend
+# スリープから復帰
+$ vagrant resume
+# 終了
+$ vagrant halt
+# 起動
+$ vagrant up
+# 再起動（設定を変えた時など）
+$ vagrant reload
+```
 
 　  
 - - - 
