@@ -89,10 +89,35 @@ $ pwd
 $ sudo yum -y install httpd
 # 起動
 $ sudo service httpd start
+# 再起動しても、ｗｅｂサーバーを自動的に起動する設定
+$ sudo chkconfig httpd on
+
+# ------ファイヤーウォールをオフに（一旦です。あとでオンにしましょう）
+$ sudo service iptables stop(centos6系)
+$ sudo systemctl stop firewalld(centos7系)
+# http://qiita.com/kino0104/items/99be3ee81cbea395a5b8
+$ sudo chkconfig iptables off(centos6系)
+$ sudo chkconfig firewalld off(centos7系)
 ```
 
+#### (3)webページの表示
+```
+# 配置場所
+$ cd /var/www/html
+$ sudo vi index.html
+$ cat index.html
+# →Hello!!!!!!（記述したものが表示される）
+```
 
+```
+# 仮想マシンから離脱
+$ exit
+# Vagrantfileのネットワークの設定を変更（Macから仮想マシンの中身を見る：プライベートネットワークを使う）
 - - - 
+
+
+
+
 ### 4.
 
 
