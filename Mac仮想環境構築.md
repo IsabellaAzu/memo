@@ -5,7 +5,7 @@
 <a href="#anc1">1.インストール</a>  
 <a href="#anc2">2.仮想マシンの起動</a>  
 <a href="#anc3">3.仮想マシンに接続して、ブラウザからwebページを見る</a>  
-<a href="#anc4">4.</a>  
+<a href="#anc4">4.</a>  
 <a href="#anc5">5.</a>  
 <a href="#anc6">6.</a>  
 <a href="#anc7">7.</a>  
