@@ -113,6 +113,13 @@ $ cat index.html
 # 仮想マシンから離脱
 $ exit
 # Vagrantfileのネットワークの設定を変更（Macから仮想マシンの中身を見る：プライベートネットワークを使う）
+# vagrant initしたtest１のディレクトリの、「Vagrantfile」を編集する（３個目のコメントアウトを取る）
+　# Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network "private_network", ip: "192.168.33.10"
+# 設定を変えたので仮想マシンを再起動
+$ vagrant reload
+# ブラウザで192.168.33.10にアクセス
 - - - 
 
 
