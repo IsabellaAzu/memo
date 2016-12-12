@@ -17,9 +17,10 @@
 ### 1.インストール
 
 #### vagrant
-仮想マシンを簡単に起動するツール。rubyで記述されている。
+仮想マシンを簡単に起動するツール。rubyで記述されている。  
 https://www.vagrantup.com/downloads.html  
 ```
+# インストールしたいディレクトリで
 $ vagrant --varsion
 →Vagrant 1.9.1
 ```
