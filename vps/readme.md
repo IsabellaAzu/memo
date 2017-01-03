@@ -1,6 +1,7 @@
 # VPSの設定
 
 さくらVPSでcoreOSベースの設定手順
+（さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
 
 ## 初期設定
 <a href="./1.OSインストール.md">1.OSインストール</a>  
