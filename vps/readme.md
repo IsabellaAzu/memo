@@ -10,3 +10,17 @@
 <a href="./4.SSH接続の設定変更.md">4.SSH接続の設定変更</a>  
 <a href="./5.ファイアウォールの設定.md">5.ファイアウォールの設定</a>  
 
+## 参考  
+さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
+http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
+CoreOSでRocketを使ってnginxを動かす  
+http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
+CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
+http://qiita.com/makotoomori@github/items/de0e39c5d67e5c69a741  
+Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス  
+http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
+さくらのVPSにCoreOSをインストールしてDocker専用機にする  
+http://qiita.com/yujiod/items/dc154120c4df2e938111  
+CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
+http://knowledge.sakura.ad.jp/tech/2519/  
+
