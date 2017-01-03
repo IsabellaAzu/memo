@@ -20,7 +20,7 @@ http://qiita.com/makotoomori@github/items/de0e39c5d67e5c69a741
 Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス  
 http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
 さくらのVPSにCoreOSをインストールしてDocker専用機にする  
-http://qiita.com/yujiod/items/dc154120c4df2e938111  
-CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
+http://qiita.com/yujiod/items/dc154120c4df2e938111  
+CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
 
