@@ -17,7 +17,9 @@
 ### [初期設定]
 さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
 http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
-　  
+CoreOSをインストールしてから接続するまで  
+http://qiita.com/chroju/items/081db52cf046e21eed86  
+
 ### クラスタリング
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
