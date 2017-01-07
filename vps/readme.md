@@ -24,3 +24,5 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
 
+「Docker」と新コンテナランタイム「rkt」をサクっと比較してみる  
+http://qiita.com/datake914/items/a61a1aead43ffa058da9  
