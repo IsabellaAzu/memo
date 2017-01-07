@@ -22,8 +22,8 @@ http://qiita.com/chroju/items/081db52cf046e21eed86
 【CoreOS】cloud-config解説〜インストール  
 http://qiita.com/xshsaku/items/1ba3f930ff80bef685a6  
 http://qiita.com/xshsaku/items/c1d0c093f5d5b6589621  
-cloud-configのシンタックス  
-https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
+cloud-configのシンタックス  
+https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
 
 ### クラスタリング
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
