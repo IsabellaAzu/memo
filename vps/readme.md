@@ -19,9 +19,9 @@
 http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
 　  
 ### クラスタリング
-CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
-http://knowledge.sakura.ad.jp/tech/2519/  
-CoreOSでクラスタ構成を組む(etcd2 + fleet)　　
+CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
+http://knowledge.sakura.ad.jp/tech/2519/  
+CoreOSでクラスタ構成を組む(etcd2 + fleet)  
 http://qiita.com/umchifre/items/00580b35b96e2bedb5df  
 CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方法  
 http://qiita.com/kanga/items/a7714f73aced9f872427  
