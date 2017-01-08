@@ -2,7 +2,7 @@
 
 さくらVPSでcoreOSベースの設定手順  
 （さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
-さくらVPSのコンソールのvimコマンド：
+さくらVPSのコンソールのvimコマンド：  
 　「:q!」　→　「control + z」  
 　「:wq」　→　「shift + z」を２回(大文字のZを2回)  
 
