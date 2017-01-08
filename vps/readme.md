@@ -27,7 +27,7 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 cloud-configのシンタックス  
 https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
 　  
-### クラスタリング
+### [クラスタリング]
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
 CoreOSでクラスタ構成を組む(etcd2 + fleet)  
@@ -35,11 +35,11 @@ http://qiita.com/umchifre/items/00580b35b96e2bedb5df
 CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方法  
 http://qiita.com/kanga/items/a7714f73aced9f872427  
 　  
-### nginx
+### [nginx]
 CoreOSでRocketを使ってnginxを動かす  
 http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
 　  
-### コンテナ
+### [コンテナ]
 CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
 http://qiita.com/makotoomori@github/items/de0e39c5d67e5c69a741  
 Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス  
