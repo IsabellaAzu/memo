@@ -2,7 +2,7 @@
 
 さくらVPSでcoreOSベースの設定手順  
 （さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
-さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
+さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
 　「:q!」　→　「control + z」  
 　「:wq」　→　「shift + z」を２回(大文字のZを2回)  
 
