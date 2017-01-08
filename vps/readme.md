@@ -1,8 +1,9 @@
 # VPSの設定
 
 さくらVPSでcoreOSベースの設定手順  
-（さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
-
+（さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
+さくらVPSのコンソールのvimの抜け方：「control+z」  
+　  
 ## 初期設定
 <a href="./1.OSインストール.md">1.OSインストール</a>  
 <a href="./2.セキュリティ設定.md">2.セキュリティ設定</a>  
