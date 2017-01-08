@@ -26,7 +26,7 @@ http://qiita.com/xshsaku/items/c1d0c093f5d5b6589621
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
 cloud-configのシンタックス  
 https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
-
+　  
 ### クラスタリング
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
