@@ -39,6 +39,10 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 cloud-configのシンタックス  
 https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
 　  
+### [CoreOS toolbox]
+CoreOS でも tcpdump したい (CoreOS toolbox)  
+http://qiita.com/dtan4/items/50fd75b56660ed8aa158  
+　  
 ### [クラスタリング]
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
