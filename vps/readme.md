@@ -64,5 +64,10 @@ http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
 「Docker」と新コンテナランタイム「rkt」をサクっと比較してみる  
 http://qiita.com/datake914/items/a61a1aead43ffa058da9  
-
+　  
+### [systemd]
+- CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
+- 起動時の処理などを管理してくれるもの。
+- chkconfig/serviceと大体同じ役割と思っておけばよさそう。
+- Fedora系で採用されているようだ
 
