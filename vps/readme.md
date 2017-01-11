@@ -70,4 +70,7 @@ http://qiita.com/datake914/items/a61a1aead43ffa058da9
 - 起動時の処理などを管理してくれるもの。
 - chkconfig/serviceと大体同じ役割と思っておけばよさそう。
 - Fedora系で採用されているようだ
+AWS+CoreOS+Dockerでコンテナの自動起動  
+http://qiita.com/aki/items/979b25ff555eb7ab96fc  
+
 
