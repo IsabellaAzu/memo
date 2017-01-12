@@ -38,6 +38,8 @@ http://qiita.com/xshsaku/items/c1d0c093f5d5b6589621
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
 cloud-configのシンタックス  
 https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
+CoreOS用のcloud-config.ymlを晒しておく  
+http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
 　  
 ### [CoreOS toolbox]
 CoreOS でも tcpdump したい (CoreOS toolbox)  
