@@ -76,4 +76,16 @@ http://qiita.com/datake914/items/a61a1aead43ffa058da9
 AWS+CoreOS+Dockerでコンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 
+### 検索結果 : "CoreOS" 一覧
+http://knowledge.sakura.ad.jp/?s=CoreOS  
 
+### これ、やれば良かった？？
+(ちょっと自動で)さくらのVPSにCoreOSを入れるメモ  
+http://qiita.com/koki_cheese/items/6f773a830a4d726a1fac  
+さくらのVPSにCoreOSをインストールしてDocker専用機にする  
+http://qiita.com/yujiod/items/dc154120c4df2e938111  
+インストール時にネットワーク設定とSSH公開鍵を設定するため、先ほどの cloud-config をアップロードします。以下はscpでコピーする例です。  
+```
+# これか！？
+local) $ scp cloud-config core@<IPアドレス>:~/
+```
