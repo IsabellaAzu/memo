@@ -52,6 +52,8 @@ CoreOSでクラスタ構成を組む(etcd2 + fleet)
 http://qiita.com/umchifre/items/00580b35b96e2bedb5df  
 CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方法  
 http://qiita.com/kanga/items/a7714f73aced9f872427  
+TerraformでCoreOSクラスタを構築する  
+http://deeeet.com/writing/2015/01/07/terraform-coreos/  
 　  
 ### [nginx]
 CoreOSでRocketを使ってnginxを動かす  
@@ -66,6 +68,8 @@ http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
 「Docker」と新コンテナランタイム「rkt」をサクっと比較してみる  
 http://qiita.com/datake914/items/a61a1aead43ffa058da9  
+コンテナの自動起動  
+http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
@@ -89,3 +93,5 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 # これか！？
 local) $ scp cloud-config core@<IPアドレス>:~/
 ```
+CoreOSをズボラなcloud-configでインストールしてみる(インストールする場所かな)  
+http://qiita.com/tubone/items/5995581b8e27c2277ba8  
