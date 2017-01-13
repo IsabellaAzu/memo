@@ -54,7 +54,9 @@ CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方�
 http://qiita.com/kanga/items/a7714f73aced9f872427  
 TerraformでCoreOSクラスタを構築する  
 http://deeeet.com/writing/2015/01/07/terraform-coreos/  
-　  
+Docker CoreOS Cluster  
+https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
+
 ### [nginx]
 CoreOSでRocketを使ってnginxを動かす  
 http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
