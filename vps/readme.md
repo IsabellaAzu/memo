@@ -95,3 +95,6 @@ local) $ scp cloud-config core@<IPアドレス>:~/
 ```
 CoreOSをズボラなcloud-configでインストールしてみる(インストールする場所かな)  
 http://qiita.com/tubone/items/5995581b8e27c2277ba8  
+
+### [備忘録]
+cloud-config作成　→　SCPでアップロード　→　cloud-configを元にcoreOSをインストール、再起動　の流れか？
