@@ -40,6 +40,8 @@ cloud-configのシンタックス
 https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
 CoreOS用のcloud-config.ymlを晒しておく  
 http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
+さくらVPSでdocker環境  
+https://www.machu.jp/diary/20150516.html  
 Vagrant・CoreOS・Dockerでインフラ素人が自宅サーバを立てた話  
 http://qiita.com/y_hokkey/items/3dd0d8f20f9daadbbf0b  
 　  
