@@ -52,6 +52,8 @@ http://qiita.com/dtan4/items/50fd75b56660ed8aa158
 ### [MySQL]
 Dockerの公式MySQLイメージの使い方を徹底的に解説するよ(データ投入とか)  
 http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html  
+Docker でデータのポータビリティをあげ永続化しよう  
+http://qiita.com/mopemope/items/b05ff7f603a5ad74bf55  
 　  
 ### [クラスタリング]
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
