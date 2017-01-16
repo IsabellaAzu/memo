@@ -44,6 +44,8 @@ http://qiita.com/ma2shita/items/e069b6019688d8e848f5
 https://www.machu.jp/diary/20150516.html  
 Vagrant・CoreOS・Dockerでインフラ素人が自宅サーバを立てた話  
 http://qiita.com/y_hokkey/items/3dd0d8f20f9daadbbf0b  
+CoreOS用cloud-config.ymlメモ2  
+http://qiita.com/tukiyo3/items/615afb0509bf76f4f277  
 　  
 ### [CoreOS toolbox]
 CoreOS でも tcpdump したい (CoreOS toolbox)  
