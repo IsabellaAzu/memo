@@ -2,7 +2,7 @@
 
 ## ConoHaのVPSにCoreOSをインストール(月額450円/100GB:超安いけど使い方がREST API)
 https://www.conoha.jp/guide/objectstorage.php  
-onoHaのVPSにCoreOSをインストール  
+conoHaのVPSにCoreOSをインストール  
 http://qiita.com/miyasakura_/items/4d81dc5fe6f9de0f0dd5  
 
 ## さくらVPSでcoreOSベースの設定手順   
