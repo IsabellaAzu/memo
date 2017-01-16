@@ -48,6 +48,8 @@ CoreOS用cloud-config.ymlメモ2
 http://qiita.com/tukiyo3/items/615afb0509bf76f4f277  
 実例で学ぶ CoreOS 超入門  
 https://blog.f99aq8ove.net/2015/07/24/coreos-introduction.html  
+CoreOS 入門  
+http://aeas44.github.io/2016/03/08/coreos-%E5%85%A5%E9%96%80/  
 　  
 ### [CoreOS toolbox]
 CoreOS でも tcpdump したい (CoreOS toolbox)  
