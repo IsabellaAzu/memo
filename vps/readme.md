@@ -1,5 +1,10 @@
 # VPSの設定
 
+## ConoHaのVPSにCoreOSをインストール(月額450円/100GB:超安いけど使い方がREST API)
+https://www.conoha.jp/guide/objectstorage.php  
+onoHaのVPSにCoreOSをインストール  
+http://qiita.com/miyasakura_/items/4d81dc5fe6f9de0f0dd5  
+
 ## さくらVPSでcoreOSベースの設定手順   
 （さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
 さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
@@ -25,6 +30,8 @@
 ## 参考(あとで移動)  
 
 ### [初期設定]
+基礎からのネットワーク&サーバ構築　まとめ  
+http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
 さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
 http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
 CoreOSをインストールしてから接続するまで  
