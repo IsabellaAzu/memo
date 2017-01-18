@@ -90,7 +90,7 @@ http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6
 ### [コンテナ]
 CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
 http://qiita.com/makotoomori@github/items/de0e39c5d67e5c69a741  
-Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(cloud-config.yml、Dockerfileで設定できる項目を確認) 
+Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(cloud-config.yml、Dockerfileで設定できる項目を確認)  
 http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
 さくらのVPSにCoreOSをインストールしてDocker専用機にする  
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
