@@ -108,6 +108,11 @@ http://qiita.com/aki/items/979b25ff555eb7ab96fc
 AWS+CoreOS+Dockerでコンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 
+### [rails]
+さくらVPSにまっさらな状態からRuby2.1.0+Rails4.2.1+nginx+unicorn+capistranoの環境を構築  
+http://qiita.com/noppefoxwolf/items/e1e5a5ab221f8224890d  
+
+
 ### 検索結果 : "CoreOS" 一覧
 http://knowledge.sakura.ad.jp/?s=CoreOS  
 
