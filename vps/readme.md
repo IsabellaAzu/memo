@@ -100,6 +100,8 @@ http://qiita.com/datake914/items/a61a1aead43ffa058da9
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 macにDockerを入れてNginxでwebサーバーを立てるまで  
 https://www.youtube.com/watch?v=Ts3O8s-z-D4  
+Dockerではじめるコンテナ型仮想化環境  
+http://www.devlog.atlas.jp/2015/01/29/450  
 　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
