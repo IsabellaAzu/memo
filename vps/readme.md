@@ -70,7 +70,9 @@ Dockerの公式MySQLイメージの使い方を徹底的に解説するよ(デ�
 http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html  
 Docker でデータのポータビリティをあげ永続化しよう  
 http://qiita.com/mopemope/items/b05ff7f603a5ad74bf55  
-　  
+Dockerで予め欲しいデータをつっこんだMySQLをこしらえる(Mac用)  
+http://ihcomega.hatenadiary.com/entry/2016/06/02/223221  
+
 ### [クラスタリング]
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
