@@ -98,7 +98,7 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 http://qiita.com/datake914/items/a61a1aead43ffa058da9  
 コンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
-macにDockerを入れてNginxでwebサーバーを立てるまで  
+macにDockerを入れてNginxでwebサーバーを立てるまで[動画]  
 https://www.youtube.com/watch?v=Ts3O8s-z-D4  
 Dockerではじめるコンテナ型仮想化環境  
 http://www.devlog.atlas.jp/2015/01/29/450  
@@ -115,7 +115,8 @@ http://qiita.com/aki/items/979b25ff555eb7ab96fc
 ### [rails]
 さくらVPSにまっさらな状態からRuby2.1.0+Rails4.2.1+nginx+unicorn+capistranoの環境を構築  
 http://qiita.com/noppefoxwolf/items/e1e5a5ab221f8224890d  
-
+コンテナ仮想化「Docker」技術[動画]  
+https://www.youtube.com/watch?v=7xn8_gO0nn8  
 
 ### 検索結果 : "CoreOS" 一覧
 http://knowledge.sakura.ad.jp/?s=CoreOS  
