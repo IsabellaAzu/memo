@@ -100,7 +100,7 @@ http://qiita.com/yujiod/items/dc154120c4df2e938111
 http://qiita.com/datake914/items/a61a1aead43ffa058da9  
 コンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
-macにDockerを入れてNginxでwebサーバーを立てるまで[動画]  
+macにDockerを入れてNginxでwebサーバーを立てるまで[動画]  
 https://www.youtube.com/watch?v=Ts3O8s-z-D4  
 Dockerではじめるコンテナ型仮想化環境  
 http://www.devlog.atlas.jp/2015/01/29/450  
