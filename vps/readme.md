@@ -104,6 +104,8 @@ macにDockerを入れてNginxでwebサーバーを立てるまで[動画]
 https://www.youtube.com/watch?v=Ts3O8s-z-D4  
 Dockerではじめるコンテナ型仮想化環境  
 http://www.devlog.atlas.jp/2015/01/29/450  
+Scaling Docker #4 - Docker Service Discovery and Load Balancing  
+https://www.youtube.com/watch?v=R39VRocQtrQ  
 　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
