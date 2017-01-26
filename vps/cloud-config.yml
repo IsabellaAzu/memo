@@ -7,7 +7,7 @@ write_files:
         [Match]
         Name=eth0
         [Network]
-        Address=xxx.xxx.xxx.xxx/24
+        Address=xxx.xxx.xxx.xxx/23
         Gateway=xxx.xxx.xxx.xxx
         DNS=xxx.xxx.xxx.xxx
         DNS=xxx.xxx.xxx.xxx
