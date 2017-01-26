@@ -1,0 +1,20 @@
+#cloud-config
+
+write_files:
+  - path: /etc/systemd/network/static.network
+    permissions: 0644
+    content: |
+        [Match]
+        Name=eth0
+        [Network]
+        Address=xxx.xxx.xxx.xxx/24
+        Gateway=xxx.xxx.xxx.xxx
+        DNS=xxx.xxx.xxx.xxx
+        DNS=xxx.xxx.xxx.xxx
+users:
+  - name: xxx
+    passwd: xxx
+    groups:
+      - sudo
+    ssh-authorized-keys:
+      - ssh-rsa AAAxxx...
