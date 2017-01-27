@@ -1,5 +1,10 @@
 #cloud-config
 
+hostname: core
+
+ssh-authorized-keys:
+  - ssh-rsa AAAxxx...
+
 write_files:
   - path: /etc/systemd/network/static.network
     permissions: 0644
@@ -16,5 +21,4 @@ users:
     passwd: xxx
     groups:
       - sudo
-    ssh-authorized-keys:
-      - ssh-rsa AAAxxx...
+      - docker
