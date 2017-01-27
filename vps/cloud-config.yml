@@ -1,3 +1,6 @@
+
+# サンプル
+```
 #cloud-config
 
 hostname: core
@@ -18,7 +21,16 @@ write_files:
         DNS=xxx.xxx.xxx.xxx
 users:
   - name: xxx
-    passwd: xxx
+    passwd: xxx # $ openssl passwd -1の出力結果
     groups:
       - sudo
       - docker
+```
+
+# 参考
+http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
+https://github.com/miyasakura/my-docker-sample/blob/master/server_scripts/cloud-config.yml  
+
+
+
+
