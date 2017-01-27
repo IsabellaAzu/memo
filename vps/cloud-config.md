@@ -1,5 +1,5 @@
 
-# サンプル
+# cloud-config.ymlサンプル
 ```
 #cloud-config
 
