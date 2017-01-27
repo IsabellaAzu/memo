@@ -33,4 +33,57 @@ https://github.com/miyasakura/my-docker-sample/blob/master/server_scripts/cloud-
 
 
 
+```
 
+#cloud-config
+
+hostname: core
+
+ssh-authorized-keys:
+  - ssh-rsa AAAA... core@localhost
+
+users:
+  - name: xxx
+    passwd: xxx # $ openssl passwd -1の出力結果
+    groups:
+      - sudo
+    ssh-authorized-keys:
+      - ssh-rsa AAAA... core@localhost
+
+write_files:
+  - path: /etc/systemd/network/static.network
+    permissions: 0644
+    content: |
+        [Match]
+        Name=eth0
+        [Network]
+        Address=xxx.xxx.xxx.xxx/23
+        Gateway=xxx.xxx.xxx.xxx
+        DNS=xxx.xxx.xxx.xxx
+        DNS=xxx.xxx.xxx.xxx
+  - path: /etc/ssh/sshd_config
+    permissions: 0600
+    owner: root:root
+    content: |
+      # Use most defaults for sshd configuration.
+      UsePrivilegeSeparation sandbox
+      Subsystem sftp internal-sftp
+
+      PermitRootLogin no
+      AllowUsers core
+      PasswordAuthentication no
+      ChallengeResponseAuthentication no
+
+coreos:
+  units:
+  - name: sshd.socket
+    command: restart
+    runtime: true
+    content: |
+      [Socket]
+      # ListenStream=2222
+      FreeBind=true
+      Accept=yes
+
+
+```
