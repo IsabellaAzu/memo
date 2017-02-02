@@ -21,7 +21,7 @@ write_files:
         DNS=xxx.xxx.xxx.xxx
 users:
   - name: xxx
-    passwd: xxx # $ openssl passwd -1の出力結果
+    passwd: xxx # $ openssl passwd -1 "xxx"
     groups:
       - sudo
       - docker
@@ -68,7 +68,6 @@ write_files:
       # Use most defaults for sshd configuration.
       UsePrivilegeSeparation sandbox
       Subsystem sftp internal-sftp
-
       PermitRootLogin no
       AllowUsers core
       PasswordAuthentication no
@@ -76,14 +75,15 @@ write_files:
 
 coreos:
   units:
-  - name: sshd.socket
-    command: restart
-    runtime: true
-    content: |
-      [Socket]
-      # ListenStream=2222
-      FreeBind=true
-      Accept=yes
-
+  #- name: sshd.socket
+  #  command: restart
+  #  runtime: true
+  #  content: |
+  #    [Socket]
+  #    # ListenStream=2222
+  #    FreeBind=true
+  #    Accept=yes
+  - name: "sshd.service"
+    command: "restart"
 
 ```
