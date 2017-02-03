@@ -83,6 +83,8 @@ https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster
 ### [nginx]
 CoreOSでRocketを使ってnginxを動かす  
 http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
+Docker + nginx-proxy でGitLab環境(Let's Encrypt付き)を構築する  
+http://qiita.com/ABE_TAKASHI/items/654ef6ed22071c93d6f2  
 　  
 ### [コンテナ]
 CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
