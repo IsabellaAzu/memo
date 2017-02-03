@@ -107,9 +107,10 @@ https://www.youtube.com/watch?v=R39VRocQtrQ
 - 起動時の処理などを管理してくれるもの。
 - chkconfig/serviceと大体同じ役割と思っておけばよさそう。
 - Fedora系で採用されているようだ
-
 AWS+CoreOS+Dockerでコンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
+「Systemd」を理解する ーシステム管理編ー  
+http://equj65.net/tech/systemd-manage/  
 
 ### [rails]
 さくらVPSにまっさらな状態からRuby2.1.0+Rails4.2.1+nginx+unicorn+capistranoの環境を構築  
