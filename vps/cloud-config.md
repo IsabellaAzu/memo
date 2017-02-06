@@ -1,5 +1,11 @@
 
-# cloud-config.ymlサンプル
+# 各種cloud-config.yml
+
+<a href="#anc1">(1)coreosの本ストール前のネットワーク設定用cloud-config.ymlサンプル</a>  
+<a href="#anc2">(2)各種設定用cloud-config.ymlサンプル</a>  
+
+<a id="anc1" name="anc1"></a>  
+## (1)coreosの本ストール前のネットワーク設定用cloud-config.ymlサンプル
 ```
 #cloud-config
 
@@ -27,11 +33,13 @@ users:
       - docker
 ```
 
-# 参考
+### 参考
 http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
 https://github.com/miyasakura/my-docker-sample/blob/master/server_scripts/cloud-config.yml  
 
 
+<a id="anc2" name="anc2"></a>  
+## (2)各種設定用cloud-config.ymlサンプル
 
 ```
 
@@ -85,5 +93,6 @@ coreos:
   #    Accept=yes
   - name: "sshd.service"
     command: "restart"
-
+  - name: docker.service
+    command: start
 ```
