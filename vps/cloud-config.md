@@ -35,7 +35,6 @@ users:
     passwd: xxx # $ openssl passwd -1 "xxx"
     groups:
       - sudo
-      - docker
 ```
 　  
    
@@ -91,7 +90,7 @@ coreos:
   #    FreeBind=true
   #    Accept=yes
   - name: "sshd.service"
-    command: "restart"
+    command: "start"
 ```
 ## cloud-configに再設定、　再読み込み、user_dataにコピー
 ```
@@ -152,10 +151,10 @@ coreos:
   #    # ListenStream=2222
   #    FreeBind=true
   #    Accept=yes
-  - name: "sshd.service"
-    command: "restart"
   - name: docker.service
     command: start
+  - name: "sshd.service"
+    command: "start"
 ```
 ## cloud-configに再設定、　再読み込み、user_dataにコピー
 ```
