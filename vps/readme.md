@@ -122,21 +122,6 @@ http://qiita.com/noppefoxwolf/items/e1e5a5ab221f8224890d
 コンテナ仮想化「Docker」技術[動画]  
 https://www.youtube.com/watch?v=7xn8_gO0nn8  
 
-### 検索結果 : "CoreOS" 一覧
-http://knowledge.sakura.ad.jp/?s=CoreOS  
-
-### これ、やれば良かった？？
-(ちょっと自動で)さくらのVPSにCoreOSを入れるメモ  
-http://qiita.com/koki_cheese/items/6f773a830a4d726a1fac  
-さくらのVPSにCoreOSをインストールしてDocker専用機にする  
-http://qiita.com/yujiod/items/dc154120c4df2e938111  
-インストール時にネットワーク設定とSSH公開鍵を設定するため、先ほどの cloud-config をアップロードします。以下はscpでコピーする例です。  
-```
-# これか！？
-local) $ scp cloud-config core@<IPアドレス>:~/
-```
-CoreOSをズボラなcloud-configでインストールしてみる(インストールする場所かな)  
-http://qiita.com/tubone/items/5995581b8e27c2277ba8  
-
-### [備忘録]
-cloud-config作成　→　SCPでアップロード　→　cloud-configを元にcoreOSをインストール、再起動　の流れか？
+### [Let's Encrypt]
+nginxを止めずに証明書を更新する  
+http://qiita.com/D4prog/items/b00baae1008da2de9b66  
