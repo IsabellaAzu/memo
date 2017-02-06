@@ -93,9 +93,16 @@ coreos:
   - name: "sshd.service"
     command: "restart"
 ```
+## cloud-configに再設定、　再読み込み、user_dataにコピー
+```
+$ sudo coreos-cloudinit -from-file=./cloud-config.yml
+$ sudo cp cloud-config.yml /var/lib/coreos-install/user_data
+$ sudo reboot
+```
 
 
-<a id="anc3" name="anc3">(3)各種設定</a>  
+<a id="anc3" name="anc3"></a>  
+## (3)各種設定
 ```
 #cloud-config
 
@@ -150,3 +157,15 @@ coreos:
   - name: docker.service
     command: start
 ```
+## cloud-configに再設定、　再読み込み、user_dataにコピー
+```
+$ sudo coreos-cloudinit -from-file=./cloud-config.yml
+$ sudo cp cloud-config.yml /var/lib/coreos-install/user_data
+$ sudo reboot
+```
+
+
+
+
+
+
