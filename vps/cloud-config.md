@@ -6,7 +6,7 @@ http://qiita.com/ma2shita/items/e069b6019688d8e848f5
 https://github.com/miyasakura/my-docker-sample/blob/master/server_scripts/cloud-config.yml  
 
 <a href="#anc1">(1)coreosの本ストール前のネットワーク設定用</a>  
-<a href="#anc2">(2)coreosの本ストール後、sshdを自動起動する（SSH接続するため）</a>  
+<a href="#anc2">(2)coreosの本ストール後、sshdを自動起動する（SSH接続するため）</a>  
 <a href="#anc3">(3)各種設定</a>  
 
 <a id="anc1" name="anc1"></a>  
