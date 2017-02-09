@@ -32,8 +32,6 @@ http://qiita.com/tadatti/items/02dc3fec8d6ea49d50ce  
 ー  
 さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
 http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
-CoreOSをインストールしてから接続するまで  
-http://qiita.com/chroju/items/081db52cf046e21eed86  
 最小限の労力でCoreOS on さくらVPSにSSH接続する  
 http://geek.3101.me/server/setup-coreos-on-sakuravps/  
 【CoreOS】cloud-config解説〜インストール  
