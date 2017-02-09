@@ -105,6 +105,8 @@ Dockerではじめるコンテナ型仮想化環境
 http://www.devlog.atlas.jp/2015/01/29/450  
 Scaling Docker #4 - Docker Service Discovery and Load Balancing  
 https://www.youtube.com/watch?v=R39VRocQtrQ  
+Dockerのbusyboxは永続コンテナと言いながらexport/saveコマンドでは持ち運びできないよ  
+http://qiita.com/kumechang/items/fc108b1ec4683f3765d8  
 　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
@@ -115,19 +117,19 @@ AWS+CoreOS+Dockerでコンテナの自動起動
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 「Systemd」を理解する ーシステム管理編ー  
 http://equj65.net/tech/systemd-manage/  
-
+　  
 ### [Vulcand]
 Vulcand  
 https://vulcand.github.io/quickstart.html#quick-start  
 Vulcand を使って Docker コンテナをブルーグリーンデプロイする  
 http://qiita.com/spesnova/items/34d787f6b46761f775a4  
-
+　  
 ### [rails]
 さくらVPSにまっさらな状態からRuby2.1.0+Rails4.2.1+nginx+unicorn+capistranoの環境を構築  
 http://qiita.com/noppefoxwolf/items/e1e5a5ab221f8224890d  
 コンテナ仮想化「Docker」技術[動画]  
 https://www.youtube.com/watch?v=7xn8_gO0nn8  
-
+　  
 ### [Let's Encrypt]
 nginxを止めずに証明書を更新する  
 http://qiita.com/D4prog/items/b00baae1008da2de9b66  
