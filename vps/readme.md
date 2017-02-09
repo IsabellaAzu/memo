@@ -116,6 +116,12 @@ http://qiita.com/aki/items/979b25ff555eb7ab96fc
 「Systemd」を理解する ーシステム管理編ー  
 http://equj65.net/tech/systemd-manage/  
 
+### [Vulcand]
+Vulcand  
+https://vulcand.github.io/quickstart.html#quick-start  
+Vulcand を使って Docker コンテナをブルーグリーンデプロイする  
+http://qiita.com/spesnova/items/34d787f6b46761f775a4  
+
 ### [rails]
 さくらVPSにまっさらな状態からRuby2.1.0+Rails4.2.1+nginx+unicorn+capistranoの環境を構築  
 http://qiita.com/noppefoxwolf/items/e1e5a5ab221f8224890d  
