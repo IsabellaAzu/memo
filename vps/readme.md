@@ -27,8 +27,6 @@
 ### [初期設定]
 基礎からのネットワーク&サーバ構築　まとめ  
 http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
-ConoHaのVPSで複数台のローカルネットワークをかんたん構築  
-http://qiita.com/tadatti/items/02dc3fec8d6ea49d50ce  
 ー  
 さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
 http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
