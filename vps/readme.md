@@ -25,6 +25,8 @@
 ## 参考(あとで移動)  
 
 ### [初期設定]
+初期アカウントがパスワード無しでsudo出来るのが気持ち悪いという貴方へ  
+http://blog.serverworks.co.jp/tech/2013/08/16/sudo-without-password-makes-me-feel-disgusting/  
 基礎からのネットワーク&サーバ構築　まとめ  
 http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
 ー  
