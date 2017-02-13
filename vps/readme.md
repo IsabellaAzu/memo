@@ -29,18 +29,8 @@
 http://blog.serverworks.co.jp/tech/2013/08/16/sudo-without-password-makes-me-feel-disgusting/  
 基礎からのネットワーク&サーバ構築　まとめ  
 http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
-ー  
-さくらVPS　初期設定　（ユーザー作って、セキュリティ設定するまで）  
-http://qiita.com/aild_arch_bfmv/items/99dd58fc6be84f87a075  
-最小限の労力でCoreOS on さくらVPSにSSH接続する  
-http://geek.3101.me/server/setup-coreos-on-sakuravps/  
-【CoreOS】cloud-config解説〜インストール  
-http://qiita.com/xshsaku/items/1ba3f930ff80bef685a6  
-http://qiita.com/xshsaku/items/c1d0c093f5d5b6589621  
 さくらのVPSにCoreOSをインストールしてDocker専用機にする  
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
-cloud-configのシンタックス  
-https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md  
 CoreOS用のcloud-config.ymlを晒しておく  
 http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
 さくらVPSでdocker環境  
