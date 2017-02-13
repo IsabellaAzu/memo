@@ -31,14 +31,10 @@ http://blog.serverworks.co.jp/tech/2013/08/16/sudo-without-password-makes-me-fee
 http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
 さくらのVPSにCoreOSをインストールしてDocker専用機にする  
 http://qiita.com/yujiod/items/dc154120c4df2e938111  
-CoreOS用のcloud-config.ymlを晒しておく  
-http://qiita.com/ma2shita/items/e069b6019688d8e848f5  
 さくらVPSでdocker環境  
 https://www.machu.jp/diary/20150516.html  
 Vagrant・CoreOS・Dockerでインフラ素人が自宅サーバを立てた話  
 http://qiita.com/y_hokkey/items/3dd0d8f20f9daadbbf0b  
-CoreOS用cloud-config.ymlメモ2  
-http://qiita.com/tukiyo3/items/615afb0509bf76f4f277  
 実例で学ぶ CoreOS 超入門  
 https://blog.f99aq8ove.net/2015/07/24/coreos-introduction.html  
 CoreOS 入門  
