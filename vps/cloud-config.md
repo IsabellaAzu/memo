@@ -74,6 +74,7 @@ write_files:
       # Use most defaults for sshd configuration.
       UsePrivilegeSeparation sandbox
       Subsystem sftp internal-sftp
+      ClientAliveInterval 300
       PermitRootLogin no
       AllowUsers core
       PasswordAuthentication no
