@@ -48,7 +48,7 @@ Docker でデータのポータビリティをあげ永続化しよう
 http://qiita.com/mopemope/items/b05ff7f603a5ad74bf55  
 Dockerで予め欲しいデータをつっこんだMySQLをこしらえる(Mac用)  
 http://ihcomega.hatenadiary.com/entry/2016/06/02/223221  
-
+　  
 ### [クラスタリング]
 CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
 http://knowledge.sakura.ad.jp/tech/2519/  
@@ -60,7 +60,7 @@ TerraformでCoreOSクラスタを構築する
 http://deeeet.com/writing/2015/01/07/terraform-coreos/  
 Docker CoreOS Cluster  
 https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
-
+　  
 ### [nginx]
 CoreOSでRocketを使ってnginxを動かす  
 http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
