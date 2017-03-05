@@ -97,7 +97,7 @@ http://qiita.com/kumechang/items/fc108b1ec4683f3765d8
 AWS+CoreOS+Dockerでコンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 「Systemd」を理解する ーシステム管理編ー  
-http://equj65.net/tech/systemd-manage/  
+http://equj65.net/tech/systemd-manage/　　
 　  
 ### [Vulcand]
 Vulcand  
