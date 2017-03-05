@@ -116,9 +116,10 @@ https://www.youtube.com/watch?v=7xn8_gO0nn8
 nginxを止めずに証明書を更新する  
 http://qiita.com/D4prog/items/b00baae1008da2de9b66  
 Let's Encryptを使ってSSL通信をする(※Let's EncryptではIPアドレスに対して証明書が発行出来ません)  
-http://qiita.com/HitoshiHaga/items/67378de7f97fbaa6d356  
+http://qiita.com/HitoshiHaga/items/67378de7f97fbaa6d356  
 https://letsencrypt.org/getting-started/  
-Docker × Nginx × Let'sEncrypt | 俺の考えた最強のサーバー構築方法！
+Docker × Nginx × Let'sEncrypt | 俺の考えた最強のサーバー構築方法！  
 https://hackerslog.net/post/my-tech/server/letsencrypt-on-docker-and-nginx/  
-Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(上記にも同じページ有り)  
+Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(上記にも同じページ有り)  
 http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
+
