@@ -1,16 +1,6 @@
 
 #nginx各種設定
 
-> <a href="#anc1">IPアドレス直打ちのアクセスを弾きたい</a><br>
-> <a href="#anc2">アクセス制限</a><br>
-> <a href="#anc3"></a><br>
-> <a href="#anc4"></a><br>
-> <a href="#anc5"></a><br>
-
-
-<a id="anc1"></a>
-## IPアドレス直打ちのアクセスを弾きたい
-
 ```
 # /etc/nginx/nginx.conf ベーシックな設定
 server {
@@ -22,6 +12,19 @@ server {
     listen 443 ssl;
     server_name mysite.com;
 }
+```
+
+> ・<a href="#anc1">IPアドレス直打ちのアクセスを弾きたい</a><br>
+> ・<a href="#anc2">アクセス制限</a><br>
+> ・<a href="#anc3"></a><br>
+> ・<a href="#anc4"></a><br>
+> ・<a href="#anc5"></a><br>
+
+　  
+<a id="anc1"></a>
+## IPアドレス直打ちのアクセスを弾きたい
+
+```
 ```
 
 
