@@ -1,5 +1,8 @@
 
-#nginx各種設定
+# nginx各種設定
+
+公式：https://www.nginx.com/resources/wiki/
+基礎：http://dev.classmethod.jp/server-side/server/nginx-ip-access-control/
 
 ```
 # /etc/nginx/nginx.conf ベーシックな設定
@@ -13,7 +16,7 @@ server {
     server_name mysite.com;
 }
 ```
-
+　  
 > ・<a href="#anc1">IPアドレス直打ちのアクセスを弾きたい</a><br>
 > ・<a href="#anc2">アクセス制限</a><br>
 > ・<a href="#anc3">nginxをApacheに見せかける</a><br>
@@ -23,7 +26,7 @@ server {
 　  
 <a id="anc1"></a>
 ## IPアドレス直打ちのアクセスを弾きたい
-
+http://beniyama.hatenablog.jp/entry/2015/04/05/100000
 ```
 ```
 
