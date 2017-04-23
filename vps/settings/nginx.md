@@ -56,6 +56,7 @@ http {
     }
 }
 ```
+
 <br>
 <a id="anc4"></a>
 ## Nginxで「www」有り、無しのURLを統一する方法
