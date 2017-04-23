@@ -28,6 +28,13 @@ server {
 ## IPアドレス直打ちのアクセスを弾きたい
 http://beniyama.hatenablog.jp/entry/2015/04/05/100000
 ```
+http {
+    server {
+        if ($host != "xxx.com") {
+              return 403;
+        }
+    }
+}
 ```
 
 
