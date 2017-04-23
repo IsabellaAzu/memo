@@ -45,12 +45,13 @@ http {
 <br>
 <a id="anc3"></a>
 ## nginxをApacheに見せかける
+
 ```
 http {
     server {
         error_page              403 404 500 502 503 504 = /apache_error.html;
         location = /apache_error.html {
-              return 404 "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n<\/head>\&lt;body>\n<h1>Not Found</h1>\n<p>The requested URL \$request_uri was not found on this server.</p>\n<hr>\n<address>Apache/2.2.31 Server at \$host Port \$server_port</address>\n<\/body><\/html>";
+              return 404 "<!DOCTYPE HTML><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL $request_uri was not found on this server.</p><hr><address>Apache/2.2.31 Server at $host Port $server_port</address></body></html>";
               internal;
         }
     }
