@@ -39,9 +39,11 @@ http {
     }
 }
 ```
+
 <br>
 <a id="anc2"></a>
 ## アクセス制限
+
 <br>
 <a id="anc3"></a>
 ## nginxをApacheに見せかける
@@ -62,6 +64,7 @@ http {
 <a id="anc4"></a>
 ## Nginxで「www」有り、無しのURLを統一する方法
 https://keikenchi.com/nginx-www-url
+
 ```
 http {
     server {
@@ -77,9 +80,6 @@ http {
     }
 }
 ```
-
-
-
 
 <br>
 
