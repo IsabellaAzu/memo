@@ -20,8 +20,11 @@ server {
 > ・<a href="#anc1">IPアドレス直打ちのアクセスを弾きたい</a><br>
 > ・<a href="#anc2">アクセス制限</a><br>
 > ・<a href="#anc3">nginxをApacheに見せかける</a><br>
-> ・<a href="#anc4"></a><br>
+> ・<a href="#anc4">Nginxで「www」有り、無しのURLを統一する方法</a><br>
 > ・<a href="#anc5"></a><br>
+
+
+
 
 　  
 <a id="anc1"></a>
@@ -36,15 +39,10 @@ http {
     }
 }
 ```
-
-
-
+<br>
 <a id="anc2"></a>
 ## アクセス制限
-
-
-
-
+<br>
 <a id="anc3"></a>
 ## nginxをApacheに見せかける
 ```
@@ -58,6 +56,31 @@ http {
     }
 }
 ```
+<br>
+<a id="anc4"></a>
+## Nginxで「www」有り、無しのURLを統一する方法
+https://keikenchi.com/nginx-www-url
+```
+http {
+    server {
+        listen       80;
+        server_name  www.xxx.com;
+        return       301 http://xxx.com$request_uri;
+    }
+    server {
+        listen                  80 default_server;
+        root                    /www;
+        index                   index.html index.htm;
+        server_name             xxx.com;
+    }
+}
+```
+
+
+
+
+<br>
+
 
 HTTPS上で複数のWebサイトの公開を実現するには何種類かの方法があり、<br>
 nginxというWebサーバで、TLSの拡張仕様であるSNI(Server Name Indication)を使って複数のHTTPSサイトを公開する例<br>
