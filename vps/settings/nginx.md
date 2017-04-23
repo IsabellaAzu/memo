@@ -39,12 +39,12 @@ http {
     }
 }
 ```
-
-<br>
+　  
+　  
 <a id="anc2"></a>
 ## アクセス制限
-
-<br>
+　  
+　  
 <a id="anc3"></a>
 ## nginxをApacheに見せかける
 
@@ -59,8 +59,8 @@ http {
     }
 }
 ```
-
-<br>
+　  
+　  
 <a id="anc4"></a>
 ## Nginxで「www」有り、無しのURLを統一する方法
 https://keikenchi.com/nginx-www-url
@@ -81,9 +81,8 @@ http {
 }
 ```
 
-<br>
-
-
+　  
+　  
 HTTPS上で複数のWebサイトの公開を実現するには何種類かの方法があり、<br>
 nginxというWebサーバで、TLSの拡張仕様であるSNI(Server Name Indication)を使って複数のHTTPSサイトを公開する例<br>
 
