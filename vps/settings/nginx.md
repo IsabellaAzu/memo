@@ -1,9 +1,11 @@
 
 # nginx各種設定
-
+　  
+   
 公式：https://www.nginx.com/resources/wiki/<br>
 基礎：http://dev.classmethod.jp/server-side/server/nginx-ip-access-control/<br>
-
+　  
+   
 ```
 # /etc/nginx/nginx.conf ベーシックな設定
 server {
@@ -17,17 +19,12 @@ server {
 }
 ```
 　  
-> ・<a href="#anc1">IPアドレス直打ちのアクセスを弾きたい</a><br>
-> ・<a href="#anc2">アクセス制限</a><br>
-> ・<a href="#anc3">nginxをApacheに見せかける</a><br>
-> ・<a href="#anc4">Nginxで「www」有り、無しのURLを統一する方法</a><br>
-> ・<a href="#anc5"></a><br>
+
 
 
 
 
 　  
-<a id="anc1"></a>
 ## IPアドレス直打ちのアクセスを弾きたい
 http://beniyama.hatenablog.jp/entry/2015/04/05/100000
 ```
@@ -41,11 +38,8 @@ http {
 ```
 　  
 　  
-<a id="anc2"></a>
-## アクセス制限
 　  
 　  
-<a id="anc3"></a>
 ## nginxをApacheに見せかける
 
 ```
@@ -59,9 +53,16 @@ http {
     }
 }
 ```
+
+
+## nginxのServerバージョン番号を出さない
+```
+http {
+    server_tokens off;
+}
+```
+
 　  
-　  
-<a id="anc4"></a>
 ## Nginxで「www」有り、無しのURLを統一する方法
 https://keikenchi.com/nginx-www-url
 
