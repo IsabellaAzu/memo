@@ -1,8 +1,8 @@
 
 # nginx各種設定
 
-公式：https://www.nginx.com/resources/wiki/
-基礎：http://dev.classmethod.jp/server-side/server/nginx-ip-access-control/
+公式：https://www.nginx.com/resources/wiki/<br>
+基礎：http://dev.classmethod.jp/server-side/server/nginx-ip-access-control/<br>
 
 ```
 # /etc/nginx/nginx.conf ベーシックな設定
@@ -52,5 +52,7 @@ http {
 }
 ```
 
+HTTPS上で複数のWebサイトの公開を実現するには何種類かの方法があり、<br>
+nginxというWebサーバで、TLSの拡張仕様であるSNI(Server Name Indication)を使って複数のHTTPSサイトを公開する例<br>
 
 
