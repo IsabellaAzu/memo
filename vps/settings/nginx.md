@@ -62,6 +62,11 @@ http {
 }
 ```
 
+
+##  海外からのサーバーアタックがあった時の暫定対応
+http://qiita.com/snoguchi/items/a4468a53da330d5edeeb  
+
+
 　  
 ## Nginxで「www」有り、無しのURLを統一する方法
 https://keikenchi.com/nginx-www-url
