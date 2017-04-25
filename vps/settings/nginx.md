@@ -65,6 +65,7 @@ http {
 
 ##  海外からのサーバーアタックがあった時の暫定対応
 http://qiita.com/snoguchi/items/a4468a53da330d5edeeb  
+https://inaba-serverdesign.jp/blog/20140616/nginx_deny_ipaddress.html  
 
 
 　  
