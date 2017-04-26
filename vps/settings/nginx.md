@@ -20,8 +20,8 @@ server {
 ```
 　  
 
-
-
+## "GET /favicon.ico HTTP/1.1"
+https://serverfault.com/questions/654622/confused-about-what-im-seeing-in-my-apache-access-log-think-i-might-have-been
 
 
 　  
