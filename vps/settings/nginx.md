@@ -88,8 +88,8 @@ http {
 }
 ```
 
-Nginxのproxyでキャッシュを削除する方法  
-http://server-setting.info/centos/apache-nginx-11-cash-remove.html  
+## Nginxによるリバースプロキシの設定方法  
+http://qiita.com/schwarz471/items/9b44adfbec006eab60b0  
 
 　  
 　  
