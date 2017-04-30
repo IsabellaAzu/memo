@@ -88,7 +88,9 @@ http {
 }
 ```
 
-Nginxのproxyでキャッシュを削除する方法
+Nginxのproxyでキャッシュを削除する方法  
+http://server-setting.info/centos/apache-nginx-11-cash-remove.html  
+
 　  
 　  
 HTTPS上で複数のWebサイトの公開を実現するには何種類かの方法があり、<br>
