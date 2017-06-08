@@ -28,19 +28,8 @@
 http://blog.serverworks.co.jp/tech/2013/08/16/sudo-without-password-makes-me-feel-disgusting/  
 基礎からのネットワーク&サーバ構築　まとめ  
 http://qiita.com/chrischris0801/items/7987982bb1d895493d36  
-さくらのVPSにCoreOSをインストールしてDocker専用機にする  
-http://qiita.com/yujiod/items/dc154120c4df2e938111  
-Vagrant・CoreOS・Dockerでインフラ素人が自宅サーバを立てた話  
-http://qiita.com/y_hokkey/items/3dd0d8f20f9daadbbf0b  
-実例で学ぶ CoreOS 超入門  
-https://blog.f99aq8ove.net/2015/07/24/coreos-introduction.html  
-CoreOS 入門  
-http://aeas44.github.io/2016/03/08/coreos-%E5%85%A5%E9%96%80/  
 　  
-### [CoreOS toolbox]
-CoreOS でも tcpdump したい (CoreOS toolbox)  
-http://qiita.com/dtan4/items/50fd75b56660ed8aa158  
-　  
+   
 ### [MySQL]
 Dockerの公式MySQLイメージの使い方を徹底的に解説するよ(データ投入とか)  
 http://dqn.sakusakutto.jp/2015/10/docker_mysqld_tutorial.html  
@@ -61,13 +50,6 @@ http://deeeet.com/writing/2015/01/07/terraform-coreos/
 Docker CoreOS Cluster  
 https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
 　  
-### [nginx]
-CoreOSでRocketを使ってnginxを動かす  
-http://qiita.com/yakumomo/items/4ee2d0f13f24b8f024b6  
-Docker + nginx-proxy でGitLab環境(Let's Encrypt付き)を構築する  
-http://qiita.com/ABE_TAKASHI/items/654ef6ed22071c93d6f2  
-VirtualHostをお手軽に実現できるDockerコンテナnginx-proxyの起動方法  
-https://suin.io/531  
 　  
 ### [コンテナ]
 CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
