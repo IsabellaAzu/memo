@@ -95,21 +95,9 @@ http://qiita.com/kumechang/items/fc108b1ec4683f3765d8
 - chkconfig/serviceと大体同じ役割と思っておけばよさそう。
 - Fedora系で採用されているようだ
 
-AWS+CoreOS+Dockerでコンテナの自動起動  
-http://qiita.com/aki/items/979b25ff555eb7ab96fc  
 「Systemd」を理解する ーシステム管理編ー  
 http://equj65.net/tech/systemd-manage/　　
 　  
-Vulcand : Docker コンテナをブルーグリーンデプロイ  
-
-### [Let's Encrypt]
-nginxを止めずに証明書を更新する  
-http://qiita.com/D4prog/items/b00baae1008da2de9b66  
-Let's Encryptを使ってSSL通信をする(※Let's EncryptではIPアドレスに対して証明書が発行出来ません)  
-http://qiita.com/HitoshiHaga/items/67378de7f97fbaa6d356  
-https://letsencrypt.org/getting-started/  
-Docker × Nginx × Let'sEncrypt | 俺の考えた最強のサーバー構築方法！  
-https://hackerslog.net/post/my-tech/server/letsencrypt-on-docker-and-nginx/  
-Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(上記にも同じページ有り)  
-http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
+### [Vulcand]
+Docker コンテナをブルーグリーンデプロイ  
 
