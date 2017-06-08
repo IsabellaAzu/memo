@@ -21,7 +21,7 @@
 　  
 
 - - - 
-## 参考(あとで移動)  
+## 参考情報
 
 ### [初期設定]
 初期アカウントがパスワード無しでsudo出来るのが気持ち悪いという貴方へ  
@@ -45,31 +45,15 @@ CoreOSでクラスタ構成を組む(etcd2 + fleet)
 http://qiita.com/umchifre/items/00580b35b96e2bedb5df  
 CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方法  
 http://qiita.com/kanga/items/a7714f73aced9f872427  
-TerraformでCoreOSクラスタを構築する  
-http://deeeet.com/writing/2015/01/07/terraform-coreos/  
 Docker CoreOS Cluster  
 https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
 　  
 　  
 ### [コンテナ]
-CoreOSでDockerインストールしてRemote API使用してコンテナを操作してみる  
-http://qiita.com/makotoomori@github/items/de0e39c5d67e5c69a741  
 Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(cloud-config.yml、Dockerfileで設定できる項目を確認)  
 http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
-さくらのVPSにCoreOSをインストールしてDocker専用機にする  
-http://qiita.com/yujiod/items/dc154120c4df2e938111  
-「Docker」と新コンテナランタイム「rkt」をサクっと比較してみる  
-http://qiita.com/datake914/items/a61a1aead43ffa058da9  
 コンテナの自動起動  
 http://qiita.com/aki/items/979b25ff555eb7ab96fc  
-macにDockerを入れてNginxでwebサーバーを立てるまで[動画]  
-https://www.youtube.com/watch?v=Ts3O8s-z-D4  
-Dockerではじめるコンテナ型仮想化環境  
-http://www.devlog.atlas.jp/2015/01/29/450  
-Scaling Docker #4 - Docker Service Discovery and Load Balancing  
-https://www.youtube.com/watch?v=R39VRocQtrQ  
-Dockerのbusyboxは永続コンテナと言いながらexport/saveコマンドでは持ち運びできないよ  
-http://qiita.com/kumechang/items/fc108b1ec4683f3765d8  
 　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
