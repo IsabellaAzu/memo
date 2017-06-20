@@ -39,12 +39,9 @@ Dockerで予め欲しいデータをつっこんだMySQLをこしらえる(Mac�
 http://ihcomega.hatenadiary.com/entry/2016/06/02/223221  
 　  
 ### [クラスタリング]
-CoreOS + etcd + fleetによるクラスタリング事始め（さくらのナレッジ）  
-http://knowledge.sakura.ad.jp/tech/2519/  
-CoreOSでクラスタ構成を組む(etcd2 + fleet)  
-http://qiita.com/umchifre/items/00580b35b96e2bedb5df  
-CoreOSのクラスタ環境（CoreOS+etcd+fleet）でdocker-composeを使う方法  
-http://qiita.com/kanga/items/a7714f73aced9f872427  
+CoreOS will remove fleet from Container Linux on February 1, 2018 [fleet:x]  
+https://coreos.com/blog/migrating-from-fleet-to-kubernetes.html  
+※ fleet : コンテナを動かすスケジューリングとコンテナの管理(2018/02/1以降CoreOSから外れる)  
 Docker CoreOS Cluster  
 https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
 　  
