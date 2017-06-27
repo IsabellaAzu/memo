@@ -73,6 +73,7 @@ https://inaba-serverdesign.jp/blog/20140616/nginx_deny_ipaddress.html
 https://keikenchi.com/nginx-www-url
 
 ```
+# コンテナの中の/etc/nginx/nginx.conf
 http {
     server {
         listen       80;
