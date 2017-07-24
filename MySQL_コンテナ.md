@@ -68,11 +68,12 @@ $ sudo dokcer pull mysql
 公式MySQLイメージいくつかの環境変数が用意されており、`run`の`e`オプションでその変数を設定することができます。
 環境変数の種類と意味は以下です。
 
-
-
-
-
-
-
+| 環境変数 | 意味 |
+|:-----------|:------------|
+| MYSQL_DATABASE | データベースの名前を指定する |
+| MYSQL_USER | ユーザを作成する |
+| MYSQL_PASSWORD | ユーザパスワードを設定する |
+| MYSQL_ROOT_PASSWORD | rootのパスワードを設定する |
+| MYSQL_ALLOW_EMPTY_PASSWORD | パスワードなしでログインできるようにする |
 
 
