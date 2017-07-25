@@ -80,7 +80,13 @@ $ sudo dokcer pull mysql
 ### MySQLサーバコンテナ起動
 上記を踏まえて、MySQLサーバコンテナを起動させます。  
 ```
-docker run --name hogedb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=hoge -e MYSQL_PASSWORD=hogepass -e MYSQL_DATABASE=db -d
+$ sudo docker run \
+  --name containerName \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -e MYSQL_USER=hogeuser \
+  -e MYSQL_PASSWORD=hogepass \
+  -e MYSQL_DATABASE=dbName \
+  -d containerImageName:tag
 ```
 
 #### コマンドの意味
