@@ -87,8 +87,11 @@ $ sudo docker run \
   -e MYSQL_DATABASE=dbName \
   -d containerImageName:tag
 ```
+今ホストPC上にはMySQLサーバコンテナがまるでデーモンのように起動しています。  
+
 
 #### コマンドの意味
+
 | コマンド　| 意味　|
 |:-----------|:------------|
 | docker run | コンテナの作成及び起動 |
@@ -101,7 +104,18 @@ $ sudo docker run \
 | mysql | コンテナの元になるイメージ |
 
 
+### クライアントコンテナの作成・起動
 
+「containerName」コンテナと連携するのにlinkオプションを使います。  
+linkオプションを使うには、link対象のコンテナが起動している必要があります。  
+そのため、先ほど起動させたMySQLサーバコンテナは起動させたままにしてください。  
+さて今度はクライアントを起動させます。
+```
+$ sudo docker run \
+  --name dbclient \
+  --link db:mysql \
+  -it mysql /bin/bash
+```
 
 
 
