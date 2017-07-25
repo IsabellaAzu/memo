@@ -74,7 +74,7 @@ $ sudo dokcer pull mysql
 | MYSQL_DATABASE | データベースの名前を指定する |
 | MYSQL_USER | ユーザを作成する |
 | MYSQL_PASSWORD | ユーザパスワードを設定する |
-| MYSQL_ROOT_PASSWORD | rootのパスワードを設定する |
+| MYSQL_ROOT_PASSWORD | MySQLのrootのパスワードを指定します。この変数の設定は必須です。これを設定しないとエラーが出て`run`が成功しません。 |
 | MYSQL_ALLOW_EMPTY_PASSWORD | パスワードなしでログインできるようにする |
 
 
