@@ -72,9 +72,31 @@ $ sudo dokcer pull mysql
 | 環境変数 | 意味 |
 |:-----------|:------------|
 | MYSQL_DATABASE | イメージ起動時に作成されるデータベースの名前を指定することができます。ユーザー/パスワードを設定した場合（下記参照）、そのユーザーはこのデータベースへのスーパーユーザになります。（`GRANT ALL`に相当）|
-| MYSQL_USER | ユーザを作成する |
-| MYSQL_PASSWORD | ユーザパスワードを設定する |
+| MYSQL_USER | 新しいユーザーを作成・パスワード付与のオプションです。このユーザーはMYSQL_DATABASE変数で指定されたデータベースのスーパーユーザになります。ユーザーを作成するためにはMYSQL_USER・MYSQL_PASSWORD両方の変数が必要です。どちらかだけだとエラーになります。 |
+| MYSQL_PASSWORD | 〃 |
 | MYSQL_ROOT_PASSWORD | MySQLのrootのパスワードを指定します。この変数の設定は必須です。これを設定しないとエラーが出て`run`が成功しません。 |
 | MYSQL_ALLOW_EMPTY_PASSWORD | パスワードなしでログインできるようにする |
+
+### MySQLサーバコンテナ起動
+上記を踏まえて、MySQLサーバコンテナを起動させます。  
+```
+docker run --name hogedb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=hoge -e MYSQL_PASSWORD=hogepass -e MYSQL_DATABASE=db -d
+```
+
+#### コマンドの意味
+| コマンド　| 意味　|
+|：------|:----|
+| docker run | コンテナの作成及び起動 |
+| –name hogedb | コンテナに名前をつけるオプション。例ではhogedb |
+| -e MYSQL_ROOT_PASSWORD=password | rootのパスワード設定。例ではpassword |
+| -e MYSQL_USER=hoge | ユーザの名前設定。例ではhoge |
+| -e MYSQL_PASSWORD=hogepass | ユーザパスワード設定。例ではhogepass |
+| -e MYSQL_DATABASE=db | 作成されるデータベースの名前。例ではdb |
+| -d | デタッチ状態（バックグラウンド動作）での起動オプション |
+| mysql | コンテナの元になるイメージ |
+
+
+
+
 
 
