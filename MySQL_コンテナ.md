@@ -85,7 +85,7 @@ docker run --name hogedb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=hoge -e M
 
 #### コマンドの意味
 | コマンド　| 意味　|
-|：------|:----|
+|:-----------|:------------|
 | docker run | コンテナの作成及び起動 |
 | –name hogedb | コンテナに名前をつけるオプション。例ではhogedb |
 | -e MYSQL_ROOT_PASSWORD=password | rootのパスワード設定。例ではpassword |
