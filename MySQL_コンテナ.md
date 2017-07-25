@@ -78,7 +78,6 @@ $ sudo dokcer pull mysql
 | MYSQL_ALLOW_EMPTY_PASSWORD | パスワードなしでログインできるようにする |
 
 ### MySQLサーバコンテナ起動
-上記を踏まえて、MySQLサーバコンテナを起動させます。  
 ```
 $ sudo docker run \
   --name containerName \
