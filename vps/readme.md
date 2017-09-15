@@ -1,7 +1,6 @@
 # VPSの設定
 
 ## さくらVPSでcoreOSベースの設定手順   
-（さくらVPSのcentOSの設定の場合https://goo.gl/BOV6LH）  
 さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
 　「:q!」　→　「control + z」  
 　「:wq」　→　「shift + z」を２回(大文字のZを2回)  
@@ -44,14 +43,7 @@ https://coreos.com/blog/migrating-from-fleet-to-kubernetes.html
 ※ fleet : コンテナを動かすスケジューリングとコンテナの管理(2018/02/1以降CoreOSから外れる)  
 Docker CoreOS Cluster  
 https://hondou.homedns.org/pukiwiki/pukiwiki.php?Docker%2520CoreOS%2520Cluster  
-　  
-　  
-### [コンテナ]
-Dockerを使って1サーバで複数Webサービスを運用するためのマイベストプラクティス(cloud-config.yml、Dockerfileで設定できる項目を確認)  
-http://qiita.com/miyasakura_/items/5cd3b05aa9c5e4f3f4be  
-コンテナの自動起動  
-http://qiita.com/aki/items/979b25ff555eb7ab96fc  
-　  
+　  　  
 ### [systemd]
 - CoreOSではサービスの管理はこれを使用する(Docker再起動したりなど)
 - 起動時の処理などを管理してくれるもの。
@@ -61,6 +53,3 @@ http://qiita.com/aki/items/979b25ff555eb7ab96fc
 「Systemd」を理解する ーシステム管理編ー  
 http://equj65.net/tech/systemd-manage/　　
 　  
-### [Vulcand]
-Docker コンテナをブルーグリーンデプロイ  
-
