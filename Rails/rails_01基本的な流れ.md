@@ -7,6 +7,8 @@ $ mysql.server start # gemファイル内でmysql2のバージョン指定をし
 （$ bundle update）
 $ cd プロジェクト名
 $ rails s # rails serverの省略形
+# 本番環境でrackサーバーをデーモンとして実行の場合
+$ rails s -e production -d
 $ rails s -p 8888 #localhost:8888のポート番号で起動
 $ rake db:create
 ```
