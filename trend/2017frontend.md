@@ -1,6 +1,6 @@
 # フロントエンド系
 
-> 2017年のフロントエンドエンジニアならこの程度は知ってて当然だよな？
+> 2017年のフロントエンドエンジニアならこの程度は知ってて当然だよな？  
 > http://qiita.com/rana_kualu/items/cad8dbbe5f5a1f1b3ba1  
 
 - - - 
@@ -2325,6 +2325,29 @@ Unheap
 
 主にjQueryプラグインのライブラリ集。
 
+- - - 
+### rails関連
 
+#### Rails 5.1で大きく変更されるフロントエンド開発環境
+```
+【問題】
+・coffee scriptへの依存
+・npmによる依存性、バージョン管理が難しい
+・javascriptのライブラリが野良gem化されてupdateされない問題
+【機能提供】
+・jQuery依存からの脱却
+・yarn/webpackのbinstub（（JavaScriptライブラリのインストール））
+・babelによるtranspile
+・webpackによる生成物はpublic/packs以下に配置（ライブラリ間の依存関係を管理）
+・webpacker:installによる環境立ち上げ
+・React, vue.js, angular2のサポート
+・webpack-dev-serverによるhot reloading
+・ビルド生成物へのdigestの付与とヘルパータグ
+・erb.jsをwebpackで結合する rails-erb-loader
+【今後不要になっていくと考えれるもの】
+・digest付与
+・Sprockets、asset pipeline
+```
 
+[Rails5.1のフロントエンド刷新以降のフロントエンド実装の選択肢](http://blog.toshimaru.net/rails-frontend/)  
 
