@@ -111,7 +111,8 @@ db/migrate/yyyymmddhhmmss_devise_create_users.rb
 　↓
 ```
 # databaseに反映
-$ bundle exec rake db:migrate
+$ bundle exec rails db:create
+$ bundle exec rails db:migrate
 ```
 
 
@@ -130,7 +131,7 @@ $ bundle exec rake db:migrate
     <% if user_signed_in? %> 
       <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
       <!-- *_path はUserモデルを作成したときに、
-        deviseにより自動で作成されてますので、rake routesで確認できます -->
+        deviseにより自動で作成されてますので、rails routesで確認できます -->
       Logged in as <strong><%= current_user.email %></strong>.
       <%= link_to 'プロフィール変更', edit_user_registration_path %> |
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
@@ -150,7 +151,7 @@ $ bundle exec rake db:migrate
 ##### 2.3 URIの確認  
 ```Ruby
 # 確認
-$ bundle exec rake routes
+$ bundle exec rails routes
 ```
 
 ```Ruby
@@ -327,12 +328,12 @@ config.action_mailer.smtp_settings = {
 ```
 の後、  
 ```Ruby
-$ bundle exec rake db:migrate:reset
+$ bundle exec rails db:migrate:reset
 ```
 > 参考  
-rake db:resetとrake db:migrate:resetの違い  
-・rake db:resetはdbをドロップし、db/schema.rbにもとづいてcreate  
-・rake db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
+rails db:resetとrails db:migrate:resetの違い  
+・rails db:resetはdbをドロップし、db/schema.rbにもとづいてcreate  
+・rails db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
 http://memo.yomukaku.net/entries/iDhORCE
 
 ###### 3.4.1.3 :confirmableを追加
@@ -357,7 +358,7 @@ http://memo.yomukaku.net/entries/iDhORCE
 　unlock_instructions.html.erb
 
 　  
-##### 3.6 deviseのコントローラを独自のコントローラに変更($ rake routesの右側)
+##### 3.6 deviseのコントローラを独自のコントローラに変更($ rails routesの右側)
 ```Ruby
 # /config/routes.rb
 
@@ -420,7 +421,7 @@ cancel_guser_registration GET    /users/cancel(.:format)         users/registrat
 独自コントローラを用意  
 http://www.tamurasouko.com/?p=929  
 　  
-##### 3.7 URI Patternの変更($ rake routesの左側)
+##### 3.7 URI Patternの変更($ rails routesの左側)
 ```Ruby
 config/routes.rb
 devise_for :users, :path => 'accounts'
