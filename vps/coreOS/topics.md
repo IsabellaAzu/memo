@@ -21,9 +21,8 @@ A:
 ```
 # より多くの情報を見るには
 $ systemctl --failed
-
 ```
-参考:[はじめてのsystemdサービス管理ガイド](https://dev.classmethod.jp/cloud/aws/service-control-use-systemd/)　[loadされたけど起動に失敗したsystemdのserviceをリセットする](https://mov.vc/posts/12)
+参考:[はじめてのsystemdサービス管理ガイド](https://dev.classmethod.jp/cloud/aws/service-control-use-systemd/)、[loadされたけど起動に失敗したsystemdのserviceをリセットする](https://mov.vc/posts/12)
 　  
 - - - 
 　  
