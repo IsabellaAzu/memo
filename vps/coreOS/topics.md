@@ -2,7 +2,6 @@
 
 ## Q: CoreOS shows failed units at login, what does it mean?
 > sshでcoreOSにログインした時に「Failed Units」が5つある。どうすればいい？  
-(参考)[https://www.digitalocean.com/community/questions/coreos-shows-failed-units-at-login-what-does-it-mean]  
 ```
 【状況】
 $ ssh core@xxx.xxx.xxx.xxx
@@ -15,6 +14,8 @@ sshd@1766-188.166.209.155:22-151.25.198.11:55062.service
 sshd@23027-188.166.209.155:22-111.74.239.61:2490.service
 sshd@23028-188.166.209.155:22-111.74.239.61:2039.service
 ```
+
+(参考)[https://www.digitalocean.com/community/questions/coreos-shows-failed-units-at-login-what-does-it-mean]  
 
 A: 
 ```
