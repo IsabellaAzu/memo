@@ -2,7 +2,7 @@
 
 ## Q: CoreOS shows failed units at login, what does it mean?
 > sshでcoreOSにログインした時に「Failed Units」が5つある。どうすればいい？  
-参考: (https://www.digitalocean.com/community/questions/coreos-shows-failed-units-at-login-what-does-it-mean)[https://www.digitalocean.com/community/questions/coreos-shows-failed-units-at-login-what-does-it-mean]  
+(参考)[https://www.digitalocean.com/community/questions/coreos-shows-failed-units-at-login-what-does-it-mean]  
 ```
 【状況】
 $ ssh core@xxx.xxx.xxx.xxx
