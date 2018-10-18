@@ -6,14 +6,18 @@ $ rails new プロジェクト名 -d mysql # MySQLで
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
 （$ bundle update）
 $ cd プロジェクト名
-$ rails s # rails serverの省略形
+$ rails db:create
+# rails serverの省略形
+$ rails s
+#localhost:8888のポート番号で起動
+$ rails s -p 8888
 # 本番環境でrackサーバーをデーモンとして実行の場合
 $ rails s -e production -d
-$ rails s -p 8888 #localhost:8888のポート番号で起動
-$ rake db:create
 ```
+
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
 http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
+
 ```sh
 # インストール
 $ npm install -g browser-sync
