@@ -1,22 +1,22 @@
 
-#まっさらからの環境構築のメモ（201501）  
+# まっさらからの環境構築のメモ（201501）  
 [Githubのマークダウン記法](http://codechord.com/2012/01/readme-markdown/ "") 
 
 
-##Spec
+## Spec
 
-###ハード
+### ハード
 *	MacBook (13-inch, Late 2009)
 *	プロセッサ 2.26 GHz Intel Core 2 Duo
 *	メモリ 4GB 1067 MHz DDR3（8GBまでいけるかも）
 *	グラフィクス NVIDIA GeForce 9400M 256 MB
 
-###OS
+### OS
 *	MacOSX 10.10.1（14B25）
 
 
 　  
-##準備作業
+## 準備作業
 　  
 ### 1. Command Line Toolsインストール  
 Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
@@ -426,22 +426,76 @@ https://imageoptim.com/
 - Railsプロジェクト内のファイル移動：rails-transporter
 - 全角スペースを□で表示：show-ideographic-space
 
-
-##### 
-
-
-##### 
-
-
-##### 
-
-
-##### 
-
-
-##### 
-
-
 ##### tmux
 http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
+
+
+## 設定
+https://qiita.com/ryuichi1208/items/5905240f3bfce793b33d?utm_source=Qiita%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&utm_campaign=dab0ebb055-Qiita_newsletter_339_11_28_2018&utm_medium=email&utm_term=0_e44feaa081-dab0ebb055-33751137  
+
+```
+# OS: ブート時のサウンドの無効化 (寂しい気もしますが煩いので消しています)
+$ sudo nvram SystemAudioVolume=" "
+
+# OS: 自動大文字の無効化
+$ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# OS: クラッシュレポートの無効化
+$ defaults write com.apple.CrashReporter DialogType -string "none"
+
+# Dock: アプリケーション起動時のアニメーションを無効化
+$ defaults write com.apple.dock launchanim -bool false
+
+# Finder: アニメーションを無効化する
+$ defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Finder: デフォルトで隠しファイルを表示する
+$ defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: 全ての拡張子のファイルを表示
+$ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: 拡張子変更時の警告を無効化
+$ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Finder: USBやネットワークストレージに.DS_Storeファイルを作成しない
+$ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+$ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Finder: Show the ~/Library folder
+$ chflags nohidden ~/Library
+
+# Safari: オートフィルの無効化
+$ defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+$ defaults write com.apple.Safari AutoFillPasswords -bool false
+$ defaults write com.apple.Safari AutoFillCreditCardData -bool false
+$ defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+
+# Safari: ポップアップウィンドウをブロック
+$ defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
+$ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
+
+# Safari: 追跡を無効化
+$ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+
+# ターミナル: UTF-8のみを使用する
+$ defaults write com.apple.terminal StringEncodings -array 4
+
+# ターミナル: iTermのダークテーマをインストール
+$ open "${HOME}/init/Solarized Dark.itermcolors"
+
+# ターミナル: 終了時のプロンプトを非表示にする
+$ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+```
+
+##### 
+
+
+##### 
+
+
+##### 
+
+
+##### 
 
