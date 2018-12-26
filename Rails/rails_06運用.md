@@ -15,6 +15,16 @@ $ rails g model Prefecture label:string
 $ rails db:migrate
 ```
 
+※model名を `hoge_fuga` とすると、 `/app/models/hoge_fuga.rb` 内のclass名が `HogeFuga` になってしまうので、  
+```
+class HogeFuga < ApplicationRecord
+end
+　↓
+class Hoge_fuga < ApplicationRecord
+end
+```
+と修正する
+
 ### (3)初期データ投入
 db/seeds.rbの編集
 
