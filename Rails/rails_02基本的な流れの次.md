@@ -498,7 +498,8 @@ http://a-suenami.hatenablog.com/entry/2014/12/07/200427
 #### RailsのModelとControllerにどういうメソッドを書くのか
 http://woshidan.hatenadiary.jp/entry/2015/03/25/223006
 #### ビジネスロジックをどこに書くか
-http://d.hatena.ne.jp/koda_hd28v/20110414/1302752281
+http://d.hatena.ne.jp/koda_hd28v/20110414/1302752281  
+http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model  
 #### 中規模Web開発のためのMVC分割とレイヤアーキテクチャ
 http://qiita.com/yuku_t/items/961194a5443b618a4cac
 #### destroyをjs無しで
