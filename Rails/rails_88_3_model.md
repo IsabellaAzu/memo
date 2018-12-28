@@ -23,7 +23,9 @@ class User < ActiveRecord::Base
     format: { with: /\A[a-z0-9]+\z/i }  # やっぱり半角英数字のみだよね！
 end
 ```
-　  
+
+[Active Record(Railsのモデル) バリデーションまとめ](https://morizyun.github.io/ruby/active-record-validation.html)  
+
 　  
 - - - 
 ## 親子関連
@@ -61,8 +63,23 @@ count、average、minimum、maximum、sum、readonly、to_sql、explain
 　  
 　  
 - - - 
+## ■型関連
+　  
+### 電話番号
+```ruby
+```
+
+### 位置情報
+
+[kayac:ゼロから始めるRails位置ゲーサーバ（その１）](https://techblog.kayac.com/how-to-use-postgis-with-rails-part1)  
+[Railsマイグレーションでdecimal型の精度（桁数）を指定](https://easyramble.com/rails-migration-with-decimal.html)  
+[MySQLに緯度経度を保存する際の、カラム型の選び方double型](https://qiita.com/y-ken/items/55d8e90d1a826391cda8)  
+
+　  
+- - - 
 ## ■xxx関連
 　  
 ###
 ```ruby
 ```
+
