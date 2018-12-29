@@ -66,7 +66,9 @@ count、average、minimum、maximum、sum、readonly、to_sql、explain
 ## ■型関連
 
 [【Rails・MySQL】MySQLのデータ型とRailsのマイグレーションファイルのデータ定義の対応まとめ](https://qiita.com/vermilionfog/items/816fa7de1d0213979929)  
-
+[RailsのDB設計：小数点をあつかう場合のアンチパターン](http://chamao.hatenablog.com/entry/2018/04/08/103805)  
+　  
+  
 ### 電話番号
 ```ruby
 ```
