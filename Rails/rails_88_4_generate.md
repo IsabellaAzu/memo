@@ -5,8 +5,11 @@
 　  
 - - - 
 ## テーブル作成時
-```
+例: １０進数で `最大桁数１０桁` 、 `小数点以下２桁` の `priceフィールド` を持ったモデルを作成
+[Rails g modelの際のdecimal型のフィールドについての注意点](https://qiita.com/noriyotcp/items/6284ae00a6362e8b218b)
 
+```
+$ rails g model Product 'price:decimal{10,2}'
 ```
 　  
 　  
