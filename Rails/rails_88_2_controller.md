@@ -23,7 +23,33 @@ buildを使うと親モデルに対する外部参照キーを自動でセット
 ### includeとjoinのちがい
 http://qiita.com/south37/items/b2c81932756d2cd84d7d  
 　  
-　  
+### 関連テーブルの情報をまとめて読み込む:includeオプションのまとめ
+https://www.gesource.jp/weblog/?p=477  
+#### 1つの関連先テーブルを読み込む
+```
+:include => :foo
+```
+#### 複数の関連先テーブルを読み込む
+```
+:include => [:foo, :bar]
+```
+#### 多段の関連を一度に読み込む
+```
+:include => {:foo => :bar}
+```
+#### さらに多段の関連を一度に読み込む
+```
+:include => {:foo => {:bar => :baz}}
+```
+#### 関連先テーブルから複数の関連テーブルを読み込む
+```
+:include => {:foo => [:bar, :baz]}
+```
+#### 以上を組み合わせて読み込む
+```
+:include => [{:foo => {:bar => :baz}}, :hoge]
+```
+
 - - - 
 ## ■繰り返し処理関連
 ### 【Ruby】繰り返し処理について（for, while, until, each, time, loop）
