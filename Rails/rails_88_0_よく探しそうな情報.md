@@ -205,6 +205,19 @@ export DYLD_LIBRARY_PATH=/usr/local/opt/mysql@5.5/:${DYLD_LIBRARY_PATH}
 $ rbenv rehash
 ```
 
+> シンボルがズレてる？
+```
+$ rails db:create
+=> rails aborted!
+=> LoadError: dlopen(/Users/b02662/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/mysql2-0.5.2/lib/mysql2/mysql2.bundle, 9): Library not=>  loaded: /usr/local/opt/mysql/lib/libmysqlclient.20.dylib
+```
+
+```
+$ bundle exec gem uninstall mysql2
+$ bundle install
+```
+で解決
+
 
 
 ### (2)MySQLの再インストール（homebrew）
