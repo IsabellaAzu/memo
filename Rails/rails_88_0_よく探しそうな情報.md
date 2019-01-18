@@ -134,23 +134,79 @@ http://qiita.com/hennry/items/6648379aa2740ea978e5
 　  
 - - -
 　  
-### FactoryGirlってなんぞ？？（テスト関連？？）
-http://blog.inouetakuya.info/entry/2013/12/28/205008  
-http://techracho.bpsinc.jp/morimorihoge/2013_08_23/12744  
-http://o.inchiki.jp/obbr/159  
-http://miyohide.hatenablog.com/entry/20120510/1336660092  
-
 
 ### デバイスのOS、ユーザーエージェント
 https://htaccess.cman.jp/useragent/os/  
 http://qiita.com/nightyknite/items/b2590a69f2e0135756dc  
 　  
 - - - 
+
 ## OS、制作環境アップデートで
+
 ### (1)localでMySQLが起動できない
 http://qiita.com/fujitora/items/d341c52706d1954cae28  
 http://qiita.com/carotene512/items/e00076fe3990b9178cc0  
-　  
+
+#### よくあるエラー
+
+> Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+いつのまにか消えるらしい
+```
+$ sudo touch /tmp/mysql.sock
+```
+
+> /usr/local/var/mysql/xxx.err: Permission denied
+```
+$ whoami
+$ sudo chown -R _mysql:_mysql /usr/local/var/mysql
+$ sudo chown 「whoamiで出た名前」 /usr/local/var/mysql/マックブック名.err
+```
+
+> ERROR! MySQL server PID file could not be found!
+> .. ERROR! The server quit without updating PID file (/usr/local/var/mysql/xxx.pid).
+```
+$ touch /usr/local/var/mysql/xxx.pid
+```
+
+> touchしたpidファイルが消える
+```
+(1)my.cnfが複数ないか確認
+```
+
+> プロセスの確認
+```
+$ ps aux | grep mysql
+$ kill -9 数字
+```
+
+> brew で MySQL uninstall そして install
+```
+$ brew uninstall --force mysql
+$ brew cleanup -s mysql
+$ brew prune
+$ brew install mysql@5.7
+```
+
+> bash: mysql.server: command not found
+```
+$ brew info mysql
+$ brew doctor
+$ brew link mysql
+```
+
+> ~/.bashrcに
+```
+export PATH=/usr/local/opt/mysql@5.5/bin:${PATH}
+export DYLD_LIBRARY_PATH=/usr/local/opt/mysql@5.5/:${DYLD_LIBRARY_PATH}
+```
+
+> 
+```
+$ rbenv rehash
+```
+
+
+
 ### (2)MySQLの再インストール（homebrew）
 https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
 　  
