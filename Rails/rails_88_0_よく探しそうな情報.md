@@ -273,6 +273,7 @@ mysql> FLUSH PRIVILEGES;
 
 ### (2)MySQLの再インストール（homebrew）
 https://qiita.com/sato11/items/ba887a5655217f60f2a2  
+https://qiita.com/kodera123/items/e6c8cc1cf1e51f1debd0  
 
 #### バックアップ  
 
