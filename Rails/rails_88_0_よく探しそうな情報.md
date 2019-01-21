@@ -318,7 +318,19 @@ $ sudo rm -rf /private/var/db/receipts/*mysql*
 
 #### Mac再起動
 
+### Mac Homebrewで入れたMySQLがstopしても、自動で起動し復活するゾンビモードを解消
+https://mozy-ok.hatenablog.com/entry/2018/04/10/160331  
 
+#### 原因
+
+> mysqlのplistの設定で、死なないようになってるっぽい(?)
+> そのため、~/Library/LaunchAgents/homebrew.mxcl.mysql@5.6.plist 内のKeepAliveの設定を、
+> 以下のようにfalse/に変更し、設定を反映することで解決した。
+```
+<dict>
+    <key>KeepAlive</key>
+    <false/>
+```
 
 ### (3)rails sで「/bin/rails:6: warning: previous definition of APP_PATH was here」エラー
 Rubyを一度消して再インストールすれば解決  
