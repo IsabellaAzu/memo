@@ -218,7 +218,59 @@ $ bundle install
 ```
 で解決
 
+#### sequel proでログインできない 
+MySQLの認証プラグインのerrorログ
+```
+MySQL の応答: Authentication plugin 'caching_sha2_password' cannot be loaded: dlopen(/usr/local/mysql/lib/plugin/caching_sha2_password.so, 2): image not found
+```
+https://qiita.com/r641ywork/items/7f0ca12ced72363f9448  
 
+##### 解決策
+```
+(1)標準ターミナルやiTermで頑張る。
+(2)アプリ側のcaching_sha2_passwordへの対応を待つ。
+(3)Sequel Proにログインするユーザの認証プラグインを変更する。
+```
+
+##### (3)の解決策で対応する場合
+
+
+my.cnfの場所の確認
+```
+$ mysql --help | grep my.cnf
+```
+```
+#下記の優先順位で設定ファイルを見ていく
+- /etc/my.cnf
+- /etc/mysql/my.cnf
+- /usr/local/etc/my.cnf
+- ~/.my.cnf
+```
+
+```
+#ターミナル値を変更
+$ mysql -u root -p
+mysql> SELECT host, user, plugin FROM mysql.user;
+```
+
+```
++-----------+------------------+-----------------------+
+| host      | user             | plugin                |
++-----------+------------------+-----------------------+
+| localhost | root             | caching_sha2_password |
++-----------+------------------+-----------------------+
+```
+
+pluginの値を変更
+```
+mysql> ALTER USER 'root'@"localhost" IDENTIFIED WITH mysql_native_password BY '{password}';
+mysql> FLUSH PRIVILEGES;
+```
+
+設定の反映
+```
+mysql> FLUSH PRIVILEGES;
+```
 
 ### (2)MySQLの再インストール（homebrew）
 https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
