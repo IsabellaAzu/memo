@@ -336,7 +336,7 @@ https://mozy-ok.hatenablog.com/entry/2018/04/10/160331
 Rubyを一度消して再インストールすれば解決  
 http://kusu.hateblo.jp/entry/2015/05/12/181134  
 　  
-### (4)プロジェクトいGemをインストールできたが、gem mysql2 でエラー
+### (4)プロジェクトにGemをインストールできたが、gem mysql2 でエラー
 ```
 $ bundle install --path vendor/bundle
 ```
@@ -345,3 +345,24 @@ http://qiita.com/miyukiw/items/a0e00028ec5ac5c6beb0
 MySQL5.7からMySQL5.6にダウングレードする？（OSX　Yosemite 10.10.5）  
 OSとMySQLのバージョンとか  
 https://github.com/brianmario/mysql2/issues/603#issuecomment-158705807  
+
+### (5)brewのコンパイラーが古い
+
+各種バージョンの確認
+```
+$ brew doctor
+---
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in the App Store.
+---
+Warning: Your Xcode (8.1) is outdated.
+Please update to Xcode 9.2 (or delete it).
+Xcode can be updated from the App Store.
+```
+
+#### 下記から古いコンパイラーをダウンロードとインストール
+https://developer.apple.com/download/more/  
+https://qiita.com/TsukasaHasegawa/items/0d7d5c2cf3a2b8ce8993  
+
+
+
