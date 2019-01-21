@@ -196,8 +196,8 @@ $ brew link mysql
 
 > ~/.bashrcに
 ```
-export PATH=/usr/local/opt/mysql@5.5/bin:${PATH}
-export DYLD_LIBRARY_PATH=/usr/local/opt/mysql@5.5/:${DYLD_LIBRARY_PATH}
+export PATH=/usr/local/opt/mysql@5.7/bin:${PATH}
+export DYLD_LIBRARY_PATH=/usr/local/opt/mysql@5.7/:${DYLD_LIBRARY_PATH}
 ```
 
 > 
