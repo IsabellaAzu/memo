@@ -234,7 +234,6 @@ https://qiita.com/r641ywork/items/7f0ca12ced72363f9448
 
 ##### (3)の解決策で対応する場合
 
-
 my.cnfの場所の確認
 ```
 $ mysql --help | grep my.cnf
@@ -273,8 +272,53 @@ mysql> FLUSH PRIVILEGES;
 ```
 
 ### (2)MySQLの再インストール（homebrew）
-https://yukiyamashina.com/blog/2016/01/18/clean-install-mysql-on-mac-os-x-el-capitan/  
-　  
+https://qiita.com/sato11/items/ba887a5655217f60f2a2  
+
+#### バックアップ  
+
+```
+$ mysqldump -u root -p -x --all-databases > dump.sql
+```
+
+#### プロセスの確認と切断
+
+```
+$ ps -ax | grep mysql
+$ kill -9 xxx
+```
+
+#### MySQLの停止
+
+```
+$ mysql.server stop
+```
+
+#### HomebrewでMySQLをアンインストール
+
+```
+$ brew remove mysql
+$ brew cleanup
+```
+
+#### MySQL関連ファイルを削除
+
+```
+$ sudo rm /usr/local/mysql
+$ sudo rm -rf /usr/local/var/mysql
+$ sudo rm -rf /usr/local/mysql*
+$ sudo rm ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+$ sudo rm -rf /Library/StartupItems/MySQLCOM
+$ sudo rm -rf /Library/PreferencePanes/My*
+$ rm -rf ~/Library/PreferencePanes/My*
+$ sudo rm -rf /Library/Receipts/mysql*
+$ sudo rm -rf /Library/Receipts/MySQL*
+$ sudo rm -rf /private/var/db/receipts/*mysql*
+```
+
+#### Mac再起動
+
+
+
 ### (3)rails sで「/bin/rails:6: warning: previous definition of APP_PATH was here」エラー
 Rubyを一度消して再インストールすれば解決  
 http://kusu.hateblo.jp/entry/2015/05/12/181134  
