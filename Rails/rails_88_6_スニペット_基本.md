@@ -59,8 +59,8 @@ format
 
 |  TH  |  TH  |
 | ---- | ---- |
-|  TD  |  TD  |
-|  TD  |  TD  |
+|  :url  |  TD  |
+|  :method  |  TD  |
 
 |       ||   |
 |-------||----|
