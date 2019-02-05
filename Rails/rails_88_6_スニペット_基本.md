@@ -55,7 +55,7 @@ format
 <% end %>
 ```
 
-属性説明一覧 (https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502)[https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502]
+属性説明一覧 [https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502](https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502)
 
 ##### :url
 フォームの送信先URLを指定します。
