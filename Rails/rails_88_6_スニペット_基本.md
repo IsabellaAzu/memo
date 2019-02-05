@@ -59,12 +59,12 @@ format
 
 |  TH  |  TH  |
 | ---- | ---- |
-|  :url  |  TD  |
+|  :url  |  フォームの送信先URLを指定します。<br>渡せる値は、url_forやlink_toで渡せる値と似ています。たとえば、名前付きルートを直接渡すこともできますし、:urlなしで:scopeを渡すと、現在のURLにフォームを送信することもできます。  |
 |  :method  |  TD  |
 
 |       ||   |
 |-------||----|
-|:url   ||フォームの送信先URLを指定します。<br>渡せる値は、url_forやlink_toで渡せる値と似ています。たとえば、名前付きルートを直接渡すこともできますし、:urlなしで:scopeを渡すと、現在のURLにフォームを送信することもできます。|
+|:url   |||
 |:method||フォーム送信時のHTTPメソッド（verb）を指定します。<br>通常は:getや:postを指定します。<br>:patch、:put、:deleteを指定すると、隠しinput名の後ろに_methodが追加され、POST verb上でこれらのHTTP verbをシミュレートします。|
 
 
