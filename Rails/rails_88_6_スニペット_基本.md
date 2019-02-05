@@ -57,6 +57,10 @@ format
 
 属性説明一覧 [https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502](https://techracho.bpsinc.jp/hachi8833/2017_05_01/39502)
 
+|  TH  |  TH  |
+| ---- | ---- |
+|  TD  |  TD  |
+|  TD  |  TD  |
 
 |       ||   |
 |-------||----|
