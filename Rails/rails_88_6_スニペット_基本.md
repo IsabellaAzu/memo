@@ -103,4 +103,23 @@ format
 ```
 ```
 
+## rails g migrate
+
+### カラム追加
+
+```
+$ rails g migration AddColumnToUsers_xxx カラム名:string
+作成されたmigrationファイルにお好みのオプション追加
+class AddColumnToUsersXXX < ActiveRecord::Migration[5.2]
+  def change
+    add_column :users_ｘｘｘes, :xxx, :string, default: nil, null: true, :after => :email
+  end
+end
+
+
+```
+
+
+
+
 
