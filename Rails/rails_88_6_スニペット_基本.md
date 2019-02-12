@@ -9,9 +9,13 @@
 ｐａｔｈ
 <%= link_to “文字”, "https://" %>
 <%= link_to “文字”, root_path %>
-attributes
+class名
 <%= link_to "TOP", root_path, class: "xxx" %>
+アンカー、ターゲット
 <%= link_to "TOP", users_path(@user, anchor: "anc"), "class"=>"m_", target: "_blank" %>
+パラメータ、アンカー
+<%= link_to "TOP", users_path(user_category_id: user_category.id, anchor: "anc") %>
+
 削除
 <%= link_to "削除", member_path(params[:id]), method: :delete %>
 タグ
@@ -96,6 +100,9 @@ format
 ### select,option
 
 ```
+
+
+
 ```
 
 ### submit
