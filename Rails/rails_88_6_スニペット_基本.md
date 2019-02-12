@@ -12,7 +12,7 @@
 class名
 <%= link_to "TOP", root_path, class: "xxx" %>
 アンカー、ターゲット
-<%= link_to "TOP", users_path(@user, anchor: "anc"), "class"=>"m_", target: "_blank" %>
+<%= link_to "TOP", user_path(@user, anchor: "anc"), "class"=>"m_", target: "_blank" %>
 パラメータ、アンカー
 <%= link_to "TOP", users_path(user_category_id: user_category.id, anchor: "anc") %>
 
