@@ -133,4 +133,25 @@ end
 ```
 
 
+## どれを使う
+
+### count, length, size
+https://www.lanches.co.jp/blog/3199
+
+|        | キャッシュ | 内容 |
+| ------ | -------- | ---- |
+| count  | 使わない  | SQLのCOUNTを使ってカウント |
+| length | あれば使う | SQLの実行結果の行数をカウントします |
+| size   | あれば使う | SQLのCOUNTを使ってカウントします |
+
+### form_with, form_for, form_tag
+
+|           | 内容            |
+| --------- | --------------- |
+| form_with | rails5から推奨   |
+| form_for  | rails5から非推奨 |
+| form_tag  | rails5から非推奨 |
+
+
+
 
