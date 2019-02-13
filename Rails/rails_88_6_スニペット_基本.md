@@ -152,6 +152,13 @@ https://www.lanches.co.jp/blog/3199
 | form_for  | rails5から非推奨 |
 | form_tag  | rails5から非推奨 |
 
+## temporary
+
+Select xxxes.yyy_id,xxxes.zzz_id, zzzs.label,zzz_categories.label  
+from xxxes 
+inner join zzzs on zzzs.id = xxxes.zzz_id 
+inner join zzz_categories on zzz_categories.id = zzzs.zzz_category_id 
+where zzz_categories.id = 1;
 
 
 
