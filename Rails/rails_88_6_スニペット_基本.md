@@ -142,7 +142,8 @@ end
 ## どれを使う
 
 ### count, length, size
-https://www.lanches.co.jp/blog/3199
+https://www.lanches.co.jp/blog/3199  
+sizeを使おう！  
 
 |        | キャッシュ | 内容 |
 | ------ | -------- | ---- |
