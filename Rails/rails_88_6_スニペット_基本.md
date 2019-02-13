@@ -132,6 +132,12 @@ end
 <% 変数名 ||= 条件 ? "none" : "" %>
 ```
 
+## debug
+
+```
+.inspect
+```
+
 
 ## どれを使う
 
@@ -152,13 +158,19 @@ https://www.lanches.co.jp/blog/3199
 | form_for  | rails5から非推奨 |
 | form_tag  | rails5から非推奨 |
 
-## temporary
 
+## データの絞り込み
+
+### inner join
+https://qiita.com/akishin/items/dd23f9782349f67949b1
+
+```
 Select xxxes.yyy_id,xxxes.zzz_id, zzzs.label,zzz_categories.label  
 from xxxes 
 inner join zzzs on zzzs.id = xxxes.zzz_id 
 inner join zzz_categories on zzz_categories.id = zzzs.zzz_category_id 
 where zzz_categories.id = 1;
+```
 
 
 
