@@ -4,8 +4,9 @@
 
 ## reset.css
 
-### CSSリセットにも新しい動きが！最近の実装に合わせて、見直すきかっけになる新しいCSSのリセット -CSS Remedy
+### CSS Remedy
 
+CSSリセットにも新しい動きが！最近の実装に合わせて、見直すきかっけになる新しいCSSのリセット  
 https://coliss.com/articles/build-websites/operation/css/cssremedy.html
 
 ### destyle.css
