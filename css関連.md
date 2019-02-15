@@ -245,7 +245,9 @@ table {
 
 
 ## flex
-`CSS Flexboxのレイアウトで起きる厄介な問題をJavaScriptを使用せずに、解決するテクニック`
+
+### CSS Flexboxのレイアウトで起きる厄介な問題をJavaScriptを使用せずに、解決するテクニック
+
 https://coliss.com/articles/build-websites/operation/css/css-flexbox-holy-albatross.html
 
 
