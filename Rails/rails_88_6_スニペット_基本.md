@@ -173,5 +173,12 @@ inner join zzz_categories on zzz_categories.id = zzzs.zzz_category_id
 where zzz_categories.id = 1;
 ```
 
+### uniq, distinct
+
+|           | 内容                |                     |
+| --------- | ------------------ | ------------------- |
+| .distinct | sql query method   | Rails5以降で正式メソッド |
+| .uniq     | array method       | Rails5以降で非推奨    |
+
 
 
