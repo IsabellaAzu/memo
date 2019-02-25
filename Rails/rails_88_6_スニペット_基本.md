@@ -181,4 +181,13 @@ where zzz_categories.id = 1;
 | .uniq     | array method       | Rails5以降で非推奨    |
 
 
+## error回避
+
+### A server is already running. Check プロジェクト名/tmp/pids/server.pid.
+
+```
+$ lsof -wni tcp:3000
+$ kill -9 PID番号
+```
+
 
