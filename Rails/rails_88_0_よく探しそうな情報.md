@@ -187,6 +187,12 @@ $ brew prune
 $ brew install mysql@5.7
 ```
 
+> mysqlのバージョンを変更したら、gemも入れ替える(最初に入れたlibraryを読み込み続けちゃう)
+```
+$ bundle exec gem uninstall mysql2
+$ bundle exec gem install mysql2
+```
+
 > bash: mysql.server: command not found
 ```
 $ brew info mysql
