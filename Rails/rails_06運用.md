@@ -91,7 +91,35 @@ $ rails routes
 ```
 
 
+## サーバーが落ちた時などの復旧
 
+### docker-compose up -d でのerror
+
+```
+ERROR: for mysql_xxx  Cannot start service mysql_xxx: driver failed programming external connectivity on endpoint mysql_xxx (xxxxxxxxxxxxx):  (iptables failed: iptables --wait -t filter -A DOCKER ! -i xx-xxxxxxx -o xx-xxxxxxx -p tcp -d xxx.xxx.xxx.xxx --dport xx -j ACCEPT: iptables: No chain/target/match by that name.
+ (exit status 1))
+ERROR: Encountered errors while bringing up the project.
+```
+
+### 一旦、起動しているコンテナ、ネットワーク、ボリュームを削除
+
+- `docker ps` `docker ps -a`
+- `docker network list`
+- `docker volume ls`
+
+### ネットワーク名が無いよ、というerror
+
+```
+Network proxy declared as external, but could not be found. Please create the network manually using `docker network create xxx` and try again.
+```
+
+### docker networkを作成しようとするが、、、
+
+```
+Error response from daemon: Failed to program FILTER chain: iptables failed: iptables --wait -I FORWARD -o br-xxxxx -j DOCKER: iptables v1.4.21: Couldn't load target `DOCKER':No such file or directory
+
+Try `iptables -h' or 'iptables --help' for more information.
+```
 
 
 
