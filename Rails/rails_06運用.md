@@ -128,6 +128,8 @@ Try `iptables -h' or 'iptables --help' for more information.
 $ mv /var/lib/docker/network/files /tmp/docker-iptables-err
 $ sudo systemctl restart docker
 $ docker network create proxy
+# 指定フォルダでにてコンテナ作成、起動
+$ docker-compose up -d
 ```
 
 
