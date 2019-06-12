@@ -121,7 +121,14 @@ Error response from daemon: Failed to program FILTER chain: iptables failed: ipt
 Try `iptables -h' or 'iptables --help' for more information.
 ```
 
+### dockerを再起動し、ネットワークを新規作成
 
+```
+# 下記フォルダあれば削除
+$ mv /var/lib/docker/network/files /tmp/docker-iptables-err
+$ sudo systemctl restart docker
+$ docker network create proxy
+```
 
 
 ## 参考
