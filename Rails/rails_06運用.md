@@ -132,6 +132,11 @@ $ docker network create proxy
 $ docker-compose up -d
 ```
 
+### コンテナIDが変わってしまうので、
+
+railsコンテナからMySQLコンテナへの設定を変更する
+
+
 
 ## 参考
 [rails generate migrationコマンドまとめ](https://qiita.com/zaru/items/cde2c46b6126867a1a64)  
