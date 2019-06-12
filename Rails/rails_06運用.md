@@ -130,6 +130,8 @@ $ sudo systemctl restart docker
 $ docker network create proxy
 # 指定フォルダでにてコンテナ作成、起動
 $ docker-compose up -d
+# コンテナに開発環境、起動環境が無いのでinstall
+$ bundle install --path vendor/bundle
 ```
 
 ### コンテナIDが変わってしまうので、
