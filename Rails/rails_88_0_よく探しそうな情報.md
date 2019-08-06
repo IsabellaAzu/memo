@@ -373,4 +373,29 @@ https://developer.apple.com/download/more/
 https://qiita.com/TsukasaHasegawa/items/0d7d5c2cf3a2b8ce8993  
 
 
+### Rails起動時のerror
+
+```
+Ruby2.6.2
+```
+
+の環境のprojectのフォルダにて、
+
+```
+$ bundle install --path ./vendor/bundle
+```
+
+で、下記errorが出た場合、
+
+```
+An error occurred while installing mysql2 (0.5.2), and Bundler cannot continue.
+Make sure that `gem install mysql2 -v '0.5.2' --source 'https://rubygems.org/'` succeeds before bundling.
+```
+
+```
+$ bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl/include"
+$ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib"
+```
+
+で解決した。
 
