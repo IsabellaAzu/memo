@@ -488,8 +488,38 @@ $ open "${HOME}/init/Solarized Dark.itermcolors"
 $ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 ```
 
-##### 
+##### VSCodeの拡張機能7選
 
+https://ics.media/entry/18544/  
+
+- [VSCode](https://code.visualstudio.com/)  
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Regex Previewer](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex)
+- [JSON to TS](https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts)
+
+###### VSCodeのオススメ設定
+
+https://ics.media/entry/18756/
+
+- [npm-scriptsをマウス操作で行う](https://ics.media/entry/12226)  
+```
+package.jsonファイルに定義したnpm-scriptsはサイドパネルからダブルクリックで実行できます。
+```
+- [アウトライン表示で構造をわかりやすく]  
+```
+関数名や定数名などの情報をアウトライン表示してくれます。サイドパネルに表示されるアウトラインを選択すると、
+該当するコードに瞬時に移動できます。さまざまな言語に対応しており、
+HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのアウトラインも表示できます。
+サイドパネルの［エクスプローラー］の見出しを右クリックし、表示されるメニューから［アウトライン］を選択することで利用できます。
+```
+- [Shortcuts](https://marketplace.visualstudio.com/items?itemName=gizak.shortcuts)
+```
+https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts
+画面下のステータスバーにショートカットボタンを追加できる拡張機能
+```
 
 ##### 
 
