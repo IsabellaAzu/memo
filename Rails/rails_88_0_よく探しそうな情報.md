@@ -399,3 +399,19 @@ $ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/li
 
 で解決した。
 
+
+
+### rails6の起動
+
+```
+$ rails webpacker:install
+
+Yarn not installed. Please download and install Yarn from https://yarnpkg.com/lang/en/docs/install/
+```
+
+```
+$ brew install yarn
+$ rails webpacker:install
+```
+
+
