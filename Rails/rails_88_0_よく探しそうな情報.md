@@ -306,6 +306,7 @@ $ mysql.server stop
 
 ```
 $ brew remove mysql
+（$ brew install mysql@5.7）
 $ brew cleanup
 ```
 
