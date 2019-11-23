@@ -1,18 +1,15 @@
 
-# まっさらからの環境構築のメモ（201501）  
-[Githubのマークダウン記法](http://codechord.com/2012/01/readme-markdown/ "") 
-
 
 ## Spec
 
 ### ハード
-*	MacBook (13-inch, Late 2009)
-*	プロセッサ 2.26 GHz Intel Core 2 Duo
-*	メモリ 4GB 1067 MHz DDR3（8GBまでいけるかも）
-*	グラフィクス NVIDIA GeForce 9400M 256 MB
+*	MacBookPro (16-inch, 2019)
+*	プロセッサ 2.6 GHz 6コア Intel Core i7
+*	メモリ 16GB 2667 MHz DDR4
+*	グラフィクス Intel UHD Graphics 630 1536 MB
 
 ### OS
-*	MacOSX 10.10.1（14B25）
+*	MacOS Cataline 10.15.1
 
 
 　  
@@ -85,13 +82,13 @@ $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-##### rubyをインストール v2.1.5  
+##### rubyをインストール
 ```sh
 $ rbenv install -l #インストール可能なバージョン一覧を表示
-$ rbenv install 2.1.5 #バージョンを指定してインストール
+$ rbenv install X.X.X #バージョンを指定してインストール
 $ rbenv rehash
-$ rbenv global 2.1.5
-$ rbenv local 2.1.5 # 今居るディレクトリだけ
+$ rbenv global X.X.X
+$ rbenv local X.X.X # 今居るディレクトリだけ
 $ ruby -v
 ```
 
