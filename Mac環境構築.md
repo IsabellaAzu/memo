@@ -16,7 +16,7 @@
 ## 準備作業
 　  
 ### 1. Command Line Toolsインストール  
-Command Line Tools(OS X 10.10)for Xcode - Xcode 6.1.1  
+Command Line Tools for Xcode 11.2
 ※この時gitも一緒にインストールされる
 
 > 参考  
@@ -60,8 +60,8 @@ $ ssh -T git@github.com
 > 参考  
 http://brew.sh/index_ja.html  
 
-```sh
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
 $ brew -v
 $ brew update
@@ -69,21 +69,24 @@ $ brew update
 
 　  
 - - - 
+
 ### 4. rbenvインストール  
 
-```sh
+```
 $ brew install rbenv ruby-build
 ```
 
 ##### rbenvのパスを追加  
-```sh
+
+```
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
 ##### rubyをインストール
-```sh
+
+```
 $ rbenv install -l #インストール可能なバージョン一覧を表示
 $ rbenv install X.X.X #バージョンを指定してインストール
 $ rbenv rehash
@@ -93,26 +96,37 @@ $ ruby -v
 ```
 
 ##### rubyのバージョンアップ
+
 rbenv install -lでインストール可能リストに最新版のrubyが無い場合
-```sh
+
+```
 $ brew update
 $ brew upgrade ruby-build
 $ rbenv install -l
 ```
 
 ##### 毎回rbenv rehashしなくて済ませる  
-```sh
-$ brew install rbenv-gem-rehash
+
+https://github.com/rbenv/rbenv-gem-rehash  
+http://shuzo-kino.hateblo.jp/entry/2015/01/02/235002  
+
+```
+$ git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 ```
 　  
 　  
 - - - 
+
+
 ### 5. 重要なgemのインストール（グローバルに入れるのを限定する）
+
 rbenv環境下のRuby環境に追加インストールするGemはbundlerのみ  
-```sh
-$ gem install bundler --no-ri --no-rdoc
-　※riとかrdocのインストールに時間がかかる対策  
-　http://boscono.hatenablog.com/entry/2014/08/10/155524  
+
+```
+$ gem install bundler -N
+
+https://qiita.com/noanoa07/items/dd88845aa5d43e5d1e4a  
+https://guides.rubygems.org/command-reference/#gem-install  
 　  
 # 各プロジェクトフォルダで  
 $ bundle init  
@@ -124,19 +138,25 @@ $ bundle install --path vendor/bundle
 　  
 　  
 - - - 
+
+
 ### 6. Node.jsインストール  
->http://qiita.com/sinmetal/items/154e81823f386279b33c#2-2  
+
+http://qiita.com/sinmetal/items/154e81823f386279b33c#2-2  
 http://qiita.com/satoyan419/items/693a84e26a8ad2f0e29e  
-インストール済みか確認する
-```sh
+
+インストール済みか確認する  
+
+```
 $ node -v
 ```
 
 #### nodebrewでNode.jsをバージョン管理
+
 nodebrewでNode.jsのインストールやバージョン管理をする。公式サイトからNode.jsをインストールしない。  
 
 #### すでに公式サイトからインストールしてしまった場合
-```sh
+```
 $ curl -o uninstall-node.sh https://gist.githubusercontent.com/nicerobot/2697848/raw/uninstall-node.sh
 $ chmod u+x uninstall-node.sh 
 $ ./uninstall-node.sh 
@@ -147,17 +167,21 @@ $ rm -rf ~/.node-gyp
 $ rm -rf ~/.npm
 $ rm -rf ~/.sourcemint
 ```
+
 #### nodebrewのインストール
-```sh
-$ curl -L git.io/nodebrew | perl - setup
+
+https://qiita.com/mame_daifuku/items/373daf5f49ee585ea498  
+
+```
+$ brew install nodebrew
 （「export PATH=$HOME/.nodebrew/current/bin:$PATH」を/.bash_profileに書き込めと言われる。）
-```
-#### 上記を追記して適用して、nodebrewのインストール完了
-```sh
 $ source ~/.bash_profile
+$ nodebrew setup
 ```
+
 #### インストール可能なNode.js一覧確認
-```sh
+
+```
 $ nodebrew ls-remote
 
 # 安定版のインストールと適用
@@ -171,44 +195,55 @@ $ npm update -g npm
 　  
 　  
 - - - 
+
+
 ### 7. gulpインストール
+
 Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる  
+
 http://qiita.com/kazukichi/items/884a1379eea5918689ed  
 http://qiita.com/puttyo_bubu/items/225081f767d785277022  
 http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
 https://teratail.com/questions/13378  
 
-```sh
+```
 $ npm install -g gulp
 ```
 
 #### こういうerrorが出たら
+
 https://github.com/npm/npm/issues/13055  
 https://github.com/npm/npm/issues/3701  
-```sh
+
+```
 $ gulp -v
 # => gulp: command not found
 ```
 
 #### 下記を確認
+
 https://teratail.com/questions/13378  
-```sh
+
+```
 # npmのアップデート
 $ npm update
 ```
-```sh
+
+```
 # pathの確認（~/.bash_profile）
 $ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH'
 $ source ~/.bash_profile
 ```
-```sh
+
+```
 # gulpバージョンの確認
 $ gulp -v
 # => [18:16:03] CLI version 3.9.1
 ```
 
 #### gulpを使用するプロジェクトフォルダでpackage.jsonの作成
-```sh
+
+```
 $ npm init
 # ---出力サンプル---
 {
@@ -227,12 +262,14 @@ $ npm init
 
 
 #### サックっとbrowser-syncなどを設定
+
 http://qiita.com/itoz/items/2bd246606c69c33684e8  
 https://h2ham.net/gulp-basic  
 https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/  
-projectディレクトリで  
-```sh
 
+##### projectディレクトリで  
+
+```
 # localのproject単位もgulpをインストール
 $ sudo npm install gulp
 
@@ -255,9 +292,10 @@ $ sudo npm install gulp-useref
 $ sudo npm install jshint-stylish
 $ sudo npm install run-sequence
 ```
-各種設定ファイルgulpfile.jsに設定を  
-```
 
+各種設定ファイルgulpfile.jsに設定を  
+
+```
 'use strict';
 
 var SCSS_SRC = 'public/res/scss/**/*.scss';
@@ -291,7 +329,6 @@ gulp.task('cssmin', function () {
   .pipe(gulp.dest('public/res/css_min/'));
 });
 
-
 /**
  * watch
  * watchでcompassを自動で書きだす
@@ -309,8 +346,11 @@ gulp.task('default', function(){
     gulp.run('watch');
 });
 ```
+
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
+
 http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
+
 ```
 個別指定
 $ browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/*.css.*","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"
@@ -320,21 +360,24 @@ $ browser-sync start --proxy localhost:3000 --files **/*
 
 　  
 #### gulpで動かすもの
+
 http://blog.webcreativepark.net/2014/05/12-183033.html  
 
 #### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
+
 http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
 
 　  
 　  
 - - - 
+
 ### 8. MySQLをインストール  
 
 > 参考  
 http://howtohp.com/2011/08/20/homebrew-mysql/  
 http://tsuchikazu.net/mac_rail_setup/  
 
-```sh
+```
 $ brew install mysql
 $ brew info mysql #インストール後のメッセージ確認
 $ brew link mysql #Warning: Already linked:が出たら下記を実行
@@ -363,10 +406,13 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 　  
 　  
 - - - 
+
+
 ### 9. その他インストール
 
 ##### imagemagick（要確認）  
-```sh
+
+```
 $ brew install imagemagick  
 $ brew unlink imagemagick && brew link imagemagick
 $ cd /usr/local/Cellar/imagemagick/6.8.0-10/lib
@@ -375,14 +421,16 @@ $ ln -s libMagickCore-Q16.7.dylib libMagickCore.dylib
 $ ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
 ```
 
-
 - - -
+
 
 ## ここまでの参考  
 http://tsuchikazu.net/mac_rail_setup/  
 https://gist.github.com/keifukuda/4535242  
-  
+ 
+ 
 - - -
+
 
 ## 便利ツール  
 
@@ -517,12 +565,4 @@ HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのア
 https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts
 画面下のステータスバーにショートカットボタンを追加できる拡張機能
 ```
-
-##### 
-
-
-##### 
-
-
-##### 
 
