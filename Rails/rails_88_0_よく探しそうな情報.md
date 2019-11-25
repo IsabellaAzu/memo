@@ -416,3 +416,15 @@ $ rails webpacker:install
 ```
 
 
+### rails sした時にalready initialized constant FileUtils::VERSIONとwarningが出る
+
+gemでインストールしたfileutilsが読み込まれているのにrailsで再度読み込んでいる。  
+https://qiita.com/zQmjRAb73seN5RM/items/ecb9e19ee8f3e9af6018  
+
+```
+$ gem uninstall fileutils
+$ gem update --default
+```
+
+
+
