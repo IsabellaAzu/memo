@@ -427,4 +427,60 @@ $ gem update --default
 ```
 
 
+### rails6でjquery導入
 
+https://bcibrainwaveeeg.com/jquery-include-for-rails/  
+
+#### 1. 開発ディレクトリで、
+
+```
+$ yarn add jquery
+```
+
+package.json、yarn.lockが更新される。
+
+#### 2. /app/config/webpack/environment.jsに追記
+
+```
+const { environment } = require('@rails/webpacker')
+
+module.exports = environment
+
+　↓
+
+const { environment } = require('@rails/webpacker')
+
+const webpack = require('webpack')
+environment.plugins.prepend('Provide',
+  new webpack.ProvidePlugin({
+    $: 'jquery/src/jquery',
+    jQuery: 'jquery/src/jquery'
+  })
+)
+
+module.exports = environment
+```
+
+#### 3. /app/javascript/packs/application.jsに追記
+
+```
+require('jquery')
+```
+
+### rails6で個別js読み込み
+
+#### 1. app/assets/javascript/demo_js.jsに配置
+
+#### 2. erbの先頭に記載
+
+```
+<%= javascript_include_tag 'demo_js' %>
+```
+
+#### 3. /config/initializers/assets.rbファイルに追記
+
+```
+Rails.application.config.assets.precompile += %w( demo_js.js )
+```
+
+#### 4. rails再起動
