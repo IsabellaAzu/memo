@@ -2,7 +2,14 @@
 ### 1. プロジェクト作成
 ```
 $ rails new プロジェクト名 # SQLightで
-$ rails new プロジェクト名 -d mysql # MySQLで
+$ rails new プロジェクト名 -d --database=mysql --skip-sprockets --skip-test
+ --------- 
+  -d: デーモンで起動
+  --database=mysql: データベース指定（他にpostgresql）
+  --skip-turbolinks: ajaxで機能の移動をやめて、画面遷移する
+  --skip-sprockets: アセットのパス管理、コンパイルなどをやめる
+  --skip-test: Minitestを生成しないようにする（RSpecでテストしたい人向け）
+ --------- 
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
 （$ bundle update）
 $ cd プロジェクト名
