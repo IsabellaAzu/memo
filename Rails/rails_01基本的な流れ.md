@@ -2,10 +2,16 @@
 ### 1. プロジェクト作成
 ```
 $ rails new プロジェクト名 # SQLightで
-$ rails new プロジェクト名 -d --database=mysql --skip-sprockets --skip-test
+$ rails new プロジェクト名 -B -M -P -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
  --------- 
-  -d: デーモンで起動
+  -B: bundle installを最初はかけない。newしたあとに追記などを行うことがある場合指定
+  -M: action mailerのセットアップ
+  -P: 
+  -C: 
+  -S: 
+  -J: 
   --database=mysql: データベース指定（他にpostgresql）
+  --skip-coffee: CoffeeScriptのセットアップをスキップ
   --skip-turbolinks: ajaxで機能の移動をやめて、画面遷移する
   --skip-sprockets: アセットのパス管理、コンパイルなどをやめる
   --skip-test: Minitestを生成しないようにする（RSpecでテストしたい人向け）
