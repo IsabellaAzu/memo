@@ -18,7 +18,7 @@ $ rails s -e production -d
 
 <table>
 <tr>
-<th>オプション</th>
+<th>rails new のオプション</th>
 <th>効能</th>
 </tr>
 <tr>
