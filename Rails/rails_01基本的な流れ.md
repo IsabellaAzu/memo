@@ -2,20 +2,8 @@
 ### 1. プロジェクト作成
 ```
 $ rails new プロジェクト名 # SQLightで
-$ rails new プロジェクト名 -B -M -P -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
- --------- 
-  -B: bundle installを最初はかけない。newしたあとに追記などを行うことがある場合指定
-  -M: action mailerのセットアップ
-  -P: 
-  -C: 
-  -S: 
-  -J: 
-  --database=mysql: データベース指定（他にpostgresql）
-  --skip-coffee: CoffeeScriptのセットアップをスキップ
-  --skip-turbolinks: ajaxで機能の移動をやめて、画面遷移する
-  --skip-sprockets: アセットのパス管理、コンパイルなどをやめる
-  --skip-test: Minitestを生成しないようにする（RSpecでテストしたい人向け）
- --------- 
+$ rails new プロジェクト名 -B -M -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
 （$ bundle update）
 $ cd プロジェクト名
@@ -27,6 +15,87 @@ $ rails s -p 8888
 # 本番環境でrackサーバーをデーモンとして実行の場合
 $ rails s -e production -d
 ```
+
+<table>
+<tr>
+<th>オプション</th>
+<th>効能</th>
+</tr>
+<tr>
+<td>--api</td>
+<td>APIとして利用するapp向けの小さい構成</td>
+</tr>
+<tr>
+<td>--database=mysql</td>
+<td>データベースの指定、今回はmysql.</td>
+</tr>
+<tr>
+<td>--skip-yarn	</td>
+<td>
+Yarnを利用しない<br>
+https://qiita.com/shifumin/items/f4f4ea68d9963dbe9ca2<br>
+npmよりyarnの方が良い！<br>
+https://qiita.com/lelouch99v/items/c97ff951ca31298f3f24<br>
+yarnとは<br>
+JavaScriptのパッケージマネージャ<br>
+2016年にFaceBookが公開した<br>
+npmと互換性がある = 同じpackage.jsonが使える<br>
+npm vs yarnどっち使うかの話<br>
+https://qiita.com/jigengineer/items/c75ca9b8f0e9ce462e99
+</td>
+</tr>
+<tr>
+<td>-B</td>
+<td>bundle installを最初はかけない。newしたあとに追記などを行うことがあるので指定。<br>
+例: bundle install --path vendor/bundle -j4<br>
+ -j4(もしくは--jobs=4): bundle installを並列処理で実行できる<br>
+ https://maetoo11.hatenablog.com/entry/2016/03/04/144216
+</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>action mailerのセットアップをスキップ。<br>
+https://www.sejuku.net/blog/48739
+</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>puma関連のファイルセットアップをスキップ。<br>
+https://re-engines.com/2018/07/30/rails-puma-deploy/
+</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>action cable関連のセットアップをスキップ。</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>sprockets関連のセットアップをスキップ。</td>
+</tr>
+<tr>
+<td>-J</td>
+<td>javascript関連のセットアップをスキップ。</td>
+</tr>
+<tr>
+<td>--skip-yarn</td>
+<td>yarnのセットアップをスキップ。フロント実装をしないなどであれば付ける。</td>
+</tr>
+<tr>
+<td>--skip-coffee</td>
+<td>CoffeeScriptのセットアップをスキップ。</td>
+</tr>
+<tr>
+<td>--skip-turbolinks</td>
+<td>turbolinksのセットアップをスキップ。</td>
+</tr>
+<tr>
+<td>--skip-active-record</td>
+<td>active-recordのセットアップをスキップ。<br>
+https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
+--skip-active-recordをしたときは、ActiveRecordは除外するけどActiveModelはロードするという挙動のようです。
+</td>
+</tr>
+</table>
 
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
 http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
