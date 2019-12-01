@@ -135,8 +135,20 @@ $ bundle init
 # ディレクトリのgemfileを元に各種gemをインストール  
 $ bundle install --path vendor/bundle  
 ```
-　  
-　  
+
+
+#### gem installでOperation not permittedの対応
+
+http://tacamy.hatenablog.com/entry/2013/03/31/230553  
+https://github.com/Homebrew/homebrew-cask/issues/70622  
+
+```
+gem update --system
+gem update bundler
+```
+
+
+
 - - - 
 
 
