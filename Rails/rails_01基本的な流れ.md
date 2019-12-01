@@ -10,8 +10,10 @@ $ cd プロジェクト名
 $ rails db:create
 # rails serverの省略形
 $ rails s
+
 # localhost:8888のポート番号で起動
 $ rails s -p 8888
+
 # 本番環境でrackサーバーをデーモンとして実行の場合
 $ rails s -e production -d
 ```
