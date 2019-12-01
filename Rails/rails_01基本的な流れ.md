@@ -113,6 +113,7 @@ $ browser-sync start --proxy localhost:1111 --files **/*
 
 
 ### 2. 便利なgemをGemfileに追記（Pry等）
+
 例えば  
 Gemfileのgroup :development, :test doに下記４つを追記  
 https://github.com/funnythingz/pins/blob/master/Gemfile  
@@ -131,7 +132,7 @@ $ bundle install --path vendor/bundle
 ```
 　  
 　  
-##基本的な流れ(1)
+#### 基本的な流れ(1)
 例「Project」という名のプロジェクトを作成していきます。  
 データベースのデータを表示します  
 
