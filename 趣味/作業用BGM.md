@@ -1,6 +1,34 @@
 
 # 作業用BGM代わり、気分転換などに
 
+
+
+## BGM
+
+
+- https://www.youtube.com/watch?v=GeX6MwXGPN4
+- https://www.youtube.com/watch?v=udXJynVOsNY
+
+
+### Sia
+
+- https://www.youtube.com/channel/UCN9HPn2fq-NL8M5_kp4RWZQ
+
+### Billie Eilish
+
+- https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ
+
+
+
+
+## 水槽
+
+### ADA (aquadesignamano)
+
+- https://www.youtube.com/channel/UCHYlOTQxEsxKsq7PxyNyilA
+
+
+
 ## ダンス
 
 ### Les Twins
