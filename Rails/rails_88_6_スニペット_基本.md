@@ -3,7 +3,7 @@
 　  
 # スニペット_基本
 　  
-## link_to
+## リンク
 　  
 ```
 ｐａｔｈ
@@ -18,7 +18,7 @@ class名
 
 削除
 <%= link_to "削除", member_path(params[:id]), method: :delete %>
-タグ
+ブロックタグ
 <%= link_to users_path do %>
   <i class="m_">リンク</i>
 <% end %>
@@ -46,9 +46,9 @@ Time.now.strftime("%I:%M %p")
 => 2019/02/04(月) 13:52
 ```
 
-## form
+## form　Rails5以降向け
 
-Rails5系向け
+ｆｏｒｍ_ｆｏｒ、form_tagは廃止予定
 
 ```
 format
@@ -78,37 +78,29 @@ format
 | :authenticity_token  | フォームで使う認証トークンを指定します。<br>カスタムの認証トークンを指定して上書きすることも、falseを渡して認証トークンのフィールドをスキップすることもできます。<br>有効なフィールドのみに制限されている支払用ゲートウェイへのような外部リソースにフォームを送信する場合に便利です。<br>config.action_view.embed_authenticity_token_in_remote_forms = falseを指定すると、埋め込み認証トークンがリモートフォームで省略されることがあります。この指定はフォームでフラグメントキャッシュを使う場合に便利です（リモートフォームがmetaタグから認証トークンを取得するようになるので、JavaScriptがオフになっているブラウザをサポートする場合を除けば認証トークンをフォームに埋め込む必要がなくなります）。 |
 
 
-### text
 
 ```
-<%= f.text_field :カラム名 %>
-```
+<%= form_with url: posts_path do |f| %>
+  <%= f.text_field :カラム名 %>
 
-### radio
+  <%= f.label :name, "名前", {class: 'class_name'} %>
+  <%= f.text_field :name %>
 
-```
-<%= form_with  |f| %>
-  <%= f.radio_button :カラム名, 実際にテーブルに登録する値, {:checked => true} %>選択肢に表示する文字
+  labelブロック
+  <%= f.label :display, {class: "p_toggle_checkbox_box"} do %>
+    <%= f.check_box :display, :checked => item_display_checkbox %>
+  <% end %>
+
+  radio
+  <%= f.radio_button :カラム名, 実際にテーブルに登録する値, {:checked => true} %>
+  <%= f.label :カラム名, 選択肢に表示する文字, class: "job_type_label" %>
+
+
 <% end %>
 ```
 
-### textarea
-
-```
-```
-
-### select,option
-
-```
 
 
-
-```
-
-### submit
-
-```
-```
 
 ## rails g migrate
 
