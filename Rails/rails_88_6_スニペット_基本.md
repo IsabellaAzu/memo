@@ -78,6 +78,7 @@ format
 | :authenticity_token  | フォームで使う認証トークンを指定します。<br>カスタムの認証トークンを指定して上書きすることも、falseを渡して認証トークンのフィールドをスキップすることもできます。<br>有効なフィールドのみに制限されている支払用ゲートウェイへのような外部リソースにフォームを送信する場合に便利です。<br>config.action_view.embed_authenticity_token_in_remote_forms = falseを指定すると、埋め込み認証トークンがリモートフォームで省略されることがあります。この指定はフォームでフラグメントキャッシュを使う場合に便利です（リモートフォームがmetaタグから認証トークンを取得するようになるので、JavaScriptがオフになっているブラウザをサポートする場合を除けば認証トークンをフォームに埋め込む必要がなくなります）。 |
 
 
+https://www.pikawaka.com/rails/form_with  
 
 ```
 <%= form_with url: posts_path do |f| %>
