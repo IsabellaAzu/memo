@@ -16,48 +16,50 @@
 ## 準備作業
 　  
 ### 1. Command Line Toolsインストール  
-Command Line Tools for Xcode 11.2
-※この時gitも一緒にインストールされる
 
-> 参考  
-https://developer.apple.com/  
-http://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa  
+> Command Line Tools for Xcode 11.2
 
+https://developer.apple.com/download/more/  
 　  
 　  
 - - - 
+
 ### 2. 公開鍵と秘密鍵作成  
 
-> 参考  
-・http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
-・http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
+- http://git-scm.com/book/ja/v1/Git-サーバー-SSH-公開鍵の作成  
+- http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github  
 
 ##### SSH 公開鍵の作成  
+
 ```sh
 $ ssh-keygen
 ```
+
 ※「The key fingerprint is:」が出てくるまで[Enter]  
 
 ##### 公開鍵の確認  
+
 ```sh
 $ cat ~/.ssh/id_rsa.pub
 ```
 
 ##### クリップボードにコピー（GithubのSSHKeysの設定ページに貼り付ける。）  
+
 ```sh
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 ##### 接続テスト  
+
 ```sh
 $ ssh -T git@github.com
 ```
 　  
 　  
 - - - 
+
 ### 3. Homebrewインストール  
 
-> 参考  
 http://brew.sh/index_ja.html  
 
 ```
@@ -107,8 +109,8 @@ $ rbenv install -l
 
 ##### 毎回rbenv rehashしなくて済ませる  
 
-https://github.com/rbenv/rbenv-gem-rehash  
-http://shuzo-kino.hateblo.jp/entry/2015/01/02/235002  
+- https://github.com/rbenv/rbenv-gem-rehash  
+- http://shuzo-kino.hateblo.jp/entry/2015/01/02/235002  
 
 ```
 $ git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
@@ -139,8 +141,8 @@ $ bundle install --path vendor/bundle
 
 #### gem installでOperation not permittedの対応
 
-http://tacamy.hatenablog.com/entry/2013/03/31/230553  
-https://github.com/Homebrew/homebrew-cask/issues/70622  
+- http://tacamy.hatenablog.com/entry/2013/03/31/230553  
+- https://github.com/Homebrew/homebrew-cask/issues/70622  
 
 ```
 gem update --system
@@ -154,8 +156,8 @@ gem update bundler
 
 ### 6. Node.jsインストール  
 
-http://qiita.com/sinmetal/items/154e81823f386279b33c#2-2  
-http://qiita.com/satoyan419/items/693a84e26a8ad2f0e29e  
+- http://qiita.com/sinmetal/items/154e81823f386279b33c#2-2  
+- http://qiita.com/satoyan419/items/693a84e26a8ad2f0e29e  
 
 インストール済みか確認する  
 
@@ -213,10 +215,10 @@ $ npm update -g npm
 
 Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる  
 
-http://qiita.com/kazukichi/items/884a1379eea5918689ed  
-http://qiita.com/puttyo_bubu/items/225081f767d785277022  
-http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
-https://teratail.com/questions/13378  
+- http://qiita.com/kazukichi/items/884a1379eea5918689ed  
+- http://qiita.com/puttyo_bubu/items/225081f767d785277022  
+- http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
+- https://teratail.com/questions/13378  
 
 ```
 $ npm install -g gulp
@@ -224,8 +226,8 @@ $ npm install -g gulp
 
 #### こういうerrorが出たら
 
-https://github.com/npm/npm/issues/13055  
-https://github.com/npm/npm/issues/3701  
+- https://github.com/npm/npm/issues/13055  
+- https://github.com/npm/npm/issues/3701  
 
 ```
 $ gulp -v
@@ -275,9 +277,9 @@ $ npm init
 
 #### サックっとbrowser-syncなどを設定
 
-http://qiita.com/itoz/items/2bd246606c69c33684e8  
-https://h2ham.net/gulp-basic  
-https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/  
+- http://qiita.com/itoz/items/2bd246606c69c33684e8  
+- https://h2ham.net/gulp-basic  
+- https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/  
 
 ##### projectディレクトリで  
 
@@ -385,7 +387,6 @@ $ browser-sync start --proxy localhost:3000 --files **/*
 
 ### 8. MySQLをインストール  
 
-> 参考  
 - https://weblabo.oscasierra.net/mysql-57-init-setup/  
 - http://howtohp.com/2011/08/20/homebrew-mysql/  
 - http://tsuchikazu.net/mac_rail_setup/  
@@ -425,36 +426,45 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 ## 便利ツール  
 
 ##### iTerm2：CUI  
+
 http://iterm2.com/  
 
 ###### 分割状態の保存 
+
 メニューの「Window」→「Save Window Arrangement」→名前をつける  
 ![](http://i.gyazo.com/b8724c20396285988baf7371ab1f1201.png)  
 
 ###### windowデフォルトの配置  
-・メニューの「iTerm」→「Preferences...」→「Generalタブ」   
+
+- メニューの「iTerm」→「Preferences...」→「Generalタブ」   
 　→ Startupの項目「Open default window arrangement」にチェック  
 　　cmd+shift+sで名前を付けて位置保存  
-・メニューの「iTerm」→「Preferences...」→「Arrangementタブ」    
+- メニューの「iTerm」→「Preferences...」→「Arrangementタブ」    
 　→ 「Set Default」ボタンを押してデフォルトに設定  
 
 ##### デフォルトで開くディレクトリ
-・メニューの「iTerm」→「Preferences...」→「Profileタブ」  
+
+- メニューの「iTerm」→「Preferences...」→「Profileタブ」  
 　→ Reuse previous 〜に設定  
 
 ##### Sequel Pro：DBのGUI
+
 http://www.sequelpro.com/
 
 ##### MySQL Workbench
+
 http://www-jp.mysql.com/products/workbench/
 
 ##### imageAlpha：透過画像軽量化
+
 http://pngmini.com/
 
 ##### imageOptim：画像軽量化
+
 https://imageoptim.com/
 
 ##### Atomインストールpackage
+
 - Atom：https://atom.io/  
 - プロジェクト管理、開いた状態など：project-manager（recent-files）
 - 矩形選択：Sublime-Style-Column-Selection
@@ -463,6 +473,7 @@ https://imageoptim.com/
 
 ##### tmux
 http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
+
 
 
 ## 設定
