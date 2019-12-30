@@ -54,11 +54,8 @@ $ source ~/.zshrc
 ```
 
 ```
-$ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
-（$ bundle update）
-$ cd プロジェクト名
+$ mysql.server start
 $ bundle exec rails db:create
-# bundle exec rails serverの省略形
 $ bundle exec rails s
 
 # localhost:8888のポート番号で起動
