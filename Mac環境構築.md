@@ -361,7 +361,7 @@ gulp.task('default', function(){
 
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
 
-http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
+- http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
 
 ```
 個別指定
@@ -373,11 +373,11 @@ $ browser-sync start --proxy localhost:3000 --files **/*
 　  
 #### gulpで動かすもの
 
-http://blog.webcreativepark.net/2014/05/12-183033.html  
+- http://blog.webcreativepark.net/2014/05/12-183033.html  
 
 #### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
 
-http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
+- http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
 
 　  
 　  
@@ -386,8 +386,9 @@ http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9
 ### 8. MySQLをインストール  
 
 > 参考  
-http://howtohp.com/2011/08/20/homebrew-mysql/  
-http://tsuchikazu.net/mac_rail_setup/  
+- https://weblabo.oscasierra.net/mysql-57-init-setup/  
+- http://howtohp.com/2011/08/20/homebrew-mysql/  
+- http://tsuchikazu.net/mac_rail_setup/  
 
 ```
 $ brew search mysql # インストール可能な一覧
