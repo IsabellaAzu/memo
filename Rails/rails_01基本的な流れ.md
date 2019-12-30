@@ -22,21 +22,24 @@ https://masaki.blog/rails6-on-docker/
 ```
 
 ```
-$ rails new プロジェクト名 # SQLightで
-$ rails new プロジェクト名 -B -M -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+$ bundle init
+$ bundle install --path vendor/bundle
+
+$ bundle exec rails new プロジェクト名 # SQLightで
+$ bundle exec rails new プロジェクト名 -B -M -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
 （$ bundle update）
 $ cd プロジェクト名
-$ rails db:create
-# rails serverの省略形
-$ rails s
+$ bundle exec rails db:create
+# bundle exec rails serverの省略形
+$ bundle exec rails s
 
 # localhost:8888のポート番号で起動
-$ rails s -p 8888
+$ bundle exec rails s -p 8888
 
 # 本番環境でrackサーバーをデーモンとして実行の場合
-$ rails s -e production -d
+$ bundle exec rails s -e production -d
 ```
 
 <table>
