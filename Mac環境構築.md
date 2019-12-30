@@ -389,6 +389,7 @@ $ browser-sync start --proxy localhost:3000 --files **/*
 - https://weblabo.oscasierra.net/mysql-57-init-setup/  
 - http://howtohp.com/2011/08/20/homebrew-mysql/  
 - http://tsuchikazu.net/mac_rail_setup/  
+- https://qiita.com/hkusu/items/cda3e8461e7a46ecf25d
 
 ```
 $ brew search mysql # インストール可能な一覧
