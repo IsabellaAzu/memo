@@ -28,6 +28,32 @@ $ bundle install --path vendor/bundle
 $ bundle exec rails new プロジェクト名 # SQLightで
 $ bundle exec rails new プロジェクト名 -B -M -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
+$ cd プロジェクト名
+$ bundle install --path vendor/bundle
+```
+
+```
+新しいMacだと
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+Generally there are no consequences of this for you. If you build your own software and it requires this formula, you'll need to add to your build variables:
+```
+
+```
+$ vim ~/.zshrc
+
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+$ source ~/.zshrc
+```
+
+```
 $ mysql.server start # gemファイル内でmysql2のバージョン指定をしないとﾀﾞﾒかも
 （$ bundle update）
 $ cd プロジェクト名
