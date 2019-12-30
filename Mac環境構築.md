@@ -390,8 +390,9 @@ http://howtohp.com/2011/08/20/homebrew-mysql/
 http://tsuchikazu.net/mac_rail_setup/  
 
 ```
-$ brew install mysql
-$ brew info mysql #インストール後のメッセージ確認
+$ brew search mysql # インストール可能な一覧
+$ brew info mysql # インストール後のメッセージ確認
+$ brew install mysql@5.7 # バージョン指定でインストール
 $ brew link mysql #Warning: Already linked:が出たら下記を実行
 $ brew unlink mysql && brew link mysql
 
@@ -415,33 +416,8 @@ $ show variables like 'character_set%';
 > MySQLの使い方.md  
 https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md  
 
-　  
-　  
+　  　  
 - - - 
-
-
-### 9. その他インストール
-
-##### imagemagick（要確認）  
-
-```
-$ brew install imagemagick  
-$ brew unlink imagemagick && brew link imagemagick
-$ cd /usr/local/Cellar/imagemagick/6.8.0-10/lib
-$ ln -s libMagickWand-Q16.7.dylib libMagickWand.dylib 
-$ ln -s libMagickCore-Q16.7.dylib libMagickCore.dylib
-$ ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
-```
-
-- - -
-
-
-## ここまでの参考  
-http://tsuchikazu.net/mac_rail_setup/  
-https://gist.github.com/keifukuda/4535242  
- 
- 
-- - -
 
 
 ## 便利ツール  
