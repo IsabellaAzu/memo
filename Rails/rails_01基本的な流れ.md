@@ -119,7 +119,7 @@ https://re-engines.com/2018/07/30/rails-puma-deploy/
 </tr>
 <tr>
 <td>-S</td>
-<td>sprockets関連のセットアップをスキップ。</td>
+<td>sprockets(CoffeeScriptやSASSのトランスパイル)関連のセットアップをスキップ。</td>
 </tr>
 <tr>
 <td>-J</td>
