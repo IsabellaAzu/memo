@@ -1,5 +1,8 @@
 
-### 1. プロジェクト作成
+# 基本的な流れ
+
+
+## 1. プロジェクト作成
 
 ```
 bundlerはシステムのglobalに、
@@ -159,7 +162,7 @@ $ browser-sync start --proxy localhost:1111 --files **/*
 ```
 
 
-### 2. 便利なgemをGemfileに追記（Pry等）
+## 2. 便利なgemをGemfileに追記（Pry等）
 
 例えば  
 Gemfileのgroup :development, :test doに下記４つを追記  
@@ -178,6 +181,8 @@ end
 $ bundle install --path vendor/bundle
 ```
 　  
+
+## Git
 
 ### 3. gitignore
 
@@ -253,7 +258,7 @@ yarn-debug.log*
 !/storage/.keep
 ```
 
-#### 最初のコミット
+### 最初のコミット
 
 ```
 git init
@@ -278,7 +283,8 @@ git push origin master
 ```
 
 
-#### 基本的な流れ(1)
+## 基本的な流れ(1)
+
 例「Project」という名のプロジェクトを作成していきます。  
 データベースのデータを表示します  
 
@@ -297,10 +303,11 @@ git push origin master
 
 <a id="a1_1"></a>
 ### 1_1. model作成
+
 ```
 # model名は最初大文字の単数形
 # 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」
-$ rails g model Project title # rails generate model Project title:stringの省略形
+$ bundle exec rails g model Project title # rails generate model Project title:stringの省略形
 ```
 
 > 参考：Railsでカラムのデータ型を変更する場合の手順  
@@ -308,6 +315,7 @@ https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDc
 
 
 ### データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
+
 <table>
 <tr>
 <td>マイグレーション</td>
@@ -406,11 +414,13 @@ https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDc
 
 <a id="a1_2"></a>
 ### 1_2. データベース作成(development/test/productionのすべてを作成)  
-database.ymlの情報を元にテーブルを作成  
-```
-$ rake db:create db:migrate
 
-$ rails db # 今使っているDBを確認
+database.ymlの情報を元にテーブルを作成  
+
+```
+$ bundle exec rails db:create db:migrate
+
+$ bundle exec rails db # 今使っているDBを確認
 $ .schema # dbの中身を確認
 $ exit
 ```
@@ -420,10 +430,12 @@ Railsのdb/schema.rbの役割
 http://qiita.com/k0kubun/items/491a9d9f2745335566e3  
 
 ##### pry（irbが置き換わっている）
+
 http://ruby-rails.hatenadiary.com/entry/20141024/1414081224  
 modelをインタラクティブにrubyを使って編集することができる
+
 ```
-$ rails c # rails consoleの省略形
+$ bundle exec rails c # rails consoleの省略形
 a = Project.new(title: "project1") # aに新しいデータを代入
 a.save # 保存
 Project.create(title: "proj2") # createは、newとsaveを一緒にやってくれる
@@ -433,27 +445,27 @@ Project.all # Projectを全部見ることができる
 
 <a id="a1_3"></a>
 ### 1_3. controller作成  
+
 ```
 # controller名は最初大文字の複数形
-$ rails g controller Projects
-$ rails g controller Projects --no-helper --no-assets # 無駄な helper や assets を生成しない方法  
-# 特定のフォルダ以下に作成する場合は、  
-$ rails g controller aaa::Projects --no-helper --no-assets  
-```
+$ bundle exec rails g controller Projects
+$ bundle exec rails g controller Projects --no-helper --no-assets # 無駄な helper や assets を生成しない方法  
 
+# 特定のフォルダ以下に作成する場合は、  
+$ bundle exec rails g controller aaa::Projects --no-helper --no-assets  
+```
 
 
 <a id="a1_4"></a>
 ### 1_4. routing設定  
+
 ```
 # /config/routes.rb
 　resources :projects # projectに関するURIを生成
 # 特定のフォルダ以下に作成した場合は、 
   resources :projects, controller: 'project/project_name', path: 'project'
-```
-ターミナルで上記を反映  
-```
-$ rake routes
+
+$ bundle exec rails routes
 ```
 
 > 下記の様に出力される（後半の日本語コメントは出力されない）  
@@ -476,6 +488,7 @@ http://techracho.bpsinc.jp/hachi8833/2014_02_17/15665
 
 <a id="a1_5"></a>
 ### 1_5. controllerにactionを作成  
+
 projects Controllerにindex Actionを作成(Rubyの関数を書いていく)  
   
 ```ruby
@@ -498,8 +511,10 @@ end
 
 <a id="a1_6"></a>
 ### 1_6. viewを作成
+
 /app/views/の中に、Controller名のフォルダの中に、アクション名のファイルを「.html.erb」形式で作成する  
 → /app/views/projects/index.html.erb  
+
 ```html
 <ul>
   <% @projects.each do |project| %>
@@ -522,8 +537,10 @@ end
 
 <a id="a1_7"></a>
 ### 1_7. 再びrouting設定  
+
 一覧をrootページにしたい  
-/config/routes.rbに「root コントローラー名#アクション名」
+/config/routes.rbに「root コントローラー名#アクション名」  
+
 ```
 root 'projects#index'
 ```
@@ -531,10 +548,12 @@ root 'projects#index'
 
 <a id="a1_8"></a>
 ### 1_8. 詳細ページ作成  
+
 > 参考
 http://dotinstall.com/lessons/basic_rails_v2/24911
 
-##### indexに詳細ページへのリンクを追加
+#### indexに詳細ページへのリンクを追加
+
 ```html
 # /views/projects/index.html.erb
 <ul>
@@ -544,7 +563,8 @@ http://dotinstall.com/lessons/basic_rails_v2/24911
 </ul>
 ```
 
-##### 詳細ページのアクションを追加
+#### 詳細ページのアクションを追加
+
 ```ruby
 # /app/controllers/projects_controller.rb  
 class ProjectsController < ApplicationController
@@ -570,7 +590,8 @@ class ProjectsController < ApplicationController
 end
 ```
 
-##### 詳細ページ作成
+#### 詳細ページ作成
+
 ```html
 # /views/projects/show.html.erb
 <%= @project.title %>
@@ -582,15 +603,18 @@ end
 ### その他
 
 <a id="ax1_1"></a>
-##### Rails Guides  
+#### Rails Guides  
+
 http://guides.rubyonrails.org/getting_started.html  
 
 <a id="ax1_2"></a>
-##### 共通テンプレの編集  
+#### 共通テンプレの編集  
+
 記述したものは/app/views/layouts/application.html.erbの  
 <%= yield %>に表示されている
 
-##### ヘルパー
+#### ヘルパー
+
 ```
 <%= image_tag "hoge.png" %>
 <%= link_to "HOME", projects_path %>
@@ -600,15 +624,18 @@ http://guides.rubyonrails.org/getting_started.html
 
 
 <a id="ax1_3"></a>
-##### 画像、css、javascriptの参照場所  
+#### 画像、css、javascriptの参照場所  
+
 /app/assets/以下の  
+
 * images
 * javascripts
 * stylesheets
 
 
 <a id="ax1_4"></a>
-##### Railsのジェネレータで不要なファイルを作らせない  
+#### Railsのジェネレータで不要なファイルを作らせない  
+
 ```ruby
 # config/application.rb
 config.generators do |g|
@@ -617,7 +644,9 @@ config.generators do |g|
   g.javascripts false
 end
 ```
+
 ##### Railsのジェネレータで不要なerror用divを作らせない  
+
 ```ruby
 # config/application.rb
 config.action_view.field_error_proc = Proc.new do |html_tag, instance| 
@@ -626,10 +655,11 @@ end
 ```
 
 
-
 - - -
 
-##基本的な流れ(2)  
+
+## 基本的な流れ(2)  
+
 > CRUDできるようにします  
 http://ja.wikipedia.org/wiki/CRUD  
 ※Readは基本的な流れ(1)の詳細ページ機能  
@@ -666,15 +696,15 @@ edit_project GET    /projects/:id/edit(.:format) projects#edit     # project編�
 <a id="a2_1"></a>
 ### 2_1. projectを新規作成（new）
 
+#### 新規プロジェクト作成のリンクをindexに追加
 
-##### 新規プロジェクト作成のリンクをindexに追加
 ```html
 # /views/projects/index.html.erb
 <p><%= link_to "新規プロジェクト作成", new_project_path %></p>
 ```
 
+#### 新規作成ページのアクション設定
 
-##### 新規作成ページのアクション設定
 ```ruby
 class ProjectsController < ApplicationController
 
@@ -707,9 +737,11 @@ class ProjectsController < ApplicationController
 end
 ```
 
-##### 新規作成ページの用意
-newした@projectにtitleのデータを入力してsubmitする
-※「:title」はDBのprojectテーブルのカラム名
+#### 新規作成ページの用意
+
+newした@projectにtitleのデータを入力してsubmitする  
+※「:title」はDBのprojectテーブルのカラム名  
+
 ```html
 # /views/projects/new.html.erb
 <%= form_for @project do |f| %>
@@ -718,8 +750,10 @@ newした@projectにtitleのデータを入力してsubmitする
 <% end %>
 ```
 
-##### 新規作成のアクションを用意
+#### 新規作成のアクションを用意
+
 def createを追加
+
 ```ruby
 class ProjectsController < ApplicationController
 
@@ -775,7 +809,8 @@ end
 <a id="a2_2"></a>
 ### 2_2. Validation機能の追加（modelに定義）
 
-##### :titleは入力必須とする
+#### :titleは入力必須とする
+
 ```Ruby
 # /app/models/project.rb
 class Project < ActiveRecord::Base
@@ -786,8 +821,10 @@ class Project < ActiveRecord::Base
 end
 ```
 
-##### 入力必須が何もない時の処理（Controllerに定義）
+#### 入力必須が何もない時の処理（Controllerに定義）
+
 validatesは保存する時に発動する
+
 ```Ruby
 # /controllers/projects_controller.rb（既存のcreateに追記）
 class ProjectsController < ApplicationController
@@ -825,7 +862,7 @@ end
 
 ```
 
-##### バリデーションエラーのメッセージを表示（View）
+#### バリデーションエラーのメッセージを表示（View）
 
 バリデーションにエラーがある場合、@project.errorsの中に入る
 
@@ -839,6 +876,7 @@ end
   <p><%= f.submit %></p>
 <% end %>
 ```
+
 > <%= @project.errors.inspect %>で下記が表示される
 ```
 #<ActiveModel::Errors:0x007fe7e948c0f0 @base=#<Project id: nil, title: "", created_at: nil, updated_at: nil>, @messages={:title=>["can't be blank"]}>
@@ -871,7 +909,7 @@ end
 <a id="a2_3"></a>
 ### 2_3. 編集機能（edit）
 
-##### indexに編集ページへのリンクを追加（View）
+#### indexに編集ページへのリンクを追加（View）
 ```html
 # /views/projects/index.html.erb
 <ul>
@@ -884,8 +922,10 @@ end
 </ul>
 ```
 
-##### 編集のアクションを用意
+#### 編集のアクションを用意
+
 def newなどと同様に追記する
+
 ```Ruby
 # /controllers/projects_controller.rb（controllerに定義）
 def edit
@@ -893,9 +933,11 @@ def edit
 end
 ```
 
-##### 編集ページの用意
-/views/projects/new.html.erbのコピペでOK
-（form_forの機能で<%= f.submit %>のラベルが自動で変わる）
+#### 編集ページの用意
+
+/views/projects/new.html.erbのコピペでOK  
+（form_forの機能で<%= f.submit %>のラベルが自動で変わる）  
+
 ```html
 # /app/views/projects/edit.html.erb
 <%= form_for @project do |f| %>
@@ -911,8 +953,8 @@ end
 <a id="a2_4"></a>
 ### 2_4. 削除機能（destroy）
 
+#### indexに削除機能のリンクを追加（View）
 
-##### indexに削除機能のリンクを追加（View）
 ```html
 # /views/projects/index.html.erb
 <ul>
@@ -927,8 +969,10 @@ end
 ```
 
 
-##### 削除のアクションを用意
+#### 削除のアクションを用意
+
 def newなどと同様に追記する
+
 ```Ruby
 # /controllers/projects_controller.rb（controllerに定義）
 def destroy
@@ -938,20 +982,22 @@ def destroy
 end
 ```
 
-
 <a id="a2_5"></a>
 ### 2_5. projectに、タスクの新規作成機能
 
-##### model作成
+#### model作成
+
 ```
 # model名は最初大文字の単数形  
 # done:booleanは終わったかどうか、project:referencesはprojectと紐付ける  
-$ rails g model Task title done:boolean project:references  
+$ bundle exec rails g model Task title done:boolean project:references  
+
 # projectと紐付けを忘れた場合（Modelの関連付けも手動になる）
-$ rails g migration AddProjectToCondition project:references
+$ bundle exec rails g migration AddProjectToCondition project:references
 ```
 
 taskを登録した時にtaskのdoneはデフォルトでfalseとする  
+
 ```Ruby
 # /db/migrate/201501xxxxxxxx_create_tasks.rb
 class CreateTasks < ActiveRecord::Migration
@@ -969,16 +1015,18 @@ end
 
 /db/migrate/201501xxxxxxxx_create_tasks.rbを元に
 ```
-$ rake db:migrate
+$ bundle exec rails db:migrate
 ```
 
-##### controller作成  
+#### controller作成  
+
 ```
 # controller名は最初大文字の複数形
-$ rails g controller Tasks
+$ bundle exec rails g controller Tasks
 ```
 
-##### TaskのModelとProjectのModelの関連付け  
+#### TaskのModelとProjectのModelの関連付け  
+
 ```Ruby
 # /app/models/task.rb
 class Task < ActiveRecord::Base
@@ -995,7 +1043,8 @@ class Project < ActiveRecord::Base
 end
 ```
 
-##### routingの設定
+#### routingの設定
+
 ```Ruby
 # /config/routes.rb
 Rails.application.routes.draw do
@@ -1023,12 +1072,8 @@ Rails.application.routes.draw do
 end
 ```
 
-##### routing反映  
-```
-$ rake routes
-```
+#### project詳細ページにtask一覧を作成
 
-##### project詳細ページにtask一覧を作成
 ```Html
 # /app/views/projects/show.html.erb
 <ul>
@@ -1044,8 +1089,10 @@ $ rake routes
 </ul>
 ```
 
-##### taskのcontrollerを作成（create）
+#### taskのcontrollerを作成（create）
+
 projectsのcontrollerからコピペして必要な部分を変更
+
 ```Ruby
 # /app/controllers/tasks_controller.rb
 class TasksController < ApplicationController
@@ -1075,8 +1122,10 @@ end
 <a id="a2_6"></a>
 ### 2_6. タスクの削除機能
 
-##### project詳細ページに削除リンクを作成
+#### project詳細ページに削除リンクを作成
+
 index.html.erbから削除リンクを流用
+
 ```
 [<%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "本当によろしいですか？" } %>]
 ```
@@ -1100,7 +1149,7 @@ index.html.erbから削除リンクを流用
 </ul>
 ```
 
-##### taskのcontrollerを作成（destroy）
+#### taskのcontrollerを作成（destroy）
 destroyアクションの追加
 ```Ruby
 # /app/controllers/tasks_controller.rb
@@ -1111,11 +1160,11 @@ destroyアクションの追加
   end
 ```
 
-
 <a id="a2_7"></a>
 ### 2_7. タスクにチェックボックを付ける
 
-##### チェックボックを追加
+#### チェックボックを追加
+
 ```html
 # /app/views/projects/show.html.erb  
 <%#
@@ -1136,14 +1185,16 @@ $(function(){
 </script>
 ```
 
-##### routingの設定
+#### routingの設定
+
 ```Ruby
 # /config/routes.rbに追記
   # 特定の命令を、特定のアクションに結びつけたい
   post '/projects/:project_id/tasks/:id/toggle' => 'tasks#toggle' #tasksコントローラのtoggleアクション
 ```
 
-##### controllerに定義
+#### controllerに定義
+
 ```Ruby
 # /app/controllers/tasks_controller.rbに追記
   def toggle
@@ -1157,13 +1208,15 @@ $(function(){
 <a id="a2_8"></a>
 ### 2_8. タスクの数を表示
 
-##### タスクの全数
+#### タスクの全数
+
 ```html
 # /app/views/projects/show.html.erb  
 <%= @project.tasks.count %>
 ```
 
-##### タスクの残数（Modelに記述：検索条件を付けることができるため）
+#### タスクの残数（Modelに記述：検索条件を付けることができるため）
+
 ```Ruby
 # /app/models/task.rb
   # scopeでunfinishedというscopeを定義、doneがfalseのものを検索条件として
@@ -1175,13 +1228,13 @@ $(function(){
 <%= project.tasks.unfinished.count %>
 ```
 
-
 ・・・・・・・・・・・・・・・・・・・・・・・・・・  
+
 
 ### その他
 
 <a id="ax2_1"></a>
-##### パーシャル（共通化）  
+#### パーシャル（共通化）  
 DRYの原則に則って同じ部品の共通化する方法で、  
 _呼び出し名.html.erbに共通部分を記述し、  
 共通部分を<%= render 'form' %>で上記を呼び出す（includeみたいなもの）
@@ -1204,7 +1257,7 @@ _呼び出し名.html.erbに共通部分を記述し、
 <% end %>
 ```
 
-##### before_action（共通化）  
+#### before_action（共通化）  
 DRYの原則に則って同じ部品の共通化する方法で、  
 controllerの中のアクションの重複内容をまとめて処理  
 どのアクションよりも先に実行される（after_actionもあるよ）
@@ -1356,7 +1409,7 @@ end
 ```
 
 <a id="ax2_2"></a>
-##### 日本語化、多言語化
+#### 日本語化、多言語化
 > 他言語対応したときにURIをどうするか  
 http://blog.notsobad.jp/post/87487830571/rails4-i18n  
 　  
@@ -1374,24 +1427,24 @@ end
 http://rails3try.blogspot.jp/2012/01/rails3-i18n.html  
 http://memo.yomukaku.net/entries/LXvSUpT  
 
+#### 日本語化(1)  
 
+##### やらないといけないこと  
 
-
-###### 日本語化(1)  
-
-やらないといけないこと  
 * viewに直接記載された英語を変更
 * controller、modelに記載された英語を、ja.ymlとdevise.ja.ymlで変更  
 * 参考：https://gist.github.com/kawamoto/4729292  
 
-ファイルの配置  
+##### ファイルの配置  
+
 * ja.yml：config/locales/ja.yml
+
 > 参考  
 https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt  
 https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml  
 
 
-###### 日本語化(2)
+#### 日本語化(2)
 
 > 参考  
 http://morizyun.github.io/blog/i18n-english-rails-ruby-many-languages/  
@@ -1407,7 +1460,7 @@ ja:
         password_confirmation: パスワード（再入力）
         remember_me: 次回からパスワード入力を省く
 ```
-###### 多言語化
+#### 多言語化
 
 > 参考  
 URLの設計  
@@ -1434,21 +1487,14 @@ http://www.serendip.ws/archives/4428
         update: 新しくする  
 ```
 
-###### 404/500系のページ設定
+##### 404/500系のページ設定
 
 > 参考  
 http://morizyun.github.io/blog/custom-error-404-500-page/
 
-- - -
-
-## なんでやねんポイント
-
-* 「:」が前に付いたり、そうでなかったり
-* 大文字だったり小文字だったり、複数形だったり単数形だったり
-* 「,」で区切る、と思いきやそうでなかったり（hasmany :tasks）
-* projectとtaskがリレーショナルになって、引数、やドットシンタックスや:titleなど慣れないと値の与え方がよくわかっていない。
 
 - - -
+
 
 ## 将来の課題（要整理）  
 
@@ -1459,6 +1505,7 @@ http://blog.digital-squad.net/article/398190260.html
   
 > 見やすいログの設定方法  
 http://qiita.com/marqs/items/70588084a87fd0cb164e  
+
 ```Ruby
 # config/initializers/quiet_assets.rbを作成する
 Rails.application.assets.logger = Logger.new('/dev/null') 
@@ -1474,49 +1521,35 @@ Rails::Rack::Logger.class_eval do
 end 
 ```
 
-
-#### Rails使えるサーバーどこ？  
-> 参考  
-アプリケーション専用サーバ  
-http://sqale.jp/  
-heroku(個人的には好きじゃない)  
-openshift  
-https://www.openshift.com/web-hosting/index.html?sc_cid=701600000011p9xAAA&gclid=CJqDlsfs-cwCFQ8AvAodru0OZg
-
-
-#### 管理画面
-> Rails 4 ＆ Active Admin で、マスタCRUD系の管理画面を秒速で作る方法  
-http://qiita.com/hkusu/items/3b0fb7f94a254e2ed6fd  
-
 #### Strong Parameters
+
 > 参考  
 http://o.inchiki.jp/obbr/181  
 http://www.techscore.com/blog/2013/01/29/rails4-%E3%81%AE-strong-parameters-%E3%81%A7%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%99%E3%82%8B/  
 http://easyramble.com/strong-parameters-on-rails-devise.html  
-
-
-####コントローラーの仕事は何か？
-http://qiita.com/mat_aki/items/3c743533c9f37a9106ee  
 　  
-
 #### ユーザーが自分自身以外のページへのアクセスや情報編集を制限するには、別途メソッドを実装して before_action で呼ぶなどの必要があります。
 
 > 参考  
 http://easyramble.com/devise-on-rails.html#crayon-54b3e98a9a403968501399
+
 ```Ruby
 private
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_path) unless current_user?(@user)
   end
+```
 
 #### ドメイン駆動設計
+
 http://a-suenami.hatenablog.com/entry/2014/12/07/200427  
 
-
 #### Rails で "とりあえず動くコード" を書けるようになった人が次に遭遇する問題とそれを解決してくれる本まとめ
+
 > 参考  
 http://blog.inouetakuya.info/entry/2014/06/08/194015  
+
 * 問題 1. テストが書けない  
 読むべき本: Everyday Rails - RSpec による Rails テスト入門  
 * 問題 2. Rails っぽく書けない   
@@ -1535,14 +1568,11 @@ http://blog.inouetakuya.info/entry/2014/06/08/194015
 
 → [memo/rails基本的な流れの次.md](https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md)  
 
-
 Ruby on Rails によるシステム開発をモデリングで効率的に行う  
 http://www.hakkaku.net/series/ruby-on-rails-%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA%E3%82%92%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%A7%E5%8A%B9%E7%8E%87%E7%9A%84%E3%81%AB  
 
-
 暗号化方式一覧（トークンとは別）  
 https://md5.znaet.org/md5/ac75e7eca69abf564a76d52fd6e35c1c  
-
 　  
 ⇒<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C%E3%81%AE%E6%AC%A1.md" target="_blank">rails基本的な流れの次</a>  
 
