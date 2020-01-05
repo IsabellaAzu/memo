@@ -261,25 +261,25 @@ yarn-debug.log*
 ### 最初のコミット
 
 ```
-git init
-git add .
-git commit -m "最初のコミット"
+$ git init
+$ git add .
+$ git commit -m "最初のコミット"
 
 # GitHubにあるリモートリポジトリとローカルリポジトリを紐づける
-git remote add origin https://github.com/xxxxxxx/[Ripository name].git
+$ git remote add origin https://github.com/xxxxxxx/[Ripository name].git
 # SSHを用いてgitと通信するためには以下
-git remote set-url origin git@github.com:xxxxxxx/[Ripository name].git
+$ git remote set-url origin git@github.com:xxxxxxx/[Ripository name].git
 
 # 紐づけているリモートリポジトリを確認できる
-git remote -v    
+$ git remote -v    
 
 # いきなりgit remote set-url origin　〜をしてしまうと、fatal: No such remote 'origin'というエラーが出る。
 # 先にremoteをaddする必要があり、set-urlはあくまでもremote先を変える。
 # SSHを始めから用いるのであれば、以下のコマンドで。
-git remote add origin git@github.com:xxxxxxx/[Ripository name].git
+$ git remote add origin git@github.com:xxxxxxx/[Ripository name].git
 
 # ローカルリポジトリをリモートリポジトリにプッシュする
-git push origin master
+$ git push origin master
 ```
 
 
