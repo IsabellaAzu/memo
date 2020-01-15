@@ -200,14 +200,14 @@ https://lifewood.hatenablog.com/entry/2020/01/04/223150
 
 1. Micro frontends  
 2. Atomic Design  
-3.カプセル化されたStyling と Shadow Dom  
+3. カプセル化されたStyling と Shadow Dom  
 4. TypeScript take over  
 5. Web components  
-6.コンポーネントライブラリからダイナミックコレクションまで  
-7.状態管理：Bye Bye Redux？ （ない…。）  
+6. コンポーネントライブラリからダイナミックコレクションまで  
+7. 状態管理：Bye Bye Redux？ （ない…。）  
 8. ESM CDN  
-9.プログレッシブ Web アプリ。 まだ成長しています。  
-10.デザイナーと開発者の統合  
+9. プログレッシブ Web アプリ。 まだ成長しています。  
+10. デザイナーと開発者の統合  
 11. Web assembly — 未来へ？  
 
 
