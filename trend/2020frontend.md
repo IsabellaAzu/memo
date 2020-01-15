@@ -96,16 +96,16 @@ https://ryosukemizuta.com/2019_web_development_front_end/
 
 ### 【2019年版】最高の海外プログラミング学習サイトTop10
 
-- 01. Udemy
-- 02. Coursera
-- 03. edX
-- 04. SKILLSHARE
-- 05. Code.org
-- 06. freeCodeCamp
-- 07. Udacity
-- 08. Learn Code Academy
-- 09. Scotch.io
-- 10. Tuts+
+- Udemy
+- Coursera
+- edX
+- SKILLSHARE
+- Code.org
+- freeCodeCamp
+- Udacity
+- Learn Code Academy
+- Scotch.io
+- Tuts+
 
 
 - - - 
@@ -131,6 +131,64 @@ GraphQL APIは1回のリクエストでアプリに必要なすべてのデー�
 プログレッシブWebアプリ（PWA）は、  
 アプリケーションを構築するためWebの最も優れた機能と最高品質のモバイルアプリを組み合わせる新しいアプローチです。
 
+- [PWAとはなにか。なぜ今それを活用すべきなのか？](https://qiita.com/baby-degu/items/a2bba910b3807c4036c1)  
+- [学習](https://medium.com/better-programming/everything-you-need-to-know-about-pwas-8e41a7e745aa)  
+- [service workers](https://caniuse.com/#search=service%20workers)
+
+```
+Web開発者は、ネイティブアプリの開発者よりもはるかに数が多いです。
+大企業がWeb開発者を使ってプログレッシブWebアプリケーションを作成できることに気付いたら、
+PWAの巨大な波が押し寄せるでしょう。
+しかし、大企業がそれに気づくまでにはしばらく時間がかかるでしょう。
+これはテクノロジーにとってはごく普通のことです。
+ほとんどの場合、Web開発はWeb Workers API（ネイティブブラウザーAPI）とのやり取りなので、
+プログレッシブ部分は一般にフロントエンド開発に向けられます。
+Webアプリは主流から外れることはないでしょう。
+一つで複数のプラットフォームに対応できるPWAは、
+時間を節約できてもっとお金を稼げると考える人が増えています。
+```
+
+### WebAssemblyはより軽く快適に
+
+```
+WebAssembly（略称Wasm）は、スタックベースの仮想マシン用のバイナリ命令形式です。
+Wasmは、C、C ++、Rustなどの高レベル言語をコンパイルするためのポータブルターゲットとして設計されています。
+Wasmは、クライアントおよびサーバーアプリケーションのWeb上での展開も可能にします。
+PWAもWasmを使用できます。
+つまり、WebAssemblyは、JavaScriptテクノロジをよりレベルの高いテクノロジと結び付ける方法なのです。
+ReactアプリでRust画像処理ライブラリを使用することを考えてください。
+WebAssemblyなら、すぐにそれができるのです。
+パフォーマンスが重要であり、データ量が増えると、良好なパフォーマンスを維持することがさらに難しくなります。
+そのとき、C++またはRustの低レベルなライブラリが登場して、
+そこから大企業がWebAssemblyとsnowballを採用することになるでしょう。
+```
+
+### Reactはこれからも圧倒的な人気
+
+```
+ライブラリの目標は「物事を成し遂げること」だということを忘れないでください。  
+フレームワークを選ぶのは好みの問題ではなく、どれが一番物事を上手く成し遂げるかということに重点を置いてください。
+どのフレームワークが「ベスト」であるかを議論するのはまったく非生産的です。
+まずフレームワークを選び、すべてのエネルギーをプログラミングに注ぎ込むのが重要です。
+```
+
+### これからもJavaScriptに賭ける
+
+```
+2010年代はJavaScriptの10年だったと自信を持って言えます。
+この10年でJavaScriptは大きく成長しましたが、その成長速度が低下しているようには見えません。
+JavaScriptの開発者は、「本物の開発者ではない」という汚名を着せられて来ました。
+JavaScriptは、Netflix、Facebook、Googleなど多くの大企業の心臓部です。
+したがって、言語としてのJavaScriptは、他のプログラミング言語と同様に全く正当なものです。
+私はJavaScript開発者であることを誇りに思います。
+結局のところ、最もクールで革新的なプロダクトのいくつかは、JavaScriptのコミュニティによって作られてきたのです。
+ほとんどすべてのWebサイトがJavaScriptをある程度使っています。
+この世にウェブサイトはいくつあるんでしょうか？
+おそらく何百万という数字じゃないでしょうか！
+JavaScript開発者になるのはこれまでにないほど良いタイミングでした。
+給与は増え、コミュニティは相変わらず活気があり、雇用市場は巨大です。
+JavaScriptを学びたいと思うなら、「あなたはJSを知らない」という本のシリーズはおススメです。
+```
 
 
 
@@ -169,7 +227,7 @@ https://note.com/erukiti/n/na654ad7bd9bb
 
 <details><summary>サンプルコード</summary><div>
 
-\```rb
+```rb
 puts 'Hello, World'
-\```
+```
 </div></details>
