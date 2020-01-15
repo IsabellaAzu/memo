@@ -6,7 +6,7 @@
 - - - 
 　  
 　  
-## 【2019年】Web開発トレンド総まとめ – フロントエンド開発編
+## :trident:【2019年】Web開発トレンド総まとめ – フロントエンド開発編
 
 https://ryosukemizuta.com/2019_web_development_front_end/
 
@@ -69,7 +69,6 @@ https://ryosukemizuta.com/2019_web_development_front_end/
   - Angularアプリケーションの状態管理を適切に扱うためのライブラリ
   - [ngrx紹介](https://qiita.com/kouMatsumoto/items/c8297466c1824953632f)  
 
-
 ### tool
 
 #### NPM or Yarn
@@ -95,9 +94,6 @@ https://ryosukemizuta.com/2019_web_development_front_end/
 - SassやLessをCSSに自動変換 [現場で使えるGulp入門](https://app.codegrid.net/entry/gulp-1)
 - JavaScriptやCSSファイルの結合・圧縮を自動化 [現場で使えるGrunt入門](https://app.codegrid.net/entry/grunt-introduction)
 
-
-
-
 ### 【2019年版】最高の海外プログラミング学習サイトTop10
 
 - 01. Udemy
@@ -112,23 +108,37 @@ https://ryosukemizuta.com/2019_web_development_front_end/
 - 10. Tuts+
 
 
-
-
-
-
-
 - - - 
 　  
 　  
-## 2020年以降のプログラミング技術のトレンド予想
+## :trident:2020年以降のプログラミング技術のトレンド予想
 
 https://qiita.com/baby-degu/items/a311ca07d155037253c8
 
+### Rustが主流になる
+
+Rustは、安全、特にスレッドセーフな処理に焦点を当てたマルチパラダイムシステムプログラミング言語
+
+### GraphQLの利用は拡大を続ける
+
+```
+一般的なREST APIは、データ取得の際、複数のURLからロードする必要がありますが、
+GraphQL APIは1回のリクエストでアプリに必要なすべてのデータを取得できます。
+```
+
+### プログレッシブWebアプリを検討すべき
+
+プログレッシブWebアプリ（PWA）は、  
+アプリケーションを構築するためWebの最も優れた機能と最高品質のモバイルアプリを組み合わせる新しいアプローチです。
+
+
+
+
 　  
 - - - 
 　  
 　  
-## 11 Must-Know FrontEnd Trends for 2020 の翻訳
+## :trident:11 Must-Know FrontEnd Trends for 2020 の翻訳
 
 https://lifewood.hatenablog.com/entry/2020/01/04/223150
 
@@ -136,7 +146,7 @@ https://lifewood.hatenablog.com/entry/2020/01/04/223150
 - - - 
 　  
 　  
-## 2020 and Beyond Programming Trend Predictions
+## :trident:2020 and Beyond Programming Trend Predictions
 
 https://eigo-no-jikan.hatenablog.com/entry/2019/10/03/2020-programming-trend-predictions
 
@@ -144,16 +154,22 @@ https://eigo-no-jikan.hatenablog.com/entry/2019/10/03/2020-programming-trend-pre
 - - - 
 　  
 　  
-## JSフレームワーク事情2020年始め
+## :trident:JSフレームワーク事情2020年始め
 
 https://note.com/erukiti/n/na654ad7bd9bb
-
-
 　  
 　  
 - - - 
 　  
 　  
-## markdown
+## :trident:markdown
 
-https://www.webfx.com/tools/emoji-cheat-sheet/
+- https://www.webfx.com/tools/emoji-cheat-sheet/
+- https://qiita.com/Qiita/items/c686397e4a0f4f11683d
+
+<details><summary>サンプルコード</summary><div>
+
+\```rb
+puts 'Hello, World'
+\```
+</div></details>
