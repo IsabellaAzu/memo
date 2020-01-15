@@ -199,19 +199,32 @@ JavaScriptを学びたいと思うなら、「あなたはJSを知らない」�
 https://lifewood.hatenablog.com/entry/2020/01/04/223150  
 
 1. Micro frontends  
+  （[Bit](https://bit.dev/)を使用すると、）個々のフロントエンド/コンポーネントを分離、バージョン化、ビルド、テスト、更新できる
 2. Atomic Design  
+  ```
+  Atomic コンポーネントの利点は、
+  モジュール式で再利用可能なコンポーネントを介したモジュール式 UI アプリケーションの構築にとどまりません。
+  このパラダイムにより、構成を考えるように強制されるため、
+  すべてのコンポーネントの役割と API 、それらの階層、およびアプリケーションの構築プロセスを
+  効果的かつ効率的な方法で抽象化する方法をよりよく理解できます。
+  ```
+  - [atomic design](https://bradfrost.com/blog/post/atomic-web-design/)  
+  - [Atomic Design and UI Components: Theory to Practice](https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24)  
 3. カプセル化されたStyling と Shadow Dom  
+  - マークアップ構造、スタイル、および動作をページ上の他のコードから隠して分離できる
+  - [Using shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)  
 4. TypeScript take over  
+  - [開発者の 80 ％が次のプロジェクトで TypeScript を使用または学習したいと認めていることが報告されています。](https://2018.stateofjs.com/javascript-flavors/typescript/)  
+  -  TS コードは理解しやすく、実装が速く、バグが少なく、定型文も少なくて済む
 5. Web components  
 6. コンポーネントライブラリからダイナミックコレクションまで  
 7. 状態管理：Bye Bye Redux？ （ない…。）  
+  - Redux は辞めるのが難しい道具
+  - フロントエンドのモジュール化が進むにつれて、アプリの状態をグローバルに管理することの苦痛はより明確になる
 8. ESM CDN  
 9. プログレッシブ Web アプリ。 まだ成長しています。  
 10. デザイナーと開発者の統合  
 11. Web assembly — 未来へ？  
-
-
-
 　  
 　  
 - - - 
