@@ -189,16 +189,37 @@ JavaScript開発者になるのはこれまでにないほど良いタイミン�
 給与は増え、コミュニティは相変わらず活気があり、雇用市場は巨大です。
 JavaScriptを学びたいと思うなら、「あなたはJSを知らない」という本のシリーズはおススメです。
 ```
-
-
-
+　  
 　  
 - - - 
 　  
 　  
 ## :trident:11 Must-Know FrontEnd Trends for 2020 の翻訳
 
-https://lifewood.hatenablog.com/entry/2020/01/04/223150
+https://lifewood.hatenablog.com/entry/2020/01/04/223150  
+
+1. Micro frontends  
+2. Atomic Design  
+3.カプセル化されたStyling と Shadow Dom  
+4. TypeScript take over  
+5. Web components  
+6.コンポーネントライブラリからダイナミックコレクションまで  
+7.状態管理：Bye Bye Redux？ （ない…。）  
+8. ESM CDN  
+9.プログレッシブ Web アプリ。 まだ成長しています。  
+10.デザイナーと開発者の統合  
+11. Web assembly — 未来へ？  
+
+
+
+　  
+　  
+- - - 
+　  
+　  
+## :trident:JSフレームワーク事情2020年始め
+
+https://note.com/erukiti/n/na654ad7bd9bb  
 
 ![picture_pc_d44a3b47c863bf737083c265bf3a0f84](https://user-images.githubusercontent.com/1782095/72397202-84b5bb00-3782-11ea-9736-25a046f0d105.png)  
 
@@ -329,22 +350,6 @@ HTMLとJSの関係について
 たとえばAngularやNuxtを捨てたくなったときに、次に移るのが面倒です。
 ```
 
-　  
-- - - 
-　  
-　  
-## :trident:2020 and Beyond Programming Trend Predictions
-
-https://eigo-no-jikan.hatenablog.com/entry/2019/10/03/2020-programming-trend-predictions
-
-　  
-- - - 
-　  
-　  
-## :trident:JSフレームワーク事情2020年始め
-
-https://note.com/erukiti/n/na654ad7bd9bb
-　  
 　  
 - - - 
 　  
