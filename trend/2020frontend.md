@@ -371,6 +371,7 @@ HTMLとJSの関係について
 
 - https://www.webfx.com/tools/emoji-cheat-sheet/
 - https://qiita.com/Qiita/items/c686397e4a0f4f11683d
+- https://gist.github.com/Phroneris/e7e6c869640b95bd42434bdc995cd4f6
 
 <details><summary>サンプルコード</summary><div>
 
