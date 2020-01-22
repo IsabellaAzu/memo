@@ -21,6 +21,8 @@
 
 ## お気に入りWebサイト
 
+- 太陽のwebGL
+https://playground.babylonjs.com/frame.html#46MPSD
 - 雲と飛行機の動き  
 https://www.hifly.aero/  
 - 水面と光  
