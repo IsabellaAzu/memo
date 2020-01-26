@@ -61,7 +61,7 @@ $ rails destroy migration AddProjectToTask project:references
     resources :conditions, only:[:new,:create,:edit,:update,:destroy]
   end
 ```
-
+https://qiita.com/srkw___/items/2f65ef53e06e86930faa  
 　  
 　  
 - - -
