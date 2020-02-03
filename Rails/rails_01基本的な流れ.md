@@ -258,6 +258,12 @@ yarn-debug.log*
 !/storage/.keep
 ```
 
+ `/home/xxx/config/secrets.yml` は `/home/xxx/config/credentials.yml.enc`に変更されている。  
+https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39  
+
+
+
+
 ### 最初のコミット
 
 ```
