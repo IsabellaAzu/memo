@@ -13,16 +13,24 @@ $ rails
 　↓
 $ bundle exec rails 〜
 になる
-
-Rails環境構築
-https://qiita.com/yuitnnn/items/b45bba658d86eabdbb26  
-https://qiita.com/camelmasa/items/5ca27ab398f105f86c76  
-https://qiita.com/jun_jun_jun/items/dd260c43387a8e17803d  
-https://mom0tomo.hateblo.jp/entry/2018/08/08/211238  
-https://qiita.com/annaaida/items/81d8a3f1b7ae3b52dc2b  
-https://qiita.com/nsy_13/items/9fbc929f173984c30b5d  
-https://masaki.blog/rails6-on-docker/  
 ```
+
+### Rails環境構築
+
+2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
+https://qiita.com/jun_jun_jun/items/dd260c43387a8e17803d  
+
+2018.08.08 Railsでパーシャルを切り出すときはインスタンス変数をローカル変数にする  
+https://mom0tomo.hateblo.jp/entry/2018/08/08/211238  
+
+2019.11.15 Action Mailer でメール送信機能をつくる  
+https://qiita.com/annaaida/items/81d8a3f1b7ae3b52dc2b  
+
+2019.09.14 【Rails】Rails 6.0 x Docker x MySQLで環境構築  
+https://qiita.com/nsy_13/items/9fbc929f173984c30b5d  
+
+2019.09.27 Rails 6 + MySQL on Dockerの環境を秒速で構築する  
+https://masaki.blog/rails6-on-docker/  
 
 ```
 $ bundle init
