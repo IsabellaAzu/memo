@@ -12,8 +12,6 @@ http://ja.wikipedia.org/wiki/CRUD
 - <a href="#a2_6">2_6. タスクの削除機能</a>  
 - <a href="#a2_7">2_7. タスクにチェックボックを付ける</a>  
 - <a href="#a2_8">2_8. タスクの数を表示</a>  
-- <a href="#ax2_1">その他 パーシャル（共通化）</a>  
-- <a href="#ax2_2">その他 日本語化、多言語化</a>  
 
 
 > rake routesの結果  
