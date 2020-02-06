@@ -396,15 +396,23 @@ https://qiita.com/matzkoh/items/90baab22ad489b78384b
 - - - 
 　  
 　  
+## :trident:20 年代のフロントエンド
+
+https://qiita.com/mizchi/items/50937c7f702da566e989
+　  
+　  
+- - - 
+　  
+　  
 ## :trident:markdown
 
 - https://www.webfx.com/tools/emoji-cheat-sheet/
 - https://qiita.com/Qiita/items/c686397e4a0f4f11683d
 - https://gist.github.com/Phroneris/e7e6c869640b95bd42434bdc995cd4f6
 
-<details><summary>サンプルコード</summary><div>
-
+<details>
+<summary>サンプルコード</summary>
 ```rb
 puts 'Hello, World'
 ```
-</div></details>
+</details>
