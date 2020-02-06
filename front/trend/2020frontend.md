@@ -367,6 +367,27 @@ HTMLとJSの関係について
 - - - 
 　  
 　  
+## :trident:2020年の開発者が知っておくべき11の必須スキル
+
+
+https://qiita.com/rana_kualu/items/c79a16ff503c86b27483?utm_source=Qiita%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&utm_campaign=e0729e0bdc-Qiita_newsletter_398_02_05_2020&utm_medium=email&utm_term=0_e44feaa081-e0729e0bdc-33751137
+
+01. Containers (Docker and Kubernetes)
+02. Cloud Platform (AWS, GCP, or Azure)
+03. Data Structure and Algorithm
+04. A Version Control Tool (Git)
+05. One Text Editors (VIM)
+06. IDEs (VSCode or IntelliJIDEA)
+07. Database and SQL
+08. UNIX (Linux)
+09. An OOP Programming language (C++, Java or Python)
+10. Networking basics
+11. One Scripting language
+
+　  
+- - - 
+　  
+　  
 ## :trident:markdown
 
 - https://www.webfx.com/tools/emoji-cheat-sheet/
