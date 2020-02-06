@@ -396,6 +396,14 @@ https://qiita.com/matzkoh/items/90baab22ad489b78384b
 - - - 
 　  
 　  
+## :trident:20 良いコードの書き方
+
+https://qiita.com/alt_yamamoto/items/25eda376e6b947208996
+　  
+　  
+- - - 
+　  
+　  
 ## :trident:20 年代のフロントエンド
 
 https://qiita.com/mizchi/items/50937c7f702da566e989
