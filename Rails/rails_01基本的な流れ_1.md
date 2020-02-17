@@ -41,7 +41,7 @@ $ bundle init
 $ bundle install --path vendor/bundle
 
 $ bundle exec rails new プロジェクト名 # SQLightで
-$ bundle exec rails new プロジェクト名 -B -M -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+$ bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
 $ cd プロジェクト名
 $ bundle install --path vendor/bundle
