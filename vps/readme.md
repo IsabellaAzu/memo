@@ -11,11 +11,11 @@ https://knowledge.sakura.ad.jp/4217/
 https://www.projectatomic.io/  
 https://news.mynavi.jp/article/20191001-902542/  
 　  
-201912  
+202002  
 ```
-1	Ubuntu	38.2%	37.5%
-2	Debian	20.1%	20.9%
-3	CentOS	17.0%	17.0%
+1	Ubuntu	38.7%	38.7%
+2	Debian	18.7%	19.4%
+3	CentOS	16.8%	16.9%
 4	Red Hat	1.9%	1.9%
 ```
 　  
