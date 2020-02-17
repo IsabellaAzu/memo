@@ -1,4 +1,34 @@
+
 # VPSの設定
+
+```
+今後は
+```
+https://gihyo.jp/admin/clip/01/linux_dt/202001/29  
+https://thinkit.co.jp/story/2015/03/06/5672  
+　↓  
+https://knowledge.sakura.ad.jp/4217/  
+https://www.projectatomic.io/  
+https://news.mynavi.jp/article/20191001-902542/  
+　  
+201912  
+```
+1	Ubuntu	38.2%	37.5%
+2	Debian	20.1%	20.9%
+3	CentOS	17.0%	17.0%
+4	Red Hat	1.9%	1.9%
+```
+　  
+201909  
+```
+1	Ubuntu	37.4%	37.5%
+2	Debian	21.4%	21.4%
+3	CentOS	16.9%	17.0%
+4	Red Hat	2.0%	2.0%
+```
+
+
+
 
 ## さくらVPSでcoreOSベースの設定手順   
 さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
