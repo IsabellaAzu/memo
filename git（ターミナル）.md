@@ -62,7 +62,7 @@ $ git commit -m "コミットコメント"
 ```
 $ git push -u origin master
 ```
-※「 -u origin master」はリポジトリにファイルが無い場合の最初のpush  
+※「 -u origin master」はリポジトリにファイルが無い場合の最初のpush（初回コミット）  
 　  
 - - -
 
