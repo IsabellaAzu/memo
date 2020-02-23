@@ -2,7 +2,7 @@
 # VPSの設定
 
 ```
-今後は
+今後はUbuntsu
 ```
 https://gihyo.jp/admin/clip/01/linux_dt/202001/29  
 https://thinkit.co.jp/story/2015/03/06/5672  
@@ -26,10 +26,13 @@ https://news.mynavi.jp/article/20191001-902542/
 3	CentOS	16.9%	17.0%
 4	Red Hat	2.0%	2.0%
 ```
+　  
+　  
+coreOSは202002以降使わない
 
-
-
-
+　  
+　  
+　  
 ## さくらVPSでcoreOSベースの設定手順   
 さくらVPSのコンソールのvimコマンド：「sudo vim ファイル名」で開いておく  
 　「:q!」　→　「control + z」  
