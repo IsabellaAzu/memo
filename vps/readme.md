@@ -28,6 +28,7 @@ https://news.mynavi.jp/article/20191001-902542/
 ```
 　  
 　  
+　  
 coreOSは202002以降使わない
 
 　  
