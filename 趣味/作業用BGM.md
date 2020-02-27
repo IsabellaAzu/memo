@@ -108,6 +108,8 @@ https://www.youtube.com/watch?v=-V01oN9SMYs
 ##### Les Twins – Judge demo Juste Debout Tokyo 2020
 https://www.youtube.com/watch?v=FW-bQ55f5v4
 
+##### Les Twins – Judge demo Juste Debout Shanghai 2020
+https://www.youtube.com/watch?v=1P8YcxCZNv4
 
 - - - 
 ### BBOY
