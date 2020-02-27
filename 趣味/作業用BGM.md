@@ -9,6 +9,9 @@
 - https://www.youtube.com/watch?v=GeX6MwXGPN4
 - https://www.youtube.com/watch?v=udXJynVOsNY
 
+- 学習に役立つ音楽—ダウンテンポとチルミックス  
+  https://www.youtube.com/watch?v=CC04qXYhlGU
+
 
 ## lofi
 
