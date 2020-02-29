@@ -85,6 +85,21 @@ https://www.youtube.com/watch?v=c3Jl8ZIPcmw
 ##### 　Huawei CES
 　https://www.youtube.com/watch?v=V6EFp30BRkg
 
+#### 2020
+
+##### Les Twins – Judge demo Juste Debout Tokyo 2020
+https://www.youtube.com/watch?v=FW-bQ55f5v4
+
+##### Les Twins – Judge demo Juste Debout Shanghai 2020
+https://www.youtube.com/watch?v=1P8YcxCZNv4
+
+
+#### 2016
+
+##### 　FRONTROW
+https://www.youtube.com/watch?v=-V01oN9SMYs
+
+
 #### 2015
 　https://www.youtube.com/watch?v=rGhOKNyPNgs
 　https://www.youtube.com/watch?v=GHxZlueE-aY
@@ -97,18 +112,4 @@ https://www.youtube.com/watch?v=c3Jl8ZIPcmw
 　  　  
 ##### 　Larry Strife Dance Battle
 　https://www.youtube.com/watch?v=M7Jwg7-nY5E
-
-#### 2016
-
-##### 　FRONTROW
-https://www.youtube.com/watch?v=-V01oN9SMYs
-
-#### 2020
-
-##### Les Twins – Judge demo Juste Debout Tokyo 2020
-https://www.youtube.com/watch?v=FW-bQ55f5v4
-
-##### Les Twins – Judge demo Juste Debout Shanghai 2020
-https://www.youtube.com/watch?v=1P8YcxCZNv4
-
 
