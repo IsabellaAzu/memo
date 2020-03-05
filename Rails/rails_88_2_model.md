@@ -185,14 +185,7 @@ $ bundle exec rails g model Project title
 ```
 
 ```
-$ bundle exec rails g
- model XxxxYyyy
- label:string:index
- cart_id:string:uniq
- user_id:integer
- item_category_id:integer
- item_id:integer
- period_at:datetime
+$ bundle exec rails g model XxxxYyyy cart_id:string:uniq user_id:integer item_category_id:integer item_id:integer item_label:string:index period_at:datetime
 ```
 
 ※index  →
