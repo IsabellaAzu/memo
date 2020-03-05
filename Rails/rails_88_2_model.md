@@ -192,7 +192,7 @@ $ bundle exec rails g
  user_id:integer
  item_category_id:integer
  item_id:integer
- period_at:datetime(0)
+ period_at:datetime
 ```
 
 ※index  →
@@ -201,10 +201,18 @@ https://qiita.com/C058/items/1c9c57f634ebf54d99bb
 
 #### migrationファイルの修正
 
-日付表示が、`2020-03-04 04:59:41.771784`になるのがイヤな場合  
+日付表示が、`2020-03-04 04:59:41.771784`になるのがイヤな場合 `precision: 0`  
 ミリ秒も厳密に比較したい場合はあった方が良いケースもある
 
-datetime(6)　→　datetime(0)
+```
+def change
+  create_table :hoges do |t|
+    t.datetime :hoge_date, precision: 0
+
+    t.timestamps precision: 6
+  end
+end
+```
 
 > 参考：Railsでカラムのデータ型を変更する場合の手順  
 https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja  
