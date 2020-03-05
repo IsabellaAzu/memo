@@ -172,11 +172,33 @@ pluck / ids / exists? / count / average / minimum / maximum / sum / readonly / t
 
 ### model作成時
 
+#### 
 model名は最初大文字の単数形  
 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」  
 ```
-$ bundle exec rails g model Project title # rails generate model Project title:stringの省略形
+$ bundle exec rails g model Project title
+# bundle exec rails generate model Project title:stringの省略形
 ```
+
+<textarea>
+$ bundle exec rails g
+ model Cart_migaku
+ label:string
+ cart_id:
+ provider_user_id:
+ item_category_id:
+ item_id:
+ period_at:
+ updated_at:
+ created_at:
+</textarea>
+
+#### migrationファイルの修正
+
+日付表示が、`2020-03-04 04:59:41.771784`になるのがイヤな場合  
+ミリ秒も厳密に比較したい場合はあった方が良いケースもある
+
+datetime(6)　→　datetime(0)
 
 > 参考：Railsでカラムのデータ型を変更する場合の手順  
 https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja  
