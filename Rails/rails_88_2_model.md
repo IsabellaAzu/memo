@@ -176,23 +176,26 @@ end
 
 #### 
 
-model名は最初大文字の単数形  
+model名は先頭大文字・キャメル・単数形 BookやMyBook  
 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」  
 ```
+$ bundle exec rails g model モデル名 フィールド:型:(unique|index) 以降必要なだけ
 $ bundle exec rails g model Project title
 # bundle exec rails generate model Project title:stringの省略形
 ```
 
 ```
 $ bundle exec rails g
- model 
+ model XxxxYyyy
  label:string
- cart_id:
- provider_user_id:
- item_category_id:
- item_id:
+ cart_id:string:unique
+ user_id:integer
+ item_category_id:integer
+ item_id:integer
  period_at:datetime(0)
 ```
+
+:index → https://qiita.com/C058/items/1c9c57f634ebf54d99bb
 
 #### migrationファイルの修正
 
