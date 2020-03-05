@@ -188,7 +188,7 @@ $ bundle exec rails g model Project title
 $ bundle exec rails g
  model XxxxYyyy
  label:string
- cart_id:string:unique
+ cart_id:string:uniq
  user_id:integer
  item_category_id:integer
  item_id:integer
