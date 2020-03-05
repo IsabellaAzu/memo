@@ -195,7 +195,9 @@ $ bundle exec rails g
  period_at:datetime(0)
 ```
 
-:index → https://qiita.com/C058/items/1c9c57f634ebf54d99bb
+※index  →
+MySQLでインデックスを貼る時に読みたいページまとめ(初心者向け）  
+https://qiita.com/C058/items/1c9c57f634ebf54d99bb  
 
 #### migrationファイルの修正
 
