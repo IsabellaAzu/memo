@@ -187,7 +187,7 @@ $ bundle exec rails g model Project title
 ```
 $ bundle exec rails g
  model XxxxYyyy
- label:string
+ label:string:index
  cart_id:string:uniq
  user_id:integer
  item_category_id:integer
