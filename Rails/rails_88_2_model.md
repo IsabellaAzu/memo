@@ -171,8 +171,14 @@ $ bundle exec rails g model Project title
 ```
 
 ```
-  $ bundle exec rails g
+$ bundle exec rails g
  model 
+ label:string
+ cart_id:
+ provider_user_id:
+ item_category_id:
+ item_id:
+ period_at:datetime(0)
 ```
 
 #### migrationファイルの修正
