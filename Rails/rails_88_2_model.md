@@ -170,6 +170,8 @@ $ bundle exec rails g model Project title
 ```
 
 <textarea>
+  $ bundle exec rails g
+ model 
 </textarea>
 
 #### migrationファイルの修正
