@@ -181,16 +181,6 @@ $ bundle exec rails g model Project title
 ```
 
 <textarea>
-$ bundle exec rails g
- model Cart_migaku
- label:string
- cart_id:
- provider_user_id:
- item_category_id:
- item_id:
- period_at:
- updated_at:
- created_at:
 </textarea>
 
 #### migrationファイルの修正
