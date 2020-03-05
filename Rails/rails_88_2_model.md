@@ -59,17 +59,6 @@ end
 - - - 
 　  
 　  
-## ■Modelのクエリ
-http://qiita.com/merrill/items/8ec158953cb4c2715c7b  
-http://ruby-rails.hatenadiary.com/entry/20140724/1406142120  
-find、take、first / second / third... / last、find_by、all / find_each / find_in_batcheswhere、order、  
-select、limit / offset、find_or_create_by / find_or_initialize_by / find_by_sql / select_all / group、
-pluck / ids / exists? / count / average / minimum / maximum / sum / readonly / to_sql / explain
-　  
-　  
-- - - 
-　  
-　  
 ## ■マイグレーション関連
 
 ### データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
@@ -197,7 +186,17 @@ https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDc
 ### tableにカラム追加時
 
 
-
+　  
+　  
+- - - 
+　  
+　  
+## ■Modelのクエリ
+http://qiita.com/merrill/items/8ec158953cb4c2715c7b  
+http://ruby-rails.hatenadiary.com/entry/20140724/1406142120  
+find、take、first / second / third... / last、find_by、all / find_each / find_in_batcheswhere、order、  
+select、limit / offset、find_or_create_by / find_or_initialize_by / find_by_sql / select_all / group、
+pluck / ids / exists? / count / average / minimum / maximum / sum / readonly / to_sql / explain
 　  
 　  
 - - - 
