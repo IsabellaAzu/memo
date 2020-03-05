@@ -19,16 +19,15 @@ logger.debug(decide_user_params["xxx"])
 - - - 
 　  
 　  
-## ■xxx関連
+## ■newとbuildのちがい
 
-### newとbuildのちがい
 buildを使うと親モデルに対する外部参照キーを自動でセットできる
 　  
 　  
 - - - 
 　  
 　  
-## ｇｅｎｅｒａｔｅ
+## ■ｇｅｎｅｒａｔｅ
 
 rails generateコマンドには、キャメルケースでもスネークケースでもどちらでも良い
 
