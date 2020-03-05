@@ -162,6 +162,7 @@ end
 ### model作成時
 
 #### 
+
 model名は最初大文字の単数形  
 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」  
 ```
@@ -169,10 +170,10 @@ $ bundle exec rails g model Project title
 # bundle exec rails generate model Project title:stringの省略形
 ```
 
-<textarea>
+```
   $ bundle exec rails g
  model 
-</textarea>
+```
 
 #### migrationファイルの修正
 
