@@ -1,17 +1,10 @@
 
 # API
 
-
-## railsふかぼり01：railsでWebAPIを叩く
-
-http://jumtech.hatenablog.jp/entry/2016/08/20/140720
-
-
-
-## Rails4:自力でControllerからAPIを叩くシンプルな実装
-
-https://qiita.com/inodev/items/fe39b579a13be6edab6a
-
+- railsふかぼり01：railsでWebAPIを叩く  
+  http://jumtech.hatenablog.jp/entry/2016/08/20/140720
+- ［Ruby/Rails］APIモードを使ったAPI実装方法  
+  https://qiita.com/tanakadaichi_1989/items/52dfcb0698c213272cfa
 
 
 ## 複数DBの場合
