@@ -21,7 +21,7 @@ $ bundle exec rails g controller MyBook --no-helper --no-assets
 - - - 
 　  
 　  
-## debug
+## ■debug
 
 ### controllerに記載してxxxの値を、logで確認できる
 
