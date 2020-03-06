@@ -4,7 +4,7 @@
 参考：[railsコマンド](http://railsdoc.com/rails)
 
 
-## テーブル作成時
+## ■テーブル作成時
 
 
 　  
@@ -12,7 +12,7 @@
 - - - 
 　  
 　  
-## ■マイグレーション関連
+### マイグレーション関連
 
 ### データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
 
@@ -125,12 +125,11 @@
 | field_time      | time          | YES  |     | NULL    |                |  
 | field_boolean   | tinyint(1)    | YES  |     | NULL    |                |  
 
-### model作成時
-
-#### 
+### model作成
 
 model名は先頭大文字・キャメル・単数形 BookやMyBook  
 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」  
+
 ```
 $ bundle exec rails g model モデル名 フィールド:型:(unique|index) 以降必要なだけ
 $ bundle exec rails g model Project title
@@ -151,7 +150,7 @@ https://qiita.com/C058/items/1c9c57f634ebf54d99bb
 ミリ秒も厳密に比較したい場合はあった方が良いケースもある  
 https://qiita.com/suketa/items/bb5005c6ac77f8c368cb   
 
-```
+```ruby
 class CreateXxxxYyyys < ActiveRecord::Migration[6.0]
   def change
     create_table :xxxx_yyyys do |t|
@@ -169,8 +168,6 @@ class CreateXxxxYyyys < ActiveRecord::Migration[6.0]
   end
 end
 
-
-
 def change
   create_table :hoges do |t|
     t.datetime :hoge_date, precision: 0
@@ -187,37 +184,45 @@ end
 ```
 $ rails g model Product 'price:decimal{10,2}'
 ```
-　  
-　  
+
 ### カラム追加削除
-```ruby
+
+```
 # 書式
-bundle exec rails g migration Addカラム名Toテーブル名 カラム名:型名
-bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
+$ bundle exec rails g migration Addカラム名Toテーブル名 カラム名:型名
+$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
 # サンプル
-bundle exec rails g migration AddTagToPosts tag:string
-bundle exec rails g migration RemoveTagFromPosts tag:string
-# 実行
-bundle exec rake db:migrate
+$ bundle exec rails g migration AddTagToPosts tag:string
+$ bundle exec rails g migration RemoveTagFromPosts tag:string
+
+$ bundle exec rake db:migrate
 ```
 　  
 　  
 - - - 
 　  
 　  
-## テーブルがすでにある時
+## ■テーブルがすでにある時
 　  
 　  
-[基本的なカラムの追加、削除、変更](http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3)
-```ruby
+### 基本的なカラムの追加、削除、変更
+
+http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3
+
+```
 # 外部キーのカラム追加 参考：[外部キー周りの注意](http://b.pyar.bz/blog/2014/10/22/foreigner/)
-bundle exec rails g migration Addカラム名RefToテーブル名 user:references（外部キーの追加：_idは記載しない）  
-bundle exec rails g migration AddUserRefToTweets user:references
+$ bundle exec rails g migration Addカラム名RefToテーブル名 user:references（外部キーの追加：_idは記載しない）  
+$ bundle exec rails g migration AddUserRefToTweets user:references
+
 # カラムの削除（外部制約も外す）
-bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:references
-# 実行
-bundle exec rake db:migrate
+$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:references
+
+$ bundle exec rake db:migrate
 ```
 
-> 参考：Railsでカラムのデータ型を変更する場合の手順  
+### Railsでカラムのデータ型を変更する場合の手順  
+
 https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja  
+
+
+
