@@ -16,7 +16,26 @@ rails generateコマンドには、キャメルケースでもスネークケー
 $ bundle exec rails g controller my_book --no-helper --no-assets
 $ bundle exec rails g controller MyBook --no-helper --no-assets
 ```
-　  
+
+### 生成しない設定（helper、stylesheets、javascripts、test）
+
+/config/application.rb
+
+```ruby
+module Xxx
+  class Application < Rails::Application
+    config.generators do |g|
+      g.helper false
+      g.stylesheets false
+      g.javascripts false
+    end
+    # Don't generate system test files.
+    config.generators.system_tests = nil
+  end
+end
+```
+
+
 　  
 - - - 
 　  
