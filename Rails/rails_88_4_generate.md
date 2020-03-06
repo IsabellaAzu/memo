@@ -202,17 +202,50 @@ $ bundle exec rake db:migrate
 ## ■テーブルがすでにある時
 　  
 　  
+### オプション
+
+```ruby
+# NULL
+change_column :テーブル名, :カラム名, :型, null: true
+
+# NOT NULL
+change_column :テーブル名, :カラム名, :型, null: false
+
+# INDEX
+change_column :テーブル名, :カラム名, :型, index: true
+
+# 初期値
+change_column :テーブル名, :カラム名, :型, default: "piyo"
+※初期値が空白の場合はnil。falseだとIntegerの場合0になる
+
+# 長さ
+change_column :テーブル名, :カラム名, :string, limit: 12
+
+# 小数点以下の精度
+def change
+  create_table :hoges do |t|
+    t.datetime :hoge_date, precision: 6
+
+    t.timestamps precision: 6
+  end
+end
+
+# 絡む名の変更
+rename_column :テーブル名, :変更前のカラム名, :変更後のカラム名
+```
+
 ### 基本的なカラムの追加、削除、変更
 
-http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3
+- http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3
+- https://qiita.com/zaru/items/cde2c46b6126867a1a64
 
 ```
+# カラムの削除（外部制約も外す）
+$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:references
+
 # 外部キーのカラム追加 参考：[外部キー周りの注意](http://b.pyar.bz/blog/2014/10/22/foreigner/)
 $ bundle exec rails g migration Addカラム名RefToテーブル名 user:references（外部キーの追加：_idは記載しない）  
 $ bundle exec rails g migration AddUserRefToTweets user:references
-
-# カラムの削除（外部制約も外す）
-$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:references
 
 $ bundle exec rake db:migrate
 ```
