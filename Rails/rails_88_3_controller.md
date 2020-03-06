@@ -8,32 +8,25 @@ controllerはRailsアプリ自体の成長に伴って一番汚れやすい部�
 - - - 
 　  
 　  
-## ■debug関連
-
-### controllerに記載してxxxの値を、logで確認できる
-```ruby
-logger.debug(decide_user_params["xxx"])
-```
-　  
-　  
-- - - 
-　  
-　  
-## ■newとbuildのちがい
-
-buildを使うと親モデルに対する外部参照キーを自動でセットできる
-　  
-　  
-- - - 
-　  
-　  
-## ■ｇｅｎｅｒａｔｅ
+## ■generate
 
 rails generateコマンドには、キャメルケースでもスネークケースでもどちらでも良い
 
 ```
-rails g controller my_book
-rails g controller MyBook
+$ bundle exec rails g controller my_book --no-helper --no-assets
+$ bundle exec rails g controller MyBook --no-helper --no-assets
+```
+　  
+　  
+- - - 
+　  
+　  
+## debug
+
+### controllerに記載してxxxの値を、logで確認できる
+
+```ruby
+logger.debug(decide_user_params["xxx"])
 ```
 　  
 　  
@@ -45,7 +38,11 @@ rails g controller MyBook
 ### includeとjoinのちがい
 
 http://qiita.com/south37/items/b2c81932756d2cd84d7d  
-　  
+
+### ■newとbuildのちがい
+
+buildを使うと親モデルに対する外部参照キーを自動でセットできる
+
 ### 関連テーブルの情報をまとめて読み込む:includeオプションのまとめ
 
 https://www.gesource.jp/weblog/?p=477  
