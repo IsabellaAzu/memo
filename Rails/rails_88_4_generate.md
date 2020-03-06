@@ -230,7 +230,20 @@ def change
   end
 end
 
-# 絡む名の変更
+class Aaa < ActiveRecord::Migration[6.0]
+  def change
+    create_table :sample2s do |t|
+      t.string  :not_null, null: false           # NOT NULL制約
+      t.string  :unique,   unique: true          # ユニーク制約
+      t.string  :default,  default: "default"    # デフォルト値
+      t.string  :limit,    limit: 10             # LIMIT(最大長)
+      t.string  :index,    index: true           # インデックス
+      t.string  :index,    comment: "comment!"   # コメント
+    end
+  end
+end
+
+# カラム名の変更
 rename_column :テーブル名, :変更前のカラム名, :変更後のカラム名
 ```
 
