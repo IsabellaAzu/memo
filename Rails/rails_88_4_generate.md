@@ -1,7 +1,10 @@
 
 # rails generate関連
 
-参考：[railsコマンド](http://railsdoc.com/rails)
+参考：
+
+- railsコマンド http://railsdoc.com/rails
+- https://guides.rubyonrails.org/active_record_migrations.html#passing-modifiers
 　  
 　  
 ## ■テーブル作成時
