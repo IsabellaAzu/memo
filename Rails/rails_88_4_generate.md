@@ -2,8 +2,8 @@
 # rails generate関連
 
 参考：[railsコマンド](http://railsdoc.com/rails)
-
-
+　  
+　  
 ## ■テーブル作成時
 
 ### マイグレーション関連
