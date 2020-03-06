@@ -195,9 +195,29 @@ https://qiita.com/C058/items/1c9c57f634ebf54d99bb
 #### migrationファイルの修正
 
 日付表示が、`2020-03-04 04:59:41.771784`になるのがイヤな場合 `precision: 0`  
-ミリ秒も厳密に比較したい場合はあった方が良いケースもある
+ミリ秒も厳密に比較したい場合はあった方が良いケースもある  
+https://qiita.com/suketa/items/bb5005c6ac77f8c368cb   
 
 ```
+class CreateXxxxYyyys < ActiveRecord::Migration[6.0]
+  def change
+    create_table :xxxx_yyyys do |t|
+      t.string :cart_id
+      t.integer :user_id
+      t.integer :item_category_id
+      t.integer :item_id
+      t.string :item_label
+      t.datetime :period_at, precision: 0
+
+      t.timestamps, precision: 0
+    end
+    add_index :xxxx_yyyys, :cart_id, unique: true
+    add_index :xxxx_yyyys, :item_label
+  end
+end
+
+
+
 def change
   create_table :hoges do |t|
     t.datetime :hoge_date, precision: 0
