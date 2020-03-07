@@ -139,14 +139,17 @@ $ bundle exec rails g model Project title
 ```
 
 ```
-$ bundle exec rails g model XxxxYyyy cart_id:string:uniq user_id:references item_category_id:integer item_id:integer item_label:string:index period_at:datetime
+$ bundle exec rails g model XxxxYyyy cart_id:string:uniq user:references item_category_id:integer item_id:integer item_label:string:index period_at:datetime(0)
 ```
 
 #### よく追加するもの
 
 ```
 , null: false
-, precision: 0
+t.datetime :period_at, null: false, precision: 0
+
+t.timestamps precision: 0
+※「,」無し
 ```
 
 ※index  →
