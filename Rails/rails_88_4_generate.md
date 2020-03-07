@@ -124,6 +124,11 @@
 
 ### model作成
 
+
+`rails g model`コマンドはあくまでmigrationファイルを自動生成するためのコマンド。  
+細かいカラムの指定までコマンドで行うことはできない。  
+referencesは、モデルにbelongs_toを入れてくれるので、自動生成して便利。  
+
 model名は先頭大文字・キャメル・単数形 BookやMyBook  
 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」  
 
@@ -134,7 +139,14 @@ $ bundle exec rails g model Project title
 ```
 
 ```
-$ bundle exec rails g model XxxxYyyy cart_id:string:uniq user_id:integer item_category_id:integer item_id:integer item_label:string:index period_at:datetime
+$ bundle exec rails g model XxxxYyyy cart_id:string:uniq user_id:references item_category_id:integer item_id:integer item_label:string:index period_at:datetime
+```
+
+#### よく追加するもの
+
+```
+, null: false
+, precision: 0
 ```
 
 ※index  →
