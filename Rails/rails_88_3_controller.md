@@ -10,31 +10,7 @@ controllerはRailsアプリ自体の成長に伴って一番汚れやすい部�
 　  
 ## ■generate
 
-rails generateコマンドには、キャメルケースでもスネークケースでもどちらでも良い
-
-```
-$ bundle exec rails g controller my_book --no-helper --no-assets
-$ bundle exec rails g controller MyBook --no-helper --no-assets
-```
-
-### 生成しない設定（helper、stylesheets、javascripts、test）
-
-/config/application.rb
-
-```ruby
-module Xxx
-  class Application < Rails::Application
-    config.generators do |g|
-      g.helper false
-      g.stylesheets false
-      g.javascripts false
-    end
-    # Don't generate system test files.
-    config.generators.system_tests = nil
-  end
-end
-```
-
+https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_4_generate.md#-controller
 
 　  
 - - - 
