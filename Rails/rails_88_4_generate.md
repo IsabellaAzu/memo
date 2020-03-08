@@ -284,7 +284,10 @@ https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDc
 　  
 ## ■ controller
 
-rails generateコマンドには、キャメルケースでもスネークケースでもどちらでも良い
+rails generateコマンドは、  
+
+- 単数系か複数系かは用途に合わせて
+- キャメルケースでもスネークケースでもどちらでも良い
 
 ```
 $ bundle exec rails g controller my_book --no-helper --no-assets
