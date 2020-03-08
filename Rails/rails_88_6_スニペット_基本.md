@@ -1,11 +1,11 @@
 
+# スニペット
 　  
 　  
-# スニペット_基本
 　  
 ## リンク
 　  
-```
+```erb
 ｐａｔｈ
 <%= link_to “文字”, "https://" %>
 <%= link_to “文字”, root_path %>
@@ -23,10 +23,11 @@ class名
   <i class="m_">リンク</i>
 <% end %>
 ```
-
+　  
+　  
 ## 日付
 
-```
+```ruby
 02/04(月)
 Time.now.strftime("%m/%d(#{%w(日 月 火 水 木 金 土)[Time.now.wday]})")
 2016年10月06日 15:37:49
@@ -37,7 +38,7 @@ Time.now.strftime("%y-%m-%d")
 Time.now.strftime("%I:%M %p")
 ```
 
-```
+```erb
 【controller】
 @day_names = ["日", "月", "火", "水", "木", "金", "土"]
 【view】
@@ -45,12 +46,13 @@ Time.now.strftime("%I:%M %p")
 <% user.created_at.strftime('%Y/%m/%d('+ day_name +') %H:%M') %>
 => 2019/02/04(月) 13:52
 ```
-
+　  
+　  
 ## form　Rails5以降向け
 
 ｆｏｒｍ_ｆｏｒ、form_tagは廃止予定
 
-```
+```erb
 format
 <%= form_with(model: 〇〇, scope: 〇〇, url: 〇〇遷移先, local: true, format: 〇〇, class: "〇〇" ・・・) %>
 <% end %>
@@ -77,10 +79,9 @@ format
 | :skip_enforcing_utf8 | trueを指定すると、送信時にutf8という隠しフィールドがスキップされます（デフォルトの送信ではutf8フィールドが出力されてエンコードがUTF-8になります）。 |
 | :authenticity_token  | フォームで使う認証トークンを指定します。<br>カスタムの認証トークンを指定して上書きすることも、falseを渡して認証トークンのフィールドをスキップすることもできます。<br>有効なフィールドのみに制限されている支払用ゲートウェイへのような外部リソースにフォームを送信する場合に便利です。<br>config.action_view.embed_authenticity_token_in_remote_forms = falseを指定すると、埋め込み認証トークンがリモートフォームで省略されることがあります。この指定はフォームでフラグメントキャッシュを使う場合に便利です（リモートフォームがmetaタグから認証トークンを取得するようになるので、JavaScriptがオフになっているブラウザをサポートする場合を除けば認証トークンをフォームに埋め込む必要がなくなります）。 |
 
-
 https://www.pikawaka.com/rails/form_with  
 
-```
+```erb
 <%= form_with url: posts_path do |f| %>
   <%= f.text_field :カラム名 %>
 
@@ -96,27 +97,26 @@ https://www.pikawaka.com/rails/form_with
   <%= f.radio_button :カラム名, 実際にテーブルに登録する値, {:checked => true} %>
   <%= f.label :カラム名, 選択肢に表示する文字, class: "job_type_label" %>
 
-
 <% end %>
 ```
-
-
-
-
+　  
+　  
 ## rails g migrate
 
 ### カラム追加
 
 ```
 $ rails g migration AddColumnToUsers_xxx カラム名:string
+```
+
 作成されたmigrationファイルにお好みのオプション追加
+
+```ruby
 class AddColumnToUsersXXX < ActiveRecord::Migration[5.2]
   def change
     add_column :users_ｘｘｘes, :xxx, :string, default: nil, null: true, :after => :email
   end
 end
-
-
 ```
 
 ## 三項演算子
@@ -124,14 +124,24 @@ end
 ```
 <% 変数名 ||= 条件 ? "none" : "" %>
 ```
-
+　  
+　  
 ## debug
 
 ```
-.inspect
+オブジェクト.inspect
 ```
+　  
+　  
+## 環境
 
-
+```ruby
+if Rails.env == 'development'
+  puts 'devです'
+end
+```
+　  
+　  
 ## どれを使う
 
 ### count, length, size
@@ -151,8 +161,8 @@ sizeを使おう！
 | form_with | rails5から推奨   |
 | form_for  | rails5から非推奨 |
 | form_tag  | rails5から非推奨 |
-
-
+　  
+　  
 ## データの絞り込み
 
 ### inner join
@@ -172,8 +182,8 @@ where zzz_categories.id = 1;
 | --------- | ------------------ | ------------------- |
 | .distinct | sql query method   | Rails5以降で正式メソッド |
 | .uniq     | array method       | Rails5以降で非推奨    |
-
-
+　  
+　  
 ## error回避
 
 ### A server is already running. Check プロジェクト名/tmp/pids/server.pid.
@@ -182,5 +192,105 @@ where zzz_categories.id = 1;
 $ lsof -wni tcp:3000
 $ kill -9 PID番号
 ```
+　  
+　  
+## error処理
+
+### Railsのジェネレータで不要なerror用divを作らせない
+```ruby
+# config/application.rb
+config.action_view.field_error_proc = Proc.new do |html_tag, instance| 
+  html_tag
+end
+```
+
+### 入力内容の正規表現チェック
+
+- http://qiita.com/akatsuki174/items/81549c3d2d824b986cc8  
+- http://www.megasoft.co.jp/mifes/seiki/meta.html#replace  
+- https://gist.github.com/nashirox/38323d5b51063ede1d41  
+- http://qiita.com/shizuma/items/4279104026964f1efca6  
+- http://qiita.com/kenju/items/d281049303f7d1d97998  
+　  
+#### サンプル
+
+```
+# 空白文字([\t\r\n\f])と全角スペース
+/^[\s　]+$/ =~ str
+# 入力無し
+/\A\z/ =~ str1
+# 半角の大文字小文字の英数字
+/^[a-zA-Z0-9]+$/ =~ str
+```
+　  
+　  
+## flashメッセージ
+
+```ruby
+# controller
+redirect_to action:'index', notice: 'ログイン成功!!'
+redirect_to action:'index', alert:  'ログインできません...'
+redirect_to action:'index', flash: {xxx: 'ログインに成功しました!!'}
+# view
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<% if flash[:xxx] %>
+  <%= flash[:xxx] %>
+<% end %>
+```
+　  
+　  
+## ループが今何回目か（句読点出力用の変数など）
+
+条件を満たしている場合だけ出力する場合でも|xxx|のindex番号はカウントアップされてしまう。  
+条件敷<% if true %>の時のループが今何回目か知るには、
+
+```ruby
+<% target_loop_num = 1 %>
+<% @xxx.each do |xxx| %>
+  <% if true %>
+    <% if target_loop_num < aaa_num %>、<% end %>
+    <% target_loop_num += 1 %>
+  <% end %>
+<% end %>
+```
+
+### Model情報の取得
+```ruby
+# Modelのカラム名一覧を取得
+  <%= debug(モデル名.column_names) %>
+# Modelのカラムの型を取得する
+  <%= debug(モデル名.columns_hash['カラム名'].type) %>
+```
+　  
+　  
+## hash内のvalueの最大値のhashを返す
+```ruby
+<% h = {a: 29, b: 23, c: 39, d: 3, e: 39} %>
+<%= debug(h.max_by {|_, v| v }) %># => :c 39
+<%= debug(h.max_by(&:last)[1]) %># => 39
+```
+　  
+　  
+## Formに入力した値を維持したままリロードする方法
+
+- http://qiita.com/seiya1121/items/cf6b44fae757f6300ada
+　  
+　  
+## パラメータ周り
+
+### get形式のクエリの渡し方
+
+```ruby
+# view
+  <%= link_to '追加', xxx_path(xxx.id,:xxx_type => 'add') %>
+# controller
+  @xxx_type = params[:xxx_type]
+```
+
 
 
