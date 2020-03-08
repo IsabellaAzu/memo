@@ -1,7 +1,8 @@
 
 # model関連
-
-
+　  
+　  
+　  
 ## validate関連
 　  
 ### 子オブジェクト(ここではorder)がsaveされるとき検証をおこなう。
@@ -26,6 +27,14 @@ end
 ```
 
 [Active Record(Railsのモデル) バリデーションまとめ](https://morizyun.github.io/ruby/active-record-validation.html)  
+　  
+　  
+- - - 
+　  
+　  
+## generate
+
+https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_4_generate.md#-model
 　  
 　  
 - - - 
@@ -59,18 +68,22 @@ end
 - - - 
 　  
 　  
-## ■Modelのクエリ
-http://qiita.com/merrill/items/8ec158953cb4c2715c7b  
-http://ruby-rails.hatenadiary.com/entry/20140724/1406142120  
+##  modelのクエリ
+
+- http://qiita.com/merrill/items/8ec158953cb4c2715c7b  
+ http://ruby-rails.hatenadiary.com/entry/20140724/1406142120  
+
+```
 find、take、first / second / third... / last、find_by、all / find_each / find_in_batcheswhere、order、  
 select、limit / offset、find_or_create_by / find_or_initialize_by / find_by_sql / select_all / group、
 pluck / ids / exists? / count / average / minimum / maximum / sum / readonly / to_sql / explain
-　  
+```
+
 　  
 - - - 
 
 
-## ■型関連
+## 型関連
 
 [【Rails・MySQL】MySQLのデータ型とRailsのマイグレーションファイルのデータ定義の対応まとめ](https://qiita.com/vermilionfog/items/816fa7de1d0213979929)  
 [RailsのDB設計：小数点をあつかう場合のアンチパターン](http://chamao.hatenablog.com/entry/2018/04/08/103805)  
