@@ -1,17 +1,18 @@
 
 # rails generate関連
 
-参考：
-
 - railsコマンド http://railsdoc.com/rails
 - https://guides.rubyonrails.org/active_record_migrations.html#passing-modifiers
 　  
 　  
-## ■テーブル作成時
+　  
+## ■ model
 
-### マイグレーション関連
+### ☆ テーブル作成時
 
-#### データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
+#### マイグレーション関連
+
+##### データ型(Railsの場合、databaseに合わせて下記を内部的に変換する)
 
 <table>
 <tr>
@@ -122,8 +123,7 @@
 | field_time      | time          | YES  |     | NULL    |                |  
 | field_boolean   | tinyint(1)    | YES  |     | NULL    |                |  
 
-### model作成
-
+#### model作成
 
 `rails g model`コマンドはあくまでmigrationファイルを自動生成するためのコマンド。  
 細かいカラムの指定までコマンドで行うことはできない。  
@@ -142,7 +142,7 @@ $ bundle exec rails g model Project title
 $ bundle exec rails g model XxxxYyyy cart_id:string:uniq user:references item_category_id:integer item_id:integer item_label:string:index period_at:datetime(0)
 ```
 
-#### よく追加するもの
+##### よく追加するもの
 
 ```
 , null: false
@@ -156,7 +156,7 @@ t.timestamps precision: 0
 MySQLでインデックスを貼る時に読みたいページまとめ(初心者向け）  
 https://qiita.com/C058/items/1c9c57f634ebf54d99bb  
 
-#### migrationファイルの修正
+##### migrationファイルの修正
 
 日付表示が、`2020-03-04 04:59:41.771784`になるのがイヤな場合 `precision: 0`  
 ミリ秒も厳密に比較したい場合はあった方が良いケースもある  
@@ -189,7 +189,6 @@ def change
 end
 ```
 
-
 例: １０進数で `最大桁数１０桁` 、 `小数点以下２桁` の `priceフィールド` を持ったモデルを作成  
 [Rails g modelの際のdecimal型のフィールドについての注意点](https://qiita.com/noriyotcp/items/6284ae00a6362e8b218b)
 
@@ -197,7 +196,7 @@ end
 $ rails g model Product 'price:decimal{10,2}'
 ```
 
-### カラム追加削除
+#### カラム追加削除
 
 ```
 # 書式
@@ -209,15 +208,12 @@ $ bundle exec rails g migration RemoveTagFromPosts tag:string
 
 $ bundle exec rake db:migrate
 ```
-　  
-　  
+
 - - - 
-　  
-　  
-## ■テーブルがすでにある時
-　  
-　  
-### オプション
+
+### ☆ テーブルがすでにある時
+
+#### オプション
 
 ```ruby
 # NULL
@@ -262,7 +258,7 @@ end
 rename_column :テーブル名, :変更前のカラム名, :変更後のカラム名
 ```
 
-### 基本的なカラムの追加、削除、変更
+#### 基本的なカラムの追加、削除、変更
 
 - http://qiita.com/Kaki_Shoichi/items/077d0a282255cd92cff3
 - https://qiita.com/zaru/items/cde2c46b6126867a1a64
@@ -278,9 +274,37 @@ $ bundle exec rails g migration AddUserRefToTweets user:references
 $ bundle exec rake db:migrate
 ```
 
-### Railsでカラムのデータ型を変更する場合の手順  
+#### Railsでカラムのデータ型を変更する場合の手順  
 
 https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&sqi=2&ved=0CDcQFjAE&url=http%3A%2F%2Fblog.jnito.com%2Fentry%2F20120514%2F1336951768&ei=6YK-VIDQKYPDmwXivoGoCg&usg=AFQjCNG3Xr6JaoHp-pOZmurl52AT8nv8Zw&sig2=eH76S7nwMYjykmYn-DmeJA&bvm=bv.83829542,d.dGY&cad=rja  
+　  
+　  
+- - - 
+　  
+　  
+## ■ controller
 
+rails generateコマンドには、キャメルケースでもスネークケースでもどちらでも良い
 
+```
+$ bundle exec rails g controller my_book --no-helper --no-assets
+$ bundle exec rails g controller MyBook --no-helper --no-assets
+```
 
+### 生成しない設定（helper、stylesheets、javascripts、test）
+
+/config/application.rb
+
+```ruby
+module Xxx
+  class Application < Rails::Application
+    config.generators do |g|
+      g.helper false
+      g.stylesheets false
+      g.javascripts false
+    end
+    # Don't generate system test files.
+    config.generators.system_tests = nil
+  end
+end
+```
