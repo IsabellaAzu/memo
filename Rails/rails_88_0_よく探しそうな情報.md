@@ -10,16 +10,6 @@
 
 　  
 　  
-### railsのソースを参考にしたい！
-http://post.simplie.jp/posts/19  
-http://bojovs.com/2012/04/24/ruby-coding-style/  
-酒と泪とRubyとRailsと  
-http://morizyun.github.io/  
-　  
-### 新規サービス立ち上げ時にやること
-http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
-　  
-　  
 ### 一括登録方法
 [参考1：DRYING UP RAILS CONTROLLERS: POLYMORPHIC AND SUPER CONTROLLERS](http://rails.densan-labs.net/form/bulk_registration_form.html)  
 [参考2：](http://j-caw.co.jp/blog/?p=1590)  
@@ -29,8 +19,8 @@ http://blog.nanapi.co.jp/tech/2014/04/17/rails_development/
 [参考6：fields_for、accepts_nested_attributes_forを使う](http://archive.aerial.st/archive/2011/06/11/insert-has-many-relations)
 　  
 　  
-- - - 
 ## ログ周り
+
 ### assetのログを非表示に
 http://rainbowdevil.jp/?p=1074
 ```Ruby
