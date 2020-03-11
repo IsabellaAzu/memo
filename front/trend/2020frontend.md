@@ -49,7 +49,9 @@ https://ryosukemizuta.com/2019_web_development_front_end/
 #### JS フレームワーク
 
 - React
-- Vue
+- Vue  
+  今からVue.jsを始める人のための「知るのを後回しにしてよい」n個のこと  
+  https://qiita.com/fruitriin/items/3249bb24d60932bb42ee  
 - Angular
 
 #### 状態管理
