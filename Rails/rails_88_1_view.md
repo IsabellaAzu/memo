@@ -1,9 +1,9 @@
 　  
 # view関連
+
 >index<br>
-・<a href="#anc_01">form関連</a><br>
-・<a href="#anc_02">日付関連</a><br>
-　  
+- <a href="#anc_01">form関連</a>
+- <a href="#anc_02">日付関連</a>
 　  
   
 <a id="anc_01"></a>
