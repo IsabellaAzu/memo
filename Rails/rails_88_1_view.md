@@ -5,7 +5,7 @@
 - <a href="#anc_01">form関連</a>
 - <a href="#anc_02">日付関連</a>
 　  
-  
+　  
 <a id="anc_01"></a>
 - - - 
 　  
@@ -161,7 +161,7 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 　  
 ## 日付関連
-　  
+
 ### フォーマット
 http://docs.ruby-lang.org/ja/2.0.0/class/Time.html#I_STRFTIME
 ```ruby
@@ -265,7 +265,7 @@ now.next_week(:monday)
 - - - 
 　  
 　  
-## ■xxx関連
+## link_to関連
 
 ```
 <%= link_to “Yahooへ移動する”, “http://www.yahoo.co.jp/” %>
@@ -278,12 +278,8 @@ now.next_week(:monday)
 
 # do end
 <%= link_to article_path(article), class: 'hoge' do %>
-
 <% end %>
 ```
-
-
-
 
 
 
