@@ -2,7 +2,7 @@
 # VPSの設定
 
 ```
-今後はUbuntsu
+もうRed Hat系列は使いたく無いので、今後はUbuntsuでやってみる
 ```
 https://gihyo.jp/admin/clip/01/linux_dt/202001/29  
 https://thinkit.co.jp/story/2015/03/06/5672  
