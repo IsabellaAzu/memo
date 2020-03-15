@@ -3,25 +3,32 @@
 >index<br>
 ・<a href="#anc_01">form関連</a><br>
 ・<a href="#anc_02">日付関連</a><br>
-
 　  
+　  
+  
 <a id="anc_01"></a>
 - - - 
+　  
+　  
 ## ■form関連
+
 [基本：【Rails】formヘルパーを徹底的に理解する](http://qiita.com/shunsuke227ono/items/7accec12eef6d89b0aa9)
-　  
+
 ### form_for、form_tag基本
-　  
+
 #### form_for：モデルに基づいたフォームを作成
+
 ```ruby
 <% form_for(@article) do |f| %>
   <div><%= f.text_field :title, class: "hogehoge" %></div>
   <%= f.submit %>
 <% end %>
 ```
+
 ⇒ params[:article][:title]
-　  
+
 #### form_tag：モデルに基づかないフォームを作成
+
 ```ruby
 <% form_tag(:controller => article, :action => create) %>
   <div><%= text_field :title, class: "hogehoge" %></div>
@@ -29,40 +36,47 @@
 <% end %>
 ```
 ⇒ params[:article]
-　  
+
 ### fields_for内で:yyysのテーブルのデータを:sort_orderでソートしたい
+
 ```ruby
 # 変更後
 <% f.fields_for :yyys do |yyy| %>
 # 変更後
 <% f.fields_for :yyys, @xxx.yyys.sort_by(&:sort_order) do |yyy| %>
 ```
-　  
 
 ### パーツ基本
-　  
+
 #### input
+
 ```ruby
 <%= f.text_field :title, class: 'hoge' %>
 ```
-　  
+
 #### hidden
+
 ```ruby
 <%= f.hidden_field :title, class: 'hoge', value: => 'hoge' %>
 ```
-　  
+
 #### textarea
+
 ```ruby
 <%= f.text_area :content, class: 'hoge', size: '100x50' %>
 ```
-　  
+
 #### select
+
 option内をCategoryモデルから取得する場合  
+
 ```ruby
 # view
 <%= f.collection_select :category, Category.all, :id, :category_name, include_blank: true %>
 ```
-option内をcontrollerに定義する場合  
+
+option内をcontrollerに定義する場合
+
 ```ruby
 # (1)
 # controller
@@ -70,6 +84,7 @@ option内をcontrollerに定義する場合
 # view
 <%= f.select(:xxx, options_for_select(@aaa) %>
 ```
+
 ```ruby
 # (2)
 # controller
@@ -77,13 +92,17 @@ option内をcontrollerに定義する場合
 # view
 <%= f.select(:label, @aaa,selected: f.object.label) %>
 ```
-　  
+
 ##### Railsでoptgroup付きプルダウンメニューを配列・ハッシュから作成
+
 http://easyramble.com/rails_grouped_options_for_select.html  
+
 ##### Ajaxで絞り込んだり
+
 http://blog.scimpr.com/2016/01/04/rails4-2%E3%81%A7select%E3%82%92%E7%B5%9E%E8%BE%BC%E3%81%A7%E3%81%8D%E3%82%8Bselect2%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E3%80%9Cselect2/  
-　  
+
 #### checkbox 
+
 ```ruby
 # 単数1
 <%= check_box_tag :sample %>
@@ -102,18 +121,23 @@ params.require(:article).permit({:tag_ids=>[]})
   <%= label_tag "product[category_ids][#{category.id}]", category.name %>
 <% end %>
 ```
-Modelのvalidatesと連携
-http://kiyotakakubo.hatenablog.com/entry/20090109/1231517603
-　  
-#### radio 
+
+Modelのvalidatesと連携  
+
+http://kiyotakakubo.hatenablog.com/entry/20090109/1231517603  
+
+#### radio
+
 ```ruby
 <%= f.collection_radio_buttons(:article, :type_ids, Type.all, :id, :type_name) do |b| %>
   <%= b.label {b.radio_button + b.text} %>
 <% end %>
 ```
-　  
+
 #### submit
+
 特に違うコントローラや違うアクション内からsubmitボタンで削除したい場合  
+
 ```ruby
 <%= form_for @user,:url => {:controller => :xxxs, :action => :destroy}, method: :delete do |f| %>
  <%= f.submit '削除する' %>
@@ -121,10 +145,12 @@ http://kiyotakakubo.hatenablog.com/entry/20090109/1231517603
 # StrongParameters
 params.require(:xxx).permit(:_destroy)
 ```
-　  
+
 #### 新規作成formの作り方~newとbuildの違い~
+
 http://qiita.com/shizuma/items/5cef6768c5a5d899e54d  
 親の中で子を新規作成など  
+
 ```ruby
 
 ```
@@ -132,6 +158,8 @@ http://qiita.com/shizuma/items/5cef6768c5a5d899e54d
 　  
 <a id="anc_02"></a>
 - - - 
+　  
+　  
 ## 日付関連
 　  
 ### フォーマット
@@ -191,8 +219,10 @@ _: 空白埋めにする
 0: 0埋めにする
 数値: 表示桁数を指定する
 ```
-
+　  
+　  
 ## よく使う
+
 ```ruby
 # 現在日時の取得
 now = Time.current 
@@ -230,9 +260,32 @@ now.prev_week(:monday)
 # 翌週の月曜日
 now.next_week(:monday)
 ```
-
+　  
 　  
 - - - 
+　  
+　  
 ## ■xxx関連
-　  
-　  
+
+```
+<%= link_to “Yahooへ移動する”, “http://www.yahoo.co.jp/” %>
+<%= link_to “トップページ”, root_path %>
+<%= link_to “削除”, member_path(params[:id]), method: :delete %>
+<%= link_to “TOP”, root_path, class: “menu” %>
+
+# 自分が今、TOPページ(root_path)にいるとすれば、「TOP」というリンクはクリックできないようにする
+<%= link_to_unless_current “TOP”, root_path %>
+
+# do end
+<%= link_to article_path(article), class: 'hoge' do %>
+
+<% end %>
+```
+
+
+
+
+
+
+
+
