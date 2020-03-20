@@ -139,8 +139,37 @@ $ bundle install --path vendor/bundle
 railsコンテナからMySQLコンテナへの設定を変更する
 
 
+- - - 
 
 
 ## 参考
 [rails generate migrationコマンドまとめ](https://qiita.com/zaru/items/cde2c46b6126867a1a64)  
-[]()
+
+
+- - - 
+
+
+## local環境
+
+### 強制終了（Control+cでプロセスを終了できない時に使える強制終了の手順）
+
+```
+app/controllers/api/v1/xxx_controller.rb:93:in `params'  
+```
+
+paramsメソッド名の重複で、無限ループになってしまう  
+まずは、`Control+z`でプロセスを停止  
+
+```
+# ポート3000で起動しているPIDを検索
+lsof -i:3000
+---------------
+COMMAND    PID    USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+ruby      34139
+---------------
+$ kill 34139
+```
+
+
+
+
