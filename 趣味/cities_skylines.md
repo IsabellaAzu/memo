@@ -59,8 +59,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=911503381
 
 ### 道路
 
-- Roads United Core 2.0  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=633547552&
 - Roads United: US Edition - Reworked  
   https://steamcommunity.com/sharedfiles/filedetails/?id=848896702&  
 
