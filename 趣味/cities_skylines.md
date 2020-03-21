@@ -31,6 +31,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=911503381
 - Improved Asset Icons (アイコンが表示されないアセットを表示する)  
   http://steamcommunity.com/sharedfiles/filedetails/?id=747836519
 - Realistic Walking Speed (歩行者の速度を遅くする)  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620
-
-
+  https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620  
+- Control Building Level Up v0.5 (Industries)  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
