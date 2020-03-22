@@ -138,6 +138,8 @@ $ bundle exec rails g model Project title
 # bundle exec rails generate model Project title:stringの省略形
 ```
 
+##### サンプル
+
 ```
 $ bundle exec rails g model XxxxYyyy cart_id:string:uniq user:references item_category_id:integer item_id:integer item_label:string:index period_at:datetime(0)
 ```
