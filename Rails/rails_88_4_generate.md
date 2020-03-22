@@ -198,18 +198,24 @@ end
 $ rails g model Product 'price:decimal{10,2}'
 ```
 
-#### カラム追加削除
+#### カラム追加
 
 ```
-# 書式
 $ bundle exec rails g migration Addカラム名Toテーブル名 カラム名:型名
-$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
-# サンプル
 $ bundle exec rails g migration AddTagToPosts tag:string
+
+$ bundle exec rake db:migrate
+```
+
+#### カラム削除
+
+```
+$ bundle exec rails g migration Removeカラム名Fromテーブル名 カラム名:型名
 $ bundle exec rails g migration RemoveTagFromPosts tag:string
 
 $ bundle exec rake db:migrate
 ```
+
 
 - - - 
 
