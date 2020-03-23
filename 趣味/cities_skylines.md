@@ -2,24 +2,6 @@
 # Cities: Skylines
 
 
-
-
-
-
-## 街参考
-
-### 
-
-
-
-## ASSETS(MODも含む)
-
-### Denny's
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=911503381
-
-
-
 ## MOD
 
 - Auto-Enable Mods（MODの自動有効化）  
@@ -56,6 +38,12 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=911503381
   https://steamcommunity.com/sharedfiles/filedetails/?id=762520291&  
 
 
+### MODの紹介、設定
+
+- How To Make Cities Skylines Look Realistic  
+  https://www.youtube.com/watch?v=Ip3adtXmfr4  
+- 
+  
 
 ### 道路
 
