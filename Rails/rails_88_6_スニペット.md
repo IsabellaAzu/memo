@@ -27,6 +27,12 @@ class名
 　  
 ## 日付
 
+### 時刻や日付を扱うメソッドの基本情報まとめ【Ruby】【Rails】
+
+https://fuchiaz.com/ruby-rails-time-date/
+
+### 表記
+
 ```ruby
 02/04(月)
 Time.now.strftime("%m/%d(#{%w(日 月 火 水 木 金 土)[Time.now.wday]})")
@@ -37,6 +43,8 @@ Time.now.strftime("%y-%m-%d")
 04:18 PM
 Time.now.strftime("%I:%M %p")
 ```
+
+### 曜日
 
 ```erb
 【controller】
