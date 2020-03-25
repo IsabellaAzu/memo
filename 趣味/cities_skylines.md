@@ -6,6 +6,8 @@ https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos
 
 ## MOD
 
+https://www.nanajigohun75.com/archives/3484  
+
 - Auto-Enable Mods（MODの自動有効化）  
   http://steamcommunity.com/sharedfiles/filedetails/?id=903285221
 - 81 Tiles (Fixed for 1.2+) 81タイル開放  
