@@ -18,6 +18,9 @@ https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos
   https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620  
 - Control Building Level Up v0.5 (Industries)  
   https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
+- Quay Anarchy 地面にも護岸を設置できる  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=650436109  
+
 
 
 ### 環境の見栄え
@@ -67,6 +70,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1808406563
 
 
 ## 問題
+
+### Ploppable RICOの代わりに
 
 http://isuntcmd.blog.jp/archives/16875760.html
 
