@@ -76,5 +76,8 @@ find itを使ってwork shopの建物を立ててもすぐ消滅してしまう�
 Growableな建物の事なら区画を塗ってないなら適した種類に塗る
 特化区画用のGrowable建物なら地区塗ってを特化設定する
 または上記２点をMODで解決するならPlop the Growableを使う
+
+Plop the Growables
+https://steamcommunity.com/sharedfiles/filedetails/?l=japanese&id=924884948
 ```
 
