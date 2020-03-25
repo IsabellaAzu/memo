@@ -79,5 +79,6 @@ Growableな建物の事なら区画を塗ってないなら適した種類に塗
 
 Plop the Growables
 https://steamcommunity.com/sharedfiles/filedetails/?l=japanese&id=924884948
+https://www.youtube.com/watch?v=F7491Q3_7-U
 ```
 
