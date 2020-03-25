@@ -61,4 +61,20 @@
 https://steamcommunity.com/sharedfiles/filedetails/?id=1808406563
 
 
+- - - 
+
+
+## 問題
+
+http://isuntcmd.blog.jp/archives/16875760.html
+
+```
+48: 2018/12/29(土) 21:57:06.70
+find itを使ってwork shopの建物を立ててもすぐ消滅してしまうのですが定着させるにはどうしたらいいですか？
+
+49: 2018/12/30(日) 00:00:19.32
+Growableな建物の事なら区画を塗ってないなら適した種類に塗る
+特化区画用のGrowable建物なら地区塗ってを特化設定する
+または上記２点をMODで解決するならPlop the Growableを使う
+```
 
