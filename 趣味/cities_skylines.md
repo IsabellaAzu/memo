@@ -7,6 +7,7 @@ https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos
 ## MOD
 
 https://www.nanajigohun75.com/archives/3484  
+https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html  
 
 - Auto-Enable Mods（MODの自動有効化）  
   http://steamcommunity.com/sharedfiles/filedetails/?id=903285221
