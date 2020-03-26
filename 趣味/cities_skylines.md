@@ -15,6 +15,9 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
   https://steamcommunity.com/sharedfiles/filedetails/?id=576327847  
 - Find It! （アセットを素早く検索／アイコン・ツールバーを修正）  
   http://steamcommunity.com/sharedfiles/filedetails/?id=837734529  
+- Plop the Growables  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=924884948&searchtext=Plop+the+Growables  
+
 - Improved Asset Icons (アイコンが表示されないアセットを表示する)  
   http://steamcommunity.com/sharedfiles/filedetails/?id=747836519
 - Realistic Walking Speed (歩行者の速度を遅くする)  
