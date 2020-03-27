@@ -24,8 +24,6 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
   https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620  
 - Control Building Level Up v0.5 (Industries)  
   https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
-- Quay Anarchy 地面にも護岸を設置できる  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=650436109  
 
 
 
