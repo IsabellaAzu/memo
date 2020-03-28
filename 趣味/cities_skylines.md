@@ -24,8 +24,8 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
   https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620  
 - Control Building Level Up v0.5 (Industries)  
   https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
-
-
+- No Problem Notifications  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=917543381  
 
 ### 環境の見栄え
 
