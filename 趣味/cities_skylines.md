@@ -15,17 +15,19 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
   https://steamcommunity.com/sharedfiles/filedetails/?id=576327847  
 - Find It! （アセットを素早く検索／アイコン・ツールバーを修正）  
   http://steamcommunity.com/sharedfiles/filedetails/?id=837734529  
-- Plop the Growables  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=924884948&searchtext=Plop+the+Growables  
-
 - Improved Asset Icons (アイコンが表示されないアセットを表示する)  
   http://steamcommunity.com/sharedfiles/filedetails/?id=747836519
 - Realistic Walking Speed (歩行者の速度を遅くする)  
   https://steamcommunity.com/sharedfiles/filedetails/?id=1412844620  
 - Control Building Level Up v0.5 (Industries)  
   https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
-- No Problem Notifications  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=917543381  
+- Plop the Growables  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=924884948&searchtext=Plop+the+Growables  
+  PloppableRICOもだが、オブジェクトのstatusがおかしくなる  
+  - 外部接続に、人が住む、電気不通、水道不通、暖房不通など  
+    - No Problem Notifications  
+      https://steamcommunity.com/sharedfiles/filedetails/?id=917543381  
+      PloppableRICOの、Pillarsの不具合は出なくなった
 
 ### 環境の見栄え
 
