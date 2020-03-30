@@ -11,8 +11,6 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
 
 - Auto-Enable Mods（MODの自動有効化）  
   http://steamcommunity.com/sharedfiles/filedetails/?id=903285221
-- Control Building Level Up v0.5 (Industries)  
-  https://steamcommunity.com/sharedfiles/filedetails/?id=1403136223  
 - Plop the Growables  
   https://steamcommunity.com/sharedfiles/filedetails/?id=924884948&searchtext=Plop+the+Growables  
   PloppableRICOもだが、オブジェクトのstatusがおかしくなる  
