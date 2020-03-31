@@ -19,6 +19,7 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
       https://steamcommunity.com/sharedfiles/filedetails/?id=917543381  
       PloppableRICOの、Pillarsの不具合は出なくなった
 
+
 ### 環境の見栄え
 
 - Truly Tropical  
