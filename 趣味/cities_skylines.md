@@ -44,8 +44,6 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
 
 - How To Make Cities Skylines Look Realistic  
   https://www.youtube.com/watch?v=Ip3adtXmfr4  
-- 
-  
 
 
 ### その他
