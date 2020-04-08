@@ -4,6 +4,7 @@
 https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos  
 
 
+
 ## MOD
 
 https://www.nanajigohun75.com/archives/3484  
@@ -81,6 +82,11 @@ Plop the Growables
 https://steamcommunity.com/sharedfiles/filedetails/?l=japanese&id=924884948
 https://www.youtube.com/watch?v=F7491Q3_7-U
 ```
+
+
+## Mod一括解除
+
+https://maruhoi.com/steam/steam-workshop-unsubscribe-all-item/
 
 
 
