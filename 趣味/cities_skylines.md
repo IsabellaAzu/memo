@@ -89,4 +89,10 @@ https://www.youtube.com/watch?v=F7491Q3_7-U
 https://maruhoi.com/steam/steam-workshop-unsubscribe-all-item/
 
 
+## キャッシュ削除
+
+https://support.steampowered.com/kb_article.php?ref=2274-IFLV-5334&l=japanese  
+
+
+
 
