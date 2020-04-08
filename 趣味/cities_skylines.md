@@ -59,6 +59,12 @@ https://kurufieegames.blogspot.com/2017/03/cities-skylines_25.html
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=1808406563
 
+### コーマ
+
+```
+■主な使用MOD
+81 Tiles/Additive Shader/Advanced Toolbar/Advanced Vehicle Options/Ambient Sounds Tuner/Building Themes/Camera Positions Utility/City Vitals Watch/CNL Japanese Localization Name Lists/Custom Name Lists/Emergency Lights Manager/Extra Landscaping Tools/Extra Train  Station Tracks/Find It!/First Person Camera/Font Selector/Hide It!/HideUI/Improved Public Transport 2/Japanese localization Mod/Japanese Railway Crossings/Japanese Traffic Lights/Klyte's Fine Road Anarchy 2/Klyte's Fine Road Tool/Loading Screen Mod/More Beautification/Move It/Network Extensions 2/Network Skins/No Border Limit Camera/No On-Street Parking/No Pillars/Not So Unique Buildings/Plop Growables/Ploppable RICO/Pollution, Death, Garbage and Crime Remover Mod/Prop & Tree Anarchy/Prop Line Tool/Prop Snapping/Quay Anarchy/Rail Track Speed Increaser/Remove Decoration Sprites/Remove Dirt/Shadow Strength Adjuster/Sharp Textures/Sun Sharfts/Surface Painter/Touch This! Tool 3/Transparency LOD Fix+/Transport Lines Manager/Tree LOD Fix/Tree Movement Control/Ultimate Eyecandy/Unlimited Outside Connections/Vehicle Effects/WG Citizen Lifecycle Rebalance/土砂無限/地下資源無限
+```
 
 - - - 
 
