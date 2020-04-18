@@ -1,7 +1,8 @@
 
 # Cities: Skylines
 
-https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos  
+- https://www.youtube.com/watch?v=TLjDGP7FGCU
+- https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos  
 
 
 
