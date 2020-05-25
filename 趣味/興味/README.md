@@ -4,6 +4,7 @@
 
 ## Sunameri
 
+![スクリーンショット 2020-05-25 22 08 35](https://user-images.githubusercontent.com/1782095/82815554-600de480-9ed4-11ea-9bf9-3d3edc959cf7.png)
 
 <img width="1093" alt="スクリーンショット 2020-05-25 21 23 43" src="https://user-images.githubusercontent.com/1782095/82812470-07d3e400-9ece-11ea-83fd-ccb6f73b1e51.png">
 
