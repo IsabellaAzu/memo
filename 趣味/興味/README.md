@@ -20,3 +20,12 @@
 ![gettyimages-136251868-612x612](https://user-images.githubusercontent.com/1782095/82811919-d7d81100-9ecc-11ea-81d2-d8d8ca734a2b.jpg)
 
 
+## 大人数で宅飲み
+
+<img width="480" alt="スクリーンショット 2020-05-28 4 13 25" src="https://user-images.githubusercontent.com/1782095/83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68.png">
+
+
+
+
+
+
