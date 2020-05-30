@@ -22,7 +22,15 @@
 
 ## 大人数で宅飲み
 
-<img width="480" alt="スクリーンショット 2020-05-28 4 13 25" src="https://user-images.githubusercontent.com/1782095/83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68.png">
+<img width="480" src="https://user-images.githubusercontent.com/1782095/83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68.png">
+
+
+## 部屋で水耕栽培
+
+![images](https://user-images.githubusercontent.com/1782095/83323713-91ebc600-a29b-11ea-9be8-4a0380afe948.jpg)
+
+100均スポンジで野菜を作ろう！　人気ブロガーのアイデア溢れる水耕栽培
+https://agri.mynavi.jp/2018_01_23_16792/
 
 
 ## バンジージャンプ
