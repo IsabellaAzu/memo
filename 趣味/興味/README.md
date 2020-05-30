@@ -25,6 +25,13 @@
 <img width="480" alt="スクリーンショット 2020-05-28 4 13 25" src="https://user-images.githubusercontent.com/1782095/83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68.png">
 
 
+## バンジージャンプ
+
+![bungeejumping_japan_thumb](https://user-images.githubusercontent.com/1782095/83323669-41746880-a29b-11ea-8902-6628df6f324d.jpg)
+
+
+
+
 
 
 
