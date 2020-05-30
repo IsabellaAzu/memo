@@ -22,7 +22,7 @@
 
 ## 大人数で宅飲み
 
-<img width="480" src="https://user-images.githubusercontent.com/1782095/83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68.png">
+![83081302-52668380-a0bb-11ea-9adf-8e0b1722fd68](https://user-images.githubusercontent.com/1782095/83323805-1b02fd00-a29c-11ea-9995-f92baa9cf7c3.png)
 
 
 ## 部屋で水耕栽培
