@@ -1,0 +1,14 @@
+
+
+
+
+## シャドウバース
+
+
+### YouTuber実況者: つるおか（かものはし）
+
+https://www.youtube.com/channel/UCqeAYB1DMzfM-hG-Up52yNQ/videos  
+
+
+
+
