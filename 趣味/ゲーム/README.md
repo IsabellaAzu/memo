@@ -2,7 +2,7 @@
 
 
 
-## :card:シャドウバース
+## :rice_scene: シャドウバース
 
 
 ### YouTuber実況者: つるおか（かものはし）
@@ -12,7 +12,7 @@ https://www.youtube.com/channel/UCqeAYB1DMzfM-hG-Up52yNQ/videos
 
 
 
-## Cities: Skylines
+## :city_sunrise: Cities: Skylines
 
 - https://www.youtube.com/watch?v=TLjDGP7FGCU
 - https://www.youtube.com/channel/UCV9RoEcgAO1Uc7oxZGS8Lkw/videos  
