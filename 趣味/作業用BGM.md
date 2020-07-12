@@ -13,6 +13,12 @@
   https://www.youtube.com/watch?v=CC04qXYhlGU
 
 
+## 【トレーニング】筋トレで追い込む為のミュージック(music)【作業用】
+
+https://www.youtube.com/watch?v=zK8gGEDNTQM
+
+
+
 ## lofi
 
 https://www.youtube.com/watch?v=c3Jl8ZIPcmw
