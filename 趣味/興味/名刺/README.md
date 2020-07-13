@@ -36,3 +36,4 @@ https://note.com/tokyosprout/n/n57e7a6f87ca9
 > 名刺は渡した人の分身として、活躍していく。
 
 
+
