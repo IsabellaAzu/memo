@@ -21,8 +21,9 @@
 
 
 
+## クリエイター
 
-
-
+- 横尾太郎  
+  - https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%B0%BE%E5%A4%AA%E9%83%8E  
 
 
