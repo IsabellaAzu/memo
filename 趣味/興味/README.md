@@ -23,7 +23,8 @@
 
 ## クリエイター
 
-- 横尾太郎  
+- 横尾太郎さん  
   - https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%B0%BE%E5%A4%AA%E9%83%8E  
-
+- ひろゆきさん  
+  - https://www.youtube.com/watch?v=8WB1Tw8LY-0  
 
