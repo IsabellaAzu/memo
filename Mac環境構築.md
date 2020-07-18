@@ -551,19 +551,29 @@ https://ics.media/entry/18544/
 https://ics.media/entry/18756/
 
 - [npm-scriptsをマウス操作で行う](https://ics.media/entry/12226)  
-```
-package.jsonファイルに定義したnpm-scriptsはサイドパネルからダブルクリックで実行できます。
-```
+  ```
+  package.jsonファイルに定義したnpm-scriptsはサイドパネルからダブルクリックで実行できます。
+  ```
 - [アウトライン表示で構造をわかりやすく]  
-```
-関数名や定数名などの情報をアウトライン表示してくれます。サイドパネルに表示されるアウトラインを選択すると、
-該当するコードに瞬時に移動できます。さまざまな言語に対応しており、
-HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのアウトラインも表示できます。
-サイドパネルの［エクスプローラー］の見出しを右クリックし、表示されるメニューから［アウトライン］を選択することで利用できます。
-```
+  ```
+  関数名や定数名などの情報をアウトライン表示してくれます。サイドパネルに表示されるアウトラインを選択すると、
+  該当するコードに瞬時に移動できます。さまざまな言語に対応しており、
+  HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのアウトラインも表示できます。
+  サイドパネルの［エクスプローラー］の見出しを右クリックし、表示されるメニューから［アウトライン］を選択することで利用できます。
+  ```
 - [Shortcuts](https://marketplace.visualstudio.com/items?itemName=gizak.shortcuts)
-```
-https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts
-画面下のステータスバーにショートカットボタンを追加できる拡張機能
-```
+  ```
+  https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts  
+  画面下のステータスバーにショートカットボタンを追加できる拡張機能
+  ```
+- Visual Studio Code おすすめ拡張機能  
+  - https://web-guided.com/594/  
+- VSCode拡張機能「Color Info」でcss/scssの16進数カラーコードをRGBにかんたん変換
+  - https://onedarling.site/programming/tool/colorinfo/
+- Visual Studio Codeで見やすいテーマファイルのまとめ  
+  - https://coliss.com/articles/build-websites/operation/work/best-of-visual-studio-code-themes.html  
+
+
+
+
 
