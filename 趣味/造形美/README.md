@@ -8,6 +8,9 @@
 ![dateseven7miyagired](https://user-images.githubusercontent.com/1782095/87182485-304d5b80-c31f-11ea-89ed-ddc70ad45fa8.jpg)
 
 
+## ガラス
 
+- https://www.facebook.com/Finland-Art-Architecture-618416538236537/
+- https://www.facebook.com/618416538236537/photos/a.620787504666107/3155695874508578/
 
-
+![glass](https://user-images.githubusercontent.com/1782095/88029194-a00be380-cb74-11ea-8d23-bd80f69503dd.png)
