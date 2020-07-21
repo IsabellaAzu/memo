@@ -3,11 +3,15 @@
 
 
 
+## lofi
+
+- low  
+  - https://www.youtube.com/watch?v=c3Jl8ZIPcmw
+- アップテンポ  
+  - https://www.youtube.com/watch?v=9t1nGNKdIgE
+
+
 ## BGM
-
-
-- https://www.youtube.com/watch?v=GeX6MwXGPN4
-- https://www.youtube.com/watch?v=udXJynVOsNY
 
 - 学習に役立つ音楽—ダウンテンポとチルミックス  
   https://www.youtube.com/watch?v=CC04qXYhlGU
@@ -16,13 +20,6 @@
 ## 【トレーニング】筋トレで追い込む為のミュージック(music)【作業用】
 
 https://www.youtube.com/watch?v=zK8gGEDNTQM
-
-
-
-## lofi
-
-https://www.youtube.com/watch?v=c3Jl8ZIPcmw
-
 
 
 ### Sia
