@@ -11,10 +11,14 @@
   - https://www.youtube.com/watch?v=9t1nGNKdIgE
 
 
-## BGM
+## 【作業用BGM】テンション上がる！　NightCore 40曲まとめ
 
-- 学習に役立つ音楽—ダウンテンポとチルミックス  
-  https://www.youtube.com/watch?v=CC04qXYhlGU
+https://www.youtube.com/watch?v=LOlTlrWuRZ0
+
+
+## 学習に役立つ音楽—ダウンテンポとチルミックス
+
+https://www.youtube.com/watch?v=CC04qXYhlGU
 
 
 ## 【トレーニング】筋トレで追い込む為のミュージック(music)【作業用】
