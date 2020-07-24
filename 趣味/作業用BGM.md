@@ -16,6 +16,11 @@
 https://www.youtube.com/watch?v=LOlTlrWuRZ0
 
 
+## 【ランニングBGM】逆境の時こそ本気出す。最強にモチベーションが上る曲30選（NCSメドレー）
+
+https://www.youtube.com/watch?v=VjpXycg3Mjo
+
+
 ## 学習に役立つ音楽—ダウンテンポとチルミックス
 
 https://www.youtube.com/watch?v=CC04qXYhlGU
