@@ -8,6 +8,10 @@
 
 - [ 1:18:07 ロマンシングサガ 作業用bgm 戦闘神曲集 〜困難を乗り越えたいあなたへ〜 ロマサガ ゲームbgm](https://www.youtube.com/watch?v=efCilZrpS8U)
 
+### FF
+
+- [作業用BGM ファイナルファンタジー１～１０全戦闘曲集](https://www.youtube.com/watch?v=CLXEcDfI1aI)  
+
 
 ## lofi
 
