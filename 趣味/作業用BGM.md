@@ -16,7 +16,7 @@
 
 - [通常](https://www.youtube.com/watch?v=sjOmnokXKlk&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU)
 - [ネクサス](https://www.youtube.com/watch?v=odA4_WYZLQw&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU&index=3)
-- [ユアン](https://www.youtube.com/watch?v=77z4LconNcQ&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU&index=14)(
+- [ユアン](https://www.youtube.com/watch?v=77z4LconNcQ&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU&index=14)
 - [2pick](https://www.youtube.com/watch?v=mJy0I3ZUnxo&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU&index=12)
 - [自然鎮魂(202007)](https://www.youtube.com/watch?v=QXILoF-sWP0)
 - [大いなる決闘(202007)](https://www.youtube.com/watch?v=PN3fnLbaoZM)
