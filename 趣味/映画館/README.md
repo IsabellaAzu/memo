@@ -8,8 +8,16 @@
 ## 観たい映画
 
 - エヴァンゲリヲン  
-  - https://www.youtube.com/watch?v=9Pwl5YXfMmE
-  - https://www.youtube.com/watch?v=8D5lJDfFY5s
+  - 株式会社カラー khara inc.official 『シン・エヴァンゲリオン劇場版』特報1  
+    https://www.youtube.com/watch?v=e9959wiF2B8
+  - 株式会社カラー khara inc.official 『シン・エヴァンゲリオン劇場版』特報2
+    - https://www.youtube.com/watch?v=IaImDM8tqbk
+  - 株式会社カラー khara inc.official 『シン・エヴァンゲリオン劇場版』特報2'
+    - https://www.youtube.com/watch?v=9Pwl5YXfMmE
+  - 株式会社カラー khara inc.official 『シン・エヴァンゲリオン劇場版』特報2.5  
+    - https://www.youtube.com/watch?v=Az3C6cRf1oY
+  - 黑潮制作所 0706作戦 東京01 完全版  
+    - https://www.youtube.com/watch?v=8D5lJDfFY5s
 
 ### 参考
 
