@@ -7,9 +7,9 @@
 
 ## 観たい映画
 
-- エヴァンゲリヲン
-
-https://www.youtube.com/watch?v=9Pwl5YXfMmE
+- エヴァンゲリヲン  
+  - https://www.youtube.com/watch?v=9Pwl5YXfMmE
+  - https://www.youtube.com/watch?v=8D5lJDfFY5s
 
 ### 参考
 
