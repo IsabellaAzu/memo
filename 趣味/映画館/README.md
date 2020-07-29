@@ -7,6 +7,14 @@
 
 ## 観たい映画
 
+- エヴァンゲリヲン
+
+https://www.youtube.com/watch?v=9Pwl5YXfMmE
+
+### 参考
+
+- 【公式】新世紀エヴァンゲリオン 第壱話「使徒、襲来」  
+  - https://www.youtube.com/watch?v=ZSgz3ehON8s
 
 
 ## 参考映画館
