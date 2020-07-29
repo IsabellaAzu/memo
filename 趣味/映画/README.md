@@ -57,5 +57,5 @@ https://www.smt-cinema.com/site/shinjuku/platinum/
 
 ## 観た映画
 
-https://github.com/IsabellaAzu/memo/blob/master/%E8%B6%A3%E5%91%B3/%E8%A6%B3%E3%81%9F%E6%98%A0%E7%94%BB%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0.md
+https://github.com/IsabellaAzu/memo/blob/master/%E8%B6%A3%E5%91%B3/%E6%98%A0%E7%94%BB/%E8%A6%B3%E3%81%9F%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0.md
 
