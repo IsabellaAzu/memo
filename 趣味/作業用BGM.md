@@ -12,6 +12,10 @@
 
 - [作業用BGM ファイナルファンタジー１～１０全戦闘曲集](https://www.youtube.com/watch?v=CLXEcDfI1aI)  
 
+### ドラクエ
+
+- [ 2:43:47 ドラゴンクエスト 1.2.3.4.5.6.7.8.9.10 高音質『名曲メドレー』](https://www.youtube.com/watch?v=pBQIbiHeHhY)
+
 ### シャドウバース
 
 - [通常](https://www.youtube.com/watch?v=sjOmnokXKlk&list=PLe9YLFnekAfRIfchlEJ9g4p1v0VWqu1sU)
