@@ -6,6 +6,7 @@
 
 ### ロマサガ
 
+- [ 38:01 ロマサガメドレー動画（原曲ver）　【作業用音楽としても】 ](https://www.youtube.com/watch?v=WhIm1sJwPDM)  
 - [ 1:18:07 ロマンシングサガ 作業用bgm 戦闘神曲集 〜困難を乗り越えたいあなたへ〜 ロマサガ ゲームbgm](https://www.youtube.com/watch?v=efCilZrpS8U)
 
 ### FF
