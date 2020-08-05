@@ -8,6 +8,7 @@
 - [できること12選](https://goworkship.com/magazine/what_can_raspberrypi_do/)
 - [基礎知識から具体事例までを解説](https://www.sejuku.net/blog/109217)
 - [ローテクで「便利」に使う！](https://www.pc-koubou.jp/magazine/14369)
+- [『音の速さが見えるデバイス』が単純だけど超面白い！「音速の可視化とは面白い発想」「日本科学未来館か上野の科博に置いてほしい」](https://togetter.com/li/1570058)
 
 
 ## 組み合わせ
