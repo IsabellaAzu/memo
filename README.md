@@ -28,7 +28,7 @@ https://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3
 
 https://www.youtube.com/watch?v=oWgkn96d9D0
 
-- TKG 1:05:36 
+- TKG問題 1:05:36 
 
 
 
