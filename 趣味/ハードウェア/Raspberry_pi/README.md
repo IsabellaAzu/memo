@@ -4,7 +4,7 @@
 
 ## 壁掛けモニター
 
-### 水槽
+### 水槽の代わり
 
 ![スクリーンショット 2020-08-15 16 46 43](https://user-images.githubusercontent.com/1782095/90310142-b74ab080-df29-11ea-97c5-497c7beaee20.png)
 
