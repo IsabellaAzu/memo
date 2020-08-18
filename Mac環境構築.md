@@ -11,6 +11,13 @@
 ### OS
 *	MacOS Cataline 10.15.1
 
+#### Mac - キーバインドの変更・入替え（command、ctrl、caps）
+
+https://pc-karuma.net/mac-keys-modifiers-switch-command-control-caps/
+
+#### ユーザー辞書
+
+https://github.com/IsabellaAzu/memo/tree/master/front/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E8%BE%9E%E6%9B%B8
 
 　  
 ## 準備作業
