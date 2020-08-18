@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;br&gt;</string>
+		<key>shortcut</key>
+		<string>b</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>console.log();</string>
+		<key>shortcut</key>
+		<string>c</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> class=""</string>
+		<key>shortcut</key>
+		<string>c</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;details&gt;&lt;summary&gt;詳細&lt;/summary&gt;&lt;div&gt;- - -  &lt;/div&gt;&lt;/details&gt;</string>
+		<key>shortcut</key>
+		<string>d</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> = d.querySelectorAll('.p-'),</string>
+		<key>shortcut</key>
+		<string>d</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;div&gt;&lt;/div&gt;</string>
+		<key>shortcut</key>
+		<string>d</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>_length = xxx.length,</string>
+		<key>shortcut</key>
+		<string>l</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>let d = document,</string>
+		<key>shortcut</key>
+		<string>l</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>mysql.server start</string>
+		<key>shortcut</key>
+		<string>my</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>了解です！</string>
+		<key>shortcut</key>
+		<string>r</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;span&gt;&lt;/span&gt;</string>
+		<key>shortcut</key>
+		<string>s</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</string>
+		<key>shortcut</key>
+		<string>t</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>alert(8);</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;a href=""&gt;&lt;/a&gt;</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ありがとうございます。</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;img src="" width="" height="" alt=""&gt;</string>
+		<key>shortcut</key>
+		<string>い</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;ul&gt;&lt;li&gt;&lt;li&gt;&lt;/ul&gt;</string>
+		<key>shortcut</key>
+		<string>う</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>お世話になっております。</string>
+		<key>shortcut</key>
+		<string>おせ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ご確認ください。</string>
+		<key>shortcut</key>
+		<string>ご</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>よろしくお願いいたします。</string>
+		<key>shortcut</key>
+		<string>よ</string>
+	</dict>
+</array>
+</plist>
