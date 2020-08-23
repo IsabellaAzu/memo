@@ -10,7 +10,7 @@
   https://agri.mynavi.jp/2018_01_23_16792/
 - https://github.com/IsabellaAzu/memo/blob/master/%E8%B6%A3%E5%91%B3/%E3%83%93%E3%82%AA%E3%83%88%E3%83%BC%E3%83%97.md
 
-## 焼き物、磁石
+## 焼き物、モーター、磁石、電気
 
 ### STEM 落合 陽一氏 推薦!! 
 
