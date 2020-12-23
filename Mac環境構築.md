@@ -122,7 +122,20 @@ $ rbenv install -l
 ```
 $ git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 ```
-　  
+
+##### Macのzshでrbenvを使う
+
+https://qiita.com/seijikohara/items/79b479c9dd2e3b950301
+
+```.zshrc
+export PATH="$HOME/.rbenv/bin:$PATH" 
+eval "$(rbenv init - zsh)"
+```
+
+```
+source ~/.zshrc
+```
+
 　  
 - - - 
 
