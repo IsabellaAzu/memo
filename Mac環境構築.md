@@ -88,9 +88,15 @@ $ brew install rbenv ruby-build
 ##### rbenvのパスを追加  
 
 ```
+# bash_profile
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
+
+# zshrc
+$ rbenv init
+$ eval "$(rbenv init -)"
+$ source ~/.zshrc
 ```
 
 ##### rubyをインストール
