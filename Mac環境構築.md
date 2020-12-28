@@ -102,6 +102,10 @@ $ source ~/.zshrc
 ##### rubyをインストール
 
 ```
+# 各種fomulaのアップデート
+$ brew update
+$ brew upgrade ruby-build
+
 # インストール可能なバージョン一覧を表示
 $ rbenv install -l
 
@@ -116,16 +120,6 @@ $ rbenv local X.X.X
 
 $ rbenv rehash
 $ ruby -v
-```
-
-##### rubyのバージョンアップ
-
-rbenv install -lでインストール可能リストに最新版のrubyが無い場合
-
-```
-$ brew update
-$ brew upgrade ruby-build
-$ rbenv install -l
 ```
 
 ##### 毎回rbenv rehashしなくて済ませる  
