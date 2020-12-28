@@ -96,11 +96,19 @@ $ source ~/.bash_profile
 ##### rubyをインストール
 
 ```
-$ rbenv install -l #インストール可能なバージョン一覧を表示
-$ rbenv install X.X.X #バージョンを指定してインストール
-$ rbenv rehash
+# インストール可能なバージョン一覧を表示
+$ rbenv install -l
+
+# バージョンを指定してインストール
+$ rbenv install X.X.X
+
+# mac全体
 $ rbenv global X.X.X
-$ rbenv local X.X.X # 今居るディレクトリだけ
+
+# 今居るディレクトリだけ
+$ rbenv local X.X.X 
+
+$ rbenv rehash
 $ ruby -v
 ```
 
