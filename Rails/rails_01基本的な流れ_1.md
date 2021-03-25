@@ -48,38 +48,6 @@ $ cd プロジェクト名
 $ bundle install --path vendor/bundle
 ```
 
-```
-新しいMacだと
-Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
-Generally there are no consequences of this for you. If you build your own software and it requires this formula, you'll need to add to your build variables:
-```
-
-```
-$ vim ~/.zshrc
-
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
-export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
-export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-
-$ source ~/.zshrc
-```
-
-```
-$ mysql.server start
-$ bundle exec rails db:create
-$ bundle exec rails s
-
-# localhost:8888のポート番号で起動
-$ bundle exec rails s -p 8888
-
-# 本番環境でrackサーバーをデーモンとして実行の場合
-$ bundle exec rails s -e production -d
-```
 
 <table>
 <tr>
@@ -161,6 +129,40 @@ https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
 </td>
 </tr>
 </table>
+
+```
+新しいMacだと
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+Generally there are no consequences of this for you. If you build your own software and it requires this formula, you'll need to add to your build variables:
+```
+
+```
+$ vim ~/.zshrc
+
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+$ source ~/.zshrc
+```
+
+```
+$ mysql.server start
+$ bundle exec rails db:create
+$ bundle exec rails s
+
+# localhost:8888のポート番号で起動
+$ bundle exec rails s -p 8888
+
+# 本番環境でrackサーバーをデーモンとして実行の場合
+$ bundle exec rails s -e production -d
+```
+
 
 #### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
 http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
