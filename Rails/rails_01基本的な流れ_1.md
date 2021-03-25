@@ -40,6 +40,7 @@ https://masaki.blog/rails6-on-docker/
 $ bundle init
 $ bundle install --path vendor/bundle
 
+$ rails new . # 現在のディレクトリで
 $ bundle exec rails new プロジェクト名 # SQLightで
 $ bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
