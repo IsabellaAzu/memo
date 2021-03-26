@@ -44,10 +44,12 @@ $ rails new . # 現在のディレクトリで
 $ bundle exec rails new プロジェクト名 # SQLightで
 $ bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
+# 他にも
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
+
 $ cd プロジェクト名
 $ bundle install --path vendor/bundle
 ```
-
 
 <table>
 <tr>
@@ -129,6 +131,21 @@ https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
 </td>
 </tr>
 </table>
+
+`--minimal` は以下をスキップ
+
+- action_cable
+- action_mailbox
+- action_mailer
+- action_text
+- active_job
+- active_storage
+- bootsnap
+- jbuilder
+- spring
+- system_tests
+- turbolinks
+- webpack
 
 ```
 新しいMacだと
