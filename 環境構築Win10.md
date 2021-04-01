@@ -88,6 +88,7 @@ source ~/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 brew install make
+sudo apt-get install -y libssl-dev zlib1g-dev
 
 # インストール可能なリスト
 rbenv install -l
