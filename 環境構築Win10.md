@@ -41,14 +41,28 @@ https://www.rk-k.com/archives/3880
 - 「Linux用Windowsサブシステム」を有効化
 - 再起動
 - WSLで動かすLinuxディストリビューションはMicrosoft Storeからインストール
-- Ubuntu 20.04 LTS
-
+- Ubuntu 20.04 LTS 起動で、ユーザー名、パスワードを生成
+- 終了
 
 #### brewコマンド
 
 https://www.rk-k.com/archives/3877
 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+https://docs.brew.sh/Homebrew-on-Linux
+
+```
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+```
+
 #### rbenvコマンド
+
 #### gem
 
 
