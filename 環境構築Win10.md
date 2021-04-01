@@ -72,7 +72,8 @@ sudo apt update
 
 #### rbenvコマンド
 
-https://qiita.com/na-777/items/373414fc34417e52af42
+- https://qiita.com/na-777/items/373414fc34417e52af42
+- http://halucolor.blogspot.com/2012/08/railslinuxrails.html
 
 ```
 sudo apt install autoconf bison build-essential libssl1.0-dev libyaml-dev libreadline-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev sqlite3 libsqlite3-dev nodejs-dev node-gyp npm -y
@@ -84,6 +85,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+brew install make
 
 # インストール可能なリスト
 rbenv install -l
