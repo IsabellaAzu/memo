@@ -93,7 +93,10 @@ sudo apt-get install -y libssl-dev zlib1g-dev
 # インストール可能なリスト
 rbenv install -l
 rbenv install 3.0.0
+rbenv global 3.0.0
 rbenv rehash
+gem -v
+gem update --system
 ```
 
 
