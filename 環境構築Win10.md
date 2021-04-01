@@ -61,13 +61,36 @@ test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 brew install gcc
+sudo apt install gcc
+
 brew doctor
 brew cleanup
 
 sudo apt-get install build-essential curl file git
+sudo apt update
 ```
 
 #### rbenvコマンド
+
+https://qiita.com/na-777/items/373414fc34417e52af42
+
+```
+sudo apt install autoconf bison build-essential libssl1.0-dev libyaml-dev libreadline-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev sqlite3 libsqlite3-dev nodejs-dev node-gyp npm -y
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+# インストール可能なリスト
+rbenv install -l
+rbenv install 3.0.0
+rbenv rehash
+```
+
 
 #### gem
 
