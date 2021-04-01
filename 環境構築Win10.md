@@ -99,5 +99,6 @@ rbenv rehash
 
 #### gem
 
+https://qiita.com/sasasasasa/items/a5a873654259ea3592e6
 
 
