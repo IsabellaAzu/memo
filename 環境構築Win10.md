@@ -4,14 +4,14 @@
 https://qiita.com/nenjiru/items/4d9f859b0490cd00a6a9
 
 
-### Editor
+### ●Editor
 
 #### VSCode
 
 https://azure.microsoft.com/ja-jp/products/visual-studio-code/
 
 
-### MySQL
+### ●MySQL
 
 https://dev.mysql.com/downloads/mysql/  
 https://dev.mysql.com/downloads/file/?id=500615  
@@ -20,14 +20,14 @@ https://qiita.com/ab-boy_ringo/items/1de0a81784a85ece9171
 
 
 
-### キー配置変更
+### ●キー配置変更
 
 #### Change Key
 
 https://freesoft-100.com/review/change-key.php
 
 
-### ターミナル
+### ●ターミナル
 
 #### Fluent Terminal(コピペできる)
 
@@ -37,7 +37,7 @@ https://www.microsoft.com/ja-jp/p/fluent-terminal/9p2krlmfxf9t?activetab=pivot:o
 
 https://www.microsoft.com/ja-jp/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab
 
-### WSLの有効化
+### ●WSLの有効化
 
 https://www.rk-k.com/archives/3880
 
@@ -114,7 +114,7 @@ https://qiita.com/sasasasasa/items/a5a873654259ea3592e6
 
 
 
-### cookie
+### ●cookie
 
 - 127.0.0.1
 - localhost
