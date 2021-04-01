@@ -109,3 +109,21 @@ https://qiita.com/sasasasasa/items/a5a873654259ea3592e6
 ##### bundler
 
 ##### rails
+
+
+
+
+
+### cookie
+
+- 127.0.0.1
+- auth.atlassian.com
+- id.atlassian.com
+- github.com
+- google.com
+- accounts.google.com
+- mail.google.com
+- twitter.com
+- localhost
+- bitbucket.org
+
