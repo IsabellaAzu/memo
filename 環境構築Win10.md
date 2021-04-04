@@ -111,6 +111,9 @@ https://qiita.com/sasasasasa/items/a5a873654259ea3592e6
 ##### rails
 
 
+### windows10にgit
+
+https://www.curict.com/item/60/60bfe0e.html
 
 
 ### ●cookie
