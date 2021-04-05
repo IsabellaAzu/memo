@@ -116,6 +116,49 @@ https://qiita.com/sasasasasa/items/a5a873654259ea3592e6
 https://www.curict.com/item/60/60bfe0e.html
 
 
+### WSL2
+
+https://qiita.com/amenoyoya/items/ca9210593395dbfc8531
+
+#### Docker, docker-compose
+
+https://qiita.com/amenoyoya/items/ca9210593395dbfc8531#docker%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89
+
+```
+# -- Ubuntu 20.04 on WSL2
+
+# Docker (Community Edition) インストール
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+$ sudo apt update && sudo apt install -y docker-ce
+## dockerデーモン起動
+$ sudo service docker start
+
+# WSL2 では、デーモンをスタートアップに登録することができない
+# スタートアップに登録したい場合は、Windowsのタスクスケジューラに登録する必要がある
+# 参考: https://qiita.com/Ningensei848/items/75adeb29bb143633d60c
+
+# Windows再起動の度に sudo service docker start すれば良いだけなので、ここではスタートアップ登録までは行わない
+
+# WSL2 には cgroup 用ディレクトリがデフォルトで作られていないため作成しておく
+## これをしておかないと Docker でプロセスのグループ化が必要になったときにエラーが起きる
+$ sudo mkdir -p /sys/fs/cgroup/systemd
+$ sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+
+# docker-compose 導入
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.26.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+# Dockerを sudo なしで実行可能に
+## ※ カレントユーザーをdockerグループに所属させた上で docker.sock へのグループ書き込み権限を付与すればよい
+$ sudo gpasswd -a $USER docker
+$ sudo chgrp docker /var/run/docker.sock
+$ sudo service docker restart
+
+# 一度ログアウトしないと反映されないため、一旦 exit
+$ exit
+```
+
 ### ●cookie
 
 - 127.0.0.1
