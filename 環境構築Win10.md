@@ -120,7 +120,21 @@ https://www.curict.com/item/60/60bfe0e.html
 
 https://qiita.com/amenoyoya/items/ca9210593395dbfc8531
 
-#### Docker, docker-compose
+#### MySQL
+
+https://www.aiship.jp/knowhow/archives/28257
+
+```
+sudo apt install -y mysql-server
+sudo service mysql status
+sudo service mysql start
+sudo service mysql stop
+
+
+
+``` 
+
+#### Docker, docker-compose（不要だった）
 
 https://qiita.com/amenoyoya/items/ca9210593395dbfc8531#docker%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89
 
