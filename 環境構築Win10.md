@@ -152,6 +152,7 @@ SELECT User, Host, plugin FROM mysql.user;
 # ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '';
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 
+さくらVPSの設定も変更
 ``` 
 
 #### Docker, docker-compose（不要だった）
