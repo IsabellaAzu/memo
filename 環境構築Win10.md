@@ -139,6 +139,19 @@ mysql_config --socket
 # rails aborted!
 # ActiveRecord::ConnectionNotEstablished: Access denied for user 'root'@'localhost'
 
+SELECT User, Host, plugin FROM mysql.user;
++------------------+-----------+-----------------------+
+| User             | Host      | plugin                |
++------------------+-----------+-----------------------+
+| debian-sys-maint | localhost | caching_sha2_password |
+| mysql.infoschema | localhost | caching_sha2_password |
+| mysql.session    | localhost | caching_sha2_password |
+| mysql.sys        | localhost | caching_sha2_password |
+| root             | localhost | auth_socket           |
++------------------+-----------+-----------------------+
+# ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+
 ``` 
 
 #### Docker, docker-compose（不要だった）
