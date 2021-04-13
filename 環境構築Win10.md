@@ -130,7 +130,14 @@ sudo service mysql status
 sudo service mysql start
 sudo service mysql stop
 
+# Mysql2::Error::ConnectionError: Can't connect to local MySQL server through socket '/opt/biz/tmp/mysql.sock' (13)
+# config/database.ymlのsocketで指定してるとこと合ってるか確認
+mysql_config --socket
 
+# Access denied for user 'root'@'localhost'
+# Couldn't create 'biz_development' database. Please check your configuration.
+# rails aborted!
+# ActiveRecord::ConnectionNotEstablished: Access denied for user 'root'@'localhost'
 
 ``` 
 
