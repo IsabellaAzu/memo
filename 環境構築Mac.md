@@ -482,10 +482,6 @@ http://www.sequelpro.com/
 
 http://www-jp.mysql.com/products/workbench/
 
-##### imageAlpha：透過画像軽量化
-
-http://pngmini.com/
-
 ##### imageOptim：画像軽量化
 
 https://imageoptim.com/
@@ -497,10 +493,6 @@ https://imageoptim.com/
 - 矩形選択：Sublime-Style-Column-Selection
 - Railsプロジェクト内のファイル移動：rails-transporter
 - 全角スペースを□で表示：show-ideographic-space
-
-##### tmux
-http://matsu.teraren.com/blog/2013/02/10/moteru-tmux-powerline/  
-
 
 
 ## 設定
