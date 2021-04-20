@@ -482,6 +482,12 @@ https://github.com/IsabellaAzu/memo/blob/master/MySQL%E3%81%AE%E4%BD%BF%E3%81%84
 
 ## 便利ツール  
 
+##### Webサーバー(python)
+
+```
+python -m SimpleHTTPServer 8080
+```
+
 ##### iTerm2：CUI  
 
 http://iterm2.com/  
