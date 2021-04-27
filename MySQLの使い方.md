@@ -16,6 +16,15 @@ $ mysql -u root
 - - -
 
 > 参考  
+
+bundle install がこける
+https://qiita.com/tktcorporation/items/0ef8c930fc18ce72c301
+```
+$ bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl/include"
+$ 
+```
+
+
 ダウングレードしたい時  
 http://sue445.hatenablog.com/entry/2013/02/25/163538  
 Mac起動時にMySQLを起動、起動に失敗した時など  
@@ -26,7 +35,6 @@ MySQLの違うバージョンをインストール
 http://qiita.com/STAR_ZERO/items/a5dd537564244c21aa9e
 SQLプログラミング作法
 http://www.geocities.jp/mickindex/database/db_manner.html#LocalLink-capital
-
 　  
 　  
 ### MySQLの文字列型が大文字と小文字を区別してくれない  
@@ -36,7 +44,6 @@ http://d.hatena.ne.jp/spitfire_tree/20120627/1340789986
 検索時にBINARY属性を指定だと、  
 ・インデックスの利用方法などが変化する  
 ・大体の場合においてパフォーマンスが低下する  
-
 　  
 　  
 ### データベースの正規化
