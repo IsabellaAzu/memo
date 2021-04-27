@@ -426,6 +426,10 @@ $ brew install mysql@5.7 # バージョン指定でインストール
 $ brew link mysql #Warning: Already linked:が出たら下記を実行
 $ brew unlink mysql && brew link mysql
 
+$ echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+$ source ~/.zshrc
+$ mysql --version
+
 # 初期設定
 $ unset TMPDIR
 $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
