@@ -163,6 +163,9 @@ $ bundle init
 　  
 # ディレクトリのgemfileを元に各種gemをインストール  
 $ bundle install --path vendor/bundle  
+
+# railsのmimemagic対策
+$ brew install shared-mime-info
 ```
 
 
