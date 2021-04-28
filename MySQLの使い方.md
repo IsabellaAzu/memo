@@ -23,6 +23,8 @@ https://qiita.com/tktcorporation/items/0ef8c930fc18ce72c301
 $ bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl/include"
   or
 $ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib"
+  or
+$ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib --with-cppflags=-I/usr/local/opt/openssl/include"
 
 $ bundle install --path vendor/bundle
 ```
