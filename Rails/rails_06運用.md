@@ -1,5 +1,26 @@
 # 運用
 
+
+## アップデート
+
+https://qiita.com/jnchito/items/0ee47108972a0e302caf
+
+### 
+
+- Rails以外のgemを最新にする
+- Rubyのバージョンを最新にする
+- Railsをバージョンアップする
+- rails app:updateタスクを実行する
+- rails cやrails sでRailsが正常に起動することを確認する
+- 自動テストと手動テストで動作確認する
+- 問題が無さそうならサーバーにデプロイする
+
+```
+bundle outdated
+
+```
+
+
 ## Modelとテーブル追加、初期データ投入、controllerとviewの作成まで
 
 ### (1)例:CSVの都道府県データの準備
