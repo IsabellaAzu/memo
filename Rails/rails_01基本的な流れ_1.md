@@ -38,7 +38,8 @@ https://masaki.blog/rails6-on-docker/
 
 ```
 $ bundle init
-$ bundle install --path vendor/bundle
+$ bundle config set --local path 'vendor/bundle'
+$ bundle install
 
 $ rails new . # 現在のディレクトリで
 $ bundle exec rails new プロジェクト名 # SQLightで
