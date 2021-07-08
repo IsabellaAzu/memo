@@ -207,10 +207,22 @@ $ bundle exec rails s -p 3001
 ### 3. カスタマイズ
 
 > 参考  
-・Railsの一番人気のログイン認証gemのDeviseのカスタマイズ方法  
+- Railsの一番人気のログイン認証gemのDeviseのカスタマイズ方法  
 　http://ruby-rails.hatenadiary.com/entry/20140804/1407168000  
-・Rails – Deviseのコントローラをカスタマイズする方法  
-　http://www.tamurasouko.com/?p=929    
+- Rails – Deviseのコントローラをカスタマイズする方法  
+```
+rails g devise:controllers users
+
+
+# config/route.rb
+  devise_for :users, :controllers => {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations',
+    confirmations: 'users/confirmations',
+    unlocks: 'users/unlocks'
+  }
+```
 
 　  
 <a id="atode"></a>
