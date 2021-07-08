@@ -36,6 +36,7 @@ https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
 2019.09.27 Rails 6 + MySQL on Dockerの環境を秒速で構築する  
 https://masaki.blog/rails6-on-docker/  
 
+
 ```
 bundle init
 bundle config set --local path 'vendor/bundle'
@@ -53,11 +54,15 @@ bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffe
 # deviseを使った最低限で
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable  --skip-action-mailbox --skip-test --skip-system-test 
 
-
 cd プロジェクト名
 bundle install --path vendor/bundle
 ```
+<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
 
+
+
+
+<br>
 <table>
 <tr>
 <th>rails new のオプション</th>
