@@ -37,21 +37,21 @@ https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
 https://masaki.blog/rails6-on-docker/  
 
 ```
-$ bundle init
-$ bundle config set --local path 'vendor/bundle'
-$ bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
-$ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
-$ bundle install
+bundle init
+bundle config set --local path 'vendor/bundle'
+bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
+bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
+bundle install
 
-$ rails new . # 現在のディレクトリで
-$ bundle exec rails new プロジェクト名 # SQLightで
-$ bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+rails new . # 現在のディレクトリで
+bundle exec rails new プロジェクト名 # SQLightで
+bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
 
 # 最低限で始める
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
 
-$ cd プロジェクト名
-$ bundle install --path vendor/bundle
+cd プロジェクト名
+bundle install --path vendor/bundle
 ```
 
 <table>
