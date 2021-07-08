@@ -13,9 +13,9 @@ bundlerはシステムのglobalに、
 それ以外はシステムの/vendor/bundleに。
 
 その場合、
-$ rails
+rails
 　↓
-$ bundle exec rails 〜
+bundle exec rails 〜
 になる
 ```
 
