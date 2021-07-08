@@ -213,7 +213,6 @@ $ bundle exec rails s -p 3001
 ```
 rails g devise:controllers users
 
-
 # config/route.rb
   devise_for :users, :controllers => {
     sessions: 'users/sessions',
