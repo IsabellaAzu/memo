@@ -313,7 +313,7 @@ git init
 git add .
 git commit -m "最初のコミット"
 
-git remote add origin git@bitbucket.org:galore-evo/variant.git
+git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
 git push -u origin master
 
 # git remote set-url origin　で、fatal: No such remote 'origin'というエラーが出た場合、
