@@ -64,10 +64,10 @@ Project.all # Projectを全部見ることができる
 
 ```
 # controller名は最初大文字の複数形
-$ bundle exec rails g controller Projects
 $ bundle exec rails g controller Projects --no-helper --no-assets # 無駄な helper や assets を生成しない方法  
+$ bundle exec rails g controller Projects
 
-# 特定のフォルダ以下に作成する場合は、  
+# 特定のフォルダaaaに作成する場合は、  
 $ bundle exec rails g controller aaa::Projects --no-helper --no-assets  
 ```
 
