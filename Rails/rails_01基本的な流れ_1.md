@@ -52,7 +52,7 @@ bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
 
 # deviseを使った最低限で
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable  --skip-action-mailbox --skip-test --skip-system-test 
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-test --skip-system-test 
 
 cd プロジェクト名
 bundle install --path vendor/bundle
