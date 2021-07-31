@@ -278,28 +278,6 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
 
 上記の<a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
 > 
-デフォルトで使える機能  
-1. Database Authenticatable  
-パスワードを暗号化してDBに保存する  
-2. Recoverable  
-パスワードを忘れた時に、ユーザのパスワードをリセットし、リセット指示を送る  
-3. Registerable  
-自分のアカウントを削除することができる  
-4. Rememberable  
-クッキーからユーザーを覚えるためのトークンをクリアする管理をする  
-5. Trackable  
-サインイン時、IPアドレスをDBに保存する  
-6. Validatable  
-メールアドレスとパスワードの入力内容を検証する  
-追加できる機能
-7. Timeoutable  
-指定した期間で活動していないセッションが期限切れになる  
-8. Confirmable  
-ユーザに仮登録メールを送信してメール内のリンクからアカウントを本登録させる  
-9. Lockable  
-サインインを指定回数失敗した時にアカウントをロックする。メールで指定された期間後ロックを解除する  
-10. Omniauthable  
-TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
 
 <table>
 <thead>
