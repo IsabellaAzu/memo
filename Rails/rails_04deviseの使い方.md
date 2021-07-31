@@ -301,6 +301,23 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
 10. Omniauthable  
 TwitterやFacebookのアカウントなどでユーザ登録したい場合は追加する  
 
+<table>
+<thead>
+  <tr><th style="text-align: left;">機能</th><th style="text-align: left;">概要</th></tr>
+</thead>
+<tbody>
+  <tr><td style="text-align: left;">database_authenticatable</td><td style="text-align: left;">サインイン時にユーザーの正当性を検証するためにパスワードを暗号化してDBに登録します。</td></tr>
+  <tr><td style="text-align: left;">registerable</td><td style="text-align: left;">登録処理を通してユーザーをサインアップします。また、ユーザーに自身のアカウントを編集したり削除することを許可します。</td></tr>
+  <tr><td style="text-align: left;">recoverable</td><td style="text-align: left;">パスワードをリセットし、それを通知します。</td></tr>
+  <tr><td style="text-align: left;">rememberable</td> <td style="text-align: left;">保存されたcookieから、ユーザーを記憶するためのトークンを生成・削除します。</td></tr>
+  <tr><td style="text-align: left;">trackable</td><td style="text-align: left;">サインイン回数や、サインイン時間、IPアドレスを記録します。</td></tr>
+  <tr><td style="text-align: left;">validatable</td><td style="text-align: left;">Emailやパスワードのバリデーションを提供します。独自に定義したバリデーションを追加することもできます。</td></tr>
+  <tr><td style="text-align: left;">confirmable</td> <td style="text-align: left;">メールに記載されているURLをクリックして本登録を完了する、といったよくある登録方式を提供します。また、サインイン中にアカウントが認証済みかどうかを検証します。</td></tr>
+  <tr><td style="text-align: left;">lockable</td><td style="text-align: left;">一定回数サインインを失敗するとアカウントをロックします。ロック解除にはメールによる解除か、一定時間経つと解除するといった方法があります。</td></tr>
+  <tr><td style="text-align: left;">timeoutable</td><td style="text-align: left;">一定時間活動していないアカウントのセッションを破棄します。</td></tr>
+  <tr><td style="text-align: left;">omniauthable</td><td style="text-align: left;">intridea/omniauthをサポートします。TwitterやFacebookなどの認証を追加したい場合は追加します。</td></tr>
+  </tbody>
+</table>
 
 ##### 3.4.1 Confirmable（確認メールからアカウント作成）機能を追加
 > 参考  
