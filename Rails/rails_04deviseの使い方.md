@@ -258,7 +258,7 @@ app/views/users/unlocks/new.html.erb
 ##### 3.2 ログインしていないユーザーを全ページで弾く（ユーザー認証を導入するために、共通コントローラーに）
 ```
 # /app/controllers/application_controller.rb
-before_filter :authenticate_user!
+before_action :authenticate_user!
 ```
 　  
 ##### 3.3 パスワードの入力文字数の設定を変える
