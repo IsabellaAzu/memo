@@ -1,26 +1,20 @@
 
-# 基本的な流れ
+# 基本的な流れ　  
 
-- プロジェクト作成
-- 便利なgemをGemfileに追記
+ローカル環境のアップグレード
+```
+brew update
+brew upgrade rbenv
+rbenv install --list
+rbenv install 3.1.2
+rbenv global 3.1.2
+```
 
-　  
-　  
 ## プロジェクト作成
-
-```
-bundlerはシステムのglobalに、
-それ以外はシステムの/vendor/bundleに。
-
-その場合、
-rails
-　↓
-bundle exec rails 〜
-になる
-```
 
 ### Rails環境構築
 
+<details><summary>ｒａｉｌｓ６以前</summary><div>
 2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
 https://qiita.com/jun_jun_jun/items/dd260c43387a8e17803d  
 
@@ -35,7 +29,7 @@ https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
 
 2019.09.27 Rails 6 + MySQL on Dockerの環境を秒速で構築する  
 https://masaki.blog/rails6-on-docker/  
-
+</div></details>
 
 ```
 bundle init
