@@ -34,19 +34,29 @@ https://masaki.blog/rails6-on-docker/
 ```
 bundle init
 bundle config set --local path 'vendor/bundle'
+
+// mysql2で問題がある場合
 // bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
 // bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
+
 bundle install
 
-rails new . # 現在のディレクトリで
-bundle exec rails new プロジェクト名 # SQLightで
-bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+-----------------
+# deviseを使った最低限で
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test 
 
 # 最低限で始める(devise周りは足りない)
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
 
-# deviseを使った最低限で
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test 
+# MySQLで
+bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+
+# SQLightで
+bundle exec rails new プロジェクト名
+
+# 現在のディレクトリで
+rails new .
+-----------------
 
 cd プロジェクト名
 bundle install --path vendor/bundle
