@@ -242,20 +242,6 @@ $ bundle exec rails s -p 8888
 $ bundle exec rails s -e production -d
 ```
 
-
-#### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
-http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
-
-```sh
-# インストール
-$ npm install -g browser-sync
-# rails起動
-$ bundle exec rails s -p 1111
-# 同期
-$ browser-sync start --proxy localhost:1111 --files **/*
-```
-
-
 ## 便利なgemをGemfileに追記
 
 例えば  
@@ -270,10 +256,8 @@ group :development, :test do
   gem 'pry-stack_explorer' # デバッグを実施
   gem 'pry-byebug'         # スタックをたどれる
 end
-```
 
-```
-$ bundle install --path vendor/bundle
+$ bundle install
 ```
 　  
 
@@ -285,14 +269,6 @@ https://www.gitignore.io/で生成
 
 ```
 ### Rails ###
-*.rbc
-capybara-*.html
-.rspec
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/public/system
-/coverage/
-/spec/tmp
 *.orig
 rerun.txt
 pickle-email-*.html
@@ -300,12 +276,10 @@ pickle-email-*.html
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-!/log/.keep
-!/tmp/.keep
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/master.key
+#config/initializers/secret_token.rb
+#config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 config/secrets.yml
@@ -324,11 +298,6 @@ config/secrets.yml
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
-# if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
-*.bowerrc
-bower.json
-
 # Ignore pow environment settings
 .powenv
 
@@ -340,17 +309,9 @@ node_modules/
 
 # Ignore precompiled javascript packs
 /public/packs
-/public/packs-test
-/public/assets
-
-# Ignore yarn files
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
 
 # Ignore uploaded files in development
 /storage/*
-!/storage/.keep
 ```
 
  `/home/xxx/config/secrets.yml` は `/home/xxx/config/credentials.yml.enc`に変更されている。  
