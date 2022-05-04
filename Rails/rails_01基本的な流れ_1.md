@@ -21,7 +21,7 @@ bundle config set --local path 'vendor/bundle'
 // bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
 // bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
 
-bundle install --path vendor/bundle
+bundle install
 ```
 
 ## プロジェクト作成
