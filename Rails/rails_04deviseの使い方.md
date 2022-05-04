@@ -1,13 +1,14 @@
 
 ## deviseの使い方
 
-
 ### 基本的な流れ
-> 参考  
-http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
-http://devise.plataformatec.com.br/  
-　  
-index  
+
+#### 参考  
+- 閉鎖 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
+- 閉鎖 http://devise.plataformatec.com.br/  
+- https://www.sejuku.net/blog/13378
+
+#### index  
 > <a href="#a1">1. インストール</a>  
 <a href="#a2">2. devise設定</a>  
 <a href="#a3">2. カスタマイズ</a>  
