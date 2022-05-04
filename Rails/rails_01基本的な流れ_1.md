@@ -30,7 +30,50 @@ bundle install
 bundle exec rails new -h
 
 ```
-<details><summary>詳細</summary><div>
+# deviseを使った最低限で
+bundle exec rails new . -B -C -S -J -M --database=mysql
+ --skip-asset-pipeline
+ --skip-javascript
+ --skip-jbuilder
+ --skip-sprockets
+ --skip-turbolinks
+ --skip-action-text
+ --skip-active-storage
+ --skip-action-cable
+ --skip-action-mailbox
+ --skip-test
+ --skip-system-test
+
+# 最低限で始める(devise周りは足りない)
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
+
+# MySQLで
+bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
+
+# SQLightで
+bundle exec rails new プロジェクト名
+
+# 現在のディレクトリで
+rails new .
+
+cd プロジェクト名
+bundle install
+```
+
+<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
+
+
+## 参考情報
+
+### Zeitwerk
+
+- https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
+- https://github.com/fxn/zeitwerk#file-structure
+- https://railsguides.jp/autoloading_and_reloading_constants.html#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4  
+
+
+```
+# 省略内容一覧
 Usage:
   rails new APP_PATH [options]
 
@@ -84,43 +127,7 @@ Rails options:
 
 Example:
     rails new ~/Code/Ruby/weblog
-</div></details>
 ```
-
-
-
-```
-# deviseを使った最低限で
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test 
-
-# 最低限で始める(devise周りは足りない)
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
-
-# MySQLで
-bundle exec rails new プロジェクト名 -B -C -S -J --database=mysql --skip-coffee --skip-sprockets --skip-test
-
-# SQLightで
-bundle exec rails new プロジェクト名
-
-# 現在のディレクトリで
-rails new .
-
-cd プロジェクト名
-bundle install --path vendor/bundle
-```
-
-<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
-
-
-## 参考情報
-
-### Zeitwerk
-
-- https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
-- https://github.com/fxn/zeitwerk#file-structure
-- https://railsguides.jp/autoloading_and_reloading_constants.html#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4  
-
-
 
 <br>
 <table>
