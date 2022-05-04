@@ -8,6 +8,7 @@
 - 閉鎖 http://devise.plataformatec.com.br/  
 - https://www.sejuku.net/blog/13378
 - https://zenn.dev/salvage0707/articles/railsx-setting-devise
+- https://github.com/heartcombo/devise
 
 #### index  
 > <a href="#a1">1. インストール</a>  
