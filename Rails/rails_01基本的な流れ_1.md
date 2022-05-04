@@ -215,6 +215,9 @@ https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
 - turbolinks
 - webpack
 
+
+https://zenn.dev/yukito0616/articles/7cd2dde18c90d4#spring%E3%81%8C%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E8%A9%B0%E3%81%BE%E3%82%8B%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%82%93%E3%81%98%E3%82%83
+
 ```
 新しいMacだと
 Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
