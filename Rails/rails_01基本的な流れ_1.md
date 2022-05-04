@@ -33,7 +33,7 @@ bundle exec rails new -h
 
 - aaa
 - bbb
-
+```
 Usage:
   rails new APP_PATH [options]
 
@@ -85,20 +85,9 @@ Rails options:
   -h, [--help], [--no-help]        # Show this help message and quit
   -v, [--version], [--no-version]  # Show Rails version number and quit
 
-Description:
-    The 'rails new' command creates a new Rails application with a default
-    directory structure and configuration at the path you specify.
-
-    You can specify extra command-line arguments to be used every time
-    'rails new' runs in the .railsrc configuration file in your home directory,
-    or in $XDG_CONFIG_HOME/rails/railsrc if XDG_CONFIG_HOME is set.
-
-    Note that the arguments specified in the .railsrc file don't affect the
-    defaults values shown above in this help message.
-
 Example:
     rails new ~/Code/Ruby/weblog
-
+```
 </div></details>
 
 ```
