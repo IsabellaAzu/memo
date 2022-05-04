@@ -18,8 +18,8 @@ bundle init
 bundle config set --local path 'vendor/bundle'
 
 // mysql2で問題がある場合
-// bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
-// bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
+bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
+bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
 
 bundle install
 ```
