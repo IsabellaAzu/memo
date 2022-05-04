@@ -102,17 +102,17 @@ bundle exec rails new プロジェクト名
 
 # 現在のディレクトリで
 rails new .
------------------
 
 cd プロジェクト名
 bundle install --path vendor/bundle
 ```
+
 <a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
 
 
-### 参考情報
+## 参考情報
 
-#### Zeitwerk
+### Zeitwerk
 
 - https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
 - https://github.com/fxn/zeitwerk#file-structure
@@ -202,7 +202,7 @@ https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
 </tr>
 </table>
 
-`--minimal` は以下をスキップ
+--minimal は以下をスキップ
 
 - action_cable
 - action_mailbox
@@ -279,6 +279,7 @@ group :development, :test do
   gem 'pry-byebug'         # スタックをたどれる
 end
 ```
+
 ```
 $ bundle install --path vendor/bundle
 ```
