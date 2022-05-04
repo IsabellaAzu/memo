@@ -31,7 +31,7 @@ bundle exec rails new -h
 
 ```
 # deviseを使った最低限で
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-bootsnap --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-hotwire --skip-bootsnap --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
 
 # 最低限で始める(devise周りは足りない)
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
@@ -50,15 +50,6 @@ bundle install
 ```
 
 <a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
-
-
-## 参考情報
-
-### Zeitwerk
-
-- https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
-- https://github.com/fxn/zeitwerk#file-structure
-- https://railsguides.jp/autoloading_and_reloading_constants.html#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4  
 
 
 ```
@@ -390,6 +381,18 @@ git remote -v
 
 <a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_2.md">基本的な流れ2</a>
 
+
+## 参考情報
+
+### Zeitwerk
+
+- https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
+- https://github.com/fxn/zeitwerk#file-structure
+- https://railsguides.jp/autoloading_and_reloading_constants.html#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4  
+
+### Stimulus
+
+- https://qiita.com/SAPPOROBEER/items/ce29b3551e65ea901108
 
 
 
