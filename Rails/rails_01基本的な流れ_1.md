@@ -1,7 +1,8 @@
 
 # 基本的な流れ　  
 
-ローカル環境のアップグレード
+## ローカル環境のアップグレード
+
 ```
 brew update
 brew upgrade rbenv
@@ -10,9 +11,7 @@ rbenv install 3.1.2
 rbenv global 3.1.2
 ```
 
-## プロジェクト作成
-
-### Rails環境構築
+## ローカルRails環境構築
 
 ```
 bundle init
@@ -25,8 +24,9 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 ```
 
------------------
-# rails new 省略内容確認
+## プロジェクト作成
+
+### rails new 省略内容確認
 bundle exec rails new -h
 
 <details><summary>詳細</summary><div>
