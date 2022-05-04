@@ -30,7 +30,10 @@ bundle install
 bundle exec rails new -h
 
 <details><summary>詳細</summary><div>
-```
+
+- aaa
+- bbb
+
 Usage:
   rails new APP_PATH [options]
 
@@ -95,7 +98,7 @@ Description:
 
 Example:
     rails new ~/Code/Ruby/weblog
-```
+
 </div></details>
 
 ```
