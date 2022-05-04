@@ -31,18 +31,7 @@ bundle exec rails new -h
 
 ```
 # deviseを使った最低限で
-bundle exec rails new . -B -C -S -J -M --database=mysql
- --skip-asset-pipeline
- --skip-javascript
- --skip-jbuilder
- --skip-sprockets
- --skip-turbolinks
- --skip-action-text
- --skip-active-storage
- --skip-action-cable
- --skip-action-mailbox
- --skip-test
- --skip-system-test
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
 
 # 最低限で始める(devise周りは足りない)
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-yarn --skip-coffee --skip-sprockets --skip-turbolinks --skip-webpack-install --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailer --skip-action-mailbox --skip-test --skip-system-test --skip-active-job
