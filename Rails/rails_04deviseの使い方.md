@@ -26,7 +26,7 @@
 gem 'devise'
 
 # ターミナル
-$ bundle install --path vendor/bundle
+$ bundle install
 $ bundle exec rails g devise:install
 
 　↓以下が出力される
