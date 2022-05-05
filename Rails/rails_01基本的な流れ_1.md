@@ -21,6 +21,8 @@ bundle config set --local path 'vendor/bundle'
 bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
 bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
 
+gem 'rails', '~> 7.0', '>= 7.0.2.4'
+
 bundle install
 ```
 
@@ -32,6 +34,9 @@ bundle exec rails new -h
 ```
 # deviseを使った最低限で
 bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-hotwire --skip-bootsnap --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
+
+追加Gem
+gem 'devise', '~> 4.8', '>= 4.8.1'
 
 cd プロジェクト名
 bundle install
