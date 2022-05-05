@@ -241,7 +241,8 @@ $ bundle install
 
 - https://qiita.com/SAPPOROBEER/items/ce29b3551e65ea901108
 
-<details><summary>## rails6以前</summary><div>
+　  
+<details><summary>rails6以前</summary><div>
 2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
 https://qiita.com/jun_jun_jun/items/dd260c43387a8e17803d  
 
