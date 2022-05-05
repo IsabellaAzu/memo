@@ -60,6 +60,41 @@ $ bundle exec rails s -p 8888
 $ bundle exec rails s -e production -d
 ```
 
+## Git
+
+### 3. gitignore
+
+https://www.gitignore.io/で生成
+
+```
+### Rails ###
+
+# Ignore bundler config.
+/.bundle
+/.ruby-version
+vendor/
+/vendor/bundle/*
+node_modules/
+
+Gemfile.lock
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore master key for decrypting credentials and more.
+#/config/master.key
+```
+
+ `/home/xxx/config/secrets.yml` は `/home/xxx/config/credentials.yml.enc`に変更されている。  
+https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39  
 
 ### 最初のコミット
 
@@ -196,41 +231,7 @@ $ bundle install
 ```
 　  
 
-## Git
 
-### 3. gitignore
-
-https://www.gitignore.io/で生成
-
-```
-### Rails ###
-
-# Ignore bundler config.
-/.bundle
-/.ruby-version
-vendor/
-/vendor/bundle/*
-node_modules/
-
-Gemfile.lock
-
-# Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
-# Ignore master key for decrypting credentials and more.
-#/config/master.key
-```
-
- `/home/xxx/config/secrets.yml` は `/home/xxx/config/credentials.yml.enc`に変更されている。  
-https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39  
 
 
 
