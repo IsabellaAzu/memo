@@ -201,7 +201,11 @@ https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39
 
 ```
 git init
-git config --global push.default current
+
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+git commit --amend --reset-author
+
 git add .
 git commit -m "最初のコミット"
 
