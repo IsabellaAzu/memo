@@ -105,6 +105,7 @@ git config --global user.name "Your Name"
 git config --global user.email you@example.com
 git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
 git config --global init.defaultBranch master
+git branch -m master
 
 git add .
 git commit -m "最初のコミット"
