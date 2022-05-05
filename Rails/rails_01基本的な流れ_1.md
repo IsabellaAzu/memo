@@ -45,6 +45,54 @@ bundle install
 <a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_04devise%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.md">→ deviseのインストールへ</a><br>
 
 
+
+## データベース作成
+
+```
+$ mysql.server start
+$ bundle exec rails db:create
+$ bundle exec rails s
+
+# localhost:8888のポート番号で起動
+$ bundle exec rails s -p 8888
+
+# 本番環境でrackサーバーをデーモンとして実行の場合
+$ bundle exec rails s -e production -d
+```
+
+
+### 最初のコミット
+
+```
+git init
+
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+git commit --amend --reset-author
+
+git add .
+git commit -m "最初のコミット"
+
+git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
+git push -u origin master
+
+# git remote set-url origin　で、fatal: No such remote 'origin'というエラーが出た場合、
+# 先にremoteをaddする必要があり、set-urlはあくまでもremote先を変える。
+# SSHを始めから用いるのであれば、以下のコマンドで。
+git remote add origin git@github.com:xxxxxxx/[Ripository name].git
+
+# 紐づけているリモートリポジトリを確認できる
+git remote -v    
+```
+
+
+## 次
+
+<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_2.md">基本的な流れ2</a>
+
+
+
+
 ```
 # 省略内容一覧
 Usage:
@@ -127,19 +175,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 $ source ~/.zshrc
 ```
 
-## データベース作成
 
-```
-$ mysql.server start
-$ bundle exec rails db:create
-$ bundle exec rails s
-
-# localhost:8888のポート番号で起動
-$ bundle exec rails s -p 8888
-
-# 本番環境でrackサーバーをデーモンとして実行の場合
-$ bundle exec rails s -e production -d
-```
 
 ## 便利なgemをGemfileに追記
 
@@ -197,35 +233,6 @@ Gemfile.lock
 https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39  
 
 
-### 最初のコミット
-
-```
-git init
-
-git config --global user.name "Your Name"
-git config --global user.email you@example.com
-git commit --amend --reset-author
-
-git add .
-git commit -m "最初のコミット"
-
-git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
-git push -u origin master
-
-# git remote set-url origin　で、fatal: No such remote 'origin'というエラーが出た場合、
-# 先にremoteをaddする必要があり、set-urlはあくまでもremote先を変える。
-# SSHを始めから用いるのであれば、以下のコマンドで。
-git remote add origin git@github.com:xxxxxxx/[Ripository name].git
-
-# 紐づけているリモートリポジトリを確認できる
-git remote -v    
-```
-
-
-## 次
-
-<a href="https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_2.md">基本的な流れ2</a>
-
 
 ## 参考情報
 
@@ -238,10 +245,6 @@ git remote -v
 ### Stimulus
 
 - https://qiita.com/SAPPOROBEER/items/ce29b3551e65ea901108
-
-
-
-## 参考情報
 
 <details><summary>rails6以前</summary><div>
 2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
