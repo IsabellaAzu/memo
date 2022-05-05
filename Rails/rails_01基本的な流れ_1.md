@@ -103,18 +103,12 @@ git init
 
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
-git commit --amend --reset-author
+git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
+git config --global init.defaultBranch master
 
 git add .
 git commit -m "最初のコミット"
-
-git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
 git push -u origin master
-
-# git remote set-url origin　で、fatal: No such remote 'origin'というエラーが出た場合、
-# 先にremoteをaddする必要があり、set-urlはあくまでもremote先を変える。
-# SSHを始めから用いるのであれば、以下のコマンドで。
-git remote add origin git@github.com:xxxxxxx/[Ripository name].git
 
 # 紐づけているリモートリポジトリを確認できる
 git remote -v    
