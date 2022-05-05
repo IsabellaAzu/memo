@@ -168,49 +168,29 @@ https://www.gitignore.io/で生成
 
 ```
 ### Rails ###
-*.orig
-rerun.txt
-pickle-email-*.html
+
+# Ignore bundler config.
+/.bundle
+/.ruby-version
+vendor/
+/vendor/bundle/*
+node_modules/
+
+Gemfile.lock
 
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
+!/log/.keep
+!/tmp/.keep
 
-# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-#config/initializers/secret_token.rb
-#config/master.key
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
 
-# Only include if you have production secrets in this file, which is no longer a Rails default
-config/secrets.yml
-
-# dotenv
-# TODO Comment out this rule if environment variables can be committed
-.env
-
-## Environment normalization:
-/.bundle
-/vendor/bundle
-
-# these should all be checked in to normalize the environment:
-# Gemfile.lock, .ruby-version, .ruby-gemset
-
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
-
-# Ignore pow environment settings
-.powenv
-
-# Ignore Byebug command history file.
-.byebug_history
-
-# Ignore node_modules
-node_modules/
-
-# Ignore precompiled javascript packs
-/public/packs
-
-# Ignore uploaded files in development
-/storage/*
+# Ignore master key for decrypting credentials and more.
+#/config/master.key
 ```
 
  `/home/xxx/config/secrets.yml` は `/home/xxx/config/credentials.yml.enc`に変更されている。  
@@ -221,6 +201,7 @@ https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39
 
 ```
 git init
+git config --global push.default current
 git add .
 git commit -m "最初のコミット"
 
