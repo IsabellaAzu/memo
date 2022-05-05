@@ -102,112 +102,16 @@ Example:
     rails new ~/Code/Ruby/weblog
 ```
 
-<br>
-<table>
-<tr>
-<th>rails new のオプション</th>
-<th>効能</th>
-</tr>
-<tr>
-<td>--api</td>
-<td>APIとして利用するapp向けの小さい構成</td>
-</tr>
-<tr>
-<td>--database=mysql</td>
-<td>データベースの指定、今回はmysql.</td>
-</tr>
-<tr>
-<td>--skip-yarn	</td>
-<td>
-Yarnを利用しない<br>
-https://qiita.com/shifumin/items/f4f4ea68d9963dbe9ca2<br>
-npmよりyarnの方が良い！<br>
-https://qiita.com/lelouch99v/items/c97ff951ca31298f3f24<br>
-yarnとは<br>
-JavaScriptのパッケージマネージャ<br>
-2016年にFaceBookが公開した<br>
-npmと互換性がある = 同じpackage.jsonが使える<br>
-npm vs yarnどっち使うかの話<br>
-https://qiita.com/jigengineer/items/c75ca9b8f0e9ce462e99
-</td>
-</tr>
-<tr>
-<td>-B</td>
-<td>bundle installを最初はかけない。newしたあとに追記などを行うことがあるので指定。<br>
-例: bundle install --path vendor/bundle -j4<br>
- -j4(もしくは--jobs=4): bundle installを並列処理で実行できる<br>
- https://maetoo11.hatenablog.com/entry/2016/03/04/144216
-</td>
-</tr>
-<tr>
-<td>-M</td>
-<td>action mailerのセットアップをスキップ。<br>
-https://www.sejuku.net/blog/48739
-</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>puma関連のファイルセットアップをスキップ。<br>
-https://re-engines.com/2018/07/30/rails-puma-deploy/
-</td>
-</tr>
-<tr>
-<td>-C</td>
-<td>action cable関連のセットアップをスキップ。</td>
-</tr>
-<tr>
-<td>-S</td>
-<td>sprockets(CoffeeScriptやSASSのトランスパイル)関連のセットアップをスキップ。</td>
-</tr>
-<tr>
-<td>-J</td>
-<td>javascript関連のセットアップをスキップ。</td>
-</tr>
-<tr>
-<td>--skip-yarn</td>
-<td>yarnのセットアップをスキップ。フロント実装をしないなどであれば付ける。</td>
-</tr>
-<tr>
-<td>--skip-coffee</td>
-<td>CoffeeScriptのセットアップをスキップ。</td>
-</tr>
-<tr>
-<td>--skip-turbolinks</td>
-<td>turbolinksのセットアップをスキップ。</td>
-</tr>
-<tr>
-<td>--skip-active-record</td>
-<td>active-recordのセットアップをスキップ。<br>
-https://qiita.com/satoh-disk/items/1a5aa14e0c5d57f422e6<br>
---skip-active-recordをしたときは、ActiveRecordは除外するけどActiveModelはロードするという挙動のようです。
-</td>
-</tr>
-</table>
-
---minimal は以下をスキップ
-
-- action_cable
-- action_mailbox
-- action_mailer
-- action_text
-- active_job
-- active_storage
-- bootsnap
-- jbuilder
-- spring
-- system_tests
-- turbolinks
-- webpack
-
-
 https://zenn.dev/yukito0616/articles/7cd2dde18c90d4#spring%E3%81%8C%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E8%A9%B0%E3%81%BE%E3%82%8B%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%82%93%E3%81%98%E3%82%83
 
+
+## 新しいMacのSSL問題
+
 ```
-新しいMacだと
 Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
 Generally there are no consequences of this for you. If you build your own software and it requires this formula, you'll need to add to your build variables:
 ```
-
+↓
 ```
 $ vim ~/.zshrc
 
@@ -222,6 +126,8 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
 $ source ~/.zshrc
 ```
+
+## データベース作成
 
 ```
 $ mysql.server start
