@@ -99,8 +99,7 @@ https://qiita.com/NaokiIshimura/items/2a179f2ab910992c4d39
 ### 最初のコミット
 
 ```
-git init
-
+git config pull.rebase false
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
 git remote add origin git@bitbucket.org:ｘｘｘ/ｘｘｘ.git
