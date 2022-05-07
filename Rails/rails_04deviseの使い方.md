@@ -378,7 +378,8 @@ http://www.rubydoc.info/github/plataformatec/devise/Devise/Models
   </tr>
   <tr>
     <td>lockable</td>
-    <td>一定回数サインインを失敗するとアカウントをロックします。ロック解除にはメールによる解除か、一定時間経つと解除するといった方法があります。</td>
+    <td>一定回数サインインを失敗するとアカウントをロックします。ロック解除にはメールによる解除か、一定時間経つと解除するといった方法があります。<br>
+    https://kossy-web-engineer.hatenablog.com/entry/2021/08/03/224616</td>
   </tr>
   <tr>
     <td>timeoutable</td>
