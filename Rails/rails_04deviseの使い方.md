@@ -156,6 +156,11 @@ config.action_mailer.smtp_settings = {
 <h4>2 下記コメントアウトを取る</h4>
 
 ```Ruby
+# /app/models/user.rb
+  devise ・・・, :confirmable
+```
+
+```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
 
 ## Confirmable
@@ -165,12 +170,6 @@ config.action_mailer.smtp_settings = {
 # t.string   :unconfirmed_email # Only if using reconfirmable
 〜
 # add_index :users, :confirmation_token,   unique: true
-```
-
-
-```Ruby
-# /app/models/user.rb
-  devise ・・・, :confirmable
 ```
 
 ```Ruby
