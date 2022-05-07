@@ -472,11 +472,9 @@ cancel_guser_registration GET    /users/cancel(.:format)         users/registrat
                 home_show GET    /home/show(.:format)            home#show
                      root GET    /                               home#index
 ```
-
-#### 独自コントローラを用意  
-http://www.tamurasouko.com/?p=929  
 　  
 ##### 3.7 URI Patternの変更($ rails routesの左側)
+
 ```Ruby
 config/routes.rb
 devise_for :users, :path => 'accounts'
