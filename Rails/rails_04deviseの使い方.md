@@ -114,6 +114,13 @@ db/migrate/yyyymmddhhmmss_devise_create_users.rb
 
 ##### 各機能
 
+<table>
+<tr>
+<th>Database Authenticatable</th>
+<td>データベースに保存されたパスワードが正しいかどうかの検証とを行ってくれます。  
+また暗号化も同時に行うためセキュリティ面でも安心できます。</td>
+</tr>
+</table>
 ###### Database Authenticatable
 データベースに保存されたパスワードが正しいかどうかの検証とを行ってくれます。  
 また暗号化も同時に行うためセキュリティ面でも安心できます。
