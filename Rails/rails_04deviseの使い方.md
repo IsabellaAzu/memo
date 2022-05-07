@@ -92,7 +92,7 @@ $ bundle exec rails g controller Home index show --no-helper --no-assets
     g.javascripts false
   end
 を設定しておくと便利
-```　  
+```
 
 
 <a id="a2"></a>
