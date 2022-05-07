@@ -240,7 +240,6 @@ $ bundle install
 ### Stimulus
 
 - https://qiita.com/SAPPOROBEER/items/ce29b3551e65ea901108
-
 　  
 <details><summary>rails6以前</summary><div>
 2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
@@ -258,6 +257,10 @@ https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
 2019.09.27 Rails 6 + MySQL on Dockerの環境を秒速で構築する  
 https://masaki.blog/rails6-on-docker/  
 </div></details>
+
+### Railsでタイムゾーンを扱う方法
+
+https://techacademy.jp/magazine/22191
 
 
 
