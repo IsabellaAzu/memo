@@ -112,8 +112,12 @@ app/models/user.rbを確認
 db/migrate/yyyymmddhhmmss_devise_create_users.rb  
 ![](http://i.gyazo.com/3757ad1b32c23e157337720ca717ac27.png)  
 
-##### 各機能
-公式 https://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Lockable
+##### 各機能追加
+
+- 公式 https://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Lockable
+- http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
+- http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
+
 <table>
 <tr>
 <th>Database Authenticatable</th>
@@ -127,7 +131,63 @@ SNS認証をする場合このほかにもgemを追加する必要が出てく�
 </tr>
 <tr>
 <th>Confirmable</th>
-<td>登録後メールを送り、そのメールのURLをクリックすると本登録が完了するといったような仕組みを作ることが可能になります。</td>
+<td>登録後メールを送り、そのメールのURLをクリックすると本登録が完了する
+<h4>参考</h4>
+<ul>
+<li>http://gaku3601.hatenablog.com/entry/2014/08/23/165749</li>
+<li>http://qiita.com/k-shogo/items/d85905535a64e82a3b2b</li>
+</ul>
+
+<h4>3.4.1.1 メーラー用の設定</h4>
+
+```Ruby
+# /config/environments/development.rb
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address => 'smtp.mail.rails.jp',
+  :port => 465,
+  :authentication => :plain,
+  :user_name => 'rails@rails.jp',
+  :password => 'rails'
+}
+```
+
+<h4>3.4.1.2 下記コメントアウトを取る</h4>
+
+```Ruby
+# /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
+
+## Confirmable
+# t.string   :confirmation_token
+# t.datetime :confirmed_at
+# t.datetime :confirmation_sent_at
+# t.string   :unconfirmed_email # Only if using reconfirmable
+〜
+# add_index :users, :confirmation_token,   unique: true
+```
+の後、  
+```Ruby
+$ bundle exec rails db:migrate:reset
+```
+> 参考  
+rails db:resetとrails db:migrate:resetの違い  
+・rails db:resetはdbをドロップし、db/schema.rbにもとづいてcreate  
+・rails db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
+http://memo.yomukaku.net/entries/iDhORCE
+
+<h4>3.4.1.3 :confirmableを追加</h4>
+```Ruby
+# /app/models/user.rb
+  devise ・・・, :confirmable
+```
+
+<h4>3.4.1.4 mailのfrom（送信元）の設定</h4>
+```Ruby
+# /config/initializers/devise.rb
+  config.mailer_sender = 'a@a.jp'
+```
+</td>
 </tr>
 <tr>
 <th>Recoverable</th>
@@ -160,7 +220,8 @@ SNS認証をする場合このほかにもgemを追加する必要が出てく�
 <tr>
 <th>Lockable</th>
 <td>ログインに何度も失敗すると、アカウントをロックすることができる機能です。<br>
-こちらの機能もセキュリティ面で向上が期待できますね。</td>
+こちらの機能もセキュリティ面で向上が期待できますね。<br>
+https://kossy-web-engineer.hatenablog.com/entry/2021/08/03/224616</td>
 </tr>
 </table>
 
@@ -330,125 +391,6 @@ config.password_length = 8..128
 ```
 8は<%= @minimum_password_length %>で取得可能  
 
-　  
-##### 3.4 機能追加  
-
-> 参考  
-http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
-http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
-
-上記の<a href="#linkto_page_app_models_user">モジュール（app/models/user.rb）</a>  
-> 
-
-<table>
-<thead>
-  <tr>
-    <th>機能</th>
-    <th>概要</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>database_authenticatable</td>
-    <td>サインイン時にユーザーの正当性を検証するためにパスワードを暗号化してDBに登録します。</td>
-  </tr>
-  <tr>
-    <td>registerable</td>
-    <td>登録処理を通してユーザーをサインアップします。また、ユーザーに自身のアカウントを編集したり削除することを許可します。</td>
-  </tr>
-  <tr>
-    <td>recoverable</td>
-    <td>パスワードをリセットし、それを通知します。</td>
-  </tr>
-  <tr>
-    <td>rememberable</td>
-    <td>保存されたcookieから、ユーザーを記憶するためのトークンを生成・削除します。</td>
-  </tr>
-  <tr>
-    <td>trackable</td>
-    <td>サインイン回数や、サインイン時間、IPアドレスを記録します。</td>
-  </tr>
-  <tr>
-    <td>validatable</td>
-    <td>Emailやパスワードのバリデーションを提供します。独自に定義したバリデーションを追加することもできます。</td>
-  </tr>
-  <tr>
-    <td>confirmable</td>
-    <td>メールに記載されているURLをクリックして本登録を完了する、といったよくある登録方式を提供します。また、サインイン中にアカウントが認証済みかどうかを検証します。</td>
-  </tr>
-  <tr>
-    <td>lockable</td>
-    <td>一定回数サインインを失敗するとアカウントをロックします。ロック解除にはメールによる解除か、一定時間経つと解除するといった方法があります。<br>
-    https://kossy-web-engineer.hatenablog.com/entry/2021/08/03/224616</td>
-  </tr>
-  <tr>
-    <td>timeoutable</td>
-    <td>一定時間活動していないアカウントのセッションを破棄します。</td>
-  </tr>
-  <tr>
-    <td>omniauthable</td>
-    <td>intridea/omniauthをサポートします。TwitterやFacebookなどの認証を追加したい場合は追加します。</td>
-  </tr>
-  </tbody>
-</table>
-
-
-##### 3.4.1 Confirmable（確認メールからアカウント作成）機能を追加
-> 参考  
-http://gaku3601.hatenablog.com/entry/2014/08/23/165749
-http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
-
-###### 3.4.1.1 メーラー用の設定  
-```Ruby
-# /config/environments/development.rb
-config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  :address => 'smtp.mail.rails.jp',
-  :port => 465,
-  :authentication => :plain,
-  :user_name => 'rails@rails.jp',
-  :password => 'rails'
-}
-〜
-# メール送信時の例外処理、下記の様にコメントアウトする
-# config.action_mailer.raise_delivery_errors = false
-```
-
-###### 3.4.1.2 下記コメントアウトを取る  
-
-```Ruby
-# /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
-
-## Confirmable
-# t.string   :confirmation_token
-# t.datetime :confirmed_at
-# t.datetime :confirmation_sent_at
-# t.string   :unconfirmed_email # Only if using reconfirmable
-〜
-# add_index :users, :confirmation_token,   unique: true
-```
-の後、  
-```Ruby
-$ bundle exec rails db:migrate:reset
-```
-> 参考  
-rails db:resetとrails db:migrate:resetの違い  
-・rails db:resetはdbをドロップし、db/schema.rbにもとづいてcreate  
-・rails db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
-http://memo.yomukaku.net/entries/iDhORCE
-
-###### 3.4.1.3 :confirmableを追加
-```Ruby
-# /app/models/user.rb
-  devise ・・・, :confirmable
-```
-
-###### 3.4.1.4 mailのfrom（送信元）の設定
-```Ruby
-# /config/initializers/devise.rb
-  config.mailer_sender = 'a@a.jp'
-```
 
 ##### 3.5 確認メール文面の変更
 /app/views/users/mailer以下を編集  
@@ -555,7 +497,8 @@ config.sign_out_via = :get
 ## deviseあるある  
 
 ##### ・削除系は自分で作り込まないと
-* Userの情報だけ消す？
+* まるっと消す　→ 依存関係で消すのが面倒
+* 論理削除（削除フラグ）　→ カラム追加、他各種ページに削除フラグがfalseならと書かないと行けない
 * Userの入力内容、どうする？
 など
 
