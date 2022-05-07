@@ -166,27 +166,30 @@ config.action_mailer.smtp_settings = {
 〜
 # add_index :users, :confirmation_token,   unique: true
 ```
+
+
+```Ruby
+# /app/models/user.rb
+  devise ・・・, :confirmable
+```
+
+```Ruby
+# /config/initializers/devise.rb
+  config.mailer_sender = 'a@a.jp'
+```
+
 の後、  
+
 ```Ruby
 $ bundle exec rails db:migrate:reset
 ```
+
 > 参考  
 rails db:resetとrails db:migrate:resetの違い  
 ・rails db:resetはdbをドロップし、db/schema.rbにもとづいてcreate  
 ・rails db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
 http://memo.yomukaku.net/entries/iDhORCE
 
-<h4>3 :confirmableを追加</h4>
-```Ruby
-# /app/models/user.rb
-  devise ・・・, :confirmable
-```
-
-<h4>4 mailのfrom（送信元）の設定</h4>
-```Ruby
-# /config/initializers/devise.rb
-  config.mailer_sender = 'a@a.jp'
-```
 </td>
 </tr>
 <tr>
