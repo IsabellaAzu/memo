@@ -125,11 +125,6 @@ db/migrate/yyyymmddhhmmss_devise_create_users.rb
 また暗号化も同時に行うためセキュリティ面でも安心できます。</td>
 </tr>
 <tr>
-<th>Omniauthable</th>
-<td>twitter、facebookなど現代のwebサービスで必須なSNS認証を行うためのモジュールです。<br>
-SNS認証をする場合このほかにもgemを追加する必要が出てくるので注意が必要です。</td>
-</tr>
-<tr>
 <th>Confirmable</th>
 <td>登録後メールを送り、そのメールのURLをクリックすると本登録が完了する
 
@@ -223,6 +218,11 @@ http://memo.yomukaku.net/entries/iDhORCE
 <td>ログインに何度も失敗すると、アカウントをロックすることができる機能です。<br>
 こちらの機能もセキュリティ面で向上が期待できますね。<br>
 https://kossy-web-engineer.hatenablog.com/entry/2021/08/03/224616</td>
+</tr>
+<tr>
+<th>Omniauthable</th>
+<td>twitter、facebookなど現代のwebサービスで必須なSNS認証を行うためのモジュールです。<br>
+SNS認証をする場合このほかにもgemを追加する必要が出てくるので注意が必要です。</td>
 </tr>
 </table>
 
