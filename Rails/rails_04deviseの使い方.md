@@ -132,11 +132,10 @@ SNS認証をする場合このほかにもgemを追加する必要が出てく�
 <tr>
 <th>Confirmable</th>
 <td>登録後メールを送り、そのメールのURLをクリックすると本登録が完了する
-<h4>参考</h4>
-<ul>
-<li>http://gaku3601.hatenablog.com/entry/2014/08/23/165749</li>
-<li>http://qiita.com/k-shogo/items/d85905535a64e82a3b2b</li>
-</ul>
+
+> 参考
+・ http://gaku3601.hatenablog.com/entry/2014/08/23/165749
+・ http://qiita.com/k-shogo/items/d85905535a64e82a3b2b
 
 <h4>1 メーラー用の設定</h4>
 
