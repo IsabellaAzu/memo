@@ -113,7 +113,7 @@ db/migrate/yyyymmddhhmmss_devise_create_users.rb
 ![](http://i.gyazo.com/3757ad1b32c23e157337720ca717ac27.png)  
 
 ##### 各機能
-
+公式 https://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Lockable
 <table>
 <tr>
 <th>Database Authenticatable</th>
