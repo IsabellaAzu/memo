@@ -123,6 +123,8 @@ $ bundle exec rails g devise User
 - http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
 - http://www.rubydoc.info/github/plataformatec/devise/Devise/Models  
 
+<details><summary>各機能</summary><div>
+
 <table>
 <tr>
 <th>Database Authenticatable</th>
@@ -230,6 +232,9 @@ https://kossy-web-engineer.hatenablog.com/entry/2021/08/03/224616</td>
 SNS認証をする場合このほかにもgemを追加する必要が出てくるので注意が必要です。</td>
 </tr>
 </table>
+
+</div></details>
+
 
 ##### 2021.10.28 Railsアプリで実際にあった5つのセキュリティ問題と修正方法（翻訳）
 
