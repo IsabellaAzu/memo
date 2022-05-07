@@ -28,8 +28,10 @@ gem 'devise'
 # ターミナル
 $ bundle install
 $ bundle exec rails g devise:install
+```
 
-　↓以下が出力される
+<details><summary>↓以下が出力される</summary><div>
+
 ===============================================================================
 
 Depending on your application's configuration some manual setup may be required:
@@ -66,16 +68,23 @@ Depending on your application's configuration some manual setup may be required:
      * Not required *
 
 ===============================================================================
+</div></details>
 
+#### 【やること】
 
-【やること】
+##### 1.deviseのメール送信時のホスト名の指定：config/environments/development.rbに追記
 
-1.deviseのメール送信時のホスト名の指定：config/environments/development.rbに追記
+```
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+```
 
-2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
+##### 2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
+
+```
 root "home#index"
+
 $ bundle exec rails g controller Home index show --no-helper --no-assets
+
 ※/config/application.rbに
   config.generators do |g|
     g.helper false
@@ -83,11 +92,13 @@ $ bundle exec rails g controller Home index show --no-helper --no-assets
     g.javascripts false
   end
 を設定しておくと便利
+```
 
-3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
+##### 3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
+
+```
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-
 ```
 　  
 　  
