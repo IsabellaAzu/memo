@@ -138,7 +138,7 @@ SNS認証をする場合このほかにもgemを追加する必要が出てく�
 <li>http://qiita.com/k-shogo/items/d85905535a64e82a3b2b</li>
 </ul>
 
-<h4>3.4.1.1 メーラー用の設定</h4>
+<h4>1 メーラー用の設定</h4>
 
 ```Ruby
 # /config/environments/development.rb
@@ -153,7 +153,7 @@ config.action_mailer.smtp_settings = {
 }
 ```
 
-<h4>3.4.1.2 下記コメントアウトを取る</h4>
+<h4>2 下記コメントアウトを取る</h4>
 
 ```Ruby
 # /db/migrate/yyyymmddhhmmss_devise_create_users.rb  
@@ -176,13 +176,13 @@ rails db:resetとrails db:migrate:resetの違い
 ・rails db:migrate:resetはdbをドロップし、db/migrate以下のファイルにもとづいてcreate  
 http://memo.yomukaku.net/entries/iDhORCE
 
-<h4>3.4.1.3 :confirmableを追加</h4>
+<h4>3 :confirmableを追加</h4>
 ```Ruby
 # /app/models/user.rb
   devise ・・・, :confirmable
 ```
 
-<h4>3.4.1.4 mailのfrom（送信元）の設定</h4>
+<h4>4 mailのfrom（送信元）の設定</h4>
 ```Ruby
 # /config/initializers/devise.rb
   config.mailer_sender = 'a@a.jp'
