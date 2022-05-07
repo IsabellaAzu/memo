@@ -280,6 +280,9 @@ $ bundle exec rails routes
 ```Ruby
 # 結果  
                   Prefix Verb   URI Pattern                                      Controller#Action
+                    root GET    /                                                home#index
+              home_index GET    /home/index(.:format)                            home#index
+               home_show GET    /home/show(.:format)                             home#show
         new_user_session GET    /users/sign_in(.:format)                         devise/sessions#new
             user_session POST   /users/sign_in(.:format)                         devise/sessions#create
     destroy_user_session DELETE /users/sign_out(.:format)                        devise/sessions#destroy
@@ -295,20 +298,6 @@ cancel_user_registration GET    /users/cancel(.:format)                         
                          PATCH  /users(.:format)                                 devise/registrations#update
                          PUT    /users(.:format)                                 devise/registrations#update
                          DELETE /users(.:format)                                 devise/registrations#destroy
-              home_index GET    /home/index(.:format)                            home#index
-               home_show GET    /home/show(.:format)                             home#show
-           project_tasks POST   /projects/:project_id/tasks(.:format)            tasks#create
-            project_task DELETE /projects/:project_id/tasks/:id(.:format)        tasks#destroy
-                projects GET    /projects(.:format)                              projects#index
-                         POST   /projects(.:format)                              projects#create
-             new_project GET    /projects/new(.:format)                          projects#new
-            edit_project GET    /projects/:id/edit(.:format)                     projects#edit
-                 project GET    /projects/:id(.:format)                          projects#show
-                         PATCH  /projects/:id(.:format)                          projects#update
-                         PUT    /projects/:id(.:format)                          projects#update
-                         DELETE /projects/:id(.:format)                          projects#destroy
-                    root GET    /                                                home#index
-                         POST   /projects/:project_id/tasks/:id/toggle(.:format) tasks#toggle
 ```
 
 <!--![](http://i.gyazo.com/ed07b0abf060017ce42a2489cc55c67a.png)  -->
