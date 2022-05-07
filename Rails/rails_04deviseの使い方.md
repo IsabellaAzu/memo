@@ -399,6 +399,7 @@ config.password_length = 8..128
 
 
 ##### 3.5 確認メール文面の変更
+
 /app/views/users/mailer以下を編集  
 - アカウントの本人確認  
 　confirmation_instructions.html.erb  
@@ -409,6 +410,7 @@ config.password_length = 8..128
 
 　  
 ##### 3.6 deviseのコントローラを独自のコントローラに変更($ rails routesの右側)
+
 ```Ruby
 # /config/routes.rb
 
@@ -422,6 +424,7 @@ config.password_length = 8..128
     :registrations => 'users/registrations'
   }
 ```
+
 とすると、  
 
 ```Ruby
@@ -444,9 +447,11 @@ cancel_guser_registration GET    /users/cancel(.:format)         devise/registra
                home_index GET    /home/index(.:format)           home#index
                 home_show GET    /home/show(.:format)            home#show
                      root GET    /                               home#index
+```
 
 　↓　devise/が
 
+```Ruby
                    Prefix Verb   URI Pattern                     Controller#Action
         new_guser_session GET    /users/sign_in(.:format)        users/sessions#new
             guser_session POST   /users/sign_in(.:format)        users/sessions#create
@@ -466,9 +471,9 @@ cancel_guser_registration GET    /users/cancel(.:format)         users/registrat
                home_index GET    /home/index(.:format)           home#index
                 home_show GET    /home/show(.:format)            home#show
                      root GET    /                               home#index
-
 ```
-独自コントローラを用意  
+
+#### 独自コントローラを用意  
 http://www.tamurasouko.com/?p=929  
 　  
 ##### 3.7 URI Patternの変更($ rails routesの左側)
