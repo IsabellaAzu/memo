@@ -112,6 +112,10 @@ app/models/user.rbを確認
 db/migrate/yyyymmddhhmmss_devise_create_users.rb  
 ![](http://i.gyazo.com/3757ad1b32c23e157337720ca717ac27.png)  
 
+###### 2021.10.28 Railsアプリで実際にあった5つのセキュリティ問題と修正方法（翻訳）
+
+- https://techracho.bpsinc.jp/hachi8833/2021_10_28/62858
+
 ※app/models/user.rbを書き換えたら、db/migrate/yyyymmddhhmmss_devise_create_users.rbも書き換える必要があります。（「2_2. View作成」を飛ばして、<a href="#atode">後で設定</a>しましょう）  
 　↓
 ```
