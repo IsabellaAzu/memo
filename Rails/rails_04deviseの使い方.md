@@ -480,7 +480,7 @@ devise_for :users, :path => 'accounts'
 
 ##### 3.8 日本語化、他言語化
 > 参考  
-https://github.com/IsabellaAzu/memo/blob/master/rails%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C.md#ax2_2
+https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_%E3%81%9D%E3%81%AE%E4%BB%96.md#ax2_2
 
 
 
@@ -509,4 +509,32 @@ config.sign_out_via = :get
 など
 
 
+## ログイン済みか
 
+```
+class ApplicationController < ActionController::Base
+  before_action :authenticate_user!, if: :except_dir?
+
+  def except_dir?
+    case controller_name
+      when "home"
+        case action_name
+          when 'index'
+            false
+          when 'show'
+            false
+          else
+            true
+        end
+
+      #when "qqq"
+      #  false
+      #when "aaa"
+      #  false
+      #else
+      #  true
+    end
+  end
+end
+
+```
