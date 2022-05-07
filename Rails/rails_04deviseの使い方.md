@@ -105,12 +105,17 @@ $ bundle exec rails g devise User
 
 下記2つのファイルで、モジュールの設定を有効/無効にできる  
 
-<a id="linkto_page_app_models_user"></a>
-app/models/user.rbを確認  
+<details><summary>app/models/user.rbを確認</summary><div>
+
 ![](http://i.gyazo.com/62c8a41872aa49c8c96d27fdc5decc7b.png)  
 
-db/migrate/yyyymmddhhmmss_devise_create_users.rb  
+</div></details>
+
+<details><summary>db/migrate/yyyymmddhhmmss_devise_create_users.rb</summary><div>
+
 ![](http://i.gyazo.com/3757ad1b32c23e157337720ca717ac27.png)  
+
+</div></details>
 
 ##### 各機能追加
 
