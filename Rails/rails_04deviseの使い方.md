@@ -92,16 +92,7 @@ $ bundle exec rails g controller Home index show --no-helper --no-assets
     g.javascripts false
   end
 を設定しておくと便利
-```
-
-##### 3.ログイン関連のメッセージを表示する：app/views/layouts/application.html.erbに追記
-
-```
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-```
-　  
-　  
+```　  
 
 
 <a id="a2"></a>
@@ -263,12 +254,13 @@ $ bundle exec rails db:migrate
 ##### 2.2 View作成
 
 全ての画面の上部に、  
-・ログインしていない場合は、「サインイン」と「ログイン」のリンク  
-・ログインしている場合は、「プロフィール変更」と「ログアウト」のリンク  
+- ログインしていない場合は、「サインイン」と「ログイン」のリンク  
+- ログインしている場合は、「プロフィール変更」と「ログアウト」のリンク  
 を表示させるようにします。  
 
+<details><summary>app/views/layouts/application.html.erb</summary><div>
+
 ```html
-# app/views/layouts/application.html.erb
 <header>
   <nav>
     <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
@@ -290,9 +282,12 @@ $ bundle exec rails db:migrate
 ```
 ※「user」の部分はモデル名に依存しているので、変更したら全て変更する  
 例）user_signed_in　→　hoge_signed_in  
-　  
+
+</div></details>
+
 
 ##### 2.3 URIの確認  
+
 ```Ruby
 # 確認
 $ bundle exec rails routes
