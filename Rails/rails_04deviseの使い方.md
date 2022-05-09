@@ -481,12 +481,12 @@ devise_for :users, :path => 'accounts'
 ```
 
 
-##### 3.8 日本語化、他言語化
+##### 3.8 日本語化、多言語化
 > 参考  
-https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_%E3%81%9D%E3%81%AE%E4%BB%96.md#ax2_2
-
-
-
+- https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_01%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E6%B5%81%E3%82%8C_%E3%81%9D%E3%81%AE%E4%BB%96.md#ax2_2
+- https://junblog11.com/rails%E3%81%AEdevise%E3%81%AE%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%99%E3%82%8B/
+- https://qiita.com/k19911848/items/8ed4225e9a99beb9b901
+- https://blog.nightonly.com/2020/06/23/devise%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AB%E3%82%A2%E3%83%97%E3%83%AA%E5%90%8D%E8%BF%BD%E5%8A%A0/
 　  
 - - -
 　  
