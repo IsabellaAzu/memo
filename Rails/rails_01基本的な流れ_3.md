@@ -262,9 +262,23 @@ def newなどと同様に追記する
 
 ```Ruby
 # /controllers/projects_controller.rb（controllerに定義）
+
 def edit
   @project = Project.find(params[:id])
 end
+
+def update
+  @project = Project.
+    find(params[:id])
+  # -------------------------
+
+  if @project.update(project_params)
+    redirect_to projects_path, flash: {flash_project_when_saving_success: 'missionを編集しました'}
+  else
+    redirect_to projects_path, flash: {flash_project_when_saving_error: 'missionを編集できませんでした'}
+  end
+end
+
 ```
 
 #### 編集ページの用意
