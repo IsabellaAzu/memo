@@ -78,12 +78,12 @@ Depending on your application's configuration some manual setup may be required:
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 ```
 
-##### 2.root_urlを指定、コントローラ作成：config/routes.rbに追記してコントローラ作成
+##### 2.コントローラを作成し、root_urlを指定（config/routes.rb）
 
 ```
-root "home#index"
-
 $ bundle exec rails g controller Home index show --no-helper --no-assets
+
+root "home#index"
 
 ※/config/application.rbに
   config.generators do |g|
