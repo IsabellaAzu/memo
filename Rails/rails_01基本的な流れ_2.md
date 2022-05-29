@@ -23,7 +23,9 @@
 ```
 # model名は最初大文字の単数形
 # 「rails generate model モデル名 カラム名:データ型 カラム名:データ型 ...」
-$ bundle exec rails g model Project title # rails generate model Project title:stringの省略形
+# rails generate model Project title:stringの省略形
+
+$ bundle exec rails g model Project title
 ```
 
 https://github.com/IsabellaAzu/memo/blob/master/Rails/rails_88_3_model.md#マイグレーション関連  
