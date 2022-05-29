@@ -28,6 +28,8 @@ bundle install
 
 ## プロジェクト作成
 
+![フロント](https://user-images.githubusercontent.com/1782095/170869145-73b6c3a9-e2e8-481b-8b4f-46e8835f9349.png)
+
 ### rails new 省略内容確認
 bundle exec rails new -h
 
