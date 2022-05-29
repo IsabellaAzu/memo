@@ -33,10 +33,10 @@ bundle exec rails new -h
 
 ```
 # deviseを使った最低限で(JavaScript関連有り)
-bundle exec rails new . -B -C -S -M --database=mysql --skip-asset-pipeline --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
+bundle exec rails new . -B -C -S -M --database=mysql --skip-asset-pipeline --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-test --skip-system-test
 
 # deviseを使った最低限で(JavaScript関連無し)
-bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-hotwire --skip-bootsnap --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-action-mailbox --skip-test --skip-system-test
+bundle exec rails new . -B -C -S -J -M --database=mysql --skip-asset-pipeline --skip-javascript --skip-hotwire --skip-bootsnap --skip-jbuilder --skip-sprockets --skip-turbolinks --skip-action-text --skip-active-storage --skip-action-cable --skip-test --skip-system-test
 
 # 追加Gem
 gem 'devise', '~> 4.8', '>= 4.8.1'
