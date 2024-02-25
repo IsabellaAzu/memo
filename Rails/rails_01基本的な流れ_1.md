@@ -25,8 +25,12 @@ mysql --version
 # インストール可能リスト、アップデート
 brew search mysql
 
-mysql --version
+# /usr/local/Cellar/バージョン名確認
+brew uninstall mysql
+brew install mysql
 
+# バージョン切り替えする
+brew unlink mysql && brew link --force mysql@8.3.0
 ```
 
 
