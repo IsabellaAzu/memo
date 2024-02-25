@@ -6,10 +6,15 @@
 ```
 brew update
 brew upgrade rbenv
+
+# インストール可能リスト、アップデート
 brew update && brew upgrade ruby-build
 rbenv install --list
+
+# rubyの入れ替え
 rbenv install 3.3.0
 rbenv global 3.3.0
+rbenv uninstall 3.1.2
 ```
 
 ## ローカルRails環境構築
