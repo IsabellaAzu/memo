@@ -27,7 +27,7 @@ bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/
 // mysql2で他に問題がある場合
 bundle config --local build.mysql2 "--with-cppflags=-I/usr/local/opt/openssl@1.1/include"
 
-gem 'rails', '~> 7.0', '>= 7.0.2.4'
+gem '7.1.3.2'
 
 bundle install
 ```
