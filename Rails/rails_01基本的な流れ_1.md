@@ -6,6 +6,7 @@
 ```
 brew update
 brew upgrade rbenv
+brew update && brew upgrade ruby-build
 rbenv install --list
 rbenv install 3.1.2
 rbenv global 3.1.2
