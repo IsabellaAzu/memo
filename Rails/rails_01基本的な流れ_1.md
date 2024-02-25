@@ -37,6 +37,7 @@ brew unlink mysql && brew link --force mysql@8.3.0
 ## ローカルRails環境構築
 
 ```
+# リポジトリ作成後、git cloneし、そのディレクトリで
 bundle init
 bundle config set --local path 'vendor/bundle'
 bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl@1.1/lib"
