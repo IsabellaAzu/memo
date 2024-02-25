@@ -8,7 +8,7 @@ brew update
 brew upgrade rbenv
 
 # インストール可能リスト、アップデート
-brew update && brew upgrade ruby-build
+brew update && brew upgrade
 rbenv install --list
 
 # rubyの入れ替え
@@ -16,6 +16,19 @@ rbenv install 3.3.0
 rbenv global 3.3.0
 rbenv uninstall 3.1.2
 ```
+
+## ローカルMySQL環境構築
+
+```
+mysql --version
+
+# インストール可能リスト、アップデート
+brew search mysql
+
+mysql --version
+
+```
+
 
 ## ローカルRails環境構築
 
