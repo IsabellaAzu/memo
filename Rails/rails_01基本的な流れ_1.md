@@ -19,6 +19,8 @@ rbenv uninstall 3.1.2
 
 ## ローカルMySQL環境構築
 
+https://blog.proglus.jp/1077/#4
+
 ```
 mysql --version
 
@@ -30,7 +32,7 @@ brew uninstall mysql
 brew install mysql
 
 # バージョン切り替えする
-brew unlink mysql && brew link --force mysql@8.3.0
+brew unlink mysql && brew link --force mysql
 ```
 
 
