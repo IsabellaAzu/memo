@@ -3,9 +3,7 @@
 
 ### 基本的な流れ
 
-#### 参考  
-- 閉鎖 http://ruby-rails.hatenadiary.com/entry/20140801/1406907000  
-- 閉鎖 http://devise.plataformatec.com.br/  
+#### 参考 
 - https://www.sejuku.net/blog/13378
 - https://zenn.dev/salvage0707/articles/railsx-setting-devise
 - https://github.com/heartcombo/devise
