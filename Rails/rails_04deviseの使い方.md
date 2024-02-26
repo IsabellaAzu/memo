@@ -337,7 +337,7 @@ $ bundle exec rails s -p 3001
 　http://ruby-rails.hatenadiary.com/entry/20140804/1407168000  
 - Rails – Deviseのコントローラをカスタマイズする方法  
 ```
-rails g devise:controllers users
+bundle exec rails g devise:controllers users
 
 # config/route.rb
   devise_for :users, :controllers => {
