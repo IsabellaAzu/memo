@@ -225,9 +225,6 @@ Generally there are no consequences of this for you. If you build your own softw
 ```
 $ vim ~/.zshrc
 
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
-export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
@@ -257,10 +254,6 @@ end
 $ bundle install
 ```
 　  
-
-
-
-
 
 ## 参考情報
 
