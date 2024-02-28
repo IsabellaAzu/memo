@@ -358,6 +358,7 @@ bundle exec rails g devise:controllers users
 # 個別にビューを作成する場合
 # /config/initializers/devise.rb  
 config.scoped_views = true
+
 # ビューの生成
 $ bundle exec rails g devise:views
 　↓
