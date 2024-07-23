@@ -169,8 +169,8 @@ sizeを使おう！
 | form_with | rails5から推奨   |
 | form_for  | rails5から非推奨 |
 | form_tag  | rails5から非推奨 |
-　  
-　  
+
+
 ## データの絞り込み
 
 ### inner join
@@ -299,6 +299,57 @@ redirect_to action:'index', flash: {xxx: 'ログインに成功しました!!'}
 # controller
   @xxx_type = params[:xxx_type]
 ```
+
+
+## 複数レコードの編集update
+
+### ルーティングの設定config/routes.rb
+
+```ruby
+resources :items do
+  collection do
+    get :sort
+    put :update_multiple
+  end
+end
+```
+
+### コントローラーの設定
+
+```
+class ItemsController < ApplicationController
+  def sort
+    @items = Item.all
+  end
+
+  def update_multiple
+    # 更新するアイテムを検索し、それぞれのパラメータで更新する
+    params[:items].each do |id, item_params|
+      item = Item.find(id)
+      item.update(item_params.permit(:name, :description, :price))
+    end
+    redirect_to items_path, notice: "Items updated successfully"
+  end
+end
+```
+
+### ビューの設定
+
+```
+<%= form_with url: update_multiple_items_path, method: :put, local: true do %>
+  <% @items.each do |item| %>
+      <%= item.id %>
+      <%= hidden_field_tag "items[#{item.id}][id]", item.id %>
+      <%= text_field_tag "items[#{item.id}][name]", item.name %>
+      <%= text_field_tag "items[#{item.id}][description]", item.description %>
+      <%= text_field_tag "items[#{item.id}][price]", item.price %>
+  <% end %>
+  <div>
+    <%= submit_tag "Update Items" %>
+  </div>
+<% end %>
+```
+
 
 
 
