@@ -257,20 +257,6 @@ $ bundle install
 
 ## 参考情報
 
-### Zeitwerk
-
-- https://techracho.bpsinc.jp/hachi8833/2019_01_28/68986  
-- https://github.com/fxn/zeitwerk#file-structure
-- https://railsguides.jp/autoloading_and_reloading_constants.html#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%90%BD%E3%81%A8%E3%81%97%E7%A9%B4  
-
-### Stimulus
-
-- https://qiita.com/SAPPOROBEER/items/ce29b3551e65ea901108
-　  
-<details><summary>rails6以前</summary><div>
-2019.08.01 rails newするときによく使うオプションと、rails newした後によく行う設定  
-https://qiita.com/jun_jun_jun/items/dd260c43387a8e17803d  
-
 2018.08.08 Railsでパーシャルを切り出すときはインスタンス変数をローカル変数にする  
 https://mom0tomo.hateblo.jp/entry/2018/08/08/211238  
 
