@@ -17,7 +17,6 @@ https://pc-karuma.net/mac-keys-modifiers-switch-command-control-caps/
 
 #### ユーザー辞書
 
-https://github.com/IsabellaAzu/memo/tree/master/front/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E8%BE%9E%E6%9B%B8
 
 　  
 ## 準備作業
@@ -235,187 +234,10 @@ $ nodebrew use stable
 # ※Node.jsのインストールで、Node.jsのパッケージ管理ツールのnpmもインストールされるのでバージョンが最新か確認
 $ npm update -g npm
 ```
-
-　  
 　  
 - - - 
 
-
-### 7. gulpインストール
-
-Node.jsを使ったタスク自動化ツール。CSSやJavaScriptファイルの圧縮や結合、Sassのコンパイルも自動化できる  
-
-- http://qiita.com/kazukichi/items/884a1379eea5918689ed  
-- http://qiita.com/puttyo_bubu/items/225081f767d785277022  
-- http://qiita.com/sokora1705/items/2dfeea98c05846256fb3  
-- https://teratail.com/questions/13378  
-
-```
-$ npm install -g gulp
-```
-
-#### こういうerrorが出たら
-
-- https://github.com/npm/npm/issues/13055  
-- https://github.com/npm/npm/issues/3701  
-
-```
-$ gulp -v
-# => gulp: command not found
-```
-
-#### 下記を確認
-
-https://teratail.com/questions/13378  
-
-```
-# npmのアップデート
-$ npm update
-```
-
-```
-# pathの確認（~/.bash_profile）
-$ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH'
-$ source ~/.bash_profile
-```
-
-```
-# gulpバージョンの確認
-$ gulp -v
-# => [18:16:03] CLI version 3.9.1
-```
-
-#### gulpを使用するプロジェクトフォルダでpackage.jsonの作成
-
-```
-$ npm init
-# ---出力サンプル---
-{
-  "name": "gulp",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-}
-
-```
-
-
-#### サックっとbrowser-syncなどを設定
-
-- http://qiita.com/itoz/items/2bd246606c69c33684e8  
-- https://h2ham.net/gulp-basic  
-- https://tech.recruit-mp.co.jp/front-end/getting-started-gulp-watch-browsersync/  
-
-##### projectディレクトリで  
-
-```
-# localのproject単位もgulpをインストール
-$ sudo npm install gulp
-
-# 必要なgulp関連ツールをインストール
-$ sudo npm install browser-sync
-$ sudo npm install gulp-changed
-$ sudo npm install gulp-compass
-$ sudo npm install gulp-cssmin
-$ sudo npm install gulp-rename
-$ sudo npm install gulp-plumber
-$ sudo npm install gulp-autoprefixer
-$ sudo npm install gulp-csso
-$ sudo npm install gulp-if
-$ sudo npm install gulp-imagemin
-$ sudo npm install gulp-jshint
-$ sudo npm install gulp-load-plugins
-$ sudo npm install gulp-ruby-sass
-$ sudo npm install gulp-uglify
-$ sudo npm install gulp-useref
-$ sudo npm install jshint-stylish
-$ sudo npm install run-sequence
-```
-
-各種設定ファイルgulpfile.jsに設定を  
-
-```
-'use strict';
-
-var SCSS_SRC = 'public/res/scss/**/*.scss';
-var CSS_DEST = 'public/res/css/';
-
-var gulp = require('gulp');
-
-/* scss自動コンパイル */
-var compass = require('gulp-compass');
-var cssmin = require('gulp-cssmin');
-var rename = require('gulp-rename');
-var plumber = require('gulp-plumber'); // コンパイルエラーが出てもwatchを止めない
-
-// compass
-gulp.task('compass', function(){
-    gulp.src(SCSS_SRC)
-      .pipe(plumber())
-      .pipe(compass({
-        config_file: 'public/res/config.rb',
-        comments: false,
-        css: CSS_DEST,
-        sass: 'public/res/scss/'
-    }));
-});
-
-// css-min
-gulp.task('cssmin', function () {
-  gulp.src(CSS_DEST+'/**/*.css')
-  .pipe(cssmin())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('public/res/css_min/'));
-});
-
-/**
- * watch
- * watchでcompassを自動で書きだす
- */
-gulp.task('watch', function(){
-    gulp.watch(SCSS_SRC, function(event) {
-        gulp.run('compass');
-    });
-    gulp.watch(CSS_DEST+'/**/*.css', function(event) {
-        gulp.run('cssmin');
-    });
-});
-  
-gulp.task('default', function(){
-    gulp.run('watch');
-});
-```
-
-#### Rails+BrowserSync(grunt, gulpそしてブラウザエクステンションがなくても利用でき大変便利)
-
-- http://qiita.com/imaimiami/items/3d91551b8b20208f0024  
-
-```
-個別指定
-$ browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/*.css.*","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"
-全指定なら
-$ browser-sync start --proxy localhost:3000 --files **/*
-```
-
-　  
-#### gulpで動かすもの
-
-- http://blog.webcreativepark.net/2014/05/12-183033.html  
-
-#### nodebrewでNode.js管理はじめたらgulp動かなくなったのでメモ
-
-- http://qiita.com/rinoside/items/d9c911cc8d0c5db114c9  
-
-　  
-　  
-- - - 
-
-### 8. MySQLをインストール  
+### ７. MySQLをインストール  
 
 - https://weblabo.oscasierra.net/mysql-57-init-setup/  
 - http://howtohp.com/2011/08/20/homebrew-mysql/  
@@ -517,9 +339,9 @@ http://iterm2.com/
 - メニューの「iTerm」→「Preferences...」→「Profileタブ」  
 　→ Reuse previous 〜に設定  
 
-##### Sequel Pro：DBのGUI
+##### Sequel Ace
 
-http://www.sequelpro.com/
+https://apps.apple.com/jp/app/sequel-ace/id1518036000?mt=12
 
 ##### MySQL Workbench
 
@@ -529,13 +351,50 @@ http://www-jp.mysql.com/products/workbench/
 
 https://imageoptim.com/
 
-##### Atomインストールpackage
+##### VSCode
 
-- Atom：https://atom.io/  
-- プロジェクト管理、開いた状態など：project-manager（recent-files）
-- 矩形選択：Sublime-Style-Column-Selection
-- Railsプロジェクト内のファイル移動：rails-transporter
-- 全角スペースを□で表示：show-ideographic-space
+- https://code.visualstudio.com/
+
+
+##### VSCodeの拡張機能7選
+
+https://ics.media/entry/18544/  
+
+- [VSCode](https://code.visualstudio.com/)  
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Regex Previewer](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex)
+- [JSON to TS](https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts)
+
+###### VSCodeのオススメ設定
+
+https://ics.media/entry/18756/
+
+- [npm-scriptsをマウス操作で行う](https://ics.media/entry/12226)  
+  ```
+  package.jsonファイルに定義したnpm-scriptsはサイドパネルからダブルクリックで実行できます。
+  ```
+- [アウトライン表示で構造をわかりやすく]  
+  ```
+  関数名や定数名などの情報をアウトライン表示してくれます。サイドパネルに表示されるアウトラインを選択すると、
+  該当するコードに瞬時に移動できます。さまざまな言語に対応しており、
+  HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのアウトラインも表示できます。
+  サイドパネルの［エクスプローラー］の見出しを右クリックし、表示されるメニューから［アウトライン］を選択することで利用できます。
+  ```
+- [Shortcuts](https://marketplace.visualstudio.com/items?itemName=gizak.shortcuts)
+  ```
+  https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts  
+  画面下のステータスバーにショートカットボタンを追加できる拡張機能
+  ```
+- Visual Studio Code おすすめ拡張機能  
+  - https://web-guided.com/594/  
+- VSCode拡張機能「Color Info」でcss/scssの16進数カラーコードをRGBにかんたん変換
+  - https://onedarling.site/programming/tool/colorinfo/
+- Visual Studio Codeで見やすいテーマファイルのまとめ  
+  - https://coliss.com/articles/build-websites/operation/work/best-of-visual-studio-code-themes.html  
+
 
 
 ## 設定
@@ -595,46 +454,6 @@ $ open "${HOME}/init/Solarized Dark.itermcolors"
 # ターミナル: 終了時のプロンプトを非表示にする
 $ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 ```
-
-##### VSCodeの拡張機能7選
-
-https://ics.media/entry/18544/  
-
-- [VSCode](https://code.visualstudio.com/)  
-- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- [Regex Previewer](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex)
-- [JSON to TS](https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts)
-
-###### VSCodeのオススメ設定
-
-https://ics.media/entry/18756/
-
-- [npm-scriptsをマウス操作で行う](https://ics.media/entry/12226)  
-  ```
-  package.jsonファイルに定義したnpm-scriptsはサイドパネルからダブルクリックで実行できます。
-  ```
-- [アウトライン表示で構造をわかりやすく]  
-  ```
-  関数名や定数名などの情報をアウトライン表示してくれます。サイドパネルに表示されるアウトラインを選択すると、
-  該当するコードに瞬時に移動できます。さまざまな言語に対応しており、
-  HTML、JavaScript、TypeScriptだけでなく、JSONやYAML、Dockerなどのアウトラインも表示できます。
-  サイドパネルの［エクスプローラー］の見出しを右クリックし、表示されるメニューから［アウトライン］を選択することで利用できます。
-  ```
-- [Shortcuts](https://marketplace.visualstudio.com/items?itemName=gizak.shortcuts)
-  ```
-  https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts  
-  画面下のステータスバーにショートカットボタンを追加できる拡張機能
-  ```
-- Visual Studio Code おすすめ拡張機能  
-  - https://web-guided.com/594/  
-- VSCode拡張機能「Color Info」でcss/scssの16進数カラーコードをRGBにかんたん変換
-  - https://onedarling.site/programming/tool/colorinfo/
-- Visual Studio Codeで見やすいテーマファイルのまとめ  
-  - https://coliss.com/articles/build-websites/operation/work/best-of-visual-studio-code-themes.html  
-
 
 
 
