@@ -1,4 +1,16 @@
 
+## リポジトリにローカルのファイルを初期プッシュするまで
+
+```
+cd プロジェクトディレクトリ
+git init
+git remote add origin [SShの〜.git]
+git add .
+git commit -m "First commit"
+git push -u origin master
+```
+
+
 ## ターミナルでgitを使う方法
 > 参考  
 http://sourceforge.jp/magazine/09/03/16/0831212/3  
