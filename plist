@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;br /&gt;</string>
+		<key>shortcut</key>
+		<string>ｂ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;div className="w-full max-w-2xl"&gt;&lt;pre className="bg-gray-100 dark:bg-gray-800 p-4 mb-4 rounded-md overflow-x-auto mt-4 text-sm"&gt;&lt;code&gt;{`
+`}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</string>
+		<key>shortcut</key>
+		<string>ｃ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> class=""</string>
+		<key>shortcut</key>
+		<string>ｃ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>console.log();</string>
+		<key>shortcut</key>
+		<string>ｃ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;div&gt;&lt;/div&gt;</string>
+		<key>shortcut</key>
+		<string>ｄ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;details&gt;&lt;summary&gt;詳細&lt;/summary&gt;&lt;div&gt;- - -  &lt;/div&gt;&lt;/details&gt;</string>
+		<key>shortcut</key>
+		<string>ｄ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string> = d.querySelectorAll('.p-'),</string>
+		<key>shortcut</key>
+		<string>ｄ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>d.querySelectorAll('.aa').forEach(function(item, index) =&gt; {});</string>
+		<key>shortcut</key>
+		<string>ｆ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>for (let i=0; i&lt;=len; i++) {}</string>
+		<key>shortcut</key>
+		<string>ｆ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>d.querySelectorAll('.aa').forEach(function(item, index) {});</string>
+		<key>shortcut</key>
+		<string>ｆ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>git reset --hard</string>
+		<key>shortcut</key>
+		<string>ｇ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>javascript</string>
+		<key>shortcut</key>
+		<string>ｊ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>let d = document,</string>
+		<key>shortcut</key>
+		<string>ｌ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>_length = xxx.length,</string>
+		<key>shortcut</key>
+		<string>ｌ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>python3 -m http.server</string>
+		<key>shortcut</key>
+		<string>ｐ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;p&gt;&lt;/p&gt;</string>
+		<key>shortcut</key>
+		<string>ｐ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>git reset --hard</string>
+		<key>shortcut</key>
+		<string>ｒ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>了解です！</string>
+		<key>shortcut</key>
+		<string>ｒ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>.classList.remove('aaa');</string>
+		<key>shortcut</key>
+		<string>ｒ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;span&gt;&lt;/span&gt;</string>
+		<key>shortcut</key>
+		<string>ｓ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</string>
+		<key>shortcut</key>
+		<string>ｔ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ありがとうございます！</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>.addEventListener('click', () =&gt; {});</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>alert(8);</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;a href=""&gt;&lt;/a&gt;</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>.classList.add('aaa');</string>
+		<key>shortcut</key>
+		<string>あ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;img src="" width="" height="" alt="" /&gt;</string>
+		<key>shortcut</key>
+		<string>い</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>&lt;ul&gt;&lt;li&gt;&lt;li&gt;&lt;/ul&gt;</string>
+		<key>shortcut</key>
+		<string>う</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>お世話になっております。</string>
+		<key>shortcut</key>
+		<string>おせ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ご確認ください。</string>
+		<key>shortcut</key>
+		<string>ご</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>とはなんですか？</string>
+		<key>shortcut</key>
+		<string>と</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>for_dev@variant.biz</string>
+		<key>shortcut</key>
+		<string>ふぉ</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>master.variant.biz@gmail.com</string>
+		<key>shortcut</key>
+		<string>ま</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>よろしくお願いいたします。</string>
+		<key>shortcut</key>
+		<string>よ</string>
+	</dict>
+</array>
+</plist>
